@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vehicles — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="exercise.html">Exercise</a></li>
+      <li><a href="weapons.html">Weapons</a></li>
+      <li><a href="vehicles.html" class="active">Vehicles</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+  <span class="hero-icon">🚗</span>
+  <h1>Vehicles &amp; Transportation</h1>
+  <p class="subtitle">From bicycles to airplanes — driving mechanics, vehicle ownership, insurance, modifications, air travel, and the real cost of getting from A to B.</p>
+</section>
+
+<section class="content-section">
+<div class="container">
+
+<!-- ============================================================
+     SECTION 1 — VEHICLES FRAMEWORK
+     ============================================================ -->
+<h2>🚘 1. Vehicles Framework</h2>
+
+<h3>Why Vehicles Matter</h3>
+<p>In modern life, transportation is not optional — it is the backbone of daily existence. A character's access to reliable transport determines their employment options, social opportunities, emergency preparedness, and even mental health. Living in a car-dependent area without a functioning vehicle is a <strong>severe disadvantage</strong> that can cascade into financial, social, and health problems.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Core Concept: Mobility = Opportunity</div>
+  <p>A character without reliable transportation has a <strong>−5 penalty</strong> to any <span class="dice">INT + Career</span> or <span class="dice">EXP + Social</span> checks that depend on physical presence (commuting to work, attending events, visiting family). In rural or suburban settings, this penalty increases to <strong>−10</strong>. Characters in dense urban areas with good public transit suffer no penalty.</p>
+</div>
+
+<p>Vehicles confer:</p>
+<ul>
+  <li><strong>Commuting:</strong> Access to jobs, appointments, and social events across wider geographic ranges.</li>
+  <li><strong>Travel:</strong> Road trips, vacations, visiting family in other states/countries.</li>
+  <li><strong>Social Status:</strong> The car you drive signals wealth, taste, and personality. A well-maintained vehicle gives <strong>+1 PRC</strong> in first impressions; a beat-up or illegal vehicle gives <strong>−1 PRC</strong>.</li>
+  <li><strong>Emergency Transport:</strong> Ability to respond to crises, help others, evacuate quickly.</li>
+  <li><strong>Work Requirements:</strong> Many jobs (delivery, sales, construction, rideshare) require a reliable vehicle as a condition of employment.</li>
+</ul>
+
+<h3>The Driving Skill</h3>
+<p>Driving is a skill rooted in <strong>DXT</strong> (Dexterity). The core driving check is:</p>
+<div class="callout rule">
+  <div class="callout-title">🎲 Driving Check</div>
+  <p><span class="dice">2d10 + DXT modifier + Driving skill level vs. Target Number (TN)</span></p>
+  <p>Driving skill levels range from <strong>0 (never driven)</strong> to <strong>5 (professional/racer)</strong>. Each level adds +5 to the check. Characters who have never driven cannot attempt driving checks at all — they must first complete driver's ed or equivalent training (1–6 months, $200–$800).</p>
+</div>
+
+<h3>Vehicle Condition Track</h3>
+<p>Every vehicle has a <strong>Condition Track</strong> analogous to a character's Health Track. Vehicles degrade over time through use, age, and accidents. The GM tracks condition informally, but the formal stages are:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stage</th><th>Description</th><th>Driving TN Penalty</th><th>Typical Trigger</th></tr></thead>
+<tbody>
+<tr><td>✅ <strong>Perfect</strong></td><td>Runs like new. No issues.</td><td>None</td><td>New or recently serviced</td></tr>
+<tr><td>🔧 <strong>Minor Issues</strong></td><td>Odd noises, check engine light, worn tires. Still reliable.</td><td>+0</td><td>6+ months without service, 30k+ miles</td></tr>
+<tr><td>⚠️ <strong>Needs Repair</strong></td><td>Multiple warning lights, rough ride, decreased fuel economy.</td><td>+5 to all driving TNs</td><td>12+ months without service, 60k+ miles</td></tr>
+<tr><td>🚨 <strong>Broken Down</strong></td><td>Vehicle will not start or is unsafe to operate. Towing required.</td><td>Cannot drive</td><td>Major component failure; neglect</td></tr>
+<tr><td>💀 <strong>Totaled</strong></td><td>Repair cost exceeds vehicle value. Scrap or insurance write-off.</td><td>Permanently unusable</td><td>Severe collision, flood damage, fire</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Maintenance Checks</div>
+  <p>At the start of each <strong>season</strong> (every 3 months of game time), the GM may call for a <span class="dice">INT + General Knowledge TN 30</span> check to notice if a vehicle is deteriorating. Failure means the player is unaware of pending issues — the vehicle may break down unexpectedly during a critical moment, adding <strong>+2 SP</strong> from the surprise and stress.</p>
+</div>
+
+<h3>Total Cost of Ownership</h3>
+<p>The purchase price of a vehicle is only the beginning. <strong>Total Cost of Ownership (TCO)</strong> includes:</p>
+<ul>
+  <li>Purchase price (or monthly payment)</li>
+  <li>Insurance (annual premium)</li>
+  <li>Fuel/charging costs</li>
+  <li>Maintenance and repairs</li>
+  <li>Registration and taxes</li>
+  <li>Parking/storage</li>
+  <li>Depreciation (lost value over time)</li>
+  <li>Towing, tolls, tickets, and unexpected costs</li>
+</ul>
+<p>A $20,000 economy sedan may cost <strong>$6,000–9,000 per year</strong> to own and operate — that's roughly <strong>$500–750/month</strong> just for the vehicle, not counting the initial purchase. This is a major budget line item that the GM should factor into a character's finances.</p>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ GM Note: Vehicle Debt Spiral</div>
+  <p>A character who takes out a large loan for a vehicle beyond their means enters a <strong>debt spiral</strong>. Each month, the payment competes with rent, food, and other necessities. Characters with vehicle payments exceeding 10% of their monthly income should gain <strong>+1 SP per month</strong> from financial stress until the debt is resolved.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 2 — CARS AND AUTOMOBILES
+     ============================================================ -->
+<h2>🚗 2. Cars &amp; Automobiles</h2>
+
+<h3>Sedans &amp; Compacts</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase (New)</th><th>Purchase (Used 3yr)</th><th>MPG</th><th>Insurance/yr</th><th>Maint/yr</th><th>Parking</th></tr></thead>
+<tbody>
+<tr><td>🚙 Economy</td><td>Corolla, Civic</td><td>$15,000–25,000</td><td>$8,000–15,000</td><td>30–40</td><td>$800–1,200</td><td>$400–600</td><td>Standard</td></tr>
+<tr><td>🚙 Midsize</td><td>Camry, Accord, Malibu</td><td>$25,000–35,000</td><td>$15,000–25,000</td><td>28–35</td><td>$1,000–1,500</td><td>$500–700</td><td>Standard</td></tr>
+<tr><td>🏎️ Luxury</td><td>BMW 3-series, Merc C-class</td><td>$40,000–60,000+</td><td>$25,000–40,000</td><td>22–30</td><td>$1,500–3,000</td><td>$1,000–2,500</td><td>Standard</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>SUVs &amp; Crossovers</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase (New)</th><th>MPG</th><th>Insurance/yr</th><th>Maint/yr</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🚙 Compact SUV</td><td>CR-V, RAV4</td><td>$28,000–38,000</td><td>25–30</td><td>$1,000–1,400</td><td>$500–700</td><td>Good for families, AWD common</td></tr>
+<tr><td>🚙 Full-size SUV</td><td>Expedition, Tahoe</td><td>$50,000–75,000+</td><td>15–20</td><td>$1,500–2,500</td><td>$800–1,500</td><td>High running costs, tow capacity</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Trucks</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase (New)</th><th>MPG</th><th>Insurance/yr</th><th>Maint/yr</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🛻 Pickup</td><td>F-150, Silverado</td><td>$35,000–60,000+</td><td>18–25</td><td>$1,000–1,800</td><td>$600–1,000</td><td>Work vehicle potential, towing</td></tr>
+<tr><td>🛻 Heavy-duty</td><td>F-250, 2500HD</td><td>$50,000–80,000+</td><td>12–18</td><td>$1,200–2,000</td><td>$800–1,500</td><td>Commercial use, CDL may be needed</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Vans &amp; Minivans</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase (New)</th><th>MPG</th><th>Insurance/yr</th><th>Maint/yr</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🚐 Family minivan</td><td>Sienna, Odyssey</td><td>$32,000–42,000</td><td>22–28</td><td>$1,000–1,500</td><td>$500–800</td><td>7–8 passengers, family-friendly</td></tr>
+<tr><td>🚐 Cargo van</td><td>Sprint, Transit</td><td>$35,000–50,000</td><td>15–22</td><td>$1,200–2,000</td><td>$600–1,000</td><td>Commercial potential, delivery work</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Electric Vehicles (EVs)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase (New)</th><th>Range</th><th>Energy Cost</th><th>Insurance/yr</th><th>Maint/yr</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>⚡ EV Sedan</td><td>Tesla Model 3, Leaf</td><td>$35,000–55,000</td><td>200–350 mi</td><td>~$0.04/mi</td><td>$1,200–2,000</td><td>$300–500</td><td>40% less maintenance, tax credits possible</td></tr>
+<tr><td>⚡ EV SUV</td><td>Tesla Model Y, Mach-E</td><td>$45,000–70,000</td><td>220–300 mi</td><td>~$0.05/mi</td><td>$1,400–2,200</td><td>$350–550</td><td>Charging infrastructure dependency</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 EV Mechanics</div>
+  <p>EV owners save on fuel (~$0.04/mile vs. ~$0.12/mile for gas) and maintenance (40% less — no oil changes, fewer moving parts). However, <strong>charging infrastructure</strong> is a dependency: characters living in apartments without charging access must rely on public stations, adding 20–45 minutes per charge. Long road trips require careful planning (<span class="dice">INT + General Knowledge TN 35</span> to plan charging stops). Range anxiety in winter: EV range drops <strong>20–40%</strong> in cold weather.</p>
+</div>
+
+<h3>Sports Cars</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase (New)</th><th>MPG</th><th>Insurance/yr</th><th>Maint/yr</th><th>Social Effect</th></tr></thead>
+<tbody>
+<tr><td>🏎️ Sports</td><td>Mustang, Camaro</td><td>$35,000–55,000</td><td>18–26</td><td>$1,800–3,500</td><td>$800–1,500</td><td>+1 PRC in youth/car cultures</td></tr>
+<tr><td>🏎️ Supercar</td><td>Porsche 911, M4</td><td>$80,000–150,000+</td><td>16–24</td><td>$3,000–6,000</td><td>$1,500–3,000</td><td>+2 PRC in status circles</td></tr>
+<tr><td>🏎️ Hypercar</td><td>Lamborghini, Ferrari</td><td>$200,000–500,000+</td><td>12–18</td><td>$5,000–10,000+</td><td>$3,000–8,000</td><td>+3 PRC; extreme financial drain</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Buying a First Car</div>
+  <p><strong>Maya, age 18,</strong> just got her license. She needs a car to get to her part-time job at a grocery store 8 miles away. Her parents help her save $6,000 for a down payment on a 2019 Honda Civic priced at $14,000. She takes out an $8,000 auto loan at 6.5% APR for 5 years.</p>
+  <p><strong>Monthly payment:</strong> ~$155/month<br>
+  <strong>Monthly insurance:</strong> ~$120/month (young driver surcharge)<br>
+  <strong>Monthly fuel (800 mi/mo @ 35 mpg @ $3.50/gal):</strong> ~$80/month<br>
+  <strong>Total monthly car cost:</strong> <strong>$355/month</strong></p>
+  <p>Her monthly income is $1,800. The car costs <strong>19.7% of her income</strong> — above the recommended 10% threshold. The GM may apply <strong>+1 SP per month</strong> from financial stress, though Maya's family support (social safety net) may offset this.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 3 — MOTORCYCLES
+     ============================================================ -->
+<h2>🏍️ 3. Motorcycles</h2>
+
+<p>Motorcycles offer freedom, fuel efficiency, and social cachet — at the cost of dramatically elevated risk. Per the NHTSA, motorcyclists are <strong>28 times more likely to die per vehicle mile traveled</strong> than passenger car occupants.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Examples</th><th>Purchase</th><th>MPG</th><th>Insurance/yr</th><th>Maint/yr</th><th>Gear Cost</th><th>Injury Risk</th></tr></thead>
+<tbody>
+<tr><td>🏍️ Sport bike</td><td>CBR600R, ZX-6R</td><td>$8,000–18,000</td><td>40–60</td><td>$1,500–3,000</td><td>$400–800</td><td>$800–2,000</td><td>🔴 Very High</td></tr>
+<tr><td>🏍️ Cruiser</td><td>Harley Street 750</td><td>$10,000–25,000</td><td>35–50</td><td>$1,200–2,500</td><td>$500–1,000</td><td>$500–1,500</td><td>🟠 High</td></tr>
+<tr><td>🏍️ Dirt bike</td><td>Yamaha YZF250</td><td>$4,000–12,000</td><td>50–70</td><td>$600–1,500</td><td>$300–600</td><td>$600–1,500</td><td>🟠 High</td></tr>
+<tr><td>🛵 Scooter</td><td>Vespa, Honda PCX</td><td>$1,500–4,000</td><td>60–100</td><td>$400–800</td><td>$200–400</td><td>$200–600</td><td>🟡 Moderate</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Motorcycle Risk Modifier</div>
+  <p>All motorcycle accident severity checks are <strong>+2 to the severity roll</strong> compared to cars. Additionally, protective gear reduces injury severity by <strong>1 stage</strong> per gear item worn (helmet, jacket with armor, gloves, boots = up to −4 stages). Riding without a helmet increases injury severity by <strong>+2 stages</strong> and may result in additional fines.</p>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Motorcycle License</div>
+  <p>In the US, operating a motorcycle requires a <strong>Class M endorsement</strong> (or separate Class M license) on top of a standard driver's license. This requires passing a written test and a skills test on a motorcycle. Some states allow a motorcycle safety course to waive the skills test. <strong>Cost:</strong> $50–200 for the course. Characters without proper licensing who ride a motorcycle risk <strong>immediate impound and fines of $200–1,000</strong>.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Motorcycle Accident</div>
+  <p><strong>Carlos, DXT 14 (+2), Driving skill 2 (+10),</strong> rides his 600cc sport bike to work through downtown traffic. A car runs a red light at an intersection.</p>
+  <p><strong>Evasive maneuver check:</strong> <span class="dice">2d10 + 2 + 10 = 2d10 + 12</span> vs TN 55. Carlos rolls <strong>12 + 8 = 20</strong> — total <strong>32</strong>, well below TN 55. <strong>FAILURE.</strong></p>
+  <p>Because his total (32) is more than 20 below the TN, this is a <strong>bad failure</strong> — an accident occurs. The GM rolls on the severity table: <span class="dice">d10</span> = 6 → <strong>severe crash</strong>. Motorcycle penalty: +2 → severity becomes 8 → <strong>critical crash</strong>. Carlos is wearing a helmet and armored jacket (−2 stages), bringing it back to severity 6 → <strong>severe crash</strong>.</p>
+  <p>Carlos suffers <strong>moderate injuries</strong> (broken collarbone, road rash, concussion). Vehicle is <strong>Broken Down</strong>. Medical costs: $8,000–15,000. Insurance pays some. Carlos gains <strong>+5 SP</strong> from trauma and pain. Recovery: 4–8 weeks off work.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 4 — SMALL VEHICLES & ATVS
+     ============================================================ -->
+<h2>🏎️ 4. Small Vehicles &amp; ATVs</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Purchase</th><th>Top Speed</th><th>Legal Road Use</th><th>Injury Risk</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🏁 ATV / Quad</td><td>$2,000–8,000</td><td>40–75 mph</td><td>❌ Off-road only</td><td>🔴 Very High</td><td>High rollover risk; helmet required in most states</td></tr>
+<tr><td>🏁 UTV (Side-by-side)</td><td>$8,000–20,000</td><td>60–80 mph</td><td>⚠️ Restricted roads</td><td>🟠 High</td><td>Enclosed, seatbelts, much safer than ATV</td></tr>
+<tr><td>🏁 Go-kart</td><td>$500–5,000</td><td>20–45 mph</td><td>❌ Recreational only</td><td>🟡 Moderate</td><td>Track use only; no license required</td></tr>
+<tr><td>🏁 3-Wheel Motorcycle</td><td>$5,000–15,000</td><td>80–100 mph</td><td>✅ Road legal</td><td>🟡 Moderate</td><td>More stable than 2-wheel; Class M may not be needed</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 ATV/UTV Driving Checks</div>
+  <p>Off-road driving on an ATV or UTV uses the same <span class="dice">DXT + Driving</span> mechanic, with the following TNs:</p>
+  <ul>
+    <li><strong>Flat dirt trail:</strong> TN 30</li>
+    <li><strong>Rough trail / rocks:</strong> TN 40–50</li>
+    <li><strong>Mud / swamp:</strong> TN 50–60</li>
+    <li><strong>Steep incline/decline:</strong> TN 45–55</li>
+    <li><strong>Water crossing:</strong> TN 40–50</li>
+  </ul>
+  <p>Failure on ATV checks has a <strong>+1 severity</strong> penalty due to rollover risk. UTVs have no severity penalty due to rollover cages and seatbelts.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 5 — BICYCLES & E-BIKES
+     ============================================================ -->
+<h2>🚲 5. Bicycles &amp; E-Bikes</h2>
+
+<h3>Types and Costs</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Purchase</th><th>Top Speed</th><th>Range</th><th>Maint/yr</th><th>Special Notes</th></tr></thead>
+<tbody>
+<tr><td>🚲 Standard bicycle</td><td>$100–2,000</td><td>12–20 mph</td><td>Unlimited (fitness-limited)</td><td>$50–200</td><td>Exercise bonus: +1 VIG modifier after 6+ months regular use</td></tr>
+<tr><td>🚲 E-bike Class 1</td><td>$500–4,000</td><td>20 mph</td><td>20–60 miles</td><td>$100–300</td><td>Pedal assist only; counts as regular bike in most jurisdictions</td></tr>
+<tr><td>🚲 E-bike Class 2</td><td>$500–4,000</td><td>20 mph</td><td>15–50 miles</td><td>$100–300</td><td>Throttle mode; some jurisdictions restrict to roads only</td></tr>
+<tr><td>🚲 E-bike Class 3</td><td>$800–4,000</td><td>28 mph</td><td>15–40 miles</td><td>$100–300</td><td>Higher speed; helmet required in many places; age 16+ minimum</td></tr>
+<tr><td>🚲 Cargo bicycle</td><td>$1,500–5,000</td><td>10–18 mph</td><td>Unlimited</td><td>$100–250</td><td>Can carry 65–200 lbs; replaces car for urban errands</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 E-Bike Battery</div>
+  <p>E-bike batteries degrade over time. Expect to replace the battery every <strong>2–4 years</strong> at a cost of <strong>$200–500</strong>. Characters should budget for this replacement cost when purchasing an e-bike. A depleted battery during a commute forces the rider to pedal the extra weight (15–30 lbs), adding <strong>+5 to all DXT checks</strong> for the ride.</p>
+</div>
+
+<h3>Bicycle Riding Checks</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Bicycle Checks</div>
+  <ul>
+    <li><strong>Normal riding (bike lane, clear road):</strong> TN 25</li>
+    <li><strong>Riding in traffic (no bike lane):</strong> TN 35–45</li>
+    <li><strong>Rain/wet roads:</strong> +5 to all TNs</li>
+    <li><strong>Steep hills (standard bike):</strong> TN 30–40; stamina check <span class="dice">VIG TN 30</span> every 5 miles uphill</li>
+    <li><strong>Bicycle repair (flat tire):</strong> <span class="dice">DXT + General Knowledge TN 30</span>; 15–30 minutes</li>
+    <li><strong>Balance check (uneven terrain):</strong> <span class="dice">DXT TN 30</span></li>
+  </ul>
+  <p>Failure on bicycle checks in traffic can result in a collision with a vehicle — use the <strong>Accident Severity Table</strong> below with a <strong>−1 modifier</strong> (bicycles are less dangerous to others but more vulnerable).</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Bicycle Commute</div>
+  <p><strong>Sarah, DXT 16 (+3),</strong> rides her Class 3 e-bike 6 miles each way to work. On a rainy morning, a delivery truck pulls out in front of her.</p>
+  <p><strong>Evasive maneuver:</strong> <span class="dice">2d10 + 3 vs TN 50</span> (rain adds +5, so TN becomes 55). Sarah rolls <strong>14 + 9 = 23</strong>, total <strong>26</strong>. <strong>FAILURE</strong> by 29 points — very bad.</p>
+  <p>Accident severity: <span class="dice">d10</span> = 4 → moderate collision. Sarah is on a bike, so she takes <strong>more</strong> injury than a car driver. The GM rules she crashes into the curb, breaking her wrist and bruising her ribs. <strong>Vehicle damage:</strong> bent wheel, cracked frame. Repair cost: $150–400. <strong>Medical:</strong> $500–2,000. Sarah gains <strong>+3 SP</strong> from pain and frustration.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 6 — PERSONAL ELECTRIC VEHICLES
+     ============================================================ -->
+<h2>⚡ 6. Personal Electric Vehicles (Micro-Mobility)</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Rental Cost</th><th>Purchase</th><th>Top Speed</th><th>Range</th><th>Legal Status</th><th>Risk Level</th></tr></thead>
+<tbody>
+<tr><td>🛴 E-scooter (shared)</td><td>$1–3/ride</td><td>N/A</td><td>15 mph</td><td>Per ride</td><td>⚠️ Varies by city</td><td>🟡 Moderate</td></tr>
+<tr><td>🛴 E-scooter (personal)</td><td>—</td><td>$300–800</td><td>15–20 mph</td><td>10–25 miles</td><td>⚠️ Varies by city</td><td>🟡 Moderate</td></tr>
+<tr><td>🛹 Electric skateboard</td><td>—</td><td>$100–500</td><td>10–18 mph</td><td>5–15 miles</td><td>❌ Sidewalk prohibited in most places</td><td>🟠 High</td></tr>
+<tr><td>🛼 Segway / transporter</td><td>—</td><td>$1,000–3,000</td><td>12 mph</td><td>10–18 miles</td><td>⚠️ Sidewalk only in many places</td><td>🟡 Moderate</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Micro-Mobility Checks</div>
+  <ul>
+    <li><strong>Normal riding (smooth pavement):</strong> TN 25</li>
+    <li><strong>Uneven pavement / cracks:</strong> TN 35</li>
+    <li><strong>Avoiding pedestrian/traffic:</strong> TN 40</li>
+    <li><strong>Balance check (sudden stop, obstacle):</strong> <span class="dice">DXT TN 35</span></li>
+  </ul>
+  <p>Failure on micro-mobility checks typically results in a <strong>fall</strong>. Falling from an e-scooter or skateboard: <span class="dice">VIG TN 40</span> to avoid injury. Failure = sprain, bruise, or broken bone depending on severity of fall.</p>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Legal Gray Area</div>
+  <p>Micro-mobility devices exist in a legal gray area in many jurisdictions. Characters using them on sidewalks may face <strong>fines of $25–100</strong>. Using them on roads without proper safety gear (helmet, lights) can result in higher penalties. The GM should research local laws for the campaign setting.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 7 — WINTER / SNOW VEHICLES
+     ============================================================ -->
+<h2>❄️ 7. Winter &amp; Snow Vehicles</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Item</th><th>Cost</th><th>Usage</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🛷 Snowmobile</td><td>$5,000–15,000</td><td>Seasonal (Nov–Apr)</td><td>Fuel costs high ($200–400/season); storage $100–300/yr</td></tr>
+<tr><td>🔧 Snow tires (set of 4)</td><td>$300–800</td><td>Required in some regions</td><td>Mounting/dismounting: $50–150 per swap</td></tr>
+<tr><td>🔧 Tire chains</td><td>$50–200</td><td>Emergency snow/ice</td><td>Must stop to install; <span class="dice">DXT TN 30</span> to install</td></tr>
+<tr><td>🔧 4WD / AWD upgrade</td><td>Built into purchase</td><td>Year-round benefit</td><td>Higher purchase cost, better winter performance</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Winter Driving Penalties</div>
+  <p>When driving in <strong>snow or ice conditions</strong>, all driving checks suffer a <strong>+5 TN penalty</strong>. Vehicles with proper snow tires or 4WD/AWD receive a <strong>−5 bonus</strong>, effectively canceling the penalty. Without adequate equipment, winter driving TNs are as follows:</p>
+  <ul>
+    <li><strong>Light snow, plowed roads:</strong> TN +5</li>
+    <li><strong>Heavy snow, partially plowed:</strong> TN +10</li>
+    <li><strong>Black ice (invisible):</strong> TN +10; surprise — no warning before check</li>
+    <li><strong>Blizzard conditions:</strong> TN +15; <strong>driving is strongly discouraged</strong></li>
+  </ul>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Winter Commute Disaster</div>
+  <p><strong>James, DXT 12 (+1), Driving skill 1 (+5),</strong> drives a 2008 sedan with all-season tires (no snow tires, no AWD) during an early-morning snowstorm. He's running late and doesn't want to deal with the extra time.</p>
+  <p><strong>Winter driving check:</strong> <span class="dice">2d10 + 1 + 5 = 2d10 + 6</span> vs TN 35 + 5 (snow) = <strong>TN 40</strong>. James rolls <strong>7 + 6 = 13</strong>, total <strong>19</strong>. <strong>CATASTROPHIC FAILURE</strong> — 21 points below TN.</p>
+  <p>Accident severity: <span class="dice">d10</span> = 5 → severe crash. James slides off the road into a snowbank, wrapping around a telephone pole. Vehicle goes to <strong>Needs Repair</strong> (bent bumper, cracked headlight, $2,000 repair). James suffers a <strong>whiplash injury</strong> (−2 VIG for 2 weeks, $500–1,500 medical). Insurance claim filed. James gains <strong>+4 SP</strong> from shock and pain.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 8 — WATER & AMPHIBIOUS VEHICLES
+     ============================================================ -->
+<h2>🚤 8. Water &amp; Amphibious Vehicles</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Purchase</th><th>Speed</th><th>Capacity</th><th>Annual Cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🛶 Kayak / Canoe</td><td>$100–1,500</td><td>2–5 mph</td><td>1–2 people</td><td>$0–50</td><td>Exercise bonus (+1 VIG); weather-dependent</td></tr>
+<tr><td>🏄 Paddleboard (SUP)</td><td>$200–800</td><td>1–3 mph</td><td>1 person</td><td>$0–50</td><td>Balance check required</td></tr>
+<tr><td>🚤 Jet ski / PWC</td><td>$5,000–12,000</td><td>40–50 mph</td><td>1–3 people</td><td>$500–1,500</td><td>High fun; high injury risk; seasonal</td></tr>
+<tr><td>⛵ Small boat (15–25 ft)</td><td>$5,000–50,000+</td><td>20–40 mph</td><td>4–10 people</td><td>$1,500–8,000+</td><td>Dock fees, insurance, fuel, winterization</td></tr>
+<tr><td>🚤 Amphibious vehicle</td><td>$50,000–500,000+</td><td>30 mph (land), 5 mph (water)</td><td>2–6 people</td><td>$2,000–10,000+</td><td>Rare novelty; social bonus; dual-use</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Watercraft Checks</div>
+  <ul>
+    <li><strong>Paddleboard balance:</strong> <span class="dice">DXT TN 35</span> to stay upright; TN 45 in choppy water</li>
+    <li><strong>Boat navigation (calm water):</strong> <span class="dice">DXT + Driving TN 30</span></li>
+    <li><strong>Boat navigation (rough water / waves):</strong> <span class="dice">DXT + Driving TN 45–55</span></li>
+    <li><strong>Jet ski stunts:</strong> <span class="dice">DXT + Driving TN 50–65</span>; failure = wipeout</li>
+    <li><strong>Swimming emergency (falling overboard):</strong> <span class="dice">VIG + Swimming TN 35</span> to reach safety</li>
+  </ul>
+  <p>Water accidents carry the additional risk of <strong>drowning</strong>. A character who falls overboard and fails their swimming check must make a <span class="dice">VIG TN 50</span> survival check every <strong>2 minutes</strong> until rescued. Each failure deals <strong>2 SP</strong> and moves the character closer to unconsciousness.</p>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Boat Ownership Costs</div>
+  <p>Boat ownership is notoriously expensive beyond the purchase price. A $20,000 boat may cost an additional <strong>$3,000–6,000/year</strong> in dock fees ($500–5,000), insurance ($500–2,000), fuel ($500–2,000), maintenance ($500–1,500), and winterization ($200–500). The GM should treat boats as a <strong>significant financial commitment</strong>.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 9 — DRIVING MECHANICS
+     ============================================================ -->
+<h2>🎯 9. Driving Mechanics</h2>
+
+<h3>Driving Check Reference</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Scenario</th><th>TN</th><th>Attribute</th><th>On Failure</th><th>On Critical Failure</th></tr></thead>
+<tbody>
+<tr><td>🚗 Routine driving (commuting)</td><td>25–35</td><td>DXT + Driving</td><td>Minor incident (near miss, road rage)</td><td>Accident</td></tr>
+<tr><td>🅿️ Parallel parking</td><td>40–50</td><td>DXT + Driving</td><td>Scratched car, multiple attempts</td><td>Hit a pole/car</td></tr>
+<tr><td>💨 Evasive maneuver</td><td>50–65</td><td>DXT + Driving</td><td>Collision (minor-moderate)</td><td>Severe accident</td></tr>
+<tr><td>🏔️ Off-road driving</td><td>45–60</td><td>DXT + Driving</td><td>Stuck, minor vehicle damage</td><td>Vehicle Broken Down</td></tr>
+<tr><td>🏎️ High-speed driving</td><td>40–55</td><td>DXT + Driving</td><td>Loss of control, near crash</td><td>Severe crash</td></tr>
+<tr><td>❄️ Winter/snow driving</td><td>+5 to all TNs</td><td>DXT + Driving</td><td>Sliding, minor collision</td><td>Major accident</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Driving Proficiency</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Level</th><th>Description</th><th>TN Modifier</th><th>Insurance Effect</th><th>How to Achieve</th></tr></thead>
+<tbody>
+<tr><td>🟢 Novice</td><td>New driver, &lt;1 year experience</td><td><strong>+5</strong></td><td>Surcharge: +25–50% premium</td><td>Just got licensed</td></tr>
+<tr><td>🔵 Competent</td><td>Standard licensed driver</td><td>None</td><td>Standard rates</td><td>1+ years, no violations</td></tr>
+<tr><td>🟡 Experienced</td><td>5+ years clean record</td><td><strong>−5</strong></td><td>Discount: −10–15% premium</td><td>Clean record, 5+ years</td></tr>
+<tr><td>🟠 Expert</td><td>10+ years, defensive driving</td><td><strong>−10</strong></td><td>Discount: −15–25% premium</td><td>Clean record, defensive driving course</td></tr>
+<tr><td>🔴 Master</td><td>Professional, racing, or military</td><td><strong>−15</strong></td><td>Best rates (or racing insurance)</td><td>CDL, racing license, military driver</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>License Types</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 US Driver's License Classes</div>
+  <ul>
+    <li><strong>Class D:</strong> Standard passenger vehicle license. Covers cars, SUVs, small trucks.</li>
+    <li><strong>Class M:</strong> Motorcycle endorsement or separate license. Requires motorcycle-specific written and skills test.</li>
+    <li><strong>Class B / Class C (CDL):</strong> Commercial Driver's License. Required for trucks over 26,000 lbs, buses, hazardous materials transport.</li>
+    <li><strong>Restrictions:</strong> Night driving restrictions (teen drivers), corrective lenses, automatic-only, etc.</li>
+  </ul>
+  <p><strong>International notes:</strong> The UK uses a theory test + practical test system. The EU has a standardized driving license format. Japan has one of the strictest testing systems in the world, with a <strong>~50% first-attempt failure rate</strong> at driving schools.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Parallel Parking Under Pressure</div>
+  <p><strong>David, DXT 13 (+1), Driving skill 2 (+10),</strong> needs to parallel park his midsize sedan in a tight downtown spot while his date watches from the passenger seat. Social pressure adds to the difficulty.</p>
+  <p><strong>Parallel parking check:</strong> <span class="dice">2d10 + 1 + 10 = 2d10 + 11</span> vs TN 45 (tight space). David rolls <strong>11 + 7 = 18</strong>, total <strong>29</strong>. <strong>FAILURE</strong> — 16 below TN.</p>
+  <p>David scrapes the curb on his right side, denting his wheel well. The damage is cosmetic — <strong>$150–300 repair</strong> — but his date notices the struggle. David's social standing in this interaction takes a hit: <strong>−1 PRC</strong> for the scene. He gains <strong>+1 SP</strong> from embarrassment.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 10 — TRAFFIC VIOLATIONS & LEGAL ISSUES
+     ============================================================ -->
+<h2>⚖️ 10. Traffic Violations &amp; Legal Issues</h2>
+
+<h3>Common Violations</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Violation</th><th>Typical Fine</th><th>Points</th><th>Insurance Impact</th><th>Other Consequences</th></tr></thead>
+<tbody>
+<tr><td>🚦 Speeding (1–10 over)</td><td>$50–150</td><td>1–2</td><td>None or +5%</td><td>Warning in some states for first offense</td></tr>
+<tr><td>🚦 Speeding (10+ over)</td><td>$150–500</td><td>3–4</td><td>+15–25%</td><td>Court appearance possible</td></tr>
+<tr><td>🚦 Running red light</td><td>$100–300</td><td>2–3</td><td>+10–15%</td><td>Camera ticket in some cities</td></tr>
+<tr><td>🚦 Reckless driving</td><td>$500–2,000</td><td>4–6</td><td>+25–50%</td><td>Possible jail (1–30 days); license review</td></tr>
+<tr><td>🚦 DUI/DWI</td><td>$500–5,000+</td><td>4–8</td><td>+50–100%+</td><td>License suspension 6mo–5yrs; possible jail</td></tr>
+<tr><td>🚦 Driving without insurance</td><td>$200–5,000</td><td>Varies</td><td>N/A (no coverage)</td><td>License suspension; vehicle impound</td></tr>
+<tr><td>🚦 Hit and run</td><td>$500–10,000+</td><td>4–8</td><td>+50–100%</td><td>Felony charge possible; jail time</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ License Suspension Thresholds</div>
+  <p>Most US states suspend a driver's license after <strong>6–12 points</strong> within 12–24 months. This can mean <strong>90 days to 1 year</strong> without legal driving ability — devastating for characters who need to drive for work. The GM should track accumulated points and enforce suspension when thresholds are reached.</p>
+</div>
+
+<h3>DUI/DWI Detailed Mechanics</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>BAC Level</th><th>Classification</th><th>Penalties (1st Offense)</th><th>SP Impact</th></tr></thead>
+<tbody>
+<tr><td>🔵 0.08–0.15</td><td>Standard DUI</td><td>Misdemeanor; $500–2,000 fine; 6mo–1yr license suspension; 2–6mo jail or probation</td><td>+3–5 SP</td></tr>
+<tr><td>🟠 0.15–0.20</td><td>Aggravated DUI</td><td>Enhanced misdemeanor; $1,000–5,000 fine; 1–3yr suspension; 30d–1yr jail</td><td>+5–8 SP</td></tr>
+<tr><td>🔴 0.20+</td><td>Extreme DUI</td><td>Felony possible; $2,000–10,000 fine; 2–5yr suspension; 1–5yr prison</td><td>+8–12 SP</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 DUI Encounter Sequence</div>
+  <p>When a character is pulled over while intoxicated, the following sequence applies:</p>
+  <ol>
+    <li><strong>Field Sobriety Test:</strong> <span class="dice">DXT + VIG TN 55</span> to pass. Failure → arrested.</li>
+    <li><strong>Breathalyzer:</strong> If arrested, BAC is measured objectively. No roll — the number is the number.</li>
+    <li><strong>Arrest &amp; Booking:</strong> License revoked on the spot. Possible jail time (hours to days).</li>
+    <li><strong>Court Date:</strong> 30–90 days later. Legal defense costs: <strong>$500–5,000+</strong> depending on attorney quality.</li>
+    <li><strong>Sentencing:</strong> Fine, license suspension, possible jail, ignition interlock device (<strong>$100/month</strong> for 6–24 months).</li>
+    <li><strong>Long-term effects:</strong> Insurance increases 50–100%+ for 3–5 years. Employment consequences. Family strain. Social stigma.</li>
+  </ol>
+  <p>Repeat offenses escalate <strong>dramatically</strong>. A third DUI within 10 years is a <strong>felony in all 50 states</strong>, with prison sentences of 1–10 years.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: DUI Night</div>
+  <p><strong>Tom, age 32,</strong> has had 5 drinks at a bar and decides to drive home. He's driving erratically and gets pulled over.</p>
+  <p><strong>Field Sobriety Test:</strong> Tom's DXT is 10 (0) and VIG is 12 (+1). <span class="dice">2d10 + 0 + 1 = 2d10 + 1</span> vs TN 55. He rolls <strong>8 + 5 = 13</strong>, total <strong>14</strong>. <strong>CATASTROPHIC FAILURE</strong> — 41 below TN. He stumbles, can't walk a straight line, fails the one-leg stand.</p>
+  <p><strong>Breathalyzer:</strong> BAC reads <strong>0.17</strong> — Aggravated DUI. Tom is arrested, booked, and spends the night in jail.</p>
+  <p><strong>Consequences (3 months later):</strong> $3,500 fine, 18-month license suspension, 60 days in jail (served on weekends), ignition interlock for 12 months ($1,200). Legal fees: $2,500. Insurance increases 80% for 4 years. Tom's employer (delivery driver) fires him. His wife files for separation. Tom gains <strong>+10 SP</strong> from the cumulative trauma of losing his job, family, and freedom.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 11 — ACCIDENTS & COLLISIONS
+     ============================================================ -->
+<h2>💥 11. Accidents &amp; Collisions</h2>
+
+<h3>When Accidents Happen</h3>
+<p>An accident occurs when a driving check results in a <strong>critical failure</strong> (roll <span class="dice">≥ 96</span> on 2d10 before modifiers) or when the total result is <strong>more than 20 points below the TN</strong>. The GM determines the exact nature and severity of the accident.</p>
+
+<h3>Accident Severity Table</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>d10 Roll</th><th>Severity</th><th>Vehicle Damage</th><th>Occupant Injury</th><th>Time to Resolve</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>😅 Near miss</td><td>None</td><td>None (shaken)</td><td>Immediate; +1 SP from adrenaline</td></tr>
+<tr><td>3</td><td>🔧 Fender bender</td><td>Minor (Perfect → Minor Issues)</td><td>None or minor bruising</td><td>30 min–2 hrs (insurance exchange, repair scheduling)</td></tr>
+<tr><td>4–5</td><td>💥 Moderate collision</td><td>Moderate (Minor Issues → Needs Repair)</td><td>Whiplash, bruises, cuts</td><td>1–6 hrs (police, towing, insurance)</td></tr>
+<tr><td>6–7</td><td>🔥 Severe crash</td><td>Severe (Needs Repair → Broken Down)</td><td>Broken bones, internal injuries</td><td>6–24 hrs (hospital, police report, insurance investigation)</td></tr>
+<tr><td>8</td><td>🔄 Rollover / multi-car</td><td>Extreme (Broken Down → Totaled likely)</td><td>Severe injuries, possible paralysis</td><td>1–3 days (ICU, legal proceedings, insurance)</td></tr>
+<tr><td>9–10</td><td>💀 Fatality</td><td>Totaled / destroyed</td><td>Death or near-death</td><td>Days to weeks (funeral, legal, insurance, trauma)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Accident Resolution Sequence</div>
+  <ol>
+    <li><strong>Roll severity:</strong> <span class="dice">d10</span> on the table above. Modify by vehicle type (motorcycle +2, large truck/SUV −1).</li>
+    <li><strong>Apply safety features:</strong> Seatbelts (−1 severity), airbags (−1 severity), ABS (−1 on icy roads). Each safety feature reduces severity by 1 stage, minimum severity 1.</li>
+    <li><strong>Vehicle damage:</strong> Move vehicle down the Condition Track per the table. Estimate repair costs.</li>
+    <li><strong>Occupant injury:</strong> Each occupant makes a <span class="dice">VIG TN 40</span> check to resist injury. Failure = injury per severity level. Critical failure = double injury severity.</li>
+    <li><strong>Stress:</strong> All occupants gain SP equal to severity roll value (minimum +1 SP even for near misses).</li>
+    <li><strong>Aftermath:</strong> Insurance claims, police reports, possible legal charges if at fault.</li>
+  </ol>
+</div>
+
+<h3>Common Breakdown Events</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Breakdown</th><th>Repair Cost</th><th>Time to Fix</th><th>Condition Impact</th><th>Danger Level</th></tr></thead>
+<tbody>
+<tr><td>🛞 Flat tire</td><td>$0–200</td><td>15–60 min</td><td>None if replaced</td><td>🟢 Low (if pulled over)</td></tr>
+<tr><td>🔋 Dead battery</td><td>$0–200</td><td>5–30 min</td><td>None if jump-started</td><td>🟢 Low</td></tr>
+<tr><td>🌡️ Overheating</td><td>$200–1,500</td><td>Tow to mechanic</td><td>Minor Issues → Needs Repair</td><td>🟡 Moderate</td></tr>
+<tr><td>🛑 Brake failure</td><td>$300–800</td><td>Immediate tow</td><td>Needs Repair → Broken Down</td><td>🔴 Very High</td></tr>
+<tr><td>⚙️ Transmission failure</td><td>$1,500–5,000</td><td>Days to weeks</td><td>Broken Down</td><td>🟡 Moderate (immobilized)</td></tr>
+<tr><td>💡 Check engine light</td><td>$0–3,000+</td><td>Varies wildly</td><td>None → Needs Repair</td><td>🟢 Low to 🔴 High</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Highway Accident</div>
+  <p><strong>Ana, DXT 15 (+2), Driving skill 3 (+15),</strong> is driving on a highway at 75 mph with her two children in the back seat. A deer jumps into the road ahead.</p>
+  <p><strong>Evasive maneuver:</strong> <span class="dice">2d10 + 2 + 15 = 2d10 + 17</span> vs TN 55. Ana rolls <strong>9 + 8 = 17</strong>, total <strong>34</strong>. <strong>FAILURE</strong> by 21 — bad failure, accident occurs.</p>
+  <p><strong>Severity:</strong> <span class="dice">d10</span> = 4 → moderate collision. Ana swerves, hits the deer, and clips the guardrail. All passengers wearing seatbelts (−1 severity) → effective severity 3 → <strong>fender bender</strong>.</p>
+  <p><strong>Vehicle damage:</strong> Front bumper and headlight damaged. Car moves from Perfect → Minor Issues. Repair: $800–1,500. Insurance covers most.</p>
+  <p><strong>Injuries:</strong> Ana and children make <span class="dice">VIG TN 40</span>. Ana (VIG 14, +2) rolls 16 → passes. Her 8-year-old (VIG 10, +0) rolls 14 → passes. Everyone shaken but physically okay.</p>
+  <p><strong>Stress:</strong> Everyone gains <strong>+3 SP</strong>. Ana's children are crying. She has to call roadside assistance, wait for the tow truck, and explain to her husband what happened. <strong>+2 additional SP</strong> from the chaotic aftermath. Total: <strong>+5 SP for Ana</strong> on this incident alone.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 12 — TOTAL COST OF OWNERSHIP
+     ============================================================ -->
+<h2>💰 12. Total Cost of Ownership</h2>
+
+<p>The table below shows estimated <strong>5-year total cost of ownership</strong> for common vehicle types, including purchase (or lease), insurance, fuel/energy, maintenance, registration, and depreciation.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Vehicle Type</th><th>Purchase</th><th>5yr Insurance</th><th>5yr Fuel</th><th>5yr Maint</th><th>5yr Reg/Tax</th><th>Depreciation</th><th><strong>5yr TCO</strong></th></tr></thead>
+<tbody>
+<tr><td>🚙 Economy sedan</td><td>$18,000</td><td>$4,500</td><td>$4,500</td><td>$2,500</td><td>$1,000</td><td>$8,000</td><td><strong>$28,500–45,000</strong></td></tr>
+<tr><td>🏎️ Luxury sedan</td><td>$50,000</td><td>$9,000</td><td>$6,000</td><td>$7,500</td><td>$1,500</td><td>$20,000</td><td><strong>$70,000–120,000</strong></td></tr>
+<tr><td>🏍️ Motorcycle</td><td>$10,000</td><td>$7,500</td><td>$1,500</td><td>$2,000</td><td>$500</td><td>$3,000</td><td><strong>$15,000–25,000</strong></td></tr>
+<tr><td>⚡ EV sedan</td><td>$40,000</td><td>$6,000</td><td>$1,800</td><td>$1,500</td><td>$1,200</td><td>$15,000</td><td><strong>$35,000–55,000</strong></td></tr>
+<tr><td>🚲 E-bike</td><td>$1,500</td><td>$0</td><td>$150</td><td>$500</td><td>$0</td><td>$1,000</td><td><strong>$1,500–3,000</strong></td></tr>
+<tr><td>🚲 Bicycle</td><td>$500</td><td>$0</td><td>$0</td><td>$300</td><td>$0</td><td>$400</td><td><strong>$300–800</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Depreciation Curve</h3>
+<p>Vehicles lose value rapidly in the first few years, then more slowly. A typical depreciation curve:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Age</th><th>% of Original Value</th><th>Example ($20,000 car)</th></tr></thead>
+<tbody>
+<tr><td>New (0 mi)</td><td>100%</td><td>$20,000</td></tr>
+<tr><td>1 year</td><td>80%</td><td>$16,000 (−$4,000)</td></tr>
+<tr><td>3 years</td><td>60%</td><td>$12,000 (−$8,000 total)</td></tr>
+<tr><td>5 years</td><td>45%</td><td>$9,000 (−$11,000 total)</td></tr>
+<tr><td>8 years</td><td>30%</td><td>$6,000 (−$14,000 total)</td></tr>
+<tr><td>12+ years</td><td>15–20%</td><td>$3,000–4,000 (−$16,000–17,000 total)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Budget Realism</div>
+  <p>A character's vehicle costs should consume no more than <strong>10–15% of their monthly income</strong> to be sustainable. Characters spending more than 20% on vehicle costs (payment + insurance + fuel + maintenance) are in a <strong>financial danger zone</strong> and should accumulate stress from financial pressure. A $50,000 luxury car payment of $900/month is unaffordable for someone earning $3,000/month — that's 30% of income on the car alone.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 13 — PUBLIC TRANSPORTATION
+     ============================================================ -->
+<h2>🚌 13. Public Transportation</h2>
+
+<p>Not every character needs or wants a personal vehicle. Public transportation is a viable (often superior) option in urban areas, with significant cost savings and zero maintenance responsibility.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Mode</th><th>Cost (Monthly Pass)</th><th>Cost (Per Ride)</th><th>Coverage</th><th>Reliability</th><th>Time Cost</th></tr></thead>
+<tbody>
+<tr><td>🚌 Bus</td><td>$50–150</td><td>$2–3</td><td>City-wide</td><td>🟡 Moderate (traffic-dependent)</td><td>+15–30 min vs driving</td></tr>
+<tr><td>🚇 Subway / Metro</td><td>$70–150</td><td>$2.50–3</td><td>Urban core</td><td>🟢 High (dedicated right-of-way)</td><td>+10–20 min vs driving</td></tr>
+<tr><td>🚂 Commuter rail</td><td>$100–400</td><td>$5–15</td><td>Regional</td><td>🟡 Moderate</td><td>+20–45 min vs driving</td></tr>
+<tr><td>🚕 Ride-share (Uber/Lyft)</td><td>N/A</td><td>$3–15</td><td>On-demand</td><td>🟢 High</td><td>+5–15 min wait</td></tr>
+<tr><td>🚶 Walking</td><td>Free</td><td>Free</td><td>Local only</td><td>🟢 High</td><td>Variable; exercise benefit</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Transit as a Budget Mechanic</div>
+  <p>Characters who rely on public transit save <strong>$300–600/month</strong> compared to owning a car (no payment, insurance, fuel, or maintenance). However, they trade money for <strong>time</strong> — commutes are typically 15–45 minutes longer. In a game where time is a resource, this matters: a character spending 2 hours daily on transit has <strong>10 fewer hours per week</strong> for social, career, or personal activities.</p>
+  <p>Walking provides an <strong>exercise bonus</strong>: characters who walk 20+ minutes each way gain the same <strong>+1 VIG</strong> as regular exercise (see Exercise chapter). However, walking is <strong>weather-dependent</strong> — heavy rain, snow, or extreme heat adds <strong>+1 SP</strong> per bad-weather commute.</p>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Social Encounters on Transit</div>
+  <p>Public transit is a social space. Characters may encounter:</p>
+  <ul>
+    <li><strong>Harassment:</strong> <span class="dice">RES TN 35</span> to ignore/endure without stress. Failure = +1 SP.</li>
+    <li><strong>Conversations:</strong> Chance for social encounters (meetings, dating, networking). <span class="dice">EXP + Social TN 30</span> to strike up a meaningful conversation.</li>
+    <li><strong>Delays/Strikes:</strong> Transit strikes or major delays can strand characters, adding +2 SP and potentially causing them to miss work/appointments.</li>
+  </ul>
+</div>
+
+
+<!-- ============================================================
+     SECTION 14 — SPECIAL DRIVING SCENARIOS
+     ============================================================ -->
+<h2>🗺️ 14. Special Driving Scenarios</h2>
+
+<h3>Road Trips</h3>
+<p>Road trips are a major life event in many campaigns. Planning and execution require multiple checks:</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Road Trip Mechanics</div>
+  <ul>
+    <li><strong>Planning:</strong> <span class="dice">INT + General Knowledge TN 30</span> to plan route, rest stops, and budget. Failure = poor planning, wasted time/money.</li>
+    <li><strong>Per day of driving (4+ hours):</strong> One <span class="dice">DXT + Driving TN 30</span> check for the driving portion. Fatigue from sitting adds <strong>+1 to TN per consecutive day</strong>.</li>
+    <li><strong>Rest stop:</strong> Stopping for 30+ minutes resets fatigue penalty. Skipping rest stops is a common (foolish) player choice.</li>
+    <li><strong>Breakdown risk:</strong> Each day of driving, roll <span class="dice">d20</span>. On a 1, the vehicle has a breakdown event (use the Breakdown Events table). Vehicles in "Needs Repair" condition roll on <span class="dice">d20 ≤ 5</span>.</li>
+    <li><strong>Daily costs:</strong> Gas ($20–50/day), food ($15–40/day), lodging ($60–200/night), tolls ($5–25/day).</li>
+  </ul>
+</div>
+
+<h3>Driving with Passengers</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Passenger Penalties</div>
+  <ul>
+    <li><strong>Argumentative passenger:</strong> <strong>+5 to all driving TNs</strong> from distraction.</li>
+    <li><strong>Child in back seat (crying, fighting):</strong> <strong>+3 to all driving TNs</strong>.</li>
+    <li><strong>GPS navigation:</strong> <strong>−3 to driving TNs</strong> (GPS helps), but fumbling with phone adds <strong>+5</strong>.</li>
+    <li><strong>Child seat requirement:</strong> Children under 8 (varies by state) must be in age-appropriate car seats. Driving without one: fine of <strong>$100–500</strong> and <strong>+2 SP</strong> from guilt/worry if an accident occurs.</li>
+  </ul>
+</div>
+
+<h3>Night Driving</h3>
+<p>Driving at night (defined as between 10 PM and 5 AM) adds <strong>+5 to all driving TNs</strong> due to reduced visibility, potential fatigue, and increased DUI enforcement presence. Characters who are <strong>sleep-deprived</strong> (less than 6 hours of sleep) add an additional <strong>+5 TN</strong>.</p>
+
+<h3>Foreign Country Driving</h3>
+<p>Driving in a foreign country adds several complications:</p>
+<ul>
+  <li><strong>International Driving Permit (IDP):</strong> Required in many countries. Cost: <strong>$20</strong> in the US. Without one: fine or arrest.</li>
+  <li><strong>Different driving side:</strong> UK, Japan, Australia drive on the left. First day driving on the wrong side: <strong>+10 to all driving TNs</strong>.</li>
+  <li><strong>Different road signs/rules:</strong> <span class="dice">INT + General Knowledge TN 35</span> to navigate unfamiliar road rules. Failure = wrong turns, tickets, or dangerous situations.</li>
+  <li><strong>Rental car:</strong> <strong>$30–150/day</strong> plus insurance (<strong>$15–40/day</strong>). International insurance is complex and often has exclusions.</li>
+</ul>
+
+<h3>Towing / Trailer Driving</h3>
+<p>Towing a trailer, boat, or RV adds <strong>+5 to all driving TNs</strong> regardless of conditions. Additional checks may be required:</p>
+<ul>
+  <li><strong>Backing up a trailer:</strong> <span class="dice">DXT + Driving TN 50</span>. This is notoriously difficult even for experienced drivers.</li>
+  <li><strong>Trailer sway (wind, passing trucks):</strong> <span class="dice">DXT + Driving TN 55</span> to regain control. Failure = trailer jackknife.</li>
+</ul>
+
+<h3>Defensive Driving Course</h3>
+<div class="callout tip">
+  <div class="callout-title">💡 Defensive Driving Benefits</div>
+  <p>Completing a defensive driving course (8 hours, <strong>$15–50</strong>) grants:</p>
+  <ul>
+    <li><strong>+1 Driving proficiency level</strong> (e.g., Competent → Experienced)</li>
+    <li><strong>Insurance discount:</strong> 5–15% off premium for 1–3 years</li>
+    <li><strong>Ticket dismissal:</strong> In many states, completing a course allows you to dismiss one traffic ticket without points</li>
+    <li><strong>Time cost:</strong> 8 hours (usually can be done online in states that allow it)</li>
+  </ul>
+  <p>This is one of the best <strong>ROI investments</strong> in the entire game — $25 spent can save $500+ in insurance and ticket costs over 3 years.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Cross-Country Road Trip</div>
+  <p><strong>The Chen family</strong> — parents and two kids (ages 6 and 10) — drive from Los Angeles to New York (2,800 miles) in their midsize SUV. 5-day trip, 4 driving days.</p>
+  <p><strong>Day 1 (600 miles):</strong> Dad drives. <span class="dice">DXT + Driving TN 30</span> (Dad: DXT 13, Driving 3 → <span class="dice">2d10 + 1 + 15</span>). Rolls 22 → total 38. <strong>SUCCESS.</strong> Breakdown roll: <span class="dice">d20</span> = 14. No issues. Cost: gas $45, food $80, hotel $120 = <strong>$245</strong>.</p>
+  <p><strong>Day 2 (700 miles):</strong> Mom drives. Fatigue penalty: +1 TN → TN 31. Mom (DXT 14, Driving 2 → <span class="dice">2d10 + 2 + 10</span>). Rolls 19 → total 31. <strong>BARE SUCCESS</strong> (exactly met TN). Close call — she nearly drifts into the shoulder but corrects. <strong>+1 SP</strong> from near-miss adrenaline. Breakdown roll: <span class="dice">d20</span> = 3. <strong>BREAKDOWN!</strong></p>
+  <p>Breakdown event: <span class="dice">d6</span> = 4 → brake failure. The family pulls over safely (lucky). Tow to nearest shop: <strong>$150 tow + $400 brake repair = $550</strong>. Delay: 4 hours. The kids are cranky. Mom gains <strong>+2 SP</strong> from the stress of the breakdown and delay.</p>
+  <p><strong>Day 3 (500 miles):</strong> Shorter day to recover. Dad drives again. Fatigue reset from rest stop. <span class="dice">2d10 + 16</span> vs TN 30. Rolls 15 → total 31. <strong>SUCCESS.</strong> Cost: <strong>$180</strong>.</p>
+  <p><strong>Day 4 (600 miles):</strong> Mom drives. Fatigue +1 → TN 31. Rolls 25 → total 37. <strong>SUCCESS.</strong> Breakdown roll: <span class="dice">d20</span> = 17. Clear. Cost: <strong>$200</strong>.</p>
+  <p><strong>Day 5 (400 miles + arrival):</strong> Dad drives. Easy day. <strong>SUCCESS.</strong> Cost: <strong>$150</strong>.</p>
+  <p><strong>Total trip cost:</strong> $245 + $245 + $550 (breakdown) + $180 + $200 + $150 = <strong>$1,570</strong> for the family. That's <strong>$392.50 per person</strong> — more than a budget flight for most routes, but the family values the shared experience.</p>
+  <p><strong>Total SP accumulated:</strong> Mom +3 SP, Dad +0 SP, Kids +1 SP each from travel fatigue. The family arrives home tired but bonded.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 15 — VEHICLE AS STORY ELEMENT
+     ============================================================ -->
+<h2>🎭 15. Vehicles as Story Elements</h2>
+
+<p>Vehicles are not just mechanical objects — they are deeply tied to character identity, relationships, and life transitions.</p>
+
+<h3>Social Signaling</h3>
+<p>The vehicle a character drives sends powerful social signals:</p>
+<ul>
+  <li><strong>Luxury vehicle:</strong> Signals wealth, success. <strong>+1 to +2 PRC</strong> in status-conscious social situations. However, can attract unwanted attention, theft risk, and resentment.</li>
+  <li><strong>Economy/reliable vehicle:</strong> Signals practicality, modesty. No bonus or penalty in most situations. Respected in working-class contexts.</li>
+  <li><strong>Electric vehicle:</strong> Signals environmental awareness, tech-savviness. <strong>+1 PRC</strong> in progressive/tech circles; <strong>−1 PRC</strong> in traditional/rural contexts.</li>
+  <li><strong>Motorcycle:</strong> Signals freedom, risk-taking. <strong>+1 PRC</strong> in youth/alternative cultures; <strong>−1 PRC</strong> in conservative/professional settings.</li>
+  <li><strong>Dirty/neglected vehicle:</strong> Signals irresponsibility or poverty. <strong>−1 to −2 PRC</strong> in first impressions.</li>
+  <li><strong>No vehicle (in car-dependent area):</strong> Signals financial constraint or lifestyle choice. May limit social and career opportunities.</li>
+</ul>
+
+<h3>Life Transitions</h3>
+<p>Major life events often involve vehicle changes:</p>
+<ul>
+  <li><strong>First car:</strong> Coming-of-age milestone. Learning to drive is a rite of passage. The anxiety of the first solo drive: <span class="dice">RES TN 35</span> to stay calm.</li>
+  <li><strong>Family car upgrade:</strong> Growing family requires more space. Minivan or SUV purchase. Old car sold/traded in.</li>
+  <li><strong>Financial crisis:</strong> Selling the good car for a cheaper one. Trading down is a <strong>−1 PRC</strong> social hit but a financial relief.</li>
+  <li><strong>Success upgrade:</strong> Career advancement allows luxury vehicle purchase. New social opportunities but higher monthly costs.</li>
+  <li><strong>Going car-free:</strong> Moving to a city with good transit. Selling the car saves money but requires lifestyle adjustment.</li>
+</ul>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: The First Car</div>
+  <p><strong>Keisha, age 16,</strong> just passed her driving test. Her parents bought her a used 2012 Honda Civic for $5,500 (saved up over 2 years). On her first solo drive to pick up her friend from school, she's nervous.</p>
+  <p><strong>First solo drive check:</strong> <span class="dice">DXT + Driving TN 30</span>. Keisha is a Novice driver (+5 TN penalty), so TN becomes 35. Her DXT is 14 (+2), Driving skill 1 (+5). <span class="dice">2d10 + 2 + 5 = 2d10 + 7</span>. She rolls <strong>12 + 10 = 22</strong>, total <strong>29</strong>. <strong>FAILURE</strong> — 6 below TN.</p>
+  <p>Minor incident: Keisha misjudges a turn and clips a mailbox at the intersection. No one is hurt, but the mailbox is damaged. She's shaken. <strong>+2 SP</strong> from the adrenaline and guilt. She calls her mom, who comes to pick her up and deal with the mailbox.</p>
+  <p><strong>Repair:</strong> Minor dent on her bumper ($200). Mailbox replacement ($150). Her parents pay but are disappointed. The next week, Keisha practices more and her driving improves. After a month of regular driving, the GM may award her <strong>Competent proficiency</strong>, removing the Novice penalty.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 16 — AIR TRAVEL
+     ============================================================ -->
+<h2>✈️ 16. Air Travel</h2>
+
+<p>Flying is one of the most common major life events in a modern campaign. It combines logistics, social stress, financial cost, and unpredictable chaos. Whether it's a cross-country move, a vacation, visiting family, or a business trip, air travel is a rich narrative opportunity.</p>
+
+<h3>✈️ Flight Cost Breakdown</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Route Type</th><th>Economy (One-Way)</th><th>Baggage Fees</th><th>Seat Selection</th><th>Total Typical Cost</th></tr></thead>
+<tbody>
+<tr><td>🟢 Short-haul (under 500 mi)</td><td>$50–150</td><td>$30–60</td><td>$10–40</td><td><strong>$90–250</strong></td></tr>
+<tr><td>🟡 Medium-haul (500–1500 mi)</td><td>$100–300</td><td>$30–60</td><td>$15–50</td><td><strong>$145–410</strong></td></tr>
+<tr><td>🟠 Long-haul (1500–3000 mi)</td><td>$200–500</td><td>$30–70</td><td>$20–60</td><td><strong>$250–630</strong></td></tr>
+<tr><td>🔴 International (under 5000 mi)</td><td>$400–900</td><td>$60–150</td><td>$30–100</td><td><strong>$490–1150</strong></td></tr>
+<tr><td>🔴 International (5000+ mi)</td><td>$600–1500+</td><td>$60–200</td><td>$40–200</td><td><strong>$700–1900+</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Budget Travel Tips</div>
+  <p>Characters who book <strong>2–8 weeks in advance</strong>, fly <strong>Tuesday/Wednesday</strong>, and use <strong>budget airlines</strong> can reduce costs by 30–50%. However, budget airlines often exclude checked bags, meals, and legroom — each "add-on" costs extra. A character traveling with minimal luggage and flexibility can fly for <strong>$30–80 one-way</strong> on sale fares, but must arrive early, accept middle seats, and tolerate cramped conditions.</p>
+</div>
+
+<h3>🛂 Airport Security &amp; Check-In</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Step</th><th>Time Required</th><th>Check (if any)</th><th>Failure Effect</th></tr></thead>
+<tbody>
+<tr><td>📋 Online check-in</td><td>5 min</td><td>None (automatic if prepared)</td><td>Forgetting to check in = counter line: +30 min wait</td></tr>
+<tr><td>🧳 Baggage drop</td><td>10–30 min</td><td>None</td><td>Oversized/overweight bag: $50–150 extra fee</td></tr>
+<tr><td>🛂 Security screening</td><td>15–60 min</td><td><span class="dice">INT TN 30</span> to pack compliant bag</td><td>Failure = bag pulled, secondary screening: +20 min delay, +1 SP</td></tr>
+<tr><td>🚶 Walking to gate</td><td>5–20 min</td><td><span class="dice">VIG TN 30</span> if rushing with kids/luggage</td><td>Failure = arrive at gate breathless, may miss boarding group</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Packing Compliance Check</div>
+  <p>Before any flight, the GM may call for a <span class="dice">INT TN 30</span> check to ensure the character's carry-on complies with security rules (liquids under 3.4 oz, no prohibited items, electronics accessible). Failure means the character packed something they can't bring through security — they must either surrender it, repack at the checkpoint (losing time), or check a bag at the last minute ($30–60 fee). Characters with <strong>EXP + Travel skill</strong> get a −5 bonus to this check.</p>
+</div>
+
+<h3>⏰ Flight Delays &amp; Cancellations</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Event</th><th>Probability (per flight)</th><th>Duration</th><th>SP Impact</th><th>Cost Impact</th></tr></thead>
+<tbody>
+<tr><td>⏰ Minor delay (under 1 hr)</td><td>~15%</td><td>30–60 min</td><td>+1 SP</td><td>None</td></tr>
+<tr><td>⏰ Major delay (1–4 hrs)</td><td>~5%</td><td>1–4 hours</td><td>+2–3 SP</td><td>Missed connections possible; hotel cost $100–200</td></tr>
+<tr><td>❌ Cancellation</td><td>~2%</td><td>4–24+ hours</td><td>+4–6 SP</td><td>Rebooking fees; hotel $100–300; meals $30–80</td></tr>
+<tr><td>🔄 Diversion (wrong airport)</td><td>~0.5%</td><td>6–24 hours</td><td>+5–8 SP</td><td>Unexpected transport costs; possible lost luggage</td></tr>
+<tr><td>🧳 Lost luggage</td><td>~0.7% (1 in 142 bags)</td><td>1–7 days</td><td>+3–5 SP</td><td>Replacement essentials: $50–200; airline may compensate $0–3000</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Delay Resolution</div>
+  <p>When a flight is delayed or cancelled, the character must make an <span class="dice">INT + General Knowledge TN 40</span> check to efficiently rebook and minimize damage. Success = rebooked on next available flight with minimal cost. Failure = stuck for longer, possible hotel/meal costs. Critical success = airline upgrades the character to first/business class as compensation. Critical failure = airline blames the passenger, no compensation, character must pay for own hotel.</p>
+</div>
+
+<h3>👶 Flying with Children</h3>
+<p>Every child on the trip adds significant complexity:</p>
+<ul>
+  <li><strong>Under 2 (lap child):</strong> Usually free on domestic flights, but no seatbelt. <span class="dice">EXP + Parenting TN 40</span> per flight leg to keep them calm.</li>
+  <li><strong>2–12 (seated child):</strong> Full ticket price. <span class="dice">EXP + Parenting TN 35</span> per leg. Bring entertainment (tablet, toys, snacks: $20–50 per child).</li>
+  <li><strong>Teenagers:</strong> Full ticket. Lower stress but may cause social embarrassment. <span class="dice">EXP TN 30</span> to prevent them from being disruptive.</li>
+  <li><strong>Failure on parenting checks:</strong> Child cries for the duration of the flight. All nearby passengers gain +1 SP. The character gains +2 SP from embarrassment and exhaustion. Other passengers may complain (<span class="dice">EXP TN 40</span> to handle politely).</li>
+</ul>
+
+<h3>🌍 International Travel</h3>
+<p>International flights add layers of complexity:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Requirement</th><th>Check</th><th>Failure Consequence</th></tr></thead>
+<tbody>
+<tr><td>📄 Valid passport</td><td>None (must be planned ahead)</td><td>Without valid passport: cannot fly. Must obtain one: 6–8 weeks, $130 (US)</td></tr>
+<tr><td>📋 Visa (if required)</td><td><span class="dice">INT TN 45</span> to research requirements</td><td>Denied boarding if visa missing. Visa application: $50–200, 2–12 weeks processing</td></tr>
+<tr><td>🛂 Customs declaration</td><td><span class="dice">INT TN 35</span> to fill out correctly</td><td>Incorrect declaration: fines $100–5000; possible interrogation</td></tr>
+<tr><td>🧴 Liquid/food restrictions</td><td><span class="dice">INT TN 30</span> per country</td><td>Confiscated items; possible secondary screening</td></tr>
+<tr><td>💱 Currency exchange</td><td><span class="dice">INT TN 35</span> to get good rates</td><td>Poor exchange rate: lose 5–15% of converted value</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌀 Turbulence &amp; In-Flight Events</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 In-Flight Events</div>
+  <p>Roll <span class="dice">1d20</span> at the start of each flight leg. On a <strong>1</strong>, an in-flight event occurs:</p>
+  <div class="table-wrap">
+  <table>
+  <thead><tr><th>d20 Roll</th><th>Event</th><th>Mechanics</th></tr></thead>
+  <tbody>
+  <tr><td>2–5</td><td>🌀 Turbulence</td><td>All standing passengers: <span class="dice">DXT TN 35</span> to avoid injury. Severe (roll 1 on d20): <span class="dice">DXT TN 45</span> or take 1 step on Health Track.</td></tr>
+  <tr><td>6–7</td><td>🏥 Medical emergency</td><td>Passenger has a health event. Characters with medical training: <span class="dice">INT + Medical TN 40</span>. +2 SP for everyone on board.</td></tr>
+  <tr><td>8</td><td>😤 Difficult passenger</td><td>Someone is drunk, loud, or confrontational. <span class="dice">RES TN 35</span> to ignore. Failure = +2 SP.</td></tr>
+  <tr><td>9</td><td>🤝 Interesting encounter</td><td>Sit next to someone interesting — contact, love interest, mentor. <span class="dice">EXP + Social TN 30</span> to develop connection.</td></tr>
+  <tr><td>10</td><td>💁 Flight attendant interaction</td><td>Compliment, complaint, or conversation. +1 to PRC if handled well.</td></tr>
+  </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Family Vacation Flight Disaster</div>
+  <p><strong>The Rodriguez family</strong> — parents Elena and Carlos, kids Sofia (6) and Miguel (3) — fly from Miami to Denver for a week at a resort. Total cost: <strong>$2,800</strong> for four tickets plus bags.</p>
+  <p><strong>At the airport:</strong> Elena's packing check: <span class="dice">INT TN 30</span>. She rolls 38 — <strong>success</strong>. Carlos forgets to check in online (+30 min at the counter). Security: 45 min wait. Miguel has a meltdown at the checkpoint. Carlos's <span class="dice">EXP + Parenting TN 40</span>: rolls 28 — <strong>failure</strong>. Miguel cries for 10 minutes. +2 SP for Carlos, +1 SP for Elena.</p>
+  <p><strong>On the plane:</strong> Miguel gets restless after 45 minutes. Elena's <span class="dice">EXP TN 35</span>: rolls 32 — <strong>failure</strong>. Miguel starts crying. An annoyed passenger complains. Elena's <span class="dice">EXP TN 40</span> to handle it: rolls 44 — <strong>success</strong>. She apologizes sincerely, offers earplugs. The passenger accepts.</p>
+  <p><strong>In-flight event:</strong> d20 = 3 → <strong>turbulence</strong>. Carlos was in the bathroom — <span class="dice">DXT TN 35</span>: rolls 30 — <strong>failure</strong>. He stumbles, bruises his shoulder. −1 VIG for the rest of the day. +1 SP for everyone on board.</p>
+  <p><strong>Arrival:</strong> Their checked bag doesn't appear on the carousel. Lost luggage! Elena files a claim. The bag arrives 36 hours later — one shoe is missing. +3 SP for the parents from the stress. Replacement essentials at the airport: $120.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 17 — VEHICLE INSURANCE
+     ============================================================ -->
+<h2>🛡️ 17. Vehicle Insurance</h2>
+
+<p>Vehicle insurance is one of the largest recurring expenses in a character's life, often second only to housing. Understanding insurance is critical — a poorly insured character can be financially devastated by a single accident.</p>
+
+<h3>📋 Coverage Types</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Coverage</th><th>What It Covers</th><th>Monthly Cost</th><th>Required?</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🔵 Liability</td><td>Damage you cause to others (bodily injury + property damage)</td><td>$30–80</td><td>✅ Yes (all states)</td><td>Cheapest coverage; does NOT cover your own car or injuries</td></tr>
+<tr><td>🟢 Collision</td><td>Damage to your own vehicle from a crash</td><td>$40–120</td><td>⚠️ If financed/leased</td><td>Deductible: $250–1000. Not worth it on old cars (repair cost &gt; car value)</td></tr>
+<tr><td>🟢 Comprehensive</td><td>Theft, fire, flood, hail, animal strikes, vandalism</td><td>$20–60</td><td>⚠️ If financed/leased</td><td>Often bundled with collision as "full coverage"</td></tr>
+<tr><td>🟡 Uninsured Motorist</td><td>Hit by a driver with no insurance</td><td>$10–30</td><td>⚠️ Required in some states</td><td>Highly recommended; ~1 in 8 drivers are uninsured</td></tr>
+<tr><td>🟡 Medical Payments (MedPay)</td><td>Your medical bills regardless of fault</td><td>$5–20</td><td>❌ Optional</td><td>Good supplement to health insurance</td></tr>
+<tr><td>🟠 Roadside Assistance</td><td>Towing, lockout, flat tire, jump start, fuel delivery</td><td>$5–15</td><td>❌ Optional</td><td>Often overlaps with AAA membership; pick one</td></tr>
+<tr><td>🟠 Gap Insurance</td><td>Pays difference between car value and loan balance if totaled</td><td>$5–20</td><td>⚠️ If loan &gt; car value</td><td>Critical for new cars that depreciate fast</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>📊 Premium Determinants</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Factor</th><th>Effect on Premium</th><th>Character Control?</th></tr></thead>
+<tbody>
+<tr><td>📍 Location (urban vs rural)</td><td>Urban: +20–50% (more accidents, theft)</td><td>Partially (where you live)</td></tr>
+<tr><td>🎂 Age</td><td>Under 25: +30–100%; Over 55: −10–20%</td><td>❌ No</td></tr>
+<tr><td>📜 Driving record</td><td>Clean: −10–25%; 1 accident: +15–30%; DUI: +50–200%</td><td>✅ Yes</td></tr>
+<tr><td>🚗 Vehicle type</td><td>Luxury/sports: +20–80%; Safe family car: −10–20%</td><td>✅ Yes (what you buy)</td></tr>
+<tr><td>👤 Credit score</td><td>Poor credit: +20–50%; Good credit: −10–25%</td><td>✅ Yes (indirectly)</td></tr>
+<tr><td>👨‍👩‍👧 Multi-policy discount</td><td>Bundle auto + home: −10–25%</td><td>✅ Yes</td></tr>
+<tr><td>📚 Defensive driving course</td><td>−5–15%</td><td>✅ Yes ($15–50 investment)</td></tr>
+<tr><td>📱 Usage-based tracking</td><td>Good driver: −10–30%; Bad driver: +10–20%</td><td>✅ Yes (driving behavior)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>💰 Insurance Claims Process</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Filing a Claim</div>
+  <ol>
+    <li><strong>Report the incident:</strong> Call insurance within 24–48 hours. <span class="dice">INT TN 30</span> to provide accurate information.</li>
+    <li><strong>Adjuster assessment:</strong> Takes 3–10 business days. <span class="dice">INT TN 40</span> to effectively document your losses (photos, receipts, witness statements).</li>
+    <li><strong>Settlement offer:</strong> <span class="dice">INT + Negotiation TN 45</span> to negotiate a fair settlement. Failure = lowball offer (60–80% of actual value).</li>
+    <li><strong>Repair or replacement:</strong> If repairable, repairs authorized. If totaled, you receive actual cash value minus deductible.</li>
+    <li><strong>Premium increase:</strong> After any claim, expect a <strong>10–30% premium increase</strong> for 3–5 years, regardless of fault in many states.</li>
+  </ol>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Claim Denial Scenarios</div>
+  <p>Insurance companies deny claims for specific reasons:</p>
+  <ul>
+    <li><strong>Lapsed coverage:</strong> Even one day without active insurance = denied claim</li>
+    <li><strong>Misrepresentation:</strong> Lying about driving history, vehicle use, or accident details</li>
+    <li><strong>Excluded drivers:</strong> An excluded household member drove the vehicle</li>
+    <li><strong>Illegal activity:</strong> Damages occurring during criminal activity are not covered</li>
+    <li><strong>Wear and tear:</strong> Normal depreciation and maintenance issues are excluded</li>
+    <li><strong>Flood without flood coverage:</strong> Standard comprehensive may exclude flood damage in some states</li>
+  </ul>
+  <p>When a claim is denied, the character can appeal with an <span class="dice">INT + Negotiation TN 50</span> check. Characters can hire an insurance attorney for <strong>$200–500/hour</strong> to fight denials.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Insurance Claim After Accident</div>
+  <p><strong>James</strong> rear-ends a parked car while backing out of a grocery store lot. His 2019 sedan has a cracked bumper and the parked car's trunk is dented.</p>
+  <p><strong>Step 1:</strong> James calls his insurance. Full coverage with $500 deductible. <span class="dice">INT TN 30</span>: rolls 34 — success.</p>
+  <p><strong>Step 2:</strong> James takes photos, gets the other driver's info. Documentation check: <span class="dice">INT TN 40</span>: rolls 42 — <strong>success</strong>. Excellent documentation.</p>
+  <p><strong>Step 3:</strong> The adjuster estimates $1,800 for James's car and $900 for the other car. Insurance pays $1,300 + $900 = $2,200 total claim.</p>
+  <p><strong>Step 4:</strong> James's car is repaired in 5 days. Rental car: $45/day × 5 = $225 (covered by rental reimbursement add-on).</p>
+  <p><strong>Step 5:</strong> James's premium increases 20% for 3 years — an extra <strong>$600 over 3 years</strong> — more than the original claim cost. The GM notes this for James's budget tracking.</p>
+</div>
+
+<h3>🌍 International Vehicle Insurance</h3>
+<div class="callout tip">
+  <div class="callout-title">🌍 Global Insurance Differences</div>
+  <ul>
+    <li><strong>UK:</strong> Minimum "Third Party Only." Comprehensive is the norm. No-fault claims do NOT increase premiums (different system). Black box (telematics) insurance popular for young drivers.</li>
+    <li><strong>EU:</strong> Green card certificate proves coverage for cross-border travel. Germany: Haftpflicht (mandatory) + Vollkasko (optional comprehensive).</li>
+    <li><strong>Japan:</strong> Mandatory "jishahokens" (liability) + voluntary "zaikohokens" (comprehensive). Expensive for imported cars.</li>
+    <li><strong>Australia:</strong> "CTP" covers injury to others. Comprehensive averages $800–1500/year — among highest per capita globally.</li>
+    <li><strong>Brazil:</strong> "DPVAT" is government-mandated minimum. Private "auto completo" is optional but recommended due to high theft rates.</li>
+  </ul>
+</div>
+
+
+<!-- ============================================================
+     SECTION 18 — VEHICLE PURCHASING
+     ============================================================ -->
+<h2>🏪 18. Vehicle Purchasing</h2>
+
+<p>Buying a vehicle is one of the largest financial decisions a character makes. The process is complex and full of potential pitfalls.</p>
+
+<h3>🏪 New vs. Used</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Factor</th><th>New Vehicle</th><th>Used (3–5 yr old)</th><th>Used (8+ yr old)</th></tr></thead>
+<tbody>
+<tr><td>💰 Depreciation (Year 1)</td><td>−20% of value immediately</td><td>−10–15% per year</td><td>−5–8% per year</td></tr>
+<tr><td>🔧 Warranty</td><td>3–5 years / 36k–60k mi</td><td>May have remaining warranty</td><td>None — "as-is"</td></tr>
+<tr><td>🛡️ Reliability</td><td>Highest (new parts)</td><td>Good (past initial break-in)</td><td>Variable — gamble</td></tr>
+<tr><td>💸 Insurance</td><td>Highest premiums</td><td>Moderate</td><td>Lowest premiums</td></tr>
+<tr><td>📋 Financing</td><td>Best rates (0–5% APR common)</td><td>Higher rates (5–10%)</td><td>Higher rates (8–15%+)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🏦 Financing Options</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Option</th><th>APR Range</th><th>Term</th><th>Down Payment</th><th>Best For</th></tr></thead>
+<tbody>
+<tr><td>🏦 Dealer financing</td><td>0–12%</td><td>36–84 months</td><td>10–20%</td><td>Convenience; promotional 0% deals on new cars</td></tr>
+<tr><td>🏦 Bank/Credit Union loan</td><td>3–10%</td><td>36–72 months</td><td>10–20%</td><td>Lower rates; credit union members get best deals</td></tr>
+<tr><td>💳 Credit card</td><td>15–25%</td><td>N/A (revolving)</td><td>Full payment required</td><td>Emergency purchases only; terrible for large vehicle loans</td></tr>
+<tr><td>👨‍👩‍👦 Family loan</td><td>0–5% (informal)</td><td>Negotiated</td><td>Negotiated</td><td>Best rates; social obligation; relationship risk if payments late</td></tr>
+<tr><td>💵 Cash purchase</td><td>N/A</td><td>N/A</td><td>Full amount</td><td>No interest; best financial outcome; requires savings</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 The Dealership Experience</div>
+  <p>When a character buys from a dealership, the GM may call for checks:</p>
+  <ul>
+    <li><strong>Negotiation:</strong> <span class="dice">INT + Negotiation TN 45</span> to get a fair price. Success = price at or below fair market value. Failure = overpaying by 5–15%. Critical success = below-market deal. Critical failure = high-pressure tactics, character buys unwanted add-ons (extended warranty, gap insurance, paint protection: $1,000–3,000 extra).</li>
+    <li><strong>Financing review:</strong> <span class="dice">INT TN 40</span> to understand loan terms before signing. Failure = character doesn't notice unfavorable terms (higher APR, extended loan term, added fees).</li>
+    <li><strong>Trade-in evaluation:</strong> <span class="dice">INT TN 35</span> to know the fair value of the trade-in. Failure = dealer lowballs the trade by 10–25%.</li>
+  </ul>
+</div>
+
+<h3>🔍 Private Sale &amp; Online Purchase</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Private Sale Risks</div>
+  <p>Buying from a private seller (Craigslist, Facebook Marketplace, etc.) is cheaper but riskier:</p>
+  <ul>
+    <li><strong>Vehicle history check:</strong> <span class="dice">INT TN 35</span> to research the car's history (CarFax report: $40). Failure = character doesn't discover salvage title, flood damage, or odometer rollback.</li>
+    <li><strong>Pre-purchase inspection:</strong> Taking the car to a mechanic costs <strong>$100–250</strong> but can save thousands. The mechanic's inspection reveals hidden problems automatically.</li>
+    <li><strong>Scam detection:</strong> <span class="dice">INT TN 40</span> to spot scams (too-good-to-be-true deals, pressure to wire money, refusal to meet in person). Failure = potential loss of deposit or personal information.</li>
+    <li><strong>Title transfer:</strong> <span class="dice">INT TN 30</span> to complete paperwork correctly. Failure = DMV delays, additional fees.</li>
+  </ul>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: The Used Car Trap</div>
+  <p><strong>Kevin, age 22,</strong> needs a car for his new job. He finds a 2015 Ford Fusion at $7,500 on Facebook Marketplace — seems like a deal (market value: $8,500). He doesn't have $150 for a mechanic's inspection.</p>
+  <p><strong>Vehicle history:</strong> <span class="dice">INT TN 35</span>: Kevin rolls 30 — <strong>failure</strong>. No CarFax report ordered.</p>
+  <p><strong>Test drive:</strong> <span class="dice">INT TN 40</span> to notice subtle issues (slight vibration, check engine light flickers): rolls 35 — <strong>failure</strong>. He misses the warning signs.</p>
+  <p>Two weeks later, the transmission starts slipping. The mechanic reveals front-end collision damage (hidden frame damage). Transmission repair: <strong>$3,500</strong> — half the car's value. The car's actual value is now <strong>$4,000</strong>.</p>
+  <p>Kevin gains <strong>+5 SP</strong> from financial stress. The GM notes this as a hard-learned lesson — Kevin now always gets a pre-purchase inspection.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 19 — DIY MAINTENANCE & REPAIR
+     ============================================================ -->
+<h2>🔧 19. DIY Maintenance &amp; Repair</h2>
+
+<p>Characters who can maintain and repair their own vehicles save significant money and gain mechanical independence. This is a valuable skill that pays dividends over time.</p>
+
+<h3>🔧 Maintenance Tasks</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Task</th><th>Difficulty</th><th>Time</th><th>Parts Cost</th><th>Shop Cost</th><th>Savings</th></tr></thead>
+<tbody>
+<tr><td>🛞 Tire rotation</td><td>🟢 Easy</td><td>30 min</td><td>$0</td><td>$20–40</td><td>$20–40</td></tr>
+<tr><td>🛢️ Oil change</td><td>🟢 Easy</td><td>45 min</td><td>$25–40</td><td>$40–80</td><td>$15–40</td></tr>
+<tr><td>🔋 Battery replacement</td><td>🟢 Easy</td><td>15 min</td><td>$80–150</td><td>$120–200</td><td>$40–50</td></tr>
+<tr><td>💡 Headlight replacement</td><td>🟢 Easy</td><td>15 min</td><td>$10–40</td><td>$50–150</td><td>$40–110</td></tr>
+<tr><td>🔧 Brake pad replacement</td><td>🟡 Moderate</td><td>1–2 hrs</td><td>$40–100</td><td>$150–400</td><td>$110–300</td></tr>
+<tr><td>🔧 Air filter replacement</td><td>🟢 Easy</td><td>10 min</td><td>$15–30</td><td>$50–100</td><td>$35–70</td></tr>
+<tr><td>🔧 Coolant flush</td><td>🟡 Moderate</td><td>1 hr</td><td>$20–40</td><td>$80–150</td><td>$60–110</td></tr>
+<tr><td>⚙️ Timing belt replacement</td><td>🔴 Hard</td><td>4–8 hrs</td><td>$50–150</td><td>$400–1,000</td><td>$350–850</td></tr>
+<tr><td>⚙️ Transmission service</td><td>🔴 Hard</td><td>2–4 hrs</td><td>$100–300</td><td>$300–800</td><td>$200–500</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🛠️ Mechanical Skill</h3>
+<p>Mechanical aptitude is derived from <strong>INT</strong> and <strong>DXT</strong>. Characters who regularly work on vehicles develop this skill.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 DIY Repair Check</div>
+  <p>Roll <span class="dice">2d10 + INT + DXT (average) + Mechanical skill level</span> vs. TN (Easy: TN 30, Moderate: TN 45, Hard: TN 55). Success = repair completed correctly. Failure = repair incomplete or done incorrectly (may cause further damage). Critical failure = injury during repair (cut, burn, pinched finger: −1 VIG for 1–3 days).</p>
+</div>
+
+<h3>🔧 Mechanical Proficiency Levels</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Level</th><th>Name</th><th>Bonus</th><th>Can Handle</th><th>How to Achieve</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>🟢 Novice</td><td>+0</td><td>Fluid checks, tire pressure, wiper blades, air filter</td><td>Default. Has basic tool knowledge.</td></tr>
+<tr><td>1</td><td>🔵 Handy</td><td>+5</td><td>Oil changes, battery, brake pads, basic electrical</td><td>6+ months of regular DIY maintenance</td></tr>
+<tr><td>2</td><td>🟡 Mechanic</td><td>+10</td><td>Engine work, suspension, electrical, diagnostics</td><td>2+ years hands-on or formal training</td></tr>
+<tr><td>3</td><td>🟠 Expert</td><td>+15</td><td>Major repairs, engine rebuilds, performance mods</td><td>5+ years or automotive degree/certification</td></tr>
+<tr><td>4</td><td>🔴 Master</td><td>+20</td><td>Anything — professional-level capability</td><td>Professional mechanic; ASE certified; 10+ years</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🏠 Garage / Workspace Requirements</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Setup</th><th>Space</th><th>Initial Cost</th><th>Ongoing/Mo</th><th>Capability</th></tr></thead>
+<tbody>
+<tr><td>🟢 Basic toolkit</td><td>Trunk of car</td><td>$50–100</td><td>$0</td><td>Emergency roadside fixes, tire changes, fluid top-offs</td></tr>
+<tr><td>🟡 Driveway setup</td><td>Driveway + storage</td><td>$200–500</td><td>$10–30</td><td>Oil changes, brake work, battery, lights, filters</td></tr>
+<tr><td>🟠 Basic garage</td><td>1-car garage</td><td>$500–2,000</td><td>$20–50</td><td>Most maintenance + moderate repairs</td></tr>
+<tr><td>🔴 Full garage</td><td>2-car garage + lift</td><td>$3,000–10,000+</td><td>$50–100</td><td>Everything including major repairs; can do paid work</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Financial Impact</div>
+  <p>A character at Mechanical Level 1+ who performs their own routine maintenance saves approximately <strong>$400–800/year</strong>. Over the life of a vehicle (8–12 years), this adds up to <strong>$3,200–9,600 in savings</strong> — potentially enough to buy another car.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 20 — GLOBAL VEHICLE PERSPECTIVES
+     ============================================================ -->
+<h2>🌍 20. Global Vehicle Perspectives</h2>
+
+<p>Vehicle culture, laws, and accessibility vary enormously around the world. Characters living in different countries face very different transportation realities.</p>
+
+<h3>🇬🇧 United Kingdom</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>🚗 Driving side</td><td>Left-hand traffic; right-hand drive vehicles</td></tr>
+<tr><td>📋 Licensing</td><td>Theory test (multiple choice + hazard perception) + practical test. Provisional license for learners (L plates). Full license after passing.</td></tr>
+<tr><td>💰 Costs</td><td>Vehicle tax: £100–300/yr. Fuel ~£1.40/liter (among highest in Europe). Insurance: £300–1,500/yr.</td></tr>
+<tr><td>⚠️ Penalties</td><td>Strict speeding enforcement (cameras everywhere). 12 points = 6-month ban. London Congestion Charge: £15/day in central London.</td></tr>
+<tr><td>🚇 Public transit</td><td>Extensive rail; London Underground world-class. Many Britons do not own cars.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🇯🇵 Japan</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>🚗 Driving side</td><td>Left-hand traffic; right-hand drive vehicles</td></tr>
+<tr><td>📋 Licensing</td><td>Among strictest globally. Mandatory driving school (1–3 mo, ¥200k–500k). ~50% first-attempt failure rate.</td></tr>
+<tr><td>💰 Costs</td><td>Compulsory insurance: ¥10k–30k/yr. Mandatory inspection (Shaken): ¥30k–80k every 2 years. Parking certificate in cities: ¥50k–300k/yr.</td></tr>
+<tr><td>⚠️ Unique rules</td><td>Annual horn tap (Jan 7 — legally required). Front seat belts mandatory for all. Speeding fines relatively low but cultural enforcement strict.</td></tr>
+<tr><td>🚇 Public transit</td><td>World-class trains (Shinkansen, metro). Car ownership decreasing among urban youth.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🇮🇳 India</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>🚗 Driving side</td><td>Left-hand traffic; right-hand drive vehicles</td></tr>
+<tr><td>📋 Licensing</td><td>Learner's (6 mo) → permanent. Testing quality varies by state. Corruption in licensing is known.</td></tr>
+<tr><td>💰 Costs</td><td>Very affordable vehicles. Fuel ~$1/gal (heavily taxed). Insurance: ₹2,000–10,000/yr.</td></tr>
+<tr><td>⚠️ Road conditions</td><td>Chaotic traffic; autos, bullock carts, buses, motorcycles, cars share roads. Driving TNs <strong>+5 to +10</strong> in cities. Highest road fatality rate globally (~150k/yr).</td></tr>
+<tr><td>🏍️ Motorcycle dominance</td><td>Two-wheelers are primary transport for millions. ~35% of road fatalities involve motorcycles.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🇧🇷 Brazil</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>🚗 Driving side</td><td>Right-hand traffic; left-hand drive vehicles</td></tr>
+<tr><td>📋 Licensing</td><td>Multi-stage: theoretical + practical + psych eval. Renewal every 10 years (5 for over-65).</td></tr>
+<tr><td>💰 Costs</td><td>Vehicle taxes extremely high (IPVA: 2–4% of value annually). Fuel ~$1.20/liter. Insurance: R$1,500–6,000/yr.</td></tr>
+<tr><td>⚠️ Safety</td><td>Car theft common in cities. Budget for secure parking/garage. Driving TNs +5 in favelas/unsafe areas.</td></tr>
+<tr><td>🚌 Public transit</td><td>BRT systems in major cities. Metro in São Paulo, Rio, Brasília. Many rely on buses due to car affordability.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🇩🇪 Germany &amp; EU</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>🚗 Driving culture</td><td>Autobahn has no-speed-limit sections. Driving TNs +10 on Autobahn due to extreme speeds, but German drivers are highly trained. Strict licensing: 2-yr probation (Probeszeit) with 0.00% BAC limit for new drivers.</td></tr>
+<tr><td>📋 Licensing</td><td>Theorie + praktische. Mandatory first aid + eyesight test. Total cost: €1,000–2,000.</td></tr>
+<tr><td>💰 Costs</td><td>Vehicle tax by engine size/emissions. Fuel ~€1.70/liter (highest globally). Insurance: €400–1,200/yr.</td></tr>
+<tr><td>🚇 Public transit</td><td>Exceptional rail (ICE, S-Bahn, U-Bahn). Deutschland-Ticket (all regional): €49/month.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 GM: Adapting Vehicle Mechanics for Different Countries</div>
+  <ul>
+    <li><strong>Driving TNs:</strong> +5 in countries with chaotic traffic (India, parts of Latin America, Southeast Asia). −5 in countries with strict traffic culture (Japan, Germany, Scandinavia).</li>
+    <li><strong>Vehicle costs:</strong> European cars more expensive due to taxes. Asian markets have unique affordable options.</li>
+    <li><strong>Enforcement:</strong> Strict enforcement (Japan, UK, EU) = higher violation consequences. Corruption-prone areas = bribery possible (<span class="dice">INT TN 40</span> + money, but carries legal risk).</li>
+    <li><strong>Public transit quality:</strong> In countries with excellent transit (Japan, Germany, UK), the penalty for not owning a car is much lower — characters can live car-free without the −5 mobility penalty.</li>
+  </ul>
+</div>
+
+
+<!-- ============================================================
+     SECTION 21 — COMMERCIAL & WORK VEHICLES
+     ============================================================ -->
+<h2>🚚 21. Commercial &amp; Work Vehicles</h2>
+
+<p>Many characters earn their living through vehicles. Delivery drivers, rideshare operators, truckers, and fleet drivers face unique challenges.</p>
+
+<h3>🚐 Rideshare Driving</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>💰 Earnings</td><td>$15–25/hr gross; $10–18/hr net after fuel/wear. Peak hours pay 1.5–2×.</td></tr>
+<tr><td>⏰ Time</td><td>Part-time: 10–20 hrs/wk. Full-time: 40–60 hrs/wk. Character chooses schedule.</td></tr>
+<tr><td>🔧 Vehicle wear</td><td>Adds 15k–30k miles/yr. Maintenance costs increase 50–100%. Vehicle must be under 15 yrs old.</td></tr>
+<tr><td>🛡️ Insurance</td><td>Special rideshare insurance: $150–400/yr extra. Standard personal insurance does NOT cover rideshare.</td></tr>
+<tr><td>📊 Checks</td><td>Each shift: <span class="dice">DXT + Driving TN 30</span>. <span class="dice">EXP + Social TN 35</span> for passengers. <span class="dice">RES TN 35</span> for difficult passengers.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🚚 Delivery Driving</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Delivery Driving Checks</div>
+  <ul>
+    <li><strong>Route planning:</strong> <span class="dice">INT TN 35</span>. Success = on-time, bonus pay. Failure = missed deliveries, complaints.</li>
+    <li><strong>Package handling:</strong> <span class="dice">DXT TN 30</span>. Failure = damaged packages, negative reviews.</li>
+    <li><strong>Customer interaction:</strong> <span class="dice">EXP + Social TN 30</span>. Good = tips + positive reviews. Bad = negative reviews, suspension risk.</li>
+    <li><strong>Per shift:</strong> <span class="dice">DXT + Driving TN 30</span> for safe urban stop-and-go driving.</li>
+  </ul>
+</div>
+
+<h3>🚛 Commercial Trucking (CDL)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>📋 CDL Requirements</td><td>Training: 3–6 mo, $3k–7k. Written + skills test. Min age 21 interstate. Medical exam required.</td></tr>
+<tr><td>💰 Earnings</td><td>$45k–80k/yr (owner-operator: $70k–150k+). Specialized hauling (hazmat, oversized) pays more.</td></tr>
+<tr><td>⏰ Lifestyle</td><td>Away 2–4 wks at a time. Sleeping in sleeper berth. Limited social life. High stress from deadlines.</td></tr>
+<tr><td>📊 Driving</td><td>CDL TNs are <strong>+5 harder</strong> than standard. Backing a 53-ft trailer: TN 55. Urban maneuvering: TN 60.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Hours of Service (HOS) Regulations</div>
+  <p>CDL drivers: <strong>11 hrs driving / 14 hrs on-duty / 30-min break after 8 hrs</strong>. Violations risk:</p>
+  <ul>
+    <li><strong>Caught by inspection:</strong> 3-day forced rest, fine, possible CDL suspension</li>
+    <li><strong>Fatigue penalty:</strong> Each hour beyond limit adds <strong>+5 to all driving TNs</strong> and <strong>+1 SP</strong></li>
+    <li><strong>Accident while violating HOS:</strong> Criminal charges if injury/death results</li>
+  </ul>
+</div>
+
+<h3>🚐 Company Vehicles &amp; Fleet Cars</h3>
+<ul>
+  <li><strong>Benefits:</strong> No purchase, insurance, or maintenance cost for the employee.</li>
+  <li><strong>Restrictions:</strong> Personal use limited. GPS tracking common. Must return if fired.</li>
+  <li><strong>Tax:</strong> In many countries, a company vehicle is a taxable benefit.</li>
+  <li><strong>Social:</strong> The vehicle reflects the employer's brand, not the character's taste.</li>
+</ul>
+
+
+<!-- ============================================================
+     SECTION 22 — CAR CULTURE & MODIFICATIONS
+     ============================================================ -->
+<h2>🎨 22. Car Culture &amp; Modifications</h2>
+
+<p>For many characters, a vehicle is not just transport — it's an extension of their identity. Car culture encompasses enthusiasts, racers, modifiers, restorers, and collectors.</p>
+
+<h3>🔧 Common Modifications</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Mod</th><th>Cost</th><th>Mechanical Effect</th><th>Social Effect</th><th>Legality</th></tr></thead>
+<tbody>
+<tr><td>🎨 Cosmetic wrap / paint</td><td>$500–5,000</td><td>None</td><td>+1 PRC in car culture; shows personality</td><td>Legal; some states restrict reflective wraps</td></tr>
+<tr><td>🔧 Performance exhaust</td><td>$500–3,000</td><td>+5 to acceleration TNs; louder</td><td>+1 PRC enthusiasts; −1 PRC residential (noise)</td><td>May violate noise ordinances; emissions illegal in CA</td></tr>
+<tr><td>🔧 Suspension / lowering</td><td>$500–2,000</td><td>−5 TN on rough roads; +5 on smooth</td><td>+1 PRC in car culture</td><td>Legal if within state ride-height limits</td></tr>
+<tr><td>🔧 Engine tuning / turbo</td><td>$1k–10k+</td><td>+10 acceleration; +5 top speed; −5 reliability</td><td>+2 PRC enthusiasts</td><td>Legal but may void warranty; emissions concerns</td></tr>
+<tr><td>🏎️ Racing modifications</td><td>$5k–50k+</td><td>Race-capable; may lose street legality</td><td>+2 PRC racing; −1 PRC general</td><td>May be illegal on public roads</td></tr>
+<tr><td>🔧 Off-road upgrades</td><td>$1k–5k</td><td>+10 off-road TNs; −5 fuel economy</td><td>+1 PRC outdoor communities</td><td>Legal; some states restrict lifted vehicles</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🏁 Motorsports Participation</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Racing as an Activity</div>
+  <ul>
+    <li><strong>Track day:</strong> <span class="dice">DXT + Driving TN 55–65</span> per session. Success = clean lap. Failure = running wide. Critical failure = spin-out, possible damage.</li>
+    <li><strong>Autocross:</strong> <span class="dice">DXT + Driving TN 50</span>. Lower speeds, lower risk. Great for building Driving skill.</li>
+    <li><strong>Drag racing:</strong> <span class="dice">DXT + Driving TN 45</span>. Street drag racing is <strong>illegal</strong> everywhere — heavy fines.</li>
+    <li><strong>Costs:</strong> Track day: $100–300/day. Autocross: $50–150/event. Race series: $5k–50k+/season.</li>
+  </ul>
+</div>
+
+<h3>🔩 Car Meets &amp; Community</h3>
+<ul>
+  <li><strong>Local car meet:</strong> Free, weekly. <span class="dice">EXP + Social TN 30</span> to network. Gain contacts, learn deals, find mentors.</li>
+  <li><strong>Car show:</strong> $20–50 entry. <span class="dice">EXP + Social TN 35</span>. Awards provide narrative milestones and PRC bonuses.</li>
+  <li><strong>Online communities:</strong> Free. <span class="dice">INT TN 30</span> to find reliable advice. Failure = following bad advice, wasting money.</li>
+</ul>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Building a Weekend Warrior</div>
+  <p><strong>Diego, age 24,</strong> buys a used 2008 Subaru WRX for $6,000 cash and builds it for track days over 6 months:</p>
+  <ul>
+    <li><strong>Month 1:</strong> Performance exhaust ($800). <span class="dice">Mechanical TN 30</span>: success. +1 PRC at the local car meet.</li>
+    <li><strong>Month 2:</strong> Brake upgrade ($1,200). <span class="dice">Mechanical TN 45</span>: success. −5 to emergency braking TNs.</li>
+    <li><strong>Month 3:</strong> First track day. <span class="dice">DXT + Driving TN 55</span>: rolls 58 — <strong>success</strong>. Clean laps. Driving skill advances to Experienced.</li>
+    <li><strong>Month 4:</strong> Suspension upgrade ($1,500). <span class="dice">Mechanical TN 45</span>: failure. Installed wrong — alignment off. Fix: $100 at a shop.</li>
+    <li><strong>Month 5–6:</strong> Three more track days. Total investment: <strong>$3,600</strong>. Driving skill reaches Expert. Friends in the local Subaru community. The car is now worth more to enthusiasts than purchase price.</li>
+  </ul>
+  <p>The Subaru becomes a <strong>recurring narrative element</strong> — car meets, track days, road trips with new friends, and the ongoing project of building the perfect weekend car.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 23 — URBAN vs RURAL DRIVING
+     ============================================================ -->
+<h2>🏙️ 23. Urban vs. Rural Driving Dynamics</h2>
+
+<p>The driving experience varies dramatically depending on where a character lives. A campaign set in Manhattan is fundamentally different from one in rural Montana.</p>
+
+<h3>🏙️ Urban Driving</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Challenge</th><th>TN Modifier</th><th>Frequency</th><th>Narrative Effect</th></tr></thead>
+<tbody>
+<tr><td>🚦 Stop-and-go traffic</td><td>+5 to routine TNs</td><td>Constant in rush hour</td><td>Frustration: +1 SP per day of bad commute</td></tr>
+<tr><td>🚶 Pedestrians everywhere</td><td>+5 to all TNs in dense areas</td><td>Constant</td><td>Heightened stress; near-misses common</td></tr>
+<tr><td>🅿️ Finding parking</td><td><span class="dice">INT TN 40</span></td><td>Every trip downtown</td><td>Circling 15–45 min; garages: $15–40/day</td></tr>
+<tr><td>🚌 Construction</td><td>+5 on affected roads</td><td>Seasonal (spring–fall)</td><td>Detours, delays, road rage</td></tr>
+<tr><td>🚲 Cyclists &amp; scooters</td><td>+3 in bike-heavy cities</td><td>Increasing common</td><td>Near-misses; tension with cycling community</td></tr>
+<tr><td>🚨 Road rage</td><td>d20 = 1 per day driven</td><td>Low but present</td><td><span class="dice">RES TN 35</span> to stay calm; failure = escalation</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌾 Rural Driving</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Challenge</th><th>TN Modifier</th><th>Frequency</th><th>Narrative Effect</th></tr></thead>
+<tbody>
+<tr><td>🐄 Animals on road</td><td>Surprise: d20 = 1–2 per trip</td><td>Common in farming areas</td><td><span class="dice">DXT + Driving TN 45</span> to avoid; failure = animal struck</td></tr>
+<tr><td>🛣️ Poor road conditions</td><td>+5 on unpaved/gravel</td><td>Seasonal / regional</td><td>Vehicle wear increases; suspension stress</td></tr>
+<tr><td>📵 No cell service</td><td>N/A</td><td>Common in remote areas</td><td>Cannot call for help if breakdown; GPS unreliable</td></tr>
+<tr><td>🌧️ Limited services</td><td>N/A</td><td>Always</td><td>Gas, food, hospitals 30+ min away. Planning critical.</td></tr>
+<tr><td>🚜 Slow vehicles</td><td>+3 when passing farm equipment</td><td>Daily in farming areas</td><td>Patience test; passing on two-lane roads is risky</td></tr>
+<tr><td>🌙 Long distances</td><td>N/A</td><td>Always</td><td>Grocery store is 20+ min away. Errands take 2–3× longer.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Commute Impact on Daily Life</div>
+  <ul>
+    <li><strong>Under 20 min each way:</strong> No penalty. Time for exercise, hobbies, social life.</li>
+    <li><strong>20–40 min each way:</strong> Normal. 1–1.5 hrs daily lost to commuting.</li>
+    <li><strong>40–60 min each way:</strong> <strong>+1 SP per day</strong> from commute fatigue. Less time for personal activities.</li>
+    <li><strong>60+ min each way:</strong> <strong>+2 SP per day</strong>. Severely time-deprived. <span class="dice">RES TN 40</span> weekly or character considers moving closer to work (may mean worse housing or higher rent).</li>
+  </ul>
+</div>
+
+
+<!-- ============================================================
+     SECTION 24 — EMERGENCY SCENARIOS
+     ============================================================ -->
+<h2>🚨 24. Emergency Scenarios</h2>
+
+<p>Vehicle emergencies are stressful, dangerous, and often happen at the worst possible time.</p>
+
+<h3>🛑 Breakdown on the Highway</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Highway Breakdown Sequence</div>
+  <ol>
+    <li><strong>Recognize problem:</strong> <span class="dice">INT TN 30</span> to identify what's wrong. Failure = doesn't notice until worse.</li>
+    <li><strong>Pull over safely:</strong> <span class="dice">DXT + Driving TN 35</span>. Failure = breaks down in dangerous position. Nearby traffic: <span class="dice">DXT + Driving TN 40</span> to avoid collision.</li>
+    <li><strong>Assess situation:</strong> <span class="dice">INT + Mechanical TN 35</span> to determine if drivable to nearest exit.</li>
+    <li><strong>Call for help:</strong> Wait time: 30 min–3 hrs. Cost: $50–200 (free with AAA). <strong>No cell service?</strong> Must flag down help or walk for phone.</li>
+    <li><strong>While waiting:</strong> <span class="dice">RES TN 35</span> to stay calm. Failure = +2 SP. Dangerous location: <span class="dice">RES TN 40</span> or +3 SP from fear.</li>
+  </ol>
+</div>
+
+<h3>🔥 Vehicle Fire</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Vehicle Fire Sequence</div>
+  <p>Vehicle fires are rare (<strong>d20 = 1</strong> on breakdown AND secondary d20 = 1–3) but catastrophic:</p>
+  <ol>
+    <li><strong>Detect smoke:</strong> <span class="dice">INT TN 25</span>. Success = time to pull over. Failure = fire starts unnoticed.</li>
+    <li><strong>Evacuate:</strong> All occupants: <span class="dice">DXT TN 30</span>. Failure = trapped; <span class="dice">VIG TN 40</span> to resist smoke.</li>
+    <li><strong>Call 911:</strong> Automatic if cell service. Response: 5–20 min.</li>
+    <li><strong>Outcome:</strong> Vehicle <strong>Totaled</strong>. Personal items may be lost. Comprehensive insurance pays (minus deductible).</li>
+  </ol>
+</div>
+
+<h3>🌊 Flood / Water Hazard</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Driving Through Flooded Roads</div>
+  <ul>
+    <li><strong>&lt; 6 inches:</strong> <span class="dice">DXT + Driving TN 35</span>. Most cars handle this.</li>
+    <li><strong>6–12 inches:</strong> <span class="dice">DXT + Driving TN 45</span>. Dangerous for sedans. Failure = stalling, engine damage ($2k–5k).</li>
+    <li><strong>12–18 inches:</strong> <span class="dice">DXT + Driving TN 55</span>. Most cars stall. SUVs: TN 45.</li>
+    <li><strong>18+ inches:</strong> <strong>DO NOT ATTEMPT.</strong> Vehicles swept away. If tried: <span class="dice">DXT + Driving TN 70</span>. Failure = swept away; <span class="dice">VIG TN 50</span> swimming checks to survive.</li>
+  </ul>
+</div>
+
+<h3>🏔️ Being Stranded in Remote Areas</h3>
+<div class="callout rule">
+  <div class="callout-title">📋 Stranded Survival</div>
+  <p>If a vehicle breaks down in a remote area without cell service:</p>
+  <ol>
+    <li><strong>Assess supplies:</strong> Water, food, first aid, warmth. Typical car: <strong>1 day minimum</strong> if prepared.</li>
+    <li><strong>Per hour:</strong> <span class="dice">RES TN 35</span> to stay calm. Failure = +2 SP. <strong>EXP + Survival</strong>: −10 bonus.</li>
+    <li><strong>Temperature extremes:</strong> Heat: <span class="dice">VIG TN 40</span> per hr after 2. Cold: <span class="dice">VIG TN 40</span> per hr without shelter. Failure = heat exhaustion / hypothermia.</li>
+    <li><strong>Rescue:</strong> If route known: 12–24 hrs. If not: must walk for help (<span class="dice">VIG + Survival TN 45</span> per mile).</li>
+  </ol>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Desert Breakdown</div>
+  <p><strong>Maya and her boyfriend Tom</strong> drive through the Mojave at 105°F. Maya's older Honda overheats on a road with no cell service (2 PM).</p>
+  <p><strong>Recognize:</strong> <span class="dice">INT TN 30</span>: 33 — <strong>success</strong>. Steam spotted, pulls over. <span class="dice">DXT + Driving TN 35</span>: 38 — <strong>success</strong>. Safe stop under shade.</p>
+  <p><strong>Assess:</strong> Maya has <span class="dice">Mechanical Level 1</span>. <span class="dice">INT + Mechanical TN 35</span>: 40 — <strong>success</strong>. Ruptured coolant hose. Car cannot be driven.</p>
+  <p><strong>Supplies:</strong> 2 water bottles, 2 granola bars, first aid kit, phone (no service). Nearest town: 40 miles.</p>
+  <p><strong>Hours 1–2:</strong> Both <span class="dice">RES TN 35</span>. Maya: 38 — success. Tom: 30 — failure. Tom +2 SP from panic. Maya calms him.</p>
+  <p><strong>Hour 3:</strong> <span class="dice">VIG TN 40</span>. Maya: 42 — success. Tom: 35 — failure. Heat exhaustion signs. They share water, wet bandanas. Tom's VIG −1 temporarily.</p>
+  <p><strong>Hour 4:</strong> A semi-trucker sees hazard lights, stops, offers ride to town. Calls tow for the Honda.</p>
+  <p><strong>Aftermath:</strong> 4 hours stranded. Maya +3 SP. Tom +5 SP. Tow: $250. Hose replacement: $150 + $75 labor (good Samaritan discount). Total: <strong>$475</strong>. Both now always carry extra water and an emergency kit.</p>
+</div>
+
+
+<!-- ============================================================
+     SECTION 25 — VEHICLE MEMBERSHIPS & SERVICES
+     ============================================================ -->
+<h2>📋 25. Vehicle Memberships &amp; Services</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Service</th><th>Annual Cost</th><th>Coverage</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>🅰️ AAA / Roadside assistance</td><td>$40–90</td><td>Towing (3–100 mi), lockout, flat tire, jump start, fuel delivery, travel discounts</td><td>⭐⭐⭐⭐⭐ (best ROI for older cars)</td></tr>
+<tr><td>🔧 Extended warranty</td><td>$1,000–3,000</td><td>Major repairs beyond factory warranty. Varies wildly by provider.</td><td>⭐⭐ (often not worth it; many denied claims)</td></tr>
+<tr><td>🛡️ Tire warranty</td><td>$50–150</td><td>Premature wear, punctures, road hazards</td><td>⭐⭐⭐ (worth it for high-mileage drivers)</td></tr>
+<tr><td>📱 Telematics (usage-based)</td><td>Free–$10/mo</td><td>Tracks driving; good drivers save up to 30%</td><td>⭐⭐⭐⭐ (great for safe drivers; privacy concerns)</td></tr>
+<tr><td>🔧 Subscription maintenance</td><td>$10–30/mo</td><td>Scheduled reminders, partner shop discounts</td><td>⭐⭐ (convenient but not essential)</td></tr>
+</tbody>
+</table>
+</div>
+
+
+<!-- ============================================================
+     QUICK REFERENCE
+     ============================================================ -->
+<h2>📋 Quick Reference: Driving TNs</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Scenario</th><th>Base TN</th><th>Modifiers</th></tr></thead>
+<tbody>
+<tr><td>🚗 Routine driving</td><td>25–35</td><td>Night +5, Passengers +3–5, Winter +5</td></tr>
+<tr><td>🅿️ Parallel parking</td><td>40–50</td><td>Tight space +5, Social pressure +5</td></tr>
+<tr><td>💨 Evasive maneuver</td><td>50–65</td><td>Speeding +5, Rain +5, Night +5</td></tr>
+<tr><td>🏔️ Off-road</td><td>45–60</td><td>Mud +5, Rocks +5, Water +5</td></tr>
+<tr><td>🏎️ High-speed</td><td>40–55</td><td>Curves +5, Traffic +5</td></tr>
+<tr><td>🛻 Trailer backing</td><td>50</td><td>Wind +5, Tight space +5</td></tr>
+<tr><td>❄️ Winter driving</td><td>+5 to all</td><td>Proper tires/4WD: −5 (cancels)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Proficiency</th><th>TN Modifier</th><th>Experience Required</th></tr></thead>
+<tbody>
+<tr><td>🟢 Novice</td><td>+5</td><td>&lt; 1 year</td></tr>
+<tr><td>🔵 Competent</td><td>0</td><td>1+ years clean</td></tr>
+<tr><td>🟡 Experienced</td><td>−5</td><td>5+ years clean</td></tr>
+<tr><td>🟠 Expert</td><td>−10</td><td>10+ years + defensive driving</td></tr>
+<tr><td>🔴 Master</td><td>−15</td><td>Professional / racing / military</td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  <p>Reality RPG &mdash; A hyper-realistic life simulation tabletop ruleset. No magic. No monsters. Just life.</p>
+  <p>Vehicle data sourced from 2024–2025 averages. US, UK, EU, Japan, India, Brazil, and Germany pricing included. Adjust for your campaign's setting and economy.</p>
+</footer>
+
+</body>
+</html>
