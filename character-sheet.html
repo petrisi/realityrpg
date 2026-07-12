@@ -125,28 +125,67 @@
 .track-step input[type="checkbox"] { margin-right: 0.3em; }
 
 /* --- Skill rows --- */
-.skill-row {
+/* --- Skills: compact 2-column layout --- */
+.skills-container {
   display: grid;
-  grid-template-columns: 140px 60px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 0;
-  border: 1px solid var(--color-border);
-  border-top: none;
-  font-size: 0.9rem;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.85rem;
 }
-.skill-row:first-child { border-top: 2px solid var(--color-primary); }
+.skills-left {
+  border-right: 1px solid var(--color-border);
+}
+.skill-block {
+  border-bottom: 1px solid var(--color-border);
+}
+.skill-block:last-child { border-bottom: none; }
 .skill-cat {
-  grid-column: 1 / -1;
   background: var(--color-primary);
   color: #fff;
-  padding: 0.3em 0.6em;
+  padding: 0.25em 0.6em;
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
 }
-.skill-name { padding: 0.3em 0.6em; border-right: 1px solid var(--color-border); }
-.skill-attr { padding: 0.3em; text-align: center; border-right: 1px solid var(--color-border); font-size: 0.8rem; color: var(--color-muted); }
-.skill-level { padding: 0.3em; }
-.skill-level input { width: 40px; text-align: center; border: 1px solid var(--color-border); border-radius: 3px; padding: 0.1em; }
+.skill-entry {
+  display: grid;
+  grid-template-columns: 1fr 36px 52px;
+  gap: 0;
+}
+.skill-entry .skill-name {
+  padding: 0.2em 0.5em;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+.skill-entry .skill-attr {
+  padding: 0.2em;
+  text-align: center;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  line-height: 1.3;
+}
+.skill-entry .skill-level {
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  line-height: 1.3;
+}
+.skill-entry .skill-level input {
+  width: 32px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 0.1em;
+  font-size: 0.8rem;
+}
 
 /* ============================================================
    SCREEN-ONLY decorations
@@ -296,15 +335,14 @@
   }
   .track-step small { font-size: 5.5pt !important; }
 
-  /* ---- Skill rows: compact ---- */
-  .skill-row {
-    font-size: 7pt !important;
-    border-width: 0.5pt !important;
-  }
-  .skill-name { padding: 1pt 3pt !important; }
-  .skill-attr { padding: 1pt 2pt !important; font-size: 6pt !important; }
-  .skill-level { padding: 1pt 2pt !important; }
-  .skill-level input { width: 28px !important; font-size: 7pt !important; }
+  /* ---- Skills: compact ---- */
+  .skills-container { border-width: 1.5px !important; font-size: 7.5pt !important; }
+  .skill-cat { font-size: 6.5pt !important; padding: 1pt 3pt !important; }
+  .skill-entry { grid-template-columns: 1fr 30px 44px !important; }
+  .skill-entry .skill-name { padding: 1pt 2pt !important; font-size: 7pt !important; }
+  .skill-entry .skill-attr { padding: 1pt 1pt !important; font-size: 5.5pt !important; }
+  .skill-entry .skill-level { padding: 1pt 1pt !important; font-size: 5.5pt !important; }
+  .skill-entry .skill-level input { width: 26px !important; font-size: 6.5pt !important; }
 
   /* ---- Health/Stress inline label ---- */
   .sheet-page label[style] {
@@ -317,13 +355,13 @@
   }
   .sheet-grid,
   .attr-row,
-  .skill-row,
+  .skills-container,
+  .skill-block,
   .health-track,
   .stress-track,
   .sheet-field,
   .attr-box,
-  .skill-name,
-  .skill-level,
+  .skill-entry,
   .track-step {
     break-inside: avoid;
   }
@@ -492,31 +530,37 @@
 <div class="sheet-page">
   <div class="sheet-section-title">📚 Skills</div>
 
-  <div class="skill-row">
-    <div class="skill-cat">⚡ Physical Skills</div>
-    <div class="skill-name">Athletics</div><div class="skill-attr">VIG</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Combat / Self-Defense</div><div class="skill-attr">VIG</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Driving</div><div class="skill-attr">DXT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Manual Labor</div><div class="skill-attr">VIG/DXT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Cooking</div><div class="skill-attr">DXT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-  </div>
-
-  <div class="skill-row">
-    <div class="skill-cat">📖 Mental Skills</div>
-    <div class="skill-name">Academics</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Technology</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Finance</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Language</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Professional</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
-  </div>
-
-  <div class="skill-row">
-    <div class="skill-cat">🤝 Social Skills</div>
-    <div class="skill-name">Communication</div><div class="skill-attr">EXP</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Empathy</div><div class="skill-attr">EXP</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Deception</div><div class="skill-attr">EXP</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Leadership</div><div class="skill-attr">PRC</div><div class="skill-level">Level: <input type="text" size="2"></div>
-    <div class="skill-name">Networking</div><div class="skill-attr">PRC</div><div class="skill-level">Level: <input type="text" size="2"></div>
+  <div class="skills-container">
+    <!-- Left column: Physical + Mental -->
+    <div class="skills-left">
+      <div class="skill-block">
+        <div class="skill-cat">⚡ Physical Skills</div>
+        <div class="skill-entry"><div class="skill-name">Athletics</div><div class="skill-attr">VIG</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Combat / Self-Defense</div><div class="skill-attr">VIG</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Driving</div><div class="skill-attr">DXT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Manual Labor</div><div class="skill-attr">VIG/DXT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Cooking</div><div class="skill-attr">DXT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-cat">📖 Mental Skills</div>
+        <div class="skill-entry"><div class="skill-name">Academics</div><div class="skill-attr">INT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Technology</div><div class="skill-attr">INT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Finance</div><div class="skill-attr">INT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Language</div><div class="skill-attr">INT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Professional</div><div class="skill-attr">INT</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+      </div>
+    </div>
+    <!-- Right column: Social -->
+    <div class="skills-right">
+      <div class="skill-block">
+        <div class="skill-cat">🤝 Social Skills</div>
+        <div class="skill-entry"><div class="skill-name">Communication</div><div class="skill-attr">EXP</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Empathy</div><div class="skill-attr">EXP</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Deception</div><div class="skill-attr">EXP</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Leadership</div><div class="skill-attr">PRC</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+        <div class="skill-entry"><div class="skill-name">Networking</div><div class="skill-attr">PRC</div><div class="skill-level">Lv <input type="text" size="2"></div></div>
+      </div>
+    </div>
   </div>
 
   <div class="sheet-section-title">🧠 Mental Health</div>
