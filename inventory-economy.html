@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventory &amp; Economy — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html" class="active">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+  <span class="hero-icon">🎒</span>
+  <h1>Inventory &amp; Economy</h1>
+  <p class="subtitle">Your pockets are full, your wallet is light, and the rent is due. Managing mundane possessions and money is the real boss fight — and it never ends.</p>
+</section>
+
+<section class="content-section">
+<div class="container">
+
+<h2>⚖️ Core Rule: Everything Costs Something</h2>
+
+<p>In most RPGs, inventory is a grid of slots and gold is XP with a wallet. In Reality RPG, <strong>every object you own has mass, cost, maintenance, and a probability of breaking</strong>. Money is not a resource you earn to spend on fun — it is the oxygen that keeps you alive. Running out of money is not a setback. It is <em>the</em> setback.</p>
+
+<p>Characters track three financial pools:</p>
+
+<ul>
+  <li><strong>💵 Cash on Hand</strong> — money physically on the character's person</li>
+  <li><strong>🏦 Bank Balance</strong> — money in checking/savings accounts</li>
+  <li><strong>💳 Available Credit</strong> — remaining credit card limit (a trap, not a treasure)</li>
+</ul>
+
+<p>Unlike fantasy RPGs where a +1 Sword can be replaced at the next town, in reality your car, your phone, your keys, and your medications are <em>irreplaceable in the short term</em>. Losing them has cascading consequences that can last weeks or months.</p>
+
+<div class="callout rule">
+  <div class="callout-title">⚖️ Inventory Is Not Optional</div>
+  <p>Every character must track their inventory. Unlike fantasy where the GM waves away mundane items, in Reality RPG <strong>forgetting your wallet, running out of toilet paper, or having your car break down</strong> are not inconveniences — they are <em>plot events</em>. The economy system is not flavor text. It is the primary challenge of the game.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>🎒 1. Inventory System</h2>
+
+<h3>📍 Slot-Based Inventory</h3>
+
+<p>Characters do not have a bottomless backpack. They have <strong>physical slots</strong> determined by what they're wearing and carrying. Each slot can hold items up to a weight limit. Exceeding the limit applies penalties.</p>
+
+<table>
+<thead>
+<tr><th>Slot</th><th>Max Weight</th><th>Slots</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>👖 <strong>Pockets</strong> (jeans/pants)</td><td>0.5 lb each</td><td>4</td><td>Front and back pockets. Phone in back pocket = discomfort penalty.</td></tr>
+<tr><td>🧥 <strong>Jacket Pockets</strong></td><td>0.5 lb each</td><td>2–4</td><td>Depends on jacket type. Hoodie = 2 pockets. Winter coat = 4.</td></tr>
+<tr><td>👛 <strong>Purse/Crossbody Bag</strong></td><td>15 lb</td><td>1 container</td><td>Many sub-compartments. Organization matters — searching takes time.</td></tr>
+<tr><td>🎒 <strong>Backpack</strong></td><td>25 lb (comfortable)</td><td>1 container</td><td>Can carry more but beyond 25 lb, −1 to all physical rolls per 5 lb over.</td></tr>
+<tr><td>🛒 <strong>Shopping Cart</strong></td><td>40 lb</td><td>1 container</td><td>Only available at stores. Abandoning a cart in a parking lot = social penalty.</td></tr>
+<tr><td>🚗 <strong>Vehicle Trunk</strong></td><td>300–600 lb</td><td>1 container</td><td>Available only if character owns/has access to a vehicle.</td></tr>
+</tbody>
+</table>
+
+<h3>⚖️ Encumbrance Rules</h3>
+
+<p>Real-world carrying capacity matters. A character's maximum comfortable load is determined by their <strong>VIG</strong> score and body type:</p>
+
+<table>
+<thead>
+<tr><th>VIG Score</th><th>Max Comfortable Load</th><th>Penalty When Overloaded</th></tr>
+</thead>
+<tbody>
+<tr><td>8 or below</td><td>15 lb</td><td>−2 to all physical rolls</td></tr>
+<tr><td>9–11</td><td>25 lb</td><td>−1 to all physical rolls</td></tr>
+<tr><td>12–14</td><td>40 lb</td><td>−1 to DEX-based rolls only</td></tr>
+<tr><td>15–17</td><td>55 lb</td><td>No penalty until 70 lb</td></tr>
+<tr><td>18+</td><td>70 lb</td><td>No penalty until 90 lb</td></tr>
+</tbody>
+</table>
+
+<p>Being overloaded also costs <strong>1 VIG per hour</strong> of carrying the excess weight. If a character's VIG reaches 0 while overloaded, they must set something down or risk injury (roll <span class="dice">1d20</span>; on 1–5, they drop everything and may sprain something).</p>
+
+<h3>😱 The Forgot-Something Penalty</h3>
+
+<p>Forgetting essential items is a common and devastating failure mode. At the start of each day, the GM may call for a <strong>Morning Routine Check</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Item Forgotten</th><th>Roll</th><th>Immediate Consequence</th><th>Cascade Effect</th></tr>
+</thead>
+<tbody>
+<tr><td>🔑 <strong>Keys</strong></td><td><span class="dice">1d20</span>; on 1–3</td><td>Locked out of home/car. Must call locksmith ($89–$250) or wait for housemate.</td><td>4–6 hours lost. May miss work → Boss Relationship −1.</td></tr>
+<tr><td>👛 <strong>Wallet</strong></td><td><span class="dice">1d20</span>; on 1–4</td><td>Cannot pay for anything. No ID, no cards, no cash.</td><td>If at work: cannot buy lunch. If at store: must abandon cart. Social humiliation.</td></tr>
+<tr><td>📱 <strong>Phone</strong></td><td><span class="dice">1d20</span>; on 1–3</td><td>No communication, no maps, no mobile banking, no 2FA.</td><td>Cannot receive work calls. May miss emergency. Modern life nearly impossible without it.</td></tr>
+<tr><td>🧻 <strong>Toilet Paper</strong></td><td>Check inventory at start of day</td><td>Must improvise. Washcloth, paper towels, or the dreaded "dry method."</td><td>−2 to Mood Score for the day. If TP has been gone &gt;3 days, roll <span class="dice">1d20</span>; on 1, character develops a health issue requiring a doctor visit.</td></tr>
+<tr><td>💊 <strong>Medications</strong></td><td><span class="dice">1d20</span>; on 1–4 (if on prescription)</td><td>Missed dose. Effects depend on medication type.</td><td>Insulin missed = possible emergency (roll <span class="dice">1d20</span>; on 1–6, go to ER). Blood pressure meds missed = +2 SP, health risk next week.</td></tr>
+<tr><td>🪪 <strong>ID / Driver's License</strong></td><td><span class="dice">1d20</span>; on 1–4</td><td>Cannot enter age-restricted places, cannot get cash from ATM, cannot board planes.</td><td>If stopped by police without ID: possible detention. Lost time: 2–8 hours.</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ The Cascade: One Forgotten Item Can Ruin a Week</div>
+  <p>Forget your keys → locked out → call locksmith ($150) → arrive at work 2 hours late → boss is angry → forced to use PTO → lose a day's pay → can't afford groceries → eating ramen for a week → low energy → poor work performance → Boss Relationship drops further. <strong>This is not game design. This is Tuesday.</strong></p>
+</div>
+
+<!-- ============================================================ -->
+<h2>📋 2. Essential Items Catalog</h2>
+
+<p>Every character starts with a set of essential items based on their background. The GM assigns starting gear according to the character's <strong>Socioeconomic Tier</strong> (see character creation). Below is a comprehensive catalog of costs for reference.</p>
+
+<h3>👤 Personal Essentials</h3>
+
+<table>
+<thead>
+<tr><th>Item</th><th>Cost Range</th><th>Lifespan</th><th>Replacement Frequency</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>📱 <strong>Smartphone</strong></td><td>$200–$1,200</td><td>3–5 years</td><td>Every 3–5 years</td><td>Cheaper phones break faster. Carrier plans add $30–$85/month.</td></tr>
+<tr><td>🔑 <strong>Key Set</strong> (home, car, work)</td><td>$5–$30</td><td>Indefinite</td><td>When lost or lock changed</td><td>Spare keys = $5–$15 each. Key fob for car = $100–$400.</td></tr>
+<tr><td>👛 <strong>Wallet</strong></td><td>$10–$100</td><td>2–5 years</td><td>Wears out; leather cracks</td><td>Free wallet from a brand = social penalty (known by everyone).</td></tr>
+<tr><td>🪪 <strong>ID / Driver's License</strong></td><td>$0–$60</td><td>4–8 years</td><td>Renew every 4–8 years</td><td>Replacement after loss = $10–$40 + time at DMV.</td></tr>
+<tr><td>💊 <strong>Prescription Medications</strong></td><td>$0–$500/month</td><td>Ongoing</td><td>Monthly refills</td><td>Generic = cheap. Brand = expensive. No insurance = catastrophic.</td></tr>
+<tr><td>🧴 <strong>Toiletries</strong> (soap, toothpaste, deodorant)</td><td>$15–$60/month</td><td>1–3 months per item</td><td>Monthly grocery run</td><td>Bulk buying saves ~30%. Organic/natural = +50% cost.</td></tr>
+<tr><td>🧻 <strong>Toilet Paper</strong></td><td>$3–$15 per pack</td><td>1–4 weeks</td><td>Weekly to monthly</td><td>Runs out faster than you think. Always buy extra. Always.</td></tr>
+</tbody>
+</table>
+
+<h3>👕 Clothing</h3>
+
+<table>
+<thead>
+<tr><th>Category</th><th>Budget Tier</th><th>Mid Tier</th><th>Premium Tier</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>👔 <strong>Work Clothes</strong> (full outfit)</td><td>$50–$150</td><td>$200–$500</td><td>$600–$2,000</td><td>Office job? You need at least 3 changes for the week.</td></tr>
+<tr><td>👟 <strong>Shoes</strong></td><td>$25–$60</td><td>$80–$150</td><td>$200–$400</td><td>Work shoes last 1–2 years. Running shoes: 6 months with use.</td></tr>
+<tr><td>🧥 <strong>Seasonal Wardrobe</strong> (winter/summer)</td><td>$100–$300 per season</td><td>$400–$800</td><td>$1,000–$3,000</td><td>Need at least 2 seasonal sets minimum.</td></tr>
+<tr><td>🏋️ <strong>Gym Clothes</strong></td><td>$30–$80</td><td>$100–$250</td><td>$300–$600</td><td>Optional unless character exercises regularly.</td></tr>
+<tr><td>🎩 <strong>Situational</strong> (wedding, interview, funeral)</td><td>$0 (borrow)</td><td>$100–$300</td><td>$500+</td><td>One outfit that works for all three is ideal.</td></tr>
+</tbody>
+</table>
+
+<p>Characters need <strong>at least 7–10 complete outfits</strong> for a week without doing laundry. Fewer outfits = laundry every 2–3 days = time cost. More outfits = closet space needed = larger (more expensive) housing.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Clothing Is a Silent Budget Killer</div>
+  <p>Most characters underestimate how much clothing costs. A full wardrobe for all seasons, including work-appropriate attire, easily runs $800–$2,000 per year for a mid-tier character. This is before shoes, before accessories, before replacing worn items. Track clothing wear: each month, roll <span class="dice">1d20</span>; on a 1, an item wears out and needs replacement.</p>
+</div>
+
+<h3>🛒 Food</h3>
+
+<table>
+<thead>
+<tr><th>Quality Tier</th><th>Weekly Cost (1 person)</th><th>Monthly Cost</th><th>What You Eat</th></tr>
+</thead>
+<tbody>
+<tr><td>🥫 <strong>Bare Minimum</strong></td><td>$25–$40</td><td>$100–$160</td><td>Ramen, bread, peanut butter, rice, canned beans. Survival nutrition.</td></tr>
+<tr><td>🥪 <strong>Budget</strong></td><td>$40–$65</td><td>$160–$260</td><td>Basic groceries. Some fresh produce. Occasional frozen meals.</td></tr>
+<tr><td>🥗 <strong>Standard</strong></td><td>$65–$100</td><td>$260–$400</td><td>Balanced diet. Fresh meat, vegetables, fruit. Some name brands.</td></tr>
+<tr><td>🥩 <strong>Quality</strong></td><td>$100–$160</td><td>$400–$640</td><td>Organic options, seafood, specialty items. Farmers market visits.</td></tr>
+<tr><td>🍽️ <strong>Premium</strong></td><td>$160+</td><td>$640+</td><td>Artisanal, imported, dietary-specific. Whole Foods on steroids.</td></tr>
+</tbody>
+</table>
+
+<h4>🍽️ Restaurant Costs (Per Meal)</h4>
+
+<table>
+<thead>
+<tr><th>Establishment Type</th><th>Cost Range</th><th>Time Investment</th></tr>
+</thead>
+<tbody>
+<tr><td>🍔 <strong>Fast Food</strong></td><td>$5–$12</td><td>10–15 min (including wait)</td></tr>
+<tr><td>🥡 <strong>Fast Casual</strong> (Chipotle, Sweetgreen)</td><td>$12–$18</td><td>15–25 min</td></tr>
+<tr><td>🍝 <strong>Casual Restaurant</strong></td><td>$18–$35</td><td>45–75 min</td></tr>
+<tr><td>🥂 <strong>Nice Restaurant</strong></td><td>$40–$80</td><td>1.5–2.5 hours</td></tr>
+<tr><td>🌟 <strong>Fine Dining</strong></td><td>$80–$200+</td><td>2–4 hours</td></tr>
+</tbody>
+</table>
+
+<p>Eating out <strong>3 times per week at casual restaurants</strong> costs $216–$420/month — more than the entire grocery budget for a Standard tier character. This is why eating out is a luxury, not a habit, for most people.</p>
+
+<h3>🏠 Housing</h3>
+
+<table>
+<thead>
+<tr><th>Tier</th><th>Monthly Rent</th><th>Security Deposit</th><th>Typical Space</th><th>Location</th></tr>
+</thead>
+<tbody>
+<tr><td>🏚️ <strong>Substandard</strong></td><td>$400–$700</td><td>1 month</td><td>Room in shared house, basement unit</td><td>High-crime area, poor maintenance</td></tr>
+<tr><td>🏢 <strong>Low-Income</strong></td><td>$700–$1,200</td><td>1 month</td><td>Studio or 1BR in older building</td><td>Outer suburbs, declining neighborhoods</td></tr>
+<tr><td>🏠 <strong>Standard</strong></td><td>$1,200–$2,200</td><td>1–2 months</td><td>1BR or 2BR apartment</td><td>Middle neighborhoods, decent transit</td></tr>
+<tr><td>🏡 <strong>Comfortable</strong></td><td>$2,200–$4,000</td><td>1–2 months</td><td>2BR–3BR, newer building, amenities</td><td>Good neighborhoods, near downtown</td></tr>
+<tr><td>🏙️ <strong>Premium</strong></td><td>$4,000–$8,000+</td><td>2–3 months</td><td>Luxury apartment, condo, or house</td><td>Top neighborhoods, city center</td></tr>
+</tbody>
+</table>
+
+<h4>💡 Utilities &amp; Monthly Fixed Costs</h4>
+
+<table>
+<thead>
+<tr><th>Utility</th><th>Monthly Cost</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>💡 <strong>Electricity</strong></td><td>$50–$200</td><td>Higher in summer (AC) and winter (heat). Electric heating = expensive.</td></tr>
+<tr><td>🌊 <strong>Water/Sewer</strong></td><td>$30–$80</td><td>Usually included in rent for apartments. Owners pay full.</td></tr>
+<tr><td>🔥 <strong>Gas/Heating</strong></td><td>$30–$150</td><td>Seasonal. Winter = higher. Some apartments include this.</td></tr>
+<tr><td>📶 <strong>Internet</strong></td><td>$40–$80</td><td>Non-negotiable in 2025. Work from home? You need fast.</td></tr>
+<tr><td>📱 <strong>Phone Plan</strong></td><td>$30–$85</td><td>Prepaid = cheaper. Unlimited data = more expensive.</td></tr>
+<tr><td>📺 <strong>Streaming/Entertainment</strong></td><td>$15–$60</td><td>Netflix, Spotify, etc. Optional but socially expected.</td></tr>
+<tr><td>🏢 <strong>HOA Fees</strong></td><td>$100–$400</td><td>If in condo/HOA community. Mandatory. No opting out.</td></tr>
+</tbody>
+</table>
+
+<h3>🚗 Transportation</h3>
+
+<table>
+<thead>
+<tr><th>Option</th><th>Upfront Cost</th><th>Monthly Cost</th><th>Annual Cost</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>🚗 <strong>Car Purchase</strong> (used, reliable)</td><td>$5,000–$15,000</td><td>—</td><td>—</td><td>Can also finance: $200–$500/month for 48–72 months</td></tr>
+<tr><td>🚗 <strong>Car Purchase</strong> (new)</td><td>$30,000–$50,000+</td><td>—</td><td>—</td><td>Financing: $400–$800/month. Depreciates 20% year one.</td></tr>
+<tr><td>⛽ <strong>Gas</strong></td><td>—</td><td>$100–$300</td><td>$1,200–$3,600</td><td>Depends on commute distance. EV = electricity instead.</td></tr>
+<tr><td>🔧 <strong>Car Maintenance</strong></td><td>—</td><td>$50–$150 avg</td><td>$600–$1,800</td><td>Oil changes, tires, brakes, unexpected repairs</td></tr>
+<tr><td>🅿️ <strong>Parking</strong></td><td>—</td><td>$50–$300</td><td>$600–$3,600</td><td>City parking is expensive. Street parking = stress.</td></tr>
+<tr><td>🚌 <strong>Public Transit Pass</strong></td><td>—</td><td>$70–$130</td><td>$840–$1,560</td><td>Monthly pass. Cheaper than owning a car in cities.</td></tr>
+<tr><td>🚲 <strong>Bicycle</strong></td><td>$100–$2,000</td><td>$5–$20</td><td>$60–$240</td><td>Cheapest option. Weather-dependent. Theft risk.</td></tr>
+</tbody>
+</table>
+
+<h3>🏥 Healthcare</h3>
+
+<table>
+<thead>
+<tr><th>Category</th><th>Monthly Cost</th><th>Annual Cost</th><th>Notes</th></tr>
+</thead>
+<tbody>
+<tr><td>🏥 <strong>Insurance Premium</strong> (employer-subsidized)</td><td>$100–$400</td><td>$1,200–$4,800</td><td>Deductible still $1,000–$6,000/year. Premium is NOT the full cost.</td></tr>
+<tr><td>🏥 <strong>Insurance Premium</strong> (individual market)</td><td>$300–$800</td><td>$3,600–$9,600</td><td>ACA marketplace. Subsidies may reduce this dramatically.</td></tr>
+<tr><td>👨‍⚕️ <strong>Primary Care Visit</strong></td><td>—</td><td>$20–$50 copay</td><td>After deductible met: 10–20% of $150–$250 visit cost.</td></tr>
+<tr><td>🚑 <strong>ER Visit</strong></td><td>—</td><td>$500–$10,000+</td><td>Even with insurance. Ambulance alone: $500–$3,000.</td></tr>
+<tr><td>💊 <strong>Prescriptions</strong> (generic)</td><td>$5–$50/month</td><td>$60–$600</td><td>Brand name: $100–$500+/month. Some drugs = $1,000+/month.</td></tr>
+<tr><td>🦷 <strong>Dental</strong> (cleaning + checkup)</td><td>—</td><td>$0–$100 copay</td><td>Major dental work: $500–$5,000 (crowns, root canals, implants)</td></tr>
+<tr><td>👁️ <strong>Vision</strong> (eye exam + glasses)</td><td>—</td><td>$50–$400</td><td>Contacts: +$100–$300/year. LASIK: $2,000–$4,000 one-time.</td></tr>
+<tr><td>🧠 <strong>Mental Health</strong> (therapy)</td><td>$0–$100 copay</td><td>$0–$1,200</td><td>Out-of-network: $100–$250/session. Many have limited sessions/year.</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Healthcare Is The Budget Assassin</div>
+  <p>One unexpected medical event can wipe out a character's entire savings. A broken bone: $3,000–$15,000. An appendectomy: $10,000–$50,000. Chronic illness management: $500–$3,000/month indefinitely. <strong>Health insurance is not optional.</strong> Characters without health insurance should roll <span class="dice">1d20</span> at the start of each month; on a 1–4, a health event occurs.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>💰 3. Money Management</h2>
+
+<h3>🏦 Bank Accounts</h3>
+
+<p>Characters typically have at least two accounts:</p>
+
+<ul>
+  <li><strong>Checking Account</strong> — daily spending, bill payments, direct deposit. Usually earns 0% interest.</li>
+  <li><strong>Savings Account</strong> — emergency fund, future purchases. Earns 0.5–5% APY depending on bank.</li>
+  <li><strong>Money Market / CD</strong> (optional) — higher interest but harder to access. For longer-term savings.</li>
+</ul>
+
+<p><strong>Overdraft Protection</strong> costs $10–$35 per occurrence. Forgetting a bill payment and going into overdraft is a <strong>real and common</strong> way to lose money. Characters with a history of overdrafts should track an <strong>Overdraft Risk</strong> score:</p>
+
+<table>
+<thead>
+<tr><th>Account Balance vs. Minimum</th><th>Overdraft Risk</th><th>Roll</th></tr>
+</thead>
+<tbody>
+<tr><td>🟢 &gt;$500 above minimum</td><td>None</td><td>No roll needed</td></tr>
+<tr><td>🟡 $100–$500 above minimum</td><td>Low</td><td><span class="dice">1d20</span>; on 1, overdraft ($30)</td></tr>
+<tr><td>🟠 $0–$100 above minimum</td><td>Medium</td><td><span class="dice">1d20</span>; on 1–4, overdraft ($30)</td></tr>
+<tr><td>🔴 Below minimum</td><td>Critical</td><td><span class="dice">1d20</span>; on 1–8, overdraft ($30). On 1, multiple overdrafts ($90–$150)</td></tr>
+</tbody>
+</table>
+
+<h3>💳 Credit Cards</h3>
+
+<p>Credit cards are a double-edged sword. They build credit history (necessary for apartments, car loans, even some jobs) but carry devastating interest rates.</p>
+
+<table>
+<thead>
+<tr><th>Factor</th><th>Details</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Typical APR</strong></td><td>15–25% on purchases. 25–30% on cash advances. 0% intro offers last 12–18 months.</td></tr>
+<tr><td><strong>Minimum Payment</strong></td><td>1–3% of balance + interest. Paying only the minimum on a $5,000 balance at 20% APR takes <strong>32 years</strong> to pay off, costing <strong>$15,000+</strong> in interest.</td></tr>
+<tr><td><strong>Annual Fees</strong></td><td>$0–$550 for premium cards. Reward cards charge fees but offer cashback/points.</td></tr>
+<tr><td><strong>Credit Score Impact</strong></td><td>Utilization &gt;30% of limit = credit score drops. Maxing out cards = major score damage.</td></tr>
+</tbody>
+</table>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: The Credit Card Trap</div>
+  <p>Diego puts a $1,200 car repair on his credit card (APR 22%). He can only afford the minimum payment of ~$35/month. After 1 year: he's paid $420 in payments but only reduced the balance to $1,003. After 3 years: he's paid $1,260 and still owes $642. After 5 years: he's paid <strong>$2,100 total</strong> for a $1,200 repair. The card charged him <strong>$900 in interest</strong>.</p>
+</div>
+
+<h3>📊 Budgeting As A Mechanic</h3>
+
+<p>Budgeting is not optional. Characters who actively budget gain mechanical benefits:</p>
+
+<ul>
+  <li><strong>Budget Score (BS)</strong>: Track on a scale of 0–100. Starts at 50 for most characters.</li>
+  <li>Each month, the character's income and expenses shift their BS.</li>
+  <li>BS &gt; 70 = financial comfort. BS 40–70 = stable. BS 20–40 = stressed. BS &lt; 20 = crisis.</li>
+  <li>Characters with BS &gt; 60 gain +5 to stress resistance checks. BS &lt; 30 imposes −5 to stress resistance.</li>
+</ul>
+
+<h3>🚨 Emergency Fund</h3>
+
+<p>An emergency fund is <strong>the single most important financial tool</strong> a character can have. It is 3–6 months of essential expenses saved in a separate account.</p>
+
+<table>
+<thead>
+<tr><th>Emergency Fund Size</th><th>Effect</th></tr>
+</thead>
+<tbody>
+<tr><td>🟢 6+ months</td><td>Immune to most financial crises. Can take job risks. +10 to Budget Score.</td></tr>
+<tr><td>🟡 3–6 months</td><td>Can survive most one-time events (car repair, medical bill). +5 to Budget Score.</td></tr>
+<tr><td>🟠 1–3 months</td><td>Vulnerable to larger events. Small emergencies manageable. No modifier.</td></tr>
+<tr><td>🔴 0–1 months</td><td>Any unexpected expense causes crisis. −5 to Budget Score. −2 to all mood checks.</td></tr>
+<tr><td>💀 None</td><td>Living paycheck to paycheck. One flat tire away from catastrophe. −10 to Budget Score. −3 to all mood checks.</td></tr>
+</tbody>
+</table>
+
+<h3>💀 Bankruptcy Risk</h3>
+
+<p>When a character's Budget Score drops below 10 for 3+ consecutive months, they enter <strong>Financial Freefall</strong>. Each month in freefall, roll <span class="dice">1d20</span>:</p>
+
+<table>
+<thead>
+<tr><th>Roll</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td><strong>Catastrophe:</strong> Eviction, car repossession, or medical emergency without insurance. Immediate crisis event.</td></tr>
+<tr><td>2–4</td><td><strong>Major setback:</strong> Job loss, major repair, or unexpected medical bill ($1,000–$5,000).</td></tr>
+<tr><td>5–8</td><td><strong>Minor setback:</strong> Unexpected expense ($100–$500). A tire blows, a tooth needs work, clothes wear out.</td></tr>
+<tr><td>9–15</td><td><strong>Stress:</strong> Nothing happens this month, but Budget Score drops 5 more points from anxiety.</td></tr>
+<tr><td>16–20</td><td><strong>Small reprieve:</strong> A tax refund, a small windfall, or an expense was lower than expected. +5 to Budget Score.</td></tr>
+</tbody>
+</table>
+
+<p>After 6 months in Financial Freefall, the GM should offer the character a path to stabilization — but it will require <strong>roleplay sacrifice</strong> (moving in with family, taking a second job, cutting all discretionary spending, etc.).</p>
+
+<!-- ============================================================ -->
+<h2>📅 4. Monthly Budget Simulation</h2>
+
+<h3>💡 Sample Budget: "Sarah" — 28, Office Worker, Standard Tier</h3>
+
+<div class="callout example">
+  <div class="callout-title">📝 Sarah's Monthly Budget</div>
+  <p><strong>Income:</strong> $4,200/month (after taxes, $50,400/year)</p>
+
+  <table>
+  <thead>
+  <tr><th>Expense</th><th>Monthly Cost</th><th>% of Income</th></tr>
+  </thead>
+  <tbody>
+  <tr><td>🏠 Rent (1BR apartment)</td><td>$1,500</td><td>36%</td></tr>
+  <tr><td>💡 Utilities (electric, water, gas)</td><td>$120</td><td>3%</td></tr>
+  <tr><td>📶 Internet</td><td>$60</td><td>1%</td></tr>
+  <tr><td>📱 Phone Plan</td><td>$55</td><td>1%</td></tr>
+  <tr><td>🏥 Health Insurance (employer)</td><td>$180</td><td>4%</td></tr>
+  <tr><td>🚗 Car Payment</td><td>$280</td><td>7%</td></tr>
+  <tr><td>🚗 Car Insurance</td><td>$120</td><td>3%</td></tr>
+  <tr><td>⛽ Gas</td><td>$130</td><td>3%</td></tr>
+  <tr><td>🛒 Groceries</td><td>$350</td><td>8%</td></tr>
+  <tr><td>🍽️ Eating Out (2x/week)</td><td>$120</td><td>3%</td></tr>
+  <tr><td>💊 Medications</td><td>$25</td><td>1%</td></tr>
+  <tr><td>🧴 Toiletries/Personal</td><td>$40</td><td>1%</td></tr>
+  <tr><td>👕 Clothing (averaged)</td><td>$50</td><td>1%</td></tr>
+  <tr><td>🎬 Entertainment</td><td>$60</td><td>1%</td></tr>
+  <tr><td>🎁 Gifts/Occasional</td><td>$40</td><td>1%</td></tr>
+  <tr><td>📋 Miscellaneous</td><td>$50</td><td>1%</td></tr>
+  <tr><td>💰 Savings</td><td>$300</td><td>7%</td></tr>
+  </tbody>
+  <tfoot>
+  <tr><td><strong>Total</strong></td><td><strong>$4,380</strong></td><td><strong>104%</strong></td></tr>
+  </tfoot>
+  </table>
+
+  <p><strong>Deficit: −$180/month</strong>. Sarah is <em>already</em> over budget. She's either dipping into savings, using credit, or cutting somewhere not shown. After 3 months, she's $540 in the hole. After a year, $2,160.</p>
+</div>
+
+<h3>🔥 What Happens When You're Over Budget</h3>
+
+<table>
+<thead>
+<tr><th>Deficit Level</th><th>Monthly Shortfall</th><th>Consequence</th></tr>
+</thead>
+<tbody>
+<tr><td>🟡 <strong>Slight</strong></td><td>$50–$150</td><td>Can absorb from savings for a few months. Stress builds slowly.</td></tr>
+<tr><td>🟠 <strong>Moderate</strong></td><td>$150–$400</td><td>Savings drain in 3–6 months. Must cut expenses or use credit. Budget Score drops 5/month.</td></tr>
+<tr><td>🔴 <strong>Severe</strong></td><td>$400–$800</td><td>Savings gone in 1–2 months. Credit card debt accumulates. Budget Score drops 10/month. Must make lifestyle changes or find income.</td></tr>
+<tr><td>💀 <strong>Critical</strong></td><td>$800+</td><td>Cannot cover essentials. Rent late → eviction risk. Bills unpaid → shut-offs. Budget Score drops 15/month. Enter Financial Freefall within 2 months.</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ The Latte Factor Is a Myth</div>
+  <p>Financial influencers love saying "skip the $5 latte and you'll save $600/year." This is insulting and wrong. The real budget killers are <strong>rent, healthcare, transportation, and debt payments</strong> — three items that consume 60–80% of most people's income. Saving $5 on coffee while paying $1,500 in rent is like bailing out the Titanic with a teaspoon. Characters who focus on small savings while ignoring structural costs are setting themselves up for failure.</p>
+</div>
+
+<h3>💡 Budget Improvement Strategies</h3>
+
+<p>Characters can take actions to improve their budget. Each takes time and effort:</p>
+
+<table>
+<thead>
+<tr><th>Action</th><th>Time Investment</th><th>Monthly Savings</th><th>Difficulty</th></tr>
+</thead>
+<tbody>
+<tr><td>🏠 Move to cheaper housing</td><td>2–4 weeks (search + move)</td><td>$200–$600</td><td>High — may mean worse location/conditions</td></tr>
+<tr><td>💼 Get a raise or new job</td><td>1–3 months</td><td>$200–$1,000+</td><td>Very high — requires skill checks, interview checks</td></tr>
+<tr><td>🍳 Cook more at home</td><td>Ongoing (1–2 hrs/day)</td><td>$100–$300</td><td>Medium — requires Cooking skill</td></tr>
+<tr><td>🚌 Use public transit instead of car</td><td>1 day (sell car, get pass)</td><td>$300–$600</td><td>Medium — may limit job/housing options</td></tr>
+<tr><td>💳 Refinance high-interest debt</td><td>1–2 weeks</td><td>$50–$200</td><td>Medium — requires good credit score</td></tr>
+<tr><td>🎬 Cut entertainment spending</td><td>Immediate</td><td>$30–$100</td><td>Easy but increases Stress Points</td></tr>
+</tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>🛍️ 5. Shopping and Consumption</h2>
+
+<h3>🎮 Shopping As Gameplay</h3>
+
+<p>Shopping is not a cutscene. It is a <strong>mechanic with time costs, budget constraints, and decision trees</strong>. Every shopping trip requires:</p>
+
+<ul>
+  <li><strong>Time:</strong> 30 minutes to 4 hours depending on what's being bought and where</li>
+  <li><strong>Budget:</strong> the character must have the money available</li>
+  <li><strong>Research:</strong> comparing prices, reading reviews, checking quality</li>
+  <li><strong>Transportation:</strong> getting to the store (or waiting for delivery)</li>
+</ul>
+
+<h4>Price Comparison Mechanic</h4>
+
+<p>When a character wants to buy something, the GM sets a <strong>Target Price</strong> based on the item's typical cost. The character can attempt to find a better deal:</p>
+
+<table>
+<thead>
+<tr><th>Strategy</th><th>Time Cost</th><th>Potential Savings</th><th>Roll</th></tr>
+</thead>
+<tbody>
+<tr><td>🏪 <strong>Buy at first store</strong></td><td>0 extra</td><td>0%</td><td>None — full price</td></tr>
+<tr><td>🔍 <strong>Check 2–3 stores</strong></td><td>30–60 min</td><td>5–15%</td><td><span class="dice">1d20</span>; on 10+, find better price</td></tr>
+<tr><td>💻 <strong>Online price comparison</strong></td><td>15–30 min</td><td>10–25%</td><td><span class="dice">1d20</span> + INT modifier; on 10+, find best deal</td></tr>
+<tr><td>🎫 <strong>Use coupons/sales</strong></td><td>1–2 hrs prep</td><td>15–50%</td><td><span class="dice">1d20</span>; on 12+, find valid coupon. On 16+, stack deals.</td></tr>
+<tr><td>📦 <strong>Buy used/refurbished</strong></td><td>2–4 hrs</td><td>30–70%</td><td><span class="dice">1d20</span>; on 1–5, buy a lemon (broken item, lose money)</td></tr>
+<tr><td>🏭 <strong>Buy generic/store brand</strong></td><td>0 extra</td><td>20–40%</td><td>Quality may be lower: roll <span class="dice">1d20</span>; on 1–4, product is inferior</td></tr>
+</tbody>
+</table>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Budget Shopping vs. Premium Shopping</div>
+  <p><strong>Alex</strong> needs a new laptop. Options:</p>
+  <ul>
+    <li><strong>Budget path:</strong> Buy a used laptop for $200. Takes 3 hours of searching. Roll <span class="dice">1d20</span> = 14 — found a decent one! But it only lasts 1 year before problems start. Total cost over 2 years: $400 (need to replace).</li>
+    <li><strong>Mid path:</strong> Buy a refurbished business laptop for $450. Takes 2 hours of research. Lasts 3 years. Better value long-term.</li>
+    <li><strong>Premium path:</strong> Buy a new laptop for $900. Takes 20 minutes. Lasts 4–5 years. But Alex needed to use a credit card and can't pay it off immediately. Interest charges add $150 over 18 months. Total cost: $1,050.</li>
+  </ul>
+  <p><strong>The "best" option depends entirely on Alex's current financial situation.</strong></p>
+</div>
+
+<h3>⏰ The Time Cost of Saving Money</h3>
+
+<p>This is a core Reality RPG principle: <strong>time has value</strong>. Spending 4 hours to save $20 on groceries costs the character:</p>
+
+<ul>
+  <li>4 hours of their day (less sleep, less leisure, less time with loved ones)</li>
+  <li>If they earn $15/hr, those 4 hours are worth $60 in potential income</li>
+  <li>Mental fatigue from decision-making (−1 to Mood Score per hour of intense shopping)</li>
+</ul>
+
+<p>Characters must weigh: <em>Is saving $20 worth 4 hours of my life?</em> The answer changes depending on whether the character is wealthy, middle-class, or living paycheck to paycheck.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Shopping Is a Narrative Device</div>
+  <p>Use shopping trips to reveal character priorities. A character who spends 2 hours comparing mattress prices but buys the cheapest phone plan is making a statement about what they value. A character who impulse-buys expensive shoes while behind on rent is showing a flaw that the story can explore.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>📉 6. Resource Depletion</h2>
+
+<h3>⏳ Everything Runs Out</h3>
+
+<p>In fantasy RPGs, a character can eat a ration for 40 years. In Reality RPG, <strong>consumables deplete at realistic rates</strong>. Characters should track the status of key consumables:</p>
+
+<table>
+<thead>
+<tr><th>Resource</th><th>Depletion Rate</th><th>Warning Threshold</th><th>Consequence of Running Out</th></tr>
+</thead>
+<tbody>
+<tr><td>🧻 <strong>Toilet Paper</strong></td><td>1 roll per 2–7 days</td><td>1 roll left</td><td>Discomfort, hygiene issues, trip to store urgently</td></tr>
+<tr><td>🍕 <strong>Food</strong></td><td>3 meals/day</td><td>1 day of food left</td><td>Hunger penalties: −1 to all rolls. After 3 days: −2, lose 1 VIG/day</td></tr>
+<tr><td>📱 <strong>Phone Battery</strong></td><td>1 charge/day (heavy use: 2x/day)</td><td>20% battery</td><td>Cannot call, text, or navigate. In emergency: catastrophic.</td></tr>
+<tr><td>⛽ <strong>Gas Tank</strong></td><td>Depends on driving</td><td>1/8 tank</td><td>Running out = stranded. Tow: $75–$200. If in remote area: danger.</td></tr>
+<tr><td>💊 <strong>Prescription Medications</strong></td><td>Per prescription schedule</td><td>3 doses left</td><td>Missed doses: health effects vary. Insulin: possible emergency.</td></tr>
+<tr><td>🧴 <strong>Toiletries</strong></td><td>1–3 months per item</td><td>Almost empty</td><td>Cannot maintain hygiene. Hygiene Score drops. Social penalties.</td></tr>
+<tr><td>🧊 <strong>Ice</strong> (for cooler/medical)</td><td>Melts in hours</td><td>Half gone</td><td>Spoiled food, lost medications if temperature-sensitive</td></tr>
+<tr><td>🔋 <strong>Batteries</strong> (remotes, smoke detector)</td><td>6–18 months</td><td>Low battery warning</td><td>Smoke detector with dead battery = fire risk. Roll <span class="dice">1d20</span> monthly; on 1, fire event.</td></tr>
+</tbody>
+</table>
+
+<h3>🍎 Food Spoilage</h3>
+
+<p>Fresh food doesn't last forever. Characters who buy in bulk risk waste:</p>
+
+<table>
+<thead>
+<tr><th>Food Type</th><th>Shelf Life (Refrigerated)</th><th>Shelf Life (Pantry)</th><th>Waste Risk</th></tr>
+</thead>
+<tbody>
+<tr><td>🥬 <strong>Fresh vegetables</strong></td><td>3–7 days</td><td>Root veg: 2–4 weeks</td><td>High — 40% of purchased produce is wasted</td></tr>
+<tr><td>🍎 <strong>Fresh fruit</strong></td><td>5–10 days</td><td>Citrus: 2–3 weeks</td><td>Medium</td></tr>
+<tr><td>🥩 <strong>Raw meat</strong></td><td>1–3 days</td><td>Frozen: 3–6 months</td><td>High — must cook or freeze quickly</td></tr>
+<tr><td>🥛 <strong>Dairy</strong></td><td>5–14 days</td><td>Hard cheese: 3–4 weeks</td><td>Medium</td></tr>
+<tr><td>🍚 <strong>Rice, pasta, canned goods</strong></td><td>N/A</td><td>6–24 months</td><td>Low — staple foods don't spoil quickly</td></tr>
+<tr><td>🍞 <strong>Bread</strong></td><td>3–5 days</td><td>Frozen: 3 months</td><td>High — molds fast</td></tr>
+</tbody>
+</table>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Grocery Run Gone Wrong</div>
+  <p>Maya buys $80 of groceries on Sunday, excited to cook healthy all week. By Wednesday, she's working late and orders take-out ($22) instead of cooking. By Friday, half the fresh produce has spoiled because she didn't meal-plan. She threw away $25 of food. Her effective grocery cost for the week is now $77 ($80 − $25 waste + $22 take-out), and she still didn't eat as well as planned. <strong>Meal planning is a mechanic, not a suggestion.</strong></p>
+</div>
+
+<!-- ============================================================ -->
+<h2>🔧 7. Breaking Things</h2>
+
+<h3>💥 Everything Breaks Eventually</h3>
+
+<p>In Reality RPG, objects are not immortal. Every owned item has a <strong>Durability Score</strong> that degrades over time. When an item's durability reaches 0, it breaks. The GM determines when to roll for item failure:</p>
+
+<table>
+<thead>
+<tr><th>Item</th><th>Average Lifespan</th><th>Failure Roll</th><th>Repair Cost</th><th>Replacement Cost</th></tr>
+</thead>
+<tbody>
+<tr><td>📱 <strong>Phone</strong></td><td>3–5 years</td><td><span class="dice">1d20</span> monthly; on 1, screen cracks or battery degrades</td><td>$50–$300 (screen)</td><td>$200–$1,200</td></tr>
+<tr><td>👟 <strong>Shoes</strong></td><td>6–24 months</td><td><span class="dice">1d20</span> monthly; on 1, sole separates or tread wears through</td><td>$10–$30 (resole)</td><td>$25–$200</td></tr>
+<tr><td>🚗 <strong>Car</strong></td><td>10–20 years</td><td><span class="dice">1d20</span> monthly; on 1, breakdown ($100–$2,000 repair)</td><td>$50–$5,000+</td><td>$5,000–$50,000</td></tr>
+<tr><td>👔 <strong>Work Clothes</strong></td><td>2–4 years</td><td><span class="dice">1d20</span> quarterly; on 1, stain, tear, or pill beyond repair</td><td>$5–$30 (tailor)</td><td>$20–$200</td></tr>
+<tr><td>🛋️ <strong>Furniture</strong></td><td>5–15 years</td><td><span class="dice">1d20</span> yearly; on 1, structural failure</td><td>$50–$500</td><td>$100–$3,000</td></tr>
+<tr><td>💻 <strong>Laptop</strong></td><td>3–6 years</td><td><span class="dice">1d20</span> monthly; on 1, hardware failure</td><td>$100–$600</td><td>$400–$2,000</td></tr>
+<tr><td>🏠 <strong>Appliances</strong> (fridge, washer, etc.)</td><td>8–15 years</td><td><span class="dice">1d20</span> yearly; on 1, breaks down</td><td>$100–$600</td><td>$300–$2,000</td></tr>
+<tr><td>🔑 <strong>Keys</strong></td><td>Indefinite</td><td><span class="dice">1d20</span> yearly; on 1, lost</td><td>$5–$30 (duplicate)</td><td>$5–$30</td></tr>
+</tbody>
+</table>
+
+<h3>🔨 Repair vs. Replace Decisions</h3>
+
+<p>When something breaks, the character faces a real decision:</p>
+
+<table>
+<thead>
+<tr><th>Factor</th><th>Repair Favored</th><th>Replace Favored</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Cost ratio</strong></td><td>Repair &lt; 50% of replacement</td><td>Repair &gt; 70% of replacement</td></tr>
+<tr><td><strong>Age of item</strong></td><td>Newer item (&lt; 50% of lifespan)</td><td>Old item (&gt; 75% of lifespan)</td></tr>
+<tr><td><strong>Time available</strong></td><td>Can wait for repair</td><td>Need it immediately</td></tr>
+<tr><td><strong>Sentimental value</strong></td><td>Heirloom, gift, emotional attachment</td><td>No attachment, purely functional</td></tr>
+<tr><td><strong>Reliability after repair</strong></td><td>Will be "good as new"</td><td>May break again soon</td></tr>
+</tbody>
+</table>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: The Car That Won't Die (Or Will It?)</div>
+  <p>Carlos's 2012 Honda Civic (current value: $4,500) needs a new transmission. Repair quote: $3,200. A used replacement car: $8,000–$12,000 plus insurance, registration, gas for a bigger car.</p>
+  <p><strong>Repair path:</strong> Spends $3,200 (uses credit card, 18 months to pay off). Car probably lasts 3 more years. Total 3-year cost: $3,200 repair + $3,600 interest + $4,800 insurance/gas = <strong>$11,600</strong>.</p>
+  <p><strong>Replace path:</strong> Buys $10,000 car. Financing: $350/month × 60 months = $21,000 total. Plus insurance increase: +$80/month = $4,800 over 5 years. Total 5-year cost: <strong>$25,800</strong>.</p>
+  <p><strong>There is no good option.</strong> This is the reality of car ownership.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>🛡️ 8. Insurance</h2>
+
+<h3>📋 The Insurance Landscape</h3>
+
+<p>Insurance is money you pay <em>hoping you never get back</em>. But not having it is financial suicide. Every character needs to understand the insurance matrix:</p>
+
+<table>
+<thead>
+<tr><th>Type</th><th>Monthly Premium</th><th>Annual Cost</th><th>What It Covers</th><th>What It Doesn't</th></tr>
+</thead>
+<tbody>
+<tr><td>🏥 <strong>Health Insurance</strong></td><td>$100–$800</td><td>$1,200–$9,600</td><td>Doctor visits, hospital stays, prescriptions (partially)</td><td>Deductible ($1K–$6K), out-of-network care, cosmetic procedures</td></tr>
+<tr><td>🚗 <strong>Auto Insurance</strong></td><td>$80–$300</td><td>$960–$3,600</td><td>Accident damage, liability, theft (comprehensive)</td><td>Normal wear, mechanical failure, driving uninsured (obviously)</td></tr>
+<tr><td>🏠 <strong>Renter's Insurance</strong></td><td>$10–$30</td><td>$120–$360</td><td>Personal property, liability, temporary housing if displaced</td><td>Floods, earthquakes (need separate policies), pre-existing damage</td></tr>
+<tr><td>🏡 <strong>Homeowner's Insurance</strong></td><td>$100–$300</td><td>$1,200–$3,600</td><td>Structure, personal property, liability</td><td>Floods, earthquakes, maintenance issues, high-value items (need riders)</td></tr>
+<tr><td>💀 <strong>Life Insurance</strong></td><td>$10–$100</td><td>$120–$1,200</td><td>Death benefit for beneficiaries</td><td>Self (obviously), suicide within first 2 years, certain high-risk activities</td></tr>
+<tr><td>🦷 <strong>Dental Insurance</strong></td><td>$15–$50</td><td>$180–$600</td><td>Cleanings, basic procedures (up to annual max)</td><td>Cosmetic work, annual maximum ($1K–$2K), often doesn't cover major work</td></tr>
+<tr><td>👁️ <strong>Vision Insurance</strong></td><td>$5–$15</td><td>$60–$180</td><td>Eye exams, partial glasses/contacts discount</td><td>Usually saves less than it costs. Often not worth it.</td></tr>
+<tr><td>🔒 <strong>Umbrella Policy</strong></td><td>$15–$40</td><td>$180–$480</td><td>Extra liability coverage above other policies</td><td>Intentional acts, business activities, owned property damage</td></tr>
+</tbody>
+</table>
+
+<h3>📝 Filing a Claim</h3>
+
+<p>Getting money back from insurance is not automatic. Filing a claim is a <strong>process with its own challenges</strong>:</p>
+
+<table>
+<thead>
+<tr><th>Step</th><th>Time Required</th><th>Difficulty</th><th>Roll</th></tr>
+</thead>
+<tbody>
+<tr><td>📋 <strong>Document the loss/damage</strong></td><td>1–4 hours</td><td>Medium</td><td><span class="dice">1d20</span> + INT; on failure, documentation is insufficient</td></tr>
+<tr><td>📞 <strong>File the claim</strong></td><td>30 min–2 hours</td><td>Low</td><td>Usually straightforward but may require phone calls</td></tr>
+<tr><td>🔍 <strong>Insurance investigation</strong></td><td>2 weeks–3 months</td><td>—</td><td>GM-controlled. May deny claim on technicality (roll <span class="dice">1d20</span>; on 1–4, denied)</td></tr>
+<tr><td>💰 <strong>Receive payment</strong></td><td>2–8 weeks after approval</td><td>—</td><td>Usually paid, but often less than expected (deductible, depreciation)</td></tr>
+<tr><td>📈 <strong>Premium increase</strong></td><td>Automatic</td><td>—</td><td>Filing a claim = +10–50% premium increase for 3–5 years</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ The Insurance Paradox</div>
+  <p>Insurance is the most frustrating financial product in existence. You pay every month hoping never to use it. If you use it, your premiums go up. If you don't use it, you feel like you "wasted" the money. If you try to cancel it and then need it, you face catastrophic costs. <strong>The rational choice is to always have insurance.</strong> The emotional experience is constant resentment. This is by design.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Insurance Claim Scenario</div>
+  <p>Jamal's apartment building has a pipe burst on the 3rd floor. Water damages his belongings: a laptop ($800), clothes ($300), and furniture ($500) = $1,600 total loss. He has renter's insurance with a $500 deductible and a $10,000 policy limit.</p>
+  <p><strong>Process:</strong> He files a claim. The adjuster visits (2 weeks later). They determine the laptop is "depreciated" (it's 3 years old) and only value it at $400. Some clothes are "normal wear" and not covered. Final settlement: $700 − $500 deductible = <strong>$200 check</strong>.</p>
+  <p>He lost $1,600 in belongings and received $200. His premium goes up $15/month for the next 3 years ($540 total increase). <strong>Net result: he lost $1,940.</strong> Insurance did not save him. This is normal.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>📊 Combined Inventory &amp; Budget Tracker</h2>
+
+<p>Characters should maintain a combined tracker. Here's a recommended format:</p>
+
+<table>
+<thead>
+<tr><th>Category</th><th>Current Status</th><th>Next Replenishment</th><th>Monthly Cost</th><th>Priority</th></tr>
+</thead>
+<tbody>
+<tr><td>🧻 Toilet Paper</td><td>3 rolls left</td><td>3 days</td><td>$8/month</td><td>🔴 Critical</td></tr>
+<tr><td>🍕 Food</td><td>2 days of food</td><td>Tomorrow</td><td>$350/month</td><td>🔴 Critical</td></tr>
+<tr><td>📱 Phone</td><td>Working, battery 70%</td><td>N/A</td><td>$55/month (plan)</td><td>🟡 Important</td></tr>
+<tr><td>⛽ Gas</td><td>1/2 tank</td><td>~1 week</td><td>$130/month</td><td>🟡 Important</td></tr>
+<tr><td>💊 Medications</td><td>10 days left</td><td>10 days</td><td>$25/month</td><td>🔴 Critical</td></tr>
+<tr><td>👕 Clothes</td><td>5 clean outfits</td><td>Laundry in 2 days</td><td>$50/month (avg)</td><td>🟢 Normal</td></tr>
+<tr><td>🧴 Toiletries</td><td>Adequate</td><td>2 weeks</td><td>$40/month</td><td>🟢 Normal</td></tr>
+<tr><td>🏠 Rent</td><td>Paid through month-end</td><td>1st of next month</td><td>$1,500/month</td><td>🔴 Critical</td></tr>
+</tbody>
+</table>
+
+<div class="callout rule">
+  <div class="callout-title">⚖️ Final Rule: Scarcity Is The Game</div>
+  <p>In fantasy RPGs, the challenge is <strong>excess</strong> — too many enemies, too much danger, too many treasures. In Reality RPG, the challenge is <strong>scarcity</strong> — not enough money, not enough time, not enough resources, not enough sleep. Every system on this page interacts with every other system. Running out of toilet paper (§6) means a trip to the store, which costs gas (§6), which costs money (§3), which affects your budget (§4), which increases stress (Mental Health), which affects your work performance (Daily Life), which could cost you your job. <strong>This chain reaction IS the game.</strong> There is no final boss. There is only next month's bills.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — A hyper-realistic life simulation tabletop role-playing game ruleset.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mental Health — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html" class="active">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="content-section">
+<div class="container">
+
+<h1>🧠 Mental Health</h1>
+<p>Mental health is not a side quest in Reality RPG — it <em>is</em> the game. Every character carries psychological weight, and how they manage it shapes every other mechanic in play. This page covers the full mental health system: the Stress framework, detailed conditions, treatment, recovery, stigma, and safety tools for the table.</p>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Table Responsibility</div>
+  <p>This section deals with real mental health conditions. The GM <strong>must</strong> establish safety tools (see §7 below) before introducing any mental health mechanics. Players may opt out of having their character carry a diagnosed condition. Never pressure a player to roleplay something that mirrors their own trauma.</p>
+</div>
+
+<h2>1. The Mental Health Framework</h2>
+<p>Mental health in Reality RPG operates on three interconnected tracks: <strong>Stress Points</strong>, <strong>Triggers</strong>, and <strong>Episodes</strong>. Together they form a dynamic system that reflects how mental health conditions actually behave — fluctuating, context-dependent, and responsive to treatment.</p>
+
+<h3>1.1 Stress Points (SP)</h3>
+<p>Every character has a <strong>Stress Pool</strong> measured in <strong>Stress Points (SP)</strong>. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters start each scene at 0 SP unless an ongoing condition or recent event has loaded them.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stress Level</th><th>SP Range</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>😌 <strong>Stable</strong></td><td>0</td><td>No penalty. Character functions normally.</td></tr>
+<tr><td>😐 <strong>Elevated</strong></td><td>1–5</td><td>Minor distraction. −2 modifier on all RES-based checks.</td></tr>
+<tr><td>😟 <strong>Stressed</strong></td><td>6–15</td><td>Noticeable impairment. −5 modifier on RES and INT checks. Must make a <span class="dice">RES</span> check (TN 40) each night to get restful sleep.</td></tr>
+<tr><td>😰 <strong>Overwhelmed</strong></td><td>16–25</td><td>Significant dysfunction. −8 on all checks. Character gains one <strong>Trigger</strong> marker. Risk of Episode if SP exceeds max.</td></tr>
+<tr><td>💥 <strong>Episode Threshold</strong></td><td>> Max SP</td><td>Character enters an <strong>Episode</strong> (see below). Condition-specific effects apply.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.2 Stress Sources</h3>
+<p>Stress accumulates from events, environment, and conditions. The GM assigns SP based on severity:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Source</th><th>SP Gained</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Minor inconvenience</td><td>+1 SP</td><td>Missed bus, bad meal, awkward interaction</td></tr>
+<tr><td>Stressful event</td><td>+3 SP</td><td>Heated argument, failed exam, work deadline</td></tr>
+<tr><td>Significant trauma</td><td>+5 SP</td><td>Job loss, breakup, accident, public humiliation</td></tr>
+<tr><td>Catastrophic event</td><td>+8 SP</td><td>Death of loved one, assault, eviction, arrest</td></tr>
+<tr><td>Chronic condition (per day)</td><td>+1–3 SP/day</td><td>Ongoing untreated condition slowly drains resources</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.3 Stress Recovery</h3>
+<p>Stress naturally decreases over time. Characters recover <strong>1 SP per full night's sleep</strong>. Additional recovery comes from:</p>
+<ul>
+<li><strong>Relaxation activities</strong> (exercise, meditation, hobbies): −1 SP per activity, once per day</li>
+<li><strong>Therapy session</strong>: −3 to −5 SP (see §3)</li>
+<li><strong>Strong social support</strong> (trusted friend, family): −2 SP per meaningful interaction</li>
+<li><strong>Medication</strong>: reduces baseline SP gain by 50% (see §3)</li>
+</ul>
+
+<h3>1.4 Triggers</h3>
+<p>A <strong>Trigger</strong> is a specific situation, stimulus, or topic that causes an immediate SP spike. Each diagnosed condition comes with 2–4 default triggers. Triggers add <strong>+3 to +5 SP</strong> when encountered.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Trigger Exposure</div>
+  <p>When a character encounters a Trigger, the GM may call for a <span class="dice">RES check (TN 50)</span>. On success, the character manages their reaction and gains only <strong>+2 SP</strong> instead of the full amount. On failure, the full SP is applied <em>and</em> the GM may narrate a brief stress reaction (trembling, avoidance, emotional outburst).</p>
+</div>
+
+<h3>1.5 Episodes</h3>
+<p>When SP exceeds the character's maximum capacity, they enter an <strong>Episode</strong>. An Episode lasts <strong>1d4 hours</strong> for mild conditions or <strong>1d4 days</strong> for severe ones. During an Episode:</p>
+<ul>
+<li>All checks suffer a <strong>+10 TN penalty</strong> (i.e., the target number is effectively 10 harder)</li>
+<li>The character gains condition-specific penalties (detailed per condition below)</li>
+<li>The character <strong>cannot gain additional SP</strong> — they are at maximum stress</li>
+<li>After the Episode ends, SP resets to <strong>50% of maximum</strong></li>
+</ul>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Episodes as Narrative Beats</div>
+  <p>An Episode is not just a mechanical penalty — it's a <em>story moment</em>. Use it to explore vulnerability, show character growth, or demonstrate the importance of support systems. A well-handled Episode can be one of the most memorable and meaningful moments in a session.</p>
+</div>
+
+<h2>2. Detailed Conditions</h2>
+<p>Each condition has <strong>Symptoms</strong> (narrative description), <strong>Mechanical Effects</strong> (dice modifiers and penalties), <strong>Triggers</strong>, and <strong>Severity Levels</strong> (Mild, Moderate, Severe). Characters may have one primary condition and one or two secondary conditions. Conditions are assigned during character creation or emerge from in-game events.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Condition Severity</div>
+  <p>Severity scales all mechanical effects: <strong>Mild</strong> = 50% of stated penalties, <strong>Moderate</strong> = full penalties, <strong>Severe</strong> = 150% of stated penalties (round up). Severity can change based on treatment adherence, life circumstances, and passage of time.</p>
+</div>
+
+<h3>2.1 Major Depressive Disorder (MDD) 😞</h3>
+<p>The "heavy blanket" condition. MDD is characterized by persistent low mood, loss of interest, and physical fatigue that compounds over time.</p>
+
+<h4>Symptoms</h4>
+<ul>
+<li>Persistent sadness or emptiness (narrative: character seems "flat" or withdrawn)</li>
+<li>Anhedonia — inability to feel pleasure from previously enjoyable activities</li>
+<li>Sleep disruption: either insomnia (can't fall/stay asleep) or hypersomnia (sleeping 12+ hours)</li>
+<li>Appetite changes (significant weight gain or loss)</li>
+<li>Difficulty concentrating and making decisions</li>
+<li>Feelings of worthlessness or excessive guilt</li>
+</ul>
+
+<h4>Mechanical Effects</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Effect</th><th>Modifier</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>During Episodes</td><td>+10 TN on <strong>all checks</strong></td><td>Everything becomes harder</td></tr>
+<tr><td>Base VIG penalty</td><td>−5 VIG (effective)</td><td>Applies to all VIG-based checks</td></tr>
+<tr><td>Sleep disruption</td><td><span class="dice">RES check (TN 50)</span> each night</td><td>Failure = no recovery SP that night</td></tr>
+<tr><td>Concentration</td><td>−3 on INT-based checks</td><td>Affected constantly, not just during episodes</td></tr>
+<tr><td>Social withdrawal</td><td>−3 on EXP-based social checks</td><td>Character avoids interaction</td></tr>
+<tr><td>Chronic SP drain</td><td>+2 SP per day</td><td>Untreated condition slowly fills stress pool</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Triggers</h4>
+<p>Reminders of loss or failure, social isolation, seasonal changes (fall/winter), rejection, reminders of past failures, overwhelming responsibility.</p>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Depression in Play</div>
+  <p><strong>Marcus</strong> (INT 12, RES 8, VIG 10) has Moderate MDD. He's been in a mild Episode for 2 days. His effective VIG is now 5 (mod +0 instead of +2). He needs to prepare a presentation at work — a normal <span class="dice">INT + Communication (TN 55)</span> check. But with depression: the TN becomes 65 (episode penalty), and his INT check suffers −3 from concentration issues. He rolls <span class="dice">2d10</span> = 47, adds INT mod (+2) and Communication skill (+2) = 51 total. TN is effectively 65. <strong>Failure.</strong> He fumbles the presentation, gains +5 SP, and the Episode likely continues. The GM narrates that Marcus's mind went blank, his voice shook, and his boss noticed the decline.</p>
+</div>
+
+<h3>2.2 Generalized Anxiety Disorder (GAD) 😰</h3>
+<p>Chronic, excessive worry about everyday things. The mind that won't shut off, always scanning for danger that isn't there.</p>
+
+<h4>Symptoms</h4>
+<ul>
+<li>Constant worry about multiple areas of life (work, health, relationships, finances)</li>
+<li>Physical tension (muscle aches, restlessness, fatigue)</li>
+<li>Racing thoughts, difficulty "turning off" the brain</li>
+<li>Irritability and short temper</li>
+<li>Panic attacks (sudden, intense fear with physical symptoms)</li>
+</ul>
+
+<h4>Mechanical Effects</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Effect</th><th>Modifier</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Baseline anxiety</td><td>−2 on all checks</td><td>Constant mental noise reduces focus</td></tr>
+<tr><td>Panic attacks</td><td>On any <strong>failed RES check</strong>, GM may trigger a panic attack</td><td>Character is incapacitated for <span class="dice">1d6</span> minutes; gains +5 SP</td></tr>
+<tr><td>Avoidance behavior</td><td>Character may refuse to attempt checks in anxiety-provoking situations</td><td>GM determines what situations provoke this</td></tr>
+<tr><td>Sleep disruption</td><td><span class="dice">RES check (TN 55)</span> each night</td><td>Failure = no SP recovery; −2 on all checks next day</td></tr>
+<tr><td>Chronic SP drain</td><td>+2 SP per day</td><td>Anxiety constantly generates stress</td></tr>
+<tr><td>During Episodes</td><td>+10 TN on all checks; all RES checks become TN 65+</td><td>Severe anxiety spiral</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Triggers</h4>
+<p>Uncertainty/ambiguity, deadlines, crowded places, being the center of attention, unexpected changes, confined spaces, conflict situations.</p>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Panic Attack at Work</div>
+  <p><strong>Yuki</strong> (RES 10) has Moderate GAD. Her boss unexpectedly calls an all-hands meeting to discuss layoffs — a classic uncertainty trigger. The GM calls for a <span class="dice">RES check (TN 50)</span>. Yuki rolls <span class="dice">2d10</span> = 63. With her RES mod of +2 and −2 baseline anxiety penalty, her total is 63. <strong>Failure.</strong> The GM triggers a panic attack: Yuki's heart races, she can't breathe properly, and she has to leave the room. She gains +5 SP and is incapacitated for <span class="dice">1d6</span> = 4 minutes. Her colleague notices and helps her — a potential social bonding moment.</p>
+</div>
+
+<h3>2.3 Post-Traumatic Stress Disorder (PTSD) 💔</h3>
+<p>When a past traumatic event continues to hijack the present. The brain's alarm system is permanently sensitized.</p>
+
+<h4>Symptoms</h4>
+<ul>
+<li>Flashbacks — reliving the trauma as if it's happening now</li>
+<li>Nightmares related to the traumatic event</li>
+<li>Hypervigilance — constantly scanning for threats</li>
+<li>Emotional numbness alongside emotional volatility</li>
+<li>Startle response magnified to extreme levels</li>
+<li>Avoidance of anything connected to the trauma</li>
+</ul>
+
+<h4>Mechanical Effects</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Effect</th><th>Modifier</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Flashbacks</td><td>When triggered: character is <strong>forced</strong> into a stress event</td><td>+5 SP immediately; <span class="dice">RES check (TN 60)</span> or enter Episode</td></tr>
+<tr><td>Hypervigilance (bonus)</td><td>+3 to PERCEPTION checks for <strong>dangers/threats</strong></td><td>Character notices threats others miss</td></tr>
+<tr><td>Hypervigilance (penalty)</td><td>−3 to all social and relaxation checks</td><td>Can't relax; reads hostility where none exists</td></tr>
+<tr><td>Emotional numbness</td><td>−3 on EXP-based empathy checks</td><td>Difficulty connecting with others emotionally</td></tr>
+<tr><td>Nightmares</td><td><span class="dice">RES check (TN 55)</span> each night</td><td>Failure = no SP recovery +1 SP gained</td></tr>
+<tr><td>Chronic SP drain</td><td>+3 SP per day</td><td>PTSD is one of the most draining conditions</td></tr>
+<tr><td>Startle response</td><td>Sudden loud noises or surprises force <span class="dice">RES check (TN 45)</span></td><td>Failure = −3 on next check as character is disoriented</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Triggers</h4>
+<p>Specific to the traumatic event: locations, sounds, smells, dates, situations that resemble the original trauma. The GM and player should collaboratively define 3–5 specific triggers during character creation.</p>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ GM Responsibility: PTSD</div>
+  <p>PTSD is often tied to specific trauma. The GM should <strong>never</strong> trigger a flashback or episode by directly re-enacting the character's trauma. Instead, use indirect triggers — a similar sound, a location that reminds the character, a date that approaches. The trauma itself should be a <strong>Line</strong> (completely off-limits) for most tables.</p>
+</div>
+
+<h3>2.4 Bipolar Disorder 🎢</h3>
+<p>Characterized by cycling between depressive and manic phases. The unpredictability is the real mechanic — characters (and players) never know which phase they're in until it hits.</p>
+
+<h4>Symptoms</h4>
+<p><strong>Depressive phase:</strong> Same as MDD — low mood, fatigue, anhedonia, sleep disruption.<br>
+<strong>Manic phase:</strong> Elevated or irritable mood, decreased need for sleep, racing thoughts, grandiosity, impulsivity, increased talkativeness, risk-taking behavior.<br>
+<strong>Hypomanic phase:</strong> Milder version of mania — increased energy and productivity, but without full impairment.</p>
+
+<h4>Mechanical Effects</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Phase</th><th>Duration</th><th>Mechanical Effects</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Depressive</strong></td>
+<td><span class="dice">2d6</span> days</td>
+<td>All MDD effects apply. Additionally: character may refuse to leave home (−5 on all checks if forced to go out)</td>
+</tr>
+<tr>
+<td><strong>Manic</strong></td>
+<td><span class="dice">1d4</span> days</td>
+<td>−8 TN on all checks (things seem easy), but: +3 TN on any check requiring <em>caution</em>, impulse control, or long-term thinking; character makes <strong>impulsive decisions</strong> (GM narrates 1d3 risky actions per day); −5 SP recovery per night (no sleep needed but no rest either)</td>
+</tr>
+<tr>
+<td><strong>Hypomanic</strong></td>
+<td><span class="dice">1d6</span> days</td>
+<td>+2 on all checks (genuine productivity boost), but: −2 on impulse-control checks; character undertakes <strong>one</strong> unnecessary project or conversation per day</td>
+</tr>
+<tr>
+<td><strong>Mixed</strong></td>
+<td><span class="dice">1d4</span> days</td>
+<td>Most dangerous phase: depressive symptoms + manic energy. +10 TN on all checks AND character makes risky decisions. High Episode risk.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4>Phase Tracking</h4>
+<p>At the start of each week, the GM rolls <span class="dice">1d6</span> to determine the character's current phase (or the player may choose, if they prefer agency):</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>d6</th><th>Phase</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Depressive</td><td>Worst case; full MDD effects</td></tr>
+<tr><td>2–3</td><td>Stable</td><td>No phase effects; normal function</td></tr>
+<tr><td>4–5</td><td>Hypomanic</td><td>Productive but slightly impaired judgment</td></tr>
+<tr><td>6</td><td>Manic or Mixed</td><td>Roll <span class="dice">1d2</span>: 1 = Manic, 2 = Mixed</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Medication Stability</div>
+  <p>If the character is on a consistent medication regimen (see §3), replace the weekly phase roll with a <span class="dice">RES check (TN 40)</span>. On success, the character remains in their current phase for another week. On failure, roll the phase table normally. This represents medication stabilizing mood but not eliminating cycling entirely.</p>
+</div>
+
+<h3>2.5 Psychopathy / Antisocial Personality Disorder (ASPD) 😈</h3>
+<p>A complex condition characterized by reduced empathy, superficial charm, impulsivity, and lack of remorse. In RPG terms, this is not "evil" — it's a different operating system for human interaction.</p>
+
+<h4>Symptoms</h4>
+<ul>
+<li>Reduced empathy — difficulty genuinely understanding others' emotions</li>
+<li>Superficial charm — can be highly persuasive and charismatic</li>
+<li>Impulsivity — acts on urges without considering consequences</li>
+<li>Lack of remorse — doesn't feel guilt for harmful actions</li>
+<li>Manipulativeness — uses others to achieve goals</li>
+<li>Shallow emotions — experiences emotions less deeply than others</li>
+<li>Risk-taking — seeks thrill and stimulation constantly</li>
+</ul>
+
+<h4>Mechanical Model</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Effect</th><th>Modifier</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Superficial charm</td><td>+3 to PRC-based social checks for <strong>first impressions</strong> and <strong>persuasion</strong></td><td>Very effective at initial encounters; wears off over time</td></tr>
+<tr><td>Reduced empathy</td><td>−5 on EXP-based empathy, compassion, and emotional support checks</td><td>Cannot genuinely comfort or connect emotionally</td></tr>
+<tr><td>Impulsivity</td><td>−3 on any check requiring <strong>patience</strong>, <strong>long-term planning</strong>, or <strong>delayed gratification</strong></td><td>Acts now, deals later</td></tr>
+<tr><td>Lack of remorse</td><td>Immune to SP from <strong>guilt</strong> or <strong>moral conflict</strong></td><td>Does not gain SP from actions that would normally cause moral distress</td></tr>
+<tr><td>Emotional resilience</td><td>+5 to RES checks for <strong>emotional suppression</strong></td><td>Can maintain composure in situations that would break others</td></tr>
+<tr><td>Risk-seeking</td><td>+2 on checks involving <strong>dangerous</strong> or <strong>thrilling</strong> activities</td><td>Thrives in high-stakes situations</td></tr>
+<tr><td>Long-term social penalty</td><td>After <span class="dice">1d4</span> weeks of sustained interaction, others gain −3 to trust checks with this character</td><td>The mask slips; people notice something is "off"</td></tr>
+<tr><td>Stress immunity (partial)</td><td>Gains only 50% SP from <em>emotional</em> stressors</td><td>Physical and practical stressors still apply normally</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Nuance Track</h4>
+<p>Not all characters with ASPD are the same. The GM and player should establish a <strong>Nuance Track</strong> — 3–5 specific areas where the character <em>does</em> feel connection or care. This prevents the character from being a flat "villain" and creates compelling roleplay opportunities.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Playing ASPD</div>
+  <p>ASPD characters are powerful social tools but can derail a campaign if they exploit other players' characters. Establish clear boundaries: ASPD characters can be charming and manipulative in the <em>world</em>, but not <em>at</em> other players. The charm bonus applies to NPCs, not to coercing fellow players into uncomfortable situations.</p>
+</div>
+
+<h3>2.6 Obsessive-Compulsive Disorder (OCD) 🔁</h3>
+<p>Not just "liking things tidy." OCD involves intrusive thoughts (obsessions) and repetitive behaviors (compulsions) that consume time and mental energy.</p>
+
+<h4>Symptoms</h4>
+<ul>
+<li>Intrusive, unwanted thoughts that cause anxiety</li>
+<li>Compulsive behaviors performed to reduce anxiety (checking, counting, washing, arranging)</li>
+<li>Mental rituals (silent counting, repeating phrases, mental reviewing)</li>
+<li>Time consumed by obsessions/compulsions (1+ hours per day at moderate severity)</li>
+</ul>
+
+<h4>Mechanical Effects</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Effect</th><th>Modifier</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Obsessive thoughts</td><td>Once per scene, GM may call for <span class="dice">RES check (TN 50)</span></td><td>Failure = character is distracted; −3 on next check</td></tr>
+<tr><td>Compulsions</td><td>Each compulsion takes <span class="dice">1d4</span> minutes of in-game time</td><td>Real time cost; can delay important actions</td></tr>
+<tr><td>Mental exhaustion</td><td>After 3+ compulsions in a day: −2 on all checks for remainder of day</td><td>Mental energy is depleted</td></tr>
+<tr><td>Resistance penalty</td><td>If character <strong>refuses</strong> to perform a compulsion: +3 SP immediately</td><td>Fighting the urge is stressful</td></tr>
+<tr><td>Chronic SP drain</td><td>+2 SP per day</td><td>Mental toll of constant internal struggle</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Obsession Types (choose 2–3)</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Obsession</th><th>Compulsion</th><th>Time Cost</th></tr></thead>
+<tbody>
+<tr><td>Contamination / germs</td><td>Excessive washing, cleaning, sanitizing</td><td><span class="dice">1d4</span> min per episode</td></tr>
+<tr><td>Harm / causing damage</td><td>Repeated checking (locks, stove, doors)</td><td><span class="dice">1d4</span> min per check</td></tr>
+<tr><td>Symmetry / order</td><td>Arranging, aligning, organizing objects</td><td><span class="dice">1d6</span> min per episode</td></tr>
+<tr><td>Forbidden thoughts</td><td>Mental rituals, counting, repeating phrases</td><td><span class="dice">1d4</span> min; invisible to others</td></tr>
+<tr><td>Perfectionism</td><td>Re-doing work until "just right"</td><td><span class="dice">1d6</span> min; doubles task time</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.7 Substance Use Disorder (SUD) 🍷</h3>
+<p>Addiction modeled as a progressive mechanical system. The substance provides real short-term benefits that mask long-term harm — exactly as in reality.</p>
+
+<h4>Addiction Stages</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stage</th><th>SP Threshold</th><th>Mechanical Effects</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Experimentation</strong></td>
+<td>None (choice)</td>
+<td>Character chooses to use. No mechanical penalty yet. +2 to one relevant check per use (social lubrication, pain relief, etc.).</td>
+</tr>
+<tr>
+<td><strong>Regular Use</strong></td>
+<td>After 10+ uses</td>
+<td>Same +2 benefit. Must make <span class="dice">RES check (TN 45)</span> to stop using. Failure = continues. Tolerance begins: benefits reduce to +1.</td>
+</tr>
+<tr>
+<td><strong>Dependence</strong></td>
+<td>After 30+ uses</td>
+<td>Benefits cancel out with side effects (net 0). Must use daily or face <strong>withdrawal</strong>. <span class="dice">RES check (TN 55)</span> each day to resist craving. Failure = character uses.</td>
+</tr>
+<tr>
+<td><strong>Addiction</strong></td>
+<td>After 60+ uses</td>
+<td>Net <strong>negative</strong> effect: −2 on all checks when not using. Withdrawal is severe. <span class="dice">RES check (TN 65)</span> to resist. Character will go to extreme lengths to obtain substance.</td>
+</tr>
+<tr>
+<td><strong>Severe Addiction</strong></td>
+<td>After 100+ uses or multiple relapses</td>
+<td>−5 on all checks when not using. Withdrawal includes physical symptoms. <span class="dice">RES check (TN 75)</span> to resist. Health begins declining (−1 VIG per month). Social relationships deteriorate (−3 on all social checks with non-users).</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h4>Withdrawal Effects</h4>
+<p>When a dependent or addicted character goes without their substance:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Hours Without</th><th>Effect</th><th>SP Gained</th></tr></thead>
+<tbody>
+<tr><td>0–6</td><td>Mild discomfort, irritability</td><td>+1 SP</td></tr>
+<tr><td>6–24</td><td>Physical symptoms (tremors, sweating, nausea)</td><td>+3 SP</td></tr>
+<tr><td>24–48</td><td>Severe symptoms; <span class="dice">VIG check (TN 50)</span> to avoid Health damage</td><td>+5 SP</td></tr>
+<tr><td>48–72</td><td>Peak withdrawal; all checks at +5 TN; character is barely functional</td><td>+5 SP</td></tr>
+<tr><td>72+ hours</td><td>Withdrawal begins subsiding; SP gain reduces to +3, then +1 per day</td><td>Decreasing</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Relapse Mechanics</h4>
+<p>After a period of abstinence (7+ days without using), any stress event that would normally add +5 SP or more triggers a <strong>Relapse Check</strong>: <span class="dice">RES check (TN = 60 + 5 × number of previous relapses)</span>. Failure means the character uses again and returns to their previous addiction stage.</p>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Addiction Progression</div>
+  <p><strong>Derek</strong> (RES 9, mod +1) starts drinking socially at a party — <strong>Experimentation</strong>. He gets +2 to social checks and has a great time. Over the next months, he drinks regularly at bars — <strong>Regular Use</strong>. The +2 benefit shrinks to +1 as tolerance builds. When his ex moves in across the hall, the stress pushes him into <strong>Dependence</strong>. He now needs a drink each evening or he gets +3 SP from withdrawal. He tries to quit — <span class="dice">RES check (TN 55)</span> daily. He rolls <span class="dice">2d10</span> = 44. With his +1 mod, total is 44. <strong>Success!</strong> He makes it through the day. But on day 3, a work crisis adds +5 SP. Relapse check: <span class="dice">RES (TN 60)</span>. He rolls <span class="dice">2d10</span> = 58. Total 59. <strong>Failure.</strong> He goes to the store and buys a bottle. The cycle continues.</p>
+</div>
+
+<h2>3. Treatment Mechanics</h2>
+<p>Treatment is the core loop for mental health in Reality RPG. Just as fantasy RPGs have healing potions and rest, reality has therapy, medication, and lifestyle changes. Treatment is <strong>slow, imperfect, and requires investment</strong> — mirroring real-world recovery.</p>
+
+<h3>3.1 Therapy Sessions 🛋️</h3>
+<p>Regular therapy is the most reliable treatment mechanic. Each session takes <strong>1 hour of game time</strong> and costs <strong>$50–$200</strong> (depending on insurance/status). The character gains a <strong>Therapy Level</strong> that improves over time, similar to a skill.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Therapy Level</th><th>Sessions Required</th><th>Benefits</th></tr></thead>
+<tbody>
+<tr><td><strong>Level 0</strong> (New)</td><td>0–4 sessions</td><td>−20 Stress per session (one-time relief only)</td></tr>
+<tr><td><strong>Level 1</strong> (Awareness)</td><td>5–12 sessions</td><td>−20 SP per session; character learns to <strong>identify triggers</strong> (advantage on one RES check per session)</td></tr>
+<tr><td><strong>Level 2</strong> (Coping Skills)</td><td>13–24 sessions</td><td>−25 SP per session; −1 to all condition penalties; character can <strong>self-regulate</strong> once per day (auto-success on one RES check)</td></tr>
+<tr><td><strong>Level 3</strong> (Management)</td><td>25–40 sessions</td><td>−30 SP per session; condition severity drops one level (Severe→Moderate→Mild); chronic SP drain reduced by 50%</td></tr>
+<tr><td><strong>Level 4</strong> (Resilience)</td><td>41+ sessions</td><td>−30 SP per session; condition severity drops again or goes into <strong>remission</strong>; character gains +5 max SP capacity (learned emotional tolerance)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Therapy Progress</div>
+  <p>Therapy advances one level after the required number of <strong>completed</strong> sessions. Missing sessions <strong>resets progress</strong> toward the next level (not the entire count). If a character misses 3+ consecutive sessions, they lose one Therapy Level. This models the real-world importance of consistency in treatment.</p>
+</div>
+
+<h3>3.2 Medication 💊</h3>
+<p>Medication provides mechanical benefits but also carries side effects. The GM and player should discuss medication choices — there is no "best" option, only trade-offs.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Medication Type</th><th>Benefits</th><th>Side Effects</th><th>Cost/Day</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Antidepressants (SSRI)</strong></td>
+<td>Reduces baseline SP gain by 50%; +2 to RES checks for emotional regulation</td>
+<td>−2 on intimacy/social bonding checks (emotional blunting); possible weight change; takes 4–6 weeks to become effective</td>
+<td>$0.10–$5</td>
+</tr>
+<tr>
+<td><strong>Anxiolytics (Benzodiazepines)</strong></td>
+<td>−3 SP per dose; prevents panic attacks for 4–6 hours</td>
+<td>Risk of dependence (treat as mild SUD after 30+ days); −2 on all INT checks while under influence; drowsiness</td>
+<td>$0.05–$3</td>
+</tr>
+<tr>
+<td><strong>Mood Stabilizers</strong></td>
+<td>Reduces phase transitions for bipolar characters (see §2.4); −2 to chronic SP drain</td>
+<td>Tremor; weight gain; −1 on all DXT checks; requires regular blood tests</td>
+<td>$0.10–$8</td>
+</tr>
+<tr>
+<td><strong>Antipsychotics</strong></td>
+<td>Reduces severity of psychotic symptoms; +3 to RES checks</td>
+<td>Significant weight gain (−2 VIG); sedation (−2 on all checks first hour after dosing); metabolic changes</td>
+<td>$0.05–$10</td>
+</tr>
+<tr>
+<td><strong>Stimulants (ADHD)</strong></td>
+<td>+3 to INT and DXT checks while active (4–6 hours)</td>
+<td>Increased anxiety (+1 SP/hour while active); crash after wearing off (−2 on all checks for 1 hour); appetite suppression</td>
+<td>$0.10–$6</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Medication Adherence</div>
+  <p>Characters must make a <span class="dice">RES check (TN 40)</span> each week to maintain consistent medication. Failure means the character missed doses that week: all medication benefits are reduced by 50% until adherence is restored for one full week. This models the real-world challenge of remembering and sticking to medication regimens.</p>
+</div>
+
+<h3>3.3 Lifestyle Changes 🌱</h3>
+<p>Non-clinical interventions that provide modest but meaningful mechanical benefits:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Practice</th><th>Time Required</th><th>Benefit</th></tr></thead>
+<tbody>
+<tr><td>🏃 Regular exercise (3x/week)</td><td>1 hour per session</td><td>−1 SP per session; +1 to VIG checks; improves sleep quality</td></tr>
+<tr><td>🧘 Meditation / mindfulness</td><td>20 minutes per day</td><td>−1 SP per session; after 30 days: +1 to RES checks for emotional regulation</td></tr>
+<tr><td>📖 Journaling</td><td>15 minutes per day</td><td>−1 SP per session; helps identify triggers (advantage on trigger-related RES checks)</td></tr>
+<tr><td>🌙 Sleep hygiene</td><td>Consistent 7–9 hours</td><td>Ensures full SP recovery each night; prevents sleep-related SP gain</td></tr>
+<tr><td>🥗 Nutritional changes</td><td>Ongoing</td><td>After 2 weeks: −1 to chronic SP drain from all conditions</td></tr>
+<tr><td>👥 Support groups</td><td>1–2 hours per week</td><td>−2 SP per session; +1 to social checks with other group members</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>4. Recovery Track 📈</h2>
+<p>Recovery is not linear. The Recovery Track models the ups and downs of long-term mental health improvement. Characters progress through stages, but setbacks are normal and expected.</p>
+
+<h4>Recovery Stages</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stage</th><th>Requirements</th><th>Character State</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>🔴 Crisis</strong></td>
+<td>Starting state for diagnosed characters</td>
+<td>Condition is actively impairing daily function. Frequent Episodes. All mechanical effects at full (or severe) strength.</td>
+</tr>
+<tr>
+<td><strong>🟠 Seeking Help</strong></td>
+<td>Character begins treatment (therapy, medication, or both)</td>
+<td>Condition effects reduced by 25%. Episodes become less frequent (roll <span class="dice">1d6</span>; Episode only on roll of 6). Character shows awareness of their condition.</td>
+</tr>
+<tr>
+<td><strong>🟡 Managing</strong></td>
+<td>3+ months of consistent treatment; Therapy Level 2+</td>
+<td>Condition effects reduced by 50%. Chronic SP drain reduced by 50%. Episodes are rare (roll <span class="dice">1d10</span>; Episode only on 9–10). Character can function normally most days.</td>
+</tr>
+<tr>
+<td><strong>🟢 Stable</strong></td>
+<td>6+ months of consistent treatment; Therapy Level 3+</td>
+<td>Condition effects reduced by 75%. Chronic SP drain eliminated. Episodes only occur during major life crises. Character has developed strong coping skills.</td>
+</tr>
+<tr>
+<td><strong>🟢 Remission</strong></td>
+<td>12+ months of stability; Therapy Level 4+</td>
+<td>Condition effects are <strong>minimal</strong> (only 25% of original penalties). Character can reduce treatment frequency. <strong>Not cured</strong> — relapse is still possible under extreme stress.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Setbacks</div>
+  <p>Life happens. Any event that adds +8 SP or more (catastrophic event) forces a <span class="dice">RES check (TN 60)</span>. Failure means the character drops <strong>one Recovery Stage</strong>. This is not failure — it's realism. Recovery is a spiral, not a straight line. The character retains their Therapy Level and can climb back up.</p>
+</div>
+
+<h2>5. Stigma Mechanics 🏷️</h2>
+<p>Mental health conditions carry social weight in the real world. NPCs react to disclosed conditions based on their own beliefs, culture, and knowledge. This creates real mechanical consequences for choosing to be open or secretive.</p>
+
+<h3>5.1 Disclosure Effects</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>NPC Type</th><th>Reaction to Disclosure</th><th>Mechanical Effect</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Supportive</strong> (educated, empathetic)</td>
+<td>Offers understanding and support</td>
+<td>+3 to all social checks with this NPC; NPC may provide resources (free therapy referral, accommodation)</td>
+</tr>
+<tr>
+<td><strong>Neutral</strong> (average person)</td>
+<td>Mildly uncomfortable but not hostile</td>
+<td>No immediate effect; NPC may be less likely to share personal information (−1 to information-gathering checks)</td>
+</tr>
+<tr>
+<td><strong>Stigmatizing</strong> (prejudiced)</td>
+<td>Views character as unstable, unreliable, or dangerous</td>
+<td>−5 to all social checks with this NPC; NPC may spread negative information (GM narrates gossip consequences)</td>
+</tr>
+<tr>
+<td><strong>Professional</strong> (employer, landlord, etc.)</td>
+<td>Depends on NPC's training and legal awareness</td>
+<td>Roll <span class="dice">1d6</span>: 1–2 = discrimination (−5 to relevant checks); 3–4 = neutral; 5–6 = accommodation (+2 to relevant checks)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.2 The Disclosure Decision</h3>
+<p>When a character considers disclosing their condition, they face a real trade-off:</p>
+<ul>
+<li><strong>Disclose:</strong> Risk stigma but potentially gain support, accommodations, and authenticity in relationships</li>
+<li><strong>Conceal:</strong> Avoid stigma but suffer −2 on all EXP-based checks when hiding their true self (the energy of masking)</li>
+</ul>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Stigma as a Choice</div>
+  <p>Stigma should never be automatic. The GM should determine each NPC's reaction individually — some strangers may be surprisingly supportive, some family members may be cruel. This mirrors real life and gives the player meaningful social navigation to perform.</p>
+</div>
+
+<h2>6. Detailed Gameplay Scenarios 🎭</h2>
+
+<h3>Scenario 1: The Depression Spiral</h3>
+<div class="callout example">
+  <div class="callout-title">📝 Marcus's Week</div>
+  <p><strong>Setup:</strong> Marcus (MDD, Moderate; Therapy Level 1; on SSRIs) has had a rough start to the week. He's at 12/25 SP.</p>
+  <p><strong>Monday:</strong> Marcus wakes up. SSRIs reduce his chronic SP gain to +1 instead of +2. He attends therapy (−20 SP, but his pool is only 12, so he goes to 0). He feels better. Goes to work and crushes a presentation (<span class="dice">INT + Communication = 42 vs TN 55</span> — success!).</p>
+  <p><strong>Wednesday:</strong> His medication adherence check: <span class="dice">RES (TN 40)</span>. He rolls <span class="dice">2d10</span> = 48. With RES mod +1, total = 47. <strong>Failure.</strong> He's been skipping doses. Medication benefits drop to 50% for the rest of the week.</p>
+  <p><strong>Thursday:</strong> His girlfriend breaks up with him text-message. +5 SP (significant trauma). Chronic SP gain (+1). He's at 6 SP — entering the "Stressed" zone. −5 on RES and INT checks. That night: <span class="dice">RES sleep check (TN 50)</span>. Rolls <span class="dice">2d10</span> = 55. With −5 stress penalty and +1 RES mod: effective roll = 51. <strong>Failure.</strong> No SP recovery. He's still at 6.</p>
+  <p><strong>Friday:</strong> Chronic SP (+1) = 7. A trigger hits — he walks past the café where he proposed. +3 SP = 10. Now in Overwhelmed territory. −8 on all checks. He has to present at work. TN effectively becomes 65 (episode threshold approaching). He rolls <span class="dice">2d10</span> = 33. With INT mod +2, Comms +2, and −8 stress penalty: 29. <strong>Success</strong> — barely. He stumbles through but doesn't break.</p>
+  <p><strong>Saturday:</strong> SP hits 14 (still accumulating). He misses therapy. Loses progress toward Therapy Level 2. The GM narrates Marcus sitting in his apartment, curtains drawn, phone buzzing with messages he can't bring himself to answer.</p>
+  <p><strong>Resolution:</strong> Sunday, his friend checks in (social support: −2 SP → 12). He attends therapy Monday (−20 → 0). The cycle continues — but the player and character have learned that consistency matters.</p>
+</div>
+
+<h3>Scenario 2: The PTSD Trigger Chain</h3>
+<div class="callout example">
+  <div class="callout-title">📝 Amara's Night Out</div>
+  <p><strong>Setup:</strong> Amara (PTSD from a car accident; RES 14, mod +2; Therapy Level 2) is going to a friend's birthday party at a bar near a busy intersection. She's at 4/27 SP.</p>
+  <p><strong>Arrival:</strong> The party is loud. Background noise alone is mildly stressful (+1 SP → 5). She's in the "Elevated" zone now (−2 on RES checks).</p>
+  <p><strong>The Trigger:</strong> A car backfires outside. <strong>Trigger hit.</strong> +5 SP → 10. She's now "Stressed." The GM calls for a <span class="dice">RES check (TN 60)</span> to avoid a flashback. Her Therapy Level 2 gives her advantage (roll twice, take better). She rolls <span class="dice">2d10</span> = 28 and <span class="dice">2d10</span> = 52. Takes 28. With +2 RES mod and −2 stress penalty: 28. <strong>Success!</strong> She feels the wave of panic but her grounding techniques (learned in therapy) keep her from fully breaking. She excuses herself to the bathroom for 5 minutes.</p>
+  <p><strong>Hypervigilance in play:</strong> While in the bathroom, she hears shouting from the next room. Her hypervigilance bonus (+3 to threat perception) kicks in — she correctly identifies that it's just friends playing a drinking game, not a real fight. But the penalty (−3 to relaxation checks) means she can't actually calm down. She stays in the bathroom for 20 more minutes.</p>
+  <p><strong>Resolution:</strong> She leaves the party early. The social cost (she missed the celebration) is real, but she managed it. The GM rewards her self-awareness: she texts her friend "I had a bad time but I'm okay" — a vulnerable but healthy communication that strengthens their relationship (+1 to future social checks with this friend).</p>
+</div>
+
+<h3>Scenario 3: The Addiction Relapse</h3>
+<div class="callout example">
+  <div class="callout-title">📝 Derek's Toughest Month</div>
+  <p><strong>Setup:</strong> Derek (Severe Alcohol Addiction; RES 9, mod +1) has been sober for 21 days. He's in a support group (Therapy Level 1 for SUD). He's at 3/20 SP. His last relapse was 3 months ago (so relapse TN = 60 + 5 = 65).</p>
+  <p><strong>Week 1 of sobriety:</strong> Daily <span class="dice">RES (TN 65)</span> to resist craving. Monday: rolls <span class="dice">2d10</span> = 37. Total 38. <strong>Success.</strong> Tuesday: rolls <span class="dice">2d10</span> = 60. Total 61. <strong>Success.</strong> He's feeling good. Support group helps (−2 SP → 1).</p>
+  <p><strong>Week 2:</strong> Things get harder. Withdrawal subsided, but the psychological craving remains. He gets a promotion at work — celebratory drinks are offered. This is a massive trigger. The GM calls for his relapse check: <span class="dice">RES (TN 65)</span>. He rolls <span class="dice">2d10</span> = 55. Total 56. <strong>Success — barely.</strong> He declines. His boss notices and respects it (+2 to future professional checks with boss).</p>
+  <p><strong>Week 3:</strong> His anniversary of the accident that killed his brother arrives. +8 SP (catastrophic stressor). He's at 9 SP — entering "Stressed." The relapse check becomes harder because his SP is high: the GM adds +1 to the TN per 5 SP above 5. New TN = 65 + 1 = 66. He rolls <span class="dice">2d10</span> = 62. Total 63. <strong>Failure.</strong></p>
+  <p><strong>The relapse:</strong> He drives to the liquor store. Buys a bottle. Drinks alone. The GM narrates the shame — the cycle of using → feeling worse → using more. He gains +8 SP (hits max → Episode). He passes out. Wakes up the next day with a hangover (−3 on all checks for the day) and 10/20 SP.</p>
+  <p><strong>Aftermath:</strong> This is his second relapse. Future relapse TN = 60 + 10 = 70. He returns to support group the next day — a small victory. The GM narrates that his sponsor says "What matters isn't that you fell. It matters how quickly you got back up." He gains −2 SP from the support interaction.</p>
+  <p><strong>Lesson:</strong> Relapse is part of the journey, not the end of it. The mechanics reflect this — Derek can try again. The TN is higher, yes, but his Therapy Level will grow, and so will his resilience.</p>
+</div>
+
+<h2>7. Safety Tools for the Table 🛡️</h2>
+<p>Mental health content is powerful and necessary in a realistic RPG — but it demands responsibility. These tools are <strong>mandatory</strong>, not optional, when mental health mechanics are in play.</p>
+
+<h3>7.1 Lines and Veils</h3>
+<p>Before the first session, every player (including the GM) establishes:</p>
+<ul>
+<li><strong>🚫 Lines:</strong> Topics that are <em>completely off-limits</em>. The GM will never introduce these. If a player has a Line on, say, domestic violence, no character will ever experience or witness it. Period.</li>
+<li><strong>🌫️ Veils:</strong> Topics that can happen but should be <em>fade-to-black</em>. The event occurs off-screen; consequences are narrated but not described. Example: a character's suicide attempt happens between scenes; we pick up after with the aftermath and recovery.</li>
+</ul>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Lines Are Sacred</div>
+  <p>If a Line is crossed, the session stops immediately. No debate, no "but the story needs it." The GM apologizes, the topic is removed, and play resumes on different ground. A Line is a hard boundary, not a negotiation.</p>
+</div>
+
+<h3>7.2 Check-Ins</h3>
+<p>Regular emotional temperature checks during play:</p>
+<ul>
+<li><strong>Pre-session check-in:</strong> "How are you feeling today? Any topics you'd like to add to the Lines or Veils list for this session?"</li>
+<li><strong>Mid-session check-in:</strong> After any intense scene, the GM asks: "Everyone good? Green (fine), yellow (getting intense but I'm okay), or red (I need a break)?"</li>
+<li><strong>Post-session check-out:</strong> "What hit hard for you? What felt good? Anything to carry forward or leave behind?"</li>
+</ul>
+
+<h3>7.3 Content Warnings</h3>
+<p>The GM provides warnings before introducing potentially triggering content:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Warning Level</th><th>When to Use</th><th>What It Means</th></tr></thead>
+<tbody>
+<tr><td>🟢 <strong>Mild</strong></td><td>Every session start</td><td>"This session will touch on workplace stress and relationship conflict."</td></tr>
+<tr><td>🟡 <strong>Moderate</strong></td><td>Before specific scenes</td><td>"In the next scene, a character will experience a panic attack. We'll handle it respectfully. Anyone want to adjust their Lines?"</td></tr>
+<tr><td>🔴 <strong>Strong</strong></td><td>Before heavy content</td><td>"The upcoming scene involves a character confronting their addiction. This will be intense. Everyone still green? If anyone is yellow or red, we'll skip or veil this scene."</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.4 The X-Card</h3>
+<p>Any player, at any time, can say <strong>"X"</strong> (or use a physical X-card at the table). This means <em>stop immediately, no explanation needed</em>. The scene ends, the topic is dropped, and play moves to something else. No one asks why. No one challenges it. This is the ultimate safety net.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Aftercare</div>
+  <p>After a heavy session involving mental health content, the GM should explicitly separate game from reality: "Alright everyone, we're done for tonight. Remember: these are stories we're telling together. If anything from tonight is sticking with you, I'm happy to talk or point you to resources. Take care of yourselves."</p>
+</div>
+
+<h2>Appendix: Quick Reference Card 📋</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Concept</th><th>Key Numbers</th></tr></thead>
+<tbody>
+<tr><td>Max Stress Pool</td><td>20 + (RES mod × 5)</td></tr>
+<tr><td>Episode threshold</td><td>SP &gt; Max SP → Episode for <span class="dice">1d4</span> hours (mild) or <span class="dice">1d4</span> days (severe)</td></tr>
+<tr><td>Episode penalty</td><td>+10 TN on all checks</td></tr>
+<tr><td>Stress recovery (sleep)</td><td>1 SP per night (requires successful <span class="dice">RES sleep check</span>)</td></tr>
+<tr><td>Therapy benefit</td><td>−20 to −30 SP per session depending on Therapy Level</td></tr>
+<tr><td>Medication benefit</td><td>50% reduction in baseline SP gain</td></tr>
+<tr><td>Trigger resistance</td><td><span class="dice">RES (TN 50)</span>; success = half SP, failure = full SP + reaction</td></tr>
+<tr><td>Social support</td><td>−2 SP per meaningful interaction</td></tr>
+<tr><td>Stigma (concealment cost)</td><td>−2 on EXP-based checks while masking</td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — A hyper-realistic life simulation tabletop role-playing game ruleset.
+</footer>
+
+</body>
+</html>

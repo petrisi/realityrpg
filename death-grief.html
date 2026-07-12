@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Death, Grief &amp; Legacy — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html" class="active">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+  <span class="hero-icon">🕯️</span>
+  <h1>Death, Grief &amp; Legacy</h1>
+  <p class="subtitle">Mortality is the one event every character is guaranteed to face. This page covers death events, grief mechanics, end-of-life care, estate planning, dementia, existential crisis, and what happens when a player character's story comes to an end.</p>
+</section>
+
+<section class="content-section">
+<div class="container">
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Table Safety — Critical</div>
+  <p>This chapter deals with death, terminal illness, suicide, dementia, and the loss of loved ones — topics that can directly mirror players' real-life grief. <strong>Full Lines &amp; Veils conversation required before play.</strong> A player may declare "my character was not present" for any death scene. The GM must never force a player to resolve a death event that parallels their own experience. If a player goes <em>red light</em>, the scene ends immediately and the character is treated as having been elsewhere.</p>
+</div>
+
+<h2>Introduction</h2>
+<p>In most RPGs, death is a failure state — a binary "you're dead, roll a new character." In Reality RPG, death is a <em>process</em>. It happens to NPCs in the character's life, it approaches the character through aging and illness, and when it finally claims the PC, it generates a legacy that can ripple through future campaigns. Grief is not a debuff; it is a <strong>mechanical system with duration, stages, and resolution</strong> that reflects how humans actually process loss.</p>
+<p>This page is organized into eight interconnected systems. You may use them individually or as a full arc spanning decades of play.</p>
+
+<!-- ============================================================ -->
+<h2>1. Death of NPC Loved Ones</h2>
+<p>When someone the PC cares about dies, the GM triggers a <strong>Death Event</strong>. The severity depends on the relationship, the circumstances, and the character's emotional investment. All death events begin with an immediate SP load, followed by structured grief phases that unfold over real game time (weeks to years).</p>
+
+<h3>1.1 Death Event Types</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Immediate SP</th><th>Shock Phase</th><th>Special Effects</th></tr></thead>
+<tbody>
+<tr>
+<td>💥 <strong>Sudden Death</strong><br><small>accident, heart attack, stroke, homicide</small></td>
+<td><span class="dice">+8 SP</span></td>
+<td>2–4 weeks of disorientation. −5 on all INT and EXP checks during shock.</td>
+<td>PC must make <span class="dice">2d10 vs RES</span> (TN 60) at end of shock phase. Failure = enters Denial stage. Success = moves to Anger.</td>
+</tr>
+<tr>
+<td>🏥 <strong>Expected Death</strong><br><small>terminal illness, prolonged decline</small></td>
+<td>Gradual: <span class="dice">+2 SP/month</span> during final 3–6 months of illness, then <span class="dice">+6 SP</span> at moment of death.</td>
+<td>No shock phase (already anticipated). Death still triggers grief stages, but Denial is skipped.</td>
+<td>PC has had time to say goodbye. Grief stages are shorter (half duration) but Bargaining phase is more intense (+3 SP during Bargaining).</td>
+</tr>
+<tr>
+<td>💔 <strong>Death of a Child</strong><br><small>PC's child, or a child they're close to</small></td>
+<td><span class="dice">+12 SP</span></td>
+<td>4–8 weeks. −8 on all checks during shock. Sleep is nearly impossible (auto-fail sleep checks for 2 weeks).</td>
+<td>High risk of <strong>Complicated Grief</strong> (see §1.4). Must make <span class="dice">2d10 vs RES</span> (TN 75). Failure = Complicated Grief flag, which prevents natural grief resolution for 6–12 months without professional help.</td>
+</tr>
+<tr>
+<td>🖤 <strong>Death by Suicide</strong><br><small>loved one took their own life</small></td>
+<td><span class="dice">+10 SP</span></td>
+<td>3–6 weeks. Includes <strong>guilt phase</strong> regardless of grief stage progression. −8 on PRC checks (self-blame, shame).</td>
+<td>Stigma effects: PC may face social judgment. <span class="dice">2d10 vs EXP</span> (TN 55) to navigate conversations about the death. Failure = social withdrawal for 1 month.</td>
+</tr>
+<tr>
+<td>⚰️ <strong>Death of a Distant Relation</strong><br><small>extended family, old friend, colleague</small></td>
+<td><span class="dice">+2 SP</span></td>
+<td>1–2 weeks mild. −2 on EXP checks (distraction, sadness).</td>
+<td>Grief stages are abbreviated. Acceptance typically reached within 2–3 months. No Complicated Grief risk.</td>
+</tr>
+<tr>
+<td>👥 <strong>Mass Casualty Event</strong><br><small>disaster, war zone, terrorist attack, pandemic</small></td>
+<td><span class="dice">+4 SP per person lost</span> (capped at +20 SP total). At least +10 SP from the event itself regardless.</td>
+<td>2–8 weeks. Collective trauma. Community support may reduce SP by up to 50% if PC is embedded in a strong social network.</td>
+<td>PTSD risk: after shock phase, <span class="dice">2d10 vs RES</span> (TN 70). Failure = PTSD symptoms per Mental Health rules. Community ritual (memorial, vigil) gives −3 SP.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Note: Relationship Depth Matters</div>
+  <p>Double the SP for a <strong>spouse or life partner</strong>. Add +3 SP if the PC and deceased were <strong>co-parents of a living child</strong>. Subtract 2 SP if the relationship was <strong>estranged or conflicted</strong> (grief is still present but mixed with relief, which has its own guilt mechanics).</p>
+</div>
+
+<h3>1.2 Grief Stages as Mechanical Phases</h3>
+<p>Grief is not linear, but the game models it as sequential phases for mechanical clarity. Each phase has a <strong>duration</strong>, <strong>SP cost per week</strong>, and <strong>attribute effects</strong>. The PC progresses through phases as real time passes and as they make <span class="dice">RES</span> checks at the end of each phase.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Phase</th><th>Duration</th><th>SP/Week</th><th>Effects</th><th>Exit Check</th></tr></thead>
+<tbody>
+<tr>
+<td>😶 <strong>Denial</strong></td>
+<td>2–6 weeks</td>
+<td>+3 SP/week</td>
+<td>PC may refuse to acknowledge the death. Cannot benefit from social support (−0 SP from support). May engage in denial behaviors (visiting old places, keeping phone on). INT checks at −3 (inability to focus).</td>
+<td><span class="dice">2d10 vs RES</span> (TN 50). Success → Anger. Failure → stays in Denial another round.</td>
+</tr>
+<tr>
+<td>😤 <strong>Anger</strong></td>
+<td>2–8 weeks</td>
+<td>+2 SP/week</td>
+<td>Directed at doctors, God, the deceased, self, or the world. PRC checks at −5 (irritability, lashing out). Risk of damaging relationships: <span class="dice">2d10 vs PRC</span> (TN 45) each month or one relationship takes a hit.</td>
+<td><span class="dice">2d10 vs RES</span> (TN 55). Success → Bargaining. Failure → reverts to Denial for 1 round.</td>
+</tr>
+<tr>
+<td>🤝 <strong>Bargaining</strong></td>
+<td>1–4 weeks</td>
+<td>+2 SP/week</td>
+<td>"If only I had…" guilt spirals. May make extreme life changes (quit job, move, start praying). EXP checks at −3 (second-guessing all past decisions). +3 SP if death was expected (more time to bargain).</td>
+<td><span class="dice">2d10 vs RES</span> (TN 60). Success → Depression. Failure → cycles back to Anger.</td>
+</tr>
+<tr>
+<td>😢 <strong>Depression</strong></td>
+<td>4–16 weeks</td>
+<td>+4 SP/week (highest)</td>
+<td>The heaviest phase. All checks at −3. VIG checks at −5 (fatigue, appetite loss). May lose 1–2 points of temporary VIG. <strong>Episode risk:</strong> if SP exceeds max during this phase, trigger a mental health Episode (depression/anxiety).</td>
+<td><span class="dice">2d10 vs RES</span> (TN 65). Success → Acceptance. Failure → stays in Depression. <strong>Therapy reduces TN by 10.</strong></td>
+</tr>
+<tr>
+<td>🌅 <strong>Acceptance</strong></td>
+<td>Not timed — marks the end of active grief</td>
+<td>+1 SP/week (fading)</td>
+<td>SP decreases naturally at double rate (−2 SP/night instead of −1). Penalties lift. PC may hold anniversary pain (see below) but functions normally. Character has <em>integrated</em> the loss.</td>
+<td>None. The character has processed the loss. SP from grief reaches 0 over the next 2–4 weeks.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: Maria Grieves Her Husband</div>
+  <p>Maria (RES 7) loses her husband Carlos to a sudden car accident. They were married 12 years, have a 5-year-old daughter.</p>
+  <ul>
+    <li><strong>Immediate:</strong> +8 SP (sudden death) +3 SP (co-parent of living child) = <strong>+11 SP</strong>. Maria is at 11 SP — <strong>Overwhelmed</strong>.</li>
+    <li><strong>Shock Phase (3 weeks):</strong> −5 on INT/EXP. Maria barely functions at work. She calls in sick. Each week: +3 SP (Denial) = 9 more SP. Maria is now at 20 SP — near her max of 25.</li>
+    <li><strong>Denial Exit:</strong> <span class="dice">2d10</span> rolls 12 + RES 7 = 19 vs TN 50. Fails. Maria stays in Denial — she can't believe Carlos is gone, keeps setting the table for two.</li>
+    <li><strong>Week 6:</strong> Maria enters Anger. +2 SP/week. She yells at the police, at the doctor, at her sister. <span class="dice">2d10 vs PRC</span> (TN 45) — fails. Her sister stops calling for a month.</li>
+    <li><strong>Week 8:</strong> Moves to Bargaining. "If I had made him wear his seatbelt…" +2 SP/week. She starts going to church (she never did before).</li>
+    <li><strong>Week 10:</strong> Depression phase. +4 SP/week. Maria hits her SP cap and enters an <strong>Episode</strong>. She starts therapy (−3 SP/session). VIG drops from 6 to 5 temporarily.</li>
+    <li><strong>Week 16:</strong> With therapy helping, <span class="dice">2d10 vs RES</span> (TN 55, reduced from 65) — rolls 14 + 7 = 21. <strong>Success.</strong> Maria enters Acceptance. SP starts halving each night.</li>
+    <li><strong>Week 20:</strong> Maria's grief SP reaches 0. She still feels the loss — she always will — but she is functioning. She has an <strong>anniversary marker</strong> for the accident date: each year on that date, +3 SP for one week.</li>
+  </ul>
+</div>
+
+<h3>1.3 Anniversary and Trigger Events</h3>
+<p>After reaching Acceptance, certain dates and events can cause grief to resurface temporarily:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Trigger</th><th>SP Effect</th><th>Duration</th></tr></thead>
+<tbody>
+<tr><td>📅 Death anniversary</td><td>+3 SP</td><td>1 week</td></tr>
+<tr><td>🎂 Deceased's birthday</td><td>+2 SP</td><td>2–3 days</td></tr>
+<tr><td>💍 Wedding or relationship anniversary</td><td>+3 SP</td><td>1 week</td></tr>
+<tr><td>🏠 Returning to a place associated with the deceased</td><td>+2 SP</td><td>1–2 days</td></tr>
+<tr><td>👶 A major milestone the deceased missed (child's graduation, etc.)</td><td>+4 SP</td><td>1 week</td></tr>
+<tr><td>🎄 Holidays (Christmas, Thanksgiving, etc.)</td><td>+2 SP</td><td>Duration of holiday period</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.4 Complicated Grief</h3>
+<p>Some losses do not resolve through the normal stages. <strong>Complicated Grief</strong> is a persistent condition that requires intervention. It is most common after the death of a child, sudden violent death, or when the PC has pre-existing mental health conditions.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Complicated Grief Rules</div>
+  <p><strong>Diagnosis:</strong> If a PC remains stuck in any grief stage for more than 3× the maximum duration (e.g., >48 weeks in Depression), the GM assigns the <strong>Complicated Grief</strong> flag.</p>
+  <p><strong>Effects:</strong> +2 SP/day (ongoing). All grief-related SP triggers are doubled. PC cannot naturally recover below 10 SP without professional help. Temporary −2 to VIG and INT.</p>
+  <p><strong>Treatment:</strong> Requires at least 6 months of consistent therapy (grief counseling specifically). Each month of therapy: <span class="dice">2d10 vs RES</span> (TN 55). 3 successes = Complicated Grief resolves and PC enters Acceptance. Failure = no change, try again next month.</p>
+  <p><strong>Medication:</strong> Antidepressants may reduce the daily SP cost from +2 to +1 per day but do not directly resolve the condition.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>2. Funerals and Memorials</h2>
+<p>Funerals are not just emotional events — they are <strong>expensive, logistically complex social obligations</strong> that the PC may need to organize, attend, or both. In the US, the average funeral costs $7,000–$12,000, and this is a direct hit to the PC's finances.</p>
+
+<h3>2.1 Funeral Costs</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Service Type</th><th>Cost Range</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>⚰️ Traditional funeral (viewing + burial)</td><td>$7,000–$15,000+</td><td>Casket ($2,000–$10,000), embalming, cemetery plot ($1,000–$5,000), headstone, facility fees</td></tr>
+<tr><td>🔥 Cremation with service</td><td>$3,000–$7,000</td><td>Urn ($50–$500), cremation fee, memorial service venue</td></tr>
+<tr><td>🏛️ Memorial service only (no body present)</td><td>$500–$3,000</td><td>Venue rental, catering, flowers</td></tr>
+<tr><td>🌿 Green/natural burial</td><td>$2,000–$5,000</td><td>Biodegradable casket, conservation burial ground</td></tr>
+<tr><td>🏠 Home funeral / family-led</td><td>$200–$1,000</td><td>Legal paperwork, permits, minimal costs. Requires significant family time and emotional labor.</td></tr>
+<tr><td>🏥 Medical donation / body donation</td><td>$0–$500</td><td>No ceremony cost. Family may organize a separate memorial.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.2 Organizing a Funeral</h3>
+<p>If the PC is the designated organizer (often the spouse, adult child, or next of kin), they face a <strong>logistics stress event</strong> on top of their grief SP:</p>
+<ul>
+<li><strong>Planning stress:</strong> +4 SP for the week of planning. <span class="dice">2d10 vs INT</span> (TN 50) to manage vendors, legal paperwork, and family expectations. Failure = +2 SP and at least one vendor costs 20% more than budgeted.</li>
+<li><strong>Family conflict:</strong> <span class="dice">2d10 vs EXP</span> (TN 55) each day of planning. Failure = one family member disputes decisions (casket choice, religious elements, who speaks). Each dispute = +2 SP.</li>
+<li><strong>Time cost:</strong> 20–40 hours over 1–2 weeks. This is time not spent working, potentially costing income.</li>
+</ul>
+
+<h3>2.3 Attending a Funeral</h3>
+<p>Even when not organizing, attending a funeral has mechanical effects:</p>
+<ul>
+<li><strong>Time cost:</strong> 1–2 days (service + travel + aftermath)</li>
+<li><strong>SP effect:</strong> +2 SP for attending (even if the deceased was distant). The social obligation of <em>performing grief</em> is itself stressful.</li>
+<li><strong>Social benefit:</strong> <span class="dice">2d10 vs PRC</span> (TN 40) — success = PC gains +1 to one EXP-based social check for the next month (community solidarity, shared experience).</li>
+<li><strong>Consolation spending:</strong> Flowers ($50–$100), donation to charity ($20–$100), meals for the family ($100–$300). These are optional but socially expected.</li>
+</ul>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Cultural &amp; Religious Variations</div>
+  <p>The GM should adapt funeral mechanics to the PC's cultural context. A <strong>traditional Jewish shiva</strong> involves 7 days of mourning at home with visitors — significant time cost but strong community support (−2 SP from support). A <strong>Mexican Día de los Muertos</strong> celebration frames death differently — +1 SP for remembrance but potential +2 SP relief from the celebratory framing. A <strong>Hindu cremation</strong> may involve specific ritual obligations over several days. These variations matter both narratively and mechanically.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>3. End-of-Life Care</h2>
+<p>When a PC's loved one (or the PC themselves) is approaching the end of life, Reality RPG models the practical, financial, and emotional decisions that real families face.</p>
+
+<h3>3.1 Advance Directives</h3>
+<p>Characters should establish <strong>advance directives</strong> as part of long-term character development. These include:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Document</th><th>What It Does</th><th>Game Effect</th></tr></thead>
+<tbody>
+<tr><td>📄 <strong>Living Will</strong></td><td>Specifies desired medical treatment if the patient cannot communicate (life support, tube feeding, pain management priorities).</td><td>If the PC has one and becomes incapacitated, their wishes are followed — no additional family conflict SP. If absent, family must decide under crisis conditions: <span class="dice">2d10 vs RES</span> (TN 60) for each family member involved, or +3 SP from decision conflict.</td></tr>
+<tr><td>🏥 <strong>DNR (Do Not Resuscitate)</strong></td><td>Prevents CPR and aggressive resuscitation attempts. Allows natural death.</td><td>If the PC has a DNR and their heart stops, they die peacefully. Without it, the GM rolls <span class="dice">2d10 vs VIG</span> (TN 30) — success = revived but with severe VIG damage (−1 permanent VIG, possible coma). Family experiences +5 SP from the traumatic resuscitation.</td></tr>
+<tr><td>👤 <strong>Healthcare Proxy</strong></td><td>Designates one person to make medical decisions on the patient's behalf.</td><td>Prevents family conflict over medical decisions. The proxy's choices are final. If the proxy makes a choice the PC would not have wanted (because no living will exists), +3 SP for the PC if conscious enough to perceive it.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.2 Hospice and Palliative Care</h3>
+<p><strong>Hospice</strong> is end-of-life care focused on comfort rather than cure. It is typically covered by insurance in the last 6 months of life, but out-of-pocket costs and emotional toll are significant.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Care Setting</th><th>Monthly Cost (out of pocket)</th><th>Time/Family Impact</th><th>SP Effects</th></tr></thead>
+<tbody>
+<tr>
+<td>🏡 <strong>Home hospice</strong></td>
+<td>$0–$2,000/month (mostly covered by Medicare/insurance; family pays for equipment, modifications)</td>
+<td>Family provides 4–12 hours/day of care. One family member typically becomes primary caregiver.</td>
+<td><strong>For patient:</strong> +1 SP/day (pain, discomfort, awareness of decline). <strong>For caregiver:</strong> +2 SP/day caregiving burden. Caregiver must make <span class="dice">VIG</span> check (TN 45) each month — failure = caregiver fatigue (−1 temporary VIG, +3 SP).</td>
+</tr>
+<tr>
+<td>🏥 <strong>Hospice facility</strong></td>
+<td>$5,000–$15,000/month (often partially covered)</td>
+<td>Professional staff provides care. Family visits 1–4 hours/day.</td>
+<td><strong>For patient:</strong> +1 SP/day (facility discomfort, loss of autonomy). <strong>For family:</strong> +1 SP/day (guilt about not providing care personally, travel stress).</td>
+</tr>
+<tr>
+<td>🏨 <strong>Nursing home with palliative care</strong></td>
+<td>$7,000–$12,000/month</td>
+<td>Full-time professional care. Family involvement minimal but visits recommended.</td>
+<td><strong>For patient:</strong> +1 SP/day. <strong>For family:</strong> +1 SP/day. Lower burden than home care but higher guilt SP for some families.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.3 Family Caregiving Burden</h3>
+<p>When a family member provides care at home, it is one of the most demanding situations in the game:</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Caregiver Burnout System</div>
+  <p><strong>Daily cost:</strong> +2 SP/day. 4–12 hours of care per day (reduces time for work, relationships, self-care).</p>
+  <p><strong>Monthly VIG check:</strong> <span class="dice">2d10 vs VIG</span> (TN 50). Failure = <strong>caregiver fatigue</strong>: −1 temporary VIG, +3 SP, and the caregiver must take at least 2 days off or risk a <strong>burnout event</strong>.</p>
+  <p><strong>Burnout event:</strong> If the caregiver accumulates 3 fatigue markers without rest, they experience burnout: −2 temporary VIG, +8 SP, and they may be medically unable to continue caregiving for 2–4 weeks. This forces an emergency care arrangement (often at significant cost).</p>
+  <p><strong>Respite care:</strong> Hiring help for 1–2 days/week costs $25–$30/hour but prevents burnout. Each respite day = −2 SP for the caregiver.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>4. Terminal Illness</h2>
+<p>A terminal illness diagnosis is one of the most transformative events in the game. It reshapes the character's priorities, relationships, finances, and daily existence.</p>
+
+<h3>4.1 The Diagnosis Event</h3>
+<p>When a PC receives a terminal diagnosis (or an NPC loved one does), the following mechanics activate:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Mechanic</th></tr></thead>
+<tbody>
+<tr><td><strong>Immediate SP</strong></td><td><span class="dice">+8 SP</span> for the diagnosed person. <span class="dice">+6 SP</span> for their closest family members.</td></tr>
+<tr><td><strong>Shock check</strong></td><td><span class="dice">2d10 vs RES</span> (TN 65). Failure = the character enters Denial about their own prognosis, which can delay treatment decisions.</td></tr>
+<tr><td><strong>Life reassessment</strong></td><td>Within 1 month, the character must declare at least one <strong>priority shift</strong>: a relationship they want to repair, a dream they want to pursue, or a conversation they need to have. The GM facilitates these scenes.</td></tr>
+<tr><td><strong>Prognosis timeline</strong></td><td>The GM establishes a remaining lifespan (months to years) based on the illness. This is a <em>mechanical countdown</em> that drives all subsequent decisions.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.2 Treatment Choices</h3>
+
+<div class="compare-grid">
+<div class="compare-col reality" style="background:#fef9e7;border-color:#f9e79f;">
+  <h4>⚡ Aggressive Treatment</h4>
+  <ul>
+    <li>Chemotherapy, surgery, targeted therapy, clinical trials</li>
+    <li><strong>Cost:</strong> $10,000–$500,000+ (insurance coverage varies dramatically)</li>
+    <li><strong>Quality of life:</strong> −2 to all attributes during treatment cycles. Severe side effects (nausea, fatigue, hair loss, infection risk).</li>
+    <li><strong>Survival chance:</strong> <span class="dice">2d10 vs VIG</span> (TN 60) at 6-month intervals. Each success extends life by 6 months. Each failure = 3 months closer to end.</li>
+    <li><strong>SP cost:</strong> +3 SP/week during active treatment (pain, fear, treatment side effects).</li>
+  </ul>
+</div>
+<div class="compare-col reality" style="background:#eaf2f8;border-color:#aed6f1;">
+  <h4>🕊️ Palliative / Comfort Care</h4>
+  <ul>
+    <li>Pain management, symptom control, quality of life focus</li>
+    <li><strong>Cost:</strong> $2,000–$10,000/month (often better covered by insurance)</li>
+    <li><strong>Quality of life:</strong> −1 to VIG only. Character can still engage in meaningful activities.</li>
+    <li><strong>Survival:</strong> The countdown continues at the natural rate. No extension rolls.</li>
+    <li><strong>SP cost:</strong> +1 SP/day (awareness of decline, but manageable comfort).</li>
+  </ul>
+</div>
+</div>
+
+<h3>4.3 Quality of Life Tracking</h3>
+<p>For characters with terminal illness, the GM tracks a <strong>Quality of Life (QoL) score</strong> from 0–10:</p>
+<ul>
+<li><strong>10:</strong> Fully functional, minimal symptoms</li>
+<li><strong>7–9:</strong> Managing well, occasional bad days</li>
+<li><strong>4–6:</strong> Significant limitations, needs some assistance</li>
+<li><strong>1–3:</strong> Mostly bedbound, needs full-time care</li>
+<li><strong>0:</strong> Final days</li>
+</ul>
+<p>QoL decreases by 1 point every 1–3 months (GM's discretion based on illness). Treatment choice affects the rate: aggressive treatment may slow QoL decline by 1 month per roll success but adds weekly SP. Palliative care accepts the natural decline rate but minimizes suffering.</p>
+
+<h3>4.4 Saying Goodbye</h3>
+<p>The GM should offer the player opportunities for <strong>closure scenes</strong>. These are narrative moments where the character:</p>
+<ul>
+<li>Has important conversations with loved ones</li>
+<li>Writes letters, records videos, or creates messages for the future</li>
+<li>Completes a meaningful project or trip</li>
+<li>Makes peace with people they were estranged from</li>
+</ul>
+<p>Each successful closure scene gives the character <strong>−2 SP</strong> (peace of mind) and grants a <strong>Legacy Token</strong> that can be used after death (see §5).</p>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: David's Last Summer</div>
+  <p>David (62, VIG 4, INT 7, RES 6) is diagnosed with pancreatic cancer — 6–12 months. He chooses palliative care. He has a wife (Sandra) and two adult children.</p>
+  <ul>
+    <li><strong>Month 1:</strong> +8 SP. QoL starts at 7. David declares priority shifts: wants to take his daughter to see the ocean (she's never been), wants to tell his son he's proud of him, wants to write letters for his grandchildren's graduations.</li>
+    <li><strong>Month 2:</strong> QoL = 6. David takes his daughter to Oregon Coast. Closure scene: she cries, they bond. David gains −2 SP and 1 Legacy Token.</li>
+    <li><strong>Month 3:</strong> QoL = 5. David has the conversation with his son. His son (who'd been distant for years) breaks down. −2 SP, 1 Legacy Token.</li>
+    <li><strong>Month 4:</strong> QoL = 4. David writes letters. Sandra becomes primary caregiver (+2 SP/day for her). David: +1 SP/day from illness awareness.</li>
+    <li><strong>Month 5:</strong> QoL = 3. David is mostly bedbound. Sandra's caregiver burnout check: <span class="dice">2d10 vs VIG</span> (TN 50) — fails. She's exhausted. The GM arranges a respite care scene where David's brother steps in for a weekend.</li>
+    <li><strong>Month 6:</strong> QoL = 1. David's final days. His SP is high but he has made peace. He has 2 Legacy Tokens. When he dies, Sandra receives +6 SP (expected death, spouse), but she also receives 2 Legacy Tokens she can use for herself.</li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<h2>5. Character Death</h2>
+<p>When a PC dies — whether from old age, accident, illness, or other causes — the game does not simply restart. The character's death has <strong>weight, consequence, and legacy</strong>.</p>
+
+<h3>5.1 How Characters Die</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Cause</th><th>Typical Age Range</th><th>Mechanic</th><th>SP for Survivors</th></tr></thead>
+<tbody>
+<tr>
+<td>👴 <strong>Old Age / Natural Causes</strong></td>
+<td>75–100+</td>
+<td>When cumulative aging effects reduce VIG to 0, or the character simply reaches their natural lifespan. Peaceful, expected.</td>
+<td>Surviving family: +4 SP (expected death). Less shock, more sadness.</td>
+</tr>
+<tr>
+<td>🚗 <strong>Accident</strong></td><td>Any age</td>
+<td>Random event. <span class="dice">2d10 vs DXT</span> (TN 75) when in dangerous situations. Failure at age &lt;50 = sudden death event for survivors.</td>
+<td>Surviving family: +8 SP (sudden death). Full grief process.</td>
+</tr>
+<tr>
+<td>🏥 <strong>Terminal Illness</strong></td>
+<td>40–90+</td>
+<td>Modeled through the terminal illness system (§4). Death occurs when QoL reaches 0.</td>
+<td>Surviving family: +6 SP (expected death) + relationship modifiers.</td>
+</tr>
+<tr>
+<td>💔 <strong>Suicide</strong></td><td>Any age, peaks 15–25 and 45–54</td>
+<td>Only occurs if the character has severe untreated mental health conditions AND fails multiple RES checks over months. The GM must handle this with extreme sensitivity.</td>
+<td>Surviving family: +10 SP. Guilt, stigma, complicated grief risk.</td>
+</tr>
+<tr>
+<td>⚔️ <strong>Violence / Homicide</strong></td><td>Any age</td>
+<td>Random event based on neighborhood safety, lifestyle choices. <span class="dice">2d10 vs DXT</span> (TN 80+ in high-risk areas).</td>
+<td>Surviving family: +10 SP. May include trauma, anger at perpetrators, legal involvement.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.2 Legacy Tokens</h3>
+<p>When a PC dies, the player receives <strong>Legacy Tokens</strong> based on the character's life achievements and closure scenes:</p>
+<ul>
+<li>Each <strong>closure scene</strong> completed = 1 Legacy Token (max 5)</li>
+<li>Each <strong>major life achievement</strong> (career milestone, degree, home purchase, child raised to adulthood) = 1 Legacy Token (max 3)</li>
+<li>If the PC had a <strong>strong social network</strong> (3+ close relationships) = 1 bonus Legacy Token</li>
+<li>If the PC <strong>planned their estate</strong> (will, advance directives) = 1 bonus Legacy Token</li>
+</ul>
+<p>Legacy Tokens transfer to the player's <strong>next character</strong> (if connected to the deceased) and can be spent to:</p>
+<ul>
+<li><strong>Start with an advantage:</strong> 1 token = begin with +5,000 in savings or one skill at trained level</li>
+<li><strong>Inherit a relationship:</strong> 1 token = the new character inherits one existing relationship from the deceased (a friend, colleague, or family member)</li>
+<li><strong>Moral clarity:</strong> 1 token = the new character begins with one resolved life question (no existential crisis in the first year)</li>
+<li><strong>Memorial benefit:</strong> 1 token = the deceased is remembered fondly. Once per year, the new character can invoke the deceased's memory for +2 on a RES check during a difficult moment.</li>
+</ul>
+
+<h3>5.3 New Character Options After Death</h3>
+<p>When a PC dies, the player chooses how to continue:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Option</th><th>Description</th><th>Best For</th></tr></thead>
+<tbody>
+<tr>
+<td>👶 <strong>Play Their Child</strong></td>
+<td>Create a new character as the deceased's child (or a child of a close NPC). Inherit Legacy Tokens. The deceased's life shaped the new character's starting conditions (wealth, trauma, values, network).</td>
+<td>Long-running campaigns. Continuity. Exploring how one generation's choices affect the next.</td>
+</tr>
+<tr>
+<td>💑 <strong>Play Their Partner</strong></td>
+<td>Create a new character as the deceased's spouse or partner. They carry the grief of the loss. Inherit Legacy Tokens + the shared home/assets. Start with grief SP already loaded.</td>
+<td>Emotional depth. Grief as a starting condition. Shared history enriches the narrative.</td>
+</tr>
+<tr>
+<td>🔄 <strong>Start Fresh</strong></td>
+<td>Create an entirely new character with no connection to the deceased. No Legacy Tokens transfer, but the player may choose to carry one <strong>thematic lesson</strong> forward (a narrative insight, not a mechanical bonus).</td>
+<td>Players who want closure and a clean break. Exploring a completely different life.</td>
+</tr>
+<tr>
+<td>👥 <strong>Ensemble Shift</strong></td>
+<td>In a group game, one player's character dies and the <strong>group</strong> creates a new character together who enters the remaining characters' lives. The deceased is remembered by the surviving NPCs and PCs.</td>
+<td>Group campaigns where characters are interconnected. Maintains social fabric.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Note: Death Should Feel Earned</div>
+  <p>Don't kill a PC lightly. Death should be the culmination of accumulated risk, aging, or illness — not a random punishment. Give the player warning signs, opportunities for prevention, and time to prepare. A well-handled character death is one of the most powerful moments in any RPG campaign.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>6. Estate Planning</h2>
+<p>What happens to a character's money, property, and obligations after death? Estate planning is both a practical mechanic and a narrative opportunity.</p>
+
+<h3>6.1 Wills and Inheritance</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Scenario</th><th>Process</th><th>Time</th><th>Cost</th></tr></thead>
+<tbody>
+<tr>
+<td>📜 <strong>Valid Will Exists</strong></td>
+<td>Estate executor distributes assets per the will. Heirs receive their share after debts are paid.</td>
+<td>3–12 months (probate process)</td>
+<td>$1,500–$5,000 in legal fees (deducted from estate)</td>
+</tr>
+<tr>
+<td>❌ <strong>No Will (Intestate)</strong></td>
+<td>State law determines distribution. Usually goes to spouse → children → parents → siblings. If no heirs, state takes everything.</td>
+<td>6–18 months (longer, more complex)</td>
+<td>$3,000–$15,000 in court and legal costs</td>
+</tr>
+<tr>
+<td>⚖️ <strong>Contested Will</strong></td>
+<td>Heirs dispute the will's validity or distribution. Family conflict is guaranteed.</td>
+<td>1–3 years</td>
+<td>$10,000–$100,000+ in legal fees. Each side pays their own.</td>
+</tr>
+<tr>
+<td>🏦 <strong>Small Estate (&lt;$50,000)</strong></td>
+<td>Simplified probate. Minimal legal involvement.</td>
+<td>1–3 months</td>
+<td>$200–$1,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.2 Receiving an Inheritance</h3>
+<p>When a PC inherits money or property, it is a <strong>game event</strong> with both positive and negative effects:</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Inheritance Event</div>
+  <p><strong>Financial benefit:</strong> The PC receives the inherited assets (cash, property, investments). This can be life-changing — paying off debt, buying a home, funding education.</p>
+  <p><strong>Emotional cost:</strong> +4 SP at the moment of receiving the inheritance. The money is <em>tainted by loss</em>. <span class="dice">2d10 vs RES</span> (TN 55) — failure = guilt about spending the money, which adds +1 SP/week until the PC either donates 10% of the inheritance or makes a purchase they believe would please the deceased.</p>
+  <p><strong>Family dynamics:</strong> If multiple heirs exist, <span class="dice">2d10 vs EXP</span> (TN 50) for each heir. Failure = conflict over distribution. Each conflict = +3 SP and potential relationship damage.</p>
+  <p><strong>Debts transfer:</strong> The deceased's debts are paid from the estate <em>before</em> distribution. If debts exceed assets, heirs receive nothing and may even face collection harassment if they co-signed anything.</p>
+</div>
+
+<h3>6.3 Debts That Follow Death</h3>
+<p>Not all obligations end with death:</p>
+<ul>
+<li><strong>Mortgage:</strong> If the heir takes over the property, they take on the mortgage. If they don't, the house is sold (often at a loss during probate).</li>
+<li><strong>Credit card debt:</strong> Paid from the estate. Heirs are <em>not</em> personally liable unless they co-signed.</li>
+<li><strong>Student loans:</strong> Federal loans are discharged at death. Private loans may or may not be (depends on terms).</li>
+<li><strong>Medical debt:</strong> Paid from the estate. If the estate is insufficient, the debt generally dies with the patient — but collections may still harass family members who knew about the debt.</li>
+<li><strong>Tax obligations:</strong> Final income tax + estate tax (if estate exceeds exemption threshold — $12.92 million federally in 2023, but some states have lower thresholds).</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2>7. Dementia and Alzheimer's</h2>
+<p>Dementia is not just "forgetting things." It is a <strong>progressive, devastating condition</strong> that affects the whole family system for years. It deserves its own mechanics because it is one of the most common and impactful end-of-life experiences.</p>
+
+<h3>7.1 Disease Progression</h3>
+<p>Dementia develops in stages over 8–15 years. Each stage affects the character's attributes and capabilities:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stage</th><th>Duration</th><th>INT Loss</th><th>EXP Loss</th><th>VIG Loss</th><th>Key Symptoms</th></tr></thead>
+<tbody>
+<tr>
+<td>🔍 <strong>Mild Cognitive Impairment</strong></td>
+<td>2–4 years</td>
+<td>−1 INT</td>
+<td>None</td>
+<td>None</td>
+<td>Forgetfulness, misplacing items, repeating questions. <span class="dice">INT</span> checks at −3. Often missed or denied.</td>
+</tr>
+<tr>
+<td>🟡 <strong>Mild Dementia</strong></td>
+<td>2–4 years</td>
+<td>−2 INT (total)</td>
+<td>−1 EXP</td>
+<td>None</td>
+<td>Difficulty with complex tasks (finances, driving). Personality changes begin. Gets lost in familiar places. Still recognizes family.</td>
+</tr>
+<tr>
+<td>🟠 <strong>Moderate Dementia</strong></td>
+<td>3–6 years</td>
+<td>−3 INT (total)</td>
+<td>−2 EXP (total)</td>
+<td>−1 VIG</td>
+<td>Needs help with daily activities (dressing, bathing). May wander. Sleep disturbances. Agitation, aggression. Does not recognize distant family. <strong>Cannot make medical or financial decisions.</strong></td>
+</tr>
+<tr>
+<td>🔴 <strong>Severe Dementia</strong></td>
+<td>1–3 years</td>
+<td>−4 INT (total — INT effectively 0)</td>
+<td>−3 EXP (total)</td>
+<td>−2 VIG (total)</td>
+<td>Cannot speak coherently. Needs full-time care. Incontinence. Swallowing difficulties. Bedbound in later stages. <strong>Death usually from pneumonia or infection.</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.2 Caregiver Mechanics for Dementia</h3>
+<p>Caring for someone with dementia is widely considered the most demanding caregiving situation:</p>
+
+<div class="callout rule">
+  <div class="callout-title">📋 Dementia Caregiver System</div>
+  <p><strong>Daily burden:</strong> +3 SP/day (vs. +2 SP/day for general caregiving). Dementia care is more intense due to behavioral symptoms, safety concerns, and the emotional toll of watching someone you love "die twice" — first their personality, then their body.</p>
+  <p><strong>Monthly checks:</strong></p>
+  <ul>
+    <li><span class="dice">2d10 vs VIG</span> (TN 55): Failure = caregiver fatigue (−1 temp VIG, +3 SP). TN increases by 5 each stage of dementia severity.</li>
+    <li><span class="dice">2d10 vs RES</span> (TN 50): Failure = caregiver <strong>emotional erosion</strong>. The caregiver experiences grief for the living person — mourning who they were while they're still here. +2 SP permanently (does not recover until the person dies).</li>
+  </ul>
+  <p><strong>Wandering risk:</strong> In Moderate+ stages, <span class="dice">2d10</span> (TN 40) each month. Failure = the person wanders and must be found. Each wandering event = +5 SP for the caregiver and potential emergency services involvement.</p>
+  <p><strong>Sundowning:</strong> In Moderate+ stages, the person becomes agitated in late afternoon/evening. +2 SP for the caregiver each evening during this period. No mitigation except professional care.</p>
+</div>
+
+<h3>7.3 Long-Term Care Costs</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Care Option</th><th>Annual Cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>🏡 In-home care (full-time aide)</td><td>$80,000–$100,000/year</td><td>Requires home modifications. Family still provides oversight and emotional care.</td></tr>
+<tr><td>🏥 Memory care facility</td><td>$70,000–$100,000/year</td><td>Specialized dementia care. More secure than standard nursing homes. Waitlists common.</td></tr>
+<tr><td>🏨 Standard nursing home</td><td>$50,000–$80,000/year</td><td>Many are not equipped for dementia behaviors. Higher risk of abuse/neglect.</td></tr>
+<tr><td>👨‍⚕️ Adult day care</td><td>$15,000–$35,000/year</td><td>Part-day supervision. Family provides care evenings/weekends. Good bridge option.</td></tr>
+<tr><td>👨‍👩‍👧 Family-only care</td><td>$0 direct cost, but enormous indirect cost</td><td>One family member often quits or reduces work. Lost income typically $30,000–$60,000/year. Plus caregiver health impacts.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.4 Family Impact</h3>
+<p>Dementia reshapes the entire family system:</p>
+<ul>
+<li><strong>Relationship strain:</strong> Siblings often disagree about care decisions. <span class="dice">2d10 vs EXP</span> (TN 55) per sibling. Failure = one sibling becomes the "designated caregiver" against their will, breeding resentment.</li>
+<li><strong>Spousal impact:</strong> A spouse caring for their partner with dementia has a <strong>50% higher mortality rate</strong> in real life. In-game: spouse caregiver has +1 SP/day (total +4 SP/day) and fails their monthly VIG check at TN 60 instead of 55.</li>
+<li><strong>Adult children's guilt:</strong> Adult children who don't provide direct care experience +2 SP/month from guilt. Those who do provide care experience +3 SP/month from burden. There is <em>no winning</em>.</li>
+<li><strong>Financial drain:</strong> Even with insurance, dementia care typically drains a family's savings within 3–5 years. The GM should track the family's financial decline as a parallel storyline.</li>
+</ul>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: The Chen Family and Father's Dementia</div>
+  <p>Mr. Chen (72, INT 7, EXP 8, VIG 5) is diagnosed with early-stage Alzheimer's. His wife (Mrs. Chen, 68) and two adult children (daughter Mei, 45; son Kevin, 42) are the primary family.</p>
+  <ul>
+    <li><strong>Year 1–2 (Mild):</strong> Mr. Chen loses 1 INT. Forgets appointments, repeats himself. Mrs. Chen covers for him. +1 SP/day for her. Mei visits weekly (+1 SP/visit). Kevin lives across the country, calls monthly.</li>
+    <li><strong>Year 3–5 (Mild Dementia):</strong> Mr. Chen at −2 INT, −1 EXP. Can no longer manage finances. Mei takes over his banking. Kevin argues they should put him in a facility. Mei refuses — "he's my father, I won't abandon him." <span class="dice">2d10 vs EXP</span> (TN 55) — Kevin fails. Family conflict: +3 SP for everyone involved.</li>
+    <li><strong>Year 6–9 (Moderate):</strong> Mr. Chen at −3 INT, −2 EXP, −1 VIG. Needs help bathing, dressing. Wanders at night. Mrs. Chen is now at +3 SP/day as primary caregiver. She fails her VIG check in month 4 — fatigued, losing weight. Mei moves closer to help. Kevin sends money ($3,000/month toward in-home aide) but still lives far away. Mei's guilt SP = +2/month. Mrs. Chen's emotional erosion check fails twice — she's grieving the husband she's losing.</li>
+    <li><strong>Year 10–12 (Severe):</strong> Mr. Chen bedbound. Incontinence. Swallowing issues. The family finally agrees on a memory care facility ($85,000/year). Mr. Chen's savings are depleted. Kevin and Mei use their inheritance fund. Mrs. Chen visits daily but her SP load drops to +1/day (professional care reduces burden). She still has permanent +4 SP from emotional erosion that won't recover until Mr. Chen dies.</li>
+    <li><strong>Year 13:</strong> Mr. Chen dies from pneumonia. Mrs. Chen receives +4 SP (expected death, spouse). Her total SP spikes but the permanent erosion markers clear. She enters grief stages but with shorter durations (she's been grieving for 13 years — this is a release, not just a loss).</li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<h2>8. Existential Crisis</h2>
+<p>An existential crisis is a <strong>narrative event</strong> triggered by confronting mortality, meaninglessness, or the weight of existence itself. It can be triggered by a loved one's death, a terminal diagnosis, reaching a certain age, a spiritual experience, or simply the cumulative weight of life.</p>
+
+<h3>8.1 Triggering an Existential Crisis</h3>
+<p>The GM may call for an existential crisis event when:</p>
+<ul>
+<li>A close loved one dies and the PC is left questioning the meaning of their own life</li>
+<li>The PC reaches a major age milestone (40, 50, 60) and experiences a midlife or late-life reckoning</li>
+<li>The PC survives a near-death experience</li>
+<li>The PC's life has accumulated >30 SP total over the campaign without adequate resolution</li>
+<li>The PC has lost their primary life purpose (career ends, children leave, spouse dies)</li>
+</ul>
+
+<h3>8.2 The Crisis Check</h3>
+<p>When an existential crisis event triggers, the PC makes a series of <span class="dice">RES</span> checks over the course of weeks or months:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Check</th><th>TN</th><th>What It Tests</th></tr></thead>
+<tbody>
+<tr><td><strong>Week 1:</strong> Initial shock of meaninglessness</td><td><span class="dice">2d10 vs RES</span> (TN 50)</td><td>Can the character maintain basic functioning while questioning everything?</td></tr>
+<tr><td><strong>Week 3:</strong> Depth of the crisis</td><td><span class="dice">2d10 vs RES</span> (TN 60)</td><td>Does the character fall into depression or find a foothold?</td></tr>
+<tr><td><strong>Week 6:</strong> Resolution attempt</td><td><span class="dice">2d10 vs RES</span> (TN 65)</td><td>Can the character find a new framework for meaning?</td></tr>
+<tr><td><strong>Week 12:</strong> Integration</td><td><span class="dice">2d10 vs RES</span> (TN 70)</td><td>Has the character integrated this crisis into their worldview?</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>8.3 Outcomes</h3>
+
+<div class="compare-grid">
+<div class="compare-col fantasy" style="background:#fdedec;border-color:#e6b0aa;">
+  <h4>🌑 Negative Spiral (3+ failures)</h4>
+  <ul>
+    <li><strong>Depression:</strong> +5 SP permanently. Enter an Episode. May develop a clinical depression condition.</li>
+    <li><strong>Withdrawal:</strong> PC isolates from social connections. Lose 1–2 relationships. EXP checks at −5.</li>
+    <li><strong>Nihilism:</strong> Character believes nothing matters. All PRC checks at −3 (apathy, inability to connect). May neglect basic self-care (−1 VIG).</li>
+    <li><strong>Risky behavior:</strong> Character engages in substance abuse, reckless spending, or other self-destructive coping. <span class="dice">2d10 vs RES</span> (TN 40) each month or a new negative event occurs.</li>
+    <li><strong>Suicidal ideation:</strong> In extreme cases (4 failures, low RES, no social support), the GM must check in with the <em>player</em> outside of play. This is not a game mechanic to push through — it is a real conversation about whether the player wants to continue.</li>
+  </ul>
+</div>
+<div class="compare-col reality" style="background:#eafaf1;border-color:#a9dfbf;">
+  <h4>🌟 Positive Transformation (3+ successes)</h4>
+  <ul>
+    <li><strong>Clarity:</strong> −5 SP. Character gains a new <strong>life purpose</strong> — a declared goal that provides +2 to RES checks for the next year.</li>
+    <li><strong>Depth:</strong> +1 to RES (permanent). The character has grown through the crisis. They are more resilient.</li>
+    <li><strong>Reconnection:</strong> Character deepens 1–2 existing relationships. Gains +1 EXP in those connections.</li>
+    <li><strong>Spiritual/philosophical framework:</strong> Character adopts a new worldview (religious, secular humanist, nature-connected, etc.) that provides ongoing resilience. +1 to all future existential crisis TNs (they now have a framework).</li>
+    <li><strong>Creative output:</strong> Character channels the crisis into art, writing, volunteering, or activism. This provides narrative richness and potential EXP gains.</li>
+  </ul>
+</div>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📖 Example: James's Existential Crisis at 50</div>
+  <p>James (50, RES 5, INT 6, EXP 7) is a mid-level accountant whose wife left him 6 months ago, whose father died 2 months ago, and who just found out his company is automating his role. The cumulative weight triggers an existential crisis.</p>
+  <ul>
+    <li><strong>Week 1:</strong> <span class="dice">2d10 vs RES</span> (TN 50) — rolls 8 + 5 = 13. <strong>Fails.</strong> James can't sleep. He stares at the ceiling at 3 AM wondering what any of it is for. +3 SP.</li>
+    <li><strong>Week 3:</strong> <span class="dice">2d10 vs RES</span> (TN 60) — rolls 15 + 5 = 20. <strong>Fails.</strong> James stops going to the gym. He drinks more. His best friend calls — James doesn't answer. +5 SP.</li>
+    <li><strong>Week 6:</strong> <span class="dice">2d10 vs RES</span> (TN 65) — rolls 9 + 5 = 14. <strong>Fails.</strong> James is now at 3 failures. The GM describes James sitting in his car in a grocery store parking lot, unable to go inside, unable to go home. He's at 18 SP — Overwhelmed.</li>
+    <li><strong>Intervention:</strong> James's sister (NPC) shows up unannounced. She sees him. She doesn't try to fix it — she just sits with him. This counts as <strong>strong social support</strong>: −2 SP. The GM offers James a <strong>therapy scene</strong> if the player wants it. The player says yes.</li>
+    <li><strong>Therapy arc:</strong> Over the next month, James attends therapy (−3 SP/session, 4 sessions = −12 SP). His SP drops to 6 — back to Stable territory.</li>
+    <li><strong>Week 12:</strong> <span class="dice">2d10 vs RES</span> (TN 70) — rolls 11 + 5 = 16. <strong>Fails,</strong> but with therapy reducing the effective TN, this counts as a <strong>soft success</strong>. James doesn't have a dramatic revelation — he has a quiet one. He starts volunteering at a food bank (creative output / reconnection). He doesn't get his wife back. He doesn't get his job back. But he finds something that matters. +1 RES (now 6). The crisis resolves — not with a bang, but with a beginning.</li>
+  </ul>
+</div>
+
+<h3>8.4 Existential Crisis as a Recurring Theme</h3>
+<p>Characters who successfully navigate an existential crisis are <strong>not immune</strong> to future ones. Each crisis makes the next one slightly easier (−5 to all TNs for future crises) but the triggers become more nuanced. A character who has faced mortality once may find that a friend's cancer diagnosis, their own aging body, or a child's departure from home triggers another reckoning — but this time they have tools.</p>
+
+<!-- ============================================================ -->
+<h2>Summary: The Death &amp; Grief Quick Reference</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Event</th><th>Immediate SP</th><th>Key Mechanic</th></tr></thead>
+<tbody>
+<tr><td>💥 Sudden death of loved one</td><td>+8 SP</td><td>Shock phase → grief stages</td></tr>
+<tr><td>🏥 Expected death of loved one</td><td>+2 SP/month leading up, +6 SP at death</td><td>Skips Denial, shorter stages</td></tr>
+<tr><td>💔 Death of a child</td><td>+12 SP</td><td>Complicated Grief risk (TN 75 RES check)</td></tr>
+<tr><td>🖤 Suicide of loved one</td><td>+10 SP</td><td>Guilt phase, stigma, PRC penalties</td></tr>
+<tr><td>⚰️ Funeral organization</td><td>+4 SP</td><td>INT check (TN 50), $3K–$15K cost</td></tr>
+<tr><td>🏡 Home caregiving</td><td>+2 SP/day (general), +3 SP/day (dementia)</td><td>Monthly VIG check for burnout</td></tr>
+<tr><td>🔬 Terminal diagnosis</td><td>+8 SP (patient), +6 SP (family)</td><td>QoL tracking, treatment choice</td></tr>
+<tr><td>🧠 Dementia onset</td><td>Progressive INT/EXP/VIG loss</td><td>4 stages over 8–15 years</td></tr>
+<tr><td>❓ Existential crisis</td><td>+3 SP per week during crisis</td><td>4 RES checks over 12 weeks</td></tr>
+<tr><td>💰 Inheritance received</td><td>+4 SP</td><td>RES check (TN 55) or guilt SP</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Final GM Guidance</div>
+  <p>Death and grief are the hardest topics to game. Your job as GM is not to make players feel bad — it is to give their characters <strong>meaningful emotional arcs</strong> that honor the reality of human experience. A well-run grief arc is not about suffering; it is about <em>showing how people love, how they lose, and how they continue</em>. That is what makes Reality RPG different. That is what makes it real.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  <p>Reality RPG — A Hyper-Realistic Life Simulation Ruleset</p>
+  <p>Death, Grief &amp; Legacy | <a href="index.html" style="color:rgba(255,255,255,0.6)">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

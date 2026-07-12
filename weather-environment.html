@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather, Environment &amp; Daily World — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html" class="active">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+  <span class="hero-icon">🌦️</span>
+  <h1>Weather, Environment &amp; Daily World</h1>
+  <p class="subtitle">Climate, pets, technology, wellness, and the invisible forces shaping every character's day.</p>
+</section>
+
+<section class="content-section">
+<div class="container">
+
+<p>The world around a character is never neutral. Weather dictates commutes, seasons shift budgets, pets demand care, screens command attention, and air quality affects health. This page covers the environmental systems that run in the background of every session — the ever-present context of modern life.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Environmental Awareness</div>
+  <p>Use the <strong>Daily Weather Table</strong> at the start of each game day. Even if the weather doesn't directly impact the scene, note it — characters should feel the world changing around them. A character who hasn't noticed it's been raining for three days is either very isolated or very distracted.</p>
+</div>
+
+<h2>1. Weather System</h2>
+<p>Weather is rolled daily by the GM using the <strong>Daily Weather Table</strong>. It modifies checks, costs, and mood for the entire day. Characters in different climates have different base weather patterns (see §2).</p>
+
+<h3>1.1 Daily Weather Table</h3>
+<p>Roll <span class="dice">2d10</span> and cross-reference with the season for the weather type:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">2d10</span></th><th>Weather</th><th>Emoji</th><th>Frequency</th></tr></thead>
+<tbody>
+<tr><td>2–5</td><td>☀️ Clear / Sunny</td><td>☀️</td><td>Most common in summer</td></tr>
+<tr><td>6–10</td><td>⛅ Partly Cloudy</td><td>⛅</td><td>Most common year-round</td></tr>
+<tr><td>11–14</td><td>☁️ Overcast</td><td>☁️</td><td>Common in fall/winter</td></tr>
+<tr><td>15–17</td><td>🌧️ Rain</td><td>🌧️</td><td>Common in spring/fall</td></tr>
+<tr><td>18</td><td>⛈️ Thunderstorm</td><td>⛈️</td><td>Summer peak</td></tr>
+<tr><td>19–20</td><td>❄️ Snow / Ice</td><td>❄️</td><td>Winter only; substitute fog/haze in warm climates</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.2 Weather Effects</h3>
+<p>Each weather type imposes mechanical modifiers on relevant activities:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Weather</th><th>Outdoor Tasks</th><th>Commuting</th><th>Mood / SP</th><th>Special Effects</th></tr></thead>
+<tbody>
+<tr><td>☀️ <strong>Clear</strong></td><td>No modifier</td><td>No modifier</td><td>−1 SP (good weather lifts mood)</td><td>UV exposure: sunburn risk if outdoors 4+ hours without SPF (<span class="dice">RES check TN 35</span> each 4 hrs)</td></tr>
+<tr><td>⛅ <strong>Partly Cloudy</strong></td><td>No modifier</td><td>No modifier</td><td>No effect</td><td>Baseline conditions</td></tr>
+<tr><td>☁️ <strong>Overcast</strong></td><td>+3 TN</td><td>+2 TN</td><td>+1 SP (gloominess)</td><td>Less UV risk; better for light-sensitive characters</td></tr>
+<tr><td>🌧️ <strong>Rain</strong></td><td><strong>+5 TN</strong> on all outdoor tasks</td><td><strong>+5 TN</strong> on commuting checks; +20 min travel time</td><td>+2 SP</td><td>Indoor activities preferred; outdoor events may cancel; wet clothes cost EP to manage</td></tr>
+<tr><td>⛈️ <strong>Thunderstorm</strong></td><td><strong>+8 TN</strong>; dangerous outdoors</td><td><strong>+8 TN</strong>; possible delays</td><td>+3 SP</td><td>Power outage risk (<span class="dice">1d10</span>: 8+ = outage lasting 1–6 hours); outdoor activities canceled</td></tr>
+<tr><td>❄️ <strong>Snow / Ice</strong></td><td><strong>+10 TN</strong> on all outdoor tasks</td><td><strong>+10 TN</strong>; <span class="dice">DXT check (TN 55)</span> to avoid accident; failure = minor accident (fender-bender, slip/fall)</td><td>+3 SP</td><td>Shoveling required (2–4 EP); salt/ice treatment costs $20–$60/month in winter</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.3 Extreme Weather</h3>
+<p>When the daily weather roll is a natural 20, roll on the <strong>Extreme Weather Table</strong>:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d6</span></th><th>Extreme Event</th><th>Duration</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>🔥 <strong>Extreme Heat</strong> (heat wave)</td><td>1–3 days</td><td>−1 VIG each day; <span class="dice">RES check (TN 45)</span> per day for hydration; AC costs +$30–$80/day; heat stroke risk if outdoors 2+ hrs</td></tr>
+<tr><td>2</td><td>🥶 <strong>Extreme Cold</strong> (polar vortex)</td><td>1–3 days</td><td>−1 VIG each day; <span class="dice">RES check (TN 50)</span> for hypothermia risk if outdoors; heating costs +$40–$100/day; pipes may burst (repair $200–$2,000)</td></tr>
+<tr><td>3</td><td>🌪️ <strong>Severe Storm</strong></td><td>1 day</td><td>All outdoor activities canceled; possible property damage; see §3 for details</td></tr>
+<tr><td>4</td><td>🌫️ <strong>Heavy Fog / Smoke</strong></td><td>1–2 days</td><td>+10 TN on driving; visibility severely reduced; respiratory issues for asthmatics</td></tr>
+<tr><td>5</td><td>🌊 <strong>Flash Flood</strong></td><td>6–24 hours</td><td>Roads impassable; property damage risk; see §3 for details</td></tr>
+<tr><td>6</td><td>🌈 <strong>Exceptionally Beautiful Day</strong></td><td>1 day</td><td>−3 SP for all characters; +5 to all PRC checks (everyone is in a better mood); outdoor activities at +3 bonus</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Rainy Morning Commute</div>
+  <p>It's a Tuesday in March. The GM rolls weather: <span class="dice">2d10</span> = 16 — 🌧️ Rain. A character needs to walk to the bus stop and transfer to work. Their commute check normally has TN 40, but rain adds +5 TN → TN 45. They roll 42 — failure. They arrive 15 minutes late, soaked, and gain +2 SP. Their employer's tardy policy means a verbal warning if this happens 3 times in a month.</p>
+</div>
+
+<h2>2. Seasons</h2>
+<p>Seasons shift the entire cost and mood landscape. Each season has a <strong>Seasonal Modifier</strong> that applies to all characters in that region for 3 months.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Season</th><th>Months</th><th>Weather Bias</th><th>Cost Effects</th><th>Health Effects</th></tr></thead>
+<tbody>
+<tr><td>❄️ <strong>Winter</strong></td><td>Dec–Feb</td><td>+2 to snow/ice rolls; +1 to overcast</td><td>Heating costs +$50–$150/month; snow equipment $50–$200; holiday spending $200–$1,000</td><td>Seasonal Affective Disorder (SAD) risk: <span class="dice">RES check (TN 45)</span> monthly; failure = +3 SP/day, −1 VIG; flu/cold risk +5 TN on health checks</td></tr>
+<tr><td>🌸 <strong>Spring</strong></td><td>Mar–May</td><td>+2 to rain rolls; +1 to partly cloudy</td><td>Allergy medication $10–$60/month; spring cleaning (1–2 EP)</td><td>Pollen allergies: <span class="dice">RES check (TN 40)</span> daily; failure = −1 to all checks for the day, sneezing, itchy eyes; spring mood boost: −1 SP/week for non-allergic characters</td></tr>
+<tr><td>☀️ <strong>Summer</strong></td><td>Jun–Aug</td><td>+2 to clear/sunny rolls; +1 to thunderstorm</td><td>AC costs +$40–$120/month; vacation spending $500–$3,000; outdoor gear</td><td>Outdoor activities available (−2 TN on outdoor exercise checks); heat stress (see §1.3); school's out (impacts parents: +$100–$300/month childcare)</td></tr>
+<tr><td>🍂 <strong>Fall</strong></td><td>Sep–Nov</td><td>+2 to overcast; +1 to rain</td><td>Back-to-school costs $500–$2,000; HVAC maintenance $100–$300; holiday prep begins</td><td>Harvest season (fresh produce cheaper); transitional weather = cold/flu risk; mild SAD onset for vulnerable characters: <span class="dice">RES check (TN 50)</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Seasonal Budget Check</div>
+  <p>At the start of each season, characters make a <span class="dice">INT check (TN 45)</span> to budget for seasonal expenses. On failure, they are underprepared: +$100–$500 in emergency spending and +3 SP from financial stress. Characters who track their budget carefully (high INT or EXP in "Personal Finance") may skip this check.</p>
+</div>
+
+<h2>3. Natural Disasters</h2>
+<p>Natural disasters are rare but catastrophic events. The GM may introduce one at any time as a <strong>major plot event</strong>. Roll <span class="dice">1d8</span> on the appropriate table for the region.</p>
+
+<h3>3.1 Disaster Event Tables</h3>
+
+<h4>Hurricane (Coastal Regions)</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d8</span></th><th>Impact Level</th><th>Damage</th><th>Evacuation</th><th>Recovery Time</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>🟢 Minor</td><td>Power outage 1–3 days; minor wind damage; fallen trees</td><td>Optional; some choose to stay</td><td>1–2 weeks</td></tr>
+<tr><td>3–4</td><td>🟡 Moderate</td><td>Widespread power loss (1–2 weeks); roof damage; flooding; car damage</td><td>Recommended for low-lying areas</td><td>2–6 weeks</td></tr>
+<tr><td>5–6</td><td>🟠 Severe</td><td>Structural damage; major flooding; extended power loss (1–4 weeks); supply shortages</td><td>Mandatory for vulnerable zones</td><td>1–6 months</td></tr>
+<tr><td>7–8</td><td>🔴 Catastrophic</td><td>Devastation; homes destroyed; infrastructure damage; displacement</td><td>Full regional evacuation</td><td>6 months–2 years</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Tornado</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d8</span></th><th>Impact Level</th><th>Damage</th><th>Warning Time</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>🟢 Watch only</td><td>None; storm passes nearby</td><td>Hours of warning</td><td>+5 SP from anxiety; no physical damage</td></tr>
+<tr><td>3–4</td><td>🟡 EF0–EF1</td><td>Light damage: broken windows, roof damage, fallen trees</td><td>15–30 minutes</td><td><span class="dice">DXT check (TN 45)</span> to reach shelter; failure = minor injury</td></tr>
+<tr><td>5–6</td><td>🟠 EF2–EF3</td><td>Significant damage: destroyed walls, vehicles tossed, trees snapped</td><td>10–20 minutes</td><td><span class="dice">DXT check (TN 55)</span> to reach shelter; failure = injury; property damage $5,000–$50,000</td></tr>
+<tr><td>7–8</td><td>🔴 EF4–EF5</td><td>Catastrophic: homes leveled, cars thrown, severe injuries</td><td>5–15 minutes</td><td><span class="dice">DXT check (TN 65)</span> to survive; failure = serious injury or death; total property loss possible</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Wildfire</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d8</span></th><th>Impact Level</th><th>Damage</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>🟢 Contained</td><td>Smoke in area for 1–3 days</td><td>Air quality drops; asthmatics suffer; +2 SP from anxiety</td></tr>
+<tr><td>3–4</td><td>🟡 Approaching</td><td>Smoke for 1–2 weeks; possible evacuation advisory</td><td>Indoors only; air purifiers recommended ($100–$300); +3 SP</td></tr>
+<tr><td>5–6</td><td>🟠 Threatening</td><td>Evacuation likely; property at risk</td><td>Must evacuate: <span class="dice">DXT check (TN 50)</span> to gather essentials; property damage $10,000–$200,000</td></tr>
+<tr><td>7–8</td><td>🔴 Direct hit</td><td>Property destroyed; displacement</td><td>Emergency evacuation; <span class="dice">DXT check (TN 60)</span> to escape safely; total loss possible; +10 SP</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Flood</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d8</span></th><th>Impact Level</th><th>Damage</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>🟢 Minor</td><td>Basement flooding; street flooding</td><td>Water damage cleanup ($500–$2,000); mold risk</td></tr>
+<tr><td>3–4</td><td>🟡 Moderate</td><td>First-floor flooding; road closures</td><td>Property damage $2,000–$20,000; displacement possible; +5 SP</td></tr>
+<tr><td>5–6</td><td>🟠 Severe</td><td>Multi-story flooding; neighborhoods underwater</td><td>Evacuation required; property damage $20,000–$100,000; +8 SP</td></tr>
+<tr><td>7–8</td><td>🔴 Catastrophic</td><td>Entire areas flooded; infrastructure damage</td><td>Full displacement; potential loss of home; +10 SP; recovery 6+ months</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Earthquake</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d8</span></th><th>Magnitude</th><th>Damage</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>🟢 2.0–3.9</td><td>Felt but no damage</td><td>+2 SP from startle/fear</td></tr>
+<tr><td>3–4</td><td>🟡 4.0–4.9</td><td>Minor: cracked walls, broken items fall</td><td><span class="dice">DXT check (TN 40)</span> to avoid being hit by falling objects; minor damage $100–$1,000</td></tr>
+<tr><td>5–6</td><td>🟠 5.0–6.4</td><td>Moderate: structural damage, broken pipes, power loss</td><td><span class="dice">DXT check (TN 50)</span> to avoid injury; property damage $5,000–$50,000; +5 SP</td></tr>
+<tr><td>7–8</td><td>🔴 6.5+</td><td>Severe: collapsed buildings, widespread destruction</td><td><span class="dice">DXT check (TN 65)</span> to survive; failure = serious injury or death; +10 SP; recovery years</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Disaster Preparedness</div>
+  <p>Characters who maintain an <strong>emergency kit</strong> (water, food, first aid, flashlights, batteries, documents) gain a <strong>+10 bonus</strong> to all disaster survival checks and reduce disaster SP by 3. Building an emergency kit costs <strong>$100–$500</strong> upfront and requires a <span class="dice">INT check (TN 40)</span> to assemble properly.</p>
+</div>
+
+<h2>4. Pets</h2>
+<p>Pets are family. They provide emotional support, demand daily care, and cost money. Pet ownership is a <strong>Life Aspect</strong> that runs parallel to all other character systems.</p>
+
+<h3>4.1 Pet Types and Costs</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Pet</th><th>Initial Cost</th><th>Annual Cost</th><th>Daily EP</th><th>Emotional Bonus</th></tr></thead>
+<tbody>
+<tr><td>🐕 <strong>Dog</strong></td><td>$500–$3,000</td><td>$1,000–$3,000</td><td>2 EP (walking, feeding, training, play)</td><td>+5 SP recovery when interacting; +3 to PRC (social confidence from routine)</td></tr>
+<tr><td>🐈 <strong>Cat</strong></td><td>$100–$1,500</td><td>$500–$1,500</td><td>1 EP (feeding, litter box, play)</td><td>+3 SP recovery when interacting; calming presence</td></tr>
+<tr><td>🐦 <strong>Bird</strong></td><td>$50–$500</td><td>$200–$600</td><td>0.5 EP (feeding, cage cleaning)</td><td>+2 SP recovery; singing/talking provides mood boost</td></tr>
+<tr><td>🐠 <strong>Fish</strong></td><td>$50–$300</td><td>$100–$300</td><td>0.5 EP (feeding, tank maintenance weekly)</td><td>+1 SP recovery; watching fish is meditative</td></tr>
+<tr><td>🦎 <strong>Reptile</strong></td><td>$100–$1,000</td><td>$200–$800</td><td>1 EP (feeding, habitat maintenance)</td><td>+2 SP recovery; low-maintenance companionship</td></tr>
+<tr><td>🐹 <strong>Small mammal</strong> (rabbit, hamster)</td><td>$20–$200</td><td>$150–$400</td><td>0.5 EP (feeding, cage cleaning)</td><td>+2 SP recovery; gentle interaction</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.2 Daily Pet Care</h3>
+<p>Each day, pet owners must complete basic care tasks. Failure to do so results in pet distress and owner SP gain:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Task</th><th>Check</th><th>TN</th><th>Failure Effect</th></tr></thead>
+<tbody>
+<tr><td>Feeding (all pets)</td><td>None (routine)</td><td>—</td><td>If forgotten: pet hunger; +2 SP guilt; emergency vet if prolonged</td></tr>
+<tr><td>Dog walking</td><td><span class="dice">VIG</span></td><td>30</td><td>Skip = +2 SP (guilt); dog may act out (destroy furniture, excessive barking)</td></tr>
+<tr><td>Vet visit (annual)</td><td><span class="dice">INT</span></td><td>40</td><td>Failure = missed signs of illness; unexpected vet bill $200–$2,000</td></tr>
+<tr><td>Grooming</td><td><span class="dice">DXT</span></td><td>35</td><td>Failure = matting, skin issues, or unpleasant odor; grooming salon $50–$150</td></tr>
+<tr><td>Training (dogs)</td><td><span class="dice">PRC + EXP</span></td><td>45</td><td>Failure = behavioral issues; professional trainer $100–$300/session</td></tr>
+<tr><td>Play / enrichment</td><td>None</td><td>—</td><td>If neglected: pet boredom; destructive behavior; +1 SP for owner</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.3 Emotional Support Animal (ESA) Bonuses</h3>
+<p>Characters with a pet receive ongoing emotional benefits:</p>
+<ul>
+<li><strong>+5 SP recovery</strong> when spending 30+ minutes interacting with their pet (playing, petting, cuddling)</li>
+<li><strong>−2 SP/day</strong> baseline from the routine and companionship</li>
+<li><strong>+3 to RES checks</strong> against loneliness and depression triggers</li>
+<li>Pets provide <strong>unconditional positive regard</strong> — a rare and powerful resource in reality</li>
+</ul>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: ESA Designation</div>
+  <p>A character with a diagnosed mental health condition can obtain an <strong>ESA letter</strong> from a therapist ($100–$300). This grants housing accommodations (pets allowed in no-pet buildings, waived pet deposits up to $500). The letter must be renewed annually. Landlords can still require the animal not cause damage or disturbance.</p>
+</div>
+
+<h3>4.4 Unexpected Vet Costs</h3>
+<p>Pet emergencies are a major financial stressor. Roll <span class="dice">1d10</span> when a pet has a health issue:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d10</span></th><th>Issue</th><th>Cost</th><th>Outcome</th></tr></thead>
+<tbody>
+<tr><td>1–3</td><td>Minor illness</td><td>$50–$200</td><td>Recovers in 1–3 days with medication</td></tr>
+<tr><td>4–5</td><td>Moderate issue</td><td>$200–$800</td><td>Needs treatment; 1–2 weeks recovery</td></tr>
+<tr><td>6–7</td><td>Serious condition</td><td>$800–$3,000</td><td>Surgery or extended treatment; 2–4 weeks recovery</td></tr>
+<tr><td>8</td><td>Emergency</td><td>$2,000–$8,000</td><td>Emergency surgery; critical; <span class="dice">1d10</span>: 1–3 = pet doesn't survive</td></tr>
+<tr><td>9</td><td>Chronic condition develops</td><td>$100–$500/month</td><td>Ongoing management; reduces pet's daily EP benefit by 1</td></tr>
+<tr><td>10</td><td>Everything is fine</td><td>$0</td><td>Just a checkup; pet is healthy</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.5 Pet Loss and Grief</h3>
+<p>When a pet dies, the character experiences grief proportional to their bond:</p>
+<ul>
+<li><strong>+8 to +15 SP</strong> immediately (depending on bond strength)</li>
+<li><strong>−1 to all attributes</strong> for 1–4 weeks</li>
+<li><strong>Grief Episode</strong>: character may experience intense sadness, crying, guilt</li>
+<li>The grief follows the same rules as <a href="death-grief.html">Death &amp; Grief</a>, scaled to the pet relationship</li>
+</ul>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Sam and Luna the Dog</div>
+  <p>Sam adopted Luna 3 years ago. Every morning, Sam spends 2 EP walking Luna (30 min). Every evening, they play fetch in the park. Luna gives Sam +5 SP recovery each evening and −2 SP/day baseline. Sam's SP is consistently lower because of Luna.<br><br>
+  One day, Luna eats something toxic. Emergency vet: <span class="dice">1d10</span> = 8. Emergency surgery costs $4,500. Sam has to use their emergency fund. Luna survives but needs 3 weeks of rest (+3 EP daily care during recovery). Sam gains +5 SP from the financial stress but −3 SP from Luna's recovery cuddles each day.<br><br>
+  Years later, at age 14, Luna passes away peacefully. Sam gains +12 SP, goes on medical leave from work for 3 days, and spends a month at −1 to all attributes. The character sheet notes Luna in the "Relationships" section with a 🖤.</p>
+</div>
+
+<h2>5. Technology &amp; Digital Life</h2>
+<p>Technology is the invisible infrastructure of modern existence. It connects, distracts, empowers, and endangers — all simultaneously.</p>
+
+<h3>5.1 Social Media</h3>
+<p>Social media use is tracked as <strong>daily screen time</strong>. Every character has a <strong>Social Media Intensity (SMI)</strong> from 0 (no accounts) to 5 (addicted):</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>SMI</th><th>Daily Use</th><th>SP Effect</th><th>Benefits</th><th>Risks</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>None</td><td>None</td><td>No doomscrolling risk; more free time</td><td>FOMO if others share important info online; social isolation risk</td></tr>
+<tr><td>1</td><td>Light (30 min/day)</td><td>+1 SP/day</td><td>Stay connected; −2 SP from social contact</td><td>Minimal risk</td></tr>
+<tr><td>2</td><td>Moderate (1–2 hrs/day)</td><td>+2 SP/day</td><td>Community engagement; networking; −3 SP from social contact</td><td>Comparison anxiety; <span class="dice">RES check (TN 40)</span> daily to avoid overuse</td></tr>
+<tr><td>3</td><td>Heavy (3–4 hrs/day)</td><td>+3 SP/day</td><td>Strong online community; information access</td><td><span class="dice">RES check (TN 45)</span> daily; doomscrolling risk; sleep disruption</td></tr>
+<tr><td>4</td><td>Excessive (5+ hrs/day)</td><td>+5 SP/day</td><td>Deep community ties (if positive)</td><td><span class="dice">RES check (TN 50)</span> daily; internet addiction risk; −1 VIG from sleep loss; FOMO severe</td></tr>
+<tr><td>5</td><td>Addicted</td><td>+8 SP/day</td><td>—</td><td>Full internet addiction: <span class="dice">RES check (TN 55)</span> to reduce use; −2 VIG; social isolation IRL; job/school performance suffers</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Doomscrolling Mechanic</h4>
+<p>When doomscrolling (consuming negative news/content), the character gains <strong>+2 SP per hour</strong>. After 2 hours of doomscrolling, they must make a <span class="dice">RES check (TN 50)</span> to stop. On failure, they continue for another hour (+2 more SP). This can create a <strong>doomscrolling spiral</strong> that rapidly fills the SP pool.</p>
+
+<h4>FOMO (Fear of Missing Out)</h4>
+<p>Characters with SMI ≥ 2 who see social events they weren't invited to gain <strong>+2 SP</strong>. Characters with SMI 0 gain no FOMO but may miss important community information.</p>
+
+<h3>5.2 Screen Time Tracking</h3>
+<p>Characters can install screen time tracking apps. Each day they see their total screen time. Exceeding a self-set limit costs <strong>+1 SP</strong> per hour over the limit. Setting and maintaining limits requires a <span class="dice">RES check (TN 40)</span> when tempted to exceed them.</p>
+
+<h3>5.3 Internet Addiction</h3>
+<p>Characters with SMI 5 or who fail their daily RES check 3+ times in a week develop <strong>Internet Addiction</strong>:</p>
+<ul>
+<li>−2 VIG (sleep deprivation)</li>
+<li>+5 SP/day baseline</li>
+<li>−3 to all EXP-based checks (work/school performance drops)</li>
+<li><span class="dice">RES check (TN 60)</span> required each week to attempt reduction</li>
+<li>Treatment: digital detox (3–7 days offline; +5 SP during detox), therapy (−3 SP/session), or accountability apps</li>
+</ul>
+
+<h3>5.4 Digital Privacy &amp; Identity Theft</h3>
+<p>Digital life carries privacy risks. The GM rolls <span class="dice">1d10</span> quarterly for each character:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d10</span></th><th>Event</th><th>Effect</th><th>Prevention</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>📧 Phishing email</td><td><span class="dice">INT check (TN 40)</span> to identify; failure = data compromised</td><td>Anti-phishing training: +5 to check</td></tr>
+<tr><td>3</td><td>🔓 Account breach</td><td>Password stolen; <span class="dice">INT check (TN 45)</span> to contain; failure = financial damage $100–$2,000</td><td>Password manager + 2FA: +10 to check</td></tr>
+<tr><td>4</td><td>📱 Malware infection</td><td>Device compromised; <span class="dice">INT check (TN 50)</span> to remove; failure = data loss or ransomware ($500–$5,000)</td><td>Antivirus software: +5 to check</td></tr>
+<tr><td>5</td><td>🎭 Identity theft attempt</td><td>Personal info stolen; <span class="dice">INT + EXP check (TN 55)</span> to resolve; failure = credit damage, months of cleanup</td><td>Credit freeze: +15 to check</td></tr>
+<tr><td>6–7</td><td>📢 Privacy scare</td><td>Data shared without consent; +3 SP from anxiety</td><td>Privacy settings: +5 to resistance</td></tr>
+<tr><td>8–10</td><td>✅ Nothing</td><td>No incident</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.5 Online Dating</h3>
+<p>Online dating is a major social dynamic. Characters using dating apps follow these mechanics:</p>
+
+<h4>Matching</h4>
+<p>Each week of active app use, the character makes a <span class="dice">PRC check (TN 45 − EXP in "Online Dating")</span>. On success, they get a <strong>match</strong>. The match quality depends on the roll margin:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Margin of Success</th><th>Match Quality</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>1–5</td><td>🟡 Casual</td><td>Light conversation; low commitment; may lead to a date</td></tr>
+<tr><td>6–10</td><td>🟢 Good</td><td>Meaningful connection; likely to lead to a real date</td></tr>
+<tr><td>11+</td><td>🌟 Great</td><td>Strong chemistry; high potential for serious relationship</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Dating App Risks</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Risk</th><th>Roll <span class="dice">1d10</span></th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>👻 <strong>Ghosting</strong></td><td>1–3</td><td>Match disappears after 1–3 conversations; +3 SP; character questions their worth</td></tr>
+<tr><td>🐱 <strong>Catfishing</strong></td><td>4–5</td><td>Match is not who they claim to be; +5 SP; emotional betrayal if attachment formed</td></tr>
+<tr><td>💬 <strong>Breadcrumbing</strong></td><td>6</td><td>Match sends just enough attention to keep hope alive but never commits; +2 SP/week</td></tr>
+<tr><td>🔥 <strong>Burnout</strong></td><td>7</td><td>Endless swiping without real connections; +3 SP; character considers quitting</td></tr>
+<tr><td>📍 <strong>Safety concern</strong></td><td>8</td><td>Date makes character uncomfortable; <span class="dice">RES check (TN 45)</span> to leave safely; failure = unsafe situation</td></tr>
+<tr><td>💕 <strong>Genuine connection</strong></td><td>9–10</td><td>Real chemistry; relationship building begins</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.6 Remote Work</h3>
+<p>Characters who work remotely have a different daily structure. Remote work has its own mechanics:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Remote Work</th><th>In-Office</th><th>Hybrid</th></tr></thead>
+<tbody>
+<tr><td><strong>Commute</strong></td><td>None (saves 1–2 hrs/day; −1 EP)</td><td>Full commute (1–2 EP; weather effects apply)</td><td>2–3 days/week commute</td></tr>
+<tr><td><strong>Home office setup</strong></td><td>Required: desk, chair, internet ($200–$2,000 initial; $50–$200/mo internet)</td><td>Not needed</td><td>Needed for work-from-home days</td></tr>
+<tr><td><strong>Productivity</strong></td><td><span class="dice">INT + EXP check (TN 45)</span> daily; failure = distracted; −2 EXP toward work performance</td><td>Structure provided by office; no daily check</td><td>Check only on remote days</td></tr>
+<tr><td><strong>Work-life boundary</strong></td><td><span class="dice">RES check (TN 40)</span> daily to disconnect; failure = overworking (+3 SP, −1 VIG)</td><td>Physical separation helps; no check</td><td>Check on remote days</td></tr>
+<tr><td><strong>Social isolation</strong></td><td>+2 SP/week from isolation; <span class="dice">PRC check (TN 40)</span> to maintain social connections</td><td>Coworker interaction provides −1 SP/day</td><td>Mixed effects</td></tr>
+<tr><td><strong>Savings</strong></td><td>Save $50–$200/week (no commute costs, work lunches, wardrobe)</td><td>Full costs</td><td>Partial savings</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Remote Work Day</div>
+  <p>Pat works from home. No commute saves 1.5 hours and 1 EP. But Pat's home office is on the couch (no proper setup). The GM calls for a <span class="dice">INT check (TN 45)</span> for productivity. Pat rolls 41 — failure. Distractions pile up: laundry, kitchen, phone. Pat works 2 hours less than planned and needs to catch up in the evening.<br><br>
+  At 8 PM, Pat makes a <span class="dice">RES check (TN 40)</span> to disconnect from work. Pat rolls 37 — failure. They keep checking email, doomscrolling work Slack, and can't mentally clock off. +3 SP, −1 VIG for tomorrow. Pat invests in a standing desk and monitor ($400) the next week, gaining +5 to future productivity checks.</p>
+</div>
+
+<h2>6. Wellness &amp; Self-Care</h2>
+<p>Self-care is distinct from leisure. Leisure is fun; self-care is <strong>intentional restoration</strong>. These activities have specific mechanical benefits that go beyond simple SP reduction.</p>
+
+<h3>6.1 Wellness Activities</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Activity</th><th>Cost</th><th>Time</th><th>Mechanical Benefit</th><th>Frequency</th></tr></thead>
+<tbody>
+<tr><td>🧖 <strong>Sauna / Spa</strong></td><td>$15–$50/visit</td><td>1–2 hours</td><td><strong>−3 SP, +1 VIG</strong>; deep muscle relaxation; improved circulation</td><td>1–2x/week recommended</td></tr>
+<tr><td>💆 <strong>Massage therapy</strong></td><td>$60–$150/session</td><td>1 hour</td><td><strong>−4 SP, +1 VIG</strong>; chronic pain reduced by 1 level for 1–3 days</td><td>Weekly (chronic pain); monthly (maintenance)</td></tr>
+<tr><td>📍 <strong>Acupuncture</strong></td><td>$50–$120/session</td><td>45 min</td><td><strong>−3 SP</strong>; chronic pain reduced by 1 level for 3–7 days; +5 to pain management rolls</td><td>2x/month recommended</td></tr>
+<tr><td>🧘 <strong>Meditation</strong></td><td>$0–$15/month (app)</td><td>10–30 min</td><td><strong>−2 SP</strong>; +5 to RES checks for the day; builds EXP in "Mindfulness"</td><td>Daily recommended</td></tr>
+<tr><td>🧘‍♀️ <strong>Yoga</strong></td><td>$15–$25/class; $30–$80/month</td><td>45–90 min</td><td><strong>−3 SP, +1 VIG</strong>; improves flexibility (reduces injury risk); builds EXP</td><td>3x/week recommended</td></tr>
+<tr><td>🏃 <strong>Exercise</strong></td><td>$0–$50/month (gym)</td><td>30–60 min</td><td><strong>−2 SP</strong>; +1 VIG (temporary); builds EXP in "Fitness"</td><td>3–5x/week recommended</td></tr>
+<tr><td>🛁 <strong>Self-care routine</strong></td><td>$5–$30 (products)</td><td>30–60 min</td><td><strong>−1 SP</strong>; small mood boost; costs 1 EP from budget</td><td>Daily or as needed</td></tr>
+<tr><td>🌿 <strong>Nature time</strong></td><td>$0</td><td>1–2 hours</td><td><strong>−2 SP</strong>; +1 VIG; "forest bathing" effect; free but weather-dependent</td><td>Weekly recommended</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>6.2 Self-Care vs. Leisure</h3>
+<div class="compare-grid">
+  <div class="compare-col reality">
+    <h4>🌿 Self-Care</h4>
+    <ul>
+      <li><strong>Intentional</strong> — done for restoration</li>
+      <li>Specific mechanical benefits (SP, VIG, pain reduction)</li>
+      <li>Often costs money and time</li>
+      <li>Can feel like a <em>chore</em> when stressed</li>
+      <li>Preventative — reduces future SP accumulation</li>
+      <li>Examples: massage, meditation, sauna, therapy</li>
+    </ul>
+  </div>
+  <div class="compare-col fantasy">
+    <h4>🎮 Leisure</h4>
+    <ul>
+      <li><strong>Enjoyable</strong> — done for pleasure</li>
+      <li>General mood boost (−1 SP); no specific attribute benefits</li>
+      <li>Variable cost (free to expensive)</li>
+      <li>Feels <em>fun</em> and rewarding</li>
+      <li>Reactive — recovers SP already gained</li>
+      <li>Examples: gaming, movies, shopping, dining out</li>
+    </ul>
+  </div>
+</div>
+
+<h3>6.3 Wellness Budget</h3>
+<p>Characters should budget <strong>$50–$300/month</strong> for wellness activities. Characters who invest in consistent self-care gain a <strong>Wellness Bonus</strong> after 3 months of regular practice: <strong>+5 to all RES checks</strong> and <strong>−2 to daily SP gain</strong>.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Wellness as a Resource</div>
+  <p>Don't let wellness become just another expense on a spreadsheet. Frame self-care as <em>investment</em> — characters who maintain their wellness spend less on crisis management (ER visits, therapy emergencies, burnout leave). Show the compound benefits of consistent self-care.</p>
+</div>
+
+<h2>7. Environmental Quality</h2>
+<p>The physical environment affects health, mood, and daily function. These factors run in the background and can become acute issues.</p>
+
+<h3>7.1 Air Quality Index (AQI)</h3>
+<p>The GM sets the AQI based on the location and current conditions. Wildfire smoke, pollution, and seasonal factors all contribute:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>AQI</th><th>Level</th><th>Health Effect</th><th>Mechanical Effect</th></tr></thead>
+<tbody>
+<tr><td>0–50</td><td>✅ Good</td><td>No effect</td><td>Baseline</td></tr>
+<tr><td>51–100</td><td>🟡 Moderate</td><td>Sensitive groups may experience mild symptoms</td><td>Asthmatics: <span class="dice">RES check (TN 40)</span> daily</td></tr>
+<tr><td>101–150</td><td>🟠 Unhealthy for Sensitive</td><td>Respiratory irritation; eye/throat irritation</td><td>−1 VIG for sensitive characters; −2 on outdoor VIG checks</td></tr>
+<tr><td>151–200</td><td>🔴 Unhealthy</td><td>Everyone may experience effects; coughing, shortness of breath</td><td>−2 VIG; <span class="dice">RES check (TN 45)</span> each day outdoors; stay indoors recommended</td></tr>
+<tr><td>201–300</td><td>🟣 Very Unhealthy</td><td>Health alert; all outdoor exertion dangerous</td><td>−3 VIG; all outdoor tasks at +5 TN; <span class="dice">RES check (TN 50)</span> even indoors without air purification</td></tr>
+<tr><td>300+</td><td>⚫ Hazardous</td><td>Emergency conditions; immediate health risk</td><td>−4 VIG; shelter in place; <span class="dice">RES check (TN 55)</span> to avoid emergency room visit; air purifiers ($100–$500) reduce penalty by 1</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.2 Pollution</h3>
+<p>Long-term exposure to pollution (vehicle exhaust, industrial, lead paint in old buildings) has cumulative effects:</p>
+<ul>
+<li>Characters in high-pollution areas (<span class="dice">1d10</span> per year: 8+ = health impact) may develop <strong>respiratory conditions</strong> or <strong>chronic fatigue</strong></li>
+<li>Lead exposure in older housing: children at risk of <strong>−1 to INT development</strong> per year of exposure</li>
+<li>Mitigation: air purifiers ($100–$500), HEPA filters ($20–$100), moving to cleaner area</li>
+</ul>
+
+<h3>7.3 Allergens</h3>
+<p>Allergens are a year-round concern for sensitive characters:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Allergen</th><th>Season</th><th>Effect</th><th>Mitigation</th></tr></thead>
+<tbody>
+<tr><td>🌼 <strong>Pollen</strong></td><td>Spring/summer</td><td><span class="dice">RES check (TN 40)</span> daily; failure = −1 to all checks, sneezing, itchy eyes</td><td>Antihistamines ($5–$60/month); keep windows closed</td></tr>
+<tr><td>🍂 <strong>Mold</strong></td><td>Fall/winter (indoor)</td><td><span class="dice">RES check (TN 45)</span> if living in damp conditions; failure = respiratory issues, −1 VIG</td><td>Dehumidifier ($50–$200); mold remediation ($500–$5,000)</td></tr>
+<tr><td>🐾 <strong>Pet dander</strong></td><td>Year-round</td><td><span class="dice">RES check (TN 40)</span> around animals; failure = allergic reaction</td><td>Allergy shots ($500–$5,000/year); HEPA filters</td></tr>
+<tr><td>🌾 <strong>Dust mites</strong></td><td>Year-round (indoor)</td><td><span class="dice">RES check (TN 35)</span> in poorly maintained housing; failure = mild symptoms</td><td>Wash bedding weekly ($0); allergen-proof covers ($30–$80)</td></tr>
+<tr><td>🍄 <strong>Wheat/grass</strong></td><td>Spring/summer</td><td>For celiac: accidental exposure triggers <span class="dice">RES check (TN 45)</span>; failure = 24–48 hours of illness</td><td>Strict dietary adherence; label reading</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>7.4 Noise Pollution</h3>
+<p>Chronic noise exposure (traffic, construction, neighbors, airports) affects sleep, concentration, and stress:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Source</th><th>Severity</th><th>Effect</th><th>Mitigation</th></tr></thead>
+<tbody>
+<tr><td>🚗 <strong>Traffic</strong></td><td>Low–moderate</td><td>+1 SP/day if bedroom faces road; sleep quality −1</td><td>White noise machine ($20–$50); earplugs ($5–$20); soundproofing ($500–$3,000)</td></tr>
+<tr><td>🏗️ <strong>Construction</strong></td><td>High (temporary)</td><td>+2 SP/day during active construction; −3 on INT checks requiring concentration</td><td>Work from library/cafe; noise-canceling headphones ($100–$350)</td></tr>
+<tr><td>🏠 <strong>Noisy neighbors</strong></td><td>Variable</td><td>+1–3 SP/day depending on severity; <span class="dice">PRC check (TN 50)</span> to resolve diplomatically</td><td>Landlord complaint; mediation; move ($500–$2,000)</td></tr>
+<tr><td>✈️ <strong>Airport proximity</strong></td><td>Moderate</td><td>+2 SP/day; sleep disruption; property values lower</td><td>Soundproofing ($1,000–$5,000); move</td></tr>
+<tr><td>🔊 <strong>Personal media volume</strong></td><td>Self-inflicted</td><td>Long-term: hearing damage risk; <span class="dice">1d10</span> per year at high volume: 9–10 = −1 to auditory perception</td><td>Volume limits; regular hearing checkups</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Air Quality Crisis</div>
+  <p>Wildfire smoke rolls into the city. The GM checks AQI: 250 (Very Unhealthy). Everyone indoors without air purifiers must make a <span class="dice">RES check (TN 50)</span> each day. Characters with asthma must make the check at TN 55.<br><br>
+  Maria has asthma and no air purifier. Day 1: she rolls 48 — failure. −2 VIG, wheezing, +3 SP. Day 2: she rolls 42 — failure again. Her VIG drops another point. She uses her emergency fund to buy an air purifier ($200). Day 3: with the purifier running, her TN drops to 45. She rolls 51 — success. She can finally breathe.<br><br>
+  Meanwhile, her neighbor Dave (no asthma, has a purifier) makes his TN 45 check and succeeds all three days. The environmental crisis hit them very differently.</p>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: The World Breathes</div>
+  <p>Weather, environment, and quality-of-life factors are the <em>background music</em> of Reality RPG. They're always playing, even when they're not the focus. A character who hasn't thought about the weather in a week is either living in a climate-controlled bubble or has bigger problems. Use environmental factors to create texture, tension, and texture — the difference between a game session that feels like a spreadsheet and one that feels like <em>life</em>.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — A hyper-realistic life simulation tabletop role-playing game ruleset.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Character Sheet — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* Print-optimized character sheet */
+@media screen {
+  .sheet-page {
+    background: #fff;
+    max-width: 850px;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+    page-break-after: always;
+  }
+  .sheet-page:last-child { page-break-after: avoid; }
+  .sheet-section-title {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 0.4em 0.8em;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    margin: 1.5em 0 0.8em;
+    border-radius: var(--radius) var(--radius) 0 0;
+  }
+  .sheet-section-title:first-child { margin-top: 0; }
+  .sheet-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 2px solid var(--color-primary);
+    border-top: none;
+  }
+  .sheet-field {
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.5em;
+    min-height: 60px;
+  }
+  .sheet-field.full { grid-column: 1 / -1; }
+  .sheet-field label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3em;
+  }
+  .sheet-field input, .sheet-field textarea, .sheet-field select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px dashed var(--color-border);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    padding: 0.2em 0;
+    background: transparent;
+  }
+  .sheet-field textarea { min-height: 60px; resize: vertical; }
+  .attr-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    border: 2px solid var(--color-primary);
+  }
+  .attr-box {
+    text-align: center;
+    padding: 0.6em;
+    border-right: 1px solid var(--color-border);
+  }
+  .attr-box:last-child { border-right: none; }
+  .attr-box .attr-icon { font-size: 1.3rem; display: block; }
+  .attr-box .attr-name {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .attr-box input {
+    width: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid var(--color-primary);
+    padding: 0.2em;
+    background: transparent;
+  }
+  .attr-box .attr-mod {
+    font-size: 0.85rem;
+    color: var(--color-accent-dark);
+    font-weight: 700;
+  }
+  .health-track, .stress-track {
+    display: flex;
+    gap: 0;
+    border: 2px solid var(--color-primary);
+  }
+  .track-step {
+    flex: 1;
+    text-align: center;
+    padding: 0.5em;
+    border-right: 1px solid var(--color-border);
+    font-size: 0.8rem;
+    font-family: var(--font-heading);
+  }
+  .track-step:last-child { border-right: none; }
+  .track-step input[type="checkbox"] { margin-right: 0.3em; }
+  .skill-row {
+    display: grid;
+    grid-template-columns: 140px 60px 1fr;
+    gap: 0;
+    border: 1px solid var(--color-border);
+    border-top: none;
+    font-size: 0.9rem;
+  }
+  .skill-row:first-child { border-top: 2px solid var(--color-primary); }
+  .skill-cat {
+    grid-column: 1 / -1;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 0.3em 0.6em;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .skill-name { padding: 0.3em 0.6em; border-right: 1px solid var(--color-border); }
+  .skill-attr { padding: 0.3em; text-align: center; border-right: 1px solid var(--color-border); font-size: 0.8rem; color: var(--color-muted); }
+  .skill-level { padding: 0.3em; }
+  .skill-level input { width: 40px; text-align: center; border: 1px solid var(--color-border); border-radius: 3px; padding: 0.1em; }
+  .print-btn {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #fff;
+    padding: 0.6em 1.5em;
+    border-radius: var(--radius);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    margin: 1em 0;
+  }
+  .print-btn:hover { background: var(--color-accent-dark); }
+}
+@media print {
+  .site-header, .site-footer, .print-btn, .sheet-instructions { display: none !important; }
+  body { background: #fff; }
+  .sheet-page {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    padding: 0.5cm;
+    page-break-after: always;
+  }
+  input, textarea { border-bottom-color: #999 !important; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html" class="active">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="content-section">
+<div class="container" style="text-align:center;">
+<h1>📋 Character Sheet</h1>
+<p>Print-ready character sheet for Reality RPG. Fill in by hand or digitally.</p>
+<div class="sheet-instructions">
+<button class="print-btn" onclick="window.print()">🖨️ Print This Sheet</button>
+</div>
+</div>
+</section>
+
+<!-- PAGE 1: Core Identity -->
+<div class="sheet-page">
+  <div style="text-align:center; margin-bottom:1em;">
+    <img src="img/logo.png" alt="" style="height:40px;">
+    <h2 style="border:none; margin:0; font-size:1.3rem;">REALITY RPG — CHARACTER SHEET</h2>
+  </div>
+
+  <div class="sheet-section-title">👤 Identity</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Character Name</label><input type="text"></div>
+    <div class="sheet-field"><label>Player Name</label><input type="text"></div>
+    <div class="sheet-field"><label>Age</label><input type="text"></div>
+    <div class="sheet-field"><label>Date of Birth</label><input type="text"></div>
+    <div class="sheet-field"><label>Ethnicity / Heritage</label><input type="text"></div>
+    <div class="sheet-field"><label>Language(s)</label><input type="text"></div>
+    <div class="sheet-field"><label>Religion / Spirituality</label><input type="text"></div>
+    <div class="sheet-field"><label>Sexual Orientation</label><input type="text"></div>
+    <div class="sheet-field full"><label>Appearance (brief description)</label><textarea rows="2"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">📊 Core Attributes</div>
+  <div class="attr-row">
+    <div class="attr-box">
+      <span class="attr-icon">🏋️</span>
+      <span class="attr-name">Vigor</span><br>
+      <input type="text" size="2" maxlength="2">
+      <br><span class="attr-mod">Mod: ___</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">🧠</span>
+      <span class="attr-name">Intellect</span><br>
+      <input type="text" size="2" maxlength="2">
+      <br><span class="attr-mod">Mod: ___</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">💬</span>
+      <span class="attr-name">Expression</span><br>
+      <input type="text" size="2" maxlength="2">
+      <br><span class="attr-mod">Mod: ___</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">🎯</span>
+      <span class="attr-name">Dexterity</span><br>
+      <input type="text" size="2" maxlength="2">
+      <br><span class="attr-mod">Mod: ___</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">🛡️</span>
+      <span class="attr-name">Resolve</span><br>
+      <input type="text" size="2" maxlength="2">
+      <br><span class="attr-mod">Mod: ___</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">✨</span>
+      <span class="attr-name">Presence</span><br>
+      <input type="text" size="2" maxlength="2">
+      <br><span class="attr-mod">Mod: ___</span>
+    </div>
+  </div>
+
+  <div class="sheet-section-title">❤️ Health & Stress</div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1em; margin-bottom:0.5em;">
+    <div>
+      <label style="font-family:var(--font-heading);font-size:0.8rem;font-weight:700;">Health Condition Track</label>
+      <div class="health-track">
+        <div class="track-step"><input type="checkbox"> 😊 Healthy</div>
+        <div class="track-step"><input type="checkbox"> 😐 Tired</div>
+        <div class="track-step"><input type="checkbox"> 😫 Sick</div>
+        <div class="track-step"><input type="checkbox"> 🤒 Injured</div>
+        <div class="track-step"><input type="checkbox"> 🏥 Critical</div>
+      </div>
+    </div>
+    <div>
+      <label style="font-family:var(--font-heading);font-size:0.8rem;font-weight:700;">Stress Points: ___ / Max ___</label>
+      <div class="stress-track">
+        <div class="track-step">😌 Stable<br><small>0</small></div>
+        <div class="track-step">😐 Elevated<br><small>1–5</small></div>
+        <div class="track-step">😟 Stressed<br><small>6–15</small></div>
+        <div class="track-step">😰 Overwhelmed<br><small>16–25</small></div>
+        <div class="track-step">💥 Episode<br><small>>Max</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section-title">🌍 Background</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Socioeconomic Background</label><input type="text"></div>
+    <div class="sheet-field"><label>Education Level</label><input type="text"></div>
+    <div class="sheet-field"><label>Current Occupation</label><input type="text"></div>
+    <div class="sheet-field"><label>Housing Situation</label><input type="text"></div>
+    <div class="sheet-field"><label>Political Identity</label><input type="text"></div>
+    <div class="sheet-field"><label>Religious/Spiritual</label><input type="text"></div>
+    <div class="sheet-field full"><label>Backstory (100–200 words)</label><textarea rows="4"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">♿ Disability & Neurodivergence</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Physical Disability</label><input type="text"></div>
+    <div class="sheet-field"><label>Accessibility Needs</label><input type="text"></div>
+    <div class="sheet-field"><label>Neurodivergence</label><input type="text"></div>
+    <div class="sheet-field"><label>Chronic Conditions</label><input type="text"></div>
+    <div class="sheet-field"><label>Pain Level (0–10): ___</label><input type="text"></div>
+    <div class="sheet-field"><label>Energy Budget: ___/day</label><input type="text"></div>
+  </div>
+</div>
+
+<!-- PAGE 2: Skills, Mental Health, Traits -->
+<div class="sheet-page">
+  <div class="sheet-section-title">📚 Skills</div>
+
+  <div class="skill-row">
+    <div class="skill-cat">⚡ Physical Skills</div>
+    <div class="skill-name">Athletics</div><div class="skill-attr">VIG</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Combat / Self-Defense</div><div class="skill-attr">VIG</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Driving</div><div class="skill-attr">DXT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Manual Labor</div><div class="skill-attr">VIG/DXT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Cooking</div><div class="skill-attr">DXT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+  </div>
+
+  <div class="skill-row">
+    <div class="skill-cat">📖 Mental Skills</div>
+    <div class="skill-name">Academics</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Technology</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Finance</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Language</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Professional</div><div class="skill-attr">INT</div><div class="skill-level">Level: <input type="text" size="2"></div>
+  </div>
+
+  <div class="skill-row">
+    <div class="skill-cat">🤝 Social Skills</div>
+    <div class="skill-name">Communication</div><div class="skill-attr">EXP</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Empathy</div><div class="skill-attr">EXP</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Deception</div><div class="skill-attr">EXP</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Leadership</div><div class="skill-attr">PRC</div><div class="skill-level">Level: <input type="text" size="2"></div>
+    <div class="skill-name">Networking</div><div class="skill-attr">PRC</div><div class="skill-level">Level: <input type="text" size="2"></div>
+  </div>
+
+  <div class="sheet-section-title">🧠 Mental Health</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Mental Health Condition(s)</label><input type="text"></div>
+    <div class="sheet-field"><label>Recovery Stage</label><input type="text"></div>
+    <div class="sheet-field"><label>Therapy Level</label><input type="text"></div>
+    <div class="sheet-field"><label>Medications</label><input type="text"></div>
+    <div class="sheet-field"><label>Known Triggers</label><input type="text"></div>
+    <div class="sheet-field"><label>Coping Mechanisms</label><input type="text"></div>
+    <div class="sheet-field full"><label>Mental Health Notes</label><textarea rows="3"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">⭐ Personality Traits</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Advantages (3)</label><textarea rows="3"></textarea></div>
+    <div class="sheet-field full"><label>Disadvantages (2)</label><textarea rows="3"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">🎯 Goals & Motivations</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Short-term Goals (this month)</label><textarea rows="2"></textarea></div>
+    <div class="sheet-field full"><label>Long-term Goals (this year)</label><textarea rows="2"></textarea></div>
+    <div class="sheet-field full"><label>Fears & Insecurities</label><textarea rows="2"></textarea></div>
+  </div>
+</div>
+
+<!-- PAGE 3: Resources, Relationships, Daily Life -->
+<div class="sheet-page">
+  <div class="sheet-section-title">💰 Resources</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Cash on Hand</label><input type="text" placeholder="$0.00"></div>
+    <div class="sheet-field"><label>Bank Balance</label><input type="text" placeholder="$0.00"></div>
+    <div class="sheet-field"><label>Monthly Income</label><input type="text" placeholder="$0.00"></div>
+    <div class="sheet-field"><label>Monthly Expenses</label><input type="text" placeholder="$0.00"></div>
+    <div class="sheet-field"><label>Debt Total</label><input type="text" placeholder="$0.00"></div>
+    <div class="sheet-field"><label>Debt Payments/Month</label><input type="text" placeholder="$0.00"></div>
+    <div class="sheet-field full"><label>Budget Notes</label><textarea rows="3"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">🎒 Inventory</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>On Person (pockets, wallet, phone)</label><textarea rows="3"></textarea></div>
+    <div class="sheet-field full"><label>Bag / Backpack</label><textarea rows="2"></textarea></div>
+    <div class="sheet-field full"><label>At Home (key items)</label><textarea rows="3"></textarea></div>
+    <div class="sheet-field full"><label>Consumables to Track (food, TP, meds, etc.)</label><textarea rows="2"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">🤝 Relationships</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Family</label><textarea rows="2" placeholder="Name — Relationship Tier — Notes"></textarea></div>
+    <div class="sheet-field full"><label>Friends</label><textarea rows="2" placeholder="Name — Relationship Tier — Notes"></textarea></div>
+    <div class="sheet-field full"><label>Romantic Partners</label><textarea rows="2" placeholder="Name — Relationship Tier — Notes"></textarea></div>
+    <div class="sheet-field full"><label>Professional Contacts</label><textarea rows="2" placeholder="Name — Connection — Notes"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">👨‍👩‍👧‍👦 Family & Relationships</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Pregnancy Status</label><input type="text"></div>
+    <div class="sheet-field"><label>Children (names/ages)</label><input type="text"></div>
+    <div class="sheet-field"><label>Pet(s)</label><input type="text"></div>
+    <div class="sheet-field"><label>Partner / Spouse</label><input type="text"></div>
+  </div>
+
+  <div class="sheet-section-title">⏰ Daily Routine</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Typical Daily Schedule</label><textarea rows="6" placeholder="6:00 — Wake up&#10;6:30 — Morning hygiene&#10;7:00 — Breakfast&#10;7:30 — Commute&#10;8:30 — Work&#10;..."></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">📝 GM Notes</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Current Campaign Arc</label><textarea rows="2"></textarea></div>
+    <div class="sheet-field full"><label>Secrets / Hidden Information</label><textarea rows="2"></textarea></div>
+    <div class="sheet-field full"><label>Session Log</label><textarea rows="4"></textarea></div>
+  </div>
+
+  <div class="sheet-section-title">📊 Extended Tracking</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Credit Score: ___</label><input type="text"></div>
+    <div class="sheet-field"><label>Investment Portfolio</label><input type="text"></div>
+    <div class="sheet-field"><label>Political Identity</label><input type="text"></div>
+    <div class="sheet-field"><label>Religious Devotion (0–5): ___</label><input type="text"></div>
+    <div class="sheet-field"><label>Relationship Structure</label><input type="text"></div>
+    <div class="sheet-field"><label>Work Arrangement</label><input type="text"></div>
+    <div class="sheet-field"><label>Immigration/Visa Status</label><input type="text"></div>
+    <div class="sheet-field"><label>Current City/Location</label><input type="text"></div>
+    <div class="sheet-field full"><label>Active Goals & Campaign Arcs</label><textarea rows="3"></textarea></div>
+    <div class="sheet-field full"><label>Long-term Narrative Threads</label><textarea rows="3"></textarea></div>
+  </div>
+</div>
+
+</div><!-- end container -->
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — <a href="index.html" style="color:rgba(255,255,255,0.7)">Back to Home</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Core Mechanics — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html" class="active">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="content-section">
+<div class="container">
+
+<h1>🎲 Core Mechanics</h1>
+<p>The engine that powers every action in Reality RPG. If you understand this page, you understand the game.</p>
+
+<h2>1. The Core Resolution: The d100 System</h2>
+<p>Almost every action in Reality RPG is resolved by rolling <span class="dice">2d10</span> (one percent die, or two d10s read as 1–100) and adding a modifier. The result is compared to a <strong>Target Number (TN)</strong>.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll Type</th><th>Result</th></tr></thead>
+<tbody>
+<tr><td><strong>Critical Success</strong></td><td>Roll ≤ 5 (before modifiers). Extraordinary, almost lucky outcome.</td></tr>
+<tr><td><strong>Strong Success</strong></td><td>Roll + modifier ≤ TN − 5. The action succeeds exceptionally well.</td></tr>
+<tr><td><strong>Success</strong></td><td>Roll + modifier ≤ TN. The action succeeds normally.</td></tr>
+<tr><td><strong>Partial Success</strong></td><td>Roll + modifier ≤ TN + 5. Succeeds but with a cost or complication.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Roll + modifier > TN + 5. The action fails.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Roll ≥ 96 (before modifiers). Catastrophic, almost unlucky outcome.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Applying for a Job</div>
+  <p>Mei rolls to interview well. Her TN is 55 (a medium-difficulty social task). She rolls <span class="dice">2d10</span> = 38, adds her Communication modifier (+12), for a total of <strong>50</strong>. This is ≤ 55, so it's a <strong>Success</strong>. She makes a good impression. If she'd rolled a 12 (total 24), that would be a <strong>Critical Success</strong> — the interviewer is genuinely impressed and fast-tracks her.</p>
+</div>
+
+<h2>2. The Six Core Attributes</h2>
+<p>Every human being in Reality RPG is defined by six core attributes, rated from <strong>1 to 20</strong>. The modifier is calculated as <code>(Attribute ÷ 5)</code>, rounded down. These cover every dimension of human capability.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Attribute</th><th>Abbrev</th><th>Represents</th><th>Modifier Formula</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>🏋️ Vigor</strong></td><td>VIG</td>
+<td>Physical health, stamina, strength, endurance, resistance to illness and injury</td>
+<td><code>floor(VIG ÷ 5)</code></td>
+</tr>
+<tr>
+<td><strong>🧠 Intellect</strong></td><td>INT</td>
+<td>Raw cognitive ability, memory, analytical thinking, learning speed, knowledge retention</td>
+<td><code>floor(INT ÷ 5)</code></td>
+</tr>
+<tr>
+<td><strong>💬 Expression</strong></td><td>EXP</td>
+<td>Communication, social perception, creativity, empathy, artistic ability, emotional intelligence</td>
+<td><code>floor(EXP ÷ 5)</code></td>
+</tr>
+<tr>
+<td><strong>🎯 Dexterity</strong></td><td>DXT</td>
+<td>Fine motor skills, coordination, hand-eye coordination, physical precision, manual tasks</td>
+<td><code>DXT ÷ 5</code></td>
+</tr>
+<tr>
+<td><strong>🛡️ Resolve</strong></td><td>RES</td>
+<td>Mental fortitude, willpower, discipline, emotional regulation, stress resistance, moral conviction</td>
+<td><code>floor(RES ÷ 5)</code></td>
+</tr>
+<tr>
+<td><strong>✨ Presence</strong></td><td>PRC</td>
+<td>Physical appearance, charisma, confidence, first impressions, social magnetism</td>
+<td><code>floor(PRC ÷ 5)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">📊 Modifier Reference</div>
+  <div class="table-wrap">
+  <table>
+  <thead><tr><th>Attribute</th><th>Mod</th><th>Attribute</th><th>Mod</th></tr></thead>
+  <tbody>
+  <tr><td>1–4</td><td>+0</td><td>11–14</td><td>+2</td></tr>
+  <tr><td>5–9</td><td>+1</td><td>15–19</td><td>+3</td></tr>
+  <tr><td colspan="2"></td><td>20</td><td>+4</td></tr>
+  </tbody>
+  </table>
+  </div>
+</div>
+
+<h2>3. Skills</h2>
+<p>Skills represent learned competencies. Each skill is tied to one or more attributes. A character's <strong>Skill Modifier</strong> = <code>Attribute Mod + Skill Level</code>. Skill levels range from <strong>−1 (untrained penalty)</strong> to <strong>+5 (expert)</strong>.</p>
+
+<h3>Physical Skills (Vigor / Dexterity)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th></tr></thead>
+<tbody>
+<tr><td> Athletics</td><td>VIG</td><td>Running, swimming, climbing, sports, physical fitness</td></tr>
+<tr><td> Combat</td><td>VIG</td><td>Self-defense, fighting, weapon handling (if legal)</td></tr>
+<tr><td> Driving</td><td>DXT</td><td>Operating vehicles, parking, navigation while driving</td></tr>
+<tr><td> Manual Labor</td><td>VIG/DXT</td><td>Construction, repair, moving furniture, physical work</td></tr>
+<tr><td> Cooking</td><td>DXT</td><td>Preparing meals, nutrition management, food safety</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Mental Skills (Intellect)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th></tr></thead>
+<tbody>
+<tr><td> Academics</td><td>INT</td><td>School subjects, research, reading comprehension, test-taking</td></tr>
+<tr><td> Technology</td><td>INT</td><td>Computers, smartphones, software, troubleshooting tech</td></tr>
+<tr><td> Finance</td><td>INT</td><td>Budgeting, investing, taxes, understanding contracts</td></tr>
+<tr><td> Language</td><td>INT</td><td>Foreign languages, translation, multilingual communication</td></tr>
+<tr><td> Professional</td><td>INT</td><td>Job-specific knowledge: medicine, law, engineering, etc.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Social Skills (Expression / Presence)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th></tr></thead>
+<tbody>
+<tr><td> Communication</td><td>EXP</td><td>Public speaking, writing, persuasion, negotiation</td></tr>
+<tr><td> Empathy</td><td>EXP</td><td>Reading others, emotional support, counseling, sensing mood</td></tr>
+<tr><td> Deception</td><td>EXP</td><td>Lying, misdirection, hiding information, acting</td></tr>
+<tr><td> Leadership</td><td>PRC</td><td>Motivating others, managing teams, organizing groups</td></tr>
+<tr><td> Networking</td><td>PRC</td><td>Building contacts, social climbing, making connections</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>4. Health System</h2>
+<p>Instead of hit points, characters track <strong>Health</strong> on a condition track from <strong>Healthy</strong> to <strong>Dead</strong>. Damage comes from physical harm, illness, exhaustion, and neglect.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Condition</th><th>Penalty</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>😊 Healthy</td><td>None</td><td>Feeling great. No penalties.</td></tr>
+<tr><td>😐 Tired</td><td>−5 on VIG checks</td><td>Poor sleep, minor illness, overwork. Very common.</td></tr>
+<tr><td>😫 Sick/Exhausted</td><td>−10 on all checks</td><td>Fever, severe fatigue, dehydration, hangover.</td></tr>
+<tr><td>🤒 Injured/Ill</td><td>−15 on all checks, cannot exert</td><td>Broken bone, hospitalization, severe infection.</td></tr>
+<tr><td>🏥 Critical</td><td>Cannot act without help</td><td>Life-threatening. Needs immediate medical care.</td></tr>
+<tr><td>💀 Dead</td><td>—</td><td>Character has died.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Recovery requires <strong>rest</strong>, <strong>medical care</strong>, and <strong>time</strong>. A character who sleeps 8 hours in a clean bed moves from Tired to Healthy. Moving from Sick to Tired takes 1–3 days of rest. Injuries may require hospital visits and weeks of recovery.</p>
+
+<h2>5. Stress and Mental Strain</h2>
+<p>Characters accumulate <strong>Stress Points (SP)</strong> from traumatic events, chronic pressure, conflict, and hardship. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters start each day at 0 SP unless an ongoing condition has loaded them.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stress Level</th><th>SP Range</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>😌 Stable</td><td>0</td><td>No penalty. Character functions normally.</td></tr>
+<tr><td>😐 Elevated</td><td>1–5</td><td>Minor distraction. −2 on RES checks.</td></tr>
+<tr><td>😟 Stressed</td><td>6–15</td><td>Noticeable impairment. −5 on RES and INT checks. Must make a RES check (TN 40) each night for restful sleep.</td></tr>
+<tr><td>😰 Overwhelmed</td><td>16–25</td><td>Significant dysfunction. −8 on all checks. Risk of Episode if SP exceeds max.</td></tr>
+<tr><td>💥 Episode</td><td>> Max SP</td><td>Character enters an Episode. Condition-specific effects apply. See <a href="mental-health.html">Mental Health chapter</a>.</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Stress reduces through <strong>rest</strong> (−1 SP per good night's sleep), <strong>social support</strong> (−2 SP per meaningful conversation), <strong>exercise</strong> (−1 SP per workout), <strong>therapy</strong> (−3 to −5 SP per session), and <strong>time away from stressors</strong>.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Unified Stress System</div>
+  <p>The core-mechanics stress system and the <a href="mental-health.html">mental-health</a> system use the same SP pool. Characters without a diagnosed condition can still accumulate stress from life events. Characters <em>with</em> a condition have additional triggers, episode mechanics, and recovery options.</p>
+</div>
+
+<h2>6. Time System</h2>
+<p>Time is the most precious resource in Reality RPG. The GM tracks time at the granularity appropriate to the scene:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Granularity</th><th>When Used</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Minutes</strong></td><td>Tense moments, confrontations, emergencies</td><td>A fight, a job interview, a medical emergency</td></tr>
+<tr><td><strong>Hours</strong></td><td>Daily activities, work shifts, travel</td><td>Going to work, commuting, grocery shopping</td></tr>
+<tr><td><strong>Days</strong></td><td>Routines, recovery, projects</td><td>Getting over a cold, studying for a test</td></tr>
+<tr><td><strong>Weeks/Months</strong></td><td>Long-term arcs, career progression</td><td>Training for a marathon, saving for a house</td></tr>
+<tr><td><strong>Years</strong></td><td>Aging, life transitions</td><td>Changing careers, raising children, retirement</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>7. Target Numbers</h2>
+<p>Standard TNs for common activities. The GM adjusts based on circumstances.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Difficulty</th><th>TN</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td>Trivial</td><td>25</td><td>Brushing teeth, making toast, walking to the store</td></tr>
+<tr><td>Easy</td><td>35</td><td>Cooking a simple meal, sending an email, small talk</td></tr>
+<tr><td>Medium</td><td>50</td><td>Having a difficult conversation, fixing a leak, studying for a test</td></tr>
+<tr><td>Hard</td><td>65</td><td>Getting a promotion, convincing a stranger, assembling complex furniture</td></tr>
+<tr><td>Very Hard</td><td>80</td><td>Winning a major award, landing a dream job, surviving a natural disaster</td></tr>
+<tr><td>Near Impossible</td><td>90</td><td>Becoming a CEO, winning a national competition, escaping prison</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Circumstance Modifiers</div>
+  <p>Every situation has modifiers. Being tired adds +5 to TN. Having the right tools subtracts 5. Emotional distress adds +10. A supportive ally subtracts 5. The GM should always consider context before setting a TN.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — <a href="index.html" style="color:rgba(255,255,255,0.7)">Back to Home</a>
+</footer>
+
+</body>
+</html>

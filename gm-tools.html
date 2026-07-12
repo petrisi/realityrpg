@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GM Tools — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+.ref-card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1em 1.2em;
+  margin: 0.8em 0;
+  box-shadow: var(--shadow-sm);
+  page-break-inside: avoid;
+}
+.ref-card h4 {
+  margin-top: 0;
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.3em;
+}
+.ref-card table { margin: 0.5em 0; }
+.ref-card table th { background: var(--color-secondary); }
+.ref-card .card-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  margin-top: 0.5em;
+}
+@media print {
+  .ref-card { break-inside: avoid; border: 1px solid #999; }
+  .site-header, .site-footer, .no-print { display: none; }
+  h2 { page-break-before: auto; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html" class="active">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="content-section">
+<div class="container">
+
+<h1>🛠️ GM Tools</h1>
+<p>Your command center for running Reality RPG. Random tables, generators, trackers, reference cards, and ethical guidelines — everything you need to run a session without opening another tab.</p>
+
+<div class="callout tip">
+  <div class="callout-title">📖 Quick Reference</div>
+  <p>Core resolution: <span class="dice">2d10 + modifier vs TN</span>. Max SP (Stress Points) = <span class="dice">20 + RES mod × 5</span>. Attributes: <strong>VIG</strong> (Vigor), <strong>INT</strong> (Intelligence), <strong>EXP</strong> (Experience), <strong>DXT</strong> (Dexterity), <strong>RES</strong> (Resilience), <strong>PRC</strong> (Presence). TN ranges: 8 (easy) to 16 (nearly impossible). See <a href="core-mechanics.html">Core Mechanics</a> for full details.</p>
+</div>
+
+<h2>🎲 1. Random Event Tables</h2>
+<p>Roll <span class="dice">d100</span> on any of these tables when you need a spontaneous event for any session. You can also roll multiple tables for a "busy week" or use them to seed session hooks.</p>
+
+<h3>🌅 Daily Life Events (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>🔧 Plumbing emergency — burst pipe or clogged drain</td><td>+1 SP; DXT check (TN 10) to contain damage; cost: $50–300</td></tr>
+<tr><td>06–10</td><td>🛏️ Insomnia night — can't sleep for 2–3 nights</td><td>+1 SP; −1 to all checks next day; VIG check (TN 10) to resist</td></tr>
+<tr><td>11–15</td><td>📱 Phone dies / lost / broken screen</td><td>Inconvenience; DXT check (TN 9) to recover data; cost: $0–150</td></tr>
+<tr><td>16–20</td><td>🍳 You actually cook a decent meal</td><td>−1 SP; small mood boost; no mechanical penalty</td></tr>
+<tr><td>21–25</td><td>🚗 Transportation breakdown — car, bike, or missed transit</td><td>Delayed; INT check (TN 10) to find alternative; cost: $30–200</td></tr>
+<tr><td>26–30</td><td>📦 Unexpected package arrives</td><td>Could be good (returned item) or bad (wrong delivery); PRC check (TN 10) to resolve</td></tr>
+<tr><td>31–35</td><td>🧹 Chore backlog becomes overwhelming</td><td>+1 SP; DXT check (TN 9) to tackle it; failure: +1 more SP</td></tr>
+<tr><td>36–40</td><td>☀️ A genuinely nice day — sunshine, good weather, everything works</td><td>−2 SP; mood boost for all PCs</td></tr>
+<tr><td>41–45</td><td>🐛 Minor illness — cold, stomach bug, or allergy flare</td><td>VIG check (TN 11); failure: 1–3 days reduced capacity</td></tr>
+<tr><td>46–50</td><td>🛒 Grocery budget blown — ran out of food before payday</td><td>+1 SP; INT check (TN 10) to stretch remaining funds</td></tr>
+<tr><td>51–55</td><td>💡 Serendipitous discovery — useful article, coupon, or free item</td><td>Saves $20–100; no check needed</td></tr>
+<tr><td>56–60</td><td>🔌 Power outage or internet disruption</td><td>Inconvenience; DXT check (TN 9) to prepare; lasts 2–12 hours</td></tr>
+<tr><td>61–65</td><td>🧘 Moment of clarity — you figure something out</td><td>−1 SP; +1 to next INT or RES check</td></tr>
+<tr><td>66–70</td><td>🏠 Neighbor issue — noise, boundary dispute, or complaint</td><td>PRC check (TN 11) to resolve; failure: ongoing tension</td></tr>
+<tr><td>71–75</td><td>📅 Double-booked schedule — two important things at once</td><td>RES check (TN 11) to handle both; failure: miss one</td></tr>
+<tr><td>76–80</td><td>🎁 Small windfall — found money, refund, or gift card</td><td>+50–200 credits; no check needed</td></tr>
+<tr><td>81–85</td><td>😤 Petty frustration — wrong change, rude cashier, lost item</td><td>+1 SP; RES check (TN 9) to not let it ruin your day</td></tr>
+<tr><td>86–90</td><td>🏃 You actually get exercise</td><td>−1 SP; +1 to VIG check this session</td></tr>
+<tr><td>91–95</td><td>📧 Spam / scam call or email — nearly falls for it</td><td>INT check (TN 12); failure: potential financial loss $50–500</td></tr>
+<tr><td>96–98</td><td>🎉 Something genuinely wonderful happens — unexpected good news</td><td>−3 SP; major mood boost; narrative reward</td></tr>
+<tr><td>99–00</td><td>🌀 The universe tests you — three minor problems at once</td><td>+3 SP; roll 3 more on this table; GM discretion on severity</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>💼 Work Events (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>📋 Sudden project assigned — tight deadline</td><td>EXP check (TN 12); +1 SP; failure: quality suffers</td></tr>
+<tr><td>06–10</td><td>👤 Difficult coworker creates conflict</td><td>PRC check (TN 12); +1 SP; failure: ongoing tension</td></tr>
+<tr><td>11–15</td><td>📈 Performance review — good or bad surprise</td><td>Roll d6: 1–2 bad (−1 SP, +2 SP), 3–4 neutral, 5–6 good (−1 SP, bonus)</td></tr>
+<tr><td>16–20</td><td>🏖️ Unexpected PTO approval</td><td>−2 SP; 2–5 days rest; SP recovery opportunity</td></tr>
+<tr><td>21–25</td><td>🔄 Restructuring / department changes</td><td>RES check (TN 12); +2 SP; may affect job security</td></tr>
+<tr><td>26–30</td><td>🎓 Training opportunity — professional development</td><td>INT check (TN 10); success: +1 EXP or skill gain</td></tr>
+<tr><td>31–35</td><td>💰 Pay adjustment — raise, cut, or bonus</td><td>Roll d6: 1–2 cut (+2 SP), 3–4 no change, 5–6 raise/bonus (−1 SP)</td></tr>
+<tr><td>36–40</td><td>🤝 Networking opportunity — conference or event</td><td>PRC check (TN 11); success: new connection or opportunity</td></tr>
+<tr><td>41–45</td><td>📧 Mistake discovered in old work</td><td>INT check (TN 12) to fix; +1 SP; failure: reputational hit</td></tr>
+<tr><td>46–50</td><td>🏠 Remote work day — unexpected but pleasant</td><td>−1 SP; saves commute time; DXT check (TN 8) to stay productive</td></tr>
+<tr><td>51–55</td><td>👔 Dress code or policy change</td><td>Inconvenience; DXT check (TN 8) to comply; cost: $20–100</td></tr>
+<tr><td>56–60</td><td>📊 New metric / KPI introduced</td><td>EXP check (TN 11); +1 SP; failure: pressure increases</td></tr>
+<tr><td>61–65</td><td>🤒 Coworker illness — you cover their work</td><td>+1 SP; EXP check (TN 10) to manage extra load</td></tr>
+<tr><td>66–70</td><td>💡 Your idea is adopted and praised</td><td>−1 SP; EXP check (TN 9) to implement; possible recognition</td></tr>
+<tr><td>71–75</td><td>📞 Client / customer complaint</td><td>PRC check (TN 12); +1 SP; failure: escalation to management</td></tr>
+<tr><td>76–80</td><td>🏆 Small win — task completed ahead of schedule</td><td>−1 SP; EXP check (TN 9) to capitalize on momentum</td></tr>
+<tr><td>81–85</td><td>🗓️ Meeting that could have been an email</td><td>+1 SP (frustration); RES check (TN 9) to stay engaged</td></tr>
+<tr><td>86–90</td><td>👨‍💼 Mentor / ally offers guidance</td><td>−1 SP; +1 to next EXP or PRC check at work</td></tr>
+<tr><td>91–95</td><td>📝 Bureaucratic task — timesheet, compliance, paperwork</td><td>INT check (TN 10); +1 SP; failure: penalty or rework</td></tr>
+<tr><td>96–98</td><td>🚀 Breakthrough opportunity — promotion, transfer, or recognition</td><td>EXP + PRC check (TN 13); success: major career advancement</td></tr>
+<tr><td>99–00</td><td>⚠️ Crisis at work — data breach, PR disaster, or safety incident</td><td>+3 SP; all checks at work at +1 TN this session; GM discretion</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🤝 Social Events (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>💬 Awkward conversation with acquaintance</td><td>PRC check (TN 11); +1 SP; failure: social discomfort lingers</td></tr>
+<tr><td>06–10</td><td>🎉 Spontaneous party or gathering invitation</td><td>PRC check (TN 10); −1 SP if attended; +1 SP if FOMO</td></tr>
+<tr><td>11–15</td><td>👥 Friend drifts away — no big fight, just distance</td><td>RES check (TN 12); +2 SP; PRC check (TN 12) to reconnect</td></tr>
+<tr><td>16–20</td><td>💕 Romantic tension — attraction or misunderstanding</td><td>PRC check (TN 12); +1 SP; success: connection deepens</td></tr>
+<tr><td>21–25</td><td>👨‍👩‍👧 Family obligation — unexpected visit or call</td><td>RES check (TN 11); +1 SP; PRC check (TN 10) to handle gracefully</td></tr>
+<tr><td>26–30</td><td>🍽️ Dinner plans fall through — again</td><td>+1 SP (loneliness); RES check (TN 10) to not take it personally</td></tr>
+<tr><td>31–35</td><td>📱 Social media drama — something you posted backfires</td><td>PRC check (TN 13); +2 SP; INT check (TN 11) to damage control</td></tr>
+<tr><td>36–40</td><td>🤗 Unexpected kindness from a stranger</td><td>−2 SP; genuine moment of human connection</td></tr>
+<tr><td>41–45</td><td>😤 Argument with partner or close friend</td><td>PRC check (TN 12) on both sides; +2 SP; failure: estrangement</td></tr>
+<tr><td>46–50</td><td>🎂 Birthday / anniversary — celebrated or forgotten</td><td>Roll d6: 1–3 forgotten (+2 SP), 4–6 celebrated (−1 SP)</td></tr>
+<tr><td>51–55</td><td>📧 Reconnecting with an old friend</td><td>PRC check (TN 10); −1 SP; success: friendship rekindled</td></tr>
+<tr><td>56–60</td><td>🎭 Social event where you feel out of place</td><td>RES check (TN 11); +2 SP; PRC check (TN 12) to fit in</td></tr>
+<tr><td>61–65</td><td>💌 Love letter / unexpected confession</td><td>RES check (TN 13); +1 SP; PRC check (TN 12) to respond honestly</td></tr>
+<tr><td>66–70</td><td>👶 Friend has a baby / life milestone</td><td>RES check (TN 10); +1 SP (existential); −1 SP if supportive</td></tr>
+<tr><td>71–75</td><td>🎓 Someone achieves what you wanted</td><td>RES check (TN 11); +1 SP (comparison); success: genuine happiness</td></tr>
+<tr><td>76–80</td><td>🤝 New connection — meaningful conversation</td><td>PRC check (TN 10); −1 SP; possible new NPC ally</td></tr>
+<tr><td>81–85</td><td>🏠 House party / neighborhood event</td><td>PRC check (TN 9); −1 SP; community building opportunity</td></tr>
+<tr><td>86–90</td><td>📞 Heart-to-heart call with someone you love</td><td>−2 SP; RES check (TN 9) to be vulnerable; deepens bond</td></tr>
+<tr><td>91–95</td><td>🚩 Red flag behavior from someone close</td><td>INT check (TN 12); +1 SP; success: recognize and address it</td></tr>
+<tr><td>96–98</td><td>🌟 A moment of genuine belonging — you feel seen</td><td>−3 SP; powerful emotional reset</td></tr>
+<tr><td>99–00</td><td>💔 Social rupture — betrayal, fight, or falling out</td><td>+3 SP; RES check (TN 14); failure: lasting damage to relationship</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🏥 Health Events (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>🤧 Common cold or virus</td><td>VIG check (TN 10); failure: 2–4 days sick; +1 SP</td></tr>
+<tr><td>06–10</td><td>🦠 Stomach bug or food poisoning</td><td>VIG check (TN 11); failure: 1–2 days incapacitated</td></tr>
+<tr><td>11–15</td><td>😰 Panic attack or anxiety spike</td><td>RES check (TN 13); +2 SP; failure: +2 more SP, day ruined</td></tr>
+<tr><td>16–20</td><td>🩺 Routine checkup — mostly fine</td><td>No penalty; INT check (TN 9) to ask the right questions</td></tr>
+<tr><td>21–25</td><td>😴 Chronic sleep deprivation catches up</td><td>+2 SP; VIG check (TN 11); failure: physical symptoms</td></tr>
+<tr><td>26–30</td><td>💊 Medication side effect or interaction</td><td>INT check (TN 12); +1 SP; VIG check (TN 10) to manage</td></tr>
+<tr><td>31–35</td><td>🏋️‍♂️ You actually keep your fitness routine</td><td>−1 SP; VIG check (TN 8) for bonus; +1 to VIG this session</td></tr>
+<tr><td>36–40</td><td>🦴 Minor injury — sprain, strain, or cut</td><td>DXT check (TN 10); −1 to DXT checks for 1–2 weeks</td></tr>
+<tr><td>41–45</td><td>🧠 Mental health check-in — you notice something</td><td>RES check (TN 11); success: early intervention, −2 SP</td></tr>
+<tr><td>46–50</td><td>🍕 Bad eating week — all takeout, no vegetables</td><td>+1 SP; VIG check (TN 10); failure: energy dip this week</td></tr>
+<tr><td>51–55</td><td>🩸 Bloodwork / test results — minor concern flagged</td><td>RES check (TN 12); +1 SP; follow-up appointment needed</td></tr>
+<tr><td>56–60</td><td>🧘 Therapy / meditation / self-care breakthrough</td><td>−3 SP; RES check (TN 9); possible +1 to RES attribute</td></tr>
+<tr><td>61–65</td><td>🏥 Doctor's appointment — long wait, mild issue</td><td>INT check (TN 10) to advocate for yourself; +1 SP (frustration)</td></tr>
+<tr><td>66–70</td><td>💆‍♀️ Mental health day — you take it and it helps</td><td>−2 SP; VIG check (TN 8); return to routine refreshed</td></tr>
+<tr><td>71–75</td><td>😷 Seasonal allergies or environmental sensitivity</td><td>VIG check (TN 10); +1 SP; DXT check (TN 9) to manage</td></tr>
+<tr><td>76–80</td><td>🧬 Genetic / family health concern surfaces</td><td>RES check (TN 13); +2 SP; INT check (TN 12) to research</td></tr>
+<tr><td>81–85</td><td>🏃‍♀️ Physical activity pays off — you feel great</td><td>−1 SP; VIG check (TN 8) for bonus; mood boost</td></tr>
+<tr><td>86–90</td><td>💤 You finally get a full night's sleep</td><td>−2 SP; all checks +1 this next day</td></tr>
+<tr><td>91–95</td><td>⚠️ Warning sign — symptom you've been ignoring</td><td>VIG check (TN 12); +1 SP; failure: requires medical attention</td></tr>
+<tr><td>96–98</td><td>🌈 You feel genuinely healthy and strong</td><td>−3 SP; +1 to all VIG checks this session; rare and precious</td></tr>
+<tr><td>99–00</td><td>🚨 Health emergency — ER visit or urgent intervention</td><td>VIG check (TN 14); +4 SP; GM discretion on severity; see <a href="mental-health.html">Mental Health</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>💰 Financial Events (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>💸 Unexpected bill — medical, car, or utility</td><td>Cost: $100–1000; +2 SP; INT check (TN 11) to negotiate</td></tr>
+<tr><td>06–10</td><td>📉 Bank error / overdraft / hidden fee</td><td>Cost: $25–200; +1 SP; INT check (TN 11) to dispute</td></tr>
+<tr><td>11–15</td><td>💳 Credit card issue — fraud, limit reached, or rate change</td><td>PRC check (TN 12) to resolve; +1 SP; cost varies</td></tr>
+<tr><td>16–20</td><td>💰 Unexpected income — bonus, refund, or tax return</td><td>+200–2000 credits; −1 SP; financial breathing room</td></tr>
+<tr><td>21–25</td><td>🏠 Rent / mortgage increase notice</td><td>+2 SP; PRC check (TN 12) to negotiate; INT check (TN 11) to plan</td></tr>
+<tr><td>26–30</td><td>🛒 Impulse purchase you immediately regret</td><td>Cost: $50–300; +1 SP; RES check (TN 10) to not spiral</td></tr>
+<tr><td>31–35</td><td>📊 Budget review — you're doing better than expected</td><td>−1 SP; INT check (TN 9); small financial win</td></tr>
+<tr><td>36–40</td><td>🔧 Something breaks that needs replacing</td><td>Cost: $100–500; DXT check (TN 10) to DIY; +1 SP</td></tr>
+<tr><td>41–45</td><td>📋 Insurance premium increase</td><td>Ongoing cost: +50–200/month; INT check (TN 12) to shop around</td></tr>
+<tr><td>46–50</td><td>🎁 Gift-giving season — multiple presents needed</td><td>Cost: $100–500; +1 SP; PRC check (TN 9) to find meaningful cheap gifts</td></tr>
+<tr><td>51–55</td><td>🏦 Bank offers better rate / account</td><td>INT check (TN 10); saves $10–50/month; no SP change</td></tr>
+<tr><td>56–60</td><td>📱 Subscription creep — too many recurring charges</td><td>Cost: +20–100/month; INT check (TN 9) to audit and cancel</td></tr>
+<tr><td>61–65</td><td>💼 Side hustle opportunity</td><td>EXP check (TN 11); success: +100–500/month income</td></tr>
+<tr><td>66–70</td><td>🏠 Home maintenance issue — roof, appliance, or pest</td><td>Cost: $200–1000; +1 SP; DXT check (TN 10) to handle</td></tr>
+<tr><td>71–75</td><td>📈 Investment / savings milestone reached</td><td>−1 SP; INT check (TN 10); financial confidence boost</td></tr>
+<tr><td>76–80</td><td>🎓 Education / certification cost</td><td>Cost: $500–5000; +1 SP; INT check (TN 11); long-term investment</td></tr>
+<tr><td>81–85</td><td>🤝 Someone asks to borrow money</td><td>PRC check (TN 11); RES check (TN 10); +1 SP either way</td></tr>
+<tr><td>86–90</td><td>🧾 Tax season stress</td><td>INT check (TN 12); +1 SP; failure: penalty or audit risk</td></tr>
+<tr><td>91–95</td><td>🛡️ Emergency fund — you actually have one and it helps</td><td>−2 SP; financial buffer absorbs a hit; no mechanical cost</td></tr>
+<tr><td>96–98</td><td>🎉 Windfall — inheritance, lottery, or unexpected gift</td><td>+1000–5000 credits; −2 SP; life-changing for low-income PCs</td></tr>
+<tr><td>99–00</td><td>💀 Financial crisis — job loss, medical debt, or eviction risk</td><td>+4 SP; INT + PRC checks (TN 14); GM discretion on severity; see <a href="inventory-economy.html">Inventory & Economy</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>👤 2. NPC Generator</h2>
+<p>Quick NPC creation for any scene. Roll <span class="dice">d100</span> on each table below. Combine results for a fully formed character in seconds.</p>
+
+<h3>NPC Name (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Name</th><th>Roll</th><th>Name</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>James Mitchell</td><td>51–55</td><td>Amara Osei</td></tr>
+<tr><td>06–10</td><td>Sofia Ramirez</td><td>56–60</td><td>Kenji Tanaka</td></tr>
+<tr><td>11–15</td><td>David Park</td><td>61–65</td><td>Grace O'Brien</td></tr>
+<tr><td>16–20</td><td>Fatima Al-Hassan</td><td>66–70</td><td>Carlos Mendez</td></tr>
+<tr><td>21–25</td><td>Emily Watson</td><td>71–75</td><td>Priya Sharma</td></tr>
+<tr><td>26–30</td><td>Marcus Johnson</td><td>76–80</td><td>Lena Kowalski</td></tr>
+<tr><td>31–35</td><td>Aisha Williams</td><td>81–85</td><td>Thomas Nguyen</td></tr>
+<tr><td>36–40</td><td>Rachel Cohen</td><td>86–90</td><td>Diego Morales</td></tr>
+<tr><td>41–45</td><td>Oliver Chen</td><td>91–95</td><td>Zara Ibrahim</td></tr>
+<tr><td>46–50</td><td>Maria Santos</td><td>96–00</td><td>Roll twice — compound name (e.g., James-Priya Mitchell-Sharma)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>NPC Age (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Age Range</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>16–19</td><td>Teen / young adult; limited EXP</td></tr>
+<tr><td>06–15</td><td>20–29</td><td>Early adulthood; building EXP</td></tr>
+<tr><td>16–35</td><td>30–39</td><td>Established; moderate EXP</td></tr>
+<tr><td>36–55</td><td>40–49</td><td>Midlife; high EXP, varied RES</td></tr>
+<tr><td>56–75</td><td>50–59</td><td>Experienced; high EXP, may have VIG decline</td></tr>
+<tr><td>76–88</td><td>60–74</td><td>Senior; very high EXP, lower VIG/DXT</td></tr>
+<tr><td>89–97</td><td>75+</td><td>Elder; wisdom (high INT/EXP), frail (low VIG)</td></tr>
+<tr><td>98–00</td><td>Child (5–15)</td><td>No stats; dependent NPC; narrative role</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>NPC Occupation (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Occupation</th><th>Roll</th><th>Occupation</th></tr></thead>
+<tbody>
+<tr><td>01–03</td><td>Teacher / Professor</td><td>51–53</td><td>Retail worker</td></tr>
+<tr><td>04–06</td><td>Healthcare worker</td><td>54–56</td><td>Food service / chef</td></tr>
+<tr><td>07–09</td><td>Software developer</td><td>57–59</td><td>Tradesperson (plumber, electrician)</td></tr>
+<tr><td>10–12</td><td>Office manager / admin</td><td>60–62</td><td>Driver / delivery</td></tr>
+<tr><td>13–15</td><td>Lawyer / legal</td><td>63–65</td><td>Artist / musician / writer</td></tr>
+<tr><td>16–18</td><td>Engineer</td><td>66–68</td><td>Student</td></tr>
+<tr><td>19–21</td><td>Nurse / medical tech</td><td>69–71</td><td>Homemaker / stay-at-home parent</td></tr>
+<tr><td>22–24</td><td>Business owner</td><td>72–74</td><td>Retired</td></tr>
+<tr><td>25–27</td><td>Government / civil servant</td><td>75–77</td><td>Unemployed / between jobs</td></tr>
+<tr><td>28–30</td><td>Journalist / media</td><td>78–80</td><td>Freelancer / gig worker</td></tr>
+<tr><td>31–33</td><td>Sales / marketing</td><td>81–83</td><td>Therapist / counselor</td></tr>
+<tr><td>34–36</td><td>Police / first responder</td><td>84–86</td><td>Religious leader</td></tr>
+<tr><td>37–39</td><td>Construction / labor</td><td>87–89</td><td>Scientist / researcher</td></tr>
+<tr><td>40–42</td><td>Accountant / finance</td><td>90–92</td><td>Activist / community organizer</td></tr>
+<tr><td>43–45</td><td>Real estate agent</td><td>93–95</td><td>Military / veteran</td></tr>
+<tr><td>46–48</td><td>Consultant</td><td>96–97</td><td>Politician / candidate</td></tr>
+<tr><td>49–50</td><td>Nonprofit worker</td><td>98–00</td><td>Roll twice — dual career or unusual combo</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>NPC Personality (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Primary Trait</th><th>Secondary Trait</th><th>Flaw</th></tr></thead>
+<tbody>
+<tr><td>01–10</td><td>Warm and nurturing</td><td>Protective</td><td>Overly controlling</td></tr>
+<tr><td>11–20</td><td>Sharp and analytical</td><td>Detail-oriented</td><td>Cold / detached</td></tr>
+<tr><td>21–30</td><td>Charming and social</td><td>Well-connected</td><td>Superficial / unreliable</td></tr>
+<tr><td>31–40</td><td>Quiet and observant</td><td>Thoughtful</td><td>Indecisive / passive</td></tr>
+<tr><td>41–50</td><td>Determined and driven</td><td>Ambitious</td><td>Burnout-prone / workaholic</td></tr>
+<tr><td>51–60</td><td>Easygoing and flexible</td><td>Adaptable</td><td>Lacks direction / avoids conflict</td></tr>
+<tr><td>61–70</td><td>Principled and honest</td><td>Direct</td><td>Rigid / uncompromising</td></tr>
+<tr><td>71–80</td><td>Creative and imaginative</td><td>Open-minded</td><td>Disorganized / impractical</td></tr>
+<tr><td>81–90</td><td>Cautious and careful</td><td>Thorough</td><td>Anxious / risk-averse</td></tr>
+<tr><td>91–00</td><td>Passionate and intense</td><td>Loyal</td><td>Volatile / emotionally reactive</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>NPC Relationship to PC (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Relationship</th><th>Dynamic</th></tr></thead>
+<tbody>
+<tr><td>01–10</td><td>Family member</td><td>Love / obligation / tension</td></tr>
+<tr><td>11–20</td><td>Close friend</td><td>Trust / history / mutual support</td></tr>
+<tr><td>21–30</td><td>Acquaintance</td><td>Polite / surface-level / potential for more</td></tr>
+<tr><td>31–35</td><td>Current or former romantic partner</td><td>Intimate / complicated / unresolved feelings</td></tr>
+<tr><td>36–40</td><td>Work colleague</td><td>Professional / competitive / ally or rival</td></tr>
+<tr><td>41–45</td><td>Neighbor</td><td>Proximity / small favors / boundary issues</td></tr>
+<tr><td>46–50</td><td>Mentor / advisor</td><td>Wisdom / guidance / generational gap</td></tr>
+<tr><td>51–55</td><td>Authority figure (boss, officer, official)</td><td>Power imbalance / respect or resentment</td></tr>
+<tr><td>56–60</td><td>Service provider (doctor, teacher, mechanic)</td><td>Professional / dependent / transactional</td></tr>
+<tr><td>61–65</td><td>Rival / competitor</td><td>Tension / motivation / grudging respect</td></tr>
+<tr><td>66–70</td><td>Someone in need</td><td>Compassion / burden / moral test</td></tr>
+<tr><td>71–75</td><td>Unexpected ally</td><td>Surprising support / shared interest</td></tr>
+<tr><td>76–80</td><td>Someone who wronged the PC</td><td>Hurt / anger / need for resolution</td></tr>
+<tr><td>81–85</td><td>Someone the PC wronged</td><td>Guilt / need for amends / avoidance</td></tr>
+<tr><td>86–90</td><td>Stranger with shared experience</td><td>Connection through adversity / brief bond</td></tr>
+<tr><td>91–95</td><td>Child or dependent</td><td>Responsibility / love / anxiety</td></tr>
+<tr><td>96–00</td><td>Roll twice — complex multi-layered relationship</td><td>Mixed / contradictory feelings</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>NPC Secret (d100)</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Secret</th><th>Reveal Trigger</th></tr></thead>
+<tbody>
+<tr><td>01–05</td><td>Hidden illness they're not treating</td><td>Physical symptoms become visible</td></tr>
+<tr><td>06–10</td><td>Financial trouble — debt, bankruptcy, or fraud</td><td>Behavioral changes; money-related stress</td></tr>
+<tr><td>11–15</td><td>Affair or hidden relationship</td><td>Caught; emotional distance; phone evidence</td></tr>
+<tr><td>16–20</td><td>Struggling with addiction</td><td>Relapse; behavioral changes; confession</td></tr>
+<tr><td>21–25</td><td>Secretly volunteering or helping others</td><td>Accidental discovery; act of kindness traced</td></tr>
+<tr><td>26–30</td><td>Regrets a major life decision</td><td>Anniversary; conversation; moment of honesty</td></tr>
+<tr><td>31–35</td><td>Imposter syndrome at work</td><td>High-pressure situation; forced to perform</td></tr>
+<tr><td>36–40</td><td>Secretly writing, creating, or pursuing a passion</td><td>Accidental discovery; creative output found</td></tr>
+<tr><td>41–45</td><td>Family history they're ashamed of</td><td>Family event; genealogy; unexpected relative</td></tr>
+<tr><td>46–50</td><td>Past legal trouble (resolved but hidden)</td><td>Background check; casual mention; confrontation</td></tr>
+<tr><td>51–55</td><td>Deep loneliness despite appearing well-connected</td><td>Empty home; cancelled plans; moment of silence</td></tr>
+<tr><td>56–60</td><td>Secretly mentoring or supporting someone</td><td>Third party reveals it; act of generosity</td></tr>
+<tr><td>61–65</td><td>Struggling with identity (gender, faith, culture)</td><td>Personal crisis; conversation; self-discovery</td></tr>
+<tr><td>66–70</td><td>Planning a major life change (moving, quitting, etc.)</td><td>Packing; resignation letter; conversation</td></tr>
+<tr><td>71–75</td><td>Unresolved grief they never processed</td><td>Anniversary; trigger event; emotional breakdown</td></tr>
+<tr><td>76–80</td><td>Secretly generous — gives to charity anonymously</td><td>Donation discovered; pattern noticed</td></tr>
+<tr><td>81–85</td><td>Feeling trapped in their life but can't leave</td><td>Argument; quiet moment; honest conversation</td></tr>
+<tr><td>86–90</td><td>Has a talent no one knows about</td><td>Unexpected situation; forced to demonstrate</td></tr>
+<tr><td>91–95</td><td>Secretly afraid of something ordinary</td><td>Situation triggers it; vulnerability moment</td></tr>
+<tr><td>96–00</td><td>Roll twice — layered secrets; one is a cover for the other</td><td>Gradual reveal; each secret deepens the other</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>🔥 3. Crisis Generator</h2>
+<p>When you need an immediate crisis appropriate for any campaign, roll <span class="dice">d100</span> on the table below. Each crisis includes the core event, the attributes tested, and the SP impact.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll</th><th>Crisis</th><th>Key Checks</th><th>SP Impact</th></tr></thead>
+<tbody>
+<tr><td>01–03</td><td>🏥 Medical emergency — PC or loved one</td><td>VIG (TN 12), RES (TN 13)</td><td>+3 to +5 SP</td></tr>
+<tr><td>04–06</td><td>🔥 Fire or home disaster</td><td>VIG (TN 11), DXT (TN 10), INT (TN 12)</td><td>+4 SP</td></tr>
+<tr><td>07–09</td><td>💰 Sudden financial collapse</td><td>INT (TN 13), RES (TN 12), PRC (TN 12)</td><td>+4 SP</td></tr>
+<tr><td>10–12</td><td>💔 Relationship rupture — breakup, betrayal, or estrangement</td><td>RES (TN 14), PRC (TN 12)</td><td>+3 to +5 SP</td></tr>
+<tr><td>13–15</td><td>⚖️ Legal trouble — citation, arrest, or lawsuit</td><td>INT (TN 13), PRC (TN 13), EXP (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>16–18</td><td>🌊 Natural disaster — storm, flood, or earthquake</td><td>VIG (TN 12), DXT (TN 11), RES (TN 12)</td><td>+3 SP</td></tr>
+<tr><td>19–21</td><td>😷 Pandemic or disease outbreak</td><td>VIG (TN 13), INT (TN 12), RES (TN 13)</td><td>+3 SP</td></tr>
+<tr><td>22–24</td><td>🏠 Eviction or housing loss</td><td>INT (TN 12), PRC (TN 13), RES (TN 12)</td><td>+4 SP</td></tr>
+<tr><td>25–27</td><td>📱 Identity theft or major data breach</td><td>INT (TN 13), EXP (TN 11), PRC (TN 12)</td><td>+2 SP</td></tr>
+<tr><td>28–30</td><td>👶 Unexpected pregnancy or family addition</td><td>RES (TN 13), INT (TN 11), PRC (TN 12)</td><td>+2 SP (can be positive or negative)</td></tr>
+<tr><td>31–33</td><td>🏢 Job loss or professional disgrace</td><td>EXP (TN 12), PRC (TN 13), RES (TN 12)</td><td>+3 SP</td></tr>
+<tr><td>34–36</td><td>🚗 Serious car accident</td><td>DXT (TN 12), VIG (TN 13), RES (TN 12)</td><td>+4 SP</td></tr>
+<tr><td>37–39</td><td>🕊️ Death of a loved one</td><td>RES (TN 15), PRC (TN 12)</td><td>+5 SP; see <a href="death-grief.html">Death & Grief</a></td></tr>
+<tr><td>40–42</td><td>🧠 Mental health crisis — breakdown, hospitalization</td><td>RES (TN 14), INT (TN 12)</td><td>+4 SP; see <a href="mental-health.html">Mental Health</a></td></tr>
+<tr><td>43–45</td><td>🏠 Family member moves in unexpectedly</td><td>RES (TN 11), PRC (TN 10), INT (TN 11)</td><td>+2 SP</td></tr>
+<tr><td>46–48</td><td>📰 Public embarrassment — viral moment or exposure</td><td>RES (TN 13), PRC (TN 12), INT (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>49–51</td><td>🏥 Chronic condition diagnosis</td><td>RES (TN 13), VIG (TN 12), INT (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>52–54</td><td>💸 Scam or fraud — significant loss</td><td>INT (TN 13), EXP (TN 12), RES (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>55–57</td><td>🏘️ Neighborhood changes — gentrification, crime, or disruption</td><td>RES (TN 11), PRC (TN 12), INT (TN 11)</td><td>+2 SP</td></tr>
+<tr><td>58–60</td><td>🎓 Education disruption — failed class, lost scholarship</td><td>INT (TN 13), RES (TN 12), EXP (TN 11)</td><td>+2 SP</td></tr>
+<tr><td>61–63</td><td>🏠 Property damage — flood, theft, or vandalism</td><td>INT (TN 11), PRC (TN 12), RES (TN 10)</td><td>+2 SP</td></tr>
+<tr><td>64–66</td><td>👨‍👩‍👧 Parent or elder needs care</td><td>VIG (TN 11), RES (TN 12), INT (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>67–69</td><td>🚨 Emergency — 911 call, active situation</td><td>RES (TN 13), DXT (TN 10), VIG (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>70–72</td><td>💔 Betrayal by trusted person</td><td>RES (TN 14), PRC (TN 13)</td><td>+4 SP</td></tr>
+<tr><td>73–75</td><td>🌍 Immigration / legal status crisis</td><td>INT (TN 13), PRC (TN 13), RES (TN 12)</td><td>+4 SP; see <a href="law-civic.html">Law & Civic</a></td></tr>
+<tr><td>76–78</td><td>🏥 Insurance denied — critical coverage rejected</td><td>INT (TN 13), PRC (TN 13), EXP (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>79–81</td><td>🏠 Homeless or temporarily displaced</td><td>RES (TN 13), INT (TN 12), PRC (TN 12)</td><td>+5 SP</td></tr>
+<tr><td>82–84</td><td>🤝 Coalition or community falls apart</td><td>PRC (TN 13), RES (TN 12), INT (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>85–87</td><td>🧬 Genetic / hereditary condition discovered</td><td>RES (TN 13), INT (TN 12), VIG (TN 11)</td><td>+3 SP</td></tr>
+<tr><td>88–90</td><td>🔊 Public speaking / testimony required</td><td>PRC (TN 13), RES (TN 12), INT (TN 11)</td><td>+2 SP</td></tr>
+<tr><td>91–93</td><td>🏢 Workplace discrimination or harassment</td><td>RES (TN 13), PRC (TN 13), EXP (TN 12)</td><td>+3 SP</td></tr>
+<tr><td>94–96</td><td>🌪️ Compound crisis — roll twice, both happen</td><td>All attributes; TN +1</td><td>+6 SP minimum</td></tr>
+<tr><td>97–98</td><td>🌅 Crisis that leads to unexpected growth</td><td>RES (TN 14); success: +1 attribute</td><td>+3 SP, then −5 SP over 2 sessions</td></tr>
+<tr><td>99–00</td><td>💀 Worst-case scenario — GM discretion</td><td>All attributes; TN 15</td><td>+6 SP; existential threat level</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>📊 4. Economic Climate Tracker</h2>
+<p>The broader economy affects every character. Track these four indicators at the start of each campaign and adjust them quarterly (every 3 sessions). Roll <span class="dice">d6</span> for each — 1–2 = worse, 3–4 = stable, 5–6 = better.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Indicator</th><th>🔴 Bad (1–2)</th><th>🟡 Stable (3–4)</th><th>🟢 Good (5–6)</th><th>Effect on PCs</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>🏠 Housing Market</strong></td>
+<td>Rents rising fast; vacancies low; landlords aggressive</td>
+<td>Normal rental market; some options available</td>
+<td>Rents stable or dropping; more inventory</td>
+<td>Bad: +1 TN on housing checks; +1 SP. Good: −1 TN on housing checks; −1 SP.</td>
+</tr>
+<tr>
+<td><strong>💼 Job Market</strong></td>
+<td>Layoffs; hiring freezes; wage suppression</td>
+<td>Normal hiring; competitive but fair</td>
+<td>Job boom; wage increases; more openings</td>
+<td>Bad: +1 TN on employment checks; +1 SP. Good: −1 TN on employment checks.</td>
+</tr>
+<tr>
+<td><strong>🏥 Healthcare Access</strong></td>
+<td>Insurance gaps; long wait times; rising costs</td>
+<td>Adequate access; normal costs</td>
+<td>Expanded coverage; shorter waits; lower costs</td>
+<td>Bad: +1 TN on health checks; +1 SP. Good: −1 TN on health checks.</td>
+</tr>
+<tr>
+<td><strong>🌍 Social Climate</strong></td>
+<td>Polarization; discrimination; social tension</td>
+<td>Normal social friction; manageable</td>
+<td>Community cohesion; social support strong</td>
+<td>Bad: +1 TN on social checks; +1 SP. Good: −1 TN on social checks; −1 SP.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">📈 Economic Climate Rules</div>
+  <p><strong>Starting state:</strong> Roll all four indicators at campaign start. <strong>Quarterly shift:</strong> Every 3 sessions, roll d6 for each indicator. If the result differs by 2+ from the current state, shift it one step. If all four indicators are 🔴 for two consecutive quarters, trigger a <strong>macro crisis event</strong> (recession, pandemic, natural disaster) — see <a href="macro-economy.html">Macro Economy</a>. If all four are 🟢, trigger a <strong>golden period</strong> — bonus SP recovery for all PCs.</p>
+</div>
+
+<h2>📅 5. Seasonal Calendar</h2>
+<p>Monthly events that affect all characters regardless of their individual storylines. Use this to ground the campaign in the passage of time.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Month</th><th>Seasonal Event</th><th>Mechanical Effect</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>January</strong></td>
+<td>🆕 New Year resolutions; tax deadline prep; winter weather peak</td>
+<td>RES check (TN 10) to keep resolutions; +1 SP if winter is harsh (VIG check TN 10)</td>
+</tr>
+<tr>
+<td><strong>February</strong></td>
+<td>💕 Valentine's pressure; budget review (post-holiday spending)</td>
+<td>+1 SP if relationship status is complicated; INT check (TN 10) for finances</td>
+</tr>
+<tr>
+<td><strong>March</strong></td>
+<td>🌸 Spring transition; daylight saving; allergy season begins</td>
+<td>VIG check (TN 9) for allergies; −1 SP for longer days (mood boost)</td>
+</tr>
+<tr>
+<td><strong>April</strong></td>
+<td>📋 Tax season; spring cleaning; mid-year review</td>
+<td>INT check (TN 12) for taxes; +1 SP (stress); DXT check (TN 9) for cleaning</td>
+</tr>
+<tr>
+<td><strong>May</strong></td>
+<td>🎓 Graduation season; Memorial Day; outdoor activities increase</td>
+<td>−1 SP for outdoor time; possible life events for characters with children in school</td>
+</tr>
+<tr>
+<td><strong>June</strong></td>
+<td>☀️ Summer begins; travel season; longer days</td>
+<td>−1 SP (summer mood); possible vacation opportunities; DXT check (TN 9) for travel planning</td>
+</tr>
+<tr>
+<td><strong>July</strong></td>
+<td>🏖️ Peak summer; vacations; heat waves</td>
+<td>VIG check (TN 10) for heat; −2 SP if on vacation; +1 SP if stuck at work</td>
+</tr>
+<tr>
+<td><strong>August</strong></td>
+<td>📚 Back-to-school prep; end of summer; budget planning</td>
+<td>INT check (TN 11) for school/education planning; +1 SP if children involved</td>
+</tr>
+<tr>
+<td><strong>September</strong></td>
+<td>🍂 Fall transition; daylight saving; routine reset</td>
+<td>RES check (TN 10) to re-establish routines; −1 SP for fresh start feeling</td>
+</tr>
+<tr>
+<td><strong>October</strong></td>
+<td>🎃 Halloween; health awareness month; cooler weather</td>
+<td>INT check (TN 9) for health checkup; +1 SP if avoiding medical care</td>
+</tr>
+<tr>
+<td><strong>November</strong></td>
+<td>🦃 Thanksgiving; holiday spending begins; shorter days</td>
+<td>Family gathering: PRC check (TN 10); +1 SP if family dynamics are tense; INT check (TN 10) for budget</td>
+</tr>
+<tr>
+<td><strong>December</strong></td>
+<td>🎄 Holiday season; year-end review; cold weather peak</td>
+<td>+2 SP (holiday stress); INT check (TN 11) for year-end planning; VIG check (TN 10) for cold; −1 SP if holidays go well</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>📇 6. Quick Reference Cards</h2>
+<p>Print these for your table. Each card covers a core mechanic at a glance.</p>
+
+<div class="ref-card">
+<h4>🎲 Card 1: Core Resolution</h4>
+<table>
+<tr><td><strong>Roll:</strong></td><td><span class="dice">2d10 + Attribute Modifier vs Target Number (TN)</span></td></tr>
+<tr><td><strong>Attributes:</strong></td><td>VIG (Vigor), INT (Intelligence), EXP (Experience), DXT (Dexterity), RES (Resilience), PRC (Presence)</td></tr>
+<tr><td><strong>TN Guide:</strong></td><td>8 = Trivial · 10 = Easy · 12 = Moderate · 14 = Hard · 16 = Very Hard · 18 = Nearly Impossible</td></tr>
+<tr><td><strong>Success:</strong></td><td>Result ≥ TN = success. 5+ over TN = exceptional success (GM may award bonus).</td></tr>
+<tr><td><strong>Failure:</strong></td><td>Result < TN = failure. 5+ below TN = critical failure (complications arise).</td></tr>
+</table>
+<div class="card-label">Reality RPG — Core Resolution Reference</div>
+</div>
+
+<div class="ref-card">
+<h4>💚 Card 2: Stress Points (SP)</h4>
+<table>
+<tr><td><strong>Max SP:</strong></td><td><span class="dice">20 + (RES modifier × 5)</span></td></tr>
+<tr><td><strong>Example:</strong></td><td>RES 8 (mod −2) → Max SP = 20 + (−10) = 10. RES 12 (mod +2) → Max SP = 20 + 10 = 30.</td></tr>
+<tr><td><strong>Gaining SP:</strong></td><td>Stressful events add SP. See event tables for specific amounts.</td></tr>
+<tr><td><strong>Recovery:</strong></td><td>1 SP/week downtime · 3 SP/week genuine rest · 5 SP/week vacation or therapy</td></tr>
+<tr><td><strong>SP Overload:</strong></td><td>Exceeding max SP triggers a stress event — panic attack, breakdown, illness. See <a href="mental-health.html">Mental Health</a>.</td></tr>
+<tr><td><strong>SP = 0:</strong></td><td>Character is at peace. Rare and precious. All checks gain +1 bonus.</td></tr>
+</table>
+<div class="card-label">Reality RPG — Stress Point Reference</div>
+</div>
+
+<div class="ref-card">
+<h4>📊 Card 3: Attribute Modifiers</h4>
+<table>
+<thead><tr><th>Score</th><th>Modifier</th><th>Max SP</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>3–4</td><td>−4</td><td>0</td><td>Very poor — significant limitation</td></tr>
+<tr><td>5–6</td><td>−3</td><td>5</td><td>Poor — below average</td></tr>
+<tr><td>7</td><td>−2</td><td>10</td><td>Below average</td></tr>
+<tr><td>8</td><td>−1</td><td>15</td><td>Slightly below average</td></tr>
+<tr><td>9–10</td><td>+0</td><td>20</td><td>Average / normal</td></tr>
+<tr><td>11</td><td>+1</td><td>25</td><td>Above average</td></tr>
+<tr><td>12</td><td>+2</td><td>30</td><td>Well above average</td></tr>
+<tr><td>13</td><td>+3</td><td>35</td><td>Exceptional</td></tr>
+<tr><td>14–15</td><td>+4</td><td>40</td><td>Outstanding</td></tr>
+<tr><td>16+</td><td>+5</td><td>45</td><td>Rare / extraordinary</td></tr>
+</tbody>
+</table>
+<div class="card-label">Reality RPG — Attribute Score Reference</div>
+</div>
+
+<div class="ref-card">
+<h4>⏱️ Card 4: Time & Pacing</h4>
+<table>
+<tr><td><strong>Session:</strong></td><td>1–4 weeks of in-game time (GM chooses based on scene intensity)</td></tr>
+<tr><td><strong>Between sessions:</strong></td><td>Resolve background events, SP recovery, relationship evolution, seasonal changes</td></tr>
+<tr><td><strong>Campaign:</strong></td><td>Typically 10–12 sessions = ~6 months to 1 year of in-game time</td></tr>
+<tr><td><strong>Growth:</strong></td><td>After every 3 sessions, player may increase one attribute by +1 if justified by development</td></tr>
+<tr><td><strong>Downtime:</strong></td><td>Mark downtime sessions on the calendar. SP recovers faster during downtime.</td></tr>
+<tr><td><strong>Seasons:</strong></td><td>Use the Seasonal Calendar (above) for monthly events affecting all PCs</td></tr>
+</table>
+<div class="card-label">Reality RPG — Time & Pacing Reference</div>
+</div>
+
+<div class="ref-card">
+<h4>🏥 Card 5: Health & Vigor</h4>
+<table>
+<tr><td><strong>VIG checks:</strong></td><td>Physical tasks, illness resistance, endurance, pain tolerance</td></tr>
+<tr><td><strong>Health states:</strong></td><td>Healthy → Minor Ailment → Sick → Incapacitated → Hospitalized</td></tr>
+<tr><td><strong>Recovery:</strong></td><td>Minor: 1–3 days · Sick: 1–2 weeks · Incapacitated: 2–4 weeks · Hospitalized: 1+ months</td></tr>
+<tr><td><strong>Mental health:</strong></td><td>Tracked via SP system. High SP = worsening mental state. See <a href="mental-health.html">Mental Health</a>.</td></tr>
+<tr><td><strong>Treatment:</strong></td><td>Therapy: −2 to −5 SP/session · Medication: stabilizes but may have side effects · Lifestyle: slow but sustainable</td></tr>
+</table>
+<div class="card-label">Reality RPG — Health & Vigor Reference</div>
+</div>
+
+<h2>📝 7. Session Planning Template</h2>
+<p>Use this template to structure every session. Fill it out 15–30 minutes before play.</p>
+
+<div class="ref-card">
+<h4>📋 Session Plan</h4>
+<table>
+<tr><td><strong>Campaign:</strong></td><td>[Campaign name]</td></tr>
+<tr><td><strong>Session:</strong></td><td>#[Number] of [Total]</td></tr>
+<tr><td><strong>In-game date:</strong></td><td>[Start date] → [End date]</td></tr>
+<tr><td><strong>Weather / season:</strong></td><td>[From Seasonal Calendar]</td></tr>
+<tr><td><strong>Economic climate:</strong></td><td>[Current indicators]</td></tr>
+</table>
+
+<h4>Opening (5–10 min)</h4>
+<table>
+<tr><td><strong>Check-in:</strong></td><td>How is each PC doing? SP level? Mood? Any events between sessions?</td></tr>
+<tr><td><strong>SP recovery:</strong></td><td>Calculate SP recovered since last session (1/week downtime, 3/week rest)</td></tr>
+<tr><td><strong>Calendar events:</strong></td><td>Any seasonal events this month? Economic climate shift?</td></tr>
+</table>
+
+<h4>Main Scene(s) (40–60 min)</h4>
+<table>
+<tr><td><strong>Scene 1:</strong></td><td>[Describe the opening scene. Where, when, who's present.]</td></tr>
+<tr><td><strong>Key checks:</strong></td><td>[List 2–4 dice checks with TNs and attributes]</td></tr>
+<tr><td><strong>Scene 2:</strong></td><td>[Describe the second scene or escalation.]</td></tr>
+<tr><td><strong>Key checks:</strong></td><td>[List 2–4 dice checks]</td></tr>
+<tr><td><strong>Scene 3 (optional):</strong></td><td>[Climax, resolution, or unexpected event.]</td></tr>
+<tr><td><strong>Key checks:</strong></td><td>[List 2–4 dice checks]</td></tr>
+</table>
+
+<h4>NPCs Present</h4>
+<table>
+<tr><td><strong>NPC 1:</strong></td><td>[Name, role, agenda for this session]</td></tr>
+<tr><td><strong>NPC 2:</strong></td><td>[Name, role, agenda]</td></tr>
+<tr><td><strong>NPC 3:</strong></td><td>[Name, role, agenda]</td></tr>
+</table>
+
+<h4>SP Events This Session</h4>
+<table>
+<tr><td><strong>Expected SP changes:</strong></td><td>[+X from events, −Y from rest, net: Z]</td></tr>
+<tr><td><strong>Watch for:</strong></td><td>[Any PC near SP overload? Flag it.]</td></tr>
+</table>
+
+<h4>Closing (5–10 min)</h4>
+<table>
+<tr><td><strong>Session wrap:</strong></td><td>[Summarize outcomes. What changed?]</td></tr>
+<tr><td><strong>Next session hook:</strong></td><td>[What's coming? Tease it.]</td></tr>
+<tr><td><strong>Calendar advance:</strong></td><td>[New date. Any upcoming seasonal events?]</td></tr>
+<tr><td><strong>Growth check:</strong></td><td>[Is this session 3, 6, 9, or 12? If so, offer attribute increase.]</td></tr>
+</table>
+
+<h4>Random Events (optional)</h4>
+<p>Roll <span class="dice">d100</span> on the Daily Life table once per session for a spontaneous event. Roll on Work, Social, Health, or Financial tables if the session focuses on that area.</p>
+
+<div class="card-label">Reality RPG — Session Planning Template</div>
+</div>
+
+<h2>⚖️ 8. GM Ethics Guide</h2>
+<p>Reality RPG deals with real human struggles — poverty, illness, discrimination, grief, trauma, and everything in between. Running this game responsibly is not optional. It is the foundation of everything.</p>
+
+<div class="callout rule">
+  <div class="callout-title">🛡️ Core Principle</div>
+  <p><strong>The game is about reality, not exploitation.</strong> Difficult topics exist in the game because they exist in life. The GM's job is to handle them with care, respect, and intentionality — never for shock value, drama, or "realism" at the expense of player wellbeing.</p>
+</div>
+
+<h3>🔒 Before Play Begins</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Step</th><th>What to Do</th><th>Why</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>1. Lines & Veils</strong></td>
+<td>Every player lists topics that are <strong>strictly off-limits</strong> (lines) and topics that can occur but should be <strong>faded to black</strong> (veils). No exceptions. No negotiation.</td>
+<td>Players have different trauma histories. What's fine for one person is devastating for another. This is non-negotiable.</td>
+</tr>
+<tr>
+<td><strong>2. X-Card System</strong></td>
+<td>Agree on a signal (physical card, word, hand gesture) that <strong>any player</strong> can use at <strong>any time</strong> to stop content immediately. No explanation required. No debate. Just stop.</td>
+<td>People can't always predict what will trigger them. The X-card is a safety net that must be absolutely trusted.</td>
+</tr>
+<tr>
+<td><strong>3. Content Warnings</strong></td>
+<td>Give <strong>advance notice</strong> before any session that will deal with heavy topics: "Next session involves a health diagnosis scene." Allow players to prepare or opt out.</td>
+<td>Surprise is great for plot twists. Surprise is terrible for triggering trauma. Warn players.</td>
+</tr>
+<tr>
+<td><strong>4. Check-ins</strong></td>
+<td>Start each session with a <strong>quick emotional check-in</strong>: "How are you doing today? Is there anything you need me to know before we start?"</td>
+<td>Players' real lives affect their play. A bad day at work, a personal loss, or stress from outside the game changes what they can handle.</td>
+</tr>
+<tr>
+<td><strong>5. Aftercare</strong></td>
+<td>End heavy sessions with a <strong>debrief</strong>: "That was intense. How is everyone? Want to talk about it?" Offer a lighter activity or check-in before ending.</td>
+<td>Players can get emotionally absorbed. Help them transition back to their real lives.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>⚠️ During Play</h3>
+
+<div class="callout warning">
+  <div class="callout-title">🚫 Things the GM Should Never Do</div>
+  <ul>
+    <li><strong>Never</strong> use a player's real-life trauma as plot material without explicit, enthusiastic consent.</li>
+    <li><strong>Never</strong> force a player to roleplay a scene they've marked as a line.</li>
+    <li><strong>Never</strong> dismiss or minimize a player's emotional response to game content.</li>
+    <li><strong>Never</strong> use suffering as "character development" without the player's buy-in.</li>
+    <li><strong>Never</strong> make real-world marginalized experiences into "challenges to overcome" for entertainment.</li>
+    <li><strong>Never</strong> pressure a player to continue if they've used the X-card or asked for a break.</li>
+  </ul>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">✅ Things the GM Should Always Do</div>
+  <ul>
+    <li><strong>Always</strong> check in with players before introducing heavy content.</li>
+    <li><strong>Always</strong> give players agency over their character's emotional responses.</li>
+    <li><strong>Always</strong> honor the X-card immediately and without question.</li>
+    <li><strong>Always</strong> balance difficulty with hope — every dark scene should have a path forward.</li>
+    <li><strong>Always</strong> remind players this is a game and it's okay to step away.</li>
+    <li><strong>Always</strong> debrief after intense sessions.</li>
+    <li><strong>Always</strong> respect that a player's "no" is final, for any reason, at any time.</li>
+  </ul>
+</div>
+
+<h3>🧭 Running Sensitive Topics</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Topic</th><th>Approach</th><th>Safety Tool</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Mental illness</strong></td>
+<td>Pull from the <a href="mental-health.html">Mental Health</a> mechanics. Treat conditions with accuracy and respect. Recovery is possible but not guaranteed.</td>
+<td>Lines & veils for specific conditions. X-card for triggers. Content warning 24 hours in advance.</td>
+</tr>
+<tr>
+<td><strong>Trauma & abuse</strong></td>
+<td>Fade to black. Never describe the act. Focus on aftermath, processing, and healing. The player controls what happened to their character.</td>
+<td>Strict line on description. Veil on all references. Player owns the backstory entirely.</td>
+</tr>
+<tr>
+<td><strong>Discrimination & racism</strong></td>
+<td>If included, it should be at the request of a player whose character has this experience. Research real impacts. Never use as "spice."</td>
+<td>Player consent required. Content warning mandatory. Aftercare essential.</td>
+</tr>
+<tr>
+<td><strong>Death & grief</strong></td>
+<td>Use the <a href="death-grief.html">Death & Grief</a> framework. Grief is real and messy. Allow players to control the pace of grief scenes.</td>
+<td>Content warning. Check-ins before and after. Allow players to skip grief scenes.</td>
+</tr>
+<tr>
+<td><strong>Poverty & financial stress</strong></td>
+<td>Ground in real mechanics (<a href="inventory-economy.html">Inventory & Economy</a>). Show both the struggle and the community support systems. Avoid poverty porn.</td>
+<td>Player consent for poverty scenarios. Balance with moments of relief and community.</td>
+</tr>
+<tr>
+<td><strong>Sexual health & intimacy</strong></td>
+<td>Use the <a href="sexual-health.html">Sexual Health</a> framework. Fade to black on all intimate scenes. Focus on consent, communication, and health.</td>
+<td>Strict lines on description. Player consent for any romantic content. X-card always active.</td>
+</tr>
+<tr>
+<td><strong>Disability</strong></td>
+<td>Use the <a href="disability.html">Disability</a> framework. Disability is a life experience, not a penalty. Consult real disability resources and communities.</td>
+<td>Player consent for disability scenarios. Respect disability identity. Never use as punishment.</td>
+</tr>
+<tr>
+<td><strong>Addiction & substance use</strong></td>
+<td>If included, treat with clinical accuracy. Recovery is possible. Relapse is part of recovery for some. Never glamorize.</td>
+<td>Strict content warning. Lines on specific substances. Player owns their character's relationship to substances.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>🌱 The GM's Own Wellbeing</h3>
+
+<div class="callout example">
+  <div class="callout-title">💚 Take Care of Yourself Too</div>
+  <p>Running Reality RPG means carrying the emotional weight of the game for your players. That's real labor.</p>
+  <ul>
+    <li><strong>Debrief yourself</strong> after heavy sessions. Journal, talk to someone, take a walk.</li>
+    <li><strong>Set boundaries</strong> on how much emotional labor you can handle in one session.</li>
+    <li><strong>It's okay to say no</strong> to a player's request for a scenario you're not comfortable running.</li>
+    <li><strong>Rotate GM duties</strong> if your group is large enough. Shared responsibility is sustainable responsibility.</li>
+    <li><strong>Remember:</strong> You are facilitating a game, not providing therapy. If a player needs professional support, gently suggest they seek it.</li>
+  </ul>
+</div>
+
+<h3>📚 Recommended Resources</h3>
+<ul>
+  <li><strong><em>The Gamemaster's Philosophy</em></strong> — general best practices for running emotionally complex games</li>
+  <li><strong><em>Lines & Veils</em></strong> (Shakespeare & Company) — the original safety tool framework</li>
+  <li><strong><em>Script Change</em></strong> — allows players to rewrite uncomfortable scenes after the fact</li>
+  <li><strong><em>The X-Card</em></strong> — simple, universally understood safety signal</li>
+  <li><strong>NAMI.org</strong> — National Alliance on Mental Illness (for accurate mental health info)</li>
+  <li><strong>Crisis Text Line</strong> (text HOME to 741741) — if any player needs real-world support</li>
+</ul>
+
+<div class="callout rule">
+  <div class="callout-title">⚖️ Final Word</div>
+  <p>Reality RPG is powerful because it's real. That power comes with responsibility. The best GMs are not the ones who create the most drama — they are the ones who create the safest space for their players to explore the full range of human experience, knowing they will be held with care on the way back.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — A hyper-realistic life simulation tabletop role-playing game ruleset.
+</footer>
+
+</body>
+</html>

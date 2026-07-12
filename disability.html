@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disability &amp; Chronic Conditions — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html" class="active">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+  <span class="hero-icon">♿</span>
+  <h1>Disability &amp; Chronic Conditions</h1>
+  <p class="subtitle">Physical disability, chronic illness, and pain management — the invisible and visible realities that shape daily existence.</p>
+</section>
+
+<section class="content-section">
+<div class="container">
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Table Responsibility</div>
+  <p>This section deals with real disabilities, chronic illness, and pain. Many players may have personal experience with these conditions. <strong>Never</strong> assign a disability to a character without player consent. Never pressure a player to roleplay a condition they identify with personally. Use content warnings before scenes involving medical emergencies, pain episodes, or discrimination. The GM should ask each player what topics they want out of the game before play begins.</p>
+</div>
+
+<p>In Reality RPG, disability is not a <em>debuff</em> — it is a <strong>life context</strong>. Over 25% of U.S. adults have a disability. Chronic conditions affect 1 in 6 Americans. These are not edge cases; they are mainstream human experience. This page provides mechanics for navigating the physical realities of disability and chronic illness with the same depth and respect afforded to every other life domain.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Disability Is Not Optional</div>
+  <p>Disability can emerge from birth, accident, illness, aging, or injury during play. A character may start with a disability or acquire one through a <strong>Health Event</strong> (see §4.3). The GM rolls a hidden <span class="dice">2d10</span> each time a character suffers a severe injury or major illness — on 18+, the injury results in a lasting disability.</p>
+</div>
+
+<h2>1. The Disability Framework</h2>
+<p>Accessibility is a <strong>core game concept</strong> in Reality RPG, not an afterthought. The world is built for able-bodied people by default — and that structural reality has mechanical consequences for every character who navigates it differently.</p>
+
+<h3>1.1 The Accessibility Rating</h3>
+<p>Every location in the game has an <strong>Accessibility Rating (AR)</strong> from 1 to 10, set by the GM. This represents how well a space accommodates people with diverse physical needs:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>AR</th><th>Level</th><th>Description</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td>😡 Hostile</td><td>No accommodations; actively exclusionary; stairs only, no signage, narrow passages</td><td>Old basement bar, historic building without elevator</td></tr>
+<tr><td>3–4</td><td>😠 Barely</td><td>Minimal accommodations; some ADA compliance but poorly maintained</td><td>Older office building, small town clinic</td></tr>
+<tr><td>5–6</td><td>😐 Adequate</td><td>Standard ADA compliance; ramps, wide doors, accessible restrooms present</td><td>Most modern public buildings, chain restaurants</td></tr>
+<tr><td>7–8</td><td>😊 Good</td><td>Well-designed accessibility; sensory accommodations, flexible policies</td><td>New university campus, modern hospital</td></tr>
+<tr><td>9–10</td><td>🌟 Universal</td><td>Universal design; anticipates diverse needs; proactive accommodations</td><td>State-of-the-art facility, disability-first organization</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.2 Disability Modifiers</h3>
+<p>Each disability has a <strong>Disability Modifier (DM)</strong> that applies to relevant checks when the environment's Accessibility Rating is <strong>insufficient</strong> for the character's needs. The DM is <strong>added to the Target Number</strong> (making the check harder):</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Accessibility Check</div>
+  <p>When a character with a disability attempts an action in an environment with an Accessibility Rating below their <strong>Accessibility Need (AN)</strong>, they suffer a penalty: <code>DM = AN − AR</code>. This DM is added to the TN of any check that requires navigating or functioning in that space. If AR ≥ AN, no penalty applies.</p>
+</div>
+
+<h3>1.3 Energy Budget</h3>
+<p>Many disabilities require more energy for the same tasks. Characters with a disability have an <strong>Energy Budget</strong> of <code>10 + VIG</code> points per day. Each activity costs energy, and exhausting the budget imposes <strong>−1 to all attributes</strong> for the remainder of the day and adds <strong>+2 SP</strong>.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Activity</th><th>Normal Cost</th><th>With Disability Cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Basic morning routine</td><td>1 EP</td><td>2 EP</td><td>Hygiene, getting dressed, breakfast</td></tr>
+<tr><td>Commute</td><td>1 EP</td><td>2–4 EP</td><td>Depends on transportation needs and AR of route</td></tr>
+<tr><td>Work/school (per 4 hrs)</td><td>2 EP</td><td>3–5 EP</td><td>Higher if accommodations are lacking</td></tr>
+<tr><td>Social interaction</td><td>1 EP</td><td>1–3 EP</td><td>Higher with sensory or communication barriers</td></tr>
+<tr><td>Medical management (daily)</td><td>—</td><td>1–3 EP</td><td>Medication, monitoring, device charging</td></tr>
+<tr><td>Physical activity</td><td>2 EP</td><td>3–6 EP</td><td>Varies widely by disability type</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.4 Character Creation Options</h3>
+<p>During character creation, a player may choose to start with a disability. Doing so grants <strong>2 additional Background Points</strong> (for use toward education, skills, or socioeconomic advantages) — reflecting the reality that disabled people develop extraordinary resilience and adaptive strategies. A player may also choose to <strong>not</strong> have a disability; this is a valid and common choice.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: The Social Model of Disability</div>
+  <p>Use the <strong>social model</strong>: disability is not just what's "wrong" with a body — it's the mismatch between a body and an inaccessible world. A wheelchair user isn't "limited" by their chair; they're limited by stairs. Frame obstacles as <em>environmental failures</em>, not personal deficits. This produces richer, more accurate roleplay.</p>
+</div>
+
+<h2>2. Mobility Impairments</h2>
+<p>Mobility impairments affect a character's ability to move through physical space. These include paralysis, amputation, severe joint degeneration, muscular dystrophy, and other conditions affecting locomotion.</p>
+
+<h3>2.1 Wheelchair Users</h3>
+<p>A wheelchair user character has an <strong>Accessibility Need (AN) of 6</strong> — they require at least AR 6 for penalty-free navigation.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Situation</th><th>TN Modifier</th><th>Mechanic</th></tr></thead>
+<tbody>
+<tr><td>Navigating inaccessible space (AR &lt; 6)</td><td>+DM to TN</td><td><span class="dice">DXT check</span> to navigate obstacles; failure = delay or injury</td></tr>
+<tr><td>Using public transit</td><td>+5 TN if no elevator/lift</td><td><span class="dice">DXT + VIG check (TN 55)</span> to board alight safely</td></tr>
+<tr><td>Rushing/emergency evacuation</td><td>+10 TN</td><td>Must roll <span class="dice">DXT check (TN 60)</span>; failure means needing assistance</td></tr>
+<tr><td>Long-distance travel without accessible transport</td><td>—</td><td>Character cannot proceed without help; must find alternative route or assistance</td></tr>
+<tr><td>Daily commuting (accessible route)</td><td>None</td><td>Normal time and energy cost</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Equipment Costs</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Equipment</th><th>Cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Manual wheelchair (basic)</td><td>$500–$1,500</td><td>Durable but heavy; requires upper body strength</td></tr>
+<tr><td>Manual wheelchair (lightweight)</td><td>$2,000–$5,000</td><td>Easier to propel, better for daily use</td></tr>
+<tr><td>Power wheelchair</td><td>$3,000–$15,000+</td><td>Independent mobility; requires charging; battery range ~10–15 miles</td></tr>
+<tr><td>Wheelchair ramp (portable)</td><td>$200–$800</td><td>For single-step access; weight limit matters</td></tr>
+<tr><td>Wheelchair accessible vehicle modification</td><td>$10,000–$30,000</td><td>Lift, ramp, or side-entry conversion</td></tr>
+<tr><td>Wheelchair maintenance (annual)</td><td>$200–$600</td><td>Tires, bearings, upholstery, tune-ups</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.2 Prosthetics</h3>
+<p>Characters with limb amputations may use prosthetic devices. Prosthetics have a <strong>Function Rating</strong> that modifies relevant DXT checks:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Prosthetic Level</th><th>Cost</th><th>DXT Modifier</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Basic cosmetic</td><td>$1,000–$5,000</td><td>−5 on limb-specific checks</td><td>Primarily aesthetic; minimal function</td></tr>
+<tr><td>Body-powered</td><td>$5,000–$15,000</td><td>−3 on limb-specific checks</td><td>Cable-operated; requires residual limb strength</td></tr>
+<tr><td>Microprocessor-controlled</td><td>$30,000–$75,000</td><td>−1 on limb-specific checks</td><td>Sensor-driven; near-natural range of motion</td></tr>
+<tr><td>Bionic/osseointegrated</td><td>$80,000–$150,000+</td><td>No penalty</td><td>Direct bone integration; nerve signal control; rare</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Prosthetic Failure</div>
+  <p>Once per month, the GM may call for a <span class="dice">DXT check (TN 40)</span> for the prosthetic. On failure, the device malfunctions: a socket becomes loose, a battery dies, or a joint locks. The character must make a <span class="dice">DXT check (TN 50)</span> to fix it in the field or find appropriate tools/assistance. Prosthetic repair costs <strong>$50–$500</strong> per incident.</p>
+</div>
+
+<h3>2.3 Mobility Aids</h3>
+<p>Characters using canes, crutches, walkers, or braces have an <strong>AN of 5</strong> and move at <strong>half speed</strong> (taking twice as long for any timed movement). They suffer a <strong>+3 TN penalty</strong> on DXT checks involving running, climbing, or rapid movement.</p>
+
+<h3>2.4 Accommodation Rights</h3>
+<p>Characters with mobility impairments have legal rights under the Americans with Disabilities Act (ADA). If a business or institution refuses reasonable accommodation:</p>
+<ul>
+<li>The character can file a complaint with the Department of Justice — <span class="dice">INT + Law check (TN 50)</span> to successfully navigate the process</li>
+<li>Successful complaint: the entity must make changes within <strong>30–90 days</strong> and may face fines of <strong>$55,000–$110,000</strong> (first and second offenses)</li>
+<li>The character gains <strong>+3 SP</strong> from the stress of fighting for their rights, even if successful</li>
+</ul>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Maya Navigates an Old Building</div>
+  <p>Maya uses a power wheelchair. She needs to attend a meeting at a historic downtown office (AR 3). Her AN is 6, so DM = 6 − 3 = 3. The building has only one narrow staircase entrance and no elevator. The GM calls for a <span class="dice">DXT check (TN 50 + 3 = 53)</span> to find an accessible route. Maya rolls 47 — she fails. She has to call ahead and request the building manager open a side entrance with a ramp, costing 30 minutes of her time and +2 SP from the frustration.</p>
+</div>
+
+<h2>3. Sensory Impairments</h2>
+
+<h3>3.1 Visual Impairment</h3>
+<p>Visual impairment ranges from <strong>low vision</strong> (partial sight) to <strong>blindness</strong> (no functional vision). Both are covered by the same framework with different severity levels.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Low Vision</th><th>Blind</th></tr></thead>
+<tbody>
+<tr><td>AN (Accessibility Need)</td><td>5</td><td>7</td></tr>
+<tr><td>Navigation penalty (AR &lt; AN)</td><td>+DM to TN</td><td>+DM to TN; cannot navigate without guide/cane</td></tr>
+<tr><td>Reading/writing checks</td><td>+5 TN without magnification tools</td><td>Must use screen reader/braille; +3 TN for time cost</td></tr>
+<tr><td>Social perception</td><td>−3 on PRC checks reading body language</td><td>Cannot read body language; +5 TN on PRC social reads</td></tr>
+<tr><td>Compensatory bonus</td><td>—</td><td><strong>+5 to auditory perception checks</strong> (hearing details, identifying voices)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Assistive Technology</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tool</th><th>Cost</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Screen reader software (NVDA, JAWS)</td><td>Free–$1,000</td><td>Enables computer use; reduces reading TN penalty to +1</td></tr>
+<tr><td>White cane</td><td>$50–$300</td><td>Reduces navigation penalty by 2 in unfamiliar spaces</td></tr>
+<tr><td>Guide dog</td><td>$15,000–$30,000 (training)</td><td>Eliminates navigation penalty; +5 to safety in traffic; requires daily care</td></tr>
+<tr><td>Smartphone accessibility (VoiceOver, TalkBack)</td><td>Included with phone</td><td>Enables independent phone use; reduces communication TN by 3</td></tr>
+<tr><td>Braille display</td><td>$500–$3,000</td><td>Refresable braille output; reduces reading penalty to +1</td></tr>
+<tr><td>Electronic magnifier</td><td>$200–$1,500</td><td>For low vision; reduces reading TN penalty by 3</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.2 Hearing Impairment</h3>
+<p>Hearing impairment ranges from <strong>hard of hearing</strong> (partial hearing) to <strong>deafness</strong> (no functional hearing). Deaf culture is a rich identity with its own language and community.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Hard of Hearing</th><th>Deaf</th></tr></thead>
+<tbody>
+<tr><td>AN (Accessibility Need)</td><td>4</td><td>6</td></tr>
+<tr><td>Communication penalty (AR &lt; AN)</td><td>+DM on INT/PRC communication checks</td><td>+DM; cannot participate in spoken conversations without accommodation</td></tr>
+<tr><td>Alarm/safety awareness</td><td>−3 on perception checks for auditory cues</td><td>−8; must rely on visual/tactile alerts</td></tr>
+<tr><td>Compensatory bonus</td><td>—</td><td><strong>+5 to visual observation checks</strong> (reading lips, facial expressions, body language)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Sign Language as a Skill</h4>
+<p>American Sign Language (ASL) is a <strong>full Language skill</strong> in Reality RPG, just like Spanish or Mandarin. Characters who are Deaf or who have Deaf connections may learn ASL during character creation or through in-game study.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Proficiency</th><th>Study Time</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Basic</td><td>1–3 months</td><td>Can handle greetings, simple requests; +3 TN on complex communication</td></tr>
+<tr><td>Conversational</td><td>6–12 months</td><td>Can hold everyday conversations; no TN penalty for basic interactions</td></tr>
+<tr><td>Fluent</td><td>1–2 years</td><td>Full communication; can discuss abstract topics, humor, emotion</td></tr>
+<tr><td>Native-level</td><td>Grew up in Deaf family/community</td><td>Full cultural + linguistic fluency; +5 to PRC checks within Deaf community</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Assistive Technology</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tool</th><th>Cost</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Hearing aids (pair)</td><td>$1,500–$7,000</td><td>Reduces communication penalty by 3; requires batteries, maintenance</td></tr>
+<tr><td>Cochlear implant</td><td>$30,000–$80,000 (surgery + device)</td><td>Restores partial hearing; reduces most penalties to 0; requires therapy</td></tr>
+<tr><td>Captioning service (phone)</td><td>Free (federally funded)</td><td>Real-time captioning for phone calls; eliminates phone communication penalty</td></tr>
+<tr><td>Vibration alarm system</td><td>$100–$500</td><td>Replaces auditory alarms (fire, doorbell, phone)</td></tr>
+<tr><td>Video relay service (VRS)</td><td>Free (federally funded)</td><td>Sign language interpreter via video for phone calls</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: James at a Restaurant</div>
+  <p>James is Deaf (AN 6). He enters a trendy restaurant (AR 4 — no captioning, staff doesn't know ASL). DM = 6 − 4 = 2. The GM calls for a <span class="dice">PRC check (TN 45 + 2 = 47)</span> to order food. James rolls 52 — success. He uses his phone's text-to-speak feature to communicate with the server, but it takes extra time. He gains +1 SP from the extra effort of navigating an inaccessible space.</p>
+</div>
+
+<h2>4. Chronic Physical Conditions</h2>
+<p>Chronic conditions are long-term health issues that require ongoing management. They generate daily energy costs, periodic complications, and stress. Each condition has a <strong>Daily Cost</strong> (energy points), a <strong>Complication Threshold</strong> (when things go wrong), and a <strong>Management Modifier</strong> (how well treatment controls it).</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Condition Management</div>
+  <p>At the start of each week, the GM calls for a <span class="dice">RES check (TN = 40 − Management Modifier)</span>. On success, the condition is well-controlled that week. On failure, the character experiences a <strong>complication event</strong> (detailed per condition). Characters who are <strong>untreated</strong> have no Management Modifier and suffer complications every week.</p>
+</div>
+
+<h3>4.1 Diabetes (Type 1)</h3>
+<p>Type 1 diabetes is an autoimmune condition requiring <strong>daily insulin management</strong>. It is not caused by lifestyle — it is a lifelong medical condition.</p>
+
+<h4>Daily Insulin Management Mechanic</h4>
+<p>Each day, the character must complete their insulin routine. This costs <strong>2 EP</strong> from their Energy Budget and involves:</p>
+<ol>
+<li><strong>Blood glucose monitoring</strong> — <span class="dice">DXT check (TN 30)</span> to accurately check blood sugar. Failure means an incorrect reading (±20 mg/dL).</li>
+<li><strong>Insulin dosing</strong> — Based on the reading, the character calculates and administers insulin. A correct reading + <span class="dice">INT check (TN 35)</span> = correct dose. Failure = wrong dose.</li>
+<li><strong>Meal planning</strong> — Carbohydrate counting requires a <span class="dice">INT check (TN 40)</span> to match insulin to food intake.</li>
+</ol>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Daily Routine Step</th><th>Check</th><th>TN</th><th>Failure Effect</th></tr></thead>
+<tbody>
+<tr><td>Blood glucose check</td><td><span class="dice">DXT</span></td><td>30</td><td>Inaccurate reading; dosing based on wrong data</td></tr>
+<tr><td>Insulin dosing</td><td><span class="dice">INT</span></td><td>35</td><td>Under-dosing (+5 SP, hyperglycemia) or over-dosing (hypoglycemia risk)</td></tr>
+<tr><td>Carb counting</td><td><span class="dice">INT</span></td><td>40</td><td>Blood sugar swings after meal</td></tr>
+<tr><td>Continuous Glucose Monitor (CGM) use</td><td>None</td><td>—</td><td>Automates steps 1–2; reduces daily EP cost by 1</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Complication Events</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll <span class="dice">1d10</span></th><th>Event</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Hypoglycemia (low blood sugar)</strong></td><td>Immediate <span class="dice">RES check (TN 50)</span> or suffer −2 to all attributes for 1 hour; confusion, shaking, sweating</td></tr>
+<tr><td>2</td><td><strong>Hyperglycemia (high blood sugar)</strong></td><td>+3 SP; fatigue; frequent urination; if untreated for 3+ days, risk of DKA</td></tr>
+<tr><td>3</td><td><strong>Insulin pump malfunction</strong></td><td>Must switch to manual injections; +2 EP daily until fixed; repair cost $50–$200</td></tr>
+<tr><td>4</td><td><strong>Sick day — ketone risk</strong></td><td>Must test for ketones; <span class="dice">RES check (TN 45)</span> to manage safely; failure = hospital visit ($500–$5,000)</td></tr>
+<tr><td>5–6</td><td><strong>Blood sugar swing</strong></td><td>+2 SP; mood changes, difficulty concentrating for the day</td></tr>
+<tr><td>7–8</td><td><strong>Injection site issue</strong></td><td>Lipohypertrophy or infection; +1 EP daily for a week</td></tr>
+<tr><td>9</td><td><strong>Supply shortage</strong></td><td>Must find insulin/CGM supplies urgently; <span class="dice">INT check (TN 55)</span> to navigate pharmacy/insurance</td></tr>
+<tr><td>10</td><td><strong>DKA (diabetic ketoacidosis)</strong></td><td>Medical emergency; immediate hospital visit; character bedridden 1–3 days; $1,000–$10,000 cost</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>Equipment and Costs</h4>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Item</th><th>Monthly Cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Insulin (vials/pens)</td><td>$100–$800</td><td>Insurance coverage varies dramatically</td></tr>
+<tr><td>Test strips</td><td>$30–$100</td><td>Used 4–10 times daily</td></tr>
+<tr><td>CGM sensors</td><td>$70–$150</td><td>Replaced every 7–14 days</td></tr>
+<tr><td>Insulin pump</td><td>$0–$500/mo (lease)</td><td>Upfront cost $4,000–$12,000</td></tr>
+<tr><td>Annual specialist visits</td><td>$0–$2,000</td><td>Endocrinologist; depends on insurance</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.2 Asthma</h3>
+<p>Asthma causes airway inflammation and constriction. It is triggered by allergens, exercise, stress, cold air, and pollution.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Trigger</th><th>Asthma Attack TN</th><th>Effect of Attack</th></tr></thead>
+<tbody>
+<tr><td>Known allergen exposure</td><td><span class="dice">RES check (TN 45)</span></td><td>Failure = wheezing, shortness of breath; −3 to VIG-based checks for 1–6 hours</td></tr>
+<tr><td>Exercise without pre-medication</td><td><span class="dice">RES check (TN 40)</span></td><td>Failure = exercise-induced bronchoconstriction; must stop activity</td></tr>
+<tr><td>Stress (SP &gt; 15)</td><td><span class="dice">RES check (TN 50)</span></td><td>Failure = stress-induced attack; +3 more SP</td></tr>
+<tr><td>Cold weather / pollution</td><td><span class="dice">RES check (TN 35)</span></td><td>Failure = mild symptoms; +1 SP</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Daily cost:</strong> 1 EP (inhaler management, monitoring). <strong>Management Modifier:</strong> +10 with proper medication; +5 with partial compliance; 0 if untreated.</p>
+
+<h3>4.3 Epilepsy</h3>
+<p>Epilepsy causes recurrent seizures triggered by stress, sleep deprivation, flashing lights, missed medication, or no apparent cause.</p>
+
+<h4>Seizure Event Table</h4>
+<p>When a character with epilepsy fails their weekly <span class="dice">RES management check</span>, roll <span class="dice">1d10</span>:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th><span class="dice">1d10</span></th><th>Seizure Type</th><th>Duration</th><th>Aftermath</th></tr></thead>
+<tbody>
+<tr><td>1–2</td><td><strong>Absence seizure</strong></td><td>5–20 seconds</td><td>Character "zones out"; may miss important conversation/event; +1 SP</td></tr>
+<tr><td>3–4</td><td><strong>Focal seizure</strong></td><td>30 seconds–2 minutes</td><td>Unusual behavior, tingling, fear; character confused afterward; +2 SP</td></tr>
+<tr><td>5–6</td><td><strong>Tonic-clonic (grand mal)</strong></td><td>1–3 minutes</td><td>Falling, convulsions; post-ictal confusion 1–6 hours; −2 to all attributes for the rest of the day; +5 SP</td></tr>
+<tr><td>7</td><td><strong>Aura only (warning)</strong></td><td>1–2 minutes</td><td>Character feels seizure coming; can take precautions; +1 SP</td></tr>
+<tr><td>8</td><td><strong>Cluster seizures</strong></td><td>Multiple over hours</td><td>Character bedridden; needs supervision; +5 SP; may require ER visit</td></tr>
+<tr><td>9</td><td><strong>Seizure during activity</strong></td><td>Varies</td><td>Injury risk: <span class="dice">DXT check (TN 60)</span> to avoid harm; failure = minor injury (bruising, cut)</td></tr>
+<tr><td>10</td><td><strong>Status epilepticus</strong></td><td>>5 minutes continuous</td><td>Medical emergency; call 911; hospital visit; character bedridden 2–5 days; $1,000–$15,000</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Daily cost:</strong> 1–2 EP (medication, sleep management). <strong>Management Modifier:</strong> +12 with proper medication; +5 if partially compliant; 0 if untreated.</p>
+
+<h3>4.4 Multiple Sclerosis (MS)</h3>
+<p>MS is an autoimmune disease affecting the central nervous system. Symptoms vary dramatically and include fatigue, numbness, weakness, vision problems, and cognitive fog.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>MS Symptom</th><th>Frequency</th><th>Mechanical Effect</th></tr></thead>
+<tbody>
+<tr><td>Extreme fatigue</td><td>Daily</td><td>+2 EP daily energy cost; −1 VIG if Energy Budget exhausted</td></tr>
+<tr><td>Numbness/weakness</td><td>Weekly</td><td><span class="dice">DXT check (TN 45)</span> each morning; failure = −3 DXT for the day</td></tr>
+<tr><td>Vision disturbance</td><td>Monthly</td><td>+5 TN on all visual checks for 1–7 days</td></tr>
+<tr><td>Cognitive fog</td><td>Weekly</td><td>−3 INT for the day; difficulty concentrating</td></tr>
+<tr><td>Relapse/exacerbation</td><td>Every 2–6 months</td><td>New or worsening symptoms; <span class="dice">RES check (TN 55)</span> to manage; failure = hospital visit</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Daily cost:</strong> 2–4 EP. <strong>AN:</strong> 6 (may need mobility assistance during bad periods). <strong>Management Modifier:</strong> +8 with disease-modifying therapy; +3 with symptomatic treatment only.</p>
+
+<h3>4.5 Crohn's Disease / IBS</h3>
+<p>Gastrointestinal conditions causing pain, urgency, fatigue, and dietary restrictions. These are <strong>invisible disabilities</strong> with significant daily impact.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Event</th><th>Check</th><th>TN</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Morning symptom check</td><td><span class="dice">RES</span></td><td>40</td><td>Failure = painful day; +2 SP; −1 VIG</td></tr>
+<tr><td>Flare-up during activity</td><td><span class="dice">RES</span></td><td>45</td><td>Failure = urgency; must find restroom immediately; social embarrassment if unavailable</td></tr>
+<tr><td>Dietary restriction</td><td>—</td><td>—</td><td>Cannot eat trigger foods; limited restaurant options; social dining +3 TN</td></tr>
+<tr><td>Pain management</td><td><span class="dice">RES</span></td><td>50</td><td>Failure during flare = bedridden for 4–12 hours</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Daily cost:</strong> 1–3 EP. <strong>Management Modifier:</strong> +10 with proper medication + dietary adherence; +5 with medication only.</p>
+
+<h3>4.6 Chronic Fatigue Syndrome (ME/CFS)</h3>
+<p>ME/CFS causes debilitating fatigue that is <strong>not relieved by rest</strong> and worsens after physical or mental exertion (Post-Exertional Malaise, or PEM).</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: Pacing and PEM</div>
+  <p>Characters with ME/CFS must <strong>pace</strong> their energy. Each day, the GM tracks their <strong>Exertion Level</strong>. If they exceed their <strong>Energy Budget</strong>, they suffer PEM: −2 to all attributes for <strong>1d4 days</strong>, +5 SP, and their Energy Budget is reduced by 2 for the next week. Pacing is a skill — characters with high EXP at managing their condition gain a <strong>+5 bonus</strong> to their Energy Budget.</p>
+</div>
+
+<p><strong>Daily cost:</strong> 2–5 EP (varies by severity). <strong>Base Energy Budget:</strong> reduced to <code>5 + VIG</code> (vs. normal <code>10 + VIG</code>). <strong>Management Modifier:</strong> +5 with strict pacing; 0 without.</p>
+
+<h3>4.7 Autoimmune Disorders (General)</h3>
+<p>Autoimmune conditions (lupus, rheumatoid arthritis, Hashimoto's, celiac, etc.) share a common framework: the body attacks itself, causing systemic inflammation and organ-specific damage.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Condition</th><td>Affected Systems</td><th>Key Mechanic</th><th>Daily EP</th></tr></thead>
+<tbody>
+<tr><td>Lupus</td><td>Multiple organs, joints, skin</td><td>Flare-ups every 1–4 weeks; <span class="dice">RES check (TN 50)</span> to manage</td><td>2–3</td></tr>
+<tr><td>Rheumatoid Arthritis</td><td>Joints, mobility</td><td>Morning stiffness: first hour of day at −3 DXT; AN 6</td><td>2</td></tr>
+<tr><td>Hashimoto's</td><td>Thyroid, metabolism</td><td>−1 VIG; fatigue; weight management difficulty (+5 TN on diet checks)</td><td>1–2</td></tr>
+<tr><td>Celiac Disease</td><td>Digestive system</td><td>Accidental gluten exposure: <span class="dice">RES check (TN 45)</span> or 24–48 hours of illness</td><td>1</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.8 Acquiring Disabilities In-Game</h3>
+<p>When a character suffers a severe injury, illness, or accident, the GM rolls <span class="dice">2d10</span> (hidden). On 18+, the character acquires a lasting disability. The specific disability depends on the nature of the event:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Event Type</th><th>Possible Disabilities</th><th>Severity Roll <span class="dice">1d6</span></th></tr></thead>
+<tbody>
+<tr><td>Car accident</td><td>Paralysis, amputation, TBI, chronic pain</td><td>1–2: Mild, 3–4: Moderate, 5–6: Severe</td></tr>
+<tr><td>Fall</td><td>Fracture (possibly permanent), spinal injury</td><td>Same as above</td></tr>
+<tr><td>Infectious disease</td><td>Chronic illness, organ damage, fatigue</td><td>Same as above</td></tr>
+<tr><td>Stroke/heart attack</td><td>Paralysis, cognitive impairment, chronic fatigue</td><td>3–4: Moderate, 5–6: Severe (rarely Mild)</td></tr>
+<tr><td>Gradual (aging/illness)</td><td>Arthritis, vision loss, hearing loss, MS</td><td>Starts Mild; worsens 1 step per year</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>5. Chronic Pain System</h2>
+<p>Chronic pain is distinct from acute pain. It persists beyond normal healing time (3+ months) and becomes its own condition — reshaping the nervous system, mood, sleep, and identity. Approximately 20% of U.S. adults live with chronic pain.</p>
+
+<h3>5.1 Pain Levels</h3>
+<p>Chronic pain is tracked on a <strong>Pain Scale</strong> of 0–10. Unlike acute pain, chronic pain <strong>does not heal on its own</strong> — it fluctuates based on triggers, treatment, and stress.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Pain Level</th><th>Range</th><th>Effects</th><th>Narrative</th></tr></thead>
+<tbody>
+<tr><td>😌 <strong>None</strong></td><td>0</td><td>No penalty</td><td>Character feels normal</td></tr>
+<tr><td>😐 <strong>Mild</strong></td><td>1–3</td><td>Background awareness; −2 on VIG checks</td><td>Ache, stiffness, discomfort — manageable</td></tr>
+<tr><td>😟 <strong>Moderate</strong></td><td>4–6</td><td>Noticeable impairment; −3 on all checks; +2 SP daily</td><td>Pain is distracting; hard to focus; sleep disrupted</td></tr>
+<tr><td>😰 <strong>Severe</strong></td><td>7–8</td><td>−5 on all checks; +4 SP daily; Energy Budget −3</td><td>Pain dominates awareness; movement painful; mood affected</td></tr>
+<tr><td>💥 <strong>Debilitating</strong></td><td>9–10</td><td>−8 on all checks; character bedridden; +5 SP; cannot perform most activities</td><td>Agony; can barely function; may require emergency care</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.2 Daily Pain Management</h3>
+<p>Each morning, the character rolls <span class="dice">2d10 + RES modifier + Treatment Modifier</span> to determine their base pain level for the day:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Roll Result</th><th>Starting Pain Level</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>20+</td><td>0–1</td><td>Good day; pain well-controlled</td></tr>
+<tr><td>15–19</td><td>2–3</td><td>Mild pain; manageable</td></tr>
+<tr><td>10–14</td><td>4–6</td><td>Moderate pain; planning needed</td></tr>
+<tr><td>5–9</td><td>7–8</td><td>Severe pain; limit activities</td></tr>
+<tr><td>2–4</td><td>9–10</td><td>Debilitating; crisis management</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.3 Treatment Modifiers</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Treatment</th><th>Modifier</th><th>Cost</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>None (untreated)</td><td>0</td><td>$0</td><td>Pain levels naturally worsen over time</td></tr>
+<tr><td>OTC pain relievers</td><td>+3</td><td>$5–$20/month</td><td>Diminishing returns with long-term use; stomach risk</td></tr>
+<tr><td>Prescription NSAIDs</td><td>+5</td><td>$10–$100/month</td><td>Better control; kidney/stomach risk with long-term use</td></tr>
+<tr><td>Opioids</td><td>+8</td><td>$50–$500/month</td><td>High risk of dependence; tolerance builds; <span class="dice">RES check (TN 45)</span> monthly to avoid addiction</td></tr>
+<tr><td>Physical therapy</td><td>+5</td><td>$50–$150/session</td><td>Gradual improvement; 2–3 sessions/week recommended</td></tr>
+<tr><td>Acupuncture</td><td>+4</td><td>$50–$120/session</td><td>Complementary; works best with other treatments</td></tr>
+<tr><td>Multimodal (combination)</td><td>+10</td><td>Varies</td><td>Best outcomes; medication + therapy + lifestyle</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.4 Flare-Ups</h3>
+<p>During the day, certain triggers can cause a <strong>flare-up</strong>, increasing pain level by 2–4 points for <strong>1d4 hours</strong>:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Trigger</th><th>Flare-Up Risk</th><th>Pain Increase</th></tr></thead>
+<tbody>
+<tr><td>Physical exertion beyond capacity</td><td><span class="dice">RES check (TN 40)</span></td><td>+2–4</td></tr>
+<tr><td>Stress (SP &gt; 15)</td><td><span class="dice">RES check (TN 45)</span></td><td>+2–3</td></tr>
+<tr><td>Poor sleep</td><td>Automatic</td><td>+2</td></tr>
+<tr><td>Weather changes (barometric pressure)</td><td><span class="dice">RES check (TN 35)</span></td><td>+1–2</td></tr>
+<tr><td>Missed medication</td><td>Automatic</td><td>+3–5</td></tr>
+<tr><td>Emotional distress</td><td><span class="dice">RES check (TN 50)</span></td><td>+2</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: David's Chronic Pain Day</div>
+  <p>David has chronic back pain from a workplace injury. He takes prescription NSAIDs (+5 Treatment Modifier) and does physical therapy (+5). His RES is 11 (+1 modifier).<br><br>
+  Morning roll: <span class="dice">2d10</span> = 12 + 1 (RES) + 10 (Treatment) = 23. Pain level: 0–1. Good morning!<br><br>
+  Midday, he lifts a heavy box at work (physical exertion). GM calls for <span class="dice">RES check (TN 40)</span>. David rolls 38 — failure. Flare-up: +3 pain. His pain jumps to 3–4.<br><br>
+  Evening, after a stressful argument at home (SP rises to 18). <span class="dice">RES check (TN 45)</span>. He rolls 42 — failure. Another +2. Pain is now 5–6 (Moderate). He can barely sit through dinner. He gains +2 SP from the pain itself.<br><br>
+  He takes a warm bath and does gentle stretching (self-care). Pain drops by 1. He ends the day at 4–5, exhausted but functional.</p>
+</div>
+
+<h2>6. Disability Benefits &amp; Systems</h2>
+<p>Navigating government benefits and accommodations is a major part of life for many disabled characters. This system adds bureaucratic complexity — and survival resources.</p>
+
+<h3>6.1 SSDI/SSI (Social Security Disability)</h3>
+<p>Federal disability benefits provide income support for characters who cannot work due to their condition. The application process is notoriously difficult:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Step</th><th>Check</th><th>TN</th><th>Time</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Initial application</td><td><span class="dice">INT + EXP (bureaucracy)</span></td><td>45</td><td>2–6 months</td><td>Fill out forms; provide medical documentation</td></tr>
+<tr><td>Initial decision</td><td>GM roll (hidden)</td><td>—</td><td>—</td><td>70% denial rate on initial application</td></tr>
+<tr><td>Reconsideration</td><td><span class="dice">INT + EXP</span></td><td>50</td><td>1–3 months</td><td>Appeal the denial; gather more evidence</td></tr>
+<tr><td>Administrative hearing</td><td><span class="dice">INT + PRC</span></td><td>55</td><td>6–18 months</td><td>Present case before an ALJ; may hire lawyer ($2,000–$7,000)</td></tr>
+<tr><td>Appeals Council</td><td><span class="dice">INT + EXP</span></td><td>60</td><td>6–12 months</td><td>Further appeal; 10% approval rate</td></tr>
+<tr><td>Federal court</td><td><span class="dice">INT + EXP</span></td><td>65</td><td>1–3 years</td><td>Last resort; requires attorney</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Rule: The Benefit Cliff</div>
+  <p>Characters receiving SSDI/SSI have strict income limits. Earning above <strong>$1,350/month</strong> (2023 SGA) can result in benefit termination. This creates a <strong>Benefit Cliff</strong>: working more hours to earn more money may result in losing healthcare and income support worth far more. The GM should track the character's income carefully.</p>
+</div>
+
+<h3>6.2 Workplace/School Accommodations</h3>
+<p>Under the ADA and Section 504, characters are entitled to reasonable accommodations:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Accommodation</th><th>Typical Request</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td>Flexible schedule</td><td>Modified hours, remote work</td><td>Reduces daily EP cost by 1; +5 to Energy Budget</td></tr>
+<tr><td>Physical modifications</td><td>Accessible desk, ramp, restroom</td><td>Increases effective AR of workplace by 2–3</td></tr>
+<tr><td>Assistive technology</td><td>Screen reader, dictation software</td><td>Reduces relevant TN penalties by 3</td></tr>
+<tr><td>Break time</td><td>Additional rest breaks</td><td>−1 SP per break (up to 3 breaks/day)</td></tr>
+<tr><td>Extended deadlines</td><td>More time for tasks/exams</td><td>−5 TN on timed INT checks</td></tr>
+<tr><td>Service animal at work</td><td>ESA/SDA accommodation</td><td>+5 SP recovery; reduces workplace stress by 2 SP/day</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Requesting accommodations requires a <span class="dice">PRC check (TN 40)</span> to communicate needs effectively. Employers/schools can deny <strong>undue hardship</strong> requests — the GM rolls <span class="dice">2d10</span>; on 15+, the request is denied (more likely for small businesses).</p>
+
+<h3>6.3 Accessibility Laws</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Law</th><th>Covers</th><th>Character Relevance</th></tr></thead>
+<tbody>
+<tr><td>ADA (Americans with Disabilities Act)</td><td>Employment, public accommodations, government</td><td>Right to accommodations; anti-discrimination</td></tr>
+<tr><td>Section 504</td><td>Federal-funded programs (schools, hospitals)</td><td>Education accommodations; healthcare access</td></tr>
+<tr><td>Fair Housing Act</td><td>Residential housing</td><td>Right to reasonable modifications; accessible housing</td></tr>
+<tr><td>Air Carrier Access Act</td><td>Air travel</td><td>Wheelchair accommodation on flights; service animals</td></tr>
+<tr><td>RESEA Act</td><td>Education</td><td>Special education services; IEPs for students</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>7. Invisible vs. Visible Disabilities</h2>
+<p>Not all disabilities are apparent. This distinction has profound social and mechanical implications.</p>
+
+<h3>7.1 Visible Disabilities</h3>
+<p>Visible disabilities (wheelchair use, prosthetics, obvious physical differences) are immediately apparent. This creates both advantages and challenges:</p>
+
+<div class="compare-grid">
+  <div class="compare-col reality">
+    <h4>✅ Advantages of Visibility</h4>
+    <ul>
+      <li>Accommodations are more likely to be offered proactively</li>
+      <li>Priority seating, accessible parking, elevator access</li>
+      <li>People understand why the character needs extra time or assistance</li>
+      <li>Clearer path to formal disability recognition/benefits</li>
+    </ul>
+  </div>
+  <div class="compare-col fantasy">
+    <h4>❌ Challenges of Visibility</h4>
+    <ul>
+      <li>Pity, staring, unwanted comments or questions</li>
+      <li>Assumptions about intelligence, capability, or independence</li>
+      <li>Physical barriers are more immediately apparent (and frustrating)</li>
+      <li>Higher equipment costs (wheelchair, prosthetics, vehicle mods)</li>
+    </ul>
+  </div>
+</div>
+
+<h3>7.2 Invisible Disabilities</h3>
+<p>Invisible disabilities (chronic pain, Crohn's, MS, ME/CFS, diabetes, mental health conditions) are not apparent to observers. This creates unique social dynamics:</p>
+
+<div class="compare-grid">
+  <div class="compare-col reality">
+    <h4>✅ Advantages of Invisibility</h4>
+    <ul>
+      <li>Can "pass" as able-bodied in good days</li>
+      <li>Lower equipment costs</li>
+      <li>Less immediate public scrutiny</li>
+      <li>Can choose when and how to disclose</li>
+    </ul>
+  </div>
+  <div class="compare-col fantasy">
+    <h4>❌ Challenges of Invisibility</h4>
+    <ul>
+      <li>Accommodations must be requested (and often justified)</li>
+      <li>"But you look fine" — constant invalidation</li>
+      <li>Higher risk of being accused of malingering or faking</li>
+      <li>Harder to access benefits (must prove disability)</li>
+    </ul>
+  </div>
+</div>
+
+<h3>7.3 Social Dynamics Mechanics</h3>
+<p>Characters with disabilities face unique social interactions. The GM uses these rules to model real-world dynamics:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Situation</th><th>Check</th><th>TN</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>Explaining disability to stranger</td><td><span class="dice">PRC</span></td><td>40</td><td>Person understands; offers help if needed</td><td>Person reacts poorly (pity, skepticism, or offense)</td></tr>
+<tr><td>Facing discrimination</td><td><span class="dice">RES</span></td><td>45</td><td>Character maintains composure; +0 SP</td><td>+3 SP; character feels defeated or angry</td></tr>
+<tr><td>Advocating for accommodations</td><td><span class="dice">PRC + INT</span></td><td>50</td><td>Accommodations granted</td><td>Request denied or delayed; +3 SP</td></tr>
+<tr><td>Dealing with "inspiration porn"</td><td><span class="dice">RES</span></td><td>35</td><td>Character deflects gracefully</td><td>+2 SP; character feels reduced to a stereotype</td></tr>
+<tr><td>Unwanted medical questions</td><td><span class="dice">PRC</span></td><td>30</td><td>Character sets boundary effectively</td><td>Person persists; +2 SP; character feels violated</td></tr>
+<tr><td>Being assumed incapable</td><td><span class="dice">RES</span></td><td>40</td><td>Character proves themselves; +1 EXP in relevant skill</td><td>+3 SP; character feels frustrated</td></tr>
+<tr><td>Disability community bonding</td><td><span class="dice">PRC</span></td><td>25</td><td>Strong connection; −3 SP; gains ally/mentor</td><td>Mild connection; no special effect</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Invisible Disability at Work</div>
+  <p>Lena has ME/CFS (invisible). On "good days" she appears completely fine. Her coworker notices she left at 3 PM and says, "Must be nice to have an easy job!" Lena makes a <span class="dice">PRC check (TN 40)</span> to explain her situation. She rolls 48 — success. She shares that she has a chronic illness that limits her energy. Her coworker apologizes and becomes more understanding. <strong>−1 SP</strong> from being heard.<br><br>
+  Two weeks later, another coworker says, "I don't see anything wrong with you. You should just try harder." Lena makes a <span class="dice">RES check (TN 45)</span> to handle the invalidation. She rolls 39 — failure. <strong>+3 SP</strong>. She feels defeated and questions whether she should disclose her condition at all.</p>
+</div>
+
+<h3>7.4 Disclosure Decisions</h3>
+<p>Characters with invisible disabilities must constantly decide whether to disclose their condition. This is a <strong>PRC decision</strong> with real consequences:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Choice</th><th>Pros</th><th>Cons</th></tr></thead>
+<tbody>
+<tr><td><strong>Disclose</strong></td><td>Access to accommodations; understanding from allies; honest relationships</td><td>Risk of discrimination; unwanted pity; having to explain repeatedly</td></tr>
+<tr><td><strong>Don't disclose</strong></td><td>Avoid stigma; no need to justify; privacy maintained</td><td>No accommodations; "masking" costs +2 EP daily; isolation; no support</td></tr>
+<tr><td><strong>Selective disclosure</strong></td><td>Control over who knows; targeted support</td><td>Complex to maintain; risk of inconsistency being noticed</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 GM Tip: Disability as Identity, Not Tragedy</div>
+  <p>Disability is not a tragedy to be overcome. Many disabled people have rich, fulfilling lives and communities. Frame disability as <strong>one aspect of a person's identity</strong> — like culture, education, or personality. Show the humor, creativity, and resilience that comes from navigating an inaccessible world. The disability community has its own culture, humor, and solidarity.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — A hyper-realistic life simulation tabletop role-playing game ruleset.
+</footer>
+
+</body>
+</html>
