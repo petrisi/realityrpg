@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death &amp; Grief</a></li>
+      <li><a href="law-civic.html">Law &amp; Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="exercise.html" class="active">Exercise</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="hero">
+  <span class="hero-icon">🏋️</span>
+  <h1>Exercise</h1>
+  <p class="subtitle">Train your body, forge your will, and push your limits. The most honest RPG system for physical fitness — because in reality, the gym doesn't care about your backstory.</p>
+</section>
+
+<section class="content-section">
+<div class="container">
+
+<h1>🏋️ Exercise System</h1>
+<p>In Reality RPG, physical exercise is not a sidebar — it's a full mechanical subsystem. Your character's body is the primary tool they use to navigate the world. Exercise affects <strong>VIG</strong> recovery, <strong>SP</strong> reduction, long-term attribute gains, and even <strong>PRC</strong> through body image changes. This page covers everything from your first pushup to marathon training plans.</p>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Core Exercise Resolution</div>
+  <p>Every workout attempt uses the standard system: roll <span class="dice">2d10</span> + relevant attribute modifier(s) + Fitness Level bonus vs. the activity's <strong>Target Number (TN)</strong>. Success means the workout was effective; failure means poor results, wasted time, or potential injury.</p>
+  <p>Your maximum <strong>Stress Points (SP)</strong> = <code>20 + RES mod × 5</code>. Exercise can reduce SP, but overtraining can increase it.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>1. 🏆 Why Exercise Matters</h2>
+
+<p>Exercise is one of the most impactful systems in Reality RPG because it touches nearly every aspect of your character's life:</p>
+
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">💪</span>
+    <h3>VIG Recovery</h3>
+    <p>Regular exercise restores Vigor faster. A fit character recovers from illness and fatigue at double speed compared to a sedentary one.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🧘</span>
+    <h3>SP Reduction</h3>
+    <p>Each successful workout reduces stress points. Endurance exercise is particularly effective — running, swimming, and yoga can each remove 2–5 SP per session.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📈</span>
+    <h3>Attribute Gains</h3>
+    <p>Consistent exercise over weeks and months leads to permanent VIG increases. Martial arts boost DXT and RES. Yoga boosts RES directly.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">✨</span>
+    <h3>Body Image &amp; PRC</h3>
+    <p>Physical changes from training affect Presence. Getting in shape can increase PRC; becoming overly obsessive about appearance can decrease it. The GM adjudicates based on character goals and self-perception.</p>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<h2>2. 📊 The Fitness Level System</h2>
+
+<p>Every character has a <strong>Fitness Level</strong> from 0 to 5. This is a derived stat that reflects your character's current conditioning. It provides a flat bonus to all exercise checks and grants passive benefits.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Level</th><th>Name</th><th>Bonus to Checks</th><th>Passive Benefits</th><th>Prerequisites</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>😴 Sedentary</td>
+<td><span class="dice">+0</span></td>
+<td>None. Daily SP gain of +1 if desk job (stress from inactivity).</td>
+<td>Default starting point for most adults.</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>🚶 Casual</td>
+<td><span class="dice">+1</span></td>
+<td>−1 daily SP from mild activity. Recovers from common colds in 3 days instead of 5.</td>
+<td>Exercise 2× per week for 1 month with successful checks.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>🏃 Active</td>
+<td><span class="dice">+2</span></td>
+<td>−2 daily SP from regular activity. −5 to TN on endurance checks (walking up stairs, carrying groceries). Sleep quality improves: +1 to all recovery rolls.</td>
+<td>Exercise 4× per week for 2 months at Fitness Level 1.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>💪 Fit</td>
+<td><span class="dice">+3</span></td>
+<td>−3 daily SP from exercise. Can gain +1 permanent VIG per month of consistent training. Immune to common colds with a successful RES check (TN 35). PRC may increase by 1 if body image improves.</td>
+<td>Exercise 5× per week for 3 months at Fitness Level 2. Must complete at least one moderate endurance event (5K run, 1-hour swim, etc.).</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>🏅 Athletic</td>
+<td><span class="dice">+4</span></td>
+<td>−4 daily SP. +1 VIG every 6 weeks of consistent training. +1 to TN on physical labor checks. Noticeable physical transformation — PRC +1 if desired. −10 to injury TN (harder to get hurt).</td>
+<td>Exercise 6× per week for 4 months at Fitness Level 3. Complete at least one significant event (10K, half-marathon, competition, etc.).</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>🏆 Elite</td>
+<td><span class="dice">+5</span></td>
+<td>−5 daily SP. +1 VIG every 4 weeks. Peak physical condition. PRC +2 if body is a character focus. Can attempt extraordinary physical feats (TN 80+). Inspires others: +2 to EXP checks when demonstrating physical capability.</td>
+<td>Exercise 6–7× per week for 6 months at Fitness Level 4. Complete a major event (marathon, competition win, advanced martial arts belt, etc.). GM approval required.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Fitness Level is Dynamic</div>
+  <p>Fitness Levels can <strong>decrease</strong> if a character stops training. After 4 weeks of no exercise, drop one Fitness Level. After 8 weeks, drop another. Injury, illness, or life events (new baby, job loss, etc.) can cause immediate drops. The body remembers, though — regaining a lost level takes half the normal time.</p>
+</div>
+
+<h3>🔄 The Recovery System</h3>
+<p>Exercise isn't just about the workout — it's about what happens between workouts. Recovery is when the actual gains happen.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Recovery Factor</th><th>Effect</th><th>Mechanical Bonus</th></tr></thead>
+<tbody>
+<tr><td>😴 7–9 hours sleep</td><td>Proper recovery</td><td>Full workout benefits apply. No overtraining progression.</td></tr>
+<tr><td>😴 5–6 hours sleep</td><td>Partial recovery</td><td>Half workout benefits. +1 to overtraining track.</td></tr>
+<tr><td>😴 &lt;5 hours sleep</td><td>Poor recovery</td><td>No workout benefits. +2 to overtraining track. −1 to next day's exercise checks.</td></tr>
+<tr><td>🍽️ Good nutrition (protein, whole foods)</td><td>Fuels growth</td><td>+1 to all exercise checks that day. Faster VIG recovery after workouts.</td></tr>
+<tr><td>🍽️ Poor nutrition (fast food, skipping meals)</td><td>Underfuels</td><td>−1 to exercise checks. +1 to overtraining track after each workout.</td></tr>
+<tr><td>🧘 Rest day (no exercise)</td><td>Muscle repair</td><td>−1 on overtraining track. Required every 3–4 workout days at Fitness Level 3+.</td></tr>
+<tr><td>🧘 No rest days</td><td>Accumulated fatigue</td><td>+2 on overtraining track. Each day without rest after 4 consecutive workout days.</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================================================ -->
+<h2>3. 🏢 Gym-Based Exercise</h2>
+
+<p>The gym is the primary training ground for most characters. It offers equipment variety, climate control, and social structure. A typical gym session costs <strong>45–90 minutes</strong> of game time.</p>
+
+<h3>💰 Gym Membership Costs</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Tier</th><th>Cost/Month</th><th>Examples</th><th>What You Get</th><th>Exercise Check Modifier</th></tr></thead>
+<tbody>
+<tr><td>🟢 Budget</td><td>$10–$30</td><td>Planet Fitness, local YMCAs, big-box gyms</td><td>Basic cardio, free weights, some machines. Crowded peak hours.</td><td><span class="dice">+0</span></td></tr>
+<tr><td>🔵 Mid-Range</td><td>$40–$75</td><td>LA Fitness, 24 Hour Fitness, local independents</td><td>Full equipment range, group classes, locker rooms with showers.</td><td><span class="dice">+1</span></td></tr>
+<tr><td>🟡 Premium</td><td>$80–$150</td><td>Equinox, Life Time, boutique studios</td><td>Top equipment, pools, saunas, classes, personal training options, clean facilities.</td><td><span class="dice">+2</span></td></tr>
+<tr><td>🔴 Luxury</td><td>$150–$300+</td><td>SoulCycle, private training clubs, hotel gyms</td><td>Personal trainers included, exclusive classes, spa amenities, networking opportunities.</td><td><span class="dice">+3</span> + EXP bonus for networking</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">🕐 Time Cost</div>
+  <p>A standard gym session takes <strong>45–90 minutes</strong>. Factor in commute time (15–45 minutes each way depending on proximity) and shower/change time (15 minutes). A realistic gym trip consumes <strong>1.5–3 hours</strong> of your character's day.</p>
+</div>
+
+<h3>🏋️ Equipment Types</h3>
+
+<h4>🔩 Free Weights</h4>
+<p>Barbells, dumbbells, kettlebells — the bread and butter of strength training. Free weights recruit stabilizer muscles and build functional strength, but they carry the highest injury risk.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod (if trained)</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">45</span> (light weights, warm-up) → <span class="dice">65</span> (heavy lifting, PR attempts)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>45–60 minutes per session</td></tr>
+<tr><td><strong>Success</strong></td><td>Effective workout. +1–2 VIG recovery. At Fitness Level 3+, progress toward permanent VIG gain. Strong success: feel a "pump" — +1 temporary VIG for the next 24 hours.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Poor form, wasted session, or injury. Muscle strain: −1 VIG for 3 days. Dropped weight: −1 VIG for 1 day + 1 SP from embarrassment.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Dropped weight on foot/body. −2 VIG for 1 week. Possible emergency room visit ($500–$5000). +3 SP from pain and frustration.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>⚙️ Weight Machines</h4>
+<p>Leg press, chest press, cable machines, lat pulldown — guided resistance that's safer for beginners but less effective for building real-world strength.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod (if trained)</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">35</span> (light) → <span class="dice">50</span> (heavy). 10 points lower than free weights for equivalent effort.</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>30–45 minutes per session</td></tr>
+<tr><td><strong>Success</strong></td><td>Effective workout. +1 VIG recovery. Safer progression for beginners at Fitness Level 0–1.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Minor discomfort. −1 to next exercise check that day only. No lasting injury at TNs below 45.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Machine malfunction or improper use. −1 VIG for 2 days. Rare at mid-range TNs.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>🏃 Cardio Equipment</h4>
+<p>Treadmill, elliptical, stationary bike, rowing machine — the endurance corner of every gym. Cardio reduces SP most effectively.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">40</span> (moderate pace, 20 min) → <span class="dice">55</span> (high intensity, 45+ min)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>20–45 minutes per session</td></tr>
+<tr><td><strong>Success</strong></td><td>Effective cardio session. <strong>−2 SP</strong> (−4 SP on strong success). Improved cardiovascular fitness. At Fitness Level 2+, progress toward endurance milestones.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Joint pain (knees on treadmill, lower back on bike). −1 to all movement checks next day. No SP reduction.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Overexertion. Faint or severe shortness of breath. −2 VIG for 2 days. +2 SP from frustration. Rowing machine: possible lower back strain.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>⚡ Functional Training</h4>
+<p>Battle ropes, plyometric boxes, TRX suspension trainers, medicine balls — high-intensity, full-body movements that simulate real-world athletic demands.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG + DXT</span> (average modifiers) + Athletics mod</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">50</span> (basic circuits) → <span class="dice">65</span> (advanced CrossFit-style WODs)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>30–60 minutes per session</td></tr>
+<tr><td><strong>Success</strong></td><td>Highly effective full-body workout. +2 VIG recovery. <strong>−3 SP</strong>. At Fitness Level 3+, gains count double toward VIG progression.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Poor form under fatigue. Muscle strain: −1 VIG for 3–5 days. +1 on overtraining track regardless.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Serious injury. Plyometric fall: sprained ankle (1–3 weeks). Medicine ball throw gone wrong: wrist strain. −2 VIG, +3 SP, mandatory rest period.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h4>🧘 Stretching &amp; Mobility</h4>
+<p>Foam rolling, yoga mats, resistance bands — the recovery-focused activities. Lower TN but essential for long-term health.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">RES + VIG</span> (average) + Athletics mod</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">30</span> (basic stretching) → <span class="dice">40</span> (deep mobility work, advanced yoga)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>15–30 minutes per session</td></tr>
+<tr><td><strong>Success</strong></td><td>Effective recovery. <strong>−2 SP</strong>. −1 on overtraining track. Prevents future injuries: −5 to injury TN on next workout.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Overstretching. Minor stiffness for 1 day. No lasting harm.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Pulled muscle during deep stretch. −1 VIG for 2 days. Rare at these TNs.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example 1: Marcus's First Gym Session</div>
+  <p><strong>Marcus</strong> is a 32-year-old accountant. VIG 6 (+1), RES 8 (+1), Fitness Level 0 (Sedentary). He just joined a Planet Fitness ($15/month) and is attempting a free weights session — his first in years.</p>
+  <p><strong>The Check:</strong> Free weights at moderate weight = TN 50. Marcus rolls <span class="dice">2d10</span> + VIG mod (+1) + Fitness bonus (+0) = <span class="dice">2d10</span> + 1.</p>
+  <p>He rolls a <strong>34</strong> + 1 = <strong>35</strong> vs TN 50. That's ≤ 50 − 5 = 45, so it's a <strong>Strong Success</strong>! His body remembers old habits. He gets a great pump, +2 VIG recovery, and −2 SP from the endorphin rush. The GM notes his first successful workout toward Fitness Level 1.</p>
+  <p><em>Next session, Marcus tries to lift heavier (TN 58). He rolls 52 + 1 = 53 — a normal Success. Good session, but he feels sore for a day. At Fitness Level 0, his body isn't adapted yet.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<h2>4. 🌳 Outdoor Exercise</h2>
+
+<p>Outdoor exercise adds environmental variables — weather, terrain, and scenery — that modify TNs and outcomes. Being in nature provides an additional <strong>−1 SP bonus</strong> on top of normal exercise SP reduction.</p>
+
+<h3>🏃 Jogging / Running</h3>
+<p>Free, accessible, and one of the most effective SP-reduction activities. Running progression is the most common training arc in the game.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Distance</th><th>TN</th><th>Time</th><th>SP Reduction</th><th>Fitness Level Required</th></tr></thead>
+<tbody>
+<tr><td>🟢 1 mile jog</td><td><span class="dice">35</span></td><td>15–20 min</td><td>−1 SP</td><td>None</td></tr>
+<tr><td>🟢 2–3 mile jog</td><td><span class="dice">40</span></td><td>25–40 min</td><td>−2 SP</td><td>Level 1+</td></tr>
+<tr><td>🟡 5K (3.1 miles)</td><td><span class="dice">48</span></td><td>25–35 min</td><td>−3 SP</td><td>Level 2+</td></tr>
+<tr><td>🟡 10K (6.2 miles)</td><td><span class="dice">55</span></td><td>50–70 min</td><td>−4 SP</td><td>Level 3+</td></tr>
+<tr><td>🔴 Half Marathon (13.1 mi)</td><td><span class="dice">60</span></td><td>1.5–2.5 hrs</td><td>−5 SP</td><td>Level 4+</td></tr>
+<tr><td>🔴 Marathon (26.2 mi)</td><td><span class="dice">65</span></td><td>3–5 hrs</td><td>−5 SP + event completion bonus</td><td>Level 5</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>Running Training Plan:</strong> To progress from jogging to marathon, a character must complete each tier for at least 4 weeks before attempting the next. Each tier requires at least 3 successful runs per week.</p>
+
+<p><strong>Failure effects:</strong> Shin splints (−1 to all running checks for 1 week), knee pain (−1 VIG for 3 days), or simply giving up (no SP reduction, +1 SP from frustration).</p>
+
+<h3>🚴 Cycling</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>TN</th><th>Cost</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Road cycling (10–20 mi)</td><td><span class="dice">40</span></td><td>$200–$2000 for bike + gear</td><td>Leg strength, cardio. −2 SP.</td><td>Flat tire, saddle soreness.</td></tr>
+<tr><td>🟡 Mountain biking</td><td><span class="dice">50</span></td><td>$500–$5000+ for bike + gear</td><td>Full body engagement. −3 SP. Nature bonus.</td><td>Falls: −1 VIG for 2 days. Broken bike: $200–$2000 repair.</td></tr>
+<tr><td>🟡 Indoor spinning</td><td><span class="dice">45</span></td><td>$15–$30/class or gym membership</td><td>High-intensity cardio. −3 SP. Social bonus if group class.</td><td>Overexertion: dizziness, nausea.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🏊 Swimming</h3>
+<p>The ultimate full-body, low-impact workout. Swimming is particularly recommended for characters with joint issues or higher VIG but lower DXT.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Check</th><th>TN</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Pool laps (30 min)</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">45</span></td><td>Excellent full-body workout. <strong>−3 SP</strong>. Low joint impact. +2 VIG recovery.</td><td>Swimmer's shoulder (−1 to overhead checks for 1 week).</td></tr>
+<tr><td>🟡 Open water</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">55</span></td><td>All pool benefits + nature bonus (extra −1 SP). Adventure factor.</td><td>Cramps: TN 60 VIG check to shake off. Drowning risk: TN 80 to avoid in rough conditions.</td></tr>
+<tr><td>🔴 Competitive laps (1000m+)</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">60</span></td><td>Elite-level endurance. −4 SP. Counts toward Fitness Level advancement.</td><td>Exhaustion. −2 VIG for 2 days.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Open Water Risk</div>
+  <p>Open water swimming carries a <strong>drowning risk</strong>. If a character fails an open water swim check by 10+ (roll + mods ≥ TN + 10), they must make an emergency <span class="dice">VIG</span> check at TN 80 to avoid drowning. This is a life-threatening situation — failure means the character needs rescue, potentially requiring emergency services and significant narrative consequences.</p>
+</div>
+
+<h3>🥾 Hiking / Trail Running</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Terrain</th><th>Check</th><th>TN</th><th>Time</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Flat trail, 5 mi</td><td><span class="dice">VIG</span></td><td><span class="dice">35</span></td><td>2–3 hrs</td><td>Nature bonus (−3 SP total). Endurance gains.</td><td>Blisters. −1 to walking checks for 2 days.</td></tr>
+<tr><td>🟡 Mountain trail, elevation gain</td><td><span class="dice">VIG</span></td><td><span class="dice">45</span></td><td>3–5 hrs</td><td>Strong cardio. −4 SP. Nature bonus. Possible wildlife encounter (social/INT check).</td><td>Sprained ankle: −1 VIG for 1 week. Getting lost: INT check TN 40 to find way back.</td></tr>
+<tr><td>🔴 Technical terrain, scrambling</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">55</span></td><td>4–8 hrs</td><td>Full-body workout. −5 SP. Adventure XP. Counts as major event for Fitness Level advancement.</td><td>Fall: −2 VIG for 2 weeks. Equipment damage. Possible rescue scenario.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🧗 Rock Climbing / Bouldering</h3>
+<p>The ultimate full-body challenge. Climbing combines physical strength with problem-solving, making it one of the most narratively interesting exercise options.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Check</th><th>TN</th><th>Cost</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Indoor bouldering</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">50</span></td><td>$15–$25/session</td><td>Full-body strength. Problem-solving bonus (+1 to INT checks that day from mental engagement). −2 SP.</td><td>Fall onto mat: minor bruising. −1 VIG for 1 day.</td></tr>
+<tr><td>🟡 Indoor top-rope climbing</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">55</span></td><td>$20–$30/session</td><td>Endurance climbing. −3 SP. Trust-building with belay partner (+1 EXP with them).</td><td>Uncomfortable fall (harnessed, so safe). −1 VIG for 2 days from jolt.</td></tr>
+<tr><td>🔴 Outdoor climbing</td><td><span class="dice">VIG + DXT + RES</span></td><td><span class="dice">60–70</span></td><td>$500–$3000+ for gear</td><td>Peak physical + mental challenge. −4 SP. Adventure XP. Major event for Fitness Level 4→5.</td><td>Harnessed fall: −1 VIG for 1 week (adrenaline shock). Unprotected fall: TN 75 VIG check or serious injury.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🛶 Canoeing / Kayaking</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Type</th><th>Check</th><th>TN</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Calm water, lake</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">45</span></td><td>Upper body workout. Nature bonus (−3 SP). Relaxing.</td><td>Minor capsizing risk. Wet and cold: −1 VIG for 1 day.</td></tr>
+<tr><td>🟡 River, Class II rapids</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">50</span></td><td>Intense paddling. −3 SP. Adventure. Social bonus if group.</td><td>Capsize: TN 55 to self-rescue. Equipment damage: $100–$500.</td></tr>
+<tr><td>🔴 Whitewater, Class III+</td><td><span class="dice">VIG + DXT + RES</span></td><td><span class="dice">55–60</span></td><td>Extreme workout. −4 SP. Major adventure event.</td><td>Capsize in rapids: TN 70 survival check. Hypothermia risk. Equipment loss.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>⚽ Team Sports</h3>
+<p>Soccer, basketball, volleyball, ultimate frisbee — team sports combine physical exercise with social dynamics. Playing with teammates provides <strong>Networking</strong> and <strong>Empathy</strong> bonuses.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG + DXT + EXP</span> (average all three) + Athletics mod</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">45</span> (casual pickup game) → <span class="dice">60</span> (competitive league)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>1–2 hours per session + travel</td></tr>
+<tr><td><strong>Success</strong></td><td>Great workout. −2 SP. +1 EXP with teammates (bonding). Teamwork skill improves. Social bonus: potential friendships, dating opportunities, professional networking.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Poor performance. Embarrassment: +1 SP. Possible collision: −1 VIG for 2 days. Team friction if repeatedly failing.</td></tr>
+<tr><td><strong>Social Bonus</strong></td><td>Each successful team sport session grants +1 to a <span class="dice">EXP</span> check with any teammate within 24 hours (shared experience bonus).</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🥊 Martial Arts</h3>
+<p>Boxing, judo, BJJ, karate, krav maga — martial arts are unique in that they improve <strong>self-defense capability</strong> (mechanical), <strong>discipline</strong> (+RES over time), and build a distinctive skill set.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG + DXT + RES</span> (average all three) + Combat mod (if trained)</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">50</span> (beginner class) → <span class="dice">70</span> (advanced sparring, belt test)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>60–90 minutes per class</td></tr>
+<tr><td><strong>Cost</strong></td><td>$100–$300/month for regular classes</td></tr>
+<tr><td><strong>Success</strong></td><td>Effective training. −2 SP. Self-defense skill improves. Discipline bonus: +1 to all RES checks that day. At Fitness Level 3+, progress toward permanent +1 RES every 3 months.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Bruises, sprains. −1 VIG for 2–5 days. Ego damage: +1 SP from embarrassment in front of class. Repeated failures may cause character to quit (−1 RES).</td></tr>
+<tr><td><strong>Long-term</strong></td><td>After 6 months of consistent training: +1 to Combat skill level. After 1 year: +1 permanent RES. Belt/rank progression provides narrative milestones and PRC bonuses.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example 2: Sarah Takes Up BJJ</div>
+  <p><strong>Sarah</strong>, 28, software engineer. VIG 7 (+1), DXT 9 (+1), RES 10 (+2). Fitness Level 1 (Casual). She's been feeling vulnerable walking home at night and decides to try Brazilian Jiu-Jitsu.</p>
+  <p><strong>First Class:</strong> TN 50 (beginner class). Average of VIG (+1) + DXT (+1) + RES (+2) = +1 (round down). Fitness bonus +1. Total modifier: <span class="dice">+2</span>.</p>
+  <p>She rolls <span class="dice">2d10</span> = <strong>41</strong> + 2 = <strong>43</strong> vs TN 50. <strong>Success!</strong> She survives her first rolling session covered in bruises but feeling empowered. −2 SP from the adrenaline. The GM notes +1 to her self-defense skill.</p>
+  <p><em>Three months later:</em> Sarah has attended 30+ classes. She's earned her blue belt. Her RES has increased to 11 (+2), and she feels noticeably more confident in daily life (+1 PRC). Her teammate Marcus (from Example 1) joins her at the gym for cross-training.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>5. 🏠 Bodyweight &amp; Home Workouts</h2>
+
+<p>Not every character can afford a gym membership or has time to commute. Home workouts are free (or low-cost), flexible, and surprisingly effective for characters with the discipline to maintain consistency.</p>
+
+<h3>💪 Calisthenics</h3>
+<p>Pushups, pullups, dips, squats, lunges, muscle-ups — bodyweight training that builds impressive functional strength with zero equipment cost.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Exercise</th><th>Check</th><th>TN</th><th>Time</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Basic pushups/squats</td><td><span class="dice">VIG</span></td><td><span class="dice">35</span></td><td>15–20 min</td><td>Decent workout. +1 VIG recovery. −1 SP.</td><td>Poor form. No benefit, minor wrist soreness.</td></tr>
+<tr><td>🟢 Pullups (requires bar)</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">45</span></td><td>15 min</td><td>Upper body strength. +1 VIG recovery. −2 SP.</td><td>Shoulder strain: −1 to overhead checks for 3 days.</td></tr>
+<tr><td>🟡 Full calisthenics circuit</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">50</span></td><td>30–45 min</td><td>Excellent full-body workout. +2 VIG recovery. −2 SP. Impressive strength gains visible after 2 months.</td><td>Shoulder or lower back strain. −1 VIG for 3 days.</td></tr>
+<tr><td>🔴 Advanced (muscle-ups, handstand pushups)</td><td><span class="dice">VIG + DXT</span></td><td><span class="dice">60–65</span></td><td>45–60 min</td><td>Elite-level body control. +3 VIG recovery. −3 SP. Counts as major training event.</td><td>Serious shoulder injury. −2 VIG for 2 weeks. Possible medical visit.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🧘 Yoga / Pilates</h3>
+<p>The most SP-effective exercise in the game. Yoga and Pilates are particularly recommended for characters dealing with mental health challenges, high stress, or chronic pain.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Exercise</th><th>Check</th><th>TN</th><th>Time</th><th>Success</th><th>Failure</th></tr></thead>
+<tbody>
+<tr><td>🟢 Basic yoga flow</td><td><span class="dice">VIG + RES</span></td><td><span class="dice">30</span></td><td>20–30 min</td><td>Flexibility + stress relief. <strong>−3 SP</strong>. +1 VIG recovery. Low injury risk.</td><td>Minor muscle stiffness. No lasting harm.</td></tr>
+<tr><td>🟡 Vinyasa / hot yoga</td><td><span class="dice">VIG + RES</span></td><td><span class="dice">40</span></td><td>45–60 min</td><td>Intense flexibility + cardio. <strong>−5 SP</strong>. +2 VIG recovery. +1 to RES checks next day (calm focus).</td><td>Overstretching. −1 VIG for 1 day. Dehydration in hot yoga: drink water or −1 VIG for 2 days.</td></tr>
+<tr><td>🟡 Pilates reformer</td><td><span class="dice">VIG + RES</span></td><td><span class="dice">45</span></td><td>45–60 min</td><td>Core strength + posture. <strong>−4 SP</strong>. +2 VIG recovery. Improves posture: +1 PRC after 2 months.</td><td>Lower back discomfort. −1 to bending checks for 2 days.</td></tr>
+<tr><td>🔴 Advanced yoga (acrobatics, inversions)</td><td><span class="dice">VIG + RES + DXT</span></td><td><span class="dice">50</span></td><td>60–90 min</td><td>Peak flexibility + balance. <strong>−5 SP</strong>. +3 VIG recovery. Counts as major training event.</td><td>Fall from inversion. −1 VIG for 5 days. Possible sprain.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>⚡ HIIT (High-Intensity Interval Training)</h3>
+<p>Maximum results in minimum time. HIIT is brutal, effective, and dangerous if done incorrectly. The ultimate "no excuses" workout — 20 minutes, no equipment needed.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod</td></tr>
+<tr><td><strong>TN Range</strong></td><td><span class="dice">50</span> (beginner intervals) → <span class="dice">65</span> (Tabata, advanced circuits)</td></tr>
+<tr><td><strong>Time Cost</strong></td><td>20–30 minutes (including warm-up and cool-down)</td></tr>
+<tr><td><strong>Success</strong></td><td>Maximum calorie burn. +2 VIG recovery. <strong>−3 SP</strong>. Cardiovascular gains 2× faster than steady-state cardio. EPOC effect: continued calorie burn for 24 hours post-workout.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Exhaustion. −1 VIG for 2 days. Poor form under fatigue increases injury risk: roll <span class="dice">VIG</span> at TN 40 or suffer muscle strain.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Cardiac stress event. −2 VIG for 1 week. +2 SP. Characters with VIG &lt; 5 have a 1-in-20 chance of a serious cardiac event on critical failure — GM discretion.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ HIIT Warning for Low-VIG Characters</div>
+  <p>Characters with <strong>VIG &lt; 5</strong> should not attempt HIIT at TN 55+ without GM approval. The cardiovascular stress can be genuinely dangerous. Start at TN 45 and build up over at least 4 weeks of successful lower-TN workouts.</p>
+</div>
+
+<h3>🏠 Home Gym Setups</h3>
+<p>For characters who want gym-quality results at home, here are the investment tiers:</p>
+
+<div class="table-wrap">
+<table>
+thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>Effective For</th></tr></thead>
+<tbody>
+<tr><td>🟢 Basic</td><td>$100–$300</td><td>Living room corner</td><td>Resistance bands, yoga mat, jump rope, a pair of dumbbells</td><td>Maintenance. Fitness Levels 0–2.</td></tr>
+<tr><td>🟡 Moderate</td><td>$500–$1500</td><td>Spare room / garage</td><td>Adjustable dumbbells, bench, pull-up bar, kettlebells, foam roller</td><td>Solid training. Fitness Levels 1–3.</td></tr>
+<tr><td>🟠 Advanced</td><td>$2000–$4000</td><td>Dedicated room / basement</td><td>Power rack, barbell set, Olympic plates, cable machine, cardio equipment</td><td>Near-gym quality. Fitness Levels 2–4.</td></tr>
+<tr><td>🔴 Full Setup</td><td>$4000–$8000+</td><td>Large room / converted space</td><td>Complete gym: all strength equipment, treadmill, rower, stretching area, sound system</td><td>Professional-level training. Fitness Levels 3–5.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example 3: Priya's Home HIIT Session</div>
+  <p><strong>Priya</strong>, 35, remote worker. VIG 5 (+1), RES 12 (+2), Fitness Level 2 (Active). She's been working from home for 6 months and her fitness has slipped. She decides to do a HIIT session in her living room — no commute, no gym membership.</p>
+  <p><strong>The Check:</strong> HIIT at moderate intensity = TN 55. Priya rolls <span class="dice">2d10</span> + VIG mod (+1) + Fitness bonus (+2) = <span class="dice">2d10</span> + 3.</p>
+  <p>She rolls <strong>48</strong> + 3 = <strong>51</strong> vs TN 55. <strong>Success!</strong> A grueling 25-minute session. She's drenched in sweat but feels amazing. +2 VIG recovery, −3 SP. The GM notes this as one of her weekly workouts toward maintaining Fitness Level 2.</p>
+  <p><em>Two weeks later:</em> Priya tries a harder session (TN 60). She rolls 58 + 3 = 61 — a <strong>Partial Success</strong>. The workout was mostly effective, but she pushed too hard on the burpees and her lower back is sore for 2 days (−1 VIG). Lesson learned: progressive overload matters.</em></p>
+</div>
+
+<!-- ============================================================ -->
+<h2>6. 📈 Exercise Progression System</h2>
+
+<p>Exercise in Reality RPG is about <strong>long-term character development</strong>. Consistent training leads to permanent improvements — but the body adapts, and progress isn't linear.</p>
+
+<h3>🏆 Permanent VIG Gains</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Fitness Level</th><th>Time to +1 VIG</th><th>Requirements</th><th>Additional Effects</th></tr></thead>
+<tbody>
+<tr><td>0–1</td><td>No permanent gains</td><td>Building foundation only. Gains are temporary (recovery-based).</td><td>Focus on reaching Fitness Level 2.</td></tr>
+<tr><td>2</td><td>2 months of consistent training</td><td>4+ workouts/week, proper nutrition, adequate sleep.</td><td>First permanent VIG point. Noticeable physical changes.</td></tr>
+<tr><td>3</td><td>1 month of consistent training</td><td>5+ workouts/week. Must include variety (strength + cardio).</td><td>+1 VIG. PRC may increase by 1 if body image improves. GM narrates physical transformation.</td></tr>
+<tr><td>4</td><td>6 weeks of consistent training</td><td>6+ workouts/week. Periodized training (deload weeks required).</td><td>+1 VIG. Visible athletic physique. PRC +1 if desired.</td></tr>
+<tr><td>5</td><td>4 weeks of consistent training</td><td>Near-daily training. Professional-level dedication.</td><td>+1 VIG. Peak physical condition. PRC +2. Others comment on physique.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🔄 The Plateau Mechanic</h3>
+<p>After a character achieves a permanent attribute gain, the <strong>plateau mechanic</strong> kicks in: all TNs for exercise checks increase by <strong>+5</strong> for the next gain attempt. This represents the body adapting to the stimulus. To break through a plateau, the character must either:</p>
+<ul style="margin-left: 2em; margin-bottom: 1em;">
+  <li>🔄 <strong>Change their routine</strong> — new exercises, different intensity, varied schedule (−5 to plateau TN)</li>
+  <li>🍽️ <strong>Improve nutrition</strong> — dedicated diet plan, supplements, meal prep (−5 to plateau TN)</li>
+  <li>😴 <strong>Take a deload week</strong> — one week of light activity only, then resume (−5 to plateau TN, but lose 1 week of progress)</li>
+  <li>👨‍🏫 <strong>Hire a personal trainer</strong> — $50–$150/session, provides structured programming (−10 to plateau TN)</li>
+</ul>
+
+<h3>📝 Training Logs</h3>
+<p>Characters who maintain a training log (app, journal, or spreadsheet) gain a mechanical bonus: <strong>−5 to all exercise TNs</strong> because they can track progressive overload systematically. The GM may require the player to note workouts between sessions.</p>
+
+<div class="callout tip">
+  <div class="callout-title">📊 PRC Changes from Body Composition</div>
+  <p>Physical changes from exercise affect <strong>Presence</strong>, but the direction depends on the character's starting point and goals:</p>
+  <ul style="margin-left: 2em; margin-bottom: 1em;">
+    <li>Character who was overweight and loses weight: <strong>PRC +1 to +2</strong> (if they feel better about themselves)</li>
+    <li>Character who was underweight and builds muscle: <strong>PRC +1</strong> (healthier appearance)</li>
+    <li>Character who was already fit and gets more defined: <strong>PRC +1</strong> (peak condition)</li>
+    <li>Character who becomes overly muscular/obsessed: <strong>PRC −1</strong> (socially awkward, "too much")</li>
+    <li>Character who exercises for health but doesn't care about appearance: <strong>PRC unchanged</strong></li>
+  </ul>
+  <p>The GM and player discuss body image changes as part of character development. This is a narrative opportunity, not just a number.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>7. ⚠️ Overtraining &amp; Injury System</h2>
+
+<p>The most realistic aspect of exercise: <strong>you can do too much</strong>. The overtraining track tracks accumulated fatigue and injury risk.</p>
+
+<h3>📊 Overtraining Track</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Level</th><th>Status</th><th>Exercise Penalty</th><th>SP Effect</th><th>Recovery</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>🟢 Fresh</td>
+<td>None</td>
+<td>Normal SP reduction from exercise</td>
+<td>Baseline. Every rest day moves you down 1 level (minimum 0).</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>🟡 Sore</td>
+<td>−1 to exercise checks</td>
+<td>SP reduction halved (−1 instead of normal)</td>
+<td>1 rest day + good sleep. Light stretching moves you down.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>🟠 Fatigued</td>
+<td>−2 to exercise checks</td>
+<td>No SP reduction from exercise. +1 daily SP from fatigue.</td>
+<td>2 rest days. Nutrition bonus: good diet moves you down 1 level faster.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>🔴 Overtrained</td>
+<td>−3 to exercise checks. Cannot attempt TN 55+ activities.</td>
+<td>+2 daily SP. Exercise INCREASES SP instead of reducing it.</td>
+<td>3+ rest days mandatory. Must stop training or risk injury. GM may require a RES check (TN 40) to resist the urge to keep pushing.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>🏥 Injured</td>
+<td>Cannot exercise. −2 VIG for the injury duration.</td>
+<td>+3 daily SP from frustration and pain. Life activities harder.</td>
+<td>Injury-specific recovery time (see table below). No exercise allowed. SP from injury frustration stacks.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>🛏️ Rehab</td>
+<td>Cannot exercise. −3 VIG. All physical checks at −2.</td>
+<td>+5 daily SP. Major life disruption. May miss work/school.</td>
+<td>Extended recovery. Physical therapy: $100–$300/session. Each successful PT session moves down 1 level on the rehab track.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3>🏥 Common Injuries</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Injury</th><th>Trigger</th><th>Recovery Time</th><th>VIG Penalty</th><th>SP Cost</th><th>Other Effects</th></tr></thead>
+<tbody>
+<tr><td>💪 Muscle Strain</td><td>Failed exercise check (any type)</td><td>3–7 days</td><td>−1</td><td>+1</td><td>Affected body part: −2 to checks using that area.</td></tr>
+<tr><td>🦵 Sprained Ankle</td><td>Failed running/climbing/hiking check</td><td>1–3 weeks</td><td>−2</td><td>+2</td><td>Cannot run, jump, or do lower-body exercise. Crutches possible.</td></tr>
+<tr><td>🦴 Stress Fracture</td><td>Critical failure on running/cardio at Overtrained level 2+</td><td>6–8 weeks</td><td>−3</td><td>+3</td><td>Complete rest. Cannot bear weight on affected limb. Miss work/school possible.</td></tr>
+<tr><td>🤲 Rotator Cuff Tear</td><td>Critical failure on overhead exercise (free weights, climbing, swimming)</td><td>3–6 months</td><td>−3</td><td>+4</td><td>Cannot use arms overhead. Surgery may be required ($5,000–$15,000). Long-term impact on exercise capability.</td></tr>
+<tr><td>🦵 ACL Tear</td><td>Critical failure on high-impact exercise (plyometrics, sports, trail running)</td><td>6–12 months</td><td>−4</td><td>+5</td><td>Surgery required ($15,000–$30,000). Extended rehab. May never fully recover to pre-injury level. Major life event.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Injury Consequences</div>
+  <p>Injuries in Reality RPG are <strong>not just mechanical penalties</strong>. They affect:</p>
+  <ul style="margin-left: 2em; margin-bottom: 1em;">
+    <li>💰 <strong>Finances</strong> — medical bills, physical therapy, potential lost wages</li>
+    <li>📅 <strong>Time</strong> — weeks or months of recovery during which the character cannot exercise</li>
+    <li>🧠 <strong>Mental health</strong> — frustration, depression from lost progress, identity crisis for fitness-focused characters</li>
+    <li>📉 <strong>Fitness Level drops</strong> — each month injured = −1 Fitness Level</li>
+    <li>🏥 <strong>Narrative events</strong> — doctor visits, surgery decisions, insurance battles</li>
+  </ul>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example 4: Marcus Overtrains</div>
+  <p><strong>Marcus</strong> (from Example 1) has been training hard for 3 months. He's reached Fitness Level 2 (Active) and is eager to push further. But he's also started a demanding new project at work, cutting his sleep to 5 hours/night and skipping rest days.</p>
+  <p><strong>Week 4 of no rest days:</strong> Marcus is at Overtraining Level 2 (Fatigued). He attempts a heavy free weights session (TN 55) despite the −2 penalty. His effective modifier is now +1 (VIG) + 2 (Fitness) − 2 (fatigue) = <span class="dice">+1</span>.</p>
+  <p>He rolls <span class="dice">2d10</span> = <strong>58</strong> + 1 = <strong>59</strong> vs TN 55. <strong>Failure.</strong> Not just a bad workout — his body gives out mid-set. He drops a dumbbell on his shin.</p>
+  <p><strong>Consequences:</strong> −1 VIG for 3 days (bruise). Overtraining moves to Level 3 (Overtrained). The GM requires a RES check (TN 40) — Marcus rolls <span class="dice">2d10</span> + RES mod (+1) = <strong>42</strong> + 1 = <strong>43</strong>. <strong>Failure.</strong> He can't resist — he goes to the gym again the next day despite knowing he should rest. The cycle continues.</p>
+  <p><em>The GM uses this to explore Marcus's relationship with exercise — is it healthy discipline or is it becoming compulsive?</em></p>
+</div>
+
+<!-- ============================================================ -->
+<h2>8. 🎯 Special Exercise Scenarios</h2>
+
+<h3>🏅 Training for a Specific Event</h3>
+<p>When a character trains for a specific goal — a marathon, a competition, or even "beach body for vacation" — the exercise system shifts to <strong>event preparation mode</strong>:</p>
+
+<ul style="margin-left: 2em; margin-bottom: 1em;">
+  <li>🎯 <strong>Define the goal</strong> with the GM: what event, what timeline, what success looks like</li>
+  <li>📅 <strong>Training period</strong>: typically 8–16 weeks depending on the event</li>
+  <li>📊 <strong>Weekly checks</strong>: each week, the player makes one exercise check representing their training that week. TN scales with event difficulty.</li>
+  <li>🏆 <strong>Event day</strong>: a final check at the event's TN. Accumulated successful training weeks provide a cumulative bonus: <span class="dice">+2 per successful week</span> (capped at <span class="dice">+10</span>).</li>
+  <li>⚠️ <strong>Life interference</strong>: work crises, family obligations, illness can cause missed training weeks (GM discretion or daily-life checks).</li>
+</ul>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Event</th><th>Training Duration</th><th>Weekly TN</th><th>Event Day TN</th><th>Reward on Success</th></tr></thead>
+<tbody>
+<tr><td>🏖️ Beach body for vacation</td><td>8 weeks</td><td><span class="dice">40</span></td><td><span class="dice">35</span> (photo/confidence check)</td><td>PRC +1 (temporary, lasts 1–2 months). Confidence boost: −2 SP for duration of vacation.</td></tr>
+<tr><td>🏃 5K race</td><td>8 weeks</td><td><span class="dice">42</span></td><td><span class="dice">45</span></td><td>−3 SP. Fitness Level advancement progress. Personal achievement.</td></tr>
+<tr><td>🏃 Half Marathon</td><td>12 weeks</td><td><span class="dice">50</span></td><td><span class="dice">55</span></td><td>−5 SP. Major Fitness Level milestone. +1 PRC if character is proud of achievement.</td></tr>
+<tr><td>🏃 Full Marathon</td><td>16 weeks</td><td><span class="dice">55</span></td><td><span class="dice">65</span></td><td>−5 SP. Elite Fitness Level milestone. +2 PRC. Narrative landmark event.</td></tr>
+<tr><td>🥊 Martial arts belt test</td><td>12–24 weeks</td><td><span class="dice">55–65</span></td><td><span class="dice">60–70</span></td><td>+1 Combat skill. +1 RES. Self-confidence: +1 PRC. Respect from training community.</td></tr>
+<tr><td>🏋️ Strength competition</td><td>12 weeks</td><td><span class="dice">55</span></td><td><span class="dice">60</span></td><td>+1 permanent VIG if win. +1 PRC. Community recognition.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>🧠 Exercise as Therapy</h3>
+<p>Exercise has well-documented mental health benefits. In the game, this is a <strong>mechanical interaction with the Mental Health system</strong> (<a href="mental-health.html">see Mental Health page</a>):</p>
+
+<div class="table-wrap">
+<table>
+thead><tr><th>Mental Health Condition</th><th>Recommended Exercise</th><th>SP Reduction</th><th>Additional Benefit</th><th>TN Modifier</th></tr></thead>
+<tbody>
+<tr><td>😞 Mild Depression</td><td>Aerobic exercise (running, swimming, cycling)</td><td><strong>−3 SP</strong> per session (vs normal −2)</td><td>+1 to mood checks. After 4 weeks of consistent exercise: possible episode resolution (RES check TN 35).</td><td>−5 to exercise TN (exercise feels harder when depressed, but the bonus SP reduction compensates)</td></tr>
+<tr><td>😰 Anxiety</td><td>Yoga, swimming, walking in nature</td><td><strong>−4 SP</strong> per session</td><td>+2 to all RES checks next day. After 6 weeks: −10 to future anxiety episode TN.</td><td>−5 to exercise TN (anxiety makes starting harder, but once engaged, benefits are amplified)</td></tr>
+<tr><td>😤 Chronic Stress</td><td>Any regular exercise, especially HIIT or martial arts</td><td><strong>−3 SP</strong> per session</td><td>Reduces baseline stress. After 4 weeks: +1 to all daily life checks (better energy, focus).</td><td>No modifier. Consistency is key.</td></tr>
+<tr><td>😴 Insomnia</td><td>Morning exercise (any type), NOT evening HIIT</td><td><strong>−2 SP</strong> per session</td><td>+2 to sleep quality checks. After 2 weeks: sleeping 7+ hours consistently, which accelerates all recovery.</td><td>−5 to exercise TN (fatigue makes exercise harder)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📐 Exercise Therapy Rule</div>
+  <p>When exercise is being used as part of mental health treatment, the GM should <strong>reduce all exercise TNs by 5</strong> (the character is motivated by therapeutic need) but <strong>double the SP reduction</strong> on success. This reflects the real-world finding that exercise is particularly effective for mental health when done consistently, even at moderate intensity.</p>
+</div>
+
+<h3>🚨 Exercise Addiction</h3>
+<p>When exercise becomes compulsive, it shifts from advantage to disadvantage. This is a <strong>character flaw</strong> that provides mechanical costs:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Sign</th><th>Mechanical Effect</th><th>Detection</th></tr></thead>
+<tbody>
+<tr><td>🔴 Exercising while injured</td><td>Cannot rest. Overtraining track advances +2 per workout instead of +1.</td><td>GM observes character refusing to take rest days despite clear fatigue.</td></tr>
+<tr><td>🔴 Skipping social events for gym</td><td>−1 EXP per missed social event. Relationships may suffer.</td><td>Character fails EXP checks to maintain social connections.</td></tr>
+<tr><td>🔴 Working out despite illness</td><td>Recovery from illness takes 2× longer. −1 VIG per sick-day workout.</td><td>Character attempts exercise checks while having a cold/flu.</td></tr>
+<tr><td>🔴 Body dysmorphia</td><td>PRC decreases despite physical improvements. Character never feels "good enough."</td><td>PRC drops by 1 every month of obsessive exercise without mental health check.</td></tr>
+<tr><td>🔴 Spending beyond means on fitness</td><td>Financial strain. −1 to Finance checks. Possible debt.</td><td>Character spending >$300/month on fitness-related expenses.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout warning">
+  <div class="callout-title">⚠️ Exercise Addiction Recovery</div>
+  <p>To recover from exercise addiction, a character must make <strong>weekly RES checks at TN 45</strong> to resist compulsive training. Each success represents a day they chose balance over compulsion. After 4 successful weeks, the addiction subsides. Failure means another week of compulsive behavior and its associated penalties. Therapy (EXP or INT-based counseling) provides <span class="dice">−10</span> to the TN.</p>
+</div>
+
+<h3>👥 Social Exercise</h3>
+<p>Working out with others — gym buddies, group classes, sports teams — adds a social dimension to the exercise system:</p>
+
+<div class="table-wrap">
+<table>
+thead><tr><th>Social Context</th><th>Bonus</th><th>Cost</th><th>Narrative Effects</th></tr></thead>
+<tbody>
+<tr><td>👫 Gym buddy (1 partner)</td><td><span class="dice">−5</span> to exercise TN (accountability, spotting, motivation)</td><td>Must coordinate schedules. May need to adjust workout to match partner's level.</td><td>+1 EXP with buddy per session. Potential friendship or romance development.</td></tr>
+<tr><td>👥 Group class (yoga, Spin, CrossFit)</td><td><span class="dice">−3</span> to exercise TN (group energy). <span class="dice">−1</span> SP bonus (community feeling).</td><td>$15–$30/class. Fixed schedule.</td><td>Community belonging. +1 EXP with regular class members. Networking opportunities.</td></tr>
+<tr><td>🏟️ Sports team</td><td><span class="dice">−5</span> to exercise TN (team motivation). Social bonus: +2 EXP with teammates.</td><td>League fees: $50–$200/season. Commitment to schedule.</td><td>Strong team bonds. Team wins/losses create shared narrative events. Leadership opportunities for high-PRC characters.</td></tr>
+<tr><td>👨‍🏫 Personal trainer</td><td><span class="dice">−10</span> to exercise TN. <span class="dice">−5</span> to plateau TN. Structured programming.</td><td>$50–$150/session (typically 2–3×/week = $400–$1800/month).</td><td>Trainer becomes a recurring NPC. Can provide advice on non-exercise topics. Professional relationship.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example 5: The Running Club</div>
+  <p><strong>James</strong>, 45, teacher. VIG 8 (+1), EXP 11 (+2), Fitness Level 1 (Casual). He's been lonely since his divorce and joins a local running club on Saturday mornings.</p>
+  <p><strong>First Run:</strong> The group does a 3-mile easy run. TN 40. James gets the social bonus: <span class="dice">−5</span> to TN = effective TN 35. He rolls <span class="dice">2d10</span> + VIG (+1) + Fitness (+1) = <span class="dice">2d10</span> + 2.</p>
+  <p>He rolls <strong>28</strong> + 2 = <strong>30</strong> vs TN 35. <strong>Strong Success!</strong> The group energy carried him through. He finishes feeling great. −2 SP (exercise) + 1 SP (social connection) = net <strong>−3 SP</strong>.</p>
+  <p><strong>After the run:</strong> The group goes for coffee. James makes an EXP check (TN 45) to connect with fellow runners. He rolls <span class="dice">2d10</span> + EXP (+2) = <strong>33</strong> + 2 = <strong>35</strong>. <strong>Strong Success!</strong> He bonds with <strong>Lisa</strong>, a nurse who runs 5 miles every Saturday. Over the next month, their friendship deepens — potentially into something more.</p>
+  <p><em>The GM uses the running club as a recurring narrative element: races, rainy days when James has to choose between running and sleeping in, Lisa's birthday run, etc.</em></p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example 6: Training for the Marathon</div>
+  <p><strong>Aisha</strong>, 30, grad student. VIG 10 (+2), RES 14 (+2), Fitness Level 3 (Fit). She's signed up for her first marathon in 16 weeks. The GM sets up an event training arc.</p>
+  <p><strong>Weekly Training Checks:</strong> Each week, Aisha makes one running check at TN 55 (marathon training TN). She gets a <span class="dice">+3</span> modifier from Fitness Level 3 and <span class="dice">+2</span> from VIG = <span class="dice">+5</span> total.</p>
+  <p><em>Weeks 1–8:</em> Aisha succeeds 6 out of 8 weeks. Life interferes twice (a family emergency and finals week). Her cumulative bonus is <span class="dice">+12</span> (6 successes × +2, capped at +10, so <span class="dice">+10</span>).</p>
+  <p><em>Weeks 9–12:</em> She hits a plateau. The GM increases the weekly TN to 60. She succeeds 3 of 4 weeks. Cumulative bonus stays at <span class="dice">+10</span> (cap reached).</p>
+  <p><em>Weeks 13–15:</em> Taper week. Light training — automatic successes. She's ready.</p>
+  <p><strong>Race Day:</strong> TN 65 for the marathon. Aisha rolls <span class="dice">2d10</span> + 5 (base) + 10 (training bonus) = <span class="dice">2d10</span> + 15.</p>
+  <p>She rolls <strong>44</strong> + 15 = <strong>59</strong> vs TN 65. <strong>Success!</strong> She finishes her first marathon! The GM describes her crossing the line at 4:12, tears streaming, surrounded by cheering family. <strong>−5 SP</strong> from the accomplishment. Her Fitness Level advances to 4 (Athletic). She gains a permanent +1 VIG. PRC +1 from her newfound confidence and toned physique.</p>
+  <p><em>This becomes a defining moment in Aisha's campaign — the marathon is referenced throughout the rest of the game as a benchmark of her determination and capability.</em></p>
+</div>
+
+<h2>9. 📋 Quick Reference: Exercise TN Chart</h2>
+<p>A consolidated reference for all exercise activities and their target numbers:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Activity</th><th>Check</th><th>Easy TN</th><th>Hard TN</th><th>SP Reduction</th><th>Injury Risk</th></tr></thead>
+<tbody>
+<tr><td>🧘 Stretching</td><td><span class="dice">RES+VIG</span></td><td>30</td><td>40</td><td>−2</td><td>Very Low</td></tr>
+<tr><td>🧘 Yoga</td><td><span class="dice">VIG+RES</span></td><td>30</td><td>50</td><td>−3 to −5</td><td>Low</td></tr>
+<tr><td>⚙️ Weight Machines</td><td><span class="dice">VIG</span></td><td>35</td><td>50</td><td>−1</td><td>Low</td></tr>
+<tr><td>🚶 Walking/Hiking</td><td><span class="dice">VIG</span></td><td>35</td><td>55</td><td>−1 to −3</td><td>Low</td></tr>
+<tr><td>🏋️ Free Weights</td><td><span class="dice">VIG</span></td><td>45</td><td>65</td><td>−1</td><td>High</td></tr>
+<tr><td>🏃 Cardio Equipment</td><td><span class="dice">VIG</span></td><td>40</td><td>55</td><td>−2 to −4</td><td>Medium</td></tr>
+<tr><td>🏃 Running (outdoor)</td><td><span class="dice">VIG</span></td><td>40</td><td>60</td><td>−2 to −5</td><td>Medium</td></tr>
+<tr><td>🚴 Cycling</td><td><span class="dice">VIG</span></td><td>40</td><td>55</td><td>−2 to −3</td><td>Medium</td></tr>
+<tr><td>🏊 Swimming</td><td><span class="dice">VIG+DXT</span></td><td>45</td><td>60</td><td>−3 to −5</td><td>Medium (High open water)</td></tr>
+<tr><td>⚡ Functional Training</td><td><span class="dice">VIG+DXT</span></td><td>50</td><td>65</td><td>−3</td><td>High</td></tr>
+<tr><td>⚡ HIIT</td><td><span class="dice">VIG</span></td><td>50</td><td>65</td><td>−3</td><td>High</td></tr>
+<tr><td>🧗 Climbing</td><td><span class="dice">VIG+DXT</span></td><td>50</td><td>70</td><td>−2 to −4</td><td>Very High (outdoor)</td></tr>
+<tr><td>🥊 Martial Arts</td><td><span class="dice">VIG+DXT+RES</span></td><td>50</td><td>70</td><td>−2</td><td>High</td></tr>
+<tr><td>⚽ Team Sports</td><td><span class="dice">VIG+DXT+EXP</span></td><td>45</td><td>60</td><td>−2</td><td>Medium</td></tr>
+<tr><td>🛶 Canoeing/Kayaking</td><td><span class="dice">VIG+DXT</span></td><td>45</td><td>55</td><td>−3</td><td>Medium (High whitewater)</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>10. 🎮 GM Notes</h2>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Running Exercise in Your Game</div>
+  <p><strong>Don't make players roll for everything.</strong> If a character is consistently exercising without dramatic stakes, assume success and track progress narratively. Only call for rolls when:</p>
+  <ul style="margin-left: 2em; margin-bottom: 1em;">
+    <li>🎯 The character is attempting something new or at a higher difficulty</li>
+    <li>⚠️ There's a meaningful risk of injury or failure</li>
+    <li>📊 The character is at a high overtraining level</li>
+    <li>🏆 Event preparation checkpoints</li>
+    <li>💡 The player wants the drama of a roll</li>
+  </ul>
+  <p><strong>Use exercise as character development.</strong> A character who starts sedentary and works their way to Athletic fitness should feel like an achievement. The physical transformation is a narrative arc, not just stat bumps.</p>
+  <p><strong>Weather matters.</strong> Reference the <a href="weather-environment.html">Environment page</a> — rain makes running harder (+5 TN), extreme heat makes outdoor exercise dangerous, snow can make it impossible. Indoor gyms provide shelter.</p>
+  <p><strong>Time is a resource.</strong> Every hour spent at the gym is an hour not spent working, socializing, or resting. Characters must balance their exercise with the demands of daily life — this is where the real roleplay happens.</p>
+</div>
+
+</div>
+</section>
+
+<footer class="site-footer">
+  <p>Reality RPG &mdash; Life is the ultimate campaign. 🎲 Exercise page &copy; 2025</p>
+</footer>
+
+</body>
+</html>
