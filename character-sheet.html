@@ -5,134 +5,157 @@
 <title>Character Sheet — Reality RPG</title>
 <link rel="stylesheet" href="css/style.css">
 <style>
-/* Print-optimized character sheet */
+/* ============================================================
+   SHARED LAYOUT — applies to BOTH screen and print
+   ============================================================ */
+
+/* --- Sheet page container --- */
+.sheet-page {
+  background: #fff;
+  max-width: 850px;
+  margin: 2em auto;
+  padding: 2em;
+  page-break-after: always;
+}
+.sheet-page:last-child { page-break-after: avoid; }
+
+/* --- Section titles --- */
+.sheet-section-title {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.4em 0.8em;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  margin: 1.5em 0 0.8em;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.sheet-section-title:first-child { margin-top: 0; }
+
+/* --- 2-column field grid --- */
+.sheet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 2px solid var(--color-primary);
+  border-top: none;
+}
+.sheet-field {
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.5em;
+  min-height: 60px;
+}
+.sheet-field:nth-child(even) { border-right: none; }
+.sheet-field.full { grid-column: 1 / -1; }
+.sheet-field label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3em;
+}
+.sheet-field input,
+.sheet-field textarea,
+.sheet-field select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed var(--color-border);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.2em 0;
+  background: transparent;
+}
+.sheet-field textarea { min-height: 60px; resize: vertical; }
+
+/* --- Attribute row (6 columns) --- */
+.attr-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  border: 2px solid var(--color-primary);
+}
+.attr-box {
+  text-align: center;
+  padding: 0.6em;
+  border-right: 1px solid var(--color-border);
+}
+.attr-box:last-child { border-right: none; }
+.attr-box .attr-icon { font-size: 1.3rem; display: block; }
+.attr-box .attr-name {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.attr-box input {
+  width: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-bottom: 2px solid var(--color-primary);
+  padding: 0.2em;
+  background: transparent;
+}
+.attr-box .attr-mod {
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 700;
+}
+
+/* --- Health & Stress tracks --- */
+.health-track, .stress-track {
+  display: flex;
+  gap: 0;
+  border: 2px solid var(--color-primary);
+}
+.track-step {
+  flex: 1;
+  text-align: center;
+  padding: 0.5em;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  font-family: var(--font-heading);
+}
+.track-step:last-child { border-right: none; }
+.track-step input[type="checkbox"] { margin-right: 0.3em; }
+
+/* --- Skill rows --- */
+.skill-row {
+  display: grid;
+  grid-template-columns: 140px 60px 1fr;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-top: none;
+  font-size: 0.9rem;
+}
+.skill-row:first-child { border-top: 2px solid var(--color-primary); }
+.skill-cat {
+  grid-column: 1 / -1;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.3em 0.6em;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.skill-name { padding: 0.3em 0.6em; border-right: 1px solid var(--color-border); }
+.skill-attr { padding: 0.3em; text-align: center; border-right: 1px solid var(--color-border); font-size: 0.8rem; color: var(--color-muted); }
+.skill-level { padding: 0.3em; }
+.skill-level input { width: 40px; text-align: center; border: 1px solid var(--color-border); border-radius: 3px; padding: 0.1em; }
+
+/* ============================================================
+   SCREEN-ONLY decorations
+   ============================================================ */
 @media screen {
   .sheet-page {
-    background: #fff;
-    max-width: 850px;
-    margin: 2em auto;
-    padding: 2em;
     box-shadow: var(--shadow-lg);
     border: 1px solid var(--color-border);
-    page-break-after: always;
   }
-  .sheet-page:last-child { page-break-after: avoid; }
-  .sheet-section-title {
-    background: var(--color-primary);
-    color: #fff;
-    padding: 0.4em 0.8em;
-    font-family: var(--font-heading);
-    font-size: 1rem;
-    margin: 1.5em 0 0.8em;
-    border-radius: var(--radius) var(--radius) 0 0;
-  }
-  .sheet-section-title:first-child { margin-top: 0; }
-  .sheet-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    border: 2px solid var(--color-primary);
-    border-top: none;
-  }
-  .sheet-field {
-    border-right: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-    padding: 0.5em;
-    min-height: 60px;
-  }
-  .sheet-field.full { grid-column: 1 / -1; }
-  .sheet-field label {
-    display: block;
-    font-family: var(--font-heading);
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--color-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.3em;
-  }
-  .sheet-field input, .sheet-field textarea, .sheet-field select {
-    width: 100%;
-    border: none;
-    border-bottom: 1px dashed var(--color-border);
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-    padding: 0.2em 0;
-    background: transparent;
-  }
-  .sheet-field textarea { min-height: 60px; resize: vertical; }
-  .attr-row {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0;
-    border: 2px solid var(--color-primary);
-  }
-  .attr-box {
-    text-align: center;
-    padding: 0.6em;
-    border-right: 1px solid var(--color-border);
-  }
-  .attr-box:last-child { border-right: none; }
-  .attr-box .attr-icon { font-size: 1.3rem; display: block; }
-  .attr-box .attr-name {
-    font-family: var(--font-heading);
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--color-muted);
-  }
-  .attr-box input {
-    width: 50px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border: none;
-    border-bottom: 2px solid var(--color-primary);
-    padding: 0.2em;
-    background: transparent;
-  }
-  .attr-box .attr-mod {
-    font-size: 0.85rem;
-    color: var(--color-accent-dark);
-    font-weight: 700;
-  }
-  .health-track, .stress-track {
-    display: flex;
-    gap: 0;
-    border: 2px solid var(--color-primary);
-  }
-  .track-step {
-    flex: 1;
-    text-align: center;
-    padding: 0.5em;
-    border-right: 1px solid var(--color-border);
-    font-size: 0.8rem;
-    font-family: var(--font-heading);
-  }
-  .track-step:last-child { border-right: none; }
-  .track-step input[type="checkbox"] { margin-right: 0.3em; }
-  .skill-row {
-    display: grid;
-    grid-template-columns: 140px 60px 1fr;
-    gap: 0;
-    border: 1px solid var(--color-border);
-    border-top: none;
-    font-size: 0.9rem;
-  }
-  .skill-row:first-child { border-top: 2px solid var(--color-primary); }
-  .skill-cat {
-    grid-column: 1 / -1;
-    background: var(--color-primary);
-    color: #fff;
-    padding: 0.3em 0.6em;
-    font-family: var(--font-heading);
-    font-size: 0.8rem;
-    font-weight: 700;
-  }
-  .skill-name { padding: 0.3em 0.6em; border-right: 1px solid var(--color-border); }
-  .skill-attr { padding: 0.3em; text-align: center; border-right: 1px solid var(--color-border); font-size: 0.8rem; color: var(--color-muted); }
-  .skill-level { padding: 0.3em; }
-  .skill-level input { width: 40px; text-align: center; border: 1px solid var(--color-border); border-radius: 3px; padding: 0.1em; }
   .print-btn {
     display: inline-block;
     background: var(--color-accent);
@@ -148,17 +171,96 @@
   }
   .print-btn:hover { background: var(--color-accent-dark); }
 }
+
+/* ============================================================
+   PRINT-ONLY overrides
+   ============================================================ */
 @media print {
-  .site-header, .site-footer, .print-btn, .sheet-instructions { display: none !important; }
-  body { background: #fff; }
+  /* Hide chrome */
+  .site-header,
+  .site-footer,
+  .print-btn,
+  .sheet-instructions,
+  h1,
+  .content-section > .container > p:first-of-type {
+    display: none !important;
+  }
+
+  /* Reset body */
+  body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Page containers */
   .sheet-page {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0.6cm 0.8cm;
     box-shadow: none;
     border: none;
-    margin: 0;
-    padding: 0.5cm;
     page-break-after: always;
   }
-  input, textarea { border-bottom-color: #999 !important; }
+  .sheet-page:last-child { page-break-after: avoid; }
+
+  /* Ensure backgrounds print */
+  .sheet-section-title,
+  .skill-cat {
+    background-color: var(--color-primary) !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Input borders more visible */
+  input,
+  textarea,
+  select {
+    border-bottom-color: #666 !important;
+  }
+
+  /* Keep emoji/icons visible */
+  .attr-icon,
+  .card-icon,
+  img {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Prevent awkward breaks inside fields */
+  .sheet-field,
+  .attr-box,
+  .skill-name,
+  .skill-level {
+    break-inside: avoid;
+  }
+
+  /* Ensure grid stays intact on paper */
+  .sheet-grid,
+  .attr-row,
+  .skill-row,
+  .health-track,
+  .stress-track {
+    break-inside: avoid;
+  }
+
+  /* Slightly smaller text to fit more per page */
+  .sheet-field label { font-size: 0.7rem; }
+  .sheet-field input,
+  .sheet-field textarea { font-size: 0.85rem; }
+  .attr-box .attr-name { font-size: 0.65rem; }
+  .attr-box input { font-size: 1.2rem; }
+  .skill-row { font-size: 0.8rem; }
+  .track-step { font-size: 0.7rem; }
+
+  /* Remove padding on textareas to save space */
+  .sheet-field textarea { min-height: 40px; }
+  .sheet-field { min-height: 45px; padding: 0.35em; }
 }
 </style>
 </head>
@@ -169,7 +271,6 @@
   <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
   <nav>
     <ul class="site-nav">
-      
       <li><a href="index.html">Home</a></li>
       <li><a href="core-mechanics.html">Core Mechanics</a></li>
       <li><a href="character-creation.html">Characters</a></li>
@@ -183,8 +284,8 @@
       <li><a href="example-characters.html">Example PCs</a></li>
       <li><a href="sexual-health.html">Sexual Health</a></li>
       <li><a href="family-children.html">Family</a></li>
-      <li><a href="death-grief.html">Death & Grief</a></li>
-      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="death-grief.html">Death &amp; Grief</a></li>
+      <li><a href="law-civic.html">Law &amp; Civic</a></li>
       <li><a href="weather-environment.html">Environment</a></li>
       <li><a href="macro-economy.html">Macro Economy</a></li>
       <li><a href="geography-mobility.html">Mobility</a></li>
@@ -195,7 +296,6 @@
       <li><a href="campaigns.html">Campaigns</a></li>
       <li><a href="gm-tools.html">GM Tools</a></li>
       <li><a href="character-sheet.html" class="active">Sheet</a></li>
-
     </ul>
   </nav>
 </div>
@@ -271,7 +371,7 @@
     </div>
   </div>
 
-  <div class="sheet-section-title">❤️ Health & Stress</div>
+  <div class="sheet-section-title">❤️ Health &amp; Stress</div>
   <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1em; margin-bottom:0.5em;">
     <div>
       <label style="font-family:var(--font-heading);font-size:0.8rem;font-weight:700;">Health Condition Track</label>
@@ -290,7 +390,7 @@
         <div class="track-step">😐 Elevated<br><small>1–5</small></div>
         <div class="track-step">😟 Stressed<br><small>6–15</small></div>
         <div class="track-step">😰 Overwhelmed<br><small>16–25</small></div>
-        <div class="track-step">💥 Episode<br><small>>Max</small></div>
+        <div class="track-step">💥 Episode<br><small>&gt;Max</small></div>
       </div>
     </div>
   </div>
@@ -302,11 +402,11 @@
     <div class="sheet-field"><label>Current Occupation</label><input type="text"></div>
     <div class="sheet-field"><label>Housing Situation</label><input type="text"></div>
     <div class="sheet-field"><label>Political Identity</label><input type="text"></div>
-    <div class="sheet-field"><label>Religious/Spiritual</label><input type="text"></div>
+    <div class="sheet-field"><label>Religious / Spiritual</label><input type="text"></div>
     <div class="sheet-field full"><label>Backstory (100–200 words)</label><textarea rows="4"></textarea></div>
   </div>
 
-  <div class="sheet-section-title">♿ Disability & Neurodivergence</div>
+  <div class="sheet-section-title">♿ Disability &amp; Neurodivergence</div>
   <div class="sheet-grid">
     <div class="sheet-field"><label>Physical Disability</label><input type="text"></div>
     <div class="sheet-field"><label>Accessibility Needs</label><input type="text"></div>
@@ -365,11 +465,11 @@
     <div class="sheet-field full"><label>Disadvantages (2)</label><textarea rows="3"></textarea></div>
   </div>
 
-  <div class="sheet-section-title">🎯 Goals & Motivations</div>
+  <div class="sheet-section-title">🎯 Goals &amp; Motivations</div>
   <div class="sheet-grid">
     <div class="sheet-field full"><label>Short-term Goals (this month)</label><textarea rows="2"></textarea></div>
     <div class="sheet-field full"><label>Long-term Goals (this year)</label><textarea rows="2"></textarea></div>
-    <div class="sheet-field full"><label>Fears & Insecurities</label><textarea rows="2"></textarea></div>
+    <div class="sheet-field full"><label>Fears &amp; Insecurities</label><textarea rows="2"></textarea></div>
   </div>
 </div>
 
@@ -402,7 +502,7 @@
     <div class="sheet-field full"><label>Professional Contacts</label><textarea rows="2" placeholder="Name — Connection — Notes"></textarea></div>
   </div>
 
-  <div class="sheet-section-title">👨‍👩‍👧‍👦 Family & Relationships</div>
+  <div class="sheet-section-title">👨‍👩‍👧‍👦 Family Details</div>
   <div class="sheet-grid">
     <div class="sheet-field"><label>Pregnancy Status</label><input type="text"></div>
     <div class="sheet-field"><label>Children (names/ages)</label><input type="text"></div>
@@ -430,9 +530,9 @@
     <div class="sheet-field"><label>Religious Devotion (0–5): ___</label><input type="text"></div>
     <div class="sheet-field"><label>Relationship Structure</label><input type="text"></div>
     <div class="sheet-field"><label>Work Arrangement</label><input type="text"></div>
-    <div class="sheet-field"><label>Immigration/Visa Status</label><input type="text"></div>
-    <div class="sheet-field"><label>Current City/Location</label><input type="text"></div>
-    <div class="sheet-field full"><label>Active Goals & Campaign Arcs</label><textarea rows="3"></textarea></div>
+    <div class="sheet-field"><label>Immigration / Visa Status</label><input type="text"></div>
+    <div class="sheet-field"><label>Current City / Location</label><input type="text"></div>
+    <div class="sheet-field full"><label>Active Goals &amp; Campaign Arcs</label><textarea rows="3"></textarea></div>
     <div class="sheet-field full"><label>Long-term Narrative Threads</label><textarea rows="3"></textarea></div>
   </div>
 </div>
