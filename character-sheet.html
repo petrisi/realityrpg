@@ -70,21 +70,6 @@
 }
 .sheet-field textarea { min-height: 48px; resize: vertical; }
 
-/* --- Page 1: slightly taller fields to fill the page --- */
-.page-1 .sheet-field {
-  min-height: 56px;
-  padding: 0.5em;
-}
-.page-1 .sheet-field textarea {
-  min-height: 56px;
-}
-.page-1 .attr-box {
-  padding: 0.7em;
-}
-.page-1 .track-step {
-  padding: 0.6em;
-}
-
 /* --- Attribute row (6 columns) --- */
 .attr-row {
   display: grid;
@@ -326,21 +311,6 @@
     font-size: 7pt !important;
   }
 
-  /* ---- Page 1: taller fields to fill the page ---- */
-  .page-1 .sheet-field {
-    min-height: 24pt !important;
-    padding: 3pt 4pt !important;
-  }
-  .page-1 .sheet-field textarea {
-    min-height: 26pt !important;
-  }
-  .page-1 .attr-box {
-    padding: 3pt 2pt !important;
-  }
-  .page-1 .track-step {
-    padding: 2.5pt 3pt !important;
-  }
-
   /* ---- Prevent section splits: title + grid stay together ---- */
   .sheet-section-title {
     break-after: avoid;
@@ -413,7 +383,7 @@
 </section>
 
 <!-- PAGE 1: Core Identity -->
-<div class="sheet-page page-1">
+<div class="sheet-page">
   <div style="text-align:center; margin-bottom:1em;">
     <img src="img/logo.png" alt="" style="height:40px;">
     <h2 style="border:none; margin:0; font-size:1.3rem;">REALITY RPG — CHARACTER SHEET</h2>
