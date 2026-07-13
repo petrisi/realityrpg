@@ -62,6 +62,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>📱 Mei Lin Chen — 23 · East Asian American · Software Engineering Intern</strong></summary>
 
+<img src="img/char_mei.png" alt="Mei Lin Chen" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -88,6 +89,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>🔧 Marcus Johnson — 42 · Black American · Auto Mechanic</strong></summary>
 
+<img src="img/char_marcus.png" alt="Marcus Johnson" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -114,6 +116,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>📦 Carlos Rodriguez — 21 · Hispanic/Latino · Warehouse Worker & Student</strong></summary>
 
+<img src="img/char_carlos.png" alt="Carlos Rodriguez" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -140,6 +143,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>📖 Elaine Whitmore — 72 · White American · Retired Teacher & Widow</strong></summary>
 
+<img src="img/char_elaine.png" alt="Elaine Whitmore" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -166,6 +170,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>🩺 Raj Patel — 35 · South Asian American · Internal Medicine Resident</strong></summary>
 
+<img src="img/char_raj.png" alt="Raj Patel" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -192,6 +197,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>🌿 Tallulah Red Elk — 38 · Native American (Lakota) · Cultural Liaison Worker</strong></summary>
 
+<img src="img/char_tallulah.png" alt="Tallulah Red Elk" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -218,6 +224,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>📚 Youssef Al-Hassan — 24 · Middle Eastern (Egyptian American) · Political Science Grad Student</strong></summary>
 
+<img src="img/char_youssef.png" alt="Youssef Al-Hassan" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
@@ -244,6 +251,7 @@ Eight fully-built characters demonstrate every mechanic — ethnicity, culture, 
 <details>
 <summary><strong>🏗️ Derek O'Brien — 31 · White American · Construction Worker, Early Recovery</strong></summary>
 
+<img src="img/char_derek.png" alt="Derek O'Brien" width="96" height="96" style="float:left;margin:0.5em 1em 0.5em 0;border-radius:8px" />
 <table>
 <tr><td width="45%"><table>
 <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
