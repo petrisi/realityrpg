@@ -191,9 +191,38 @@ The complete ruleset is delivered as a linked set of HTML pages, each covering a
 
 > ⚠️ This game can explore heavy topics: poverty, mental illness, discrimination, addiction, grief. Establish **safety tools** (Lines and Veils) before play begins.
 
+## 📥 Getting Started
+
+The ruleset is a static HTML site — no build step, no server, no dependencies.
+
+### Clone and open
+
+```bash
+git clone https://github.com/petrisi/realityrpg.git
+cd realityrpg
+```
+
+Then open **`index.html`** in your browser (double-click it, or run a quick local server):
+
+```bash
+# Option 1 — just open the file
+open index.html          # macOS
+xdg-open index.html      # Linux
+start index.html         # Windows
+
+# Option 2 — serve via local HTTP (avoids browser CORS restrictions)
+python3 -m http.server 8080   # then visit http://localhost:8080
+```
+
+### Download as ZIP
+
+Alternatively, go to the [releases page](https://github.com/petrisi/realityrpg/releases) and download the latest archive. Extract and open `index.html`.
+
+---
+
 ## 🔧 Technical
 
-The ruleset is delivered as a **static HTML site** — no build step, no dependencies. Open `index.html` in any browser. Each chapter is a standalone HTML page linked together with shared CSS.
+Each chapter is a standalone HTML page linked together with shared CSS. The complete file structure:
 
 ```
 realityrpg/
