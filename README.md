@@ -339,8 +339,7 @@ The complete ruleset is delivered as a linked set of HTML pages, each covering a
 <table>
 <tr>
 <td align="center" width="33%">
-<details>
-<summary><strong>🎲 Core Mechanics</strong></summary>
+<strong>🎲 Core Mechanics</strong>
 
 <br>
 The d100 resolution system — roll 2d10 + modifier vs. Target Number. Six attributes, 15 skills, a health condition track (no hit points), and a stress pool that carries over across days.
@@ -356,11 +355,9 @@ The d100 resolution system — roll 2d10 + modifier vs. Target Number. Six attri
 </table>
 
 <br>
-</details>
 </td>
 <td align="center" width="33%">
-<details>
-<summary><strong>🧠 Mental Health</strong></summary>
+<strong>🧠 Mental Health</strong>
 
 <br>
 Stress Points accumulate from real events. When SP reaches your max, you have an Episode — condition-specific, narratively meaningful. Treatment is mechanical: therapy levels, medication adherence checks, social support recovery.
@@ -375,11 +372,9 @@ Stress Points accumulate from real events. When SP reaches your max, you have an
 </table>
 
 <br>
-</details>
 </td>
 <td align="center" width="33%">
-<details>
-<summary><strong>🌅 Daily Life</strong></summary>
+<strong>🌅 Daily Life</strong>
 
 <br>
 Every mundane action has mechanics. Sleep, hygiene, nutrition, commuting, working — tracked and consequential. Neglect them and the health track degrades.
@@ -394,13 +389,11 @@ Every mundane action has mechanics. Sleep, hygiene, nutrition, commuting, workin
 </table>
 
 <br>
-</details>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<details>
-<summary><strong>👤 Character Creation</strong></summary>
+<strong>👤 Character Creation</strong>
 
 <br>
 Progressive point-buy (100–160 pts by age). Attributes, skills, advantages, and disadvantages all from one pool. Ethnicity, culture, class, and mental health are mechanical — not cosmetic.
@@ -414,11 +407,9 @@ Progressive point-buy (100–160 pts by age). Attributes, skills, advantages, an
 </table>
 
 <br>
-</details>
 </td>
 <td align="center" width="33%">
-<details>
-<summary><strong>🎒 Inventory & Economy</strong></summary>
+<strong>🎒 Inventory & Economy</strong>
 
 <br>
 No magical inventory. Your "gear" is a wallet with $47, keys, phone, and a half-empty toilet paper roll. Money is tracked in dollars, spent on rent, food, bills, and emergencies.
@@ -432,11 +423,9 @@ No magical inventory. Your "gear" is a wallet with $47, keys, phone, and a half-
 </table>
 
 <br>
-</details>
 </td>
 <td align="center" width="33%">
-<details>
-<summary><strong>⚔️ Fantasy vs Reality</strong></summary>
+<strong>⚔️ Fantasy vs Reality</strong>
 
 <br>
 Every fantasy RPG concept has a real-world equivalent. Your "sword" is a resume. Your "potion" is coffee. Your "dungeon crawl" is a job interview.
@@ -451,7 +440,6 @@ Every fantasy RPG concept has a real-world equivalent. Your "sword" is a resume.
 </table>
 
 <br>
-</details>
 </td>
 </tr>
 </table>
