@@ -7,49 +7,8 @@
 </head>
 <body>
 
-<header class="site-header">
-<div class="container">
-  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
-  <nav>
-    <ul class="site-nav">
-      
-      
-      
-      <li><a href="index.html">Home</a></li>
-      <li><a href="core-mechanics.html">Core Mechanics</a></li>
-      <li><a href="character-creation.html">Characters</a></li>
-      <li><a href="mental-health.html" class="active">Mental Health</a></li>
-      <li><a href="neurodivergence.html">Neurodivergence</a></li>
-      <li><a href="disability.html">Disability</a></li>
-      <li><a href="daily-life.html">Daily Life</a></li>
-      <li><a href="social-dynamics.html">Social</a></li>
-      <li><a href="inventory-economy.html">Inventory</a></li>
-      <li><a href="comparative.html">Fantasy vs Reality</a></li>
-      <li><a href="example-characters.html">Example PCs</a></li>
-      <li><a href="sexual-health.html">Sexual Health</a></li>
-      <li><a href="family-children.html">Family</a></li>
-      <li><a href="death-grief.html">Death & Grief</a></li>
-      <li><a href="law-civic.html">Law & Civic</a></li>
-      <li><a href="weather-environment.html">Environment</a></li>
-      <li><a href="macro-economy.html">Macro Economy</a></li>
-      <li><a href="geography-mobility.html">Mobility</a></li>
-      <li><a href="remote-work.html">Remote Work</a></li>
-      <li><a href="relationship-structures.html">Relationships</a></li>
-      <li><a href="religion-spirituality.html">Religion</a></li>
-      <li><a href="politics-activism.html">Politics</a></li>
-      <li><a href="campaigns.html">Campaigns</a></li>
-      <li><a href="gm-tools.html">GM Tools</a></li>
-      <li><a href="exercise.html">Exercise</a></li>
-      <li><a href="weapons.html">Weapons</a></li>
-      <li><a href="vehicles.html">Vehicles</a></li>
-      <li><a href="character-sheet.html">Sheet</a></li>
-
-
-
-    </ul>
-  </nav>
-</div>
-</header>
+<!-- Header injected by nav-loader.js -->
+<div id="slot-header"></div>
 
 <section class="content-section">
 <div class="container">
@@ -66,23 +25,42 @@
 <p>Mental health in Reality RPG operates on three interconnected tracks: <strong>Stress Points</strong>, <strong>Triggers</strong>, and <strong>Episodes</strong>. Together they form a dynamic system that reflects how mental health conditions actually behave — fluctuating, context-dependent, and responsive to treatment.</p>
 
 <h3>1.1 Stress Points (SP)</h3>
-<p>Every character has a <strong>Stress Pool</strong> measured in <strong>Stress Points (SP)</strong>. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters start each scene at 0 SP unless an ongoing condition or recent event has loaded them.</p>
+<p>Every character has a <strong>Stress Pool</strong> measured in <strong>Stress Points (SP)</strong>. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters begin play at 0 SP. Stress persists across days — recovery requires rest, support, and time. See the <a href="core-mechanics.html#stress">Core Mechanics page</a> for the full stress framework.</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Stress Level</th><th>SP Range</th><th>Effects</th></tr></thead>
+<thead><tr><th>Stress Level</th><th>Effects</th></tr></thead>
 <tbody>
-<tr><td>😌 <strong>Stable</strong></td><td>0</td><td>No penalty. Character functions normally.</td></tr>
-<tr><td>😐 <strong>Elevated</strong></td><td>1–5</td><td>Minor distraction. −2 modifier on all RES-based checks.</td></tr>
-<tr><td>😟 <strong>Stressed</strong></td><td>6–15</td><td>Noticeable impairment. −5 modifier on RES and INT checks. Must make a <span class="dice">RES</span> check (TN 40) each night to get restful sleep.</td></tr>
-<tr><td>😰 <strong>Overwhelmed</strong></td><td>16–25</td><td>Significant dysfunction. −8 on all checks. Character gains one <strong>Trigger</strong> marker. Risk of Episode if SP exceeds max.</td></tr>
-<tr><td>💥 <strong>Episode Threshold</strong></td><td>> Max SP</td><td>Character enters an <strong>Episode</strong> (see below). Condition-specific effects apply.</td></tr>
+<tr><td>😌 <strong>Stable</strong></td><td>No penalty. Character functions normally.</td></tr>
+<tr><td>😐 <strong>Elevated</strong></td><td>Minor distraction. −2 on RES checks.</td></tr>
+<tr><td>😟 <strong>Stressed</strong></td><td>Noticeable impairment. −5 on RES and INT checks. Must make a <span class="dice">RES</span> check (TN 40) each night for restful sleep.</td></tr>
+<tr><td>😰 <strong>Overwhelmed</strong></td><td>Significant dysfunction. −8 on all checks. One more stress push and they break.</td></tr>
+<tr><td>💥 <strong>Episode</strong></td><td>SP reaches Max SP. Character has a breakdown. Condition-specific effects apply.</td></tr>
 </tbody>
 </table>
 </div>
 
+<div class="table-wrap">
+<table>
+<thead><tr><th>RES Mod</th><th>RES Score</th><th>😌 Max SP</th><th>😐 Elevated</th><th>😟 Stressed</th><th>😰 Overwhelmed</th></tr></thead>
+<tbody>
+<tr><td>+0</td><td>1–4</td><td>20</td><td>1–2</td><td>3–7</td><td>8–19</td></tr>
+<tr><td>+1</td><td>5–9</td><td>25</td><td>1–3</td><td>4–9</td><td>10–24</td></tr>
+<tr><td>+2</td><td>10–14</td><td>30</td><td>1–4</td><td>5–11</td><td>12–29</td></tr>
+<tr><td>+3</td><td>15–19</td><td>35</td><td>1–4</td><td>5–13</td><td>14–34</td></tr>
+<tr><td>+4</td><td>20</td><td>40</td><td>1–5</td><td>6–15</td><td>16–39</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mod-ref-note">Episode triggers when SP <strong>reaches</strong> Max SP (not exceeds). Low-RES characters break under less stress; high-RES characters can absorb more before reaching crisis.</p>
+
+<div class="callout tip">
+  <div class="callout-title">💡 Unified Stress System</div>
+  <p>The core-mechanics stress system and this Mental Health page use the <strong>same SP pool</strong>. Characters without a diagnosed condition can still accumulate stress from life events. Characters <em>with</em> a condition have additional triggers, episode mechanics, and recovery options. See the <a href="core-mechanics.html">Core Mechanics page</a> for the foundational stress rules and the Dana stress-spiral example.</p>
+</div>
+
 <h3>1.2 Stress Sources</h3>
-<p>Stress accumulates from events, environment, and conditions. The GM assigns SP based on severity:</p>
+<p>Stress accumulates from events, environment, and conditions. The GM assigns SP based on severity. These values are consistent with the <a href="core-mechanics.html#stress">Core Mechanics stress system</a>:</p>
 
 <div class="table-wrap">
 <table>
@@ -90,19 +68,21 @@
 <tbody>
 <tr><td>Minor inconvenience</td><td>+1 SP</td><td>Missed bus, bad meal, awkward interaction</td></tr>
 <tr><td>Stressful event</td><td>+3 SP</td><td>Heated argument, failed exam, work deadline</td></tr>
-<tr><td>Significant trauma</td><td>+5 SP</td><td>Job loss, breakup, accident, public humiliation</td></tr>
-<tr><td>Catastrophic event</td><td>+8 SP</td><td>Death of loved one, assault, eviction, arrest</td></tr>
-<tr><td>Chronic condition (per day)</td><td>+1–3 SP/day</td><td>Ongoing untreated condition slowly drains resources</td></tr>
+<tr><td>Significant trauma</td><td>+4–5 SP</td><td>Job loss, breakup, accident, public humiliation</td></tr>
+<tr><td>Catastrophic event</td><td>+7–8 SP</td><td>Death of loved one, assault, eviction, arrest</td></tr>
+<tr><td>Chronic condition (per day)</td><td>+1–3 SP/day</td><td>Ongoing untreated condition slowly fills stress pool</td></tr>
 </tbody>
 </table>
 </div>
 
 <h3>1.3 Stress Recovery</h3>
-<p>Stress naturally decreases over time. Characters recover <strong>1 SP per full night's sleep</strong>. Additional recovery comes from:</p>
+<p>Stress reduces through the same channels defined in the <a href="core-mechanics.html#stress">Core Mechanics stress system</a>:</p>
 <ul>
-<li><strong>Relaxation activities</strong> (exercise, meditation, hobbies): −1 SP per activity, once per day</li>
-<li><strong>Therapy session</strong>: −3 to −5 SP (see §3)</li>
-<li><strong>Strong social support</strong> (trusted friend, family): −2 SP per meaningful interaction</li>
+<li><strong>Rest</strong>: −1 SP per good night's sleep. At 😟 Stressed and above, a <span class="dice">RES check (TN 40)</span> is required each night for restful sleep — failure means no SP recovery that night.</li>
+<li><strong>Social support</strong>: −2 SP per meaningful conversation with a trusted person</li>
+<li><strong>Exercise</strong>: −1 SP per workout session</li>
+<li><strong>Therapy</strong>: −3 to −5 SP per session (see §3)</li>
+<li><strong>Time away from stressors</strong>: removing the character from the source of stress slows further SP gain</li>
 <li><strong>Medication</strong>: reduces baseline SP gain by 50% (see §3)</li>
 </ul>
 
@@ -115,7 +95,7 @@
 </div>
 
 <h3>1.5 Episodes</h3>
-<p>When SP exceeds the character's maximum capacity, they enter an <strong>Episode</strong>. An Episode lasts <strong>1d4 hours</strong> for mild conditions or <strong>1d4 days</strong> for severe ones. During an Episode:</p>
+<p>When SP <strong>reaches</strong> the character's maximum capacity (Max SP), they enter an <strong>Episode</strong>. An Episode lasts <strong>1d4 hours</strong> for mild conditions or <strong>1d4 days</strong> for severe ones. During an Episode:</p>
 <ul>
 <li>All checks suffer a <strong>+10 TN penalty</strong> (i.e., the target number is effectively 10 harder)</li>
 <li>The character gains condition-specific penalties (detailed per condition below)</li>
@@ -265,7 +245,7 @@
 <tr>
 <td><strong>Manic</strong></td>
 <td><span class="dice">1d4</span> days</td>
-<td>−8 TN on all checks (things seem easy), but: +3 TN on any check requiring <em>caution</em>, impulse control, or long-term thinking; character makes <strong>impulsive decisions</strong> (GM narrates 1d3 risky actions per day); −5 SP recovery per night (no sleep needed but no rest either)</td>
+<td>−8 TN on all checks (things seem easy), but: +3 TN on any check requiring <em>caution</em>, impulse control, or long-term thinking; character makes <strong>impulsive decisions</strong> (GM narrates 1d3 risky actions per day); <strong>no SP recovery</strong> per night (no sleep needed but no rest either)</td>
 </tr>
 <tr>
 <td><strong>Hypomanic</strong></td>
@@ -448,11 +428,11 @@
 <table>
 <thead><tr><th>Therapy Level</th><th>Sessions Required</th><th>Benefits</th></tr></thead>
 <tbody>
-<tr><td><strong>Level 0</strong> (New)</td><td>0–4 sessions</td><td>−20 Stress per session (one-time relief only)</td></tr>
-<tr><td><strong>Level 1</strong> (Awareness)</td><td>5–12 sessions</td><td>−20 SP per session; character learns to <strong>identify triggers</strong> (advantage on one RES check per session)</td></tr>
-<tr><td><strong>Level 2</strong> (Coping Skills)</td><td>13–24 sessions</td><td>−25 SP per session; −1 to all condition penalties; character can <strong>self-regulate</strong> once per day (auto-success on one RES check)</td></tr>
-<tr><td><strong>Level 3</strong> (Management)</td><td>25–40 sessions</td><td>−30 SP per session; condition severity drops one level (Severe→Moderate→Mild); chronic SP drain reduced by 50%</td></tr>
-<tr><td><strong>Level 4</strong> (Resilience)</td><td>41+ sessions</td><td>−30 SP per session; condition severity drops again or goes into <strong>remission</strong>; character gains +5 max SP capacity (learned emotional tolerance)</td></tr>
+<tr><td><strong>Level 0</strong> (New)</td><td>0–4 sessions</td><td>−3 SP per session (initial relief and rapport-building)</td></tr>
+<tr><td><strong>Level 1</strong> (Awareness)</td><td>5–12 sessions</td><td>−3 SP per session; character learns to <strong>identify triggers</strong> (advantage on one RES check per session)</td></tr>
+<tr><td><strong>Level 2</strong> (Coping Skills)</td><td>13–24 sessions</td><td>−4 SP per session; −1 to all condition penalties; character can <strong>self-regulate</strong> once per day (auto-success on one RES check)</td></tr>
+<tr><td><strong>Level 3</strong> (Management)</td><td>25–40 sessions</td><td>−5 SP per session; condition severity drops one level (Severe→Moderate→Mild); chronic SP drain reduced by 50%</td></tr>
+<tr><td><strong>Level 4</strong> (Resilience)</td><td>41+ sessions</td><td>−5 SP per session; condition severity drops again or goes into <strong>remission</strong>; character gains +5 max SP capacity (learned emotional tolerance)</td></tr>
 </tbody>
 </table>
 </div>
@@ -617,18 +597,18 @@
 <div class="callout example">
   <div class="callout-title">📝 Marcus's Week</div>
   <p><strong>Setup:</strong> Marcus (MDD, Moderate; Therapy Level 1; on SSRIs) has had a rough start to the week. He's at 12/25 SP.</p>
-  <p><strong>Monday:</strong> Marcus wakes up. SSRIs reduce his chronic SP gain to +1 instead of +2. He attends therapy (−20 SP, but his pool is only 12, so he goes to 0). He feels better. Goes to work and crushes a presentation (<span class="dice">INT + Communication = 42 vs TN 55</span> — success!).</p>
+  <p><strong>Monday:</strong> Marcus wakes up. SSRIs reduce his chronic SP gain to +1 instead of +2. He attends therapy (−3 SP → 9). He feels better. Goes to work and crushes a presentation (<span class="dice">INT + Communication = 42 vs TN 55</span> — success!).</p>
   <p><strong>Wednesday:</strong> His medication adherence check: <span class="dice">RES (TN 40)</span>. He rolls <span class="dice">2d10</span> = 48. With RES mod +1, total = 47. <strong>Failure.</strong> He's been skipping doses. Medication benefits drop to 50% for the rest of the week.</p>
   <p><strong>Thursday:</strong> His girlfriend breaks up with him text-message. +5 SP (significant trauma). Chronic SP gain (+1). He's at 6 SP — entering the "Stressed" zone. −5 on RES and INT checks. That night: <span class="dice">RES sleep check (TN 50)</span>. Rolls <span class="dice">2d10</span> = 55. With −5 stress penalty and +1 RES mod: effective roll = 51. <strong>Failure.</strong> No SP recovery. He's still at 6.</p>
   <p><strong>Friday:</strong> Chronic SP (+1) = 7. A trigger hits — he walks past the café where he proposed. +3 SP = 10. Now in Overwhelmed territory. −8 on all checks. He has to present at work. TN effectively becomes 65 (episode threshold approaching). He rolls <span class="dice">2d10</span> = 33. With INT mod +2, Comms +2, and −8 stress penalty: 29. <strong>Success</strong> — barely. He stumbles through but doesn't break.</p>
   <p><strong>Saturday:</strong> SP hits 14 (still accumulating). He misses therapy. Loses progress toward Therapy Level 2. The GM narrates Marcus sitting in his apartment, curtains drawn, phone buzzing with messages he can't bring himself to answer.</p>
-  <p><strong>Resolution:</strong> Sunday, his friend checks in (social support: −2 SP → 12). He attends therapy Monday (−20 → 0). The cycle continues — but the player and character have learned that consistency matters.</p>
+  <p><strong>Resolution:</strong> Sunday, his friend checks in (social support: −2 SP → 12). He attends therapy Monday (−3 SP → 9). The cycle continues — but the player and character have learned that consistency matters. Recovery is slow, and that's the point: therapy is a marathon, not a sprint.</p>
 </div>
 
 <h3>Scenario 2: The PTSD Trigger Chain</h3>
 <div class="callout example">
   <div class="callout-title">📝 Amara's Night Out</div>
-  <p><strong>Setup:</strong> Amara (PTSD from a car accident; RES 14, mod +2; Therapy Level 2) is going to a friend's birthday party at a bar near a busy intersection. She's at 4/27 SP.</p>
+  <p><strong>Setup:</strong> Amara (PTSD from a car accident; RES 14, mod +2; Therapy Level 2) is going to a friend's birthday party at a bar near a busy intersection. She's at 4/30 SP.</p>
   <p><strong>Arrival:</strong> The party is loud. Background noise alone is mildly stressful (+1 SP → 5). She's in the "Elevated" zone now (−2 on RES checks).</p>
   <p><strong>The Trigger:</strong> A car backfires outside. <strong>Trigger hit.</strong> +5 SP → 10. She's now "Stressed." The GM calls for a <span class="dice">RES check (TN 60)</span> to avoid a flashback. Her Therapy Level 2 gives her advantage (roll twice, take better). She rolls <span class="dice">2d10</span> = 28 and <span class="dice">2d10</span> = 52. Takes 28. With +2 RES mod and −2 stress penalty: 28. <strong>Success!</strong> She feels the wave of panic but her grounding techniques (learned in therapy) keep her from fully breaking. She excuses herself to the bathroom for 5 minutes.</p>
   <p><strong>Hypervigilance in play:</strong> While in the bathroom, she hears shouting from the next room. Her hypervigilance bonus (+3 to threat perception) kicks in — she correctly identifies that it's just friends playing a drinking game, not a real fight. But the penalty (−3 to relaxation checks) means she can't actually calm down. She stays in the bathroom for 20 more minutes.</p>
@@ -638,11 +618,11 @@
 <h3>Scenario 3: The Addiction Relapse</h3>
 <div class="callout example">
   <div class="callout-title">📝 Derek's Toughest Month</div>
-  <p><strong>Setup:</strong> Derek (Severe Alcohol Addiction; RES 9, mod +1) has been sober for 21 days. He's in a support group (Therapy Level 1 for SUD). He's at 3/20 SP. His last relapse was 3 months ago (so relapse TN = 60 + 5 = 65).</p>
+  <p><strong>Setup:</strong> Derek (Severe Alcohol Addiction; RES 9, mod +1) has been sober for 21 days. He's in a support group (Therapy Level 1 for SUD). He's at 3/25 SP. His last relapse was 3 months ago (so relapse TN = 60 + 5 = 65).</p>
   <p><strong>Week 1 of sobriety:</strong> Daily <span class="dice">RES (TN 65)</span> to resist craving. Monday: rolls <span class="dice">2d10</span> = 37. Total 38. <strong>Success.</strong> Tuesday: rolls <span class="dice">2d10</span> = 60. Total 61. <strong>Success.</strong> He's feeling good. Support group helps (−2 SP → 1).</p>
   <p><strong>Week 2:</strong> Things get harder. Withdrawal subsided, but the psychological craving remains. He gets a promotion at work — celebratory drinks are offered. This is a massive trigger. The GM calls for his relapse check: <span class="dice">RES (TN 65)</span>. He rolls <span class="dice">2d10</span> = 55. Total 56. <strong>Success — barely.</strong> He declines. His boss notices and respects it (+2 to future professional checks with boss).</p>
   <p><strong>Week 3:</strong> His anniversary of the accident that killed his brother arrives. +8 SP (catastrophic stressor). He's at 9 SP — entering "Stressed." The relapse check becomes harder because his SP is high: the GM adds +1 to the TN per 5 SP above 5. New TN = 65 + 1 = 66. He rolls <span class="dice">2d10</span> = 62. Total 63. <strong>Failure.</strong></p>
-  <p><strong>The relapse:</strong> He drives to the liquor store. Buys a bottle. Drinks alone. The GM narrates the shame — the cycle of using → feeling worse → using more. He gains +8 SP (hits max → Episode). He passes out. Wakes up the next day with a hangover (−3 on all checks for the day) and 10/20 SP.</p>
+  <p><strong>The relapse:</strong> He drives to the liquor store. Buys a bottle. Drinks alone. The GM narrates the shame — the cycle of using → feeling worse → using more. He gains +8 SP (hits max → Episode). He passes out. Wakes up the next day with a hangover (−3 on all checks for the day) and 10/25 SP.</p>
   <p><strong>Aftermath:</strong> This is his second relapse. Future relapse TN = 60 + 10 = 70. He returns to support group the next day — a small victory. The GM narrates that his sponsor says "What matters isn't that you fell. It matters how quickly you got back up." He gains −2 SP from the support interaction.</p>
   <p><strong>Lesson:</strong> Relapse is part of the journey, not the end of it. The mechanics reflect this — Derek can try again. The TN is higher, yes, but his Therapy Level will grow, and so will his resilience.</p>
 </div>
@@ -697,13 +677,14 @@
 <thead><tr><th>Concept</th><th>Key Numbers</th></tr></thead>
 <tbody>
 <tr><td>Max Stress Pool</td><td>20 + (RES mod × 5)</td></tr>
-<tr><td>Episode threshold</td><td>SP &gt; Max SP → Episode for <span class="dice">1d4</span> hours (mild) or <span class="dice">1d4</span> days (severe)</td></tr>
+<tr><td>Episode threshold</td><td>SP <strong>reaches</strong> Max SP → Episode for <span class="dice">1d4</span> hours (mild) or <span class="dice">1d4</span> days (severe)</td></tr>
 <tr><td>Episode penalty</td><td>+10 TN on all checks</td></tr>
-<tr><td>Stress recovery (sleep)</td><td>1 SP per night (requires successful <span class="dice">RES sleep check</span>)</td></tr>
-<tr><td>Therapy benefit</td><td>−20 to −30 SP per session depending on Therapy Level</td></tr>
+<tr><td>Stress recovery (sleep)</td><td>−1 SP per good night's sleep; at 😟 Stressed+, requires <span class="dice">RES check (TN 40)</span></td></tr>
+<tr><td>Therapy benefit</td><td>−3 to −5 SP per session depending on Therapy Level</td></tr>
 <tr><td>Medication benefit</td><td>50% reduction in baseline SP gain</td></tr>
-<tr><td>Trigger resistance</td><td><span class="dice">RES (TN 50)</span>; success = half SP, failure = full SP + reaction</td></tr>
+<tr><td>Trigger resistance</td><td><span class="dice">RES (TN 50)</span>; success = +2 SP only, failure = full SP + reaction</td></tr>
 <tr><td>Social support</td><td>−2 SP per meaningful interaction</td></tr>
+<tr><td>Exercise</td><td>−1 SP per workout</td></tr>
 <tr><td>Stigma (concealment cost)</td><td>−2 on EXP-based checks while masking</td></tr>
 </tbody>
 </table>
@@ -712,9 +693,10 @@
 </div>
 </section>
 
-<footer class="site-footer">
-  Reality RPG &copy; 2025 — A hyper-realistic life simulation tabletop role-playing game ruleset.
-</footer>
+<!-- Footer injected by nav-loader.js -->
+<div id="slot-footer"></div>
 
+<!-- nav-loader: fetches header, footer, nav partials -->
+<script src="js/nav-loader.js"></script>
 </body>
 </html>
