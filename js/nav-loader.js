@@ -28,7 +28,7 @@
     var slot = document.getElementById(slotId);
     if (!slot) return;
     try {
-      var url = projectRoot + partialPath;
+      var url = projectRoot + partialPath + '?v=' + Date.now();
       var resp = await fetch(url);
       if (!resp.ok) throw new Error(partialPath + ' → ' + resp.status);
       var text = await resp.text();
@@ -50,7 +50,7 @@
     var nav = document.getElementById('site-nav');
     if (!nav) return;
     try {
-      var url = projectRoot + 'partials/nav.html';
+      var url = projectRoot + 'partials/nav.html?v=' + Date.now();
       var resp = await fetch(url);
       if (!resp.ok) throw new Error('nav.html → ' + resp.status);
       nav.innerHTML = await resp.text();
