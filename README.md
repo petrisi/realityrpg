@@ -427,10 +427,9 @@ A **printed edition** of Reality RPG is planned for the 1.0 launch — two profe
 
 <div align="center">
 
-<img src="img/cover_players_guide.png" alt="Reality RPG: Player's Guide — printed book cover mockup" width="220" style="margin:0.5em" />
-<img src="img/cover_gm_guide.png" alt="Reality RPG: Game Master's Guide — printed book cover mockup" width="220" style="margin:0.5em" />
+<img src="img/cover_mockup.png" alt="Reality RPG printed edition mockup — Player's Guide (left, day) and Game Master's Guide (right, night)" width="640" style="margin:0.5em;border-radius:6px" />
 
-<br /><em>Mockups of the planned printed Player's Guide and Game Master's Guide</em>
+<br /><em>Left: Player's Guide · Right: Game Master's Guide — planned for the 1.0 release</em>
 
 </div>
 
