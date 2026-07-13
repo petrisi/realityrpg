@@ -152,28 +152,127 @@ The complete ruleset is delivered as a linked set of HTML pages, each covering a
 | [🛠️ GM Tools](gm-tools.html) | Random event tables, NPC generator, crisis tracker |
 | [⚔️ Fantasy vs Reality](comparative.html) | Side-by-side comparisons of fantasy RPG → real-world equivalents |
 
-## 🖼️ Visual Assets
+## What the Ruleset Looks Like
 
-<div align="center">
+<table>
+<tr>
+<td align="center" width="33%">
+<details>
+<summary><strong>🎲 Core Mechanics</strong></summary>
 
-![Clementine City Map](img/city_map.png)
-*A stylized neighborhood map for grounding campaigns in a tangible setting*
+<br>
+The d100 resolution system — roll 2d10 + modifier vs. Target Number. Six attributes, 15 skills, a health condition track (no hit points), and a stress pool that carries over across days.
 
-</div>
+<table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ Vigor</td><td>14</td><td>+2</td></tr>
+<tr><td>🧠 Intellect</td><td>8</td><td>+1</td></tr>
+<tr><td>💬 Expression</td><td>12</td><td>+2</td></tr>
+<tr><td>🎯 Dexterity</td><td>11</td><td>+2</td></tr>
+<tr><td>🛡️ Resolve</td><td>11</td><td>+2</td></tr>
+<tr><td>✨ Presence</td><td>6</td><td>+1</td></tr>
+</table>
 
-<div align="center">
+<br>
+</details>
+</td>
+<td align="center" width="33%">
+<details>
+<summary><strong>🧠 Mental Health</strong></summary>
 
-![Economic Cycle](img/econ_cycle.png)
-*Economic cycle diagram — recession and recovery phases*
+<br>
+Stress Points accumulate from real events. When SP reaches your max, you have an Episode — condition-specific, narratively meaningful. Treatment is mechanical: therapy levels, medication adherence checks, social support recovery.
 
-</div>
+<table>
+<tr><th>Stress Tier</th><th>Effects</th></tr>
+<tr><td>😌 Stable</td><td>No penalty</td></tr>
+<tr><td>😐 Elevated</td><td>−2 on RES checks</td></tr>
+<tr><td>😟 Stressed</td><td>−5 on RES/INT; sleep check</td></tr>
+<tr><td>😰 Overwhelmed</td><td>−8 on all checks</td></tr>
+<tr><td>💥 Episode</td><td>Breakdown — see condition</td></tr>
+</table>
 
-<div align="center">
+<br>
+</details>
+</td>
+<td align="center" width="33%">
+<details>
+<summary><strong>🌅 Daily Life</strong></summary>
 
-![Poly Family](img/poly_family.png)
-*Multi-generational family — representing diverse relationship structures*
+<br>
+Every mundane action has mechanics. Sleep, hygiene, nutrition, commuting, working — tracked and consequential. Neglect them and the health track degrades.
 
-</div>
+<table>
+<tr><th>Activity</th><th>TN</th><th>Fail Cost</th></tr>
+<tr><td>😴 Sleep 8hrs</td><td>25</td><td>→ Tired</td></tr>
+<tr><td>🍳 Cook meal</td><td>35</td><td>+1 SP</td></tr>
+<tr><td>🚿 Shower</td><td>25</td><td>Hygiene −1</td></tr>
+<tr><td>💼 Work shift</td><td>50</td><td>+3 SP; → Tired</td></tr>
+<tr><td>🛒 Grocery shop</td><td>35</td><td>Poor nutrition</td></tr>
+</table>
+
+<br>
+</details>
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<details>
+<summary><strong>👤 Character Creation</strong></summary>
+
+<br>
+Progressive point-buy (100–160 pts by age). Attributes, skills, advantages, and disadvantages all from one pool. Ethnicity, culture, class, and mental health are mechanical — not cosmetic.
+
+<table>
+<tr><th>Age</th><th>Budget</th><th>Example</th></tr>
+<tr><td>18–21</td><td>100 pts</td><td>Mei, 23</td></tr>
+<tr><td>22–29</td><td>120 pts</td><td>Carlos, 21</td></tr>
+<tr><td>30–44</td><td>140 pts</td><td>Marcus, 34</td></tr>
+<tr><td>45–64</td><td>160 pts</td><td>Elaine, 72</td></tr>
+</table>
+
+<br>
+</details>
+</td>
+<td align="center" width="33%">
+<details>
+<summary><strong>🎒 Inventory & Economy</strong></summary>
+
+<br>
+No magical inventory. Your "gear" is a wallet with $47, keys, phone, and a half-empty toilet paper roll. Money is tracked in dollars, spent on rent, food, bills, and emergencies.
+
+<table>
+<tr><th>Item</th><th>Value</th><th>Notes</th></tr>
+<tr><td>📱 Smartphone</td><td>$200</td><td>Cracked screen</td></tr>
+<tr><td>🔑 Keys</td><td>—</td><td>Apartment, car, mailbox</td></tr>
+<tr><td>💳 Wallet</td><td>$47</td><td>Until Friday's paycheck</td></tr>
+<tr><td>🚗 Car</td><td>$8,000</td><td>2016 F-150, paid off</td></tr>
+</table>
+
+<br>
+</details>
+</td>
+<td align="center" width="33%">
+<details>
+<summary><strong>⚔️ Fantasy vs Reality</strong></summary>
+
+<br>
+Every fantasy RPG concept has a real-world equivalent. Your "sword" is a resume. Your "potion" is coffee. Your "dungeon crawl" is a job interview.
+
+<table>
+<tr><th>Fantasy RPG</th><th>Reality RPG</th></tr>
+<tr><td>⚔️ Sword</td><td>📄 Resume</td></tr>
+<tr><td>🧪 Health potion</td><td>☕ Coffee</td></tr>
+<tr><td>🏰 Dungeon</td><td>🏢 Office</td></tr>
+<tr><td>🐉 Dragon</td><td>📉 Eviction notice</td></tr>
+<tr><td>🧙 Wizard</td><td>👨‍⚕️ Therapist</td></tr>
+</table>
+
+<br>
+</details>
+</td>
+</tr>
+</table>
 
 ## How to Play
 
