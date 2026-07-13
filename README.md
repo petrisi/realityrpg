@@ -57,39 +57,35 @@ Instead of hit points, characters track **Health** on a condition track (Healthy
 
 ## 👥 Example Characters
 
-<div align="center">
-
-![Mei Lin Chen](img/char_mei.png)
-![Marcus Johnson](img/char_marcus.png)
-![Carlos Rodriguez](img/char_carlos.png)
-![Elaine Whitmore](img/char_elaine.png)
-
-*Mei — Software Engineering Intern, 23 · Marcus — Auto Mechanic, 42 · Carlos — Warehouse Worker & Student, 21 · Elaine — Retired Teacher, 72*
-
-</div>
-
 Eight fully-built characters demonstrate every mechanic: ethnicity, culture, mental health conditions, socioeconomic status, personality traits, daily routines, and more. Use them as templates or ready-to-play characters.
 
-<div align="center">
-
-![Raj Patel](img/char_raj.png)
-![Tallulah Red Elk](img/char_tallulah.png)
-![Youssef Al-Hassan](img/char_youssef.png)
-![Sofia](img/char_sofia.png)
-
-*Raj — Internal Medicine Resident, 35 · Tallulah — Cultural Liaison, 38 · Youssef — Political Science Grad Student, 24 · Sofia — Freelance Designer, 29*
-
-</div>
-
-<div align="center">
-
-![Derek](img/char_derek.png)
-![Tyler](img/char_tyler.png)
-![Aisha Leader](img/char_aisha_leader.png)
-
-*Derek — Construction Worker · Tyler — Data Analyst · Aisha — Community Leader*
-
-</div>
+<table>
+<tr><td align="center">
+<img src="img/char_mei.png" width="180"><br><strong>Mei Lin Chen</strong><br><em>Software Engineering Intern, 23</em>
+</td><td align="center">
+<img src="img/char_marcus.png" width="180"><br><strong>Marcus Johnson</strong><br><em>Auto Mechanic, 42</em>
+</td><td align="center">
+<img src="img/char_carlos.png" width="180"><br><strong>Carlos Rodriguez</strong><br><em>Warehouse Worker & Student, 21</em>
+</td><td align="center">
+<img src="img/char_elaine.png" width="180"><br><strong>Elaine Whitmore</strong><br><em>Retired Teacher, 72</em>
+</td></tr>
+<tr><td align="center">
+<img src="img/char_raj.png" width="180"><br><strong>Raj Patel</strong><br><em>Internal Medicine Resident, 35</em>
+</td><td align="center">
+<img src="img/char_tallulah.png" width="180"><br><strong>Tallulah Red Elk</strong><br><em>Cultural Liaison, 38</em>
+</td><td align="center">
+<img src="img/char_youssef.png" width="180"><br><strong>Youssef Al-Hassan</strong><br><em>Political Science Grad Student, 24</em>
+</td><td align="center">
+<img src="img/char_sofia.png" width="180"><br><strong>Sofia</strong><br><em>Freelance Designer, 29</em>
+</td></tr>
+<tr><td align="center">
+<img src="img/char_derek.png" width="180"><br><strong>Derek</strong><br><em>Construction Worker</em>
+</td><td align="center">
+<img src="img/char_tyler.png" width="180"><br><strong>Tyler</strong><br><em>Data Analyst</em>
+</td><td align="center">
+<img src="img/char_aisha_leader.png" width="180"><br><strong>Aisha</strong><br><em>Community Leader</em>
+</td><td></td></tr>
+</table>
 
 ## 📚 Ruleset Structure
 
