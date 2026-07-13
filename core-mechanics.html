@@ -132,6 +132,24 @@
 </table>
 </div>
 
+<div class="callout example">
+  <div class="callout-title">📝 Example: Sample Character — Marcus, 34, Construction Foreman</div>
+  <div class="table-wrap">
+  <table>
+  <thead><tr><th>Attribute</th><th>Score</th><th>Modifier</th><th>Why</th></tr></thead>
+  <tbody>
+  <tr><td>🏋️ Vigor</td><td>16</td><td><strong>+3</strong></td><td>Years of physical labor; can carry heavy loads all day</td></tr>
+  <tr><td>🧠 Intellect</td><td>9</td><td><strong>+1</strong></td><td>Adequate but not academic; high school diploma</td></tr>
+  <tr><td>💬 Expression</td><td>13</td><td><strong>+2</strong></td><td>Leads crews of 20+; used to giving clear instructions</td></tr>
+  <tr><td>🎯 Dexterity</td><td>11</td><td><strong>+2</strong></td><td>Skilled with tools and equipment</td></tr>
+  <tr><td>🛡️ Resolve</td><td>14</td><td><strong>+2</strong></td><td>Handled layoffs, family pressure, and job site accidents</td></tr>
+  <tr><td>✨ Presence</td><td>7</td><td><strong>+1</strong></td><td>Hardworking but unremarkable appearance; dusty work clothes</td></tr>
+  </tbody>
+  </table>
+  </div>
+  <p>Each modifier is <code>floor(Score ÷ 5)</code>. Marcus's Vigor of 16 means <code>floor(16 ÷ 5) = +3</code>. His Intellect of 9 means <code>floor(9 ÷ 5) = +1</code>.</p>
+</div>
+
 <div class="callout tip">
   <div class="callout-title">📊 Modifier Reference</div>
   <div class="table-wrap">
@@ -152,13 +170,13 @@
 <h3>Physical Skills (Vigor / Dexterity)</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th></tr></thead>
+<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th><th>Skill Level Examples</th></tr></thead>
 <tbody>
-<tr><td> Athletics</td><td>VIG</td><td>Running, swimming, climbing, sports, physical fitness</td></tr>
-<tr><td> Combat</td><td>VIG</td><td>Self-defense, fighting, weapon handling (if legal)</td></tr>
-<tr><td> Driving</td><td>DXT</td><td>Operating vehicles, parking, navigation while driving</td></tr>
-<tr><td> Manual Labor</td><td>VIG/DXT</td><td>Construction, repair, moving furniture, physical work</td></tr>
-<tr><td> Cooking</td><td>DXT</td><td>Preparing meals, nutrition management, food safety</td></tr>
+<tr><td><strong>Athletics</strong></td><td>VIG</td><td>Running, swimming, climbing, sports, physical fitness</td><td><strong>−1:</strong> Couch potato, gets winded walking stairs<br><strong>+2:</strong> Regular gym-goer, runs 5K weekly<br><strong>+5:</strong> Semi-pro athlete, cross-fit competitor</td></tr>
+<tr><td><strong>Combat</strong></td><td>VIG</td><td>Self-defense, fighting, weapon handling (if legal)</td><td><strong>−1:</strong> Never been in a fight, panics<br><strong>+2:</strong> 2 years of boxing/MMA/krav maga<br><strong>+5:</strong> Military combat veteran, special forces</td></tr>
+<tr><td><strong>Driving</strong></td><td>DXT</td><td>Operating vehicles, parking, navigation while driving</td><td><strong>−1:</strong> New driver, stalls in traffic, hits curbs<br><strong>+2:</strong> Commutes daily, parallel parks fine<br><strong>+5:</strong> Professional truck/race driver, 1M+ miles</td></tr>
+<tr><td><strong>Manual Labor</strong></td><td>VIG/DXT</td><td>Construction, repair, moving furniture, physical work</td><td><strong>−1:</strong> Can't use a power tool, breaks things<br><strong>+2:</strong> Handy homeowner, basic DIY repairs<br><strong>+5:</strong> Master carpenter/contractor, 20+ years</td></tr>
+<tr><td><strong>Cooking</strong></td><td>DXT</td><td>Preparing meals, nutrition management, food safety</td><td><strong>−1:</strong> Microwaves frozen meals, burns toast<br><strong>+2:</strong> Cooks family dinners, knows basic recipes<br><strong>+5:</strong> Professional chef, culinary school trained</td></tr>
 </tbody>
 </table>
 </div>
@@ -166,13 +184,13 @@
 <h3>Mental Skills (Intellect)</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th></tr></thead>
+<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th><th>Skill Level Examples</th></tr></thead>
 <tbody>
-<tr><td> Academics</td><td>INT</td><td>School subjects, research, reading comprehension, test-taking</td></tr>
-<tr><td> Technology</td><td>INT</td><td>Computers, smartphones, software, troubleshooting tech</td></tr>
-<tr><td> Finance</td><td>INT</td><td>Budgeting, investing, taxes, understanding contracts</td></tr>
-<tr><td> Language</td><td>INT</td><td>Foreign languages, translation, multilingual communication</td></tr>
-<tr><td> Professional</td><td>INT</td><td>Job-specific knowledge: medicine, law, engineering, etc.</td></tr>
+<tr><td><strong>Academics</strong></td><td>INT</td><td>School subjects, research, reading comprehension, test-taking</td><td><strong>−1:</strong> Struggled in school, dropped out<br><strong>+2:</strong> College degree, reads widely<br><strong>+5:</strong> PhD, published researcher, tenured professor</td></tr>
+<tr><td><strong>Technology</strong></td><td>INT</td><td>Computers, smartphones, software, troubleshooting tech</td><td><strong>−1:</strong> Can't reset a password, fears tech<br><strong>+2:</strong> Comfort with office software, social media<br><strong>+5:</strong> Software engineer, systems architect, 15+ years</td></tr>
+<tr><td><strong>Finance</strong></td><td>INT</td><td>Budgeting, investing, taxes, understanding contracts</td><td><strong>−1:</strong> Lives paycheck to paycheck, no budget<br><strong>+2:</strong> Has a 401(k), files own taxes<br><strong>+5:</strong> CPA/CFA, manages a portfolio, financial advisor</td></tr>
+<tr><td><strong>Language</strong></td><td>INT</td><td>Foreign languages, translation, multilingual communication</td><td><strong>−1:</strong> Monolingual, no study experience<br><strong>+2:</strong> Conversational in a second language<br><strong>+5:</strong> Fluent in 4+ languages, professional translator</td></tr>
+<tr><td><strong>Professional</strong></td><td>INT</td><td>Job-specific knowledge: medicine, law, engineering, etc.</td><td><strong>−1:</strong> No specialized training or credentials<br><strong>+2:</strong> Licensed professional, 5 years experience<br><strong>+5:</strong> Field expert, board-certified, industry authority</td></tr>
 </tbody>
 </table>
 </div>
@@ -180,19 +198,19 @@
 <h3>Social Skills (Expression / Presence)</h3>
 <div class="table-wrap">
 <table>
-<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th></tr></thead>
+<thead><tr><th>Skill</th><th>Attribute</th><th>Covers</th><th>Skill Level Examples</th></tr></thead>
 <tbody>
-<tr><td> Communication</td><td>EXP</td><td>Public speaking, writing, persuasion, negotiation</td></tr>
-<tr><td> Empathy</td><td>EXP</td><td>Reading others, emotional support, counseling, sensing mood</td></tr>
-<tr><td> Deception</td><td>EXP</td><td>Lying, misdirection, hiding information, acting</td></tr>
-<tr><td> Leadership</td><td>PRC</td><td>Motivating others, managing teams, organizing groups</td></tr>
-<tr><td> Networking</td><td>PRC</td><td>Building contacts, social climbing, making connections</td></tr>
+<tr><td><strong>Communication</strong></td><td>EXP</td><td>Public speaking, writing, persuasion, negotiation</td><td><strong>−1:</strong> Stammers under pressure, can't articulate thoughts<br><strong>+2:</strong> Writes clear emails, speaks at team meetings<br><strong>+5:</strong> TED-level speaker, master negotiator, published author</td></tr>
+<tr><td><strong>Empathy</strong></td><td>EXP</td><td>Reading others, emotional support, counseling, sensing mood</td><td><strong>−1:</strong> Misses social cues, comes across as cold<br><strong>+2:</strong> Good listener, friends confide in them<br><strong>+5:</strong> Licensed therapist, crisis counselor, 10+ years</td></tr>
+<tr><td><strong>Deception</strong></td><td>EXP</td><td>Lying, misdirection, hiding information, acting</td><td><strong>−1:</strong> Terrible liar, blushes and stutters<br><strong>+2:</strong> Can white-lie smoothly, holds poker face<br><strong>+5:</strong> Professional actor, undercover operative, con artist</td></tr>
+<tr><td><strong>Leadership</strong></td><td>PRC</td><td>Motivating others, managing teams, organizing groups</td><td><strong>−1:</strong> Can't delegate, others resist their direction<br><strong>+2:</strong> Manages a team of 5–10, runs meetings<br><strong>+5:</strong> CEO, army commander, union organizer, leads hundreds</td></tr>
+<tr><td><strong>Networking</strong></td><td>PRC</td><td>Building contacts, social climbing, making connections</td><td><strong>−1:</strong> Strangers-only contact list, avoids social events<br><strong>+2:</strong> LinkedIn active, knows people in their field<br><strong>+5:</strong> "Knows everyone," opens doors with a phone call</td></tr>
 </tbody>
 </table>
 </div>
 
 <h2>4. Health System</h2>
-<p>Instead of hit points, characters track <strong>Health</strong> on a condition track from <strong>Healthy</strong> to <strong>Dead</strong>. Damage comes from physical harm, illness, exhaustion, and neglect.</p>
+<p>Instead of hit points, characters track <strong>Health</strong> on a condition track from <strong>Healthy</strong> to <strong>Dead</strong>. You can degrade from poor sleep, illness, exhaustion, injury, malnutrition, and neglect. You advance one step at a time — you can't jump from Healthy directly to Critical in a single moment (unless a single event is severe enough, at GM discretion).</p>
 
 <div class="table-wrap">
 <table>
@@ -208,25 +226,111 @@
 </table>
 </div>
 
-<p>Recovery requires <strong>rest</strong>, <strong>medical care</strong>, and <strong>time</strong>. A character who sleeps 8 hours in a clean bed moves from Tired to Healthy. Moving from Sick to Tired takes 1–3 days of rest. Injuries may require hospital visits and weeks of recovery.</p>
-
-<h2>5. Stress and Mental Strain</h2>
-<p>Characters accumulate <strong>Stress Points (SP)</strong> from traumatic events, chronic pressure, conflict, and hardship. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters start each day at 0 SP unless an ongoing condition has loaded them.</p>
+<h3>4.1 What Pushes You Down the Track</h3>
+<p>Health doesn't degrade on its own — something has to push you. The GM advances a character one step on the Health Condition Track when the following thresholds are met:</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Stress Level</th><th>SP Range</th><th>Effects</th></tr></thead>
+<thead><tr><th>Source</th><th>Trigger</th><th>Step Advance</th><th>Example</th></tr></thead>
 <tbody>
-<tr><td>😌 Stable</td><td>0</td><td>No penalty. Character functions normally.</td></tr>
-<tr><td>😐 Elevated</td><td>1–5</td><td>Minor distraction. −2 on RES checks.</td></tr>
-<tr><td>😟 Stressed</td><td>6–15</td><td>Noticeable impairment. −5 on RES and INT checks. Must make a RES check (TN 40) each night for restful sleep.</td></tr>
-<tr><td>😰 Overwhelmed</td><td>16–25</td><td>Significant dysfunction. −8 on all checks. Risk of Episode if SP exceeds max.</td></tr>
-<tr><td>💥 Episode</td><td>> Max SP</td><td>Character enters an Episode. Condition-specific effects apply. See <a href="mental-health.html">Mental Health chapter</a>.</td></tr>
+<tr><td>😴 Sleep deprivation</td><td>Less than 5 hours of sleep for 2+ consecutive nights</td><td>Healthy → Tired</td><td>Working double shifts, new parent with infant, all-nighter before exam</td></tr>
+<tr><td>🍔 Malnutrition</td><td>Consistently eating poorly for 1+ week (fast food only, skipping meals, starving)</td><td>Healthy → Tired</td><td>Cutting food budget to pay rent, eating only ramen for a month</td></tr>
+<tr><td>🤧 Illness</td><td>Fail a VIG check (TN set by environment/season — see <a href="weather-environment.html">Environment chapter</a>)</td><td>Healthy → Tired or Tired → Sick</td><td>Winter flu, food poisoning, stomach bug from dirty restaurant</td></tr>
+<tr><td>🔥 Severe illness</td><td>Already at Sick, fail another VIG check (TN 45) after 3+ days untreated</td><td>Sick → Injured/Ill</td><td>Pneumonia from untreated flu, severe infection, kidney stone</td></tr>
+<tr><td>💪 Physical exertion</td><td>Fail a Vigor-based check by 10+ points</td><td>One step down</td><td>Trying to carry a sofa up three flights, running from danger, working 16 hours in heat</td></tr>
+<tr><td>🩸 Injury (non-combat)</td><td>Accident, fall, car crash, animal attack — GM sets difficulty</td><td>One step per severity</td><td>Tripping on stairs (Tired → Sick), car accident (could jump 2 steps)</td></tr>
+<tr><td>⚔️ Violence</td><td>See <a href="weapons.html">Weapons chapter</a> for the Health Condition Track combat rules</td><td>Per weapon damage rating</td><td>Being punched, stabbed, shot — full combat damage system</td></tr>
+<tr><td>🌡️ Environmental</td><td>Extreme heat, cold, altitude, pollution — see <a href="weather-environment.html">Environment chapter</a></td><td>One step per exposure period</td><td>Heat stroke in 100°F weather, hypothermia in blizzard, asthma attack in smog</td></tr>
+<tr><td>🏚️ Poor living conditions</td><td>Hygiene score at 0–1 (Foul) for 1+ week — see <a href="daily-life.html">Daily Life chapter</a></td><td>Tired → Sick</td><td>Living in a moldy apartment, no hot water, infested with pests</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📏 General Rule</div>
+  <p>Most single events advance a character <strong>one step</strong> on the Health Condition Track. Only truly severe events (major accidents, violence, untreated illness progressing) can advance <strong>two steps</strong>. A character can never advance more than two steps from a single event, regardless of severity — because in reality, most things don't kill you instantly. They degrade you.</p>
+</div>
+
+<h3>4.2 Recovery</h3>
+<p>Recovery is not automatic. Characters must actively address whatever pushed them down the track:</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>From → To</th><th>What's Needed</th><th>Time</th><th>Cost</th></tr></thead>
+<tbody>
+<tr><td>Tired → Healthy</td><td>8+ hours of sleep in a clean bed</td><td>1 night</td><td>Free (if you have a bed)</td></tr>
+<tr><td>Sick → Tired</td><td>Rest + hydration + proper food. Roll <span class="dice">2d10</span> + VIG mod vs TN 45</td><td>1–3 days</td><td>$10–30 (groceries, Gatorade, OTC meds)</td></tr>
+<tr><td>Injured/Ill → Sick</td><td>Medical attention (doctor visit or urgent care). Roll <span class="dice">2d10</span> + VIG mod vs TN 55</td><td>3–7 days</td><td>$100–500 (urgent care) or $0–200 (with insurance copay)</td></tr>
+<tr><td>Critical → Injured/Ill</td><td>Emergency room visit + hospitalization. Roll <span class="dice">2d10</span> + VIG mod vs TN 65</td><td>1–4 weeks</td><td>$2,000–50,000+ (ER + hospital stay)</td></tr>
+<tr><td>Any step</td><td>Having health insurance reduces cost by 50–90% and grants +5 on recovery rolls</td><td>—</td><td>Premiums: $200–$800/month</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">⚕️ Skipping Steps Is Impossible</div>
+  <p>A character at <strong>Critical</strong> cannot jump straight to Healthy with a good night's sleep. Recovery must proceed one step at a time. Even a full hospitalization only moves Critical → Injured/Ill. From there, it's days of home recovery to reach Sick, then more days to reach Tired, then a good night's sleep to reach Healthy. This is how real recovery works.</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Marcus Catches the Flu</div>
+  <p><strong>Marcus</strong> (VIG 16, mod +3) has been working 12-hour days for a week straight. He's at <strong>Tired</strong> from sleep deprivation.</p>
+  <p>On Thursday night he starts running a fever. The GM has him roll <span class="dice">2d10</span> +3 vs TN 50 (winter flu season). He rolls 52 → <strong>55 total, failure</strong>. He advances from Tired to <strong>Sick/Exhausted</strong>. That's −10 on all checks.</p>
+  <p>Friday he calls in sick. Saturday he drinks Gatorade, eats soup, sleeps 10 hours. Sunday he rolls <span class="dice">2d10</span> +3 vs TN 45 to recover to Tired. He rolls 28 → <strong>31 total, strong success</strong>. He's back to <strong>Tired</strong> by Monday. After one good night's sleep at home, he's <strong>Healthy</strong> again — but he lost a day's wages ($200) and his boss noticed.</p>
+</div>
+
+<h2>5. Stress and Mental Strain</h2>
+<p>Characters accumulate <strong>Stress Points (SP)</strong> from traumatic events, chronic pressure, conflict, and hardship. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters begin play at 0 SP. Stress persists across days — recovery requires rest, support, and time.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Stress Level</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td>😌 Stable</td><td>No penalty. Character functions normally.</td></tr>
+<tr><td>😐 Elevated</td><td>Minor distraction. −2 on RES checks.</td></tr>
+<tr><td>😟 Stressed</td><td>Noticeable impairment. −5 on RES and INT checks. Must make a RES check (TN 40) each night for restful sleep.</td></tr>
+<tr><td>😰 Overwhelmed</td><td>Significant dysfunction. −8 on all checks. One more stress push and they break.</td></tr>
+<tr><td>💥 Episode</td><td>SP reaches Max SP. Character has a breakdown. Condition-specific effects apply. See <a href="mental-health.html">Mental Health chapter</a>.</td></tr>
 </tbody>
 </table>
 </div>
 
 <p>Stress reduces through <strong>rest</strong> (−1 SP per good night's sleep), <strong>social support</strong> (−2 SP per meaningful conversation), <strong>exercise</strong> (−1 SP per workout), <strong>therapy</strong> (−3 to −5 SP per session), and <strong>time away from stressors</strong>.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>RES Mod</th><th>RES Score</th><th>😌 Max SP</th><th>😐 Elevated</th><th>😟 Stressed</th><th>😰 Overwhelmed</th></tr></thead>
+<tbody>
+<tr><td>+0</td><td>1–4</td><td>20</td><td>1–2</td><td>3–7</td><td>8–19</td></tr>
+<tr><td>+1</td><td>5–9</td><td>25</td><td>1–3</td><td>4–9</td><td>10–24</td></tr>
+<tr><td>+2</td><td>10–14</td><td>30</td><td>1–4</td><td>5–11</td><td>12–29</td></tr>
+<tr><td>+3</td><td>15–19</td><td>35</td><td>1–4</td><td>5–13</td><td>14–34</td></tr>
+<tr><td>+4</td><td>20</td><td>40</td><td>1–5</td><td>6–15</td><td>16–39</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mod-ref-note">Episode triggers when SP <strong>reaches</strong> Max SP (not exceeds). Low-RES characters break under less stress; high-RES characters can absorb more before reaching crisis.</p>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: A Bad Week — Dana's Stress Spiral</div>
+  <p><strong>Dana</strong> has RES 10 (modifier +2), giving her a Max SP of <strong>30</strong>. She starts the week at 0 SP.</p>
+  <div class="table-wrap">
+  <table>
+  <thead><tr><th>Day</th><th>Event</th><th>SP Change</th><th>Total SP</th><th>Tier</th></tr></thead>
+  <tbody>
+  <tr><td>Monday</td><td>Verbally abused by supervisor in front of the team</td><td><strong>+4</strong></td><td>4</td><td>😐 Elevated</td></tr>
+  <tr><td>Tuesday</td><td>Works a 12-hour shift; car breaks down on commute home</td><td><strong>+3</strong></td><td>7</td><td>😟 Stressed</td></tr>
+  <tr><td>Wednesday</td><td>Fails RES check (TN 40) for sleep. Gets 4 hours, wakes exhausted. Argues with partner about money.</td><td><strong>+3</strong></td><td>10</td><td>😟 Stressed</td></tr>
+  <tr><td>Thursday</td><td>Called into manager's office — performance review goes poorly. Gets a written warning.</td><td><strong>+5</strong></td><td>15</td><td>😟 Stressed</td></tr>
+  <tr><td>Friday</td><td>Can barely focus. Makes a costly error at work. Boss pulls her aside again.</td><td><strong>+4</strong></td><td>19</td><td>😰 Overwhelmed</td></tr>
+  <tr><td>Saturday</td><td>Finally sleeps well (−1 SP). Calls a friend for support (−2 SP). Goes for a run (−1 SP). But then finds out rent is increasing $200/month.</td><td><strong>+4 − 1 − 2 − 1 = 0</strong></td><td>19</td><td>😰 Overwhelmed</td></tr>
+  <tr><td>Sunday</td><td>Can't sleep (failed RES check). Sits on the couch all day. Gets an email about a final warning at work.</td><td><strong>+4</strong></td><td>23</td><td>😰 Overwhelmed</td></tr>
+  <tr><td>Monday</td><td>Walks into work, hands shaking. Boss calls an emergency meeting — project deadline moved up, she's leading it.</td><td><strong>+7</strong></td><td><strong>30 = Max SP</strong></td><td><strong>💥 EPISODE</strong></td></tr>
+  </tbody>
+  </table>
+  </div>
+  <p>Dana hits her Max SP of 30. She has an Episode — in this case, a debilitating panic attack at work. She must leave the building, call in sick, and likely miss the next several days. The GM consults the <a href="mental-health.html">Mental Health chapter</a> for Episode resolution. Recovery will require therapy, time off, and genuine support — not just a good night's sleep.</p>
+</div>
 
 <div class="callout tip">
   <div class="callout-title">💡 Unified Stress System</div>
@@ -266,9 +370,41 @@
 </table>
 </div>
 
-<div class="callout warning">
-  <div class="callout-title">⚠️ Circumstance Modifiers</div>
-  <p>Every situation has modifiers. Being tired adds +5 to TN. Having the right tools subtracts 5. Emotional distress adds +10. A supportive ally subtracts 5. The GM should always consider context before setting a TN.</p>
+<h3>7.1 Circumstance Modifiers</h3>
+<p>Every check happens in a specific context. The GM adjusts TNs based on conditions. Negative modifiers (<strong>−</strong>) make the check easier; positive modifiers (<strong>+</strong>) make it harder. These stack.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Favorable (− from TN)</th><th>Modifier</th><th>Unfavorable (+ to TN)</th></tr></thead>
+<tbody>
+<tr><td>Have the right tools/equipment</td><td>±5</td><td>Wrong or no tools</td></tr>
+<tr><td>Supportive ally helping you</td><td>±5</td><td>Someone actively interfering</td></tr>
+<tr><td>Well-rested (Healthy condition)</td><td>—</td><td>Tired condition: <strong>+5</strong></td></tr>
+<tr><td>—</td><td>—</td><td>Sick/Exhausted condition: <strong>+10</strong></td></tr>
+<tr><td>—</td><td>—</td><td>Injured/Ill condition: <strong>+15</strong></td></tr>
+<tr><td>Practiced / done this before</td><td>±5</td><td>Never done this, zero experience</td></tr>
+<tr><td>Quiet, distraction-free environment</td><td>±5</td><td>Loud, chaotic, distracting environment</td></tr>
+<tr><td>Ample time (no rush)</td><td>±5</td><td>Under time pressure / rushing</td></tr>
+<tr><td>Calm and emotionally stable</td><td>—</td><td>Emotional distress: <strong>+5</strong></td></tr>
+<tr><td>—</td><td>—</td><td>Panic, rage, or hysteria: <strong>+10</strong></td></tr>
+<tr><td>Good lighting / visibility</td><td>±5</td><td>Poor lighting / darkness / obscured</td></tr>
+<tr><td>Safe, comfortable environment</td><td>±5</td><td>Dangerous environment (risk of harm)</td></tr>
+<tr><td>Clear instructions / prior knowledge</td><td>±5</td><td>Vague instructions / guessing</td></tr>
+<tr><td>Sober and alert</td><td>—</td><td>Drowsy / mildly impaired: <strong>+5</strong></td></tr>
+<tr><td>—</td><td>—</td><td>Drunk / high / heavily impaired: <strong>+15</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout rule">
+  <div class="callout-title">📏 Modifier Stacking Rules</div>
+  <p>Multiple modifiers stack, but the total modifier on any single check should not exceed <strong>±20</strong>. If circumstances would push beyond that, cap it at ±20. This prevents any single check from becoming completely automatic (TN effectively 5) or completely impossible (TN effectively 105+).</p>
+</div>
+
+<div class="callout example">
+  <div class="callout-title">📝 Example: Modifier Stack — Cooking Dinner While Stressed</div>
+  <p><strong>Dana</strong> (from the stress example above) tries to cook a decent dinner on that terrible Saturday. She's at <strong>Overwhelmed</strong> (−8 on all checks), the kitchen is a mess (+5 TN), she's rushing because she's hungry and tired (+5 TN), but she has the right ingredients and recipes (−5 TN).</p>
+  <p>Base TN for cooking a good meal = 40 (Easy). Modifiers: Overwhelmed +8, messy kitchen +5, rushing +5, right ingredients −5 = <strong>net +13</strong>. Her effective TN is <strong>53</strong>. She rolls <span class="dice">2d10</span> = 41, adds her Cooking mod (+4) = <strong>45 total</strong>. <strong>Success</strong> — she manages a decent meal despite everything, barely.</p>
 </div>
 
 </div>
