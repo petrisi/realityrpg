@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Example Character Sheet — Jamal Okafor</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* ============================================================
+   SHARED LAYOUT — applies to BOTH screen and print
+   ============================================================ */
+
+/* --- Sheet page container --- */
+.sheet-page {
+  background: #fff;
+  max-width: 850px;
+  margin: 2em auto;
+  padding: 1.5em;
+  page-break-after: always;
+}
+.sheet-page:last-child { page-break-after: avoid; }
+
+/* --- Section titles --- */
+.sheet-section-title {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.4em 0.8em;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  margin: 1em 0 0.5em;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.sheet-section-title:first-child { margin-top: 0; }
+
+/* --- 2-column field grid --- */
+.sheet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 2px solid var(--color-primary);
+  border-top: none;
+}
+.sheet-field {
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.4em;
+  min-height: 48px;
+}
+.sheet-field:nth-child(even) { border-right: none; }
+.sheet-field.full { grid-column: 1 / -1; }
+.sheet-field label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.2em;
+}
+.sheet-field input,
+.sheet-field textarea,
+.sheet-field select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed var(--color-border);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.5em 0;
+  background: transparent;
+}
+.sheet-field textarea { min-height: 48px; resize: vertical; }
+
+/* --- Filled value spans (replaces inputs in example sheet) --- */
+.filled-value {
+  color: #1a1a2e;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.5em 0;
+}
+
+/* --- Attribute row (6 columns) --- */
+.attr-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  border: 2px solid var(--color-primary);
+}
+.attr-box {
+  text-align: center;
+  padding: 0.6em;
+  border-right: 1px solid var(--color-border);
+}
+.attr-box:last-child { border-right: none; }
+.attr-box .attr-icon { font-size: 1.3rem; display: block; }
+.attr-box .attr-name {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+.attr-box .attr-score {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  min-width: 50px;
+}
+.attr-box .attr-mod {
+  font-size: 0.85rem;
+  color: var(--color-accent-dark);
+  font-weight: 700;
+}
+
+/* --- Health & Stress tracks --- */
+.health-track, .stress-track {
+  display: flex;
+  gap: 0;
+  border: 2px solid var(--color-primary);
+}
+.track-step {
+  flex: 1;
+  text-align: center;
+  padding: 0.5em;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  font-family: var(--font-heading);
+}
+.track-step:last-child { border-right: none; }
+.track-step input[type="checkbox"] { margin-right: 0.3em; }
+
+/* --- Skill rows --- */
+/* --- Skills: compact 2-column layout --- */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.85rem;
+}
+.skills-left {
+  border-right: 1px solid var(--color-border);
+}
+.skill-block {
+  border-bottom: 1px solid var(--color-border);
+}
+.skill-block:last-child { border-bottom: none; }
+.skill-cat {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 0.25em 0.6em;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.skill-entry {
+  display: grid;
+  grid-template-columns: 1fr 64px 96px;
+  gap: 0;
+}
+.skill-entry .skill-name {
+  padding: 0.4em 0.3em;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.skill-entry .skill-attr {
+  padding: 0.4em 0.2em;
+  text-align: center;
+  border-right: 1px solid var(--color-border);
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+.skill-entry .skill-level {
+  padding: 0.4em 0.3em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+.skill-entry .skill-level input {
+  width: 72px;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 0.2em;
+  font-size: 0.95rem;
+}
+
+/* ============================================================
+   SCREEN-ONLY decorations
+   ============================================================ */
+@media screen {
+  .sheet-page {
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-border);
+  }
+}
+
+/* ============================================================
+   PRINT-ONLY overrides — optimized for A4 / Letter
+   ============================================================ */
+@media print {
+  /* ---- Page setup: tight margins for max content ---- */
+  @page {
+    size: auto;
+    margin: 8mm 10mm 8mm 10mm;
+  }
+
+  /* ---- Hide all chrome ---- */
+  .site-header,
+  .site-footer,
+  .print-btn,
+  .sheet-instructions,
+  h1,
+  .content-section > .container > p:first-of-type {
+    display: none !important;
+  }
+
+  /* ---- Reset body — kill inherited margins from shared CSS ---- */
+  body {
+    background: #fff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.35 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ---- Kill all inherited section/card margins ---- */
+  .content-section { padding: 0 !important; margin: 0 !important; }
+  .container { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+  p, h1, h2, h3, h4 { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+  /* ---- Page containers: tight, full-width ---- */
+  .sheet-page {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2mm 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .sheet-page:last-child { page-break-after: avoid; }
+
+  /* ---- Logo header: smaller ---- */
+  .sheet-page > div:first-child { margin-bottom: 2mm !important; }
+  .sheet-page img { height: 28px !important; }
+  .sheet-page h2 { font-size: 11pt !important; margin: 0 !important; }
+
+  /* ---- Section titles: compact ---- */
+  .sheet-section-title {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+    font-size: 8.5pt !important;
+    padding: 1.5pt 5pt !important;
+    margin: 2.5pt 0 1.5pt 0 !important;
+    line-height: 1.2 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ---- Skill category headers ---- */
+  .skill-cat {
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+    font-size: 7.5pt !important;
+    padding: 1pt 4pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ---- Field grids: compact ---- */
+  .sheet-grid {
+    border-width: 1.5px !important;
+  }
+  .sheet-field {
+    min-height: 0 !important;
+    padding: 2pt 3pt !important;
+    line-height: 1.25 !important;
+  }
+  .sheet-field label {
+    font-size: 6.5pt !important;
+    margin-bottom: 6pt !important;
+    line-height: 1.1 !important;
+  }
+  .sheet-field input,
+  .sheet-field textarea,
+  .sheet-field select,
+  .sheet-field .filled-value {
+    font-size: 8pt !important;
+    padding: 3pt 0 !important;
+    line-height: 1.2 !important;
+    border-bottom-color: #888 !important;
+  }
+  .sheet-field textarea {
+    min-height: 18pt !important;
+  }
+
+  /* ---- Attribute row: compact ---- */
+  .attr-row { border-width: 1.5px !important; }
+  .attr-box {
+    padding: 2pt 1pt !important;
+  }
+  .attr-box .attr-icon { font-size: 10pt !important; }
+  .attr-box .attr-name { font-size: 5.5pt !important; }
+  .attr-box .attr-score {
+    font-size: 11pt !important;
+    padding: 0.5pt !important;
+  }
+  .attr-box .attr-mod { font-size: 6pt !important; }
+
+  /* ---- Health & Stress tracks: compact ---- */
+  .health-track, .stress-track { border-width: 1.5px !important; }
+  .track-step {
+    font-size: 6.5pt !important;
+    padding: 1.5pt 2pt !important;
+    line-height: 1.2 !important;
+  }
+  .track-step small { font-size: 5.5pt !important; }
+
+  /* ---- Skills: compact ---- */
+  .skills-container { border-width: 1.5px !important; font-size: 8pt !important; }
+  .skill-cat { font-size: 6.5pt !important; padding: 1pt 3pt !important; }
+  .skill-entry { grid-template-columns: 1fr 52px 80px !important; }
+  .skill-entry .skill-name { padding: 2.5pt 1.5pt !important; font-size: 7.5pt !important; }
+  .skill-entry .skill-attr { padding: 2.5pt 1pt !important; font-size: 6pt !important; }
+  .skill-entry .skill-level { padding: 2.5pt 1.5pt !important; font-size: 6pt !important; }
+  .skill-entry .skill-level input { width: 60px !important; font-size: 7.5pt !important; }
+
+  /* ---- Health/Stress inline label ---- */
+  .sheet-page label[style] {
+    font-size: 7pt !important;
+  }
+
+  /* ---- Prevent section splits: title + grid stay together ---- */
+  .sheet-section-title {
+    break-after: avoid;
+  }
+  .sheet-grid,
+  .attr-row,
+  .skills-container,
+  .skill-block,
+  .health-track,
+  .stress-track,
+  .sheet-field,
+  .attr-box,
+  .skill-entry,
+  .track-step {
+    break-inside: avoid;
+  }
+
+  /* ---- Keep the health/stress side-by-side div intact ---- */
+  .sheet-page > div[style*="grid-template-columns"] {
+    break-inside: avoid;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+  <a href="index.html" class="logo"><img src="img/logo.png" alt="Reality RPG"> Reality RPG</a>
+  <nav>
+    <ul class="site-nav">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="core-mechanics.html">Core Mechanics</a></li>
+      <li><a href="character-creation.html">Characters</a></li>
+      <li><a href="mental-health.html">Mental Health</a></li>
+      <li><a href="neurodivergence.html">Neurodivergence</a></li>
+      <li><a href="disability.html">Disability</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="social-dynamics.html">Social</a></li>
+      <li><a href="inventory-economy.html">Inventory</a></li>
+      <li><a href="comparative.html">Fantasy vs Reality</a></li>
+      <li><a href="example-characters.html">Example PCs</a></li>
+      <li><a href="sexual-health.html">Sexual Health</a></li>
+      <li><a href="family-children.html">Family</a></li>
+      <li><a href="death-grief.html">Death & Grief</a></li>
+      <li><a href="law-civic.html">Law & Civic</a></li>
+      <li><a href="weather-environment.html">Environment</a></li>
+      <li><a href="macro-economy.html">Macro Economy</a></li>
+      <li><a href="geography-mobility.html">Mobility</a></li>
+      <li><a href="remote-work.html">Remote Work</a></li>
+      <li><a href="relationship-structures.html">Relationships</a></li>
+      <li><a href="religion-spirituality.html">Religion</a></li>
+      <li><a href="politics-activism.html">Politics</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="gm-tools.html">GM Tools</a></li>
+      <li><a href="exercise.html">Exercise</a></li>
+      <li><a href="weapons.html">Weapons</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="character-sheet.html">Sheet</a></li>
+
+
+    </ul>
+  </nav>
+</div>
+</header>
+
+<section class="content-section">
+<div class="container" style="text-align:center;">
+<h1>📋 Example Character Sheet</h1>
+<p>This is a completed example character sheet showing a full character creation walkthrough. See <a href="character-creation.html#walkthrough">character-creation.html#walkthrough</a> for the step-by-step math.</p>
+</div>
+</section>
+
+<!-- PAGE 1: Core Identity -->
+<div class="sheet-page">
+  <div style="text-align:center; margin-bottom:1em;">
+    <img src="img/logo.png" alt="" style="height:40px;">
+    <h2 style="border:none; margin:0; font-size:1.3rem;">REALITY RPG — CHARACTER SHEET</h2>
+  </div>
+
+  <div class="sheet-section-title">👤 Identity</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Character Name</label><span class="filled-value">Jamal Okafor</span></div>
+    <div class="sheet-field"><label>Player Name</label><span class="filled-value">[Player]</span></div>
+    <div class="sheet-field"><label>Age</label><span class="filled-value">26</span></div>
+    <div class="sheet-field"><label>Date of Birth</label><span class="filled-value">March 14, 1999</span></div>
+    <div class="sheet-field"><label>Ethnicity / Heritage</label><span class="filled-value">Nigerian American (Yoruba, paternal)</span></div>
+    <div class="sheet-field"><label>Language(s)</label><span class="filled-value">English, basic Yoruba phrases</span></div>
+    <div class="sheet-field"><label>Religion / Spirituality</label><span class="filled-value">Christian (non-denominational church)</span></div>
+    <div class="sheet-field"><label>Sexual Orientation</label><span class="filled-value">Straight</span></div>
+    <div class="sheet-field full"><label>Appearance (brief description)</label><span class="filled-value">6'1", lean build, warm brown skin, closely cropped fade, usually wears a clean button-down or hoodie. Carries himself with a relaxed confidence. Has a small scar on left eyebrow from a childhood fall.</span></div>
+  </div>
+
+  <div class="sheet-section-title">📊 Core Attributes</div>
+  <div class="attr-row">
+    <div class="attr-box">
+      <span class="attr-icon">🏋️</span>
+      <span class="attr-name">Vigor</span><br>
+      <span class="attr-score">10</span>
+      <br><span class="attr-mod">Mod: +2</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">🧠</span>
+      <span class="attr-name">Intellect</span><br>
+      <span class="attr-score">12</span>
+      <br><span class="attr-mod">Mod: +2</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">💬</span>
+      <span class="attr-name">Expression</span><br>
+      <span class="attr-score">13</span>
+      <br><span class="attr-mod">Mod: +2</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">🎯</span>
+      <span class="attr-name">Dexterity</span><br>
+      <span class="attr-score">8</span>
+      <br><span class="attr-mod">Mod: +1</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">🛡️</span>
+      <span class="attr-name">Resolve</span><br>
+      <span class="attr-score">10</span>
+      <br><span class="attr-mod">Mod: +2</span>
+    </div>
+    <div class="attr-box">
+      <span class="attr-icon">✨</span>
+      <span class="attr-name">Presence</span><br>
+      <span class="attr-score">9</span>
+      <br><span class="attr-mod">Mod: +1</span>
+    </div>
+  </div>
+
+  <div class="sheet-section-title">❤️ Health &amp; Stress</div>
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap:1em; margin-bottom:0.5em;">
+    <div>
+      <label style="font-family:var(--font-heading);font-size:0.8rem;font-weight:700;">Health Condition Track</label>
+      <div class="health-track">
+        <div class="track-step"><input type="checkbox" checked><br><small>😊 Healthy</small><br><small>—</small></div>
+        <div class="track-step"><input type="checkbox"><br><small>😐 Tired</small><br><small>—</small></div>
+        <div class="track-step"><input type="checkbox"><br><small>😫 Sick</small><br><small>—</small></div>
+        <div class="track-step"><input type="checkbox"><br><small>🤒 Injured</small><br><small>—</small></div>
+        <div class="track-step"><input type="checkbox"><br><small>🏥 Critical</small><br><small>—</small></div>
+      </div>
+    </div>
+    <div>
+      <label style="font-family:var(--font-heading);font-size:0.8rem;font-weight:700;">Stress Points: 15 / Max 30</label>
+      <div class="stress-track">
+        <div class="track-step">😌<br><small>Stable</small><br><small>0</small></div>
+        <div class="track-step">😐<br><small>Elevated</small><br><small>1–5</small></div>
+        <div class="track-step">😟<br><small>Stressed</small><br><small>6–15</small></div>
+        <div class="track-step">😰<br><small>Overwhelmed</small><br><small>16–25</small></div>
+        <div class="track-step">💥<br><small>Episode</small><br><small>&gt;Max</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section-title">🌍 Background</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Socioeconomic Background</label><span class="filled-value">Working Class</span></div>
+    <div class="sheet-field"><label>Education Level</label><span class="filled-value">Some college (2 years community college, currently enrolled night classes)</span></div>
+    <div class="sheet-field"><label>Current Occupation</label><span class="filled-value">Barista at Green Cup Coffee (downtown)</span></div>
+    <div class="sheet-field"><label>Housing Situation</label><span class="filled-value">Shared 2-bedroom apartment with cousin (Tunde) in Chicago</span></div>
+    <div class="sheet-field"><label>Political Identity</label><span class="filled-value">Progressive, votes Democratic</span></div>
+    <div class="sheet-field"><label>Religious / Spiritual</label><span class="filled-value">Christian — attends church when he can (Sunday mornings conflict with work)</span></div>
+    <div class="sheet-field full"><label>Backstory (100–200 words)</label><span class="filled-value">Born in Chicago to Nigerian immigrant parents. His father is a taxi driver, his mother works double shifts at a hospital cleaning crew. Jamal was the first in his family to even think about college — he went to community college for two years studying business administration before money ran out and he had to take a full-time barista job to help pay rent. He's now taking night classes one at a time, saving for a transfer to a four-year school. His parents are proud but push him hard — every family gathering includes at least three aunts asking "so when are you going to get your real degree?" He loves his job — the regulars are like family, and he's genuinely good at making people's mornings better. He wakes up at 4:30 AM every day without an alarm.</span></div>
+  </div>
+
+  <div class="sheet-section-title">♿ Disability &amp; Neurodivergence</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Physical Disability</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Accessibility Needs</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Neurodivergence</label><span class="filled-value">None diagnosed</span></div>
+    <div class="sheet-field"><label>Chronic Conditions</label><span class="filled-value">Seasonal allergies (spring/fall)</span></div>
+    <div class="sheet-field"><label>Pain Level (0–10): ___</label><span class="filled-value">1/10</span></div>
+    <div class="sheet-field"><label>Energy Budget: ___/day</label><span class="filled-value">6/8 per day (Compulsive Overthinker drains 2)</span></div>
+  </div>
+</div>
+
+<!-- PAGE 2: Skills, Mental Health, Traits -->
+<div class="sheet-page">
+  <div class="sheet-section-title">📚 Skills</div>
+
+  <div class="skills-container">
+    <!-- Left column: Physical + Mental -->
+    <div class="skills-left">
+      <div class="skill-block">
+        <div class="skill-cat">⚡ Physical Skills</div>
+        <div class="skill-entry"><div class="skill-name">Athletics</div><div class="skill-attr">VIG<br>+3</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Combat / Self-Defense</div><div class="skill-attr">VIG<br>+1</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">0</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Driving</div><div class="skill-attr">DXT<br>+2</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Manual Labor</div><div class="skill-attr">VIG/DXT<br>+3</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Cooking</div><div class="skill-attr">DXT<br>+3</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">2</span></div></div>
+      </div>
+      <div class="skill-block">
+        <div class="skill-cat">📖 Mental Skills</div>
+        <div class="skill-entry"><div class="skill-name">Academics</div><div class="skill-attr">INT<br>+4</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">2</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Technology</div><div class="skill-attr">INT<br>+5</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">3</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Finance</div><div class="skill-attr">INT<br>+3</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Language</div><div class="skill-attr">INT<br>+3</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Professional</div><div class="skill-attr">INT<br>+4</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+      </div>
+    </div>
+    <!-- Right column: Social -->
+    <div class="skills-right">
+      <div class="skill-block">
+        <div class="skill-cat">🤝 Social Skills</div>
+        <div class="skill-entry"><div class="skill-name">Communication</div><div class="skill-attr">EXP<br>+4</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">2</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Empathy</div><div class="skill-attr">EXP<br>+4</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">2</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Deception</div><div class="skill-attr">EXP<br>+1</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">0</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Leadership</div><div class="skill-attr">PRC<br>+3</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">1</span></div></div>
+        <div class="skill-entry"><div class="skill-name">Networking</div><div class="skill-attr">PRC<br>+4</div><div class="skill-level">Lv <span class="filled-value" style="display:inline;font-size:0.95rem;">2</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-section-title">🧠 Mental Health</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Mental Health Condition(s)</label><span class="filled-value">None diagnosed — elevated stress only</span></div>
+    <div class="sheet-field"><label>Recovery Stage</label><span class="filled-value">N/A</span></div>
+    <div class="sheet-field"><label>Therapy Level</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Medications</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Known Triggers</label><span class="filled-value">Family criticism about education; financial stress; hearing Nigerian news about instability</span></div>
+    <div class="sheet-field"><label>Coping Mechanisms</label><span class="filled-value">Early morning runs; coffee shop regulars as informal support; journaling</span></div>
+    <div class="sheet-field full"><label>Mental Health Notes</label><span class="filled-value">Rolled a 2 on baseline table — starts with 15 SP. Family pressure is the named stressor. If SP hits 30, GM and player will determine if this develops into clinical anxiety or depression.</span></div>
+  </div>
+
+  <div class="sheet-section-title">⭐ Personality Traits</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Advantages (3)</label><span class="filled-value">Tech-Savvy (grew up fixing family's computers/phones, IT hobbyist), Early Riser (always been a morning person, wakes at 4:30 without alarm), People Person (barista life, always been the guy who knows everyone)</span></div>
+    <div class="sheet-field full"><label>Disadvantages (2)</label><span class="filled-value">People-Pleaser (can't say no to family requests or coworkers covering shifts), Compulsive Overthinker (lies awake at night replaying conversations, +5 SP nightly)</span></div>
+  </div>
+
+  <div class="sheet-section-title">🎯 Goals &amp; Motivations</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Short-term Goals (this month)</label><span class="filled-value">Transfer to University of Chicago; save $2,000 for tuition deposit</span></div>
+    <div class="sheet-field full"><label>Long-term Goals (this year)</label><span class="filled-value">Get bachelor's in business administration; open own coffee shop</span></div>
+    <div class="sheet-field full"><label>Fears &amp; Insecurities</label><span class="filled-value">Letting his parents down; never escaping the working class; burning out before he succeeds</span></div>
+  </div>
+</div>
+
+<!-- PAGE 3: Resources, Relationships, Daily Life -->
+<div class="sheet-page">
+  <div class="sheet-section-title">💰 Resources</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Cash on Hand</label><span class="filled-value">$47</span></div>
+    <div class="sheet-field"><label>Bank Balance</label><span class="filled-value">$312</span></div>
+    <div class="sheet-field"><label>Monthly Income</label><span class="filled-value">$1,800 (barista, ~35 hrs/week at $14/hr + tips)</span></div>
+    <div class="sheet-field"><label>Monthly Expenses</label><span class="filled-value">$1,650 (rent $600, utilities $150, food $300, phone $50, bus pass $105, night classes $200/misc $245)</span></div>
+    <div class="sheet-field"><label>Debt Total</label><span class="filled-value">$4,200 (community college loans, paused)</span></div>
+    <div class="sheet-field"><label>Debt Payments/Month</label><span class="filled-value">$0 (paused while enrolled)</span></div>
+    <div class="sheet-field full"><label>Budget Notes</label><span class="filled-value">Positive monthly cashflow of $150. Saving for UChicago transfer deposit. Every unexpected expense (car repair, medical) wipes out a month of savings.</span></div>
+  </div>
+
+  <div class="sheet-section-title">🎒 Inventory</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>On Person (pockets, wallet, phone)</label><span class="filled-value">iPhone 12 (cracked back glass), wallet ($47 cash, debit card, ID, bus pass), keys (apartment + mailbox), AirPods (left one broken), mints</span></div>
+    <div class="sheet-field full"><label>Bag / Backpack</label><span class="filled-value">Laptop (2019 Dell Inspiron), notebook, 3 pens, charger, umbrella, granola bar</span></div>
+    <div class="sheet-field full"><label>At Home (key items)</label><span class="filled-value">Winter coat, 2 spare sets of work clothes, coffee beans (from work), toiletries, textbooks (2), phone charger, allergy meds (Claritin), TP (2 rolls), rice + beans (staples)</span></div>
+    <div class="sheet-field full"><label>Consumables to Track (food, TP, meds, etc.)</label><span class="filled-value">Food ~3 days of groceries; TP: 2 rolls; Allergy meds: 8 days supply</span></div>
+  </div>
+
+  <div class="sheet-section-title">🤝 Relationships</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Family</label><span class="filled-value">Mama Adaeze (Tier 3 — Deep) — works double shifts, pushes him hard but loves him; Papa Chukwuka (Tier 3 — Deep) — taxi driver, quiet but proud; Tunde (Tier 2 — Close) — cousin, roommate, 24, works at warehouse</span></div>
+    <div class="sheet-field full"><label>Friends</label><span class="filled-value">Marcus "Marc" Williams (Tier 2 — Close) — coworker at Green Cup, only real friend outside family; Sarah Kim (Tier 1 — Acquaintance) — night school classmate, maybe more?</span></div>
+    <div class="sheet-field full"><label>Romantic Partners</label><span class="filled-value">None currently — Sarah Kim is a maybe</span></div>
+    <div class="sheet-field full"><label>Professional Contacts</label><span class="filled-value">Elena Torres (Tier 1 — Acquaintance) — Green Cup manager, fair but strict; Dr. Patel (Tier 1 — Acquaintance) — night school professor, impressed with his tech skills</span></div>
+  </div>
+
+  <div class="sheet-section-title">👨‍👩‍👧‍👦 Family Details</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Pregnancy Status</label><span class="filled-value">N/A</span></div>
+    <div class="sheet-field"><label>Children (names/ages)</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Pet(s)</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Partner / Spouse</label><span class="filled-value">None</span></div>
+  </div>
+
+</div>
+
+<!-- PAGE 4: Daily Routine, GM Notes, Extended Tracking -->
+<div class="sheet-page">
+  <div class="sheet-section-title">⏰ Daily Routine</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Typical Daily Schedule</label><span class="filled-value">4:30 — Wake up (no alarm needed, Early Riser)
+4:45 — Morning run (30 min, Athletics)
+5:30 — Shower, get ready
+6:00 — Breakfast (coffee + granola)
+6:30 — Commute to Green Cup (bus)
+7:00 — Shift starts (work 7 AM – 3 PM)
+3:00 — Shift ends, head home
+3:30 — Lunch, nap, study
+5:00 — Study / online classes
+7:00 — Dinner (cook, Cooking check)
+8:00 — Free time / social / screen time
+10:00 — Overthinking starts (Compulsive Overthinker: +5 SP)
+11:30 — Eventually falls asleep
+12:00 — Sleep (6.5 hours)</span></div>
+  </div>
+
+  <div class="sheet-section-title">📝 GM Notes</div>
+  <div class="sheet-grid">
+    <div class="sheet-field full"><label>Current Campaign Arc</label><span class="filled-value">GM determines</span></div>
+    <div class="sheet-field full"><label>Secrets / Hidden Information</label><span class="filled-value">He's been lying to his mom about how many classes he's taking (says 3, actually 2); He owes Tunde $200 for rent last month and hasn't told anyone</span></div>
+    <div class="sheet-field full"><label>Session Log</label><span class="filled-value">[blank — starting character]</span></div>
+  </div>
+
+  <div class="sheet-section-title">🏋️ Exercise &amp; Fitness</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Fitness Level (0–5): ___</label><span class="filled-value">2/5</span></div>
+    <div class="sheet-field"><label>Primary Activity</label><span class="filled-value">Running (morning runs)</span></div>
+    <div class="sheet-field"><label>Workout Frequency</label><span class="filled-value">5x/week (tied to morning routine)</span></div>
+    <div class="sheet-field"><label>Gym Membership / Equipment</label><span class="filled-value">None — runs outside</span></div>
+    <div class="sheet-field full"><label>Current Training Plan / Goals</label><span class="filled-value">Keep running, maybe join a 5K race</span></div>
+    <div class="sheet-field full"><label>Overtraining Status (Fresh → Rehab)</label><span class="filled-value">Fresh</span></div>
+  </div>
+
+  <div class="sheet-section-title">🔫 Weapons &amp; Combat</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Combat Proficiency</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Firearm Proficiency</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Weapons Owned</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Permits / Licenses</label><span class="filled-value">None</span></div>
+    <div class="sheet-field full"><label>Combat History / Violence Trauma</label><span class="filled-value">Got into one shoving match in high school, walked away</span></div>
+  </div>
+
+  <div class="sheet-section-title">📊 Extended Tracking</div>
+  <div class="sheet-grid">
+    <div class="sheet-field"><label>Credit Score: ___</label><span class="filled-value">640 (thin file, one late payment)</span></div>
+    <div class="sheet-field"><label>Investment Portfolio</label><span class="filled-value">None</span></div>
+    <div class="sheet-field"><label>Political Identity</label><span class="filled-value">Progressive</span></div>
+    <div class="sheet-field"><label>Religious Devotion (0–5): ___</label><span class="filled-value">2/5 (believer but inconsistent attendance)</span></div>
+    <div class="sheet-field"><label>Relationship Structure</label><span class="filled-value">Single</span></div>
+    <div class="sheet-field"><label>Work Arrangement</label><span class="filled-value">Full-time barista, part-time student</span></div>
+    <div class="sheet-field"><label>Immigration / Visa Status</label><span class="filled-value">US citizen, born in Chicago</span></div>
+    <div class="sheet-field"><label>Current City / Location</label><span class="filled-value">Chicago, IL</span></div>
+    <div class="sheet-field full"><label>Active Goals &amp; Campaign Arcs</label><span class="filled-value">Transfer to UChicago; save $2K; maintain health</span></div>
+    <div class="sheet-field full"><label>Long-term Narrative Threads</label><span class="filled-value">Family pressure arc; financial independence arc; Sarah Kim romance arc</span></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  Reality RPG &copy; 2025 — <a href="index.html" style="color:rgba(255,255,255,0.7)">Back to Home</a>
+</footer>
+
+</body>
+</html>

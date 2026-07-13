@@ -185,6 +185,7 @@ th:last-child { border-radius: 0 var(--radius) 0 0; }
 .callout.tip { border-left-color: var(--color-info); background: #eaf2f8; }
 .callout.warning { border-left-color: var(--color-warning); background: #fef9e7; }
 .callout.comparison { border-left-color: #8e44ad; background: #f5eef8; }
+.callout.walkthrough { border-left-color: #e67e22; background: #fdf2e9; }
 .callout-title {
   font-family: var(--font-heading);
   font-weight: 700;
