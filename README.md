@@ -525,10 +525,10 @@ realityrpg/
 ├── religion-spirituality.html    # Worship, deconversion, interfaith
 ├── politics-activism.html        # Protesting, organizing, activism
 ├── campaigns.html                # 4 complete campaign arcs
-├── gm-tools.html                 # Random tables, NPC generator
 ├── exercise.html                 # Gym, sports, martial arts
 ├── weapons.html                  # Firearms, blades, self-defense
 ├── vehicles.html                 # Cars, bikes, insurance, accidents
+├── gm-tools.html                 # Random tables, NPC generator
 ├── css/style.css                 # Shared stylesheet
 └── img/                          # Character portraits, diagrams, maps
 ```
