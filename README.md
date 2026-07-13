@@ -57,35 +57,217 @@ Instead of hit points, characters track **Health** on a condition track (Healthy
 
 ## 👥 Example Characters
 
-Eight fully-built characters demonstrate every mechanic: ethnicity, culture, mental health conditions, socioeconomic status, personality traits, daily routines, and more. Use them as templates or ready-to-play characters.
+Eight fully-built characters demonstrate every mechanic — ethnicity, culture, mental health conditions, socioeconomic status, personality traits, and daily routines. Each one below shows the kind of mechanical depth you can expect. **Click to expand.**
+
+<details>
+<summary><strong>📱 Mei Lin Chen — 23 · East Asian American · Software Engineering Intern</strong></summary>
 
 <table>
-<tr><td align="center">
-<img src="img/char_mei.png" width="180"><br><strong>Mei Lin Chen</strong><br><em>Software Engineering Intern, 23</em>
-</td><td align="center">
-<img src="img/char_marcus.png" width="180"><br><strong>Marcus Johnson</strong><br><em>Auto Mechanic, 42</em>
-</td><td align="center">
-<img src="img/char_carlos.png" width="180"><br><strong>Carlos Rodriguez</strong><br><em>Warehouse Worker & Student, 21</em>
-</td><td align="center">
-<img src="img/char_elaine.png" width="180"><br><strong>Elaine Whitmore</strong><br><em>Retired Teacher, 72</em>
-</td></tr>
-<tr><td align="center">
-<img src="img/char_raj.png" width="180"><br><strong>Raj Patel</strong><br><em>Internal Medicine Resident, 35</em>
-</td><td align="center">
-<img src="img/char_tallulah.png" width="180"><br><strong>Tallulah Red Elk</strong><br><em>Cultural Liaison, 38</em>
-</td><td align="center">
-<img src="img/char_youssef.png" width="180"><br><strong>Youssef Al-Hassan</strong><br><em>Political Science Grad Student, 24</em>
-</td><td align="center">
-<img src="img/char_sofia.png" width="180"><br><strong>Sofia</strong><br><em>Freelance Designer, 29</em>
-</td></tr>
-<tr><td align="center">
-<img src="img/char_derek.png" width="180"><br><strong>Derek</strong><br><em>Construction Worker</em>
-</td><td align="center">
-<img src="img/char_tyler.png" width="180"><br><strong>Tyler</strong><br><em>Data Analyst</em>
-</td><td align="center">
-<img src="img/char_aisha_leader.png" width="180"><br><strong>Aisha</strong><br><em>Community Leader</em>
-</td><td></td></tr>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>8</td><td>+1</td></tr>
+<tr><td>🧠 INT</td><td>14</td><td><strong>+2</strong></td></tr>
+<tr><td>💬 EXP</td><td>7</td><td>+1</td></tr>
+<tr><td>🎯 DXT</td><td>9</td><td>+1</td></tr>
+<tr><td>🛡️ RES</td><td>6</td><td>+1</td></tr>
+<tr><td>✨ PRC</td><td>8</td><td>+1</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>GAD (Moderate)</td></tr>
+<tr><td>😰 Stress</td><td>18/25 SP</td></tr>
+<tr><td>💰 Class</td><td>Upper Middle</td></tr>
+<tr><td>✅ Advantages</td><td>Book Smart, Disciplined, Healthy Habits</td></tr>
+<tr><td>❌ Disadvantages</td><td>Procrastinator, Shy/Socially Anxious</td></tr>
+<tr><td>🔥 Triggers</td><td>Deadlines, crowds, being watched</td></tr>
+</table></td></tr>
 </table>
+
+<p><em>Brilliant but fragile — INT 14 is offset by RES 6 and chronic anxiety. One bad week at the internship could push her into an Episode. Her daily routine (meditation, running, journaling) is what keeps her from breaking.</em></p>
+</details>
+
+<details>
+<summary><strong>🔧 Marcus Johnson — 42 · Black American · Auto Mechanic</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>13</td><td><strong>+2</strong></td></tr>
+<tr><td>🧠 INT</td><td>9</td><td>+1</td></tr>
+<tr><td>💬 EXP</td><td>11</td><td>+2</td></tr>
+<tr><td>🎯 DXT</td><td>12</td><td>+2</td></tr>
+<tr><td>🛡️ RES</td><td>10</td><td>+2</td></tr>
+<tr><td>✨ PRC</td><td>7</td><td>+1</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>MDD (In Remission)</td></tr>
+<tr><td>😌 Stress</td><td>8/30 SP</td></tr>
+<tr><td>💰 Class</td><td>Working</td></tr>
+<tr><td>✅ Advantages</td><td>Athletic, People Person, Resilient</td></tr>
+<tr><td>❌ Disadvantages</td><td>Bad with Money, Poor Sleeper</td></tr>
+<tr><td>🔥 Seasonal Risk</td><td>Winter depression (Nov–Feb)</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>A steady hand with engines, a shaky hand with money. Five years stable from a depressive episode, but every November the darkness creeps back. His church community and family are his anchor — losing either would be catastrophic.</em></p>
+</details>
+
+<details>
+<summary><strong>📦 Carlos Rodriguez — 21 · Hispanic/Latino · Warehouse Worker & Student</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>10</td><td>+2</td></tr>
+<tr><td>🧠 INT</td><td>11</td><td>+2</td></tr>
+<tr><td>💬 EXP</td><td>12</td><td>+2</td></tr>
+<tr><td>🎯 DXT</td><td>7</td><td>+1</td></tr>
+<tr><td>🛡️ RES</td><td>9</td><td>+1</td></tr>
+<tr><td>✨ PRC</td><td>9</td><td>+1</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>Elevated stress (no diagnosis)</td></tr>
+<tr><td>😰 Stress</td><td><strong>22/25 SP</strong> — near Episode</td></tr>
+<tr><td>💰 Class</td><td>Poor</td></tr>
+<tr><td>✅ Advantages</td><td>Street Smart, Resilient, People Person</td></tr>
+<tr><td>❌ Disadvantages</td><td>Food Insecurity, Impulsive</td></tr>
+<tr><td>🔥 Daily Drain</td><td>+5 SP/day (food insecurity + work-study balance)</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>Three points away from an Episode. Working 30 hrs/week at a warehouse while studying business at community college, sleeping 5 hours, sometimes skipping meals. He's resilient — it's what got him here — but resilience has limits.</em></p>
+</details>
+
+<details>
+<summary><strong>📖 Elaine Whitmore — 72 · White American · Retired Teacher & Widow</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>6</td><td>+1</td></tr>
+<tr><td>🧠 INT</td><td>15</td><td><strong>+3</strong></td></tr>
+<tr><td>💬 EXP</td><td>14</td><td>+2</td></tr>
+<tr><td>🎯 DXT</td><td>5</td><td>+1</td></tr>
+<tr><td>🛡️ RES</td><td>13</td><td>+2</td></tr>
+<tr><td>✨ PRC</td><td>10</td><td>+2</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>Grief response (mild MDD)</td></tr>
+<tr><td>😌 Stress</td><td>10/30 SP</td></tr>
+<tr><td>💰 Class</td><td>Wealthy (accumulated)</td></tr>
+<tr><td>✅ Advantages</td><td>Book Smart, People Person, Disciplined</td></tr>
+<tr><td>❌ Disadvantages</td><td>Chronic Pain, Procrastinator</td></tr>
+<tr><td>🔥 Triggers</td><td>Anniversaries, holidays alone, Robert's songs</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>Age-adjusted attributes show the toll of 72 years: VIG 6, DXT 5. Chronic pain keeps her at Tired every day. Her grief isn't clinical — it's the slow erosion of a 45-year partnership. Money can't fix loneliness.</em></p>
+</details>
+
+<details>
+<summary><strong>🩺 Raj Patel — 35 · South Asian American · Internal Medicine Resident</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>8</td><td>+1</td></tr>
+<tr><td>🧠 INT</td><td>17</td><td><strong>+3</strong></td></tr>
+<tr><td>💬 EXP</td><td>10</td><td>+2</td></tr>
+<tr><td>🎯 DXT</td><td>8</td><td>+1</td></tr>
+<tr><td>🛡️ RES</td><td>12</td><td>+2</td></tr>
+<tr><td>✨ PRC</td><td>9</td><td>+1</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>Elevated stress (no diagnosis yet)</td></tr>
+<tr><td>😰 Stress</td><td>19/30 SP</td></tr>
+<tr><td>💰 Class</td><td>Upper Middle (negative monthly budget)</td></tr>
+<tr><td>✅ Advantages</td><td>Book Smart, Disciplined, Resilient</td></tr>
+<tr><td>❌ Disadvantages</td><td>Perfectionist, Workaholic</td></tr>
+<tr><td>🔥 Daily Drain</td><td>+6 SP/day (residency + family pressure + perfectionism)</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>INT 17 — genuinely one of the smartest people in any room. But his monthly budget is negative ($3K income, $4.7K expenses), he hasn't dated in two years, and his parents call every night at 11:30 PM. He's on the edge and doesn't know it yet.</em></p>
+</details>
+
+<details>
+<summary><strong>🌿 Tallulah Red Elk — 38 · Native American (Lakota) · Cultural Liaison Worker</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>11</td><td>+2</td></tr>
+<tr><td>🧠 INT</td><td>10</td><td>+2</td></tr>
+<tr><td>💬 EXP</td><td>14</td><td><strong>+2</strong></td></tr>
+<tr><td>🎯 DXT</td><td>9</td><td>+1</td></tr>
+<tr><td>🛡️ RES</td><td>14</td><td>+2</td></tr>
+<tr><td>✨ PRC</td><td>11</td><td>+2</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>PTSD (Moderate)</td></tr>
+<tr><td>😟 Stress</td><td>14/30 SP</td></tr>
+<tr><td>💰 Class</td><td>Middle (tribal housing subsidy)</td></tr>
+<tr><td>✅ Advantages</td><td>People Person, Resilient, Artistic</td></tr>
+<tr><td>❌ Disadvantages</td><td>Trust Issues, Impulsive</td></tr>
+<tr><td>🔥 Triggers</td><td>Screeching tires, storms, September (anniversary)</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>Strong community ties give her a boost when drawing on tribal identity — but systemic disadvantage adds +5 TN with government services. PTSD from a car accident at 19. She bridges two worlds every day: tribal health services and the broader healthcare system. Her strength is also her burden — everyone calls on her, nobody calls for her.</em></p>
+</details>
+
+<details>
+<summary><strong>📚 Youssef Al-Hassan — 24 · Middle Eastern (Egyptian American) · Political Science Grad Student</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>9</td><td>+1</td></tr>
+<tr><td>🧠 INT</td><td>15</td><td><strong>+3</strong></td></tr>
+<tr><td>💬 EXP</td><td>13</td><td>+2</td></tr>
+<tr><td>🎯 DXT</td><td>7</td><td>+1</td></tr>
+<tr><td>🛡️ RES</td><td>11</td><td>+2</td></tr>
+<tr><td>✨ PRC</td><td>10</td><td>+2</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>Generally stable</td></tr>
+<tr><td>😌 Stress</td><td>12/30 SP</td></tr>
+<tr><td>💰 Class</td><td>Working</td></tr>
+<tr><td>✅ Advantages</td><td>Book Smart, Charismatic, Disciplined</td></tr>
+<tr><td>❌ Disadvantages</td><td>Perfectionist, Trust Issues</td></tr>
+<tr><td>🌍 Social Mod</td><td>+10 TN with security/law enforcement</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>Sharp, articulate, and dealing with post-9/11 profiling every time he goes through airport security. His father came as a refugee from the 2011 Egyptian revolution — his education is built on that sacrifice, which creates immense pressure to succeed. +10 TN with authorities isn't a roleplay suggestion — it's a mechanical reality that affects every encounter with police, TSA, or immigration.</em></p>
+</details>
+
+<details>
+<summary><strong>🏗️ Derek O'Brien — 31 · White American · Construction Worker, Early Recovery</strong></summary>
+
+<table>
+<tr><td width="45%"><table>
+<tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+<tr><td>🏋️ VIG</td><td>14</td><td><strong>+2</strong></td></tr>
+<tr><td>🧠 INT</td><td>7</td><td>+1</td></tr>
+<tr><td>💬 EXP</td><td>8</td><td>+1</td></tr>
+<tr><td>🎯 DXT</td><td>10</td><td>+2</td></tr>
+<tr><td>🛡️ RES</td><td>10</td><td>+2</td></tr>
+<tr><td>✨ PRC</td><td>6</td><td>+1</td></tr>
+</table></td><td width="55%"><table>
+<tr><th>Mechanic</th><th>Value</th></tr>
+<tr><td>🧠 Condition</td><td>SUD (Alcohol) — Dependence, recovery</td></tr>
+<tr><td>😟 Stress</td><td>16/30 SP</td></tr>
+<tr><td>💰 Class</td><td>Working</td></tr>
+<tr><td>✅ Advantages</td><td>Athletic, People Person, Resilient</td></tr>
+<tr><td>❌ Disadvantages</td><td>Impulsive, Trust Issues</td></tr>
+<tr><td>🔥 Daily Check</td><td>RES TN 55 to resist craving; 114 days sober</td></tr>
+</table></td></tr>
+</table>
+
+<p><em>114 days sober after hitting rock bottom at 30 — lost his job, lost his apartment, slept in his truck for three weeks. AA meetings 3x/week, a sponsor, daily RES checks to resist. His brother's death in a car accident was the crack in the foundation. Some days are harder than others. Today is a hard day, but he's still here.</em></p>
+</details>
+
+<p style="margin-top:1em"><em>These eight characters collectively demonstrate: all six attributes with varying distributions; five different socioeconomic backgrounds; seven distinct ethnic/cultural identities; five mental health conditions (GAD, MDD, PTSD, SUD, grief); the full Recovery Track; therapy mechanics at multiple levels; addiction stages and relapse; aging effects; systemic discrimination; community bonuses; daily routines; and stress accumulation and recovery.</em></p>
 
 ## 📚 Ruleset Structure
 
