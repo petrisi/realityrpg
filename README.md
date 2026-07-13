@@ -417,6 +417,40 @@ Every fantasy RPG concept has a real-world equivalent. Your "sword" is a resume.
 | 🐉 Dragon | 📉 Eviction notice |
 | 🧙 Wizard | 👨‍⚕️ Therapist |
 
+## 🧪 Help Us Playtest
+
+Reality RPG is currently in **Beta 1** — the core systems are built, but they need to be stress-tested at the table. We're looking for **playtesters** of all experience levels to run campaigns, break mechanics, and help us refine the rules before the 1.0 release.
+
+### What We're Building Toward
+
+A **printed edition** of Reality RPG is planned for the 1.0 launch — two professionally designed books:
+
+<div align="center">
+
+<img src="img/cover_players_guide.png" alt="Reality RPG: Player's Guide — printed book cover mockup" width="220" style="margin:0.5em" />
+<img src="img/cover_gm_guide.png" alt="Reality RPG: Game Master's Guide — printed book cover mockup" width="220" style="margin:0.5em" />
+
+<br /><em>Mockups of the planned printed Player's Guide and Game Master's Guide</em>
+
+</div>
+
+### How to Help
+
+- **Run a campaign** using the current rules and report what breaks
+- **Test edge cases** — extreme character builds, unusual life situations, systemic interactions
+- **Join the discussion** — share your session notes, suggest mechanics, flag balance issues
+- **Tell your friends** — the more diverse the playtest group, the better the final product
+
+### Why Playtest?
+
+1. **Shape the game** — your feedback directly influences what makes it to 1.0
+2. **Get credited** — every named playtester will be listed by name in the printed edition as a thank-you
+3. **Early access** — be among the first humans to roll dice in Reality RPG
+
+> 📬 **Interested?** Open an issue on [GitHub](https://github.com/petrisi/realityrpg/issues) with the label `playtester` and tell us a bit about your TTRPG experience.
+
+---
+
 ## How to Play
 
 1. **Gather 3–7 people** — one Game Master plus 2–6 players
