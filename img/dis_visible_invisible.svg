@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <text x="350" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Visible vs. Invisible Disabilities</text>
+
+  <!-- LEFT: Visible -->
+  <rect x="30" y="55" width="290" height="200" rx="12" fill="#eaf2f8" stroke="#2980b9" stroke-width="2" filter="url(#s)"/>
+  <text x="175" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#2471a3">👁️ VISIBLE DISABILITIES</text>
+  <line x1="60" y1="95" x2="290" y2="95" stroke="#aed6f1" stroke-width="1"/>
+
+  <text x="55" y="120" font-size="22">♿</text>
+  <text x="85" y="125" font-size="12" fill="#2c3e50">Wheelchair / Mobility Aid</text>
+
+  <text x="55" y="150" font-size="22">🦾</text>
+  <text x="85" y="155" font-size="12" fill="#2c3e50">Prosthetics / Amputation</text>
+
+  <text x="55" y="175" font-size="22">🦯</text>
+  <text x="85" y="180" font-size="12" fill="#2c3e50">White Cane / Guide Dog</text>
+
+  <text x="55" y="200" font-size="22">🔊</text>
+  <text x="85" y="205" font-size="12" fill="#2c3e50">Hearing Aids (visible)</text>
+
+  <text x="55" y="225" font-size="22">🏥</text>
+  <text x="85" y="230" font-size="12" fill="#2c3e50">Ostomy / Medical Devices</text>
+
+  <text x="55" y="250" font-size="22">🩼</text>
+  <text x="85" y="255" font-size="12" fill="#2c3e50">Tremors / Spasticity</text>
+
+  <!-- RIGHT: Invisible -->
+  <rect x="380" y="55" width="290" height="200" rx="12" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#s)"/>
+  <text x="525" y="85" text-anchor="middle" font-size="15" font-weight="700" fill="#7d6608">🕵️ INVISIBLE DISABILITIES</text>
+  <line x1="410" y1="95" x2="640" y2="95" stroke="#f9e79f" stroke-width="1"/>
+
+  <text x="405" y="120" font-size="22">😣</text>
+  <text x="435" y="125" font-size="12" fill="#2c3e50">Chronic Pain</text>
+
+  <text x="405" y="150" font-size="22">😴</text>
+  <text x="435" y="155" font-size="12" fill="#2c3e50">ME/CFS / Chronic Fatigue</text>
+
+  <text x="405" y="180" font-size="22">🧠</text>
+  <text x="435" y="185" font-size="12" fill="#2c3e50">Cognitive Fog / Brain Fog</text>
+
+  <text x="405" y="210" font-size="22">🔄</text>
+  <text x="435" y="215" font-size="12" fill="#2c3e50">Autoimmune (Lupus, RA)</text>
+
+  <text x="405" y="240" font-size="22">🍽️</text>
+  <text x="435" y="245" font-size="12" fill="#2c3e50">Crohn's / IBS / Celiac</text>
+
+  <text x="405" y="270" font-size="22">💉</text>
+  <text x="435" y="275" font-size="12" fill="#2c3e50">Diabetes (managed)</text>
+
+  <!-- SHARED: Bottom bar -->
+  <rect x="30" y="275" width="640" height="125" rx="12" fill="#2c3e50" filter="url(#s)"/>
+  <text x="350" y="305" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">⚡ SHARED EXPERIENCES — Both Visible &amp; Invisible</text>
+  <line x1="60" y1="315" x2="640" y2="315" stroke="#5d6d7e" stroke-width="1"/>
+
+  <text x="60" y="340" font-size="12" fill="#d5d8dc">⚠️ Discrimination &amp; stigma from strangers</text>
+  <text x="350" y="340" font-size="12" fill="#d5d8dc">🔋 Higher daily Energy Budget costs</text>
+  <text x="640" y="340" font-size="12" fill="#d5d8dc" text-anchor="end">📋 Must request accommodations</text>
+
+  <text x="60" y="365" font-size="12" fill="#d5d8dc">💰 Equipment &amp; treatment costs</text>
+  <text x="350" y="365" font-size="12" fill="#d5d8dc" text-anchor="middle">😰 Stress (SP) from navigating barriers</text>
+  <text x="640" y="365" font-size="12" fill="#d5d8dc" text-anchor="end">📐 DM penalties when AR &lt; AN</text>
+
+  <text x="60" y="390" font-size="12" fill="#d5d8dc">🤝 Disability community &amp; culture</text>
+  <text x="350" y="390" font-size="12" fill="#d5d8dc" text-anchor="middle">💪 Resilience &amp; adaptive strategies</text>
+  <text x="640" y="390" font-size="12" fill="#d5d8dc" text-anchor="end">⚖️ Legal protections (ADA, 504)</text>
+
+  <text x="350" y="420" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Disability is not a debuff — it is a life context</text>
+</svg>

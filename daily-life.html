@@ -27,6 +27,11 @@
   <p>Unlike fantasy RPGs where characters can skip meals, sleep under a tree, and ignore personal hygiene without consequence, Reality RPG <strong>tracks all daily needs</strong>. Every day, the GM asks each player to account for how their character met (or failed to meet) their basic needs. Neglect has cumulative, mechanical penalties that affect every aspect of play.</p>
 </div>
 
+<!-- Daily Life System Overview Diagram -->
+<div class="section-illustration">
+  <img src="img/dl_daily_life_loop.svg" alt="The Daily Life Cycle — 9 interconnected systems in a loop with cascade failure paths">
+</div>
+
 <h2>📋 The Daily Life Checklist</h2>
 <p>Each day, a character must manage the following systems. The GM can resolve these at a high level during mundane stretches ("You slept, ate, went to work, came home, washed dishes, and watched TV — nothing notable happened") or drill down when circumstances make them interesting.</p>
 
@@ -55,6 +60,7 @@
 <!-- ============================================================
      SECTION 1: SLEEP SYSTEM
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_sleep.png" alt="Sleep system" loading="lazy"></div>
 <h2>😴 §1. Sleep System</h2>
 <p>Sleep is the most fundamental daily need. Without it, everything else degrades. In Reality RPG, sleep is tracked on a <strong>Sleep Need Track</strong> that measures both <strong>hours slept</strong> and <strong>sleep quality</strong>.</p>
 
@@ -65,33 +71,34 @@
 <table>
 <thead><tr><th>Age Range</th><th>Recommended Sleep</th><th>Minimum Functional</th><th>Sleep Need Modifier</th></tr></thead>
 <tbody>
-<tr><td>Child (5–12)</td><td>9–12 hours</td><td>7 hours</td><td>+2 to all sleep quality rolls</td></tr>
-<tr><td>Teen (13–17)</td><td>8–10 hours</td><td>6 hours</td><td>+1 to all sleep quality rolls</td></tr>
-<tr><td>Adult (18–64)</td><td>7–9 hours</td><td>5 hours</td><td>none</td></tr>
-<tr><td>Senior (65+)</td><td>7–8 hours</td><td>5 hours</td><td>−2 to sleep quality rolls (fragile sleep)</td></tr>
+<tr><td>🧒 Child (5–12)</td><td>9–12 hours</td><td>7 hours</td><td>+2 to all sleep quality rolls</td></tr>
+<tr><td>🧑‍🎓 Teen (13–17)</td><td>8–10 hours</td><td>6 hours</td><td>+1 to all sleep quality rolls</td></tr>
+<tr><td>👨 Adult (18–64)</td><td>7–9 hours</td><td>5 hours</td><td>none</td></tr>
+<tr><td>👴 Senior (65+)</td><td>7–8 hours</td><td>5 hours</td><td>−2 to sleep quality rolls (fragile sleep)</td></tr>
 </tbody>
 </table>
 </div>
 
 <p>Each morning, the GM checks how many hours the character slept. The deficit creates <strong>Sleep Debt</strong>, tracked in <strong>consecutive deficient days</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Consecutive Deficient Days</th><th>Penalty</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>−1 to all rolls</td><td>Mild grogginess. Hard to notice.</td></tr>
-<tr><td>2</td><td>−2 to all rolls</td><td>Noticeable fatigue. Irritability.</td></tr>
-<tr><td>3</td><td>−3 to all rolls, −1 VIG</td><td>Microsleeps possible. Mood swings.</td></tr>
-<tr><td>4</td><td>−4 to all rolls, −2 VIG</td><td>Impaired judgment. Emotional volatility.</td></tr>
-<tr><td>5</td><td>−5 to all rolls, −3 VIG</td><td>Body shutting down. Hallucinations possible.</td></tr>
-<tr><td>6+</td><td>−5 to all rolls, −4 VIG/day</td><td><strong>Critical:</strong> Risk of collapse, psychosis, or medical emergency. Must roll <span class="dice">1d20</span> each day; on a 1, the character passes out involuntarily.</td></tr>
-</tbody>
-</table>
+<!-- CONDITION TRACK: Sleep Debt Accumulation -->
+<div class="condition-track">
+  <div class="condition-step healthy">Day 1<br><small>−1 all rolls<br>Mild grogginess</small></div>
+  <div class="condition-step tired">Day 2<br><small>−2 all rolls<br>Irritability</small></div>
+  <div class="condition-step sick">Day 3<br><small>−3 all rolls, −1 VIG<br>Mood swings</small></div>
+  <div class="condition-step injured">Day 4<br><small>−4 all rolls, −2 VIG<br>Emotional volatility</small></div>
+  <div class="condition-step critical">Day 5<br><small>−5 all rolls, −3 VIG<br>Hallucinations</small></div>
+  <div class="condition-step dead">Day 6+<br><small>−5 all rolls, −4 VIG/day<br>Collapse risk</small></div>
 </div>
 
 <div class="callout warning">
   <div class="callout-title">⚠️ Warning: Sleep Debt Is Deadly</div>
   <p>After 11 days without sleep, a human being can <strong>die</strong>. In game terms, if a character reaches 11 consecutive days of 0 sleep (not just deficient sleep, but <em>zero</em> sleep), they suffer a fatal health event. The GM should make this clear: sleep deprivation is a genuine, escalating threat.</p>
+</div>
+
+<!-- Sleep Modifier Stack Diagram -->
+<div class="section-illustration">
+  <img src="img/dl_sleep_modifier_stack.svg" alt="Sleep quality modifier stack showing positive and negative factors">
 </div>
 
 <h3>1.2 Sleep Quality Factors</h3>
@@ -108,7 +115,7 @@
 <tr><td>🔇 Quiet, dark room</td><td>+10</td><td>Ideal conditions</td></tr>
 <tr><td>🔊 Roommate's TV / street noise</td><td>−10</td><td>Constant low-grade disturbance</td></tr>
 <tr><td>🔊 Construction / sirens / crying baby</td><td>−20</td><td>Severe disruption</td></tr>
-<tr><td>😰 High stress (SP > 10)</td><td>−10 per 10 SP above 10</td><td>Racing thoughts, can't shut off</td></tr>
+<tr><td>😰 High stress (SP &gt; 10)</td><td>−10 per 10 SP above 10</td><td>Racing thoughts, can't shut off</td></tr>
 <tr><td>☕ Caffeine within 6 hours of bed</td><td>−15</td><td>Adrenaline still in system</td></tr>
 <tr><td>📱 Phone screen within 30 min of bed</td><td>−5</td><td>Blue light suppresses melatonin</td></tr>
 <tr><td>🌡️ Room too hot or too cold</td><td>−10</td><td>Discomfort prevents deep sleep</td></tr>
@@ -120,38 +127,82 @@
 </table>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Maya's Sleep Quality</div>
-  <p>Maya (VIG 12, modifier +2) sleeps in her own bed (+10) in a quiet apartment (+10), but she had an iced latte at 5 PM (−15), checked her phone until 11:30 (−5), and is stressed about a work deadline (SP = 14, so −4). Her total modifier is <strong>+2</strong>. She rolls <span class="dice">2d10</span> = 47. Total: 47 + 2 = <strong>49</strong> against TN 40. This is a failure — her sleep is <strong>poor quality</strong>. She gets 7 hours but wakes up feeling like 4. The GM applies a −1 penalty to all her rolls tomorrow as if she had 1 day of sleep debt, even though she technically slept enough hours.</p>
+<!-- Scene: Maya's Sleepless Night -->
+<div class="section-illustration">
+  <img src="img/dl_maya_sleepless_night.png" alt="Maya in bed at night, phone screen glowing, can't sleep">
+</div>
+
+<!-- CHAR PORTRAIT: Maya's Sleep Example -->
+<div class="char-portrait">
+  <img src="img/char_maya.png" alt="Maya">
+  <div class="char-info">
+    <div class="callout example">
+      <div class="callout-title">📝 Example: Maya's Sleep Quality</div>
+      <p>Maya (VIG 12, modifier +2) sleeps in her own bed (+10) in a quiet apartment (+10), but she had an iced latte at 5 PM (−15), checked her phone until 11:30 (−5), and is stressed about a work deadline (SP = 14, so −4). Her total modifier is <strong>+2</strong>. She rolls <span class="dice">2d10</span> = 47. Total: 47 + 2 = <strong>49</strong> against TN 40. This is a failure — her sleep is <strong>poor quality</strong>. She gets 7 hours but wakes up feeling like 4. The GM applies a −1 penalty to all her rolls tomorrow as if she had 1 day of sleep debt, even though she technically slept enough hours.</p>
+    </div>
+    <div class="char-stats">
+      <span class="char-stat">VIG 12 (+2)</span>
+      <span class="char-stat">SP 14</span>
+      <span class="char-stat">Roll: 49 vs TN 40 ❌</span>
+    </div>
+  </div>
 </div>
 
 <h3>1.3 Sleep Quality Results</h3>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Result</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>🌟 Critical Success (≤ 5 before modifiers)</td><td>Deep, restorative sleep. Gain +1 VIG (up to max) and clear 1 day of Sleep Debt if any.</td></tr>
-<tr><td>✅ Strong Success (≤ TN − 5)</td><td>Excellent sleep. Full VIG recovery. No sleep debt accumulates.</td></tr>
-<tr><td>✅ Success (≤ TN)</td><td>Adequate sleep. Normal recovery. No sleep debt accumulates.</td></tr>
-<tr><td>⚠️ Partial Success (≤ TN + 5)</td><td>Marginal sleep. Half VIG recovery. Counts as 0.5 day of sleep debt.</td></tr>
-<tr><td>❌ Failure</td><td>Poor sleep. No VIG recovery. Counts as 1 day of sleep debt regardless of hours in bed.</td></tr>
-<tr><td>💀 Critical Failure (≥ 96 before modifiers)</td><td>Terrifying nightmare or complete sleep disruption. Lose 1 VIG. Counts as 2 days of sleep debt. May trigger a <strong>Stress Event</strong>.</td></tr>
-</tbody>
-</table>
+
+<!-- Sleep Debt Timeline Diagram -->
+<div class="section-illustration">
+  <img src="img/dl_sleep_debt_timeline.svg" alt="Sleep debt accumulation timeline from day 1 to day 11 death">
+</div>
+
+<!-- TN LADDER: Sleep Quality Results -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">🌟</span>
+    <span class="tn-label"><strong>Critical Success</strong> (≤ 5 before modifiers) — Deep, restorative sleep. Gain +1 VIG (up to max) and clear 1 day of Sleep Debt if any.</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">✅</span>
+    <span class="tn-label"><strong>Strong Success</strong> (≤ TN − 5) — Excellent sleep. Full VIG recovery. No sleep debt accumulates.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">✅</span>
+    <span class="tn-label"><strong>Success</strong> (≤ TN) — Adequate sleep. Normal recovery. No sleep debt accumulates.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">⚠️</span>
+    <span class="tn-label"><strong>Partial Success</strong> (≤ TN + 5) — Marginal sleep. Half VIG recovery. Counts as 0.5 day of sleep debt.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">❌</span>
+    <span class="tn-label"><strong>Failure</strong> — Poor sleep. No VIG recovery. Counts as 1 day of sleep debt regardless of hours in bed.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">💀</span>
+    <span class="tn-label"><strong>Critical Failure</strong> (≥ 96 before modifiers) — Terrifying nightmare or complete sleep disruption. Lose 1 VIG. Counts as 2 days of sleep debt. May trigger a <strong>Stress Event</strong>.</span>
+  </div>
 </div>
 
 <h3>1.4 Insomnia Mechanics</h3>
 <p>Some characters suffer from <strong>clinical insomnia</strong> — an inability to fall or stay asleep despite having the opportunity. This is a persistent condition that affects the Sleep System:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Insomnia Type</th><th>Mechanic</th><th>Severity</th></tr></thead>
-<tbody>
-<tr><td>😟 <strong>Situational</strong></td><td>Once per week, the character cannot fall asleep for at least 3 hours. TN for sleep quality is +10.</td><td>Mild — manageable with wind-down routines</td></tr>
-<tr><td>😰 <strong>Persistent</strong></td><td>2–3 nights per week, sleep onset takes 2+ hours. Sleep quality TN is +15. Cumulative sleep debt builds quickly.</td><td>Moderate — requires treatment or coping strategies</td></tr>
-<tr><td>😱 <strong>Chronic</strong></td><td>Nearly every night. Sleep quality TN is +25. Character is almost always accumulating sleep debt. Must make a <span class="dice">2d10</span> + MEDICINE check each week (TN 50) or suffer a health event.</td><td>Severe — needs professional intervention</td></tr>
-</tbody>
-</table>
+<!-- CARD GRID: Insomnia Types -->
+<div class="card-grid">
+  <div class="card">
+    <div class="card-icon">😟</div>
+    <h3>Situational Insomnia</h3>
+    <p>Once per week, the character cannot fall asleep for at least 3 hours. TN for sleep quality is +10. <strong>Mild</strong> — manageable with wind-down routines.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">😰</div>
+    <h3>Persistent Insomnia</h3>
+    <p>2–3 nights per week, sleep onset takes 2+ hours. Sleep quality TN is +15. Cumulative sleep debt builds quickly. <strong>Moderate</strong> — requires treatment or coping strategies.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">😱</div>
+    <h3>Chronic Insomnia</h3>
+    <p>Nearly every night. Sleep quality TN is +25. Character is almost always accumulating sleep debt. Must make a <span class="dice">2d10</span> + MEDICINE check each week (TN 50) or suffer a health event. <strong>Severe</strong> — needs professional intervention.</p>
+  </div>
 </div>
 
 <div class="callout rule">
@@ -176,6 +227,7 @@
 <!-- ============================================================
      SECTION 2: HYGIENE
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_hygiene.png" alt="Hygiene system" loading="lazy"></div>
 <h2>🚿 §2. Hygiene</h2>
 <p>Personal hygiene is a daily requirement that most people take for granted — until it becomes a problem. In Reality RPG, hygiene is tracked as a <strong>Hygiene Score</strong> from 0–10, starting each character at 10 (freshly cleaned). Each day without proper hygiene, the score drops.</p>
 
@@ -199,59 +251,80 @@
 <p>The maximum Hygiene Score is <strong>10</strong>. If a character performs a full daily routine, they maintain a score of 10. Skipping components or days causes the score to <strong>decay by 1–2 points per day</strong> depending on activity level (physical labor = faster decay).</p>
 
 <h3>2.2 Hygiene Score Effects</h3>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Score</th><th>Condition</th><th>Social Effect</th><th>Health Effect</th></tr></thead>
-<tbody>
-<tr><td>8–10</td><td>✨ Clean</td><td>No penalty</td><td>No penalty</td></tr>
-<tr><td>6–7</td><td>😐 Acceptable</td><td>−2 on first-impression Social checks</td><td>No effect yet</td></tr>
-<tr><td>4–5</td><td>😬 Neglected</td><td>−5 on Social checks. People notice. Coworkers comment.</td><td>−1 to VIG checks (minor skin issues, dental pain)</td></tr>
-<tr><td>2–3</td><td>🤢 Poor</td><td>−10 on Social checks. People avoid proximity. Risk of being sent home from work.</td><td>−2 to VIG checks. Risk of infection, dental abscess, fungal issues</td></tr>
-<tr><td>0–1</td><td>💀 Foul</td><td><strong>Social isolation.</strong> Most people refuse direct contact. Cannot maintain employment.</td><td><strong>Health crisis.</strong> Roll <span class="dice">1d20</span> each week; on 1–4, contract an illness. Permanent dental damage begins.</td></tr>
-</tbody>
-</table>
+
+<!-- CONDITION TRACK: Hygiene Score -->
+<div class="condition-track">
+  <div class="condition-step healthy">8–10<br><small>✨ Clean<br>No penalty</small></div>
+  <div class="condition-step tired">6–7<br><small>😐 Acceptable<br>−2 first impression</small></div>
+  <div class="condition-step sick">4–5<br><small>😬 Neglected<br>−5 Social, −1 VIG</small></div>
+  <div class="condition-step injured">2–3<br><small>🤢 Poor<br>−10 Social, −2 VIG</small></div>
+  <div class="condition-step dead">0–1<br><small>💀 Foul<br>Social isolation, health crisis</small></div>
 </div>
 
 <h3>2.3 Hygiene Access Issues</h3>
 <p>Not everyone has easy access to hygiene facilities. This is a <strong>material inequality mechanic</strong> — characters without stable housing or bathroom access face real challenges:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Situation</th><th>Difficulty</th><th>Mechanic</th></tr></thead>
-<tbody>
-<tr><td>🏠 Own bathroom</td><td>Easy</td><td>No penalty. Full routine available.</td></tr>
-<tr><td>🏢 Shared bathroom (dorm, shared house)</td><td>Moderate</td><td>May need to coordinate schedule. Roll <span class="dice">2d10</span> (TN 35) each morning to get bathroom time. Failure = delayed routine, −1 to Hygiene Score that day.</td></tr>
-<tr><td>🏢 Public restroom (gym, gas station)</td><td>Hard</td><td>Limited time, poor conditions, possible cost ($5–$15 for gym access). TN 50 to complete a full routine. Hygiene Score decays 1 extra point per day.</td></tr>
-<tr><td>🚰 Water fountain / sink only</td><td>Very Hard</td><td>Can only wash face and hands. No shower possible. Hygiene Score decays 2 points per day. Must find a shower within 3 days or suffer health consequences.</td></tr>
-<tr><td>🏕️ Homeless / no access</td><td>Extreme</td><td>Hygiene Score decays 3 points per day. Must find a shelter shower, 24-hour gym, or public bath within 2 days. Failure = rapid health degradation. Roll <span class="dice">1d20</span> each week; on 1–3, contract a serious infection requiring medical care.</td></tr>
-</tbody>
-</table>
+<!-- TN LADDER: Hygiene Access Difficulty -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">🏠</span>
+    <span class="tn-label"><strong>Own bathroom</strong> — Easy. No penalty. Full routine available.</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">🏢</span>
+    <span class="tn-label"><strong>Shared bathroom</strong> (dorm, shared house) — Moderate. Roll <span class="dice">2d10</span> (TN 35) each morning to get bathroom time. Failure = delayed routine, −1 to Hygiene Score that day.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">🏢</span>
+    <span class="tn-label"><strong>Public restroom</strong> (gym, gas station) — Hard. Limited time, poor conditions, possible cost ($5–$15 for gym access). TN 50 to complete a full routine. Hygiene Score decays 1 extra point per day.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">🚰</span>
+    <span class="tn-label"><strong>Water fountain / sink only</strong> — Very Hard. Can only wash face and hands. No shower possible. Hygiene Score decays 2 points per day. Must find a shower within 3 days or suffer health consequences.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">🏕️</span>
+    <span class="tn-label"><strong>Homeless / no access</strong> — Extreme. Hygiene Score decays 3 points per day. Must find a shelter shower, 24-hour gym, or public bath within 2 days. Roll <span class="dice">1d20</span> each week; on 1–3, contract a serious infection requiring medical care.</span>
+  </div>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Jamal's Hygiene Crisis</div>
-  <p>Jamal lost his apartment and is couch-surfing between friends. His host's bathroom is shared with 3 other people and often occupied. On Tuesday morning, Jamal rolls <span class="dice">2d10</span> = 62 against TN 35 to get bathroom time. Failure — he can only splash water on his face. His Hygiene Score drops from 7 to 5. By Thursday, it's at 3. His boss notices he smells and asks him to "freshen up." On Friday, his score hits 1. He can't keep showing up to work like this. He needs to find a gym membership, a shelter, or a friend with a spare bathroom — fast.</p>
+<!-- Scene: Jamal Finding a Shower -->
+<div class="section-illustration">
+  <img src="img/dl_jamal_gym_shower.png" alt="Jamal at a 24-hour gym, seeking shower access">
+</div>
+
+<!-- CHAR PORTRAIT: Jamal's Hygiene Crisis -->
+<div class="char-portrait">
+  <img src="img/char_jamal.png" alt="Jamal">
+  <div class="char-info">
+    <div class="callout example">
+      <div class="callout-title">📝 Example: Jamal's Hygiene Crisis</div>
+      <p>Jamal lost his apartment and is couch-surfing between friends. His host's bathroom is shared with 3 other people and often occupied. On Tuesday morning, Jamal rolls <span class="dice">2d10</span> = 62 against TN 35 to get bathroom time. Failure — he can only splash water on his face. His Hygiene Score drops from 7 to 5. By Thursday, it's at 3. His boss notices he smells and asks him to "freshen up." On Friday, his score hits 1. He can't keep showing up to work like this. He needs to find a gym membership, a shelter, or a friend with a spare bathroom — fast.</p>
+    </div>
+    <div class="char-stats">
+      <span class="char-stat">Hygiene: 7→5→3→1</span>
+      <span class="char-stat">Roll: 62 vs TN 35 ❌</span>
+      <span class="char-stat">Couch-surfing</span>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================
      SECTION 3: NUTRITION AND EATING
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_nutrition.png" alt="Nutrition system" loading="lazy"></div>
 <h2>🍽️ §3. Nutrition and Eating</h2>
 <p>Characters must eat <strong>2–3 meals per day</strong> to maintain energy and health. Skipping meals, eating poorly, or struggling to access food all have mechanical consequences. Nutrition is tracked on a <strong>Nutrition Score</strong> from 0–10, starting at 10.</p>
 
 <h3>3.1 Meal Tracking</h3>
 <p>Each day, the GM asks: <em>Did the character eat?</em> Three tiers of meal quality:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Tier</th><th>Meals/Day</th><th>Quality</th><th>Nutrition Score Effect</th><th>Cost/Day</th></tr></thead>
-<tbody>
-<tr><td>🥗 <strong>Well-Fed</strong></td><td>3 balanced meals</td><td>Home-cooked, varied, nutritious</td><td>Maintain or +1 (max 10)</td><td>$10–$25/day</td></tr>
-<tr><td>🍕 <strong>Adequate</strong></td><td>2–3 meals</td><td>Fast food, convenience, or simple home cooking</td><td>Maintain (no change)</td><td>$8–$20/day</td></tr>
-<tr><td>🍞 <strong>Minimal</strong></td><td>1–2 meals</td><td>Low quality, processed, or skipping meals</td><td>−1 per day</td><td>$3–$10/day</td></tr>
-<tr><td>🚫 <strong>Starving</strong></td><td>0–1 meal</td><td>Not enough to sustain</td><td>−2 per day</td><td>$0–$3/day</td></tr>
-</tbody>
-</table>
+<!-- CONDITION TRACK: Nutrition Tiers -->
+<div class="condition-track">
+  <div class="condition-step healthy">🥗 Well-Fed<br><small>3 balanced meals<br>Maintain or +1<br>$10–$25/day</small></div>
+  <div class="condition-step tired">🍕 Adequate<br><small>2–3 meals<br>Maintain<br>$8–$20/day</small></div>
+  <div class="condition-step injured">🍞 Minimal<br><small>1–2 meals<br>−1/day<br>$3–$10/day</small></div>
+  <div class="condition-step dead">🚫 Starving<br><small>0–1 meal<br>−2/day<br>$0–$3/day</small></div>
 </div>
 
 <h3>3.2 Nutrition Quality</h3>
@@ -285,8 +358,13 @@
 </table>
 </div>
 
+<!-- Scene: Diego's Kitchen -->
+<div class="section-illustration">
+  <img src="img/dl_diego_kitchen_disaster.png" alt="Diego in the kitchen dealing with a cooking mishap">
+</div>
+
 <div class="callout example">
-  <div class="callout-title">📝 Example: Cooking Check</div>
+  <div class="callout-title">📝 Example: Diego's Cooking Check</div>
   <p>Diego (Cooking +8) wants to make a balanced dinner for himself and his partner. He rolls <span class="dice">2d10</span> = 34 + 8 = <strong>42</strong> against TN 50. Success! A good, nutritious meal. If he'd rolled a 48 (total 56), that's a Partial Success — the meal is edible but bland, and only partially restores nutrition.</p>
 </div>
 
@@ -332,6 +410,7 @@
 <!-- ============================================================
      SECTION 4: WORK AND EMPLOYMENT
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_work.png" alt="Work and employment system" loading="lazy"></div>
 <h2>💼 §4. Work and Employment</h2>
 <p>For most characters, work is the central structure of their day — and their primary source of income. Employment in Reality RPG is a complex system involving job hunting, performance, relationships, career progression, and the emotional toll of labor.</p>
 
@@ -375,19 +454,15 @@
 <h3>4.3 Boss Relationships</h3>
 <p>Each character has a <strong>Boss Relationship Score</strong> from −5 to +5, starting at 0 (neutral). This score shifts based on performance, social interactions, and workplace dynamics:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Score</th><th>Relationship</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>+5</td><td>🤩 Trusted ally</td><td>Gets first consideration for promotions, schedule flexibility, leniency on mistakes</td></tr>
-<tr><td>+3 to +4</td><td>😊 Favored</td><td>Positive reviews, more opportunities, some leeway</td></tr>
-<tr><td>+1 to +2</td><td>🙂 Approved</td><td>Standard good employee. Nothing special but respected.</td></tr>
-<tr><td>0</td><td>😐 Neutral</td><td>Invisible. Neither praised nor criticized unless something happens.</td></tr>
-<tr><td>−1 to −2</td><td>😒 Questioned</td><td>Under scrutiny. Mistakes are noted. Must improve to avoid consequences.</td></tr>
-<tr><td>−3 to −4</td><td>😠 On thin ice</td><td>Formal warnings. Performance improvement plan. One more failure = termination.</td></tr>
-<tr><td>−5</td><td>😡 Marked</td><td><strong>Terminated.</strong> Fired, blacklisted, or constructively pushed out.</td></tr>
-</tbody>
-</table>
+<!-- CONDITION TRACK: Boss Relationship -->
+<div class="condition-track">
+  <div class="condition-step healthy">+5<br><small>🤩 Trusted ally<br>First for promotions</small></div>
+  <div class="condition-step healthy">+3…+4<br><small>😊 Favored<br>Positive reviews</small></div>
+  <div class="condition-step tired">+1…+2<br><small>🙂 Approved<br>Standard good employee</small></div>
+  <div class="condition-step sick">0<br><small>😐 Neutral<br>Invisible</small></div>
+  <div class="condition-step injured">−1…−2<br><small>😒 Questioned<br>Under scrutiny</small></div>
+  <div class="condition-step critical">−3…−4<br><small>😠 On thin ice<br>One more failure = fired</small></div>
+  <div class="condition-step dead">−5<br><small>😡 Marked<br>TERMINATED</small></div>
 </div>
 
 <p>Characters can attempt to <strong>improve their Boss Relationship</strong> through social interactions: taking initiative (+1 per strong success), volunteering for extra tasks (+1 per success), having a one-on-one conversation (<span class="dice">2d10</span> + Communication, TN 55), or networking with the boss's allies.</p>
@@ -430,29 +505,77 @@
 <h3>4.7 Job Types</h3>
 <p>Different jobs have different physical, mental, and social demands:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Job Type</th><th>Primary Attribute</th><th>VIG Cost</th><th>Stress Level</th><th>Example Roles</th></tr></thead>
-<tbody>
-<tr><td>💪 Manual Labor</td><td>VIG</td><td>−2 VIG/day</td><td>Medium (physical toll)</td><td>Construction, warehouse, manufacturing, farming</td></tr>
-<tr><td>🖥️ Office</td><td>INT</td><td>−1 VIG/day</td><td>Medium (mental strain, politics)</td><td>Admin, accounting, IT, project management</td></tr>
-<tr><td>🍽️ Service</td><td>PRC</td><td>−1.5 VIG/day</td><td>High (emotional labor, unpredictable tips)</td><td>Restaurant, retail, hospitality, customer service</td></tr>
-<tr><td>🎨 Creative</td><td>INT + PRC</td><td>−1 VIG/day</td><td>High (income instability, self-doubt)</td><td>Writing, design, music, art, content creation</td></tr>
-<tr><td>🏥 Healthcare</td><td>VIG + INT</td><td>−2 VIG/day</td><td>Very High (life/death decisions, long hours)</td><td>Nurse, doctor, EMT, therapist, technician</td></tr>
-<tr><td>🚔 Public Safety</td><td>VIG + DXT</td><td>−2 VIG/day</td><td>Very High (trauma exposure, danger)</td><td>Police, firefighter, military, corrections</td></tr>
-<tr><td>📚 Education</td><td>INT</td><td>−1.5 VIG/day</td><td>High (classroom management, bureaucracy)</td><td>Teacher, professor, tutor, counselor</td></tr>
-</tbody>
-</table>
+<!-- CARD GRID: Job Types -->
+<div class="card-grid">
+  <div class="card">
+    <div class="card-icon">💪</div>
+    <h3>Manual Labor</h3>
+    <p><strong>Primary:</strong> VIG · <strong>Cost:</strong> −2 VIG/day · <strong>Stress:</strong> Medium<br>Construction, warehouse, manufacturing, farming</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🖥️</div>
+    <h3>Office</h3>
+    <p><strong>Primary:</strong> INT · <strong>Cost:</strong> −1 VIG/day · <strong>Stress:</strong> Medium<br>Admin, accounting, IT, project management</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🍽️</div>
+    <h3>Service</h3>
+    <p><strong>Primary:</strong> PRC · <strong>Cost:</strong> −1.5 VIG/day · <strong>Stress:</strong> High<br>Restaurant, retail, hospitality, customer service</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🎨</div>
+    <h3>Creative</h3>
+    <p><strong>Primary:</strong> INT + PRC · <strong>Cost:</strong> −1 VIG/day · <strong>Stress:</strong> High<br>Writing, design, music, art, content creation</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🏥</div>
+    <h3>Healthcare</h3>
+    <p><strong>Primary:</strong> VIG + INT · <strong>Cost:</strong> −2 VIG/day · <strong>Stress:</strong> Very High<br>Nurse, doctor, EMT, therapist, technician</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🚔</div>
+    <h3>Public Safety</h3>
+    <p><strong>Primary:</strong> VIG + DXT · <strong>Cost:</strong> −2 VIG/day · <strong>Stress:</strong> Very High<br>Police, firefighter, military, corrections</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">📚</div>
+    <h3>Education</h3>
+    <p><strong>Primary:</strong> INT · <strong>Cost:</strong> −1.5 VIG/day · <strong>Stress:</strong> High<br>Teacher, professor, tutor, counselor</p>
+  </div>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Work Performance</div>
-  <p>Priya works in healthcare (nurse). Her weekly performance check: <span class="dice">2d10</span> + VIG modifier (+4) + Healthcare skill (+10). She rolls 41 + 4 + 10 = <strong>55</strong> against TN 50. Partial success — she did the job but made a minor charting error. Her boss notices but doesn't escalate. Her Boss Relationship stays at +1. However, the 12-hour shift costs her 2 VIG, and she only has 6 hours for sleep. Sleep debt begins to accumulate.</p>
+<!-- Work-Boss Feedback Loop Diagram -->
+<div class="section-illustration">
+  <img src="img/dl_work_boss_loop.svg" alt="Virtuous vs vicious cycle of work performance and boss relationship">
+</div>
+
+<!-- Scene: Priya on Night Shift -->
+<div class="section-illustration">
+  <img src="img/dl_priya_night_shift.png" alt="Priya exhausted at a nurse's station during a 12-hour shift">
+</div>
+
+<!-- CHAR PORTRAIT: Priya's Work Performance -->
+<div class="char-portrait">
+  <img src="img/char_priya.png" alt="Priya">
+  <div class="char-info">
+    <div class="callout example">
+      <div class="callout-title">📝 Example: Work Performance</div>
+      <p>Priya works in healthcare (nurse). Her weekly performance check: <span class="dice">2d10</span> + VIG modifier (+4) + Healthcare skill (+10). She rolls 41 + 4 + 10 = <strong>55</strong> against TN 50. Partial success — she did the job but made a minor charting error. Her boss notices but doesn't escalate. Her Boss Relationship stays at +1. However, the 12-hour shift costs her 2 VIG, and she only has 6 hours for sleep. Sleep debt begins to accumulate.</p>
+    </div>
+    <div class="char-stats">
+      <span class="char-stat">Nurse</span>
+      <span class="char-stat">VIG +4</span>
+      <span class="char-stat">Healthcare +10</span>
+      <span class="char-stat">Roll: 55 vs TN 50 ⚠️</span>
+      <span class="char-stat">Boss: +1</span>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================
      SECTION 5: COMMUTING AND TRANSPORTATION
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_commuting.png" alt="Commuting system" loading="lazy"></div>
 <h2>🚗 §5. Commuting and Transportation</h2>
 <p>Getting to and from work, appointments, and errands is a <strong>real resource cost</strong> — both in time and money. Commuting is one of the most universally disliked parts of daily life, and in Reality RPG, it's a genuine source of stress.</p>
 
@@ -516,6 +639,7 @@
 <!-- ============================================================
      SECTION 6: HOME MAINTENANCE
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_home.png" alt="Home maintenance system" loading="lazy"></div>
 <h2>🏠 §6. Home Maintenance</h2>
 <p>A character's living space degrades over time without upkeep. Home Maintenance is tracked on an <strong>Environment Score</strong> from 0–10, starting at 10 (clean, organized, functional). The environment decays <strong>1 point per week</strong> without maintenance activity.</p>
 
@@ -537,17 +661,14 @@
 </div>
 
 <h3>6.2 Environment Score Effects</h3>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Score</th><th>Condition</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>8–10</td><td>✨ Clean / organized</td><td>+1 mood. Sleep quality +5. Guests feel welcome.</td></tr>
-<tr><td>6–7</td><td>😐 Lived-in / slightly messy</td><td>No penalty. Normal for busy people.</td></tr>
-<tr><td>4–5</td><td>😬 Messy / cluttered</td><td>−1 to sleep quality. Harder to find things (−5 to search for items). Embarrassing if guests arrive.</td></tr>
-<tr><td>2–3</td><td>🤢 Hoarding-level / squalor</td><td>−2 to sleep quality. Pest infestation risk (roll <span class="dice">1d20</span> monthly; on 1–4, cockroaches, mice, etc.). Health hazard: −1 to VIG checks.</td></tr>
-<tr><td>0–1</td><td>💀 Uninhabitable</td><td>Health code violation. Risk of eviction (renters) or property devaluation (owners). Roll <span class="dice">1d20</span> each week; on 1–3, character contracts illness from mold, pests, or poor sanitation.</td></tr>
-</tbody>
-</table>
+
+<!-- CONDITION TRACK: Environment Score -->
+<div class="condition-track">
+  <div class="condition-step healthy">8–10<br><small>✨ Clean<br>+1 mood, +5 sleep</small></div>
+  <div class="condition-step tired">6–7<br><small>😐 Lived-in<br>No penalty</small></div>
+  <div class="condition-step sick">4–5<br><small>😬 Messy<br>−1 sleep, −5 search</small></div>
+  <div class="condition-step injured">2–3<br><small>🤢 Squalor<br>−2 sleep, pest risk</small></div>
+  <div class="condition-step dead">0–1<br><small>💀 Uninhabitable<br>Eviction risk, illness</small></div>
 </div>
 
 <h3>6.3 Bills and Utilities</h3>
@@ -576,29 +697,70 @@
 <!-- ============================================================
      SECTION 7: LEISURE AND HOBBIES
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_leisure.png" alt="Leisure and hobbies system" loading="lazy"></div>
 <h2>🎮 §7. Leisure and Hobbies</h2>
 <p>Leisure is not a luxury in Reality RPG — it's a <strong>mechanical necessity</strong>. Without leisure time, Stress Points accumulate, VIG recovers more slowly, and characters eventually burn out. Free time is the scarcest resource in the game.</p>
 
 <h3>7.1 Leisure as Stress Recovery</h3>
 <p>Each leisure activity provides a different type of recovery:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Activity</th><th>SP Cleared</th><th>VIG Restored</th><th>Time Cost</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>🏃 Exercise (gym, running, sports)</td><td>2 SP</td><td>+1 VIG</td><td>1 hour</td><td>Best all-around recovery. Also +1 to VIG checks for the day.</td></tr>
-<tr><td>📖 Reading / learning</td><td>1 SP</td><td>+0 VIG</td><td>1 hour</td><td>Mental rest. Good for INT-based skill practice.</td></tr>
-<tr><td>🎬 TV / movies / streaming</td><td>1 SP</td><td>+0 VIG</td><td>1–2 hours</td><td>Passive relaxation. Easy but less effective.</td></tr>
-<tr><td>🎵 Music (listening or playing)</td><td>2 SP</td><td>+0 VIG</td><td>30 min – 1 hour</td><td>Strong mood boost. Playing an instrument = skill practice too.</td></tr>
-<tr><td>🎮 Video games</td><td>1 SP</td><td>+0 VIG</td><td>1–3 hours</td><td>Escapism. Too much (>3 hours) causes eye strain (−1 to DXT checks next day).</td></tr>
-<tr><td>👥 Socializing (friends, family)</td><td>3 SP</td><td>+0 VIG</td><td>2–3 hours</td><td>Best for emotional recovery. Requires available social connections.</td></tr>
-<tr><td>🧘 Meditation / yoga</td><td>3 SP</td><td>+1 VIG</td><td>30 min – 1 hour</td><td>Best SP-to-time ratio. Requires practice ( Meditation skill).</td></tr>
-<tr><td>🎨 Creative hobbies (art, writing, crafting)</td><td>2 SP</td><td>+0 VIG</td><td>1–2 hours</td><td>Fulfilling. Can generate income if monetized.</td></tr>
-<tr><td>🌳 Nature / outdoors</td><td>3 SP</td><td>+1 VIG</td><td>1–2 hours</td><td>Weather and location dependent. Free if accessible.</td></tr>
-<tr><td>🛁 Self-care (bath, skincare, pampering)</td><td>2 SP</td><td>+0 VIG</td><td>30 min – 1 hour</td><td>Overlaps with Hygiene routine.</td></tr>
-<tr><td>😴 Doing nothing / resting</td><td>1 SP</td><td>+0.5 VIG</td><td>1 hour</td><td>Bare minimum. Not as effective as active leisure.</td></tr>
-</tbody>
-</table>
+<!-- CARD GRID: Leisure Activities -->
+<div class="card-grid">
+  <div class="card">
+    <div class="card-icon">🏃</div>
+    <h3>Exercise</h3>
+    <p><strong>−2 SP · +1 VIG</strong> · 1 hour<br>Best all-around recovery. Also +1 to VIG checks for the day.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">📖</div>
+    <h3>Reading / Learning</h3>
+    <p><strong>−1 SP</strong> · 1 hour<br>Mental rest. Good for INT-based skill practice.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🎬</div>
+    <h3>TV / Movies</h3>
+    <p><strong>−1 SP</strong> · 1–2 hours<br>Passive relaxation. Easy but less effective.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🎵</div>
+    <h3>Music</h3>
+    <p><strong>−2 SP</strong> · 30 min–1 hour<br>Strong mood boost. Playing an instrument = skill practice too.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🎮</div>
+    <h3>Video Games</h3>
+    <p><strong>−1 SP</strong> · 1–3 hours<br>Escapism. Too much (&gt;3 hours) causes eye strain (−1 to DXT checks next day).</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">👥</div>
+    <h3>Socializing</h3>
+    <p><strong>−3 SP</strong> · 2–3 hours<br>Best for emotional recovery. Requires available social connections.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🧘</div>
+    <h3>Meditation / Yoga</h3>
+    <p><strong>−3 SP · +1 VIG</strong> · 30 min–1 hour<br>Best SP-to-time ratio. Requires Meditation skill.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🎨</div>
+    <h3>Creative Hobbies</h3>
+    <p><strong>−2 SP</strong> · 1–2 hours<br>Fulfilling. Can generate income if monetized.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🌳</div>
+    <h3>Nature / Outdoors</h3>
+    <p><strong>−3 SP · +1 VIG</strong> · 1–2 hours<br>Weather and location dependent. Free if accessible.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🛁</div>
+    <h3>Self-Care</h3>
+    <p><strong>−2 SP</strong> · 30 min–1 hour<br>Overlaps with Hygiene routine.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">😴</div>
+    <h3>Doing Nothing</h3>
+    <p><strong>−1 SP · +0.5 VIG</strong> · 1 hour<br>Bare minimum. Not as effective as active leisure.</p>
+  </div>
 </div>
 
 <div class="callout rule">
@@ -614,35 +776,77 @@
   <li>Requires actual leisure time — cannot be done during work or sleep</li>
 </ul>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Weekend Recovery</div>
-  <p>After a brutal week (15 SP accumulated), Mei uses her Saturday to recover: morning run at the park (🏃 2 SP cleared, +1 VIG), lunch with friends (👥 3 SP cleared), afternoon reading (📖 1 SP cleared), evening movie (🎬 1 SP cleared). Total: 7 SP cleared, +1 VIG restored. She still has 8 SP left, but she's functional. If she hadn't done any of this, she'd be at 15 SP — in the "Overwhelmed" zone with active penalties.</p>
+<!-- CHAR PORTRAIT: Mei's Weekend Recovery -->
+<div class="char-portrait">
+  <img src="img/char_mei.png" alt="Mei">
+  <div class="char-info">
+    <div class="callout example">
+      <div class="callout-title">📝 Example: Weekend Recovery</div>
+      <p>After a brutal week (15 SP accumulated), Mei uses her Saturday to recover: morning run at the park (🏃 2 SP cleared, +1 VIG), lunch with friends (👥 3 SP cleared), afternoon reading (📖 1 SP cleared), evening movie (🎬 1 SP cleared). Total: 7 SP cleared, +1 VIG restored. She still has 8 SP left, but she's functional. If she hadn't done any of this, she'd be at 15 SP — in the "Overwhelmed" zone with active penalties.</p>
+    </div>
+    <div class="char-stats">
+      <span class="char-stat">15 SP → 8 SP</span>
+      <span class="char-stat">+1 VIG</span>
+      <span class="char-stat">🏃 👥 📖 🎬</span>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================
      SECTION 8: TIME BUDGETING
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_time.png" alt="Time budgeting system" loading="lazy"></div>
 <h2>⏰ §8. Time Budgeting</h2>
 <p>This is the <strong>core mathematical constraint</strong> of Reality RPG. Every character has exactly 24 hours per day. Here's how the math works for a typical full-time working adult:</p>
 
 <div class="callout rule">
   <div class="callout-title">⚖️ The Daily Time Budget</div>
 
-<table style="margin: 0.5em 0;">
-<thead><tr><th>Activity</th><th>Hours/Day</th><th>% of Day</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>😴 Sleep</td><td>7.5</td><td>31%</td><td>Required for basic function</td></tr>
-<tr><td>💼 Work</td><td>8.0</td><td>33%</td><td>Full-time job (including lunch break)</td></tr>
-<tr><td>🚗 Commuting</td><td>1.5</td><td>6%</td><td>Optimistic — many have longer commutes</td></tr>
-<tr><td>🍽️ Meals (prep + eating)</td><td>1.5</td><td>6%</td><td>3 meals, ~30 min each including prep</td></tr>
-<tr><td>🚿 Hygiene</td><td>0.75</td><td>3%</td><td>Morning + evening routine</td></tr>
-<tr><td>🏠 Chores / home maintenance</td><td>1.25</td><td>5%</td><td>Dishes, laundry, cleaning, bills</td></tr>
-<tr><td><strong>⬆️ Obligations Total</strong></td><td><strong>20.5</strong></td><td><strong>85%</strong></td><td>—</td></tr>
-<tr><td><strong>🎮 Free Time (remainder)</strong></td><td><strong>3.5</strong></td><td><strong>15%</strong></td><td><strong>This is everything else. Leisure, hobbies, socializing, self-care, side hustles, emergencies.</strong></td></tr>
-</tbody>
-</table>
+  <!-- Time Budget Chart SVG -->
+<div class="section-illustration">
+  <img src="img/dl_time_budget_chart.svg" alt="24-hour daily time budget showing only 15% free time">
+</div>
 
-<p style="margin-top: 0.5em;"><strong>Only 3.5 hours of free time per day.</strong> That's 24.5 hours per week. After accounting for weekends (when work is 0 but chores may increase), the average working adult has roughly <strong>10–14 hours of genuine free time per week</strong>.</p>
+  <!-- STAT BARS: Time Budget Breakdown -->
+  <div class="stat-bar-wrap">
+    <div class="stat-bar-label"><span>😴 Sleep</span><span>7.5h (31%)</span></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:31%;background:var(--color-info)"></div></div>
+  </div>
+  <div class="stat-bar-wrap">
+    <div class="stat-bar-label"><span>💼 Work</span><span>8.0h (33%)</span></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:33%;background:var(--color-primary)"></div></div>
+  </div>
+  <div class="stat-bar-wrap">
+    <div class="stat-bar-label"><span>🚗 Commuting</span><span>1.5h (6%)</span></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:6%;background:var(--color-muted)"></div></div>
+  </div>
+  <div class="stat-bar-wrap">
+    <div class="stat-bar-label"><span>🍽️ Meals</span><span>1.5h (6%)</span></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:6%;background:var(--color-muted)"></div></div>
+  </div>
+  <div class="stat-bar-wrap">
+    <div class="stat-bar-label"><span>🚿 Hygiene</span><span>0.75h (3%)</span></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:3%;background:var(--color-muted)"></div></div>
+  </div>
+  <div class="stat-bar-wrap">
+    <div class="stat-bar-label"><span>🏠 Chores</span><span>1.25h (5%)</span></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:5%;background:var(--color-muted)"></div></div>
+  </div>
+  <div class="stat-bar-wrap" style="margin-top:0.8em">
+    <div class="stat-bar-label"><strong><span>⬆️ Obligations Total</span><span>20.5h (85%)</span></strong></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:85%;background:var(--color-primary)"></div></div>
+  </div>
+  <div class="stat-bar-wrap" style="margin-top:0.8em">
+    <div class="stat-bar-label"><strong><span>🎮 Free Time (remainder)</span><span>3.5h (15%)</span></strong></div>
+    <div class="stat-bar"><div class="stat-bar-fill" style="width:15%;background:var(--color-accent)"></div></div>
+  </div>
+
+  <p style="margin-top: 0.8em;"><strong>Only 3.5 hours of free time per day.</strong> That's 24.5 hours per week. After accounting for weekends (when work is 0 but chores may increase), the average working adult has roughly <strong>10–14 hours of genuine free time per week</strong>.</p>
+</div>
+
+<!-- Time Deficit Cascade Diagram -->
+<div class="section-illustration">
+  <img src="img/dl_time_deficit_cascade.svg" alt="Time deficit cascade showing normal day vs stress day and four sacrifice choices">
 </div>
 
 <h3>8.1 Time Under Stress</h3>
@@ -670,56 +874,74 @@
 
 <h3>8.2 Example Daily Schedules</h3>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: A Normal Day (Sarah, Office Worker)</div>
-  <table style="margin: 0.5em 0;">
-  <thead><tr><th>Time</th><th>Activity</th><th>System</th></tr></thead>
-  <tbody>
-  <tr><td>6:30–7:00</td><td>🌅 Wake up, hygiene routine</td><td>Hygiene +1</td></tr>
-  <tr><td>7:00–7:30</td><td>🍳 Make breakfast, eat</td><td>Nutrition maintained</td></tr>
-  <tr><td>7:30–8:15</td><td>🚗 Commute to work</td><td>Normal commute</td></tr>
-  <tr><td>8:15–12:00</td><td>💼 Morning work block</td><td>Work performance</td></tr>
-  <tr><td>12:00–12:45</td><td>🥗 Lunch break</td><td>Nutrition maintained</td></tr>
-  <tr><td>12:45–5:00</td><td>💼 Afternoon work block</td><td>Work performance</td></tr>
-  <tr><td>5:00–5:45</td><td>🚗 Commute home</td><td>Normal commute</td></tr>
-  <tr><td>5:45–7:00</td><td>🍽️ Cook dinner, eat</td><td>Nutrition maintained (+Cooking check)</td></tr>
-  <tr><td>7:00–8:00</td><td>🧹 Dishes, quick tidy</td><td>Environment +1</td></tr>
-  <tr><td>8:00–9:30</td><td>🏃 Gym session</td><td>Leisure: −2 SP, +1 VIG</td></tr>
-  <tr><td>9:30–10:30</td><td>📖 Read, wind down</td><td>Leisure: −1 SP</td></tr>
-  <tr><td>10:30–11:00</td><td>🚿 Evening hygiene, prepare for bed</td><td>Hygiene maintained</td></tr>
-  <tr><td>11:00–6:30</td><td>😴 Sleep (7.5 hours)</td><td>Sleep quality check</td></tr>
-  </tbody>
-  </table>
-  <p><strong>Free time: ~3 hours</strong> (gym + reading). Everything is balanced. This is the <em>ideal</em> — and it's already tight.</p>
+<!-- Scene: Sarah's Normal vs Crisis Day -->
+<div class="section-illustration">
+  <img src="img/dl_sarah_normal_evening.png" alt="Sarah's normal balanced evening at home">
 </div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: A Stressful Day (Sarah, Same Week — Crisis Hits)</div>
-  <table style="margin: 0.5em 0;">
-  <thead><tr><th>Time</th><th>Activity</th><th>System</th></tr></thead>
-  <tbody>
-  <tr><td>5:00–6:30</td><td>😰 Woke up at 3 AM, couldn't sleep. Insomnia.</td><td>Sleep debt +1 day</td></tr>
-  <tr><td>6:30–6:45</td><td>🚿 Quick splash, no real routine</td><td>Hygiene −1 (partial only)</td></tr>
-  <tr><td>6:45–7:00</td><td>🍞 Grabbed toast, no real breakfast</td><td>Nutrition −1</td></tr>
-  <tr><td>7:00–8:30</td><td>🚗 Commute — flat tire on the way</td><td>+1.5 hours. Car repair needed.</td></tr>
-  <tr><td>8:30–12:00</td><td>💼 Late to work. Boss is annoyed.</td><td>Boss Relationship −1</td></tr>
-  <tr><td>12:00–12:15</td><td>🍕 Ate at desk, rushed lunch</td><td>Nutrition −1 (fast food, stressed)</td></tr>
-  <tr><td>12:15–6:00</td><td>💼 Overtime demanded. Couldn't leave.</td><td>+4 hours overtime. +4 SP</td></tr>
-  <tr><td>6:00–7:00</td><td>🚗 Long commute home, exhausted</td><td>Normal time, but exhausted</td></tr>
-  <tr><td>7:00–7:30</td><td>🍕 Ordered takeout (too tired to cook)</td><td>Nutrition maintained but poor quality</td></tr>
-  <tr><td>7:30–8:00</td><td>📱 Scrolled phone, couldn't focus</td><td>Not real leisure. No SP recovery.</td></tr>
-  <tr><td>8:00–9:00</td><td>😤 Tried to clean but too exhausted. Gave up.</td><td>Environment −1 (decay continues)</td></tr>
-  <tr><td>9:00–10:00</td><td>😰 Stressed about tomorrow. Can't relax.</td><td>+2 SP. No leisure recovery.</td></tr>
-  <tr><td>10:00–11:30</td><td>😴 Tried to sleep. Insomnia again.</td><td>Sleep quality: Failure. Sleep debt +1</td></tr>
-  <tr><td>11:30–6:30</td><td>😴 Finally fell asleep. 5 hours.</td><td>Sleep debt now at <strong>2 days</strong>. −2 to all rolls tomorrow.</td></tr>
-  </tbody>
-  </table>
-  <p><strong>Free time: 0 hours.</strong> Everything spiraled. Sleep debt, nutrition drop, hygiene neglect, environment decay, boss relationship damage, stress accumulation. <strong>This is how a bad day becomes a bad week becomes a crisis.</strong></p>
+<!-- COMPARE GRID: Sarah's Normal Day vs Crisis Day -->
+<div class="compare-grid">
+  <div class="compare-col fantasy" style="background:#eafaf1;border-color:#a9dfbf">
+    <h4>📅 Sarah — A Normal Day</h4>
+    <table style="font-size:0.85rem">
+    <thead><tr><th>Time</th><th>Activity</th><th>System</th></tr></thead>
+    <tbody>
+    <tr><td>6:30–7:00</td><td>🌅 Wake up, hygiene</td><td>Hygiene +1</td></tr>
+    <tr><td>7:00–7:30</td><td>🍳 Breakfast</td><td>Nutrition ✓</td></tr>
+    <tr><td>7:30–8:15</td><td>🚗 Commute</td><td>Normal</td></tr>
+    <tr><td>8:15–12:00</td><td>💼 Morning work</td><td>Performance</td></tr>
+    <tr><td>12:00–12:45</td><td>🥗 Lunch</td><td>Nutrition ✓</td></tr>
+    <tr><td>12:45–5:00</td><td>💼 Afternoon work</td><td>Performance</td></tr>
+    <tr><td>5:00–5:45</td><td>🚗 Commute home</td><td>Normal</td></tr>
+    <tr><td>5:45–7:00</td><td>🍽️ Cook dinner</td><td>Nutrition ✓</td></tr>
+    <tr><td>7:00–8:00</td><td>🧹 Dishes, tidy</td><td>Env +1</td></tr>
+    <tr><td>8:00–9:30</td><td>🏃 Gym</td><td>−2 SP, +1 VIG</td></tr>
+    <tr><td>9:30–10:30</td><td>📖 Read</td><td>−1 SP</td></tr>
+    <tr><td>10:30–11:00</td><td>🚿 Evening routine</td><td>Hygiene ✓</td></tr>
+    <tr><td>11:00–6:30</td><td>😴 Sleep 7.5h</td><td>Sleep check</td></tr>
+    </tbody>
+    </table>
+    <p><strong>Free time: ~3 hours.</strong> Everything balanced. This is the <em>ideal</em> — and it's already tight.</p>
+  </div>
+  <div class="compare-col reality" style="background:#fdedec;border-color:#e6b0aa">
+    <h4>🔥 Sarah — Crisis Day</h4>
+    <table style="font-size:0.85rem">
+    <thead><tr><th>Time</th><th>Activity</th><th>System</th></tr></thead>
+    <tbody>
+    <tr><td>5:00–6:30</td><td>😰 Insomnia</td><td>Sleep debt +1</td></tr>
+    <tr><td>6:30–6:45</td><td>🚿 Quick splash</td><td>Hygiene −1</td></tr>
+    <tr><td>6:45–7:00</td><td>🍞 Grabbed toast</td><td>Nutrition −1</td></tr>
+    <tr><td>7:00–8:30</td><td>🚗 Flat tire!</td><td>+1.5h delay</td></tr>
+    <tr><td>8:30–12:00</td><td>💼 Late, boss mad</td><td>Boss −1</td></tr>
+    <tr><td>12:00–12:15</td><td>🍕 Ate at desk</td><td>Nutrition −1</td></tr>
+    <tr><td>12:15–6:00</td><td>💼 Overtime</td><td>+4 SP</td></tr>
+    <tr><td>6:00–7:00</td><td>🚗 Exhausted ride</td><td>—</td></tr>
+    <tr><td>7:00–7:30</td><td>🍕 Takeout</td><td>Poor quality</td></tr>
+    <tr><td>7:30–8:00</td><td>📱 Phone scroll</td><td>No recovery</td></tr>
+    <tr><td>8:00–9:00</td><td>😤 Gave up</td><td>Env −1</td></tr>
+    <tr><td>9:00–10:00</td><td>😰 Can't relax</td><td>+2 SP</td></tr>
+    <tr><td>10:00–11:30</td><td>😴 Insomnia again</td><td>Sleep debt +1</td></tr>
+    <tr><td>11:30–6:30</td><td>😴 5 hours</td><td><strong>Sleep debt = 2</strong></td></tr>
+    </tbody>
+    </table>
+    <p><strong>Free time: 0 hours.</strong> Everything spiraled. Sleep debt, nutrition drop, hygiene neglect, environment decay, boss damage, stress accumulation. <strong>This is how a bad day becomes a crisis.</strong></p>
+  </div>
+</div>
+
+<!-- Scene: Sarah's Crisis Night -->
+<div class="section-illustration">
+  <img src="img/dl_sarah_crisis_night.png" alt="Sarah's crisis night — cluttered apartment, exhausted, 3 AM insomnia">
+</div>
+
+<!-- Scene: Time Deficit Midnight -->
+<div class="section-illustration">
+  <img src="img/dl_time_deficit_midnight.png" alt="A person at midnight surrounded by unpaid bills and broken appliances, the time deficit made real">
 </div>
 
 <!-- ============================================================
-     SECTION 9: DXTNG
+     SECTION 9: AGING
      ============================================================ -->
+<div class="section-banner"><img src="img/dl_banner_aging.png" alt="Aging system" loading="lazy"></div>
 <h2>👴 §9. Aging</h2>
 <p>Characters in Reality RPG age in real time. Unlike fantasy RPGs where a 25-year-old fighter and a 60-year-old fighter are mechanically identical, Reality RPG tracks the <strong>biological and social effects of aging</strong>. This is not just decline — aging also brings wisdom, experience, and stability.</p>
 
@@ -750,18 +972,37 @@
 <h3>9.2 Health Events by Age</h3>
 <p>Each year, characters must make a <strong>Health Check</strong>. The TN increases with age:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Age</th><th>Health Check TN</th><th>Roll</th><th>On Failure</th></tr></thead>
-<tbody>
-<tr><td>18–30</td><td>70</td><td><span class="dice">2d10</span> + VIG modifier</td><td>Minor illness (cold, flu). 1 day of reduced function.</td></tr>
-<tr><td>31–40</td><td>65</td><td><span class="dice">2d10</span> + VIG modifier</td><td>Chronic issue begins (back pain, mild hypertension). −1 to relevant checks.</td></tr>
-<tr><td>41–50</td><td>60</td><td><span class="dice">2d10</span> + VIG modifier</td><td>Health condition develops (diabetes, heart issues, arthritis). Ongoing management required.</td></tr>
-<tr><td>51–60</td><td>55</td><td><span class="dice">2d10</span> + VIG modifier</td><td>Significant health event. May require surgery, long-term medication, or lifestyle change.</td></tr>
-<tr><td>61–70</td><td>50</td><td><span class="dice">2d10</span> + VIG modifier</td><td>Major health crisis possible. Hospitalization risk. May lose 1 attribute point permanently.</td></tr>
-<tr><td>71+</td><td>45</td><td><span class="dice">2d10</span> + VIG modifier</td><td>Severe health event. Each failure accumulates toward end-of-life events.</td></tr>
-</tbody>
-</table>
+<!-- Aging Trajectory Diagram -->
+<div class="section-illustration">
+  <img src="img/dl_aging_trajectory.svg" alt="Attribute trajectory graph showing how VIG, DXT, INT, RES, PRC change from age 18 to 86+">
+</div>
+
+<!-- TN LADDER: Health Check by Age -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">70</span>
+    <span class="tn-label"><strong>Age 18–30</strong> — TN 70. Roll <span class="dice">2d10</span> + VIG. On failure: Minor illness (cold, flu). 1 day of reduced function.</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">65</span>
+    <span class="tn-label"><strong>Age 31–40</strong> — TN 65. On failure: Chronic issue begins (back pain, mild hypertension). −1 to relevant checks.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">60</span>
+    <span class="tn-label"><strong>Age 41–50</strong> — TN 60. On failure: Health condition develops (diabetes, heart issues, arthritis). Ongoing management required.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">55</span>
+    <span class="tn-label"><strong>Age 51–60</strong> — TN 55. On failure: Significant health event. May require surgery, long-term medication, or lifestyle change.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">50</span>
+    <span class="tn-label"><strong>Age 61–70</strong> — TN 50. On failure: Major health crisis possible. Hospitalization risk. May lose 1 attribute point permanently.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">45</span>
+    <span class="tn-label"><strong>Age 71+</strong> — TN 45. On failure: Severe health event. Each failure accumulates toward end-of-life events.</span>
+  </div>
 </div>
 
 <h3>9.3 Mitigating Aging</h3>
@@ -782,30 +1023,96 @@
 </table>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Aging Comparison</div>
-  <p><strong>Carlos (45, unhealthy)</strong> vs. <strong>Aisha (45, healthy)</strong> — both started at the same attributes at age 25.</p>
-  <p>Carlos: smokes, eats fast food, works 60-hour weeks, sleeps 5 hours, hasn't seen a doctor in 8 years. At 45: VIG −3, DXT −2, VIG −2, INT +1, PRC 0, RES +1. Health Check TN 65 (no mitigation). He's on the verge of a health event.</p>
-  <p>Aisha: exercises 4×/week, cooks at home, sleeps 7.5 hours, meditates, annual checkups, never smoked. At 45: VIG −1 (mitigated from −2), DXT −1 (mitigated from −2), VIG −1 (mitigated from −2), INT +1, PRC 0, RES +1. Health Check TN 55 (mitigated from 60). She's in excellent shape for her age.</p>
-  <p><strong>Same age. Dramatically different outcomes.</strong> This is the core message of the aging system: your daily choices compound over decades.</p>
+<!-- Scene: Carlos vs Aisha at 45 -->
+<div class="section-illustration">
+  <img src="img/dl_carlos_unhealthy_45.png" alt="Carlos at 45, unhealthy lifestyle, tired and slumped at a desk">
 </div>
+<div class="section-illustration">
+  <img src="img/dl_aisha_healthy_45.png" alt="Aisha at 45, healthy lifestyle, active and vibrant at the park">
+</div>
+
+<!-- COMPARE GRID: Carlos vs Aisha Aging Comparison -->
+<div class="compare-grid">
+  <div class="compare-col fantasy" style="background:#fdedec;border-color:#e6b0aa">
+    <div class="char-portrait" style="margin:0 0 1em 0">
+      <img src="img/char_carlos.png" alt="Carlos" style="width:80px;height:80px">
+      <div class="char-info">
+        <div class="char-name" style="font-size:1.1rem">Carlos (45, unhealthy)</div>
+        <div class="char-subtitle">Smokes · Fast food · 60-hr weeks · 5hr sleep · No doctor in 8 yrs</div>
+      </div>
+    </div>
+    <div class="char-stats" style="margin-top:0">
+      <span class="char-stat">VIG −3</span>
+      <span class="char-stat">DXT −2</span>
+      <span class="char-stat">VIG −2</span>
+      <span class="char-stat">INT +1</span>
+      <span class="char-stat">PRC 0</span>
+      <span class="char-stat">RES +1</span>
+    </div>
+    <p style="margin-top:0.5em"><strong>Health Check TN 65</strong> (no mitigation). On the verge of a health event.</p>
+  </div>
+  <div class="compare-col reality" style="background:#eafaf1;border-color:#a9dfbf">
+    <div class="char-portrait" style="margin:0 0 1em 0">
+      <img src="img/char_aisha_leader.png" alt="Aisha" style="width:80px;height:80px">
+      <div class="char-info">
+        <div class="char-name" style="font-size:1.1rem">Aisha (45, healthy)</div>
+        <div class="char-subtitle">Exercise 4×/wk · Home cooking · 7.5hr sleep · Meditation · Annual checkups</div>
+      </div>
+    </div>
+    <div class="char-stats" style="margin-top:0">
+      <span class="char-stat">VIG −1</span>
+      <span class="char-stat">DXT −1</span>
+      <span class="char-stat">VIG −1</span>
+      <span class="char-stat">INT +1</span>
+      <span class="char-stat">PRC 0</span>
+      <span class="char-stat">RES +1</span>
+    </div>
+    <p style="margin-top:0.5em"><strong>Health Check TN 55</strong> (mitigated from 60). Excellent shape for her age.</p>
+  </div>
+</div>
+
+<p><strong>Same age. Dramatically different outcomes.</strong> This is the core message of the aging system: your daily choices compound over decades.</p>
 
 <h3>9.4 Social Effects of Aging</h3>
 <p>Beyond physical changes, aging affects a character's social reality:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Age Range</th><th>Social Effect</th><th>Mechanic</th></tr></thead>
-<tbody>
-<tr><td>18–25</td><td>🎓 Young adult. Judged on potential.</td><td>May face age discrimination in hiring ("too young/inexperienced").</td></tr>
-<tr><td>26–35</td><td>💼 Prime working years. Marriage/children common.</td><td>Peak social and professional influence.</td></tr>
-<tr><td>36–45</td><td>👨‍👩‍👧‍👦 Midlife. Sandwich generation (caring for kids and aging parents).</td><td>+2 SP per month if caring for dependents on both ends.</td></tr>
-<tr><td>46–55</td><td>🏠 Midlife reassessment. Career plateau or peak.</td><td>May face age discrimination. Social circle stabilizes.</td></tr>
-<tr><td>56–65</td><td>🏖️ Pre-retirement. Empty nest possible.</td><td>Loss of daily structure if children leave. +3 SP during transition.</td></tr>
-<tr><td>66–75</td><td>👴 Retirement. Loss of work identity.</td><td>−2 SP/day (no work stress) but +2 SP/day (loss of purpose). Net depends on character.</td></tr>
-<tr><td>76+</td><td>👵 Elderly. Social isolation risk.</td><td>Social checks at −2 due to generational gaps. +2 to wisdom-based checks.</td></tr>
-</tbody>
-</table>
+<!-- CARD GRID: Social Effects of Aging -->
+<div class="card-grid">
+  <div class="card">
+    <div class="card-icon">🎓</div>
+    <h3>18–25: Young Adult</h3>
+    <p>Judged on potential. May face age discrimination in hiring ("too young/inexperienced").</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">💼</div>
+    <h3>26–35: Prime Working</h3>
+    <p>Peak social and professional influence. Marriage/children common.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">👨‍👩‍👧‍👦</div>
+    <h3>36–45: Sandwich Generation</h3>
+    <p>Caring for kids AND aging parents. +2 SP/month if caring for dependents on both ends.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🏠</div>
+    <h3>46–55: Midlife Reassessment</h3>
+    <p>Career plateau or peak. May face age discrimination. Social circle stabilizes.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">🏖️</div>
+    <h3>56–65: Pre-Retirement</h3>
+    <p>Empty nest possible. Loss of daily structure if children leave. +3 SP during transition.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">👴</div>
+    <h3>66–75: Retirement</h3>
+    <p>Loss of work identity. −2 SP/day (no work stress) but +2 SP/day (loss of purpose). Net depends on character.</p>
+  </div>
+  <div class="card">
+    <div class="card-icon">👵</div>
+    <h3>76+: Elderly</h3>
+    <p>Social isolation risk. Social checks at −2 due to generational gaps. +2 to wisdom-based checks.</p>
+  </div>
 </div>
 
 <div class="callout rule">

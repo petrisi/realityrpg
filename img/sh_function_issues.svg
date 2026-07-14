@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#95a5a6"/>
+    </marker>
+    <marker id="arrowGrayLeft" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#95a5a6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#f8f9fa" rx="8"/>
+
+  <!-- Column headers -->
+  <text x="140" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#5a6570" letter-spacing="0.5">CAUSES</text>
+  <text x="400" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#5a6570" letter-spacing="0.5">ISSUES</text>
+  <text x="660" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#5a6570" letter-spacing="0.5">RESOLUTION</text>
+
+  <!-- Title -->
+  <text x="400" y="16" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Sexual Function Issues — Causes &amp; Effects</text>
+
+  <!-- Separator line under headers -->
+  <line x1="40" y1="38" x2="760" y2="38" stroke="#dce1e6" stroke-width="1"/>
+
+  <!-- ==================== LEFT COLUMN: Causes ==================== -->
+  <!-- Cause 1: High SP / Stress -->
+  <rect x="30" y="55" width="220" height="52" rx="8" fill="#fdd" stroke="#e88" stroke-width="1.2"/>
+  <text x="140" y="77" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#333">😰 High SP / Stress</text>
+
+  <!-- Cause 2: Medications (SSRIs) -->
+  <rect x="30" y="130" width="220" height="52" rx="8" fill="#ddf6ff" stroke="#8cc" stroke-width="1.2"/>
+  <text x="140" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#333">💊 Medications (SSRIs)</text>
+
+  <!-- Cause 3: Health Conditions -->
+  <rect x="30" y="205" width="220" height="52" rx="8" fill="#e8ddf6" stroke="#b8a" stroke-width="1.2"/>
+  <text x="140" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#333">🏥 Health Conditions</text>
+  <text x="140" y="243" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">(diabetes, hormonal)</text>
+
+  <!-- Cause 4: Relationship Issues -->
+  <rect x="30" y="280" width="220" height="52" rx="8" fill="#ffe8cc" stroke="#da9" stroke-width="1.2"/>
+  <text x="140" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#333">💔 Relationship Issues</text>
+
+  <!-- ==================== MIDDLE COLUMN: Issues ==================== -->
+  <!-- Issue 1: Low Libido -->
+  <rect x="290" y="55" width="220" height="52" rx="8" fill="#eaf5ea" stroke="#8b8" stroke-width="1.2"/>
+  <text x="400" y="83" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2d5a2d">Low Libido</text>
+
+  <!-- Issue 2: Erectile Dysfunction -->
+  <rect x="290" y="130" width="220" height="52" rx="8" fill="#eaf5ea" stroke="#8b8" stroke-width="1.2"/>
+  <text x="400" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2d5a2d">Erectile Dysfunction</text>
+
+  <!-- Issue 3: Vaginismus / Dyspareunia -->
+  <rect x="290" y="205" width="220" height="52" rx="8" fill="#eaf5ea" stroke="#8b8" stroke-width="1.2"/>
+  <text x="400" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2d5a2d">Vaginismus / Dyspareunia</text>
+
+  <!-- Issue 4: Arousal / Orgasm Difficulties -->
+  <rect x="290" y="280" width="220" height="52" rx="8" fill="#eaf5ea" stroke="#8b8" stroke-width="1.2"/>
+  <text x="400" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2d5a2d">Arousal / Orgasm</text>
+  <text x="400" y="317" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2d5a2d">Difficulties</text>
+
+  <!-- ==================== RIGHT COLUMN: Resolution ==================== -->
+  <!-- Resolution 1: Reduce SP -->
+  <rect x="550" y="55" width="220" height="52" rx="8" fill="#eaf0ff" stroke="#88c" stroke-width="1.2"/>
+  <text x="660" y="77" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Reduce SP, address root cause</text>
+  <text x="660" y="93" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">(1–6 mo)</text>
+
+  <!-- Resolution 2: ED medication -->
+  <rect x="550" y="130" width="220" height="52" rx="8" fill="#eaf0ff" stroke="#88c" stroke-width="1.2"/>
+  <text x="660" y="152" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">ED medication, stress reduction</text>
+  <text x="660" y="168" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">(VIG TN 8)</text>
+
+  <!-- Resolution 3: Pelvic floor therapy -->
+  <rect x="550" y="205" width="220" height="52" rx="8" fill="#eaf0ff" stroke="#88c" stroke-width="1.2"/>
+  <text x="660" y="227" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Pelvic floor therapy</text>
+  <text x="660" y="243" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">(EXP TN 12 · 3–12 mo)</text>
+
+  <!-- Resolution 4: Communication -->
+  <rect x="550" y="280" width="220" height="52" rx="8" fill="#eaf0ff" stroke="#88c" stroke-width="1.2"/>
+  <text x="660" y="302" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Communication</text>
+  <text x="660" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#555">(EXP TN 8 · 1–3 mo)</text>
+
+  <!-- ==================== ARROWS: Causes → Issues ==================== -->
+  <!-- High SP (row 1) → all 4 issues -->
+  <path d="M250,81 C270,81 275,81 290,81" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <path d="M250,81 C270,81 270,156 290,156" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <path d="M250,81 C270,81 270,233 290,233" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <path d="M250,81 C270,81 270,306 290,306" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Medications (row 2) → Low Libido (row 1), Arousal Difficulties (row 4) -->
+  <path d="M250,156 C270,156 270,81 290,81" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <path d="M250,156 C270,156 270,306 290,306" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Health Conditions (row 3) → ED (row 2), Vaginismus (row 3) -->
+  <path d="M250,233 C270,233 270,156 290,156" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <path d="M250,233 C270,233 275,233 290,233" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Relationship Issues (row 4) → Low Libido (row 1), Arousal Difficulties (row 4) -->
+  <path d="M250,306 C270,306 270,81 290,81" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <path d="M250,306 C270,306 275,306 290,306" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- ==================== ARROWS: Issues → Resolutions ==================== -->
+  <!-- Issue 1 → Resolution 1 -->
+  <path d="M510,81 C530,81 535,81 550,81" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <!-- Issue 2 → Resolution 2 -->
+  <path d="M510,156 C530,156 535,156 550,156" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <!-- Issue 3 → Resolution 3 -->
+  <path d="M510,233 C530,233 535,233 550,233" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <!-- Issue 4 → Resolution 4 -->
+  <path d="M510,306 C530,306 535,306 550,306" fill="none" stroke="#95a5a6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- Footer -->
+  <text x="400" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#999">TN = Target Number · VIG = Vigor Check · EXP = Experience Check · SP = Stress Points</text>
+</svg>

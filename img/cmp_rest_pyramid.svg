@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="310" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">🛏️ Rest Quality Inequality Pyramid</text>
+  <text x="310" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">Not everyone can "Long Rest" — systemic factors determine recovery</text>
+
+  <!-- Tier 1: Best rest (top, narrow) -->
+  <polygon points="260,65 360,65 390,140 230,140" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="310" y="95" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">TIER 1 — Long Rest</text>
+  <text x="310" y="112" text-anchor="middle" font-size="10" fill="#eafaf4">7-9hr sleep, safe housing,</text>
+  <text x="310" y="125" text-anchor="middle" font-size="10" fill="#eafaf4">no stress, stable job</text>
+
+  <!-- Tier 2: Adequate rest -->
+  <polygon points="230,145 390,145 420,225 200,225" fill="#2ecc71" filter="url(#shadow)"/>
+  <text x="310" y="175" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">TIER 2 — Adequate Rest</text>
+  <text x="310" y="192" text-anchor="middle" font-size="10" fill="#eafaf4">6hr sleep, some stress,</text>
+  <text x="310" y="205" text-anchor="middle" font-size="10" fill="#eafaf4">single job, quiet home</text>
+
+  <!-- Tier 3: Degraded rest -->
+  <polygon points="200,230 420,230 455,315 165,315" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="310" y="260" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">TIER 3 — Degraded Rest</text>
+  <text x="310" y="277" text-anchor="middle" font-size="10" fill="#fef9e7">4-5hr sleep, multiple</text>
+  <text x="310" y="290" text-anchor="middle" font-size="10" fill="#fef9e7">stressors, two jobs</text>
+
+  <!-- Tier 4: Crisis -->
+  <polygon points="165,320 455,320 490,405 130,405" fill="#e67e22" filter="url(#shadow)"/>
+  <text x="310" y="350" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">TIER 4 — Crisis Rest</text>
+  <text x="310" y="367" text-anchor="middle" font-size="10" fill="#fdf2e9">Caring for sick family,</text>
+  <text x="310" y="380" text-anchor="middle" font-size="10" fill="#fdf2e9">night shifts, anxiety</text>
+
+  <!-- Tier 5: No rest (bottom, widest) -->
+  <polygon points="130,410 490,410 520,480 100,480" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="310" y="440" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">TIER 5 — NO REST</text>
+  <text x="310" y="457" text-anchor="middle" font-size="10" fill="#fdedec">Homeless, no safe place,</text>
+  <text x="310" y="470" text-anchor="middle" font-size="10" fill="#fdedec">cannot "Long Rest" at all</text>
+
+  <!-- Bottom annotation -->
+  <text x="310" y="508" text-anchor="middle" font-size="10" fill="#7f8c8d" font-style="italic">The wider the tier, the more people trapped in it by circumstance</text>
+</svg>

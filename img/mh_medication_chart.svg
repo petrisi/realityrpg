@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="mshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <linearGradient id="barGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2ecc71"/><stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+    <linearGradient id="barRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e74c3c"/><stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="440" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#2c3e50">Medication Trade-offs</text>
+  <text x="400" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">Benefits vs. Side Effects — every treatment involves a cost</text>
+
+  <!-- Legend -->
+  <g transform="translate(30, 58)">
+    <rect x="0" y="0" width="14" height="9" rx="3" fill="#27ae60"/>
+    <text x="20" y="9" font-size="10" fill="#7f8c8d">Benefits</text>
+    <rect x="84" y="0" width="14" height="9" rx="3" fill="#c0392b"/>
+    <text x="104" y="9" font-size="10" fill="#7f8c8d">Side Effects</text>
+  </g>
+
+  <!-- Chart area — taller to fit all 5 rows with room -->
+  <g transform="translate(100, 75)" filter="url(#mshadow)">
+    <rect x="0" y="0" width="660" height="330" rx="8" fill="white" stroke="#e8ecef" stroke-width="1"/>
+
+    <!-- Center divider line -->
+    <line x1="330" y1="5" x2="330" y2="325" stroke="#d5dbdb" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+    <!-- Each row: label (2 lines) + bar row = ~65px per row, 5 rows = 325px. Fits in 330. -->
+
+    <!-- Row 1: Antidepressants (SSRI) — row base y=25 -->
+    <text x="330" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Antidepressants</text>
+    <text x="330" y="38" text-anchor="middle" font-size="9" fill="#7f8c8d">(SSRI)</text>
+    <rect x="20" y="46" width="125" height="20" rx="5" fill="url(#barGreen)"/>
+    <text x="153" y="60" font-size="9" fill="#27ae60" font-weight="600">moderate</text>
+    <rect x="355" y="46" width="125" height="20" rx="5" fill="url(#barRed)"/>
+    <text x="488" y="60" font-size="9" fill="#c0392b" font-weight="600">moderate</text>
+
+    <!-- Row 2: Anxiolytics — row base y=90 -->
+    <text x="330" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Anxiolytics</text>
+    <text x="330" y="103" text-anchor="middle" font-size="9" fill="#7f8c8d">(benzodiazepines)</text>
+    <rect x="20" y="111" width="170" height="20" rx="5" fill="url(#barGreen)"/>
+    <text x="198" y="125" font-size="9" fill="#27ae60" font-weight="600">high</text>
+    <rect x="355" y="111" width="170" height="20" rx="5" fill="url(#barRed)"/>
+    <text x="533" y="125" font-size="9" fill="#c0392b" font-weight="600">high</text>
+    <text x="553" y="137" font-size="8" fill="#c0392b" font-style="italic">⚠ dependence risk</text>
+
+    <!-- Row 3: Mood Stabilizers — row base y=155 -->
+    <text x="330" y="155" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Mood Stabilizers</text>
+    <text x="330" y="168" text-anchor="middle" font-size="9" fill="#7f8c8d">(lithium, valproate)</text>
+    <rect x="20" y="176" width="125" height="20" rx="5" fill="url(#barGreen)"/>
+    <text x="153" y="190" font-size="9" fill="#27ae60" font-weight="600">moderate</text>
+    <rect x="355" y="176" width="125" height="20" rx="5" fill="url(#barRed)"/>
+    <text x="488" y="190" font-size="9" fill="#c0392b" font-weight="600">moderate</text>
+
+    <!-- Row 4: Antipsychotics — row base y=220 -->
+    <text x="330" y="220" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Antipsychotics</text>
+    <text x="330" y="233" text-anchor="middle" font-size="9" fill="#7f8c8d">(atypical)</text>
+    <rect x="20" y="241" width="170" height="20" rx="5" fill="url(#barGreen)"/>
+    <text x="198" y="255" font-size="9" fill="#27ae60" font-weight="600">high</text>
+    <rect x="355" y="241" width="170" height="20" rx="5" fill="url(#barRed)"/>
+    <text x="533" y="255" font-size="9" fill="#c0392b" font-weight="600">high</text>
+
+    <!-- Row 5: Stimulants — row base y=285 -->
+    <text x="330" y="285" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Stimulants</text>
+    <text x="330" y="298" text-anchor="middle" font-size="9" fill="#7f8c8d">(ADHD meds)</text>
+    <rect x="20" y="306" width="170" height="20" rx="5" fill="url(#barGreen)"/>
+    <text x="198" y="320" font-size="9" fill="#27ae60" font-weight="600">high</text>
+    <rect x="355" y="306" width="125" height="20" rx="5" fill="url(#barRed)"/>
+    <text x="488" y="320" font-size="9" fill="#c0392b" font-weight="600">moderate</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="430" text-anchor="middle" font-size="10" fill="#7f8c8d">Medication effects are individual — consult the GM for character-specific adjustments</text>
+</svg>

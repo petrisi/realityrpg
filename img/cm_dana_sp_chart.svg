@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+    <pattern id="stripes" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#c0392b" stroke-width="2" opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="400" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Dana's Stress Points — A Bad Week</text>
+  <text x="350" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">Stress accumulation across 9 days (Mon → Mon)</text>
+
+  <!-- Chart area -->
+  <g transform="translate(60, 0)">
+    <!-- Chart background -->
+    <rect x="0" y="55" width="580" height="280" rx="6" fill="white" stroke="#e8ecef" stroke-width="1" filter="url(#shadow)"/>
+
+    <!-- Y-axis grid lines and labels -->
+    <g font-size="10" fill="#7f8c8d" text-anchor="end">
+      <line x1="0" y1="335" x2="580" y2="335" stroke="#e8ecef" stroke-width="0.5"/>
+      <text x="-8" y="338">0</text>
+      <line x1="0" y1="279" x2="580" y2="279" stroke="#e8ecef" stroke-width="0.5"/>
+      <text x="-8" y="282">7</text>
+      <line x1="0" y1="223" x2="580" y2="223" stroke="#e8ecef" stroke-width="0.5"/>
+      <text x="-8" y="226">14</text>
+      <line x1="0" y1="167" x2="580" y2="167" stroke="#e8ecef" stroke-width="0.5"/>
+      <text x="-8" y="170">21</text>
+      <line x1="0" y1="111" x2="580" y2="111" stroke="#e8ecef" stroke-width="0.5"/>
+      <text x="-8" y="114">28</text>
+      <line x1="0" y1="55" x2="580" y2="55" stroke="#e8ecef" stroke-width="0.5"/>
+      <text x="-8" y="58">35</text>
+    </g>
+
+    <!-- Y-axis title -->
+    <text x="-40" y="195" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50" transform="rotate(-90 -40 195)">Stress Points</text>
+
+    <!-- MAX 30 dashed line -->
+    <line x1="0" y1="100" x2="580" y2="100" stroke="#c0392b" stroke-width="2" stroke-dasharray="8,5"/>
+    <text x="585" y="104" font-size="10" font-weight="700" fill="#c0392b">MAX 30</text>
+    <text x="585" y="116" font-size="8" fill="#c0392b">⚠️ Breakdown!</text>
+
+    <!-- Scale: 35 SP maps to 280px height. 1 SP = 8px -->
+    <!-- Bar width = 40px, gap = 28px, start x = 20px -->
+    <!-- Bar positions: x = 20 + i*68 for i=0..8 -->
+
+    <!-- Bar 1: Monday - 0 SP (green) -->
+    <rect x="20" y="335" width="40" height="0" rx="4" fill="#27ae60" opacity="0.8"/>
+    <rect x="20" y="335" width="40" height="0" rx="4" fill="#27ae60"/>
+    <text x="40" y="352" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">0</text>
+
+    <!-- Bar 2: Tuesday - 4 SP (green) -->
+    <rect x="88" y="303" width="40" height="32" rx="4" fill="#27ae60" opacity="0.8"/>
+    <text x="108" y="298" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">4</text>
+
+    <!-- Bar 3: Wednesday - 7 SP (yellow) -->
+    <rect x="156" y="279" width="40" height="56" rx="4" fill="#f1c40f" opacity="0.8"/>
+    <text x="176" y="274" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">7</text>
+
+    <!-- Bar 4: Thursday - 10 SP (yellow) -->
+    <rect x="224" y="255" width="40" height="80" rx="4" fill="#f1c40f" opacity="0.8"/>
+    <text x="244" y="250" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">10</text>
+
+    <!-- Bar 5: Friday - 15 SP (orange) -->
+    <rect x="292" y="219" width="40" height="116" rx="4" fill="#e67e22" opacity="0.8"/>
+    <text x="312" y="214" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">15</text>
+
+    <!-- Bar 6: Saturday - 19 SP (orange) -->
+    <rect x="360" y="183" width="40" height="152" rx="4" fill="#e67e22" opacity="0.8"/>
+    <text x="380" y="178" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">19</text>
+
+    <!-- Bar 7: Sunday - 19 SP (orange) -->
+    <rect x="428" y="183" width="40" height="152" rx="4" fill="#e67e22" opacity="0.8"/>
+    <text x="448" y="178" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">19</text>
+
+    <!-- Bar 8: Monday (next week) - 23 SP (orange) -->
+    <rect x="496" y="151" width="40" height="184" rx="4" fill="#e67e22" opacity="0.8"/>
+    <text x="516" y="146" text-anchor="middle" font-size="10" fill="#2c3e50" font-weight="600">23</text>
+
+    <!-- Bar 9: Monday Episode - 30 SP (RED, bold) -->
+    <rect x="564" y="95" width="48" height="240" rx="4" fill="#c0392b" opacity="0.9" stroke="#c0392b" stroke-width="2"/>
+    <!-- Striped overlay -->
+    <rect x="564" y="95" width="48" height="240" rx="4" fill="url(#stripes)"/>
+    <text x="588" y="88" text-anchor="middle" font-size="12" fill="#c0392b" font-weight="800">30!</text>
+
+    <!-- X-axis labels -->
+    <g font-size="9" fill="#2c3e50" text-anchor="middle">
+      <text x="40" y="372">Mon</text>
+      <text x="108" y="372">Tue</text>
+      <text x="176" y="372">Wed</text>
+      <text x="244" y="372">Thu</text>
+      <text x="312" y="372">Fri</text>
+      <text x="380" y="372">Sat</text>
+      <text x="448" y="372">Sun</text>
+      <text x="516" y="372">Mon</text>
+      <text x="588" y="372" font-weight="800" fill="#c0392b">Mon EP</text>
+    </g>
+
+    <!-- Tier legend -->
+    <g transform="translate(0, 390)">
+      <rect x="16" y="0" width="10" height="10" rx="2" fill="#27ae60"/>
+      <text x="30" y="10" font-size="9" fill="#7f8c8d">Low (0-4)</text>
+
+      <rect x="86" y="0" width="10" height="10" rx="2" fill="#f1c40f"/>
+      <text x="100" y="10" font-size="9" fill="#7f8c8d">Moderate (5-11)</text>
+
+      <rect x="170" y="0" width="10" height="10" rx="2" fill="#e67e22"/>
+      <text x="184" y="10" font-size="9" fill="#7f8c8d">High (12-29)</text>
+
+      <rect x="260" y="0" width="10" height="10" rx="2" fill="#c0392b"/>
+      <text x="274" y="10" font-size="9" fill="#7f8c8d">Critical (30+)</text>
+    </g>
+  </g>
+</svg>

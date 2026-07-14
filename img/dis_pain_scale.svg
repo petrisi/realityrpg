@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 500" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <text x="210" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Chronic Pain Scale</text>
+  <text x="210" y="50" text-anchor="middle" font-size="12" fill="#7f8c8d">Rolled daily: 2d10 + RES + Treatment Modifier</text>
+
+  <!-- Level 0: None -->
+  <rect x="40" y="70" width="340" height="65" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#s)"/>
+  <text x="70" y="108" text-anchor="middle" font-size="28">😌</text>
+  <text x="110" y="95" font-size="14" font-weight="700" fill="#1e8449">None (0)</text>
+  <text x="110" y="113" font-size="12" fill="#1e8449">No penalty</text>
+  <text x="110" y="128" font-size="11" fill="#7f8c8d">Character feels normal</text>
+  <text x="340" y="108" text-anchor="end" font-size="11" fill="#7f8c8d">Roll 20+</text>
+
+  <!-- Level 1-3: Mild -->
+  <rect x="40" y="145" width="340" height="65" rx="8" fill="#d4efdf" stroke="#2ecc71" stroke-width="2" filter="url(#s)"/>
+  <text x="70" y="183" text-anchor="middle" font-size="28">😐</text>
+  <text x="110" y="170" font-size="14" font-weight="700" fill="#1e8449">Mild (1–3)</text>
+  <text x="110" y="188" font-size="12" fill="#1e8449">−2 on VIG checks</text>
+  <text x="110" y="203" font-size="11" fill="#7f8c8d">Ache, stiffness — manageable</text>
+  <text x="340" y="183" text-anchor="end" font-size="11" fill="#7f8c8d">Roll 15–19</text>
+
+  <!-- Level 4-6: Moderate -->
+  <rect x="40" y="220" width="340" height="65" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#s)"/>
+  <text x="70" y="258" text-anchor="middle" font-size="28">😟</text>
+  <text x="110" y="245" font-size="14" font-weight="700" fill="#7d6608">Moderate (4–6)</text>
+  <text x="110" y="263" font-size="12" fill="#7d6608">−3 all checks · +2 SP daily</text>
+  <text x="110" y="278" font-size="11" fill="#7f8c8d">Hard to focus; sleep disrupted</text>
+  <text x="340" y="258" text-anchor="end" font-size="11" fill="#7f8c8d">Roll 10–14</text>
+
+  <!-- Level 7-8: Severe -->
+  <rect x="40" y="295" width="340" height="65" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2" filter="url(#s)"/>
+  <text x="70" y="333" text-anchor="middle" font-size="28">😰</text>
+  <text x="110" y="320" font-size="14" font-weight="700" fill="#7e5109">Severe (7–8)</text>
+  <text x="110" y="338" font-size="12" fill="#7e5109">−5 all checks · +4 SP daily</text>
+  <text x="110" y="353" font-size="11" fill="#7f8c8d">Energy Budget −3; mood affected</text>
+  <text x="340" y="333" text-anchor="end" font-size="11" fill="#7f8c8d">Roll 5–9</text>
+
+  <!-- Level 9-10: Debilitating -->
+  <rect x="40" y="370" width="340" height="65" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#s)"/>
+  <text x="70" y="408" text-anchor="middle" font-size="28">💥</text>
+  <text x="110" y="395" font-size="14" font-weight="700" fill="#922b21">Debilitating (9–10)</text>
+  <text x="110" y="413" font-size="12" fill="#922b21">−8 all checks · +5 SP · Bedridden</text>
+  <text x="110" y="428" font-size="11" fill="#7f8c8d">Crisis; may need emergency care</text>
+  <text x="340" y="408" text-anchor="end" font-size="11" fill="#7f8c8d">Roll 2–4</text>
+
+  <!-- Flare-up note -->
+  <text x="210" y="465" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Flare-ups can add +2–4 pain for 1d4 hours</text>
+  <text x="210" y="482" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Triggers: exertion, stress, poor sleep, weather, missed meds</text>
+</svg>

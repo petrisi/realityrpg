@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
+  <defs>
+    <filter id="s1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <rect width="900" height="300" fill="#fafbfc" rx="8"/>
+  <text x="450" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Relationship Progression &amp; Decay</text>
+
+  <!-- Progression Track (top half) -->
+  <text x="50" y="58" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#27ae60">▲ PROGRESSION</text>
+
+  <!-- Stage boxes -->
+  <!-- 0 pts - Start -->
+  <rect x="40" y="70" width="60" height="50" rx="8" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="70" y="90" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#2c3e50">0</text>
+  <text x="70" y="105" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#7f8c8d">Start</text>
+
+  <!-- Arrow 0→3 -->
+  <line x1="100" y1="95" x2="135" y2="95" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="117" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+3</text>
+
+  <!-- 3 pts - Acquaintance -->
+  <rect x="140" y="70" width="80" height="50" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="180" y="88" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#2c3e50">3</text>
+  <text x="180" y="103" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#27ae60">Acquaintance</text>
+
+  <!-- Arrow 3→10 -->
+  <line x1="220" y1="95" x2="255" y2="95" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="237" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+7</text>
+
+  <!-- 10 pts - Friend -->
+  <rect x="260" y="70" width="60" height="50" rx="8" fill="#a9dfbf" stroke="#27ae60" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="290" y="88" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#2c3e50">10</text>
+  <text x="290" y="103" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#27ae60">Friend</text>
+
+  <!-- Arrow 10→25 -->
+  <line x1="320" y1="95" x2="355" y2="95" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="337" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+15</text>
+
+  <!-- 25 pts - Close Friend -->
+  <rect x="360" y="70" width="80" height="50" rx="8" fill="#82e0aa" stroke="#27ae60" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="400" y="88" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#2c3e50">25</text>
+  <text x="400" y="103" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#27ae60">Close Friend</text>
+
+  <!-- Arrow 25→50 -->
+  <line x1="440" y1="95" x2="475" y2="95" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="457" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+25</text>
+
+  <!-- 50 pts - Confidant -->
+  <rect x="480" y="70" width="70" height="50" rx="8" fill="#58d68d" stroke="#27ae60" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="515" y="88" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#2c3e50">50</text>
+  <text x="515" y="103" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#27ae60">Confidant</text>
+
+  <!-- Arrow 50→75 -->
+  <line x1="550" y1="95" x2="585" y2="95" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="567" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+25</text>
+
+  <!-- 75 pts - Partner -->
+  <rect x="590" y="70" width="60" height="50" rx="8" fill="#2ecc71" stroke="#27ae60" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="620" y="88" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#fff">75</text>
+  <text x="620" y="103" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#d5f5e3">Partner</text>
+
+  <!-- Arrow 75→100 -->
+  <line x1="650" y1="95" x2="685" y2="95" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="667" y="86" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+25</text>
+
+  <!-- 100+ pts - Family-Level -->
+  <rect x="690" y="70" width="90" height="50" rx="8" fill="#1abc9c" stroke="#27ae60" stroke-width="1.5" filter="url(#s1)"/>
+  <text x="735" y="88" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#fff">100+</text>
+  <text x="735" y="103" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#d1f2eb">Family-Level</text>
+
+  <!-- Decay Track (bottom half) -->
+  <text x="50" y="165" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#c0392b">▼ DECAY</text>
+
+  <!-- Decay items, right to left -->
+  <rect x="690" y="175" width="120" height="40" rx="8" fill="#fadbd8" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="750" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#c0392b">1 year: Stranger</text>
+
+  <line x1="680" y1="195" x2="640" y2="195" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <rect x="540" y="175" width="100" height="40" rx="8" fill="#f5b7b1" stroke="#e74c3c" stroke-width="1" filter="url(#s1)"/>
+  <text x="590" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#c0392b">6 mo: −1 tier</text>
+
+  <line x1="530" y1="195" x2="490" y2="195" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <rect x="395" y="175" width="95" height="40" rx="8" fill="#f1948a" stroke="#e74c3c" stroke-width="1" filter="url(#s1)"/>
+  <text x="442" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#c0392b">90 days: −5pts</text>
+
+  <line x1="385" y1="195" x2="345" y2="195" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <rect x="250" y="175" width="95" height="40" rx="8" fill="#e74c3c" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="297" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">30 days: −2pts</text>
+
+  <line x1="240" y1="195" x2="200" y2="195" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <rect x="100" y="175" width="100" height="40" rx="8" fill="#c0392b" stroke="#922b21" stroke-width="1" filter="url(#s1)"/>
+  <text x="150" y="195" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="700" fill="#fff">⚠ Abandon</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="150" x2="860" y2="150" stroke="#d5dbdb" stroke-width="1" stroke-dasharray="8,4"/>
+
+  <!-- Bottom note -->
+  <text x="450" y="250" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#7f8c8d">Points decay over time if no interaction occurs. Regular contact resets the decay timer.</text>
+
+  <!-- Visual connector between tracks -->
+  <path d="M450,120 L450,140" stroke="#95a5a6" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="450" y="138" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#95a5a6">decay applies</text>
+</svg>

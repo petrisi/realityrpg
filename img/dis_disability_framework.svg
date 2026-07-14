@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="envGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2980b9"/>
+      <stop offset="100%" stop-color="#2471a3"/>
+    </linearGradient>
+    <linearGradient id="charGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#1e8449"/>
+    </linearGradient>
+    <linearGradient id="dmGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#d35400"/>
+    </linearGradient>
+    <linearGradient id="energyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8e44ad"/>
+      <stop offset="100%" stop-color="#7d3c98"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#2c3e50">The Disability Framework — Core Mechanics Model</text>
+
+  <!-- ENVIRONMENT box -->
+  <rect x="40" y="70" width="200" height="160" rx="12" fill="url(#envGrad)" filter="url(#shadow)"/>
+  <text x="140" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">🌍 ENVIRONMENT</text>
+  <text x="140" y="130" text-anchor="middle" font-size="13" fill="#d6eaf8">Has an Accessibility</text>
+  <text x="140" y="148" text-anchor="middle" font-size="13" fill="#d6eaf8">Rating (AR) 1–10</text>
+  <text x="140" y="175" text-anchor="middle" font-size="12" fill="#aed6f1" font-style="italic">How well a space</text>
+  <text x="140" y="191" text-anchor="middle" font-size="12" fill="#aed6f1" font-style="italic">accommodates diverse</text>
+  <text x="140" y="207" text-anchor="middle" font-size="12" fill="#aed6f1" font-style="italic">physical needs</text>
+  <text x="140" y="225" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">AR = ?</text>
+
+  <!-- CHARACTER box -->
+  <rect x="560" y="70" width="200" height="160" rx="12" fill="url(#charGrad)" filter="url(#shadow)"/>
+  <text x="660" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">👤 CHARACTER</text>
+  <text x="660" y="130" text-anchor="middle" font-size="13" fill="#d5f5e3">Has an Accessibility</text>
+  <text x="660" y="148" text-anchor="middle" font-size="13" fill="#d5f5e3">Need (AN) 1–10</text>
+  <text x="660" y="175" text-anchor="middle" font-size="12" fill="#a9dfbf" font-style="italic">How much access</text>
+  <text x="660" y="191" text-anchor="middle" font-size="12" fill="#a9dfbf" font-style="italic">they require for</text>
+  <text x="660" y="207" text-anchor="middle" font-size="12" fill="#a9dfbf" font-style="italic">penalty-free function</text>
+  <text x="660" y="225" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">AN = ?</text>
+
+  <!-- DM diamond -->
+  <polygon points="400,85 490,150 400,215 310,150" fill="url(#dmGrad)" filter="url(#shadow)"/>
+  <text x="400" y="130" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">DISABILITY</text>
+  <text x="400" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">MODIFIER</text>
+  <text x="400" y="178" text-anchor="middle" font-size="14" fill="#fdebd0">DM = AN − AR</text>
+
+  <!-- Arrows from env and char to DM -->
+  <line x1="240" y1="150" x2="315" y2="150" stroke="#e67e22" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="560" y1="150" x2="485" y2="150" stroke="#e67e22" stroke-width="2"/>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22"/>
+    </marker>
+  </defs>
+
+  <!-- If/Else branches from DM -->
+  <text x="400" y="240" text-anchor="middle" font-size="12" fill="#7f8c8d" font-weight="600">▼</text>
+
+  <!-- IF AR &lt; AN box -->
+  <rect x="120" y="260" width="260" height="100" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="288" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">⚠️ IF AR &lt; AN</text>
+  <text x="250" y="310" text-anchor="middle" font-size="12" fill="#922b21">DM applies as +penalty</text>
+  <text x="250" y="328" text-anchor="middle" font-size="12" fill="#922b21">to Target Number on checks</text>
+  <text x="250" y="348" text-anchor="middle" font-size="11" fill="#e74c3c" font-style="italic">Harder to succeed</text>
+
+  <!-- IF AR &gt;= AN box -->
+  <rect x="420" y="260" width="260" height="100" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="550" y="288" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">✅ IF AR ≥ AN</text>
+  <text x="550" y="310" text-anchor="middle" font-size="12" fill="#1e8449">No penalty applies</text>
+  <text x="550" y="328" text-anchor="middle" font-size="12" fill="#1e8449">Character navigates freely</text>
+  <text x="550" y="348" text-anchor="middle" font-size="11" fill="#27ae60" font-style="italic">Environment works for them</text>
+
+  <!-- ENERGY BUDGET bar at bottom -->
+  <rect x="80" y="380" width="640" height="30" rx="6" fill="#8e44ad"/>
+  <text x="400" y="400" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⚡ ENERGY BUDGET: 10 + VIG per day · Every action costs EP · Exhausted = −1 all attributes + +2 SP</text>
+
+  <!-- Arrows from if/else boxes down to energy bar -->
+  <line x1="250" y1="360" x2="300" y2="380" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="4"/>
+  <line x1="550" y1="360" x2="500" y2="380" stroke="#7f8c8d" stroke-width="1.5" stroke-dasharray="4"/>
+</svg>

@@ -117,6 +117,24 @@ code { font-family: var(--font-mono); background: #f0efe9; padding: 0.1em 0.4em;
   color: #fff;
   text-align: center;
   padding: 3em 1.5em;
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.12;
+  pointer-events: none;
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero > *:not(.hero-bg) {
+  position: relative;
+  z-index: 1;
 }
 .hero h1 { color: #fff; font-size: 2.8rem; margin-bottom: 0.3em; }
 .hero .subtitle { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 1.5em; }
@@ -277,6 +295,22 @@ th:last-child { border-radius: 0 var(--radius) 0 0; }
   border-radius: 7px;
   transition: width 0.4s;
 }
+/* ---- Skill Mini-Bar (inline table cell) ---- */
+.skill-bar {
+  display: inline-block;
+  width: 60px;
+  height: 8px;
+  background: #e8e8e8;
+  border-radius: 4px;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+.skill-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+}
 
 /* ---- Footer ---- */
 .site-footer {
@@ -296,6 +330,164 @@ th:last-child { border-radius: 0 var(--radius) 0 0; }
   .compare-grid { grid-template-columns: 1fr; }
   .char-portrait { flex-direction: column; align-items: center; text-align: center; }
   .hero h1 { font-size: 2rem; }
+  .section-illustration-right { flex-direction: column; }
+  .section-illustration-right img { width: 100%; max-width: 100%; }
+}
+
+/* ---- Section Illustrations ---- */
+.section-illustration {
+  margin: 1.5em 0;
+  text-align: center;
+}
+.section-illustration img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+/* Section header banner — wide image above a heading */
+.section-banner {
+  margin: 0 0 1.5em 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+.section-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Health condition track — horizontal step visual */
+.condition-track {
+  display: flex;
+  gap: 0;
+  margin: 1.5em 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.condition-step {
+  flex: 1;
+  padding: 1em 0.5em;
+  text-align: center;
+  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  color: #fff;
+  font-weight: 600;
+}
+.condition-step.healthy { background: #27ae60; }
+.condition-step.tired { background: #2ecc71; }
+.condition-step.sick { background: #f39c12; }
+.condition-step.injured { background: #e67e22; }
+.condition-step.critical { background: #e74c3c; }
+.condition-step.dead { background: #2c3e50; }
+/* Stress gauge bars */
+.stress-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin: 0.4em 0;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+}
+.stress-bar-label {
+  min-width: 120px;
+  font-weight: 600;
+}
+.stress-bar-track {
+  flex: 1;
+  height: 20px;
+  background: #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.stress-bar-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+.stress-bar-fill.stable { background: #27ae60; width: 20%; }
+.stress-bar-fill.elevated { background: #82e0aa; width: 40%; }
+.stress-bar-fill.stressed { background: #f39c12; width: 60%; }
+.stress-bar-fill.overwhelmed { background: #e67e22; width: 80%; }
+.stress-bar-fill.episode { background: #e74c3c; width: 100%; }
+/* TN difficulty ladder */
+.tn-ladder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin: 1.5em 0;
+}
+.tn-step {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.6em 1em;
+  border-radius: var(--radius);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+}
+.tn-step .tn-value {
+  font-weight: 700;
+  font-size: 1.3rem;
+  min-width: 50px;
+  text-align: center;
+}
+.tn-step .tn-label {
+  flex: 1;
+}
+.tn-step.trivial { background: #d5f5e3; }
+.tn-step.easy { background: #d4efdf; }
+.tn-step.medium { background: #fef9e7; }
+.tn-step.hard { background: #fdebd0; }
+.tn-step.very-hard { background: #fadbd8; }
+.tn-step.near-impossible { background: #e8daef; }
+.section-illustration-right {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+  margin: 1.5em 0;
+}
+.section-illustration-right img {
+  width: 320px;
+  max-width: 45%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+.section-illustration-right .illust-text {
+  flex: 1;
+  min-width: 0;
+}
+/* Supplies grid */
+.supplies-grid {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+.supply-item {
+  flex: 1;
+  min-width: 140px;
+  max-width: 180px;
+  text-align: center;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1em;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+}
+.supply-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 0.5em;
+}
+.supply-item p {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 0;
 }
 
 /* ---- Print ---- */

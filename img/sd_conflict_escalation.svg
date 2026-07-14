@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <filter id="s1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="s2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="#fafbfc" rx="8"/>
+  <text x="400" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Conflict Escalation Tree</text>
+
+  <!-- Level 0: Root -->
+  <rect x="320" y="40" width="160" height="36" rx="10" fill="#2c3e50" filter="url(#s1)"/>
+  <text x="400" y="63" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#fff">Disagreement</text>
+
+  <!-- L0→L1 lines -->
+  <line x1="400" y1="76" x2="400" y2="115" stroke="#95a5a6" stroke-width="2"/>
+  <line x1="200" y1="115" x2="600" y2="115" stroke="#95a5a6" stroke-width="1.5"/>
+  <line x1="200" y1="115" x2="200" y2="130" stroke="#95a5a6" stroke-width="1.5"/>
+  <line x1="400" y1="115" x2="400" y2="130" stroke="#95a5a6" stroke-width="1.5"/>
+  <line x1="600" y1="115" x2="600" y2="130" stroke="#95a5a6" stroke-width="1.5"/>
+
+  <!-- Level 1: Heated Words -->
+  <!-- Concede -->
+  <rect x="110" y="130" width="120" height="32" rx="8" fill="#27ae60" filter="url(#s2)"/>
+  <text x="170" y="151" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">✓ Concede</text>
+  <!-- Escalate -->
+  <rect x="320" y="130" width="160" height="32" rx="8" fill="#e67e22" filter="url(#s1)"/>
+  <text x="400" y="151" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#fff">Heated Words</text>
+  <!-- Disengage -->
+  <rect x="570" y="130" width="120" height="32" rx="8" fill="#2980b9" filter="url(#s2)"/>
+  <text x="630" y="151" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">⏸ Disengage</text>
+
+  <!-- L1→L2 lines -->
+  <line x1="400" y1="162" x2="400" y2="200" stroke="#d35400" stroke-width="2"/>
+  <line x1="200" y1="200" x2="600" y2="200" stroke="#d35400" stroke-width="1.5"/>
+  <line x1="200" y1="200" x2="200" y2="215" stroke="#d35400" stroke-width="1.5"/>
+  <line x1="400" y1="200" x2="400" y2="215" stroke="#d35400" stroke-width="1.5"/>
+  <line x1="600" y1="200" x2="600" y2="215" stroke="#d35400" stroke-width="1.5"/>
+
+  <!-- Level 2: Personal Attacks -->
+  <rect x="110" y="215" width="120" height="32" rx="8" fill="#27ae60" filter="url(#s2)"/>
+  <text x="170" y="236" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">✓ Concede</text>
+  <rect x="320" y="215" width="160" height="32" rx="8" fill="#e74c3c" filter="url(#s1)"/>
+  <text x="400" y="236" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#fff">Personal Attacks</text>
+  <rect x="570" y="215" width="120" height="32" rx="8" fill="#2980b9" filter="url(#s2)"/>
+  <text x="630" y="236" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">⏸ Disengage</text>
+
+  <!-- Mediator intervention branch at L2 -->
+  <line x1="110" y1="231" x2="70" y2="231" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,3"/>
+  <rect x="10" y="218" width="60" height="26" rx="6" fill="#1abc9c" filter="url(#s2)"/>
+  <text x="40" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">🕊 Mediator</text>
+
+  <!-- L2→L3 lines -->
+  <line x1="400" y1="247" x2="400" y2="285" stroke="#c0392b" stroke-width="2"/>
+  <line x1="200" y1="285" x2="600" y2="285" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="200" y1="285" x2="200" y2="300" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="400" y1="285" x2="400" y2="300" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="600" y1="285" x2="600" y2="300" stroke="#c0392b" stroke-width="1.5"/>
+
+  <!-- Level 3: Threats -->
+  <rect x="110" y="300" width="120" height="32" rx="8" fill="#27ae60" filter="url(#s2)"/>
+  <text x="170" y="321" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">✓ Concede</text>
+  <rect x="320" y="300" width="160" height="32" rx="8" fill="#c0392b" filter="url(#s1)"/>
+  <text x="400" y="321" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#fff">Threats</text>
+  <rect x="570" y="300" width="120" height="32" rx="8" fill="#2980b9" filter="url(#s2)"/>
+  <text x="630" y="321" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">⏸ Disengage</text>
+
+  <!-- Mediator at L3 too -->
+  <line x1="110" y1="316" x2="70" y2="316" stroke="#27ae60" stroke-width="2" stroke-dasharray="5,3"/>
+  <rect x="10" y="303" width="60" height="26" rx="6" fill="#1abc9c" filter="url(#s2)"/>
+  <text x="40" y="320" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">🕊 Mediator</text>
+
+  <!-- L3→L4 lines -->
+  <line x1="400" y1="332" x2="400" y2="370" stroke="#a93226" stroke-width="2.5"/>
+  <line x1="200" y1="370" x2="600" y2="370" stroke="#a93226" stroke-width="1.5"/>
+  <line x1="200" y1="370" x2="200" y2="385" stroke="#a93226" stroke-width="1.5"/>
+  <line x1="400" y1="370" x2="400" y2="385" stroke="#a93226" stroke-width="1.5"/>
+  <line x1="600" y1="370" x2="600" y2="385" stroke="#a93226" stroke-width="1.5"/>
+
+  <!-- Level 4: Intimidation -->
+  <rect x="110" y="385" width="120" height="32" rx="8" fill="#27ae60" filter="url(#s2)"/>
+  <text x="170" y="406" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">✓ Concede</text>
+  <rect x="320" y="385" width="160" height="32" rx="8" fill="#922b21" filter="url(#s1)"/>
+  <text x="400" y="406" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#fff">Intimidation</text>
+  <rect x="570" y="385" width="120" height="32" rx="8" fill="#2980b9" filter="url(#s2)"/>
+  <text x="630" y="406" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#fff">⏸ Disengage</text>
+
+  <!-- L4→L5 line -->
+  <line x1="400" y1="417" x2="400" y2="455" stroke="#7b241c" stroke-width="3"/>
+
+  <!-- Level 5: Physical Violence - WARNING BOX -->
+  <rect x="290" y="455" width="220" height="42" rx="10" fill="#c0392b" stroke="#922b21" stroke-width="3" filter="url(#s1)"/>
+  <text x="400" y="472" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#fff">⚠ Physical Violence</text>
+  <text x="400" y="488" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#f5b7b1">DO NOT ESCALATE</text>
+
+  <!-- Consequences box -->
+  <rect x="260" y="505" width="280" height="80" rx="8" fill="#fff5f5" stroke="#c0392b" stroke-width="2" filter="url(#s1)"/>
+  <text x="400" y="522" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#c0392b">Cascading Consequences:</text>
+  <text x="290" y="542" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">• 5 Stress points</text>
+  <text x="290" y="557" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">• Legal risk</text>
+  <text x="440" y="542" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">• −Social Capital</text>
+  <text x="440" y="557" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">• Employment risk</text>
+
+  <!-- Side labels -->
+  <text x="130" y="150" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#27ae60" transform="rotate(-90, 130, 150)">EXIT</text>
+  <text x="670" y="150" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" fill="#2980b9" transform="rotate(90, 670, 150)">COOLING-OFF</text>
+</svg>

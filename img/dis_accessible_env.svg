@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <text x="350" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Accessibility Check — How the Mechanic Works</text>
+
+  <!-- Scenario -->
+  <rect x="30" y="50" width="640" height="45" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#s)"/>
+  <text x="350" y="77" text-anchor="middle" font-size="13" font-weight="600" fill="#2471a3">📍 Scenario: Character enters a location and attempts an action</text>
+
+  <!-- Step 1: GM sets AR -->
+  <rect x="30" y="110" width="200" height="80" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#s)"/>
+  <text x="130" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">Step 1: GM sets AR</text>
+  <text x="130" y="155" text-anchor="middle" font-size="12" fill="#1e8449">How accessible is this</text>
+  <text x="130" y="171" text-anchor="middle" font-size="12" fill="#1e8449">location? (1–10)</text>
+  <text x="130" y="187" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Example: AR = 4</text>
+
+  <!-- Step 2: Character has AN -->
+  <rect x="250" y="110" width="200" height="80" rx="8" fill="#d4efdf" stroke="#2ecc71" stroke-width="1.5" filter="url(#s)"/>
+  <text x="350" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">Step 2: Character AN</text>
+  <text x="350" y="155" text-anchor="middle" font-size="12" fill="#1e8449">How much access do</text>
+  <text x="350" y="171" text-anchor="middle" font-size="12" fill="#1e8449">they need? (1–10)</text>
+  <text x="350" y="187" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Example: AN = 6</text>
+
+  <!-- Step 3: Compare -->
+  <rect x="470" y="110" width="200" height="80" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#s)"/>
+  <text x="570" y="135" text-anchor="middle" font-size="13" font-weight="700" fill="#7d6608">Step 3: Compare</text>
+  <text x="570" y="155" text-anchor="middle" font-size="12" fill="#7d6608">Is AR &lt; AN?</text>
+  <text x="570" y="171" text-anchor="middle" font-size="12" fill="#7d6608">4 &lt; 6? YES</text>
+  <text x="570" y="187" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">DM = 6 − 4 = 2</text>
+
+  <!-- Arrows between steps -->
+  <line x1="230" y1="150" x2="250" y2="150" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="450" y1="150" x2="470" y2="150" stroke="#7f8c8d" stroke-width="2"/>
+
+  <!-- Result box -->
+  <rect x="30" y="210" width="640" height="70" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#s)"/>
+  <text x="350" y="238" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">⚠️ DM = +2 applies to Target Number</text>
+  <text x="350" y="258" text-anchor="middle" font-size="12" fill="#922b21">If base TN was 50, new TN = 52. The character must roll higher to succeed.</text>
+  <text x="350" y="272" text-anchor="middle" font-size="11" fill="#e74c3c" font-style="italic">This represents the real-world difficulty of navigating an inaccessible space.</text>
+
+  <!-- Quick reference -->
+  <rect x="30" y="300" width="640" height="35" rx="6" fill="#f0efe9" filter="url(#s)"/>
+  <text x="350" y="322" text-anchor="middle" font-size="12" fill="#7f8c8d">Quick Reference: Wheelchair AN=6 | Blind AN=7 | Hard of Hearing AN=4 | Mobility Aid AN=5 | Deaf AN=6 | MS AN=6</text>
+</svg>

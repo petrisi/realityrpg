@@ -19,6 +19,10 @@
 <section class="content-section">
 <div class="container">
 
+<div class="section-banner">
+  <img src="img/sh_hero_banner.png" alt="Warm, inclusive community health center with diverse group of people and a friendly nurse at the front desk">
+</div>
+
 <div class="callout warning">
   <div class="callout-title">⚠️ Table Safety First</div>
   <p>This section covers sexuality, reproduction, and trauma. <strong>All sexual content uses fade-to-black</strong> — nothing explicit is described at the table. The GM must establish a <strong>Lines &amp; Veils</strong> list and a <strong>safety word</strong> (e.g. "red light" = stop immediately, "yellow light" = adjust tone, "green light" = continue) before beginning this chapter. Players may skip or delegate any scene to the GM. No character's sexual orientation, gender identity, or reproductive status may be assigned without the player's explicit consent.</p>
@@ -64,24 +68,29 @@
 
 <p>Characters whose orientation or gender identity is stigmatized in their environment face <strong>minority stress</strong> — the chronic, low-grade stress of existing in a world that may not accept them. This is a real psychological phenomenon and is modeled as follows:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Environment Type</th><th>SP Gain (per day/week)</th><th>Additional Effects</th></tr></thead>
-<tbody>
-<tr><td>🟢 <strong>Supportive</strong> (allies, LGBTQ+ spaces, affirming family)</td><td>0 SP</td><td><strong>Community Support Bonus:</strong> −2 to TN on RES checks involving social belonging. Gain +1 temporary SP resistance per week spent here.</td></tr>
-<tr><td>🟡 <strong>Neutral/Unknown</strong> (new city, mixed signals)</td><td>+1 SP per week</td><td>One RES check per month (TN 8) to maintain emotional equilibrium. Failure = +2 SP.</td></tr>
-<tr><td>🟠 <strong>Unsupportive</strong> (family rejection, hostile workplace)</td><td>+2 SP per week</td><td>RES check per week (TN 10). Failure = +3 SP. May trigger <a href="mental-health.html">mental health episodes</a>.</td></tr>
-<tr><td>🔴 <strong>Hostile/Dangerous</strong> (hate crime zones, criminalized identity)</td><td>+3 SP per week</td><td>RES check per day (TN 12). Failure = +4 SP. Physical danger may apply. May trigger <strong>traumatic event</strong> (see §6).</td></tr>
-</tbody>
-</table>
+<!-- PH1-2: Minority Stress → condition-track -->
+<div class="condition-track">
+  <div class="condition-step healthy">🟢 <strong>Supportive</strong><br><small>0 SP/day<br>−2 to TN RES checks<br>+1 temp SP resist/week</small></div>
+  <div class="condition-step tired">🟡 <strong>Neutral</strong><br><small>+1 SP/week<br>RES TN 8 monthly<br>Fail = +2 SP</small></div>
+  <div class="condition-step injured">🟠 <strong>Unsupportive</strong><br><small>+2 SP/week<br>RES TN 10 weekly<br>Fail = +3 SP</small></div>
+  <div class="condition-step critical">🔴 <strong>Hostile</strong><br><small>+3 SP/week<br>RES TN 12 daily<br>Fail = +4 SP</small></div>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">🎲 Example: Maya's Weekly Stress</div>
-  <p>Maya is a trans woman living in a small conservative town (unsupportive environment). Her roommate is an ally (supportive). Each week she rolls <span class="dice">2d10 + RES mod</span> against TN 10. Maya has RES 6 (mod +1). She rolls a 7 and a 3 = 10, plus +1 = 11. <strong>Success!</strong> She manages her stress this week. Next week she rolls a 2 and a 4 = 6, plus +1 = 7. <strong>Failure</strong> — she gains +3 SP. Her roommate helps her process it, granting the community support bonus of −2 to the next RES check.</p>
+<div class="section-illustration-right">
+  <img src="img/sh_maya_small_town.png" alt="Maya walking home on a quiet small-town street at dusk, determined and contemplative">
+  <div class="illust-text">
+  <div class="callout example">
+    <div class="callout-title">🎲 Example: Maya's Weekly Stress</div>
+    <p>Maya is a trans woman living in a small conservative town (unsupportive environment). Her roommate is an ally (supportive). Each week she rolls <span class="dice">2d10 + RES mod</span> against TN 10. Maya has RES 6 (mod +1). She rolls a 7 and a 3 = 10, plus +1 = 11. <strong>Success!</strong> She manages her stress this week. Next week she rolls a 2 and a 4 = 6, plus +1 = 7. <strong>Failure</strong> — she gains +3 SP. Her roommate helps her process it, granting the community support bonus of −2 to the next RES check.</p>
+    </div>
+  </div>
 </div>
 
 <h3>1.3 Coming Out as a Structured Event</h3>
+
+<div class="section-illustration">
+  <img src="img/sh_coming_out_flow.svg" alt="Coming Out structured event flowchart: Choose Audience → Set Stakes → Roll Check → 5 outcome tiers from Critical Success to Critical Failure">
+</div>
 
 <p>Coming out — disclosing one's orientation or gender identity to others — is a <strong>structured event</strong> in Reality RPG. It is always a player choice, never forced by the GM. The scene is resolved using the social interaction framework with the following steps:</p>
 
@@ -89,20 +98,16 @@
 <li><strong>Choose the audience.</strong> Family? Boss? Friends? The wider public? Each has a different base TN.</li>
 <li><strong>Set the stakes.</strong> What does the character hope to gain? What do they fear losing? The player states both.</li>
 <li><strong>Roll the check.</strong> The character rolls <span class="dice">2d10 + RES mod + EXP mod</span> against the audience's acceptance TN. The GM sets TN based on the audience's known views (TN 6 for allies, TN 10 for uncertain, TN 14+ for hostile).</li>
-<li><strong>Resolve the outcome.</strong> See the table below.</li>
+<li><strong>Resolve the outcome.</strong> See the ladder below.</li>
 </ol>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Roll Result</th><th>Narrative Outcome</th><th>Mechanical Effect</th></tr></thead>
-<tbody>
-<tr><td>🟢 <strong>Critical Success</strong> (roll ≥ TN + 5)</td><td>Warm acceptance. The person may become a stronger ally.</td><td>Relationship tier increases by one. Character gains Community Support Bonus for 1 month. −3 SP (stress relief).</td></tr>
-<tr><td>🟡 <strong>Success</strong> (roll ≥ TN)</td><td>Acceptance, perhaps with questions or adjustment period.</td><td>Relationship stable or improves slightly. −1 SP.</td></tr>
-<tr><td>🟠 <strong>Narrow Failure</strong> (roll TN − 1 to TN − 3)</td><td>Awkwardness, hesitation, or conditional acceptance.</td><td>No relationship change. +2 SP from the tension. May need follow-up conversations.</td></tr>
-<tr><td>🔴 <strong>Failure</strong> (roll TN − 4 to TN − 6)</td><td>Rejection, conflict, or relationship damage.</td><td>Relationship tier decreases by one. +4 SP. May trigger Episode check.</td></tr>
-<tr><td>💀 <strong>Critical Failure</strong> (roll ≤ TN − 7)</td><td>Severe rejection. Possible violence, estrangement, or homelessness.</td><td>Relationship may be severed entirely. +6 SP. May trigger <strong>traumatic event</strong>. GM must check in with player.</td></tr>
-</tbody>
-</table>
+<!-- PH1-3: Coming Out outcomes → tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">🟢</span><span class="tn-label"><strong>Critical Success</strong> (roll ≥ TN + 5) — Warm acceptance. Relationship tier ↑. Community Support Bonus 1 month. <strong>−3 SP.</strong></span></div>
+  <div class="tn-step easy"><span class="tn-value">🟡</span><span class="tn-label"><strong>Success</strong> (roll ≥ TN) — Acceptance, perhaps with questions. Relationship stable. <strong>−1 SP.</strong></span></div>
+  <div class="tn-step medium"><span class="tn-value">🟠</span><span class="tn-label"><strong>Narrow Failure</strong> (roll TN − 1 to TN − 3) — Awkwardness, hesitation. No relationship change. <strong>+2 SP.</strong></span></div>
+  <div class="tn-step hard"><span class="tn-value">🔴</span><span class="tn-label"><strong>Failure</strong> (roll TN − 4 to TN − 6) — Rejection, conflict. Relationship tier ↓. <strong>+4 SP.</strong> May trigger Episode.</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value">💀</span><span class="tn-label"><strong>Critical Failure</strong> (roll ≤ TN − 7) — Severe rejection. Relationship severed. <strong>+6 SP.</strong> May trigger traumatic event. GM must check in.</span></div>
 </div>
 
 <div class="callout rule">
@@ -116,6 +121,10 @@
 </div>
 
 <h3>1.4 Transition-Related Mechanics</h3>
+
+<div class="section-illustration">
+  <img src="img/sh_transition_roadmap.svg" alt="Transition roadmap showing 4 paths: Social, Hormone Therapy, Surgery, and Legal Name/Gender Change with timelines, costs, and skill checks">
+</div>
 
 <p>Characters who transition (socially, medically, or legally) face additional mechanical considerations:</p>
 
@@ -153,17 +162,18 @@
 
 <p>Consent between characters is modeled explicitly. Every intimate interaction requires <strong>affirmative, informed, ongoing consent</strong>. The mechanical framework:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Step</th><th>Action</th><th>Mechanic</th></tr></thead>
-<tbody>
-<tr><td><strong>1. Signal interest</strong></td><td>One character expresses interest in getting closer</td><td>No roll needed. Player states intent out-of-character: "My character is interested."</td></tr>
-<tr><td><strong>2. Mutual check-in</strong></td><td>The other player decides if their character is interested</td><td>If yes, proceed. If no, the scene ends gracefully. No roll — the player's choice <em>is</em> the mechanic.</td></tr>
-<tr><td><strong>3. Boundary setting</strong></td><td>Characters discuss what they're comfortable with</td><td>Player describes their character's boundaries. These are <strong>absolute</strong> — the other character cannot cross them.</td></tr>
-<tr><td><strong>4. Ongoing consent</strong></td><td>Consent can be withdrawn at any point</td><td>If circumstances change (stress, fear, discomfort), either player may halt the scene in-character.</td></tr>
-<tr><td><strong>5. Aftercare</strong></td><td>Post-intimacy check-in</td><td>Both characters may roll <span class="dice">2d10 + RES mod</span> (TN 6) to process emotions. Failure = +1 SP from vulnerability.</td></tr>
-</tbody>
-</table>
+<!-- PH2-10: Consent flowchart SVG -->
+<div class="section-illustration">
+  <img src="img/sh_consent_flowchart.svg" alt="Consent flowchart showing the 5-step process: Signal Interest → Mutual Check-in → Boundary Discussion → Ongoing Consent → Aftercare, with decision points where consent can be withdrawn">
+</div>
+
+<!-- PH1-7: Consent steps → tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">1</span><span class="tn-label"><strong>Signal Interest</strong> — One character expresses interest. No roll. Player states intent OOC: "My character is interested."</span></div>
+  <div class="tn-step easy"><span class="tn-value">2</span><span class="tn-label"><strong>Mutual Check-in</strong> — Other player decides if their character is interested. If yes, proceed. If no, scene ends gracefully. <em>The player's choice IS the mechanic.</em></span></div>
+  <div class="tn-step medium"><span class="tn-value">3</span><span class="tn-label"><strong>Boundary Setting</strong> — Characters discuss what they're comfortable with. These boundaries are <strong>absolute</strong> — cannot be crossed.</span></div>
+  <div class="tn-step hard"><span class="tn-value">4</span><span class="tn-label"><strong>Ongoing Consent</strong> — Consent can be withdrawn at any point. If circumstances change (stress, fear, discomfort), either player may halt the scene in-character.</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">5</span><span class="tn-label"><strong>Aftercare</strong> — Post-intimacy check-in. Both roll <span class="dice">2d10 + RES mod</span> (TN 6) to process emotions. Failure = +1 SP from vulnerability.</span></div>
 </div>
 
 <div class="callout tip">
@@ -175,42 +185,47 @@
 
 <p>Relationships develop through three intimacy levels. Characters progress through them gradually, and each level has distinct mechanical effects:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Level</th><th>Description</th><th>How to Reach</th><th>Mechanical Effects</th></tr></thead>
-<tbody>
-<tr><td>💛 <strong>Emotional</strong></td><td>Deep trust, vulnerability, shared secrets, emotional support</td><td>Multiple successful social interactions; EXP check (TN 8) to open up; time investment (weeks of shared scenes)</td><td>−2 SP when the partner is present during stressful events. +1 to relationship satisfaction tracking.</td></tr>
-<tr><td>💗 <strong>Physical</strong></td><td>Cuddling, holding hands, hugging, non-sexual touch</td><td>Emotional intimacy + mutual player consent + DXT check (TN 6) to navigate physical comfort</td><td>−3 SP when together. Physical touch provides comfort bonus: +1 to next RES check within 24 hours of affectionate contact.</td></tr>
-<tr><td>❤️ <strong>Sexual</strong></td><td>Sexual activity (always fade-to-black at the table)</td><td>Physical intimacy + explicit mutual consent (both players AND both characters) + no outstanding relationship conflicts</td><td>+2 to relationship satisfaction. However: vulnerability increases. If the relationship ends poorly, SP damage is doubled.</td></tr>
-</tbody>
-</table>
+<!-- PH1-8: Intimacy levels → condition-track -->
+<div class="condition-track">
+  <div class="condition-step healthy">💛 <strong>Emotional</strong><br><small>Deep trust, vulnerability<br>EXP TN 8 to open up<br>−2 SP with partner<br>+1 satisfaction</small></div>
+  <div class="condition-step tired">💗 <strong>Physical</strong><br><small>Cuddling, touch, affection<br>DXT TN 6 for comfort<br>−3 SP together<br>+1 to next RES check</small></div>
+  <div class="condition-step sick">❤️ <strong>Sexual</strong><br><small>Fade-to-black at table<br>Explicit mutual consent<br>+2 satisfaction<br>⚠️ SP damage doubled if ends poorly</small></div>
 </div>
 
 <h3>2.4 Relationship Satisfaction Tracking</h3>
 
 <p>Each meaningful relationship has a <strong>Satisfaction Score</strong> from 0 to 10. This score changes based on how well the characters' needs are being met:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Satisfaction</th><th>Score</th><th>State</th><th>Effects</th></tr></thead>
-<tbody>
-<tr><td>💔</td><td>0–2</td><td>Broken / Toxic</td><td>Active source of +2 SP per week. Relationship may end.</td></tr>
-<tr><td>😕</td><td>3–4</td><td>Struggling</td><td>Monthly EXP check (TN 10) to prevent further decline. +1 SP per week.</td></tr>
-<tr><td>😐</td><td>5–6</td><td>Stable</td><td>No SP effects. Relationship maintains current tier.</td></tr>
-<tr><td>😊</td><td>7–8</td><td>Fulfilling</td><td>−1 SP per week (emotional buffer). Relationship may grow closer.</td></tr>
-<tr><td>🥰</td><td>9–10</td><td>Deeply fulfilling</td><td>−2 SP per week. Access to Community Support Bonus even in unsupportive environments.</td></tr>
-</tbody>
-</table>
+<!-- PH1-9: Satisfaction Score → stat-bar-wrap -->
+<div class="stat-bar-wrap">
+  <div class="stat-bar-label"><span>💔 Broken / Toxic (0–2)</span><span>+2 SP/week — may end</span></div>
+  <div class="stat-bar"><div class="stat-bar-fill" style="width:15%;background:#e74c3c;"></div></div>
+</div>
+<div class="stat-bar-wrap">
+  <div class="stat-bar-label"><span>😕 Struggling (3–4)</span><span>+1 SP/week — EXP TN 10 monthly</span></div>
+  <div class="stat-bar"><div class="stat-bar-fill" style="width:35%;background:#e67e22;"></div></div>
+</div>
+<div class="stat-bar-wrap">
+  <div class="stat-bar-label"><span>😐 Stable (5–6)</span><span>No SP effects — maintains tier</span></div>
+  <div class="stat-bar"><div class="stat-bar-fill" style="width:55%;background:#f39c12;"></div></div>
+</div>
+<div class="stat-bar-wrap">
+  <div class="stat-bar-label"><span>😊 Fulfilling (7–8)</span><span>−1 SP/week — may grow closer</span></div>
+  <div class="stat-bar"><div class="stat-bar-fill" style="width:75%;background:#27ae60;"></div></div>
+</div>
+<div class="stat-bar-wrap">
+  <div class="stat-bar-label"><span>🥰 Deeply Fulfilling (9–10)</span><span>−2 SP/week — Community Support Bonus</span></div>
+  <div class="stat-bar"><div class="stat-bar-fill" style="width:95%;background:#2ecc71;"></div></div>
 </div>
 
 <p><strong>Satisfaction changes</strong> based on key events:</p>
 <ul>
-<li><strong>Quality time together:</strong> +1 (max once per week)</li>
-<li><strong>Act of kindness or support:</strong> +1</li>
-<li><strong>Betrayal or broken promise:</strong> −2</li>
-<li><strong>Unresolved conflict:</strong> −1 per week until addressed</li>
-<li><strong>Major life event navigated together:</strong> +2</li>
-<li><strong>Neglect (no contact for 2+ weeks):</strong> −1 per week</li>
+<li>🟢 <strong>Quality time together:</strong> +1 (max once per week)</li>
+<li>🟢 <strong>Act of kindness or support:</strong> +1</li>
+<li>🔴 <strong>Betrayal or broken promise:</strong> −2</li>
+<li>🔴 <strong>Unresolved conflict:</strong> −1 per week until addressed</li>
+<li>🟢 <strong>Major life event navigated together:</strong> +2</li>
+<li>🔴 <strong>Neglect (no contact for 2+ weeks):</strong> −1 per week</li>
 </ul>
 
 <h3>2.5 Fade-to-Black Rules</h3>
@@ -228,6 +243,10 @@
   <p>Players <em>may</em> discuss their characters' feelings about the experience afterward, but only at the level of comfort everyone at the table has established.</p>
 </div>
 
+<div class="section-illustration">
+  <img src="img/sh_fade_to_black.png" alt="Two people sitting together on a cozy couch in morning sunlight, wrapped in a blanket, comfortable and connected — the quiet morning after an intimate scene">
+</div>
+
 <div class="callout example">
   <div class="callout-title">🎲 Example: Fade-to-Black in Practice</div>
   <p><strong>GM:</strong> "Jin and Aiko have been dating for months. Tonight, after dinner, Jin reaches for Aiko's hand. Aiko's player nods — they're both comfortable proceeding. The GM describes them walking to Aiko's apartment, the conversation slowing, the tension building. 'You both know where this is going. The door clicks shut...'" <em>[fade to black]</em> <strong>Next scene:</strong> "Morning light filters through the blinds. You wake up tangled in sheets together. How do you feel?" Jin's player: "Relieved and happy." GM: "Okay. −2 SP for Jin, relationship satisfaction +1 to 8." Aiko's player: "Aiko feels a bit anxious about things changing." GM: "Understood. Aiko gains +1 SP from uncertainty, but −1 from overall happiness. Net 0 SP."</p>
@@ -242,19 +261,19 @@
 
 <p>Characters should get tested regularly, especially after new sexual partners. Testing is a <strong>structured action</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Step</th><th>Action</th><th>Mechanic</th></tr></thead>
-<tbody>
-<tr><td><strong>Access care</strong></td><td>Find a clinic, doctor, or testing center</td><td>INT check (TN 7) to find appropriate care. Cost: $0–$200 depending on insurance.</td></tr>
-<tr><td><strong>Get tested</strong></td><td>Blood draw, urine sample, or swab</td><td>No roll. Takes 1–2 visits (some results take 1–2 weeks). VIG check (TN 6) if character has needle/phobia anxiety — failure = +2 SP.</td></tr>
-<tr><td><strong>Receive results</strong></td><td>Positive or negative</td><td>GM determines outcome based on exposure history. If positive: character learns what they have and treatment options.</td></tr>
-<tr><td><strong>Post-test emotional impact</strong></td><td>Processing results</td><td>RES check (TN 8) after receiving results. Failure = +2 SP regardless of outcome (anxiety of waiting is real).</td></tr>
-</tbody>
-</table>
+<!-- PH1-13: STI testing → tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">1</span><span class="tn-label"><strong>Access Care</strong> — Find a clinic, doctor, or testing center. INT check (TN 7). Cost: $0–$200 depending on insurance.</span></div>
+  <div class="tn-step easy"><span class="tn-value">2</span><span class="tn-label"><strong>Get Tested</strong> — Blood draw, urine sample, or swab. No roll. Takes 1–2 visits. VIG check (TN 6) if needle/phobia anxiety — failure = +2 SP.</span></div>
+  <div class="tn-step medium"><span class="tn-value">3</span><span class="tn-label"><strong>Receive Results</strong> — Positive or negative. GM determines outcome based on exposure history. If positive: character learns what they have and treatment options.</span></div>
+  <div class="tn-step hard"><span class="tn-value">4</span><span class="tn-label"><strong>Post-Test Emotional Impact</strong> — Processing results. RES check (TN 8) after receiving results. Failure = +2 SP regardless of outcome (anxiety of waiting is real).</span></div>
 </div>
 
 <h3>3.2 STI Table</h3>
+
+<div class="section-illustration">
+  <img src="img/sh_sti_risk_matrix.svg" alt="STI transmission risk bar chart showing 6 STIs with their per-act transmission risk percentages and treatment notes">
+</div>
 
 <p>If a character contracts an STI, the GM selects from this table based on the character's exposure history (unprotected sex, number of partners, partner status). Each STI has specific mechanical effects:</p>
 
@@ -262,12 +281,12 @@
 <table>
 <thead><tr><th>STI</th><th>Transmission Risk*</th><th>Symptoms</th><th>Mechanical Effects</th><th>Treatment</th></tr></thead>
 <tbody>
-<tr><td>🦠 <strong>Chlamydia</strong></td><td>10–25%</td><td>Often asymptomatic; burning during urination, unusual discharge</td><td>None if treated promptly. If untreated for 3+ months: −1 VIG (pelvic inflammatory disease risk).</td><td>Antibiotics. 1 visit. $20–$100. Cures in 1 week.</td></tr>
-<tr><td>🦠 <strong>Gonorrhea</strong></td><td>10–20%</td><td>Burning urination, discharge, testicular/pelvic pain</td><td>+2 SP while symptomatic (pain/discomfort). If untreated 3+ months: −1 VIG permanently.</td><td>Antibiotics (dual therapy). 1 visit. $50–$150. Cures in 1 week.</td></tr>
-<tr><td>🦠 <strong>HIV</strong></td><td>0.1–1.4% per act**</td><td>Flu-like symptoms (2–4 weeks), then asymptomatic for years</td><td><strong>Major condition.</strong> +3 SP at diagnosis. Without treatment: progressive VIG loss (−1 per year). With treatment: manageable chronic condition, +1 SP/week from medication stress.</td><td>Antiretroviral therapy (ART). Daily medication. $0–$500/month with insurance. Lifelong. With treatment, near-normal life expectancy.</td></tr>
-<tr><td>🦠 <strong>Herpes (HSV-1/2)</strong></td><td>3–30%***</td><td>Painful blisters/sores, usually on genitals; recurring outbreaks</td><td>During outbreaks: −1 VIG, +2 SP (pain/stigma). Outbreaks occur 2–4 times/year initially, decreasing over time.</td><td>Antiviral medication (valacyclovir). Reduces outbreaks by 70–80%. $20–$100/month. No cure but manageable.</td></tr>
-<tr><td>🦠 <strong>HPV</strong></td><td>30–50% over lifetime</td><td>Usually asymptomatic; genital warts in some strains; can cause cancer</td><td>Usually no effect. High-risk strains: annual screening required. If cervical dysplasia develops: −1 VIG, medical procedures needed.</td><td>Vaccine prevents most strains (Gardasil). Warts treated with topical medication. Cancer precursors treated with procedure. Vaccine: $100–$400.</td></tr>
-<tr><td>🦠 <strong>Syphilis</strong></td><td>10–30%</td><td>Stage 1: painless sore. Stage 2: rash, fever. Stage 3: organ damage.</td><td>Stage 1–2: +1 SP (mild symptoms). Stage 3 (untreated 10+ years): −2 VIG, permanent organ damage, possible death.</td><td>Penicillin injection. 1–3 visits. $20–$200. Cures completely if caught early. Late-stage: damage may be permanent.</td></tr>
+<tr><td>🦠 <strong>Chlamydia</strong></td><td>10–25%</td><td>Often asymptomatic; burning during urination, unusual discharge</td><td>None if treated promptly. If untreated 3+ months: −1 VIG (PID risk).</td><td>Antibiotics. 1 visit. $20–$100. Cures in 1 week.</td></tr>
+<tr><td>🦠 <strong>Gonorrhea</strong></td><td>10–20%</td><td>Burning urination, discharge, testicular/pelvic pain</td><td>+2 SP while symptomatic. If untreated 3+ months: −1 VIG permanently.</td><td>Antibiotics (dual therapy). 1 visit. $50–$150. Cures in 1 week.</td></tr>
+<tr><td>🦠 <strong>HIV</strong></td><td>0.1–1.4% per act**</td><td>Flu-like (2–4 wks), then asymptomatic for years</td><td><strong>Major condition.</strong> +3 SP at diagnosis. Without treatment: progressive VIG loss (−1/yr). With treatment: manageable, +1 SP/wk from med stress.</td><td>ART. Daily meds. $0–$500/mo with insurance. Lifelong. Near-normal life expectancy with treatment.</td></tr>
+<tr><td>🦠 <strong>Herpes (HSV-1/2)</strong></td><td>3–30%***</td><td>Painful blisters/sores; recurring outbreaks</td><td>During outbreaks: −1 VIG, +2 SP. Outbreaks 2–4×/yr initially, decreasing over time.</td><td>Antiviral (valacyclovir). Reduces outbreaks 70–80%. $20–$100/mo. Manageable, no cure.</td></tr>
+<tr><td>🦠 <strong>HPV</strong></td><td>30–50% over lifetime</td><td>Usually asymptomatic; genital warts; can cause cancer</td><td>Usually no effect. High-risk: annual screening. Cervical dysplasia: −1 VIG, procedures needed.</td><td>Vaccine prevents most strains (Gardasil). $100–$400.</td></tr>
+<tr><td>🦠 <strong>Syphilis</strong></td><td>10–30%</td><td>Stage 1: painless sore. Stage 2: rash, fever. Stage 3: organ damage.</td><td>Stage 1–2: +1 SP. Stage 3 (untreated 10+ yrs): −2 VIG, permanent damage, possible death.</td><td>Penicillin injection. 1–3 visits. $20–$200. Cures if caught early.</td></tr>
 </tbody>
 </table>
 </div>
@@ -281,18 +300,23 @@
 
 <h3>3.3 Contraception Mechanics</h3>
 
+<div class="section-illustration">
+  <img src="img/sh_contraception_compare.svg" alt="Contraception effectiveness comparison bar chart ranking 6 methods from IUD at 99% to Natural Methods at 76-80%">
+</div>
+
 <p>Contraception prevents unwanted pregnancy. Each method has a typical-use effectiveness rate. When a character engages in sexual activity without wanting pregnancy, the contraception's effectiveness is tested:</p>
 
+<!-- PH1-14: Contraception emoji coding added inline -->
 <div class="table-wrap">
 <table>
-<thead><tr><th>Method</th><th>Effectiveness</th><th>Failure Chance</th><th>Cost</th><th>Mechanical Details</th></tr></thead>
+<thead><tr><th>Method</th><th>Effectiveness</th><th>Failure</th><th>Cost</th><th>Mechanical Details</th></tr></thead>
 <tbody>
-<tr><td>💊 <strong>Birth Control Pill</strong></td><td>91%</td><td>9%</td><td>$0–$50/month</td><td>Must be taken daily. Miss 1 pill: effectiveness drops to 70%. Miss 2+ pills: effectiveness drops to 40%. Requires regular doctor visits for prescription.</td></tr>
-<tr><td>🔒 <strong>IUD (hormonal or copper)</strong></td><td>99%</td><td>1%</td><td>$0–$1,300 (one-time, insurance often covers)</td><td>Most effective reversible method. Lasts 3–10 years. Initial insertion: VIG check (TN 6) for discomfort. Hormonal IUD: may cause irregular bleeding in first 3 months (+1 SP/month).</td></tr>
-<tr><td>🛡️ <strong>Condoms</strong></td><td>87%</td><td>13%</td><td>$20–$50/box of 12</td><td>Also provides STI protection. Must be carried and used correctly. If character is drunk/high: effectiveness drops to 75%. Broken condom = automatic failure.</td></tr>
-<tr><td>🌿 <strong>Natural Methods</strong> (calendar, withdrawal)</td><td>76–80%</td><td>20–24%</td><td>Free</td><td>Relies on cycle tracking. Highly unreliable. Characters with irregular cycles (stress, PCOS, postpartum) have only 60% effectiveness. Withdrawal alone: 78% effective.</td></tr>
-<tr><td>💉 <strong>The Shot (Depo-Provera)</strong></td><td>94%</td><td>6%</td><td>$20–$75 per injection</td><td>Given every 3 months. May cause mood changes (+1 SP/month for some users) or weight gain. VIG check (TN 8) every 3 months to handle side effects.</td></tr>
-<tr><td>🩹 <strong>The Patch / Ring</strong></td><td>91–93%</td><td>7–9%</td><td>$0–$60/month</td><td>Similar to the pill. Patch changed weekly; ring changed monthly. Slightly more effective than pill because harder to forget.</td></tr>
+<tr><td>💊 <strong>Birth Control Pill</strong></td><td>🟢 91%</td><td>9%</td><td>$0–$50/month</td><td>Daily. Miss 1 pill → 70%. Miss 2+ → 40%. Requires prescription.</td></tr>
+<tr><td>🔒 <strong>IUD (hormonal/copper)</strong></td><td>🟢 99%</td><td>1%</td><td>$0–$1,300 one-time</td><td>Most effective reversible. Lasts 3–10 yrs. Insertion: VIG TN 6. Hormonal: irregular bleeding first 3 mo (+1 SP/mo).</td></tr>
+<tr><td>🛡️ <strong>Condoms</strong></td><td>🟡 87%</td><td>13%</td><td>$20–$50/box of 12</td><td>Also STI protection. Drunk/high → 75%. Broken = auto-failure.</td></tr>
+<tr><td>🌿 <strong>Natural Methods</strong></td><td>🔴 76–80%</td><td>20–24%</td><td>Free</td><td>Irregular cycles (stress, PCOS): only 60%. Withdrawal alone: 78%.</td></tr>
+<tr><td>💉 <strong>The Shot (Depo)</strong></td><td>🟢 94%</td><td>6%</td><td>$20–$75 per injection</td><td>Every 3 months. Mood changes possible (+1 SP/mo). VIG TN 8 q3mo for side effects.</td></tr>
+<tr><td>🩹 <strong>Patch / Ring</strong></td><td>🟢 91–93%</td><td>7–9%</td><td>$0–$60/month</td><td>Similar to pill. Harder to forget → slightly more effective.</td></tr>
 </tbody>
 </table>
 </div>
@@ -313,16 +337,20 @@
 
 <h3>3.4 Sexual Function Issues</h3>
 
+<div class="section-illustration">
+  <img src="img/sh_function_issues.svg" alt="Sexual function issues flowchart showing causes (stress, medications, health conditions, relationship issues) connected to specific issues and their resolution paths">
+</div>
+
 <p>Sexual function can be affected by stress, medications, health conditions, and relationship dynamics. Characters may experience:</p>
 
 <div class="table-wrap">
 <table>
 <thead><tr><th>Issue</th><th>Causes</th><th>Mechanical Effect</th><th>Resolution</th></tr></thead>
 <tbody>
-<tr><td><strong>Low libido</strong></td><td>High SP, medications (SSRIs), depression, relationship issues</td><td>Character cannot initiate intimacy. Relationship satisfaction −1/week if partner wants intimacy.</td><td>Reduce SP. Address root cause. Therapy: EXP check (TN 10) monthly. Improves gradually over 1–6 months.</td></tr>
-<tr><td><strong>Erectile dysfunction</strong></td><td>Stress, diabetes, cardiovascular issues, medications, anxiety</td><td>Cannot complete sexual intimacy. +2 SP from frustration. Relationship satisfaction −1/week.</td><td>Medical treatment (ED medication: $20–$300/month). Stress reduction. VIG check (TN 8) each encounter to overcome performance anxiety.</td></tr>
-<tr><td><strong>Vaginismus / dyspareunia</strong></td><td>Trauma history, anxiety, hormonal changes, medical conditions</td><td>Painful or impossible sexual activity. +3 SP when attempted. Relationship satisfaction −1/week.</td><td>Pelvic floor therapy ($100–$200/session, 6–12 sessions). Gradual desensitization. EXP check (TN 12) per therapy session. Improves over 3–12 months.</td></tr>
-<tr><td><strong>Arousal / orgasm difficulties</strong></td><td>Stress, medications, hormonal, relationship mismatch</td><td>Satisfaction from intimacy reduced. +1 SP per unsatisfying encounter.</td><td>Communication with partner (EXP check TN 8). Sensate focus exercises. May resolve in 1–3 months.</td></tr>
+<tr><td><strong>Low libido</strong></td><td>High SP, SSRIs, depression, relationship issues</td><td>Cannot initiate intimacy. Satisfaction −1/wk if partner wants intimacy.</td><td>Reduce SP. Address root cause. Therapy: EXP TN 10 monthly. Improves 1–6 months.</td></tr>
+<tr><td><strong>Erectile dysfunction</strong></td><td>Stress, diabetes, cardiovascular, medications, anxiety</td><td>Cannot complete intimacy. +2 SP frustration. Satisfaction −1/wk.</td><td>ED medication ($20–$300/mo). Stress reduction. VIG TN 8 per encounter.</td></tr>
+<tr><td><strong>Vaginismus / dyspareunia</strong></td><td>Trauma, anxiety, hormonal, medical</td><td>Painful/impossible sex. +3 SP when attempted. Satisfaction −1/wk.</td><td>Pelvic floor therapy ($100–$200/session, 6–12 sessions). EXP TN 12 per session. 3–12 months.</td></tr>
+<tr><td><strong>Arousal / orgasm difficulties</strong></td><td>Stress, medications, hormonal, mismatch</td><td>Reduced satisfaction. +1 SP per unsatisfying encounter.</td><td>Communication (EXP TN 8). Sensate focus. May resolve 1–3 months.</td></tr>
 </tbody>
 </table>
 </div>
@@ -334,13 +362,17 @@
 
 <h3>4.1 Conception Mechanics</h3>
 
+<div class="section-illustration">
+  <img src="img/sh_conception_wheel.svg" alt="Conception probability diagram showing base chance of 25-30% modified by 7 factors including fertile window, age, stress, and health">
+</div>
+
 <p>When a character engages in unprotected sexual activity (or contraception fails), pregnancy may occur. The chance depends on the character's age, health, and where they are in their menstrual cycle:</p>
 
 <div class="table-wrap">
 <table>
 <thead><tr><th>Factor</th><th>Base Chance per Act</th><th>Modifier</th></tr></thead>
 <tbody>
-<tr><td>Fertile window (days 10–16 of cycle)</td><td>25–30%</td><td>Peak fertility</td></tr>
+<tr><td>Fertile window (days 10–16 of cycle)</td><td>25–30%</td><td>🟢 Peak fertility</td></tr>
 <tr><td>Non-fertile days</td><td>5%</td><td>Low but non-zero (sperm can live 5 days)</td></tr>
 <tr><td>Age 20–34</td><td>Base chance</td><td>Peak fertility years</td></tr>
 <tr><td>Age 35–39</td><td>−5%</td><td>Declining fertility</td></tr>
@@ -353,6 +385,10 @@
 
 <p><strong>To resolve:</strong> Roll <span class="dice">2d10 × 5</span> (giving 10–100). If the result is ≤ the adjusted percentage, conception occurs.</p>
 
+<div class="section-illustration">
+  <img src="img/sh_prenatal_visit.png" alt="A young woman at a prenatal ultrasound appointment, looking hopeful, with a kind nurse nearby">
+</div>
+
 <div class="callout example">
   <div class="callout-title">🎲 Example: Conception Roll</div>
   <p>Emma (age 28, VIG 7, SP 3) has unprotected sex during her fertile window. Base chance = 28%. No modifiers apply. She rolls <span class="dice">2d10 × 5</span>: gets 4 and 7 = 11 × 5 = 55. 55 &gt; 28, so <strong>no conception this time</strong>. If she rolled a 1 and 2 = 3 × 5 = 15, that's ≤ 28, so <strong>conception occurs</strong>.</p>
@@ -362,32 +398,33 @@
 
 <p>Pregnancy lasts 9 months, divided into three trimesters. Each trimester has distinct mechanical effects:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Phase</th><th>Duration</th><th>VIG Effect</th><th>Time Cost</th><th>SP Effect</th><th>Financial Cost</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>🌱 <strong>Trimester 1</strong><br><small>Months 1–3</small></td><td>Weeks 1–12</td><td>−1 VIG (fatigue, nausea)</td><td>Doctor visit at week 8. Morning sickness: 1–2 hours of downtime daily.</td><td>+2 SP (anxiety about the pregnancy, body changes). RES check (TN 8) at week 4 to confirm and process the news.</td><td>$100–$500 (first prenatal visit, blood work, ultrasound)</td><td>Morning sickness affects all food/eat checks. Nausea: DXT checks −2 (hand shakiness). Many characters don't know they're pregnant until week 4–6.</td></tr>
-<tr><td>🌿 <strong>Trimester 2</strong><br><small>Months 4–6</small></td><td>Weeks 13–26</td><td>VIG recovers to normal for many. Some gain −1 VIG from physical bulk.</td><td>Doctor visits monthly (2 hours each). Baby supplies begin accumulating.</td><td>+1 SP/week (nesting anxiety, preparation stress). Many feel better physically.</td><td>$200–$500/month (prenatal care, growing baby clothes, nursery setup)</td><td>"Golden trimester" for many. Movement felt around week 18–22. Anatomy scan at week 20.</td></tr>
-<tr><td>🌳 <strong>Trimester 3</strong><br><small>Months 7–9</small></td><td>Weeks 27–40</td><td>−2 VIG (physical burden, sleep disruption, back pain)</td><td>Doctor visits biweekly, then weekly (2–3 hours each). Sleep broken nightly.</td><td>+2 SP/week (anticipation, fear of labor, life change anxiety). DXT checks −2 (balance, coordination). EXP check (TN 10) at week 32 to prepare mentally.</td><td>$500–$2,000/month (final preparations, maternity items, time off work)</td><td>Breastfeeding preparation. Hospital bag packing. Birth plan creation. Possible early labor.</td></tr>
-<tr><td>👶 <strong>Birth</strong></td><td>1–3 days</td><td>Major event: VIG check (TN 12) for labor endurance. Failure = complications.</td><td>1–3 days in hospital/birth center.</td><td>+5 SP from the event. RES check (TN 10) post-birth to process the experience.</td><td>$3,000–$15,000+ (hospital birth). $800–$3,000 (home/midwife). Varies enormously by insurance.</td><td>Complications possible (see below). Postpartum period begins immediately.</td></tr>
-<tr><td>🌙 <strong>Postpartum</strong></td><td>6 weeks to 1 year</td><td>−1 VIG for 6 weeks (recovery). Ongoing fatigue from sleep deprivation.</td><td>Full-time baby care: 8–12 hours/day of active parenting time.</td><td>+2 SP/week for first 3 months (postpartum adjustment). RES check (TN 10) at week 2 and week 6 for postpartum depression screening.</td><td>$500–$2,000/month (diapers, formula/breastfeeding supplies, childcare if working)</td><td>Baby sleep deprivation: −2 to INT checks, −1 to all other checks. Postpartum depression: 10–15% chance (roll <span class="dice">1d100</span> ≤ 15 at week 4).</td></tr>
-</tbody>
-</table>
+<!-- PH2-20: Pregnancy timeline SVG -->
+<div class="section-illustration">
+  <img src="img/sh_pregnancy_timeline.svg" alt="Pregnancy journey timeline showing 5 phases from Trimester 1 through Postpartum with VIG, SP, cost, and mechanical effects for each phase">
+</div>
+
+<!-- PH1-18: Trimester system → condition-track -->
+<div class="condition-track">
+  <div class="condition-step healthy">🌱 <strong>Trimester 1</strong><br><small>Wk 1–12 · −1 VIG<br>+2 SP · $100–$500<br>Morning sickness, DXT −2</small></div>
+  <div class="condition-step tired">🌿 <strong>Trimester 2</strong><br><small>Wk 13–26 · VIG normal<br>+1 SP/wk · $200–$500/mo<br>"Golden trimester"</small></div>
+  <div class="condition-step sick">🌳 <strong>Trimester 3</strong><br><small>Wk 27–40 · −2 VIG<br>+2 SP/wk · $500–$2,000/mo<br>DXT −2, EXP TN 10</small></div>
+  <div class="condition-step injured">👶 <strong>Birth</strong><br><small>1–3 days · VIG TN 12<br>+5 SP · $3,000–$15,000<br>Complications possible</small></div>
+  <div class="condition-step critical">🌙 <strong>Postpartum</strong><br><small>6 wk–1 yr · −1 VIG<br>+2 SP/wk × 3mo<br>−2 INT, −1 all checks</small></div>
+</div>
+
+<div class="section-illustration">
+  <img src="img/sh_postpartum_morning.png" alt="An exhausted but happy new parent holding a sleeping newborn in early morning light, capturing the real postpartum experience of fatigue and love">
 </div>
 
 <h3>4.3 Prenatal Care</h3>
 
 <p>Regular prenatal care reduces complications. Characters who skip prenatal visits face escalating risks:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Care Level</th><th>Visits</th><th>Complication Risk</th><th>Cost</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>🟢 <strong>Full care</strong></td><td>12–14 visits</td><td>5%</td><td>$2,000–$5,000 total</td><td>Standard of care. Monitors mother and baby health.</td></tr>
-<tr><td>🟡 <strong>Partial care</strong></td><td>4–6 visits</td><td>15%</td><td>$500–$1,500 total</td><td>Some issues missed. Higher risk of complications going undetected.</td></tr>
-<tr><td>🔴 <strong>No care</strong></td><td>0 visits</td><td>30%</td><td>$0</td><td>Significant risk. Complications can be life-threatening for mother and baby.</td></tr>
-</tbody>
-</table>
+<!-- PH1-19: Prenatal care → tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">🟢</span><span class="tn-label"><strong>Full Care</strong> — 12–14 visits. Complication risk: <strong>5%</strong>. Cost: $2,000–$5,000 total. Standard of care.</span></div>
+  <div class="tn-step medium"><span class="tn-value">🟡</span><span class="tn-label"><strong>Partial Care</strong> — 4–6 visits. Complication risk: <strong>15%</strong>. Cost: $500–$1,500 total. Some issues missed.</span></div>
+  <div class="tn-step hard"><span class="tn-value">🔴</span><span class="tn-label"><strong>No Care</strong> — 0 visits. Complication risk: <strong>30%</strong>. Cost: $0. Life-threatening risk for mother and baby.</span></div>
 </div>
 
 <p><strong>Complication resolution:</strong> At the end of each trimester, if the character's care level indicates a complication risk, roll <span class="dice">1d100</span>. If ≤ the risk percentage, a complication occurs. The GM selects from: gestational diabetes (+1 SP/week, dietary restrictions), preeclampsia (−2 VIG, hospitalization, +5 SP), preterm labor (baby born early, NICU costs $5,000–$50,000), or miscarriage (see below).</p>
@@ -452,16 +489,17 @@
 
 <p>Each menstrual cycle lasts 21–35 days (GM or player picks a number; 28 is average). The cycle has four phases with different mechanical effects:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Phase</th><th>Days</th><th>VIG Effect</th><th>SP Effect</th><th>Other Effects</th></tr></thead>
-<tbody>
-<tr><td>🌙 <strong>Menstruation</strong> (period)</td><td>1–5</td><td>−1 VIG (cramps, fatigue, blood loss)</td><td>+1 SP (discomfort, inconvenience)</td><td>Requires menstrual products. Heavy days (1–2): DXT checks −1 (cramps affect fine motor control).</td></tr>
-<tr><td>🌱 <strong>Follicular</strong></td><td>6–14</td><td>Normal (energy increasing)</td><td>Normal</td><td>Fertility window begins around day 10. Energy and mood generally good.</td></tr>
-<tr><td>🌻 <strong>Ovulation</strong></td><td>14–16</td><td>Normal or +1 VIG (hormonal energy boost)</td><td>Normal or −1 SP (mood boost for some)</td><td>Peak fertility. Some characters experience ovulation pain (mittelschmerz): +1 SP for 1 day.</td></tr>
-<tr><td>🍂 <strong>Luteal</strong> (pre-period)</td><td>17–28</td><td>Normal early, −1 VIG in final 3 days</td><td>+2 SP in final 3 days (PMS: irritability, anxiety, mood swings)</td><td>PMS affects social interactions: EXP checks −2 during last 3 days. Food cravings: may increase food costs by $5–$15/week.</td></tr>
-</tbody>
-</table>
+<!-- PH2-26: Menstrual cycle diagram SVG -->
+<div class="section-illustration">
+  <img src="img/sh_cycle_diagram.svg" alt="Circular menstrual cycle diagram showing 4 phases: Menstruation, Follicular, Ovulation, Luteal/PMS, with VIG and SP modifiers for each phase">
+</div>
+
+<!-- PH1-24: Cycle phases → condition-track -->
+<div class="condition-track">
+  <div class="condition-step sick">🌙 <strong>Menstruation</strong><br><small>Days 1–5 · −1 VIG<br>+1 SP · DXT −1 (heavy days)<br>Requires products</small></div>
+  <div class="condition-step healthy">🌱 <strong>Follicular</strong><br><small>Days 6–14 · VIG normal<br>SP normal · Energy rising<br>Fertility begins ~day 10</small></div>
+  <div class="condition-step healthy">🌻 <strong>Ovulation</strong><br><small>Days 14–16 · +1 VIG<br>−1 SP (mood boost)<br>Peak fertility · Mittelschmerz</small></div>
+  <div class="condition-step injured">🍂 <strong>Luteal (PMS)</strong><br><small>Days 17–28 · −1 VIG final 3d<br>+2 SP final 3d · EXP −2<br>Food cravings +$5–$15/wk</small></div>
 </div>
 
 <h3>5.2 Period Tracking</h3>
@@ -478,15 +516,16 @@
 
 <p>Menstrual characters need supplies. Running out mid-period has real consequences:</p>
 
+<!-- PH1-25: Supply comparison emoji coding -->
 <div class="table-wrap">
 <table>
-<thead><tr><th>Product</th><th>Cost per Cycle</th><th>Duration</th><th>Comfort Level</th><th>Notes</th></tr></thead>
+<thead><tr><th>Product</th><th>Cost/Cycle</th><th>Duration</th><th>Comfort</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>🩸 <strong>Pads</strong></td><td>$3–$8</td><td>3–8 hours each</td><td>Basic</td><td>Readily available. Bulky. Leak risk if not changed on time.</td></tr>
-<tr><td>🩸 <strong>Tampons</strong></td><td>$3–$10</td><td>4–8 hours each</td><td>Good</td><td>More freedom of movement. TSS risk if left in &gt;8 hours (rare but serious: roll <span class="dice">1d100</span>, on 99–100 = TSS, −3 VIG, emergency care).</td></tr>
-<tr><td>🩸 <strong>Cups</strong></td><td>$0.50/cycle (one-time $25–$40)</td><td>Up to 12 hours</td><td>Best</td><td>Most cost-effective long-term. Initial learning curve: DXT check (TN 8) to insert correctly.</td></tr>
-<tr><td>🩸 <strong>Period underwear</strong></td><td>$0.75/cycle (one-time $30–$50 per pair)</td><td>8–12 hours</td><td>Best</td><td>Comfortable. Can be used alone for light flow or with other products for heavy flow.</td></tr>
-<tr><td>🩸 <strong>Menstrual disc</strong></td><td>$0.50/cycle (one-time $25–$35)</td><td>Up to 12 hours</td><td>Best</td><td>Similar to cup but sits differently. Learning curve applies.</td></tr>
+<tr><td>🩸 <strong>Pads</strong></td><td>$3–$8</td><td>3–8 hrs</td><td>🟠 Basic</td><td>Readily available. Bulky. Leak risk if not changed.</td></tr>
+<tr><td>🩸 <strong>Tampons</strong></td><td>$3–$10</td><td>4–8 hrs</td><td>🟡 Good</td><td>More freedom. TSS risk if &gt;8 hrs (rare: 1d100, 99–100 = TSS, −3 VIG).</td></tr>
+<tr><td>🩸 <strong>Cups</strong></td><td>$0.50 (one-time $25–$40)</td><td>Up to 12 hrs</td><td>🟢 Best</td><td>Most cost-effective. Learning: DXT TN 8 to insert.</td></tr>
+<tr><td>🩸 <strong>Period underwear</strong></td><td>$0.75 (one-time $30–$50)</td><td>8–12 hrs</td><td>🟢 Best</td><td>Comfortable. Alone for light flow; combo for heavy.</td></tr>
+<tr><td>🩸 <strong>Menstrual disc</strong></td><td>$0.50 (one-time $25–$35)</td><td>Up to 12 hrs</td><td>🟢 Best</td><td>Similar to cup, sits differently. Learning curve.</td></tr>
 </tbody>
 </table>
 </div>
@@ -497,6 +536,10 @@
 
 <h3>5.4 Endometriosis</h3>
 
+<div class="section-illustration">
+  <img src="img/sh_endo_heatmap.svg" alt="Endometriosis monthly pain calendar heatmap showing approximately 16 of 28 days affected, with severity from green (normal) through red (severe)">
+</div>
+
 <p>Endometriosis is a severe chronic condition affecting ~10% of menstruating people. It occurs when tissue similar to the uterine lining grows outside the uterus, causing severe pain, infertility, and organ damage.</p>
 
 <div class="table-wrap">
@@ -506,17 +549,22 @@
 <tr><td><strong>VIG</strong></td><td>−2 VIG during period (severe cramps). −1 VIG during luteal phase.</td></tr>
 <tr><td><strong>SP</strong></td><td>+3 SP during period. +1 SP during luteal phase. Chronic pain: +1 SP/week baseline.</td></tr>
 <tr><td><strong>Time</strong></td><td>Periods may last 7–10 days. Character may be bedridden 2–4 days per cycle.</td></tr>
-<tr><td><strong>Pain</strong></td><td>Pain is not just during menstruation. Chronic pelvic pain: DXT checks −1, INT checks −1 on bad days (2–3 days/week outside period).</td></tr>
+<tr><td><strong>Pain</strong></td><td>Chronic pelvic pain: DXT −1, INT −1 on bad days (2–3 days/wk outside period).</td></tr>
 <tr><td><strong>Fertility</strong></td><td>Conception chance reduced by 40–60%. See fertility issues table above.</td></tr>
-<tr><td><strong>Treatment</strong></td><td>Hormonal therapy ($50–$300/month), pain medication, or surgery ($5,000–$25,000). Surgery may provide 6–24 months of relief before symptoms return.</td></tr>
-<tr><td><strong>Diagnosis delay</strong></td><td>Average diagnosis takes 7–10 years of symptoms. INT check (TN 12) each year to advocate for proper diagnosis. Many characters suffer for years before being believed.</td></tr>
+<tr><td><strong>Treatment</strong></td><td>Hormonal therapy ($50–$300/mo), pain meds, or surgery ($5,000–$25,000). Surgery: 6–24 mo relief before return.</td></tr>
+<tr><td><strong>Diagnosis delay</strong></td><td>Average 7–10 years of symptoms. INT TN 12 each year to advocate for proper diagnosis. Many suffer for years before being believed.</td></tr>
 </tbody>
 </table>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">🎲 Example: Priya's Endometriosis</div>
-  <p>Priya has undiagnosed endometriosis. Each cycle: her period lasts 9 days. Days 1–4 she's at −2 VIG and +3 SP, often staying home (losing work/school time). Days 5–9 she's at −1 VIG and +1 SP. During the luteal phase (7 days before her period), she's at −1 VIG and +1 SP. That means roughly <strong>16 days per month</strong> she's operating at a penalty. Her annual menstrual product cost is $60 (she uses pads and heating pads). She's been telling doctors about her pain for 3 years. Each year she rolls <span class="dice">2d10 + INT mod</span> against TN 12 to be taken seriously. With INT 5 (mod 0), she's rolled failures all three years. The fourth year she rolls a 9 and a 5 = 14. <strong>Breakthrough!</strong> A new doctor orders an MRI and refers her to a specialist. Surgery is scheduled: $15,000, but her insurance covers 80%. Out-of-pocket: $3,000.</p>
+<div class="section-illustration-right">
+  <img src="img/sh_priya_endo_morning.png" alt="Priya sitting on edge of her bed in the morning, hand on stomach, heating pad beside her, looking fatigued but dignified">
+  <div class="illust-text">
+  <div class="callout example">
+    <div class="callout-title">🎲 Example: Priya's Endometriosis</div>
+    <p>Priya has undiagnosed endometriosis. Each cycle: her period lasts 9 days. Days 1–4 she's at −2 VIG and +3 SP, often staying home (losing work/school time). Days 5–9 she's at −1 VIG and +1 SP. During the luteal phase (7 days before her period), she's at −1 VIG and +1 SP. That means roughly <strong>16 days per month</strong> she's operating at a penalty. Her annual menstrual product cost is $60 (she uses pads and heating pads). She's been telling doctors about her pain for 3 years. Each year she rolls <span class="dice">2d10 + INT mod</span> against TN 12 to be taken seriously. With INT 5 (mod 0), she's rolled failures all three years. The fourth year she rolls a 9 and a 5 = 14. <strong>Breakthrough!</strong> A new doctor orders an MRI and refers her to a specialist. Surgery is scheduled: $15,000, but her insurance covers 80%. Out-of-pocket: $3,000.</p>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================ -->
@@ -532,13 +580,14 @@
 
 <p>Before any trauma-related content, the table must establish:</p>
 
-<ul>
-<li><strong>Lines:</strong> Topics that will not appear at all. If "sexual assault" is a Line, it never happens to any character, PC or NPC.</li>
-<li><strong>Veils:</strong> Topics that may happen but are never described. If "sexual assault" is a Veil, it may be referenced as backstory but is never depicted at the table.</li>
-<li><strong>Safety word:</strong> An immediate stop signal that requires no explanation.</li>
-<li><strong>Aftercare plan:</strong> How the table checks in with players after heavy content. This may include a break, a check-in question, or a scene shift.</li>
-<li><strong>Player override:</strong> Any player can change a Line or Veil at any time, for any reason, with no justification required.</li>
-</ul>
+<!-- PH1-30: Safety tools → card-grid -->
+<div class="card-grid">
+  <div class="card"><span class="card-icon">🚫</span><h3>Lines</h3><p>Topics that will NOT appear at all. If "sexual assault" is a Line, it never happens to any character, PC or NPC.</p></div>
+  <div class="card"><span class="card-icon">🌫️</span><h3>Veils</h3><p>Topics that may happen but are never described. Referenced as backstory but never depicted at the table.</p></div>
+  <div class="card"><span class="card-icon">🚦</span><h3>Safety Word</h3><p>An immediate stop signal (red/yellow/green) requiring no explanation from any player at any time.</p></div>
+  <div class="card"><span class="card-icon">🤝</span><h3>Aftercare Plan</h3><p>How the table checks in after heavy content: a break, a check-in question, or a scene shift.</p></div>
+  <div class="card"><span class="card-icon">👤</span><h3>Player Override</h3><p>Any player can change a Line or Veil at any time, for any reason, with no justification required.</p></div>
+</div>
 
 <h3>6.2 Trauma as a Pre-Existing Condition</h3>
 
@@ -548,10 +597,10 @@
 <table>
 <thead><tr><th>Mechanic</th><th>Effect</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td><strong>Trigger</strong></td><td>Character has a Trigger related to the trauma (see <a href="mental-health.html">Mental Health page</a>). Common triggers: being touched unexpectedly, certain locations, authority figures, specific smells/sounds.</td><td>When triggered: +3 SP immediately. RES check (TN 12) or gain an Episode.</td></tr>
-<tr><td><strong>Baseline SP increase</strong></td><td>Character starts at +2 SP each week from hypervigilance and emotional carry.</td><td>This is not a penalty — it reflects the real cost of carrying trauma. It can be reduced through treatment.</td></tr>
-<tr><td><strong>Relationship effects</strong></td><td>Intimacy with romantic partners: each intimate encounter carries a risk of triggering. Roll <span class="dice">1d100</span> at each sexual intimacy. On 1–15: trigger activated. This chance decreases with treatment and trust.</td><td>The character is not "broken" — this reflects realistic trauma response. Safe relationships can reduce this chance significantly.</td></tr>
-<tr><td><strong>Hypervigilance bonus</strong></td><td>Character has heightened awareness of danger. +2 to EXP checks to detect threats or read dangerous situations.</td><td>Trauma survivors often develop real protective skills. This is a strength, not just a weakness.</td></tr>
+<tr><td><strong>Trigger</strong></td><td>Character has a Trigger related to the trauma. Common: unexpected touch, certain locations, authority figures, specific smells/sounds.</td><td>When triggered: +3 SP. RES TN 12 or gain an Episode.</td></tr>
+<tr><td><strong>Baseline SP increase</strong></td><td>+2 SP each week from hypervigilance and emotional carry.</td><td>Not a penalty — reflects real cost of carrying trauma. Reduced through treatment.</td></tr>
+<tr><td><strong>Relationship effects</strong></td><td>Each intimate encounter: 1d100, on 1–15 = trigger activated. Decreases with treatment and trust.</td><td>The character is not "broken" — reflects realistic trauma response. Safe relationships reduce this chance.</td></tr>
+<tr><td><strong>Hypervigilance bonus</strong></td><td>+2 to EXP checks to detect threats or read dangerous situations.</td><td>Trauma survivors develop real protective skills. This is a strength, not just a weakness.</td></tr>
 </tbody>
 </table>
 </div>
@@ -562,29 +611,34 @@
 
 <h4>Therapy Track</h4>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Phase</th><th>Duration</th><th>Check</th><th>Effect on Success</th><th>Effect on Failure</th></tr></thead>
-<tbody>
-<tr><td><strong>Stabilization</strong></td><td>1–3 months</td><td>RES check (TN 10) per therapy session (weekly)</td><td>Baseline SP reduced by 1. Trigger frequency decreases.</td><td>+2 SP that session. Session may need to be paused.</td></tr>
-<tr><td><strong>Processing</strong></td><td>3–12 months</td><td>RES check (TN 12) per session</td><td>Baseline SP reduced by another 1. Triggers become less severe (+3 SP → +2 SP).</td><td>Setback: +3 SP. May need to revisit Stabilization for 2–4 weeks.</td></tr>
-<tr><td><strong>Integration</strong></td><td>6–24 months</td><td>RES check (TN 14) per session (biweekly, then monthly)</td><td>Baseline SP eliminated. Triggers reduced to +1 SP. Character regains full intimacy capacity.</td><td>Temporary setback: +2 SP for that week. Normal part of recovery.</td></tr>
-<tr><td><strong>Post-Traumatic Growth</strong></td><td>Ongoing</td><td>No regular checks. Life events may still trigger, but character has tools.</td><td>Character has developed resilience. −1 to TN on all future RES checks. May help others (mentor role).</td><td>N/A — character has integrated the experience.</td></tr>
-</tbody>
-</table>
+<!-- PH2-31: Recovery arc SVG -->
+<div class="section-illustration">
+  <img src="img/sh_recovery_arc.svg" alt="Recovery arc chart showing nonlinear healing progress over 24 months with setbacks at months 2, 6, and 15, progressing through Stabilization, Processing, Integration, and Post-Traumatic Growth phases">
 </div>
 
-<p><strong>Therapy cost:</strong> $50–$200 per session without insurance; $0–$50 with insurance. Finding a trauma-specialized therapist: INT check (TN 10). Waitlists are real — 1–6 months before first session is common.</p>
+<!-- PH1-29: Therapy track → tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">TN 10</span><span class="tn-label"><strong>Stabilization</strong> (1–3 mo, weekly) — Success: Baseline SP −1, trigger freq ↓. Failure: +2 SP, session may pause.</span></div>
+  <div class="tn-step medium"><span class="tn-value">TN 12</span><span class="tn-label"><strong>Processing</strong> (3–12 mo, weekly) — Success: Baseline SP −1 more, triggers +3→+2. Failure: +3 SP, revisit Stabilization 2–4 wks.</span></div>
+  <div class="tn-step hard"><span class="tn-value">TN 14</span><span class="tn-label"><strong>Integration</strong> (6–24 mo, biweekly→monthly) — Success: Baseline SP eliminated, triggers +1 SP, full intimacy capacity. Failure: +2 SP that week — normal.</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">✅</span><span class="tn-label"><strong>Post-Traumatic Growth</strong> (ongoing) — No regular checks. −1 to TN on all future RES. May mentor others. Character has integrated the experience.</span></div>
+</div>
+
+<p><strong>Therapy cost:</strong> $50–$200/session without insurance; $0–$50 with insurance. Finding a trauma-specialized therapist: INT check (TN 10). Waitlists are real — 1–6 months before first session is common.</p>
 
 <h4>Support Systems</h4>
+
+<div class="section-illustration">
+  <img src="img/sh_support_network.svg" alt="Support systems network diagram showing recovering character connected to therapist, support group, medication, crisis hotline, and trusted friend/partner">
+</div>
 
 <p>Recovery is faster and more stable with strong support:</p>
 
 <ul>
-<li><strong>Trusted friend/partner:</strong> −1 to TN on all therapy checks. Relationship satisfaction with this person must be ≥ 7.</li>
+<li><strong>Trusted friend/partner:</strong> −1 to TN on all therapy checks. Relationship satisfaction ≥ 7.</li>
 <li><strong>Support group:</strong> −2 to TN on therapy checks. Finding a group: INT check (TN 8).</li>
-<li><strong>Medication (for comorbid depression/anxiety):</strong> −1 to TN on RES checks. $0–$100/month. Side effects possible: VIG check (TN 6) monthly.</li>
-<li><strong>Crisis hotline:</strong> Available at any time. Immediate −2 SP. Free. Can be used once per week for mechanical effect.</li>
+<li><strong>Medication (for comorbid depression/anxiety):</strong> −1 to TN on RES checks. $0–$100/month. Side effects: VIG TN 6 monthly.</li>
+<li><strong>Crisis hotline:</strong> Available anytime. Immediate −2 SP. Free. Once/week mechanical effect.</li>
 </ul>
 
 <h4>Setbacks</h4>
@@ -593,17 +647,21 @@
 
 <ul>
 <li><strong>Anniversary reactions:</strong> On the anniversary of the trauma, +3 SP automatically. RES check (TN 10) to manage.</li>
-<li><strong>Unexpected triggers:</strong> Random encounters may trigger responses. Roll <span class="dice">1d100</span> per month. On 1–10: unexpected trigger. +2 SP. RES check (TN 10) to self-regulate.</li>
+<li><strong>Unexpected triggers:</strong> Roll <span class="dice">1d100</span> per month. On 1–10: unexpected trigger. +2 SP. RES TN 10 to self-regulate.</li>
 <li><strong>Relationship stress:</strong> If a close relationship ends poorly during recovery, all therapy progress resets one phase back.</li>
 </ul>
+
+<div class="section-illustration">
+  <img src="img/sh_jordan_crisis_center.png" alt="Jordan volunteering at a crisis center, having a supportive conversation — showing post-traumatic growth from survivor to mentor">
+</div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example: Recovery Arc — Jordan</div>
   <p>Jordan (RES 8, INT 6) experienced sexual assault 2 years before the campaign. The player chose to include this backstory. Jordan has a Trigger for "being physically restrained" and starts each week at +2 SP baseline.</p>
-<p><strong>Month 1–3 (Stabilization):</strong> Jordan finds a therapist (INT check TN 10: rolls 5+4=9, failure — takes 3 months to get an appointment). Each weekly session: RES check TN 10. Jordan succeeds 4 out of 12 sessions. By month 3, baseline SP drops from +2 to +1.</p>
-<p><strong>Month 4–8 (Processing):</strong> RES checks at TN 12. Jordan succeeds 6 out of 20 sessions. Setback in month 6 (anniversary reaction: +3 SP, but Jordan uses a crisis hotline for −2 SP, net +1). By month 8, triggers reduced to +2 SP.</p>
-<p><strong>Month 9–14 (Integration):</strong> Sessions now biweekly. RES checks at TN 14. Jordan's supportive partner provides −1 to TN. Succeeds 8 out of 26 sessions. Baseline SP eliminated. Triggers now only +1 SP. Jordan can engage in intimacy without fear of triggering.</p>
-<p><strong>Month 15+ (Post-Traumatic Growth):</strong> Jordan has integrated the experience. Gains −1 to all future RES checks. Starts volunteering at a crisis center (mentor role). The trauma is part of Jordan's story but no longer defines it.</p>
+  <p><strong>Month 1–3 (Stabilization):</strong> Jordan finds a therapist (INT TN 10: rolls 5+4=9, failure — takes 3 months to get an appointment). Each weekly session: RES TN 10. Jordan succeeds 4 out of 12 sessions. By month 3, baseline SP drops from +2 to +1.</p>
+  <p><strong>Month 4–8 (Processing):</strong> RES TN 12. Jordan succeeds 6 out of 20 sessions. Setback in month 6 (anniversary: +3 SP, but uses crisis hotline for −2 SP, net +1). By month 8, triggers reduced to +2 SP.</p>
+  <p><strong>Month 9–14 (Integration):</strong> Sessions now biweekly. RES TN 14. Jordan's supportive partner provides −1 to TN. Succeeds 8 out of 26 sessions. Baseline SP eliminated. Triggers now only +1 SP. Jordan can engage in intimacy without fear of triggering.</p>
+  <p><strong>Month 15+ (Post-Traumatic Growth):</strong> Jordan has integrated the experience. Gains −1 to all future RES checks. Starts volunteering at a crisis center (mentor role). The trauma is part of Jordan's story but no longer defines it.</p>
 </div>
 
 <div class="callout tip">
@@ -616,18 +674,14 @@
 
 <h3>Attribute Summary for This Chapter</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Attribute</th><th>Used In</th></tr></thead>
-<tbody>
-<tr><td><strong>VIG</strong> (Vigor)</td><td>Pregnancy effects, cramps, physical stamina during intimate activities, sexual function, birth endurance</td></tr>
-<tr><td><strong>INT</strong> (Intelligence)</td><td>Finding healthcare providers, navigating medical systems, understanding test results, locating resources</td></tr>
-<tr><td><strong>EXP</strong> (Experience)</td><td>Coming out conversations, relationship navigation, therapy effectiveness, reading social situations around identity</td></tr>
-<tr><td><strong>DXT</strong> (Dexterity)</td><td>Physical comfort during intimacy, menstrual product management, balance during pregnancy</td></tr>
-<tr><td><strong>RES</strong> (Resilience)</td><td>Minority stress resistance, emotional processing, therapy progress, trauma recovery, aftercare</td></tr>
-<tr><td><strong>PRC</strong> (Precision)</td><td>Cycle tracking accuracy, contraception management consistency, medical adherence</td></tr>
-</tbody>
-</table>
+<!-- PH1-34: Attribute summary → card-grid -->
+<div class="card-grid">
+  <div class="card"><span class="card-icon">💪</span><h3>VIG</h3><p>Pregnancy effects, cramps, physical stamina, sexual function, birth endurance</p></div>
+  <div class="card"><span class="card-icon">🧠</span><h3>INT</h3><p>Finding providers, navigating medical systems, understanding results, locating resources</p></div>
+  <div class="card"><span class="card-icon">🎭</span><h3>EXP</h3><p>Coming out conversations, relationship navigation, therapy effectiveness, reading social situations</p></div>
+  <div class="card"><span class="card-icon">🤸</span><h3>DXT</h3><p>Physical comfort during intimacy, menstrual product management, balance during pregnancy</p></div>
+  <div class="card"><span class="card-icon">🛡️</span><h3>RES</h3><p>Minority stress resistance, emotional processing, therapy progress, trauma recovery, aftercare</p></div>
+  <div class="card"><span class="card-icon">🎯</span><h3>PRC</h3><p>Cycle tracking accuracy, contraception consistency, medical adherence</p></div>
 </div>
 
 <h3>Safety Tools Summary</h3>

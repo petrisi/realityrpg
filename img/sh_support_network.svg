@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 660" width="640" height="660">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555"/>
+    </marker>
+    <marker id="arrowhead-thick" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#555"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.18"/>
+    </filter>
+    <radialGradient id="centerGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#a569bd"/>
+      <stop offset="100%" stop-color="#8e44ad"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="660" rx="12" fill="#faf9fc"/>
+
+  <!-- Title -->
+  <text x="320" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">Support Systems for Recovery</text>
+  <text x="320" y="56" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#7f8c8d">Recovery is faster and more stable with strong support</text>
+
+  <!-- Center: 320, 350. Radius 55. Circle edges: top=295, bottom=405, left=265, right=375 -->
+
+  <!-- === CONNECTIONS (arrows from center circle edge to node circle edge, 5px gap) === -->
+
+  <!-- 1. Therapist — top (320, 120) r=55 -->
+  <line x1="320" y1="290" x2="320" y2="180" stroke="#555" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+  <rect x="273" y="215" width="94" height="20" rx="4" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+  <text x="320" y="229" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#333">−1 to TN (if trusted)</text>
+
+  <!-- 2. Support Group — upper-right (495, 165) r=51 -->
+  <line x1="361" y1="306" x2="457" y2="206" stroke="#555" stroke-width="4.5" stroke-linecap="round" marker-end="url(#arrowhead-thick)"/>
+  <rect x="386" y="254" width="72" height="20" rx="4" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+  <text x="422" y="268" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c0392b">−2 to TN</text>
+
+  <!-- 3. Medication — lower-right (495, 495) r=45 -->
+  <line x1="366" y1="388" x2="456" y2="463" stroke="#555" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+  <rect x="418" y="420" width="110" height="20" rx="4" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+  <text x="473" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#333">−1 to TN (RES checks)</text>
+
+  <!-- 4. Crisis Hotline — lower-left (105, 495) r=45 -->
+  <line x1="270" y1="384" x2="146" y2="467" stroke="#555" stroke-width="4.5" stroke-linecap="round" marker-end="url(#arrowhead-thick)"/>
+  <rect x="140" y="420" width="110" height="20" rx="4" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+  <text x="195" y="434" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#c0392b">Immediate −2 SP</text>
+
+  <!-- 5. Trusted Friend — upper-left (105, 165) r=55 -->
+  <line x1="275" y1="311" x2="150" y2="204" stroke="#555" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+  <rect x="190" y="230" width="68" height="20" rx="4" fill="#fff" stroke="#ccc" stroke-width="0.5"/>
+  <text x="224" y="244" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#333">−1 to TN</text>
+
+
+  <!-- === CENTER NODE === -->
+  <circle cx="320" cy="350" r="55" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <!-- Character silhouette -->
+  <circle cx="320" cy="328" r="12" fill="#fff" opacity="0.9"/>
+  <path d="M300,372 Q300,348 320,346 Q340,348 340,372" fill="#fff" opacity="0.9"/>
+  <text x="320" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#2c3e50">Recovering Character</text>
+
+
+  <!-- === NODE 1: Therapist — top (320, 120), r=55, teal === -->
+  <circle cx="320" cy="120" r="55" fill="#1abc9c" filter="url(#shadow)"/>
+  <text x="320" y="115" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">👩‍⚕️</text>
+  <text x="320" y="135" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Therapist</text>
+
+
+  <!-- === NODE 2: Support Group — upper-right (495, 165), r=51, blue === -->
+  <circle cx="495" cy="165" r="51" fill="#3498db" filter="url(#shadow)"/>
+  <text x="495" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20">👥</text>
+  <text x="495" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Support</text>
+  <text x="495" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Group</text>
+  <!-- Sub-label — below node -->
+  <rect x="442" y="228" width="96" height="22" rx="4" fill="#ebf5fb" stroke="#3498db" stroke-width="0.5"/>
+  <text x="490" y="243" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#2471a3">INT TN 8 to find</text>
+
+
+  <!-- === NODE 3: Medication — lower-right (495, 495), r=45, purple === -->
+  <circle cx="495" cy="495" r="45" fill="#9b59b6" filter="url(#shadow)"/>
+  <text x="495" y="492" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">💊</text>
+  <text x="495" y="508" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Medication</text>
+  <!-- Sub-label -->
+  <rect x="428" y="549" width="120" height="22" rx="4" fill="#f5eef8" stroke="#9b59b6" stroke-width="0.5"/>
+  <text x="488" y="564" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#7d3c98">$0–$100/mo · VIG TN 6</text>
+
+
+  <!-- === NODE 4: Crisis Hotline — lower-left (105, 495), r=45, green === -->
+  <circle cx="105" cy="495" r="45" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="105" y="492" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">📞</text>
+  <text x="105" y="508" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Crisis</text>
+  <text x="105" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Hotline</text>
+  <!-- Sub-label -->
+  <rect x="46" y="549" width="108" height="22" rx="4" fill="#eafaf1" stroke="#27ae60" stroke-width="0.5"/>
+  <text x="100" y="564" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#1e8449">Free · Once/week</text>
+
+
+  <!-- === NODE 5: Trusted Friend — upper-left (105, 165), r=55, rose === -->
+  <circle cx="105" cy="165" r="55" fill="#e67e22" filter="url(#shadow)"/>
+  <text x="105" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">🤝</text>
+  <text x="105" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Trusted</text>
+  <text x="105" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fff">Friend/Partner</text>
+  <!-- Sub-label — below node -->
+  <rect x="40" y="228" width="120" height="22" rx="4" fill="#fdf2e9" stroke="#e67e22" stroke-width="0.5"/>
+  <text x="100" y="243" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b9770e">Satisfaction ≥ 7 required</text>
+</svg>

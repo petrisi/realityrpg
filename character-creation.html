@@ -16,6 +16,14 @@
 <h1>👤 Character Creation</h1>
 <p>In Reality RPG, creating a character means creating a <em>person</em> — with all the complexity, privilege, disadvantage, culture, and history that entails. There are no "races" or "classes." There is only the messy, beautiful reality of human diversity.</p>
 
+<!-- CREATION FLOWCHART: 9-step visual overview -->
+<div class="section-illustration">
+  <img src="img/cc_creation_flowchart.svg"
+       alt="Character creation flowchart showing 9 steps: Age & Budget → Attributes → Ethnicity → Culture & Class → Personality Traits → Mental Health → Starting Inventory → Name & Story → Complete Walkthrough"
+       style="max-width:900px; width:100%;"
+       loading="eager">
+</div>
+
 <h2>Step 1: Age and Starting Point</h2>
 <p>Choose your character's age. Most campaigns start characters at <strong>18–25</strong> (beginning adult life) or <strong>30–45</strong> (established but facing midlife challenges). The GM may set a specific starting age for the campaign.</p>
 <p>Age determines three things: your <strong>total point budget</strong> (older characters get more points for accumulated experience), your <strong>starting resources</strong>, and your <strong>life stage narrative context</strong>.</p>
@@ -62,6 +70,14 @@
 
 <h3>2.1 The Cost Curve</h3>
 <p>Attributes use a <strong>progressive cost curve</strong>. Average scores are cheap; exceptional scores cost more. This lets you have one or two standout abilities without breaking your budget. The score <strong>8</strong> is the human average (modifier +1) and costs <strong>5 points</strong>. Going below 8 <em>refunds</em> points; going above 8 costs increasingly more.</p>
+
+<!-- COST CURVE GRAPH -->
+<div class="section-illustration">
+  <img src="img/cc_cost_curve.svg"
+       alt="Attribute point buy cost curve graph showing scores 3 through 15 on the X axis and point cost from negative 5 to 25 on the Y axis. Score 8 (the human average) is highlighted with a dashed line. The refund zone below 8 is green-tinted, the premium zone above 8 is orange-tinted."
+       style="max-width:700px; width:100%;"
+       loading="lazy">
+</div>
 
 <div class="table-wrap">
 <table>
@@ -115,7 +131,14 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Build A: Marcus — Construction Foreman, 34</div>
-  <p><strong>Budget: 140 points</strong> (age 30–44). A physically capable, socially skilled worker with average mental stats and low presence. Hard body, soft mind, good with people.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:1em;">
+    <img src="img/char_marcus.png"
+         alt="Marcus Johnson, Construction Foreman"
+         style="width:90px; height:90px; object-fit:cover; border-radius:6px; flex-shrink:0; box-shadow:var(--shadow-sm);">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Budget: 140 points</strong> (age 30–44). A physically capable, socially skilled worker with average mental stats and low presence. Hard body, soft mind, good with people.</p>
+    </div>
+  </div>
   <div class="table-wrap">
   <table>
   <thead><tr><th>Attribute</th><th>Score</th><th>Mod</th><th>Cost</th><th>Rationale</th></tr></thead>
@@ -129,6 +152,34 @@
   <tr><td colspan="3"><strong>Attribute Total</strong></td><td><strong>59</strong></td><td></td></tr>
   </tbody>
   </table>
+  </div>
+  <!-- MARCUS STAT BARS -->
+  <div style="margin:1em 0;">
+    <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.5em;">Marcus's Attribute Profile</p>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🏋️ Vigor</span><span>14 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:70%; background:#e67e22;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🧠 Intellect</span><span>8 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:40%; background:#2980b9;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>💬 Expression</span><span>12 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:60%; background:#8e44ad;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🎯 Dexterity</span><span>11 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:55%; background:#27ae60;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🛡️ Resolve</span><span>11 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:55%; background:#f39c12;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>✨ Presence</span><span>6 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:30%; background:#95a5a6;"></div></div>
+    </div>
   </div>
   <p><strong>140 − 59 = 81 points remaining.</strong> Advantages/Disadvantages: Athletic (+3), People Person (+3), Resilient (+3), Bad with Money (−3 refund), Poor Sleeper (−3 refund) = <strong>6 net points</strong>. <strong>81 − 6 = 75 points</strong> for skills (each +1 level costs 5 points):</p>
   <div class="table-wrap">
@@ -150,7 +201,14 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Build B: Mei — Software Engineering Intern, 23</div>
-  <p><strong>Budget: 120 points</strong> (age 22–29). A brilliant but anxious young woman — high intellect, low physical presence, fragile emotional regulation.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:1em;">
+    <img src="img/char_mei.png"
+         alt="Mei Lin Chen, Software Engineering Intern"
+         style="width:90px; height:90px; object-fit:cover; border-radius:6px; flex-shrink:0; box-shadow:var(--shadow-sm);">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Budget: 120 points</strong> (age 22–29). A brilliant but anxious young woman — high intellect, low physical presence, fragile emotional regulation.</p>
+    </div>
+  </div>
   <div class="table-wrap">
   <table>
   <thead><tr><th>Attribute</th><th>Score</th><th>Mod</th><th>Cost</th><th>Rationale</th></tr></thead>
@@ -164,6 +222,34 @@
   <tr><td colspan="3"><strong>Attribute Total</strong></td><td><strong>34</strong></td><td></td></tr>
   </tbody>
   </table>
+  </div>
+  <!-- MEI STAT BARS -->
+  <div style="margin:1em 0;">
+    <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.5em;">Mei's Attribute Profile</p>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🏋️ Vigor</span><span>7 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:35%; background:#e67e22;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🧠 Intellect</span><span>15 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:75%; background:#2980b9;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>💬 Expression</span><span>8 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:40%; background:#8e44ad;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🎯 Dexterity</span><span>8 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:40%; background:#27ae60;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🛡️ Resolve</span><span>6 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:30%; background:#f39c12;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>✨ Presence</span><span>7 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:35%; background:#95a5a6;"></div></div>
+    </div>
   </div>
   <p><strong>120 − 34 = 86 points remaining.</strong> Advantages/Disadvantages: Book Smart (+3), Disciplined (+3), Healthy Habits (+3), Shy/Socially Anxious (−3 refund), Procrastinator (−3 refund) = <strong>3 net points</strong>. <strong>86 − 3 = 83 points</strong> for skills (each +1 level costs 5 points):</p>
   <div class="table-wrap">
@@ -187,7 +273,14 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Build C: Carlos — Warehouse Worker & Student, 21</div>
-  <p><strong>Budget: 100 points</strong> (age 18–21). A scrappy underdog — decent across the board but nothing exceptional, with real strengths in people skills and physical work.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:1em;">
+    <img src="img/char_carlos.png"
+         alt="Carlos Rodriguez, Warehouse Worker & Student"
+         style="width:90px; height:90px; object-fit:cover; border-radius:6px; flex-shrink:0; box-shadow:var(--shadow-sm);">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Budget: 100 points</strong> (age 18–21). A scrappy underdog — decent across the board but nothing exceptional, with real strengths in people skills and physical work.</p>
+    </div>
+  </div>
   <div class="table-wrap">
   <table>
   <thead><tr><th>Attribute</th><th>Score</th><th>Mod</th><th>Cost</th><th>Rationale</th></tr></thead>
@@ -201,6 +294,34 @@
   <tr><td colspan="3"><strong>Attribute Total</strong></td><td><strong>40</strong></td><td></td></tr>
   </tbody>
   </table>
+  </div>
+  <!-- CARLOS STAT BARS -->
+  <div style="margin:1em 0;">
+    <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.5em;">Carlos's Attribute Profile</p>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🏋️ Vigor</span><span>10 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:50%; background:#e67e22;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🧠 Intellect</span><span>10 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:50%; background:#2980b9;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>💬 Expression</span><span>11 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:55%; background:#8e44ad;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🎯 Dexterity</span><span>7 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:35%; background:#27ae60;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🛡️ Resolve</span><span>8 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:40%; background:#f39c12;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>✨ Presence</span><span>8 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:40%; background:#95a5a6;"></div></div>
+    </div>
   </div>
   <p><strong>100 − 40 = 60 points remaining.</strong> Advantages/Disadvantages: Street Smart (+3), Resilient (+3), People Person (+3), Food Insecurity (−3 refund), Impulsive (−3 refund) = <strong>3 net points</strong>. <strong>60 − 3 = 57 points</strong> for skills (each +1 level costs 5 points):</p>
   <div class="table-wrap">
@@ -262,54 +383,62 @@
   <li><strong>Community Ties</strong> — access to ethnic community networks, support systems</li>
 </ul>
 
+<!-- HERITAGE MAP -->
+<div class="section-illustration">
+  <img src="img/cc_heritage_map.svg"
+       alt="World map highlighting heritage regions: West Africa, East Asia, South Asia, Latin America, Middle East, Indigenous Americas, and Europe — the ethnic backgrounds covered by the game"
+       style="max-width:700px; width:100%;"
+       loading="lazy">
+</div>
+
 <div class="table-wrap">
 <table>
 <thead><tr><th>Ethnic Background</th><th>Cultural Bonus</th><th>Social Modifier</th><th>Notes</th></tr></thead>
 <tbody>
 <tr>
-<td><strong>White (European American)</strong></td>
+<td><strong>⚖️ White (European American)</strong></td>
 <td>Western cultural fluency</td>
 <td>Default privilege in Western societies: −5 TN for interactions with institutions, law enforcement, employers</td>
 <td>Default assumption of belonging in Western contexts</td>
 </tr>
 <tr>
-<td><strong>Black / African American</strong></td>
+<td><strong>🚧 Black / African American</strong></td>
 <td>African diaspora cultural knowledge; code-switching skill</td>
 <td>Racism penalty: +5 TN with institutions in discriminatory contexts; +10 when dealing with law enforcement; Community bonus: −10 TN within Black communities</td>
 <td>Code-switching provides a free +1 to Communication in cross-cultural settings</td>
 </tr>
 <tr>
-<td><strong>Hispanic / Latino</strong></td>
+<td><strong>🚧 Hispanic / Latino</strong></td>
 <td>Spanish language (or indigenous language); Latin American cultural fluency</td>
 <td>Immigration profiling: +5 TN with authorities if undocumented or perceived as immigrant; Community bonus: −10 TN within Latino communities</td>
 <td>Bicultural identity provides Empathy +1 when interacting with diverse groups</td>
 </tr>
 <tr>
-<td><strong>East Asian</strong></td>
+<td><strong>🚧 East Asian</strong></td>
 <td>East Asian language; cultural traditions (filial piety, collectivism)</td>
 <td>"Model minority" stereotype: +5 TN when expressing vulnerability or needing help; Perpetual foreigner: +5 TN to "belong" even if born in the country</td>
 <td>Strong family support networks: +5 on Finance checks when family helps</td>
 </tr>
 <tr>
-<td><strong>South Asian</strong></td>
+<td><strong>🚧 South Asian</strong></td>
 <td>South Asian language; strong academic/family expectations</td>
 <td>Accent discrimination: +5 TN in voice-dependent social interactions; Family pressure: RES checks at +5 TN when personal goals conflict with family expectations</td>
 <td>Professional networks: −5 TN when seeking employment in fields where South Asians are represented</td>
 </tr>
 <tr>
-<td><strong>Native American / Indigenous</strong></td>
+<td><strong>🚧 Native American / Indigenous</strong></td>
 <td>Indigenous language/cultural knowledge; land connection</td>
 <td>Systemic disadvantage: +5 TN with government services; Historical trauma may trigger mental health checks</td>
 <td>Community resilience: +10 RES when drawing on tribal identity and support</td>
 </tr>
 <tr>
-<td><strong>Middle Eastern / North African</strong></td>
+<td><strong>🚧 Middle Eastern / North African</strong></td>
 <td>Arabic/Farsi/other language; rich cultural traditions</td>
 <td>Post-9/11 profiling: +10 TN with security/law enforcement; Religious discrimination: +5 TN in secular/hostile environments</td>
 <td>Strong extended family: automatic access to housing support in emergencies</td>
 </tr>
 <tr>
-<td><strong>Mixed / Multiracial</strong></td>
+<td><strong>🤝 Mixed / Multiracial</strong></td>
 <td>Multiple cultural fluencies; adaptability</td>
 <td>Identity ambiguity: +5 TN for "belonging" questions; Versatility: −5 TN in diverse social settings</td>
 <td>Can navigate multiple communities but may feel fully accepted in none</td>
@@ -325,6 +454,13 @@
 
 <h2>Step 4: Culture and Socialization</h2>
 <p>Beyond ethnicity, <strong>culture</strong> encompasses the specific ways you were raised: religion, socioeconomic class, family structure, education level, geographic region, and subcultural affiliations.</p>
+
+<!-- SOCIOECONOMIC LIFESTYLE STRIP -->
+<div class="section-illustration">
+  <img src="img/cc_socioeconomic.png"
+       alt="Four-panel image showing different socioeconomic living situations: wealthy modern apartment, middle-class modest home, working-class shared room, and poor/homeless with a backpack on a bench"
+       loading="lazy">
+</div>
 
 <h3>Socioeconomic Background (choose one)</h3>
 <div class="table-wrap">
@@ -368,17 +504,25 @@
 <h3>Religious / Spiritual Background</h3>
 <p>Choose one. This provides community ties and potential internal conflicts.</p>
 <ul>
-  <li><strong>Christian (denomination of choice)</strong> — Church community: automatic social network; Weekly service: −5 Stress; Conflict: +5 TN on RES when personal beliefs clash with doctrine</li>
-  <li><strong>Muslim</strong> — Mosque community; Daily prayer routine (−5 Stress if maintained); Fasting during Ramadan (−5 VIG checks, +5 RES checks); Potential discrimination (see Ethnicity)</li>
-  <li><strong>Jewish</strong> — Synagogue community; Holiday observance provides family bonding; Cultural emphasis on education (Academics +1)</li>
-  <li><strong>Hindu</strong> — Temple community; Strong family structure; Yoga/meditation training (RES +1); Caste background may add complexity</li>
-  <li><strong>Buddhist</strong> — Meditation practice (−10 Stress per week of regular practice); Mindfulness training (Empathy +1); Community varies by tradition</li>
-  <li><strong>Atheist / Agnostic</strong> — No religious community bonus; Freedom from doctrine (no RES conflicts); May face social friction in religious communities (+5 TN in deeply religious areas)</li>
-  <li><strong>Other / Spiritual but not religious</strong> — GM and player collaborate on specific benefits and conflicts</li>
+  <li><strong>✝️ Christian (denomination of choice)</strong> — Church community: automatic social network; Weekly service: −5 Stress; Conflict: +5 TN on RES when personal beliefs clash with doctrine</li>
+  <li><strong>☪️ Muslim</strong> — Mosque community; Daily prayer routine (−5 Stress if maintained); Fasting during Ramadan (−5 VIG checks, +5 RES checks); Potential discrimination (see Ethnicity)</li>
+  <li><strong>✡️ Jewish</strong> — Synagogue community; Holiday observance provides family bonding; Cultural emphasis on education (Academics +1)</li>
+  <li><strong>🕉️ Hindu</strong> — Temple community; Strong family structure; Yoga/meditation training (RES +1); Caste background may add complexity</li>
+  <li><strong>☸️ Buddhist</strong> — Meditation practice (−10 Stress per week of regular practice); Mindfulness training (Empathy +1); Community varies by tradition</li>
+  <li><strong>⭕ Atheist / Agnostic</strong> — No religious community bonus; Freedom from doctrine (no RES conflicts); May face social friction in religious communities (+5 TN in deeply religious areas)</li>
+  <li><strong>🌟 Other / Spiritual but not religious</strong> — GM and player collaborate on specific benefits and conflicts</li>
 </ul>
 
 <h2>Step 5: Personality Traits</h2>
 <p>Select <strong>3 Advantages</strong> and <strong>2 Disadvantages</strong> from the lists below. Each Advantage costs <strong>3 points</strong> from your budget. Each Disadvantage refunds <strong>3 points</strong>.</p>
+
+<!-- TRAIT SELECTOR VISUAL -->
+<div class="section-illustration">
+  <img src="img/cc_trait_selector.svg"
+       alt="Trait selection visual showing 3 green advantage cards (plus 3 points each) plus 2 red disadvantage cards (minus 3 points refund) equals 3 net points from budget"
+       style="max-width:600px; width:100%;"
+       loading="lazy">
+</div>
 
 <div class="callout rule">
   <div class="callout-title">📐 Traits Come From Your Life</div>
@@ -421,26 +565,26 @@
 <table>
 <thead><tr><th>Trait</th><th>Origin (Why Your Character Has This)</th><th>Mechanical Effect</th></tr></thead>
 <tbody>
-<tr><td><strong>Disciplined</strong></td><td>Military service, religious upbringing, rigorous training (music, sports, martial arts), or growing up in a household where structure and routine were enforced</td><td>−5 TN on all RES checks related to self-control</td></tr>
-<tr><td><strong>Charismatic</strong></td><td>Raised performing (theater, debate, choir), grew up as the "face" of a family business, naturally extroverted from a large social family, or learned charm as a survival tool in unstable environments</td><td>PRC +2 (not subject to max 15 limit during creation)</td></tr>
-<tr><td><strong>Book Smart</strong></td><td>Parent(s) were academics or highly educated, early reader, homeschooled, grew up surrounded by books and intellectual conversation, or had a teacher/mentor who nurtured their intellect</td><td>Academics +2; INT +1 during creation</td></tr>
-<tr><td><strong>Athletic</strong></td><td>Grew up playing sports, lived in an active environment (ranch, outdoors, dance), trained in a physical discipline, or had a physically demanding childhood (helping with farm work, carrying water, etc.)</td><td>Athletics +2; VIG +1 during creation</td></tr>
-<tr><td><strong>Artistic</strong></td><td>Family valued creativity, had access to art/music programs, used art as emotional outlet during difficult times, or grew up in a culturally rich environment that encouraged self-expression</td><td>+2 to any creative skill (music, art, writing, dance)</td></tr>
-<tr><td><strong>Street Smart</strong></td><td>Grew up in a rough or dangerous neighborhood, had to navigate unsafe environments young, learned to read people for self-preservation, or was raised by someone who taught "how the world really works"</td><td>Deception +1; Empathy +1 in urban/rough environments</td></tr>
-<tr><td><strong>People Person</strong></td><td>Older sibling who babysat younger kids, grew up in an extended family, worked retail/hospitality young, was the "class clown" or social glue in friend groups, or raised in a community-centered culture</td><td>Networking +2; Communication +1</td></tr>
-<tr><td><strong>Frugal</strong></td><td>Grew up poor or experienced financial hardship, immigrant family that valued saving, raised by someone who was financially responsible, or learned money management through early work experience</td><td>Finance +2; −10% cost of all purchases</td></tr>
-<tr><td><strong>Healthy Habits</strong></td><td>Family emphasized nutrition and exercise, personal health scare that changed lifestyle, grew up in a culture with strong food/wellness traditions, or has a fitness-oriented social circle</td><td>Start each day at Healthy; Cooking +1; −5 Stress per week of maintained routine</td></tr>
-<tr><td><strong>Resilient</strong></td><td>Survived significant adversity (poverty, abuse, loss, illness) and came out stronger, grew up in a culture that values toughness, or has a support system that taught coping skills early</td><td>Stress recovers 50% faster; RES +1 during creation</td></tr>
-<tr><td><strong>Tech-Savvy</strong></td><td>Grew up with computers and smartphones as primary tools; IT hobbyist; self-taught coder; worked helpdesk or social-media-heavy jobs</td><td>Technology +2; −5 TN on all checks involving digital tools, online research, or troubleshooting devices</td></tr>
-<tr><td><strong>First-Responder Instincts</strong></td><td>Grew up with a parent in emergency services; volunteer EMT or firefighter; military medic; or lived through a disaster and helped others</td><td>Medicine +2; advantage (roll twice, take better) on all RES checks during crisis situations</td></tr>
-<tr><td><strong>Natural Leader</strong></td><td>Team captain; student government; union organizer; grew up as the oldest of many siblings; community activism</td><td>Networking +2; −5 TN to persuade or motivate groups of 3+ people</td></tr>
-<tr><td><strong>Multilingual</strong></td><td>Bilingual or trilingual upbringing; lived in multiple countries; immigrant household where heritage language was spoken at home</td><td>Language skill in 2 languages at +1 automatically; Communication +1 when interacting with speakers of those languages</td></tr>
-<tr><td><strong>Mechanically Inclined</strong></td><td>Grew up fixing things around the house; worked on cars or machinery; maker/DIY culture; family trade involved repair work</td><td>Repair +2; −5 TN on checks involving vehicles, appliances, tools, or physical infrastructure</td></tr>
-<tr><td><strong>Good Cook</strong></td><td>Family tradition of cooking together; food industry work; cultural background where cooking is a valued skill; dedicated foodie hobbyist</td><td>Cooking +3; Nutrition checks automatically succeed; can prepare meals that give −2 SP to anyone who eats them</td></tr>
-<tr><td><strong>Night Owl</strong></td><td>Shift worker; creative who works best late; grew up in a household with irregular schedules; naturally delayed sleep phase</td><td>No penalty on checks between 10 PM – 4 AM; +5 TN on early-morning checks (before 7 AM)</td></tr>
-<tr><td><strong>Early Riser</strong></td><td>Military habit; farm upbringing; personal discipline; naturally a morning person</td><td>+5 on all checks before 10 AM; Athletics +1 (starts each day physically primed)</td></tr>
-<tr><td><strong>Lucky Break</strong></td><td>Has a mentor who occasionally opens doors; family connection in a useful field; past favor owed by someone influential</td><td>Once per campaign, auto-succeed on one critical check (GM determines when the "break" arrives)</td></tr>
-<tr><td><strong>Community Anchor</strong></td><td>Long-term resident of a neighborhood; church/temple/mosque leader; PTA involvement; known face at local businesses</td><td>Automatic access to local information network; −5 TN for favors from people in your immediate community</td></tr>
+<tr><td><strong>🎖️ Disciplined</strong></td><td>Military service, religious upbringing, rigorous training (music, sports, martial arts), or growing up in a household where structure and routine were enforced</td><td>−5 TN on all RES checks related to self-control</td></tr>
+<tr><td><strong>🌟 Charismatic</strong></td><td>Raised performing (theater, debate, choir), grew up as the "face" of a family business, naturally extroverted from a large social family, or learned charm as a survival tool in unstable environments</td><td>PRC +2 (not subject to max 15 limit during creation)</td></tr>
+<tr><td><strong>📚 Book Smart</strong></td><td>Parent(s) were academics or highly educated, early reader, homeschooled, grew up surrounded by books and intellectual conversation, or had a teacher/mentor who nurtured their intellect</td><td>Academics +2; INT +1 during creation</td></tr>
+<tr><td><strong>🏃 Athletic</strong></td><td>Grew up playing sports, lived in an active environment (ranch, outdoors, dance), trained in a physical discipline, or had a physically demanding childhood (helping with farm work, carrying water, etc.)</td><td>Athletics +2; VIG +1 during creation</td></tr>
+<tr><td><strong>🎨 Artistic</strong></td><td>Family valued creativity, had access to art/music programs, used art as emotional outlet during difficult times, or grew up in a culturally rich environment that encouraged self-expression</td><td>+2 to any creative skill (music, art, writing, dance)</td></tr>
+<tr><td><strong>🏙️ Street Smart</strong></td><td>Grew up in a rough or dangerous neighborhood, had to navigate unsafe environments young, learned to read people for self-preservation, or was raised by someone who taught "how the world really works"</td><td>Deception +1; Empathy +1 in urban/rough environments</td></tr>
+<tr><td><strong>👥 People Person</strong></td><td>Older sibling who babysat younger kids, grew up in an extended family, worked retail/hospitality young, was the "class clown" or social glue in friend groups, or raised in a community-centered culture</td><td>Networking +2; Communication +1</td></tr>
+<tr><td><strong>💵 Frugal</strong></td><td>Grew up poor or experienced financial hardship, immigrant family that valued saving, raised by someone who was financially responsible, or learned money management through early work experience</td><td>Finance +2; −10% cost of all purchases</td></tr>
+<tr><td><strong>🥗 Healthy Habits</strong></td><td>Family emphasized nutrition and exercise, personal health scare that changed lifestyle, grew up in a culture with strong food/wellness traditions, or has a fitness-oriented social circle</td><td>Start each day at Healthy; Cooking +1; −5 Stress per week of maintained routine</td></tr>
+<tr><td><strong>🦾 Resilient</strong></td><td>Survived significant adversity (poverty, abuse, loss, illness) and came out stronger, grew up in a culture that values toughness, or has a support system that taught coping skills early</td><td>Stress recovers 50% faster; RES +1 during creation</td></tr>
+<tr><td><strong>💻 Tech-Savvy</strong></td><td>Grew up with computers and smartphones as primary tools; IT hobbyist; self-taught coder; worked helpdesk or social-media-heavy jobs</td><td>Technology +2; −5 TN on all checks involving digital tools, online research, or troubleshooting devices</td></tr>
+<tr><td><strong>🚑 First-Responder Instincts</strong></td><td>Grew up with a parent in emergency services; volunteer EMT or firefighter; military medic; or lived through a disaster and helped others</td><td>Medicine +2; advantage (roll twice, take better) on all RES checks during crisis situations</td></tr>
+<tr><td><strong>⭐ Natural Leader</strong></td><td>Team captain; student government; union organizer; grew up as the oldest of many siblings; community activism</td><td>Networking +2; −5 TN to persuade or motivate groups of 3+ people</td></tr>
+<tr><td><strong>🌐 Multilingual</strong></td><td>Bilingual or trilingual upbringing; lived in multiple countries; immigrant household where heritage language was spoken at home</td><td>Language skill in 2 languages at +1 automatically; Communication +1 when interacting with speakers of those languages</td></tr>
+<tr><td><strong>🔧 Mechanically Inclined</strong></td><td>Grew up fixing things around the house; worked on cars or machinery; maker/DIY culture; family trade involved repair work</td><td>Repair +2; −5 TN on checks involving vehicles, appliances, tools, or physical infrastructure</td></tr>
+<tr><td><strong>👨‍🍳 Good Cook</strong></td><td>Family tradition of cooking together; food industry work; cultural background where cooking is a valued skill; dedicated foodie hobbyist</td><td>Cooking +3; Nutrition checks automatically succeed; can prepare meals that give −2 SP to anyone who eats them</td></tr>
+<tr><td><strong>🦉 Night Owl</strong></td><td>Shift worker; creative who works best late; grew up in a household with irregular schedules; naturally delayed sleep phase</td><td>No penalty on checks between 10 PM – 4 AM; +5 TN on early-morning checks (before 7 AM)</td></tr>
+<tr><td><strong>🌅 Early Riser</strong></td><td>Military habit; farm upbringing; personal discipline; naturally a morning person</td><td>+5 on all checks before 10 AM; Athletics +1 (starts each day physically primed)</td></tr>
+<tr><td><strong>🍀 Lucky Break</strong></td><td>Has a mentor who occasionally opens doors; family connection in a useful field; past favor owed by someone influential</td><td>Once per campaign, auto-succeed on one critical check (GM determines when the "break" arrives)</td></tr>
+<tr><td><strong>🏘️ Community Anchor</strong></td><td>Long-term resident of a neighborhood; church/temple/mosque leader; PTA involvement; known face at local businesses</td><td>Automatic access to local information network; −5 TN for favors from people in your immediate community</td></tr>
 </tbody>
 </table>
 </div>
@@ -450,40 +594,54 @@
 <table>
 <thead><tr><th>Trait</th><th>Origin (Why Your Character Has This)</th><th>Mechanical Effect</th></tr></thead>
 <tbody>
-<tr><td><strong>Impulsive</strong></td><td>Chaotic upbringing with no consequences for actions, ADHD or impulsivity tendencies, grew up in poverty where "live for today" was the only viable strategy, or learned through repeated bad decisions</td><td>+5 TN on all RES checks for restraint; may act before thinking</td></tr>
-<tr><td><strong>Shy / Socially Anxious</strong></td><td>Bullied in school, overprotective parents who didn't allow social development, traumatic social experience (public humiliation, rejection), or naturally introverted temperament amplified by negative experiences</td><td>+10 TN on first interaction with any new person</td></tr>
-<tr><td><strong>Procrastinator</strong></td><td>Grew up with inconsistent consequences, perfectionism that makes starting feel impossible, learned helplessness from overwhelming early responsibilities, or simply never developed time-management skills</td><td>+5 TN on all deadline-related checks; tasks take 25% longer</td></tr>
-<tr><td><strong>Poor Sleeper</strong></td><td>Noise-polluted or unstable living environment, anxiety that makes winding down difficult, grew up with irregular schedules (shift work parents, foster care), or developed bad sleep habits in college/young adulthood</td><td>Start each day at Tired instead of Healthy; must succeed on TN 40 RES check each night to rest properly</td></tr>
-<tr><td><strong>Chronic Pain</strong></td><td>Old sports injury that never healed right, auto accident, occupational injury (construction, warehouse work), degenerative condition (arthritis, back problems), or autoimmune disease</td><td>Always at Tired or worse; −5 on all DXT checks; Medical costs: $100/month</td></tr>
-<tr><td><strong>Food Insecurity</strong></td><td>Grew up in poverty where meals weren't guaranteed, currently living paycheck to paycheck, single parent stretching food budget, or experienced homelessness even briefly</td><td>Must spend $30/week on food or gain one step on Health track; Cooking checks at +5 TN</td></tr>
-<tr><td><strong>Bad with Money</strong></td><td>Never taught financial literacy, grew up where money was either abundant (no need to learn) or nonexistent (nothing to learn from), impulsive spender, or had a traumatic relationship with money (parent's gambling, sudden bankruptcy)</td><td>Finance −1; roll d10 each week, on 1–3 lose $50 on impulse buy</td></tr>
-<tr><td><strong>Perfectionist</strong></td><td>Parent(s) who only praised achievements never mistakes, immigrant family with "you got here so you must excel" pressure, grew up in an academic environment where B was failure, or used perfectionism to earn love/approval</td><td>Takes 50% longer on tasks; +5 TN on checks when under time pressure</td></tr>
-<tr><td><strong>Trust Issues</strong></td><td>Betrayed by someone close (parent, partner, best friend), grew up in an environment where deception was common, experienced abuse or manipulation, or learned through repeated disappointment that relying on others leads to pain</td><td>+10 TN to form new relationships; Deception checks against you get +5</td></tr>
-<tr><td><strong>Workaholic</strong></td><td>Grew up watching a parent struggle with unemployment/idleness, ties self-worth to productivity, cultural expectation to "always be doing something," or uses work to avoid dealing with personal problems</td><td>Cannot refuse work requests without failing a TN 60 RES check; −5 on all social checks after 50+ hour weeks</td></tr>
-<tr><td><strong>Clumsy</strong></td><td>Always the kid dropping things; poor spatial awareness; grew up in a chaotic environment where careful movement wasn't valued</td><td>DXT −1; knock over, spill, or break something once per session (GM decides when); +5 TN on all balance checks</td></tr>
-<tr><td><strong>Allergies / Asthma</strong></td><td>Environmental allergies; seasonal hay fever; childhood asthma that never fully went away; food allergies</td><td>Seasonal: −5 on VIG checks during allergy season; must carry medication (if forgotten, VIG check TN 60 or gain one step on Health track)</td></tr>
-<tr><td><strong>Poor Driver</strong></td><td>Learned to drive in a panic; never had a patient instructor; grew up in a walkable city and never needed to drive well</td><td>Driving −1; roll d10 each time driving — on 1 = minor incident (fender bender, parking ticket, flat tire); +5 TN on all checks while in a moving vehicle</td></tr>
-<tr><td><strong>Gamer / Screen Addict</strong></td><td>Escapism habit; gaming as primary social outlet; doomscrolling; grew up with screens as a babysitter</td><td>−5 TN on all daily routine checks if screen time exceeds 4 hrs; lose 2 hours of sleep per day to late-night scrolling</td></tr>
-<tr><td><strong>People-Pleaser</strong></td><td>Grew up walking on eggshells; trauma bond with a controlling figure; cultural expectation to never say no; fear of abandonment</td><td>Cannot refuse social invitations without failing RES check (TN 50); −5 TN on all checks when you actually want to say no</td></tr>
-<tr><td><strong>Compulsive Overthinker</strong></td><td>Anxiety-driven rumination; perfectionist streak; grew up in an environment where mistakes had severe consequences</td><td>Each night: <span class="dice">RES check (TN 40)</span> — on success, talk yourself down (+1 SP); on failure, full rumination (+3 SP); +5 TN on all checks that require quick decisions</td></tr>
-<tr><td><strong>Bad with Technology</strong></td><td>Older character who never adapted; grew up without access to computers; learned fear of technology from a past experience (doxxing, scam)</td><td>Technology = −2; +10 TN on all checks involving phones, computers, online forms, or digital payments</td></tr>
-<tr><td><strong>Gambling Tendency</strong></td><td>Family history of gambling; grew up around casinos; thrill-seeker; uses gambling to cope with stress</td><td>Once per month, must make RES check (TN 55) or spend $100 on gambling; Finance −1</td></tr>
-<tr><td><strong>Lone Wolf</strong></td><td>Grew up isolated; burned bridges in past relationships; distrusts group dynamics; prefers self-reliance</td><td>Networking = −1; cannot benefit from group bonuses or teamwork modifiers; −5 TN on all checks requiring collaboration</td></tr>
-<tr><td><strong>Chronic Overspender</strong></td><td>Retail therapy habit; impulse buyer; emotional spender; grew up using shopping as a reward system</td><td>Finance −1; each week roll d10, on 1–4 lose $75 on non-essential purchases; cannot benefit from Frugal advantage</td></tr>
+<tr><td><strong>💥 Impulsive</strong></td><td>Chaotic upbringing with no consequences for actions, ADHD or impulsivity tendencies, grew up in poverty where "live for today" was the only viable strategy, or learned through repeated bad decisions</td><td>+5 TN on all RES checks for restraint; may act before thinking</td></tr>
+<tr><td><strong>😶 Shy / Socially Anxious</strong></td><td>Bullied in school, overprotective parents who didn't allow social development, traumatic social experience (public humiliation, rejection), or naturally introverted temperament amplified by negative experiences</td><td>+10 TN on first interaction with any new person</td></tr>
+<tr><td><strong>⏰ Procrastinator</strong></td><td>Grew up with inconsistent consequences, perfectionism that makes starting feel impossible, learned helplessness from overwhelming early responsibilities, or simply never developed time-management skills</td><td>+5 TN on all deadline-related checks; tasks take 25% longer</td></tr>
+<tr><td><strong>😴 Poor Sleeper</strong></td><td>Noise-polluted or unstable living environment, anxiety that makes winding down difficult, grew up with irregular schedules (shift work parents, foster care), or developed bad sleep habits in college/young adulthood</td><td>Start each day at Tired instead of Healthy; must succeed on TN 40 RES check each night to rest properly</td></tr>
+<tr><td><strong>🦽 Chronic Pain</strong></td><td>Old sports injury that never healed right, auto accident, occupational injury (construction, warehouse work), degenerative condition (arthritis, back problems), or autoimmune disease</td><td>Always at Tired or worse; −5 on all DXT checks; Medical costs: $100/month</td></tr>
+<tr><td><strong>🍽️ Food Insecurity</strong></td><td>Grew up in poverty where meals weren't guaranteed, currently living paycheck to paycheck, single parent stretching food budget, or experienced homelessness even briefly</td><td>Must spend $30/week on food or gain one step on Health track; Cooking checks at +5 TN</td></tr>
+<tr><td><strong>💸 Bad with Money</strong></td><td>Never taught financial literacy, grew up where money was either abundant (no need to learn) or nonexistent (nothing to learn from), impulsive spender, or had a traumatic relationship with money (parent's gambling, sudden bankruptcy)</td><td>Finance −1; roll d10 each week, on 1–3 lose $50 on impulse buy</td></tr>
+<tr><td><strong>📐 Perfectionist</strong></td><td>Parent(s) who only praised achievements never mistakes, immigrant family with "you got here so you must excel" pressure, grew up in an academic environment where B was failure, or used perfectionism to earn love/approval</td><td>Takes 50% longer on tasks; +5 TN on checks when under time pressure</td></tr>
+<tr><td><strong>🔒 Trust Issues</strong></td><td>Betrayed by someone close (parent, partner, best friend), grew up in an environment where deception was common, experienced abuse or manipulation, or learned through repeated disappointment that relying on others leads to pain</td><td>+10 TN to form new relationships; Deception checks against you get +5</td></tr>
+<tr><td><strong>💼 Workaholic</strong></td><td>Grew up watching a parent struggle with unemployment/idleness, ties self-worth to productivity, cultural expectation to "always be doing something," or uses work to avoid dealing with personal problems</td><td>Cannot refuse work requests without failing a TN 60 RES check; −5 on all social checks after 50+ hour weeks</td></tr>
+<tr><td><strong>🤦 Clumsy</strong></td><td>Always the kid dropping things; poor spatial awareness; grew up in a chaotic environment where careful movement wasn't valued</td><td>DXT −1; knock over, spill, or break something once per session (GM decides when); +5 TN on all balance checks</td></tr>
+<tr><td><strong>🤧 Allergies / Asthma</strong></td><td>Environmental allergies; seasonal hay fever; childhood asthma that never fully went away; food allergies</td><td>Seasonal: −5 on VIG checks during allergy season; must carry medication (if forgotten, VIG check TN 60 or gain one step on Health track)</td></tr>
+<tr><td><strong>🚗 Poor Driver</strong></td><td>Learned to drive in a panic; never had a patient instructor; grew up in a walkable city and never needed to drive well</td><td>Driving −1; roll d10 each time driving — on 1 = minor incident (fender bender, parking ticket, flat tire); +5 TN on all checks while in a moving vehicle</td></tr>
+<tr><td><strong>🎮 Gamer / Screen Addict</strong></td><td>Escapism habit; gaming as primary social outlet; doomscrolling; grew up with screens as a babysitter</td><td>−5 TN on all daily routine checks if screen time exceeds 4 hrs; lose 2 hours of sleep per day to late-night scrolling</td></tr>
+<tr><td><strong>🙋 People-Pleaser</strong></td><td>Grew up walking on eggshells; trauma bond with a controlling figure; cultural expectation to never say no; fear of abandonment</td><td>Cannot refuse social invitations without failing RES check (TN 50); −5 TN on all checks when you actually want to say no</td></tr>
+<tr><td><strong>🌀 Compulsive Overthinker</strong></td><td>Anxiety-driven rumination; perfectionist streak; grew up in an environment where mistakes had severe consequences</td><td>Each night: <span class="dice">RES check (TN 40)</span> — on success, talk yourself down (+1 SP); on failure, full rumination (+3 SP); +5 TN on all checks that require quick decisions</td></tr>
+<tr><td><strong>📱 Bad with Technology</strong></td><td>Older character who never adapted; grew up without access to computers; learned fear of technology from a past experience (doxxing, scam)</td><td>Technology = −2; +10 TN on all checks involving phones, computers, online forms, or digital payments</td></tr>
+<tr><td><strong>🎰 Gambling Tendency</strong></td><td>Family history of gambling; grew up around casinos; thrill-seeker; uses gambling to cope with stress</td><td>Once per month, must make RES check (TN 55) or spend $100 on gambling; Finance −1</td></tr>
+<tr><td><strong>🐺 Lone Wolf</strong></td><td>Grew up isolated; burned bridges in past relationships; distrusts group dynamics; prefers self-reliance</td><td>Networking = −1; cannot benefit from group bonuses or teamwork modifiers; −5 TN on all checks requiring collaboration</td></tr>
+<tr><td><strong>🛍️ Chronic Overspender</strong></td><td>Retail therapy habit; impulse buyer; emotional spender; grew up using shopping as a reward system</td><td>Finance −1; each week roll d10, on 1–4 lose $75 on non-essential purchases; cannot benefit from Frugal advantage</td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Traits Grounded in Backstory</div>
-  <p><strong>Mei Lin Chen</strong> picks <em>Book Smart</em> because her parents were immigrants who made her read encyclopedias as a child — "education is the only thing they can't take from you." She picks <em>Disciplined</em> because her mother ran the household like a military operation — wake at 6, study until 10, no excuses. She picks <em>Healthy Habits</em> because she joined a running club her freshman year to manage anxiety, and the routine stuck. Her <em>Procrastinator</em> disadvantage comes from the same pressure — when the stakes feel too high, she freezes and puts things off until the last minute. Her <em>Shy/Socially Anxious</em> disadvantage traces back to being the new kid three times in four years as her parents' jobs moved them around California.</p>
-  <p>These aren't just trait checkboxes — they're the skeleton of her backstory.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:1em;">
+    <img src="img/char_mei.png"
+         alt="Mei Lin Chen"
+         style="width:80px; height:80px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Mei Lin Chen</strong> picks <em>Book Smart</em> because her parents were immigrants who made her read encyclopedias as a child — "education is the only thing they can't take from you." She picks <em>Disciplined</em> because her mother ran the household like a military operation — wake at 6, study until 10, no excuses. She picks <em>Healthy Habits</em> because she joined a running club her freshman year to manage anxiety, and the routine stuck. Her <em>Procrastinator</em> disadvantage comes from the same pressure — when the stakes feel too high, she freezes and puts things off until the last minute. Her <em>Shy/Socially Anxious</em> disadvantage traces back to being the new kid three times in four years as her parents' jobs moved them around California.</p>
+      <p>These aren't just trait checkboxes — they're the skeleton of her backstory.</p>
+    </div>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Tallulah Red Elk — Community Worker, 38</div>
-  <p><strong>Tallulah Red Elk</strong> picks <em>People Person</em> because she grew up as the middle child in a large Lakota family — always mediating between her older sister and younger brother, always the one organizing family gatherings. She picks <em>Artistic</em> because her grandmother taught her beadwork and painting, and she still creates traditional pieces that she sells at tribal markets. She picks <em>Community Anchor</em> because she's lived on the reservation her entire life — everyone knows her, and she knows everyone's business. Her <em>Trust Issues</em> disadvantage comes from the car accident at 19 that killed her best friend — she learned that the people you rely on can be gone in an instant, and she doesn't let anyone get close enough to risk that again. Her <em>Impulsive</em> disadvantage shows up when she's triggered — she'll say or do things in the moment she later regrets, especially when confronted with reminders of that night.</p>
-  <p>Notice how Tallulah's traits create <em>dramatically interesting gameplay</em>: her Community Anchor means she can gather information and call in favors in her neighborhood, but her Trust Issues makes it hard to form new relationships outside it. Her Artistic trait gives her a creative outlet (and income), while her Impulsive streak means the GM has built-in moments to call for tense RES checks. These traits don't just describe her — they <em>drive</em> her story every session.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:1em;">
+    <img src="img/char_tallulah.png"
+         alt="Tallulah Red Elk"
+         style="width:80px; height:80px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Tallulah Red Elk</strong> picks <em>People Person</em> because she grew up as the middle child in a large Lakota family — always mediating between her older sister and younger brother, always the one organizing family gatherings. She picks <em>Artistic</em> because her grandmother taught her beadwork and painting, and she still creates traditional pieces that she sells at tribal markets. She picks <em>Community Anchor</em> because she's lived on the reservation her entire life — everyone knows her, and she knows everyone's business. Her <em>Trust Issues</em> disadvantage comes from the car accident at 19 that killed her best friend — she learned that the people you rely on can be gone in an instant, and she doesn't let anyone get close enough to risk that again. Her <em>Impulsive</em> disadvantage shows up when she's triggered — she'll say or do things in the moment she later regrets, especially when confronted with reminders of that night.</p>
+      <p>Notice how Tallulah's traits create <em>dramatically interesting gameplay</em>: her Community Anchor means she can gather information and call in favors in her neighborhood, but her Trust Issues makes it hard to form new relationships outside it. Her Artistic trait gives her a creative outlet (and income), while her Impulsive streak means the GM has built-in moments to call for tense RES checks. These traits don't just describe her — they <em>drive</em> her story every session.</p>
+    </div>
+  </div>
 </div>
 
 <div class="callout tip">
@@ -499,6 +657,31 @@
 <h2>Step 6: Mental Health Baseline</h2>
 <p>Every character starts with a mental health profile. This is not optional — mental health is as fundamental to human existence as physical health. See the <a href="mental-health.html">Mental Health chapter</a> for full details.</p>
 <p>At character creation, roll <span class="dice">1d6</span> on the <strong>Mental Health Baseline Table</strong>, or choose with GM approval:</p>
+
+<!-- MENTAL HEALTH STRESS BARS -->
+<div style="margin:1.5em 0; background:var(--color-surface); border-radius:var(--radius); padding:1.2em; box-shadow:var(--shadow-sm); border:1px solid var(--color-border);">
+  <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.8em;">Possible Starting Mental Health States</p>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">5: Resilient</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stable" style="width:5%;"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">3–4: Stable</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stable" style="width:20%;"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">2: Elevated</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated" style="width:40%;"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">6: Trauma</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stressed" style="width:60%;"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">1: Clinical</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill episode" style="width:100%;"></div></div>
+  </div>
+</div>
 
 <div class="table-wrap">
 <table>
@@ -516,12 +699,24 @@
 <h2>Step 7: Starting Inventory</h2>
 <p>Based on your socioeconomic background, you start with appropriate possessions. See the <a href="inventory-economy.html">Inventory & Economy chapter</a> for full item lists and costs.</p>
 
-<div class="callout example">
-  <div class="callout-title">📝 Starting Inventory by Class</div>
-  <p><strong>Wealthy:</strong> Latest smartphone, laptop, car, apartment deposit, designer wardrobe, gym membership, credit cards, travel passport.</p>
-  <p><strong>Middle Class:</strong> Reliable smartphone, used laptop, decent wardrobe, maybe a car (or transit pass), basic kitchen, one-room apartment.</p>
-  <p><strong>Working Class:</strong> Older smartphone (cracked screen), no laptop, hand-me-down clothes, bus pass, shared room or small apartment, minimal furniture.</p>
-  <p><strong>Poor/Homeless:</strong> Phone (if lucky), one change of clothes, whatever fits in a backpack. No fixed address.</p>
+<!-- STARTING INVENTORY CARDS -->
+<div class="supplies-grid" style="margin:1em 0;">
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">💰</div>
+    <p><strong>Wealthy</strong><br>$20K · Smartphone, laptop, car, apartment deposit, designer wardrobe, gym membership, credit cards, passport</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🏠</div>
+    <p><strong>Middle Class</strong><br>$1.5K · Reliable smartphone, used laptop, decent wardrobe, transit pass, basic kitchen, one-room apartment</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🏚️</div>
+    <p><strong>Working Class</strong><br>$300 · Older smartphone (cracked screen), no laptop, hand-me-down clothes, bus pass, shared room</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🏕️</div>
+    <p><strong>Poor / Homeless</strong><br>$20 · Phone (if lucky), one change of clothes, whatever fits in a backpack. No fixed address.</p>
+  </div>
 </div>
 
 <h2>Step 8: Name, Face, and Story</h2>
@@ -542,6 +737,34 @@
 
 <h2 id="walkthrough">Step 9: Complete Walkthrough — Building Jamal Okafor</h2>
 <p>The following is a complete end-to-end character creation, walking through every step with the math shown. The result is <strong>Jamal Okafor</strong> — a 26-year-old Nigerian American barista and night school student in Chicago. A filled character sheet for Jamal is available for reference: <a href="example-character-sheet.html">Jamal's Completed Character Sheet</a>.</p>
+
+<!-- JAMAL PORTRAIT -->
+<div style="display:flex; gap:1.2em; align-items:flex-start; flex-wrap:wrap; margin:1em 0 1.5em;">
+  <img src="img/char_jamal.png"
+       alt="Jamal Okafor, 26, Nigerian American barista and night school student in Chicago"
+       style="width:100px; height:100px; object-fit:cover; border-radius:6px; flex-shrink:0; box-shadow:var(--shadow-sm);">
+  <div style="flex:1; min-width:0;">
+    <p style="font-size:0.95rem; color:var(--color-text-light); margin-bottom:0;">
+      <strong>Jamal Okafor</strong> — 26, born March 14, 1999 in Chicago. 6'1", lean build, warm brown skin, closely cropped fade. Small scar on left eyebrow. Usually wears a clean button-down or hoodie. Carries himself with relaxed confidence.
+    </p>
+  </div>
+</div>
+
+<!-- BUDGET TRACKER — shows points remaining after each step -->
+<div style="margin:0 0 1.5em; background:var(--color-surface); border-radius:var(--radius); padding:1em 1.2em; box-shadow:var(--shadow-sm); border:1px solid var(--color-border);">
+  <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.6em;">📊 Budget Tracker — Jamal (120 points)</p>
+  <div style="display:flex; gap:0.5em; align-items:center; flex-wrap:wrap;">
+    <span style="font-size:0.8rem; font-family:var(--font-mono); background:#d5f5e3; padding:0.2em 0.5em; border-radius:4px;">Start: 120</span>
+    <span style="color:var(--color-muted);">→</span>
+    <span style="font-size:0.8rem; font-family:var(--font-mono); background:#d4efdf; padding:0.2em 0.5em; border-radius:4px;">−50 (Attrs) = 70</span>
+    <span style="color:var(--color-muted);">→</span>
+    <span style="font-size:0.8rem; font-family:var(--font-mono); background:#fef9e7; padding:0.2em 0.5em; border-radius:4px;">−3 (Traits) = 67</span>
+    <span style="color:var(--color-muted);">→</span>
+    <span style="font-size:0.8rem; font-family:var(--font-mono); background:#fdebd0; padding:0.2em 0.5em; border-radius:4px;">−65 (Skills) = 2</span>
+    <span style="color:var(--color-muted);">→</span>
+    <span style="font-size:0.8rem; font-family:var(--font-mono); background:#fadbd8; padding:0.2em 0.5em; border-radius:4px; font-weight:700;">✓ Balanced</span>
+  </div>
+</div>
 
 <div class="callout walkthrough">
   <div class="callout-title">📝 Step 1: Age and Budget</div>
@@ -564,6 +787,34 @@
   <tr><td colspan="3"><strong>Attribute Total</strong></td><td><strong>50</strong></td><td></td></tr>
   </tbody>
   </table>
+  </div>
+  <!-- JAMAL STAT BARS -->
+  <div style="margin:1em 0;">
+    <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.5em;">Jamal's Attribute Profile</p>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🏋️ Vigor</span><span>10 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:50%; background:#e67e22;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🧠 Intellect</span><span>11 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:55%; background:#2980b9;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>💬 Expression</span><span>12 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:60%; background:#8e44ad;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🎯 Dexterity</span><span>8 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:40%; background:#27ae60;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>🛡️ Resolve</span><span>9 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:45%; background:#f39c12;"></div></div>
+    </div>
+    <div class="stat-bar-wrap">
+      <div class="stat-bar-label"><span>✨ Presence</span><span>9 / 20</span></div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:45%; background:#95a5a6;"></div></div>
+    </div>
   </div>
   <p><strong>Age adjustments (26 = 26–40 bracket):</strong> INT +1 → 12; EXP +1 → 13; RES +1 → 10. Final mods: VIG +2, INT +2, EXP +2, DXT +1, RES +2, PRC +1.</p>
   <p><strong>120 − 50 = 70 points remaining.</strong></p>
@@ -648,7 +899,7 @@
 
 <div class="callout walkthrough">
   <div class="callout-title">📝 Step 9: Name, Face, and Story</div>
-  <p><strong>Jamal Okafor</strong>, 26, born March 14, 1999 in Chicago. 6'1", lean build, warm brown skin, closely cropped fade. Small scar on left eyebrow from a childhood fall. Usually wears a clean button-down or hoodie. Carries himself with relaxed confidence.</p>
+  <p><strong>Jamal Okafor</strong>, 26, born March 14, 1999 in Chicago. 6'1", lean build, warm brown skin, closely cropped fade. Small scar on left eyebrow. Usually wears a clean button-down or hoodie. Carries himself with relaxed confidence.</p>
   <p><strong>Backstory:</strong> Born in Chicago to Nigerian immigrant parents. His father drives a taxi, his mother works double shifts cleaning a hospital. Jamal was the first in his family to even think about college — he went to community college for two years studying business before money ran out and he took a full-time barista job at Green Cup Coffee to help pay rent. He's now taking night classes one at a time, saving to transfer to the University of Chicago. His parents are proud but push him hard — every family gathering includes at least three aunts asking "so when are you going to get your real degree?" He loves his job — the regulars are like family, and he's genuinely good at making people's mornings better. He wakes up at 4:30 AM every day without an alarm.</p>
 </div>
 

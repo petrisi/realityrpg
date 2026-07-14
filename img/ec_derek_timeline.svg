@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="dangerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c0392b"/>
+      <stop offset="100%" stop-color="#e74c3c"/>
+    </linearGradient>
+    <linearGradient id="hopeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f39c12"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">🔄 Derek's Recovery Timeline</text>
+  <text x="450" y="48" text-anchor="middle" font-size="11" fill="#7f8c8d">From rock bottom to Day 114 — the road ahead and the relapse risk</text>
+
+  <!-- ===== MAIN TIMELINE LINE ===== -->
+  <line x1="80" y1="200" x2="820" y2="200" stroke="#bdc3c7" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ===== DANGER ZONE (left, red) ===== -->
+  <!-- Age 16: Construction starts + drinking begins -->
+  <circle cx="120" cy="200" r="26" fill="#c0392b" filter="url(#shadow)"/>
+  <text x="120" y="196" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Age 16</text>
+  <text x="120" y="208" text-anchor="middle" font-size="8" fill="#fff">🍺</text>
+  <rect x="60" y="90" width="120" height="40" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1" filter="url(#shadow)"/>
+  <text x="120" y="108" text-anchor="middle" font-size="9" font-weight="600" fill="#c0392b">Construction + drinking</text>
+  <text x="120" y="122" text-anchor="middle" font-size="8" fill="#c0392b">"Friday nights" start</text>
+
+  <!-- Age 26: Brother's death -->
+  <circle cx="300" cy="200" r="26" fill="#c0392b" filter="url(#shadow)"/>
+  <text x="300" y="196" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Age 26</text>
+  <text x="300" y="208" text-anchor="middle" font-size="8" fill="#fff">💔</text>
+  <rect x="240" y="90" width="120" height="40" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1" filter="url(#shadow)"/>
+  <text x="300" y="108" text-anchor="middle" font-size="9" font-weight="600" fill="#c0392b">Brother's death</text>
+  <text x="300" y="122" text-anchor="middle" font-size="8" fill="#c0392b">Drinking to cope</text>
+
+  <!-- Age 30: Rock bottom -->
+  <circle cx="460" cy="200" r="30" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="460" y="195" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Age 30</text>
+  <text x="460" y="210" text-anchor="middle" font-size="8" fill="#fff">📉</text>
+  <rect x="390" y="80" width="140" height="55" rx="6" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="460" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">ROCK BOTTOM</text>
+  <text x="460" y="115" text-anchor="middle" font-size="8" fill="#bdc3c7">Lost job, lost apartment</text>
+  <text x="460" y="128" text-anchor="middle" font-size="8" fill="#bdc3c7">Slept in truck 3 weeks</text>
+
+  <!-- ===== HOPE ZONE (right, green) ===== -->
+  <!-- Day 1: First AA meeting -->
+  <circle cx="560" cy="200" r="26" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="560" y="196" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Day 1</text>
+  <text x="560" y="208" text-anchor="middle" font-size="8" fill="#fff">🙏</text>
+  <rect x="500" y="240" width="120" height="40" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1" filter="url(#shadow)"/>
+  <text x="560" y="258" text-anchor="middle" font-size="9" font-weight="600" fill="#e67e22">First AA meeting</text>
+  <text x="560" y="272" text-anchor="middle" font-size="8" fill="#e67e22">"Called a number"</text>
+
+  <!-- Day 47: RELAPSE -->
+  <circle cx="640" cy="200" r="28" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="640" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Day 47</text>
+  <text x="640" y="208" text-anchor="middle" font-size="8" fill="#fff">⚠️</text>
+  <rect x="575" y="80" width="130" height="50" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="640" y="100" text-anchor="middle" font-size="10" font-weight="700" fill="#e74c3c">⚠️ RELAPSE</text>
+  <text x="640" y="115" text-anchor="middle" font-size="8" fill="#c0392b">Resets to Dependence</text>
+  <text x="640" y="128" text-anchor="middle" font-size="8" fill="#c0392b">TN increases +5 → now 65</text>
+
+  <!-- Day 114: Current -->
+  <circle cx="730" cy="200" r="30" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="730" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Day 114</text>
+  <text x="730" y="210" text-anchor="middle" font-size="8" fill="#fff">✅</text>
+  <rect x="665" y="240" width="130" height="55" rx="6" fill="#d4efdf" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="730" y="260" text-anchor="middle" font-size="10" font-weight="700" fill="#27ae60">✅ CURRENT</text>
+  <text x="730" y="275" text-anchor="middle" font-size="8" fill="#27ae60">114 days sober</text>
+  <text x="730" y="288" text-anchor="middle" font-size="8" fill="#27ae60">"Today is a hard day"</text>
+
+  <!-- Day 365: Goal (dashed/future) -->
+  <circle cx="820" cy="200" r="26" fill="#e8ecef" stroke="#27ae60" stroke-width="2" stroke-dasharray="4,3" filter="url(#shadow)"/>
+  <text x="820" y="196" text-anchor="middle" font-size="9" font-weight="700" fill="#27ae60">Day 365</text>
+  <text x="820" y="210" text-anchor="middle" font-size="8" fill="#27ae60">🎯</text>
+  <rect x="760" y="80" width="120" height="45" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1" stroke-dasharray="4,3" filter="url(#shadow)"/>
+  <text x="820" y="98" text-anchor="middle" font-size="9" font-weight="600" fill="#2980b9">🎯 1 YEAR SOBER</text>
+  <text x="820" y="115" text-anchor="middle" font-size="8" fill="#2c3e50">Goal — 251 days to go</text>
+
+  <!-- ===== BOTTOM: MECHANICAL TRACK ===== -->
+  <rect x="80" y="320" width="740" height="80" rx="8" fill="white" stroke="#dcdcdc" stroke-width="1" filter="url(#shadow)"/>
+  <text x="450" y="342" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">📋 Mechanical Progression</text>
+
+  <!-- Stage labels along bottom -->
+  <rect x="100" y="355" width="100" height="30" rx="4" fill="#e74c3c"/>
+  <text x="150" y="375" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Severe Addiction</text>
+
+  <line x1="200" y1="370" x2="230" y2="370" stroke="#bdc3c7" stroke-width="2"/>
+
+  <rect x="230" y="355" width="100" height="30" rx="4" fill="#f39c12"/>
+  <text x="280" y="375" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Dependence</text>
+
+  <line x1="330" y1="370" x2="360" y2="370" stroke="#bdc3c7" stroke-width="2"/>
+
+  <rect x="360" y="355" width="100" height="30" rx="4" fill="#f39c12"/>
+  <text x="410" y="375" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Seeking Help</text>
+
+  <line x1="460" y1="370" x2="490" y2="370" stroke="#bdc3c7" stroke-width="2"/>
+
+  <rect x="490" y="355" width="100" height="30" rx="4" fill="#27ae60" opacity="0.5"/>
+  <text x="540" y="375" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Managing</text>
+
+  <line x1="590" y1="370" x2="620" y2="370" stroke="#bdc3c7" stroke-width="2"/>
+
+  <rect x="620" y="355" width="100" height="30" rx="4" fill="#27ae60" opacity="0.3"/>
+  <text x="670" y="375" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">Stable</text>
+
+  <line x1="720" y1="370" x2="750" y2="370" stroke="#bdc3c7" stroke-width="2"/>
+
+  <rect x="750" y="355" width="50" height="30" rx="4" fill="#27ae60" opacity="0.15"/>
+  <text x="775" y="375" text-anchor="middle" font-size="9" font-weight="700" fill="#27ae60">+</text>
+
+  <!-- Current position arrow -->
+  <text x="410" y="315" text-anchor="middle" font-size="10" font-weight="700" fill="#f39c12">↑ Day 114 here</text>
+</svg>

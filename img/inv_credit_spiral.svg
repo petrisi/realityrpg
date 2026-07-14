@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">The Credit Card Trap: Diego's $1,200 Repair</text>
+  <text x="350" y="46" text-anchor="middle" font-size="12" fill="#7f8c8d">APR 22% · Minimum payment ~$35/month</text>
+
+  <!-- Chart area: x=80..660, y=70..300 -->
+  <!-- Grid lines -->
+  <g stroke="#e8e8e8" stroke-width="1">
+    <line x1="80" y1="70" x2="660" y2="70"/>
+    <line x1="80" y1="130" x2="660" y2="130"/>
+    <line x1="80" y1="190" x2="660" y2="190"/>
+    <line x1="80" y1="250" x2="660" y2="250"/>
+    <line x1="80" y1="300" x2="660" y2="300"/>
+  </g>
+
+  <!-- Y-axis labels (balance) -->
+  <g font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="72" y="74">$1,200</text>
+    <text x="72" y="134">$900</text>
+    <text x="72" y="194">$600</text>
+    <text x="72" y="254">$300</text>
+    <text x="72" y="304">$0</text>
+  </g>
+
+  <!-- X-axis labels (months) -->
+  <g font-size="11" fill="#7f8c8d" text-anchor="middle">
+    <text x="80" y="320">0</text>
+    <text x="196" y="320">12</text>
+    <text x="312" y="320">24</text>
+    <text x="428" y="320">36</text>
+    <text x="544" y="320">48</text>
+    <text x="660" y="320">60</text>
+    <text x="370" y="345" font-size="13">Months</text>
+  </g>
+
+  <!-- Y axis title -->
+  <text x="20" y="185" text-anchor="middle" font-size="12" fill="#7f8c8d" transform="rotate(-90, 20, 185)">Balance</text>
+
+  <!-- Balance curve — slow decline -->
+  <!-- Month 0: $1200 (y=70), Month 12: $1003 (y=94), Month 36: $642 (y=163), Month 60: ~$0 (y=300) -->
+  <path d="M 80,70 Q 140,85 196,94 Q 260,115 312,138 Q 370,155 428,163 Q 500,210 544,245 Q 600,280 660,300"
+        fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Cumulative payments line (what Diego actually paid) -->
+  <!-- Month 0: $0, Month 12: $420, Month 36: $1260, Month 60: $2100 -->
+  <!-- Scale: $2100 maps above chart, so cap at top -->
+  <path d="M 80,300 Q 140,260 196,245 Q 260,210 312,185 Q 370,160 428,140 Q 500,100 544,80 Q 600,70 660,70"
+        fill="none" stroke="#2980b9" stroke-width="2" stroke-dasharray="6,4" stroke-linecap="round"/>
+
+  <!-- Annotations -->
+  <g font-size="11" font-weight="600">
+    <!-- Year 1 annotation -->
+    <circle cx="196" cy="94" r="5" fill="#e74c3c"/>
+    <rect x="210" y="72" width="150" height="36" rx="4" fill="#fff" stroke="#e74c3c" stroke-width="1"/>
+    <text x="218" y="88" fill="#c0392b">Year 1: Paid $420</text>
+    <text x="218" y="102" fill="#c0392b">Balance: $1,003</text>
+
+    <!-- Year 3 annotation -->
+    <circle cx="428" cy="163" r="5" fill="#e74c3c"/>
+    <rect x="442" y="141" width="150" height="36" rx="4" fill="#fff" stroke="#e74c3c" stroke-width="1"/>
+    <text x="450" y="157" fill="#c0392b">Year 3: Paid $1,260</text>
+    <text x="450" y="171" fill="#c0392b">Balance: $642</text>
+
+    <!-- Year 5 annotation -->
+    <circle cx="660" cy="300" r="5" fill="#e74c3c"/>
+    <rect x="530" y="270" width="140" height="30" rx="4" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+    <text x="538" y="284" fill="#c0392b">Year 5: Paid $2,100</text>
+    <text x="538" y="296" fill="#c0392b">Total interest: $900</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(80, 360)" font-size="11">
+    <line x1="0" y1="-4" x2="20" y2="-4" stroke="#e74c3c" stroke-width="3"/>
+    <text x="26" y="0">Remaining balance</text>
+    <line x1="160" y1="-4" x2="180" y2="-4" stroke="#2980b9" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="186" y="0">Cumulative payments</text>
+  </g>
+</svg>

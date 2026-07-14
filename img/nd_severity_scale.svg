@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 320" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="320" rx="12" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="325" y="35" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Severity Scaling</text>
+  <text x="325" y="55" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">All mechanical effects below assume Moderate severity unless noted</text>
+
+  <!-- === MILD (left) === -->
+  <rect x="20" y="80" width="190" height="200" rx="12" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="80" width="190" height="45" rx="12" fill="#27ae60"/>
+  <rect x="20" y="105" width="190" height="20" fill="#27ae60"/>
+  <text x="115" y="108" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">Mild</text>
+  <text x="115" y="155" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#27ae60">50% of penalties</text>
+  <text x="115" y="175" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">(round up)</text>
+
+  <!-- Example box -->
+  <rect x="40" y="195" width="150" height="70" rx="6" fill="#fff" stroke="#27ae60" stroke-width="1"/>
+  <text x="115" y="215" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#27ae60">Example:</text>
+  <text x="115" y="232" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Routine penalty: −5</text>
+  <text x="115" y="247" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">becomes −3</text>
+  <text x="115" y="260" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">(50% of 5 = 2.5, round up to 3)</text>
+
+  <!-- === MODERATE (center) === -->
+  <rect x="230" y="80" width="190" height="200" rx="12" fill="#fef9e7" stroke="#f39c12" stroke-width="3" filter="url(#shadow)"/>
+  <rect x="230" y="80" width="190" height="45" rx="12" fill="#f39c12"/>
+  <rect x="230" y="105" width="190" height="20" fill="#f39c12"/>
+  <text x="325" y="108" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">Moderate</text>
+  <text x="325" y="155" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#e67e22">100% — BASE</text>
+  <text x="325" y="175" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">All stated effects apply</text>
+
+  <!-- Example box -->
+  <rect x="250" y="195" width="150" height="70" rx="6" fill="#fff" stroke="#f39c12" stroke-width="1"/>
+  <text x="325" y="215" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#e67e22">Example:</text>
+  <text x="325" y="232" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Routine penalty: −5</text>
+  <text x="325" y="247" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">stays −5</text>
+  <text x="325" y="260" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">(default for all conditions)</text>
+
+  <!-- === SEVERE (right) === -->
+  <rect x="440" y="80" width="190" height="200" rx="12" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="440" y="80" width="190" height="45" rx="12" fill="#e74c3c"/>
+  <rect x="440" y="105" width="190" height="20" fill="#e74c3c"/>
+  <text x="535" y="108" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">Severe</text>
+  <text x="535" y="155" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#c0392b">150% of penalties</text>
+  <text x="535" y="175" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">(round up)</text>
+
+  <!-- Example box -->
+  <rect x="460" y="195" width="150" height="70" rx="6" fill="#fff" stroke="#e74c3c" stroke-width="1"/>
+  <text x="535" y="215" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#c0392b">Example:</text>
+  <text x="535" y="232" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Routine penalty: −5</text>
+  <text x="535" y="247" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">becomes −8</text>
+  <text x="535" y="260" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">(150% of 5 = 7.5, round up to 8)</text>
+
+  <!-- Bottom note with arrows -->
+  <rect x="100" y="295" width="450" height="20" rx="6" fill="#fff" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="325" y="310" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">Severity can shift over time based on treatment, life stressors, and passage of time — GM adjusts with player consent</text>
+</svg>

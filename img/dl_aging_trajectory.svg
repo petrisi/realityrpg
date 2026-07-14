@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="440" rx="10" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Attribute Trajectory Over a Lifetime</text>
+  <text x="350" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">How each attribute changes from age 18 to 86+</text>
+
+  <!-- Chart area: x=100..620, y=70..340 -->
+  <!-- Grid lines -->
+  <line x1="100" y1="70" x2="620" y2="70" stroke="#e8e8e8" stroke-width="0.5"/>
+  <line x1="100" y1="130" x2="620" y2="130" stroke="#e8e8e8" stroke-width="0.5"/>
+  <line x1="100" y1="190" x2="620" y2="190" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="100" y1="250" x2="620" y2="250" stroke="#e8e8e8" stroke-width="0.5"/>
+  <line x1="100" y1="310" x2="620" y2="310" stroke="#e8e8e8" stroke-width="0.5"/>
+
+  <!-- Y-axis labels (modifier values: +2, +1, 0, −1, −2, −3, −4) -->
+  <text x="90" y="74" text-anchor="end" font-size="10" fill="#27ae60" font-weight="600">+2</text>
+  <text x="90" y="134" text-anchor="end" font-size="10" fill="#27ae60">+1</text>
+  <text x="90" y="194" text-anchor="end" font-size="10" fill="#7f8c8d" font-weight="600">0</text>
+  <text x="90" y="254" text-anchor="end" font-size="10" fill="#c0392b">−1</text>
+  <text x="90" y="314" text-anchor="end" font-size="10" fill="#c0392b">−2</text>
+
+  <!-- X-axis labels (age milestones) -->
+  <text x="100" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">18</text>
+  <text x="196" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">26</text>
+  <text x="292" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">36</text>
+  <text x="388" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">46</text>
+  <text x="484" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">56</text>
+  <text x="580" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">76</text>
+  <text x="620" y="360" text-anchor="middle" font-size="10" fill="#7f8c8d">86+</text>
+  <text x="360" y="380" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50">Age</text>
+
+  <!-- VIG line (blue, starts peak at 0, declines to −6) -->
+  <!-- Points: (100,190) (196,190) (292,250) (388,310) (484,310) (580,310) (620,310) -->
+  <polyline points="100,190 196,190 292,250 388,310 484,310 580,310 620,310" fill="none" stroke="#2980b9" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="100" cy="190" r="4" fill="#2980b9"/>
+  <circle cx="292" cy="250" r="4" fill="#2980b9"/>
+  <circle cx="388" cy="310" r="4" fill="#2980b9"/>
+  <circle cx="484" cy="310" r="4" fill="#2980b9"/>
+  <circle cx="580" cy="310" r="4" fill="#2980b9"/>
+  <circle cx="620" cy="310" r="4" fill="#2980b9"/>
+
+  <!-- DXT line (teal, starts peak, declines slower) -->
+  <!-- Points: (100,190) (196,190) (292,250) (388,250) (484,310) (580,310) (620,310) -->
+  <polyline points="100,190 196,190 292,250 388,250 484,310 580,310 620,310" fill="none" stroke="#16a085" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="100" cy="190" r="4" fill="#16a085"/>
+  <circle cx="388" cy="250" r="4" fill="#16a085"/>
+  <circle cx="484" cy="310" r="4" fill="#16a085"/>
+
+  <!-- INT line (green, rises to +1, then stable, then slight decline) -->
+  <!-- Points: (100,190) (196,130) (292,130) (388,130) (484,130) (580,190) (620,250) -->
+  <polyline points="100,190 196,130 292,130 388,130 484,130 580,190 620,250" fill="none" stroke="#27ae60" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="100" cy="190" r="4" fill="#27ae60"/>
+  <circle cx="196" cy="130" r="4" fill="#27ae60"/>
+  <circle cx="484" cy="130" r="4" fill="#27ae60"/>
+  <circle cx="580" cy="190" r="4" fill="#27ae60"/>
+  <circle cx="620" cy="250" r="4" fill="#27ae60"/>
+
+  <!-- RES line (orange, rises steadily to +2) -->
+  <!-- Points: (100,190) (196,130) (292,130) (388,130) (484,130) (580,70) (620,70) -->
+  <polyline points="100,190 196,130 292,130 388,130 484,130 580,70 620,70" fill="none" stroke="#e67e22" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="100" cy="190" r="4" fill="#e67e22"/>
+  <circle cx="196" cy="130" r="4" fill="#e67e22"/>
+  <circle cx="580" cy="70" r="4" fill="#e67e22"/>
+  <circle cx="620" cy="70" r="4" fill="#e67e22"/>
+
+  <!-- PRC line (purple, starts peak, stable, then declines) -->
+  <!-- Points: (100,190) (196,190) (292,190) (388,190) (484,250) (580,310) (620,310) -->
+  <polyline points="100,190 196,190 292,190 388,190 484,250 580,310 620,310" fill="none" stroke="#8e44ad" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="100" cy="190" r="4" fill="#8e44ad"/>
+  <circle cx="484" cy="250" r="4" fill="#8e44ad"/>
+  <circle cx="580" cy="310" r="4" fill="#8e44ad"/>
+
+  <!-- Legend -->
+  <rect x="100" y="400" width="520" height="30" rx="6" fill="#fff" stroke="#dcdcdc" stroke-width="1" filter="url(#shadow)"/>
+  <circle cx="120" cy="415" r="5" fill="#2980b9"/>
+  <text x="132" y="419" font-size="10" fill="#2c3e50">VIG</text>
+  <circle cx="180" cy="415" r="5" fill="#16a085"/>
+  <text x="192" y="419" font-size="10" fill="#2c3e50">DXT</text>
+  <circle cx="240" cy="415" r="5" fill="#27ae60"/>
+  <text x="252" y="419" font-size="10" fill="#2c3e50">INT</text>
+  <circle cx="300" cy="415" r="5" fill="#e67e22"/>
+  <text x="312" y="419" font-size="10" fill="#2c3e50">RES</text>
+  <circle cx="355" cy="415" r="5" fill="#8e44ad"/>
+  <text x="367" y="419" font-size="10" fill="#2c3e50">PRC</text>
+  <text x="450" y="419" font-size="9" fill="#7f8c8d">Modifier relative to baseline</text>
+
+  <!-- Annotation arrows -->
+  <text x="500" y="100" font-size="9" fill="#e67e22" font-weight="600">RES peaks</text>
+  <text x="500" y="112" font-size="8" fill="#e67e22">with age</text>
+  <text x="200" y="115" font-size="9" fill="#27ae60" font-weight="600">INT rises</text>
+  <text x="200" y="127" font-size="8" fill="#27ae60">with experience</text>
+  <text x="300" y="275" font-size="9" fill="#2980b9" font-weight="600">VIG declines</text>
+  <text x="300" y="287" font-size="8" fill="#2980b9">from 36+</text>
+</svg>

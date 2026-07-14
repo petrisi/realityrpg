@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Item Durability &amp; Failure Rates</text>
+  <text x="350" y="46" text-anchor="middle" font-size="12" fill="#7f8c8d">When durability reaches 0, the item breaks. Roll monthly/quarterly/yearly.</text>
+
+  <!-- Item rows with durability bars -->
+  <!-- Max lifespan = 20 years (car), scale everything to that -->
+
+  <!-- Row 1: Phone — 3-5 years -->
+  <g transform="translate(0, 70)">
+    <text x="80" y="18" text-anchor="end" font-size="13" font-weight="600" fill="#2c3e50">📱 Phone</text>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#e8e8e8"/>
+    <rect x="95" y="4" width="140" height="28" rx="4" fill="#27ae60"/>
+    <text x="165" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3–5 yrs</text>
+    <text x="240" y="23" font-size="10" fill="#7f8c8d">Roll 1d20 monthly; on 1: screen cracks</text>
+    <!-- Failure marker -->
+    <line x1="235" y1="4" x2="235" y2="32" stroke="#e74c3c" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="235" y="44" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">FAIL</text>
+  </g>
+
+  <!-- Row 2: Shoes — 6-24 months -->
+  <g transform="translate(0, 115)">
+    <text x="80" y="18" text-anchor="end" font-size="13" font-weight="600" fill="#2c3e50">👟 Shoes</text>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#e8e8e8"/>
+    <rect x="95" y="4" width="70" height="28" rx="4" fill="#e67e22"/>
+    <text x="130" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">6–24 mo</text>
+    <text x="172" y="23" font-size="10" fill="#7f8c8d">Roll 1d20 monthly; on 1: sole separates</text>
+    <line x1="165" y1="4" x2="165" y2="32" stroke="#e74c3c" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="165" y="44" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">FAIL</text>
+  </g>
+
+  <!-- Row 3: Car — 10-20 years -->
+  <g transform="translate(0, 160)">
+    <text x="80" y="18" text-anchor="end" font-size="13" font-weight="600" fill="#2c3e50">🚗 Car</text>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#e8e8e8"/>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#27ae60"/>
+    <text x="375" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">10–20 yrs</text>
+    <text x="470" y="23" font-size="10" fill="#fff">Roll 1d20 monthly; on 1: breakdown</text>
+    <line x1="655" y1="4" x2="655" y2="32" stroke="#e74c3c" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="655" y="44" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">FAIL</text>
+  </g>
+
+  <!-- Row 4: Laptop — 3-6 years -->
+  <g transform="translate(0, 205)">
+    <text x="80" y="18" text-anchor="end" font-size="13" font-weight="600" fill="#2c3e50">💻 Laptop</text>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#e8e8e8"/>
+    <rect x="95" y="4" width="168" height="28" rx="4" fill="#2980b9"/>
+    <text x="179" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3–6 yrs</text>
+    <text x="252" y="23" font-size="10" fill="#7f8c8d">Roll 1d20 monthly; on 1: hardware failure</text>
+    <line x1="263" y1="4" x2="263" y2="32" stroke="#e74c3c" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="263" y="44" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">FAIL</text>
+  </g>
+
+  <!-- Row 5: Work Clothes — 2-4 years -->
+  <g transform="translate(0, 250)">
+    <text x="80" y="18" text-anchor="end" font-size="13" font-weight="600" fill="#2c3e50">👔 Clothes</text>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#e8e8e8"/>
+    <rect x="95" y="4" width="112" height="28" rx="4" fill="#f39c12"/>
+    <text x="151" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">2–4 yrs</text>
+    <text x="194" y="23" font-size="10" fill="#7f8c8d">Roll 1d20 quarterly; on 1: stain/tear</text>
+    <line x1="207" y1="4" x2="207" y2="32" stroke="#e74c3c" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="207" y="44" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">FAIL</text>
+  </g>
+
+  <!-- Row 6: Fridge/Appliances — 8-15 years -->
+  <g transform="translate(0, 295)">
+    <text x="80" y="18" text-anchor="end" font-size="13" font-weight="600" fill="#2c3e50">🏠 Fridge</text>
+    <rect x="95" y="4" width="560" height="28" rx="4" fill="#e8e8e8"/>
+    <rect x="95" y="4" width="420" height="28" rx="4" fill="#7f8c8d"/>
+    <text x="305" y="23" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">8–15 yrs</text>
+    <text x="385" y="23" font-size="10" fill="#fff">Roll 1d20 yearly; on 1: breaks down</text>
+    <line x1="515" y1="4" x2="515" y2="32" stroke="#e74c3c" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="515" y="44" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">FAIL</text>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="12" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700" fill="#2c3e50">Neurodivergence Spectrum Map</text>
+  <text x="400" y="62" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#7f8c8d">Conditions, categories, and common comorbidities</text>
+
+  <!-- Center node -->
+  <circle cx="400" cy="260" r="52" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">Neuro</text>
+  <text x="400" y="273" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">divergence</text>
+
+  <!-- === NODE 1: ADHD (top-left) === -->
+  <circle cx="140" cy="130" r="44" fill="#2980b9" filter="url(#shadow)"/>
+  <text x="140" y="125" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">ADHD</text>
+  <text x="140" y="143" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#d4efff">~4–7%</text>
+
+  <!-- === NODE 2: Autism (top-right) === -->
+  <circle cx="660" cy="130" r="44" fill="#2980b9" filter="url(#shadow)"/>
+  <text x="660" y="125" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">Autism</text>
+  <text x="660" y="143" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#d4efff">~1–2%</text>
+
+  <!-- === NODE 3: Eating Disorders (right) === -->
+  <circle cx="700" cy="290" r="44" fill="#e67e22" filter="url(#shadow)"/>
+  <text x="690" y="283" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">Eating</text>
+  <text x="708" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">Disorders</text>
+
+  <!-- === NODE 4: BPD (bottom-right) === -->
+  <circle cx="600" cy="430" r="44" fill="#c0392b" filter="url(#shadow)"/>
+  <text x="600" y="425" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#fff">BPD</text>
+  <text x="600" y="443" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#f5b7b1">~1.6%</text>
+
+  <!-- === NODE 5: Schizophrenia (bottom-left) === -->
+  <circle cx="200" cy="430" r="44" fill="#8e44ad" filter="url(#shadow)"/>
+  <text x="190" y="423" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">Schizo-</text>
+  <text x="210" y="438" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">phrenia</text>
+  <text x="200" y="451" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e8daef">~0.5%</text>
+
+  <!-- === NODE 6: Learning Disabilities (left) === -->
+  <circle cx="100" cy="290" r="44" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="90" y="283" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">Learning</text>
+  <text x="110" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">Disabilities</text>
+
+  <!-- Connection lines from center to nodes -->
+  <line x1="400" y1="260" x2="140" y2="130" stroke="#2980b9" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <line x1="400" y1="260" x2="660" y2="130" stroke="#2980b9" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <line x1="400" y1="260" x2="700" y2="290" stroke="#e67e22" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <line x1="400" y1="260" x2="600" y2="430" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <line x1="400" y1="260" x2="200" y2="430" stroke="#8e44ad" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <line x1="400" y1="260" x2="100" y2="290" stroke="#27ae60" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.5"/>
+
+  <!-- Comorbidity lines between nodes (thicker = more common) -->
+  <!-- ADHD ↔ Autism: 50-70% (thickest) -->
+  <line x1="140" y1="130" x2="660" y2="130" stroke="#2980b9" stroke-width="5" opacity="0.25"/>
+  <text x="400" y="118" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2980b9" font-weight="600">50–70% AuDHD</text>
+
+  <!-- ADHD ↔ Depression link (via BPD area) -->
+  <line x1="140" y1="130" x2="600" y2="430" stroke="#f39c12" stroke-width="3" opacity="0.2"/>
+  <text x="320" y="290" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#f39c12" font-weight="600" transform="rotate(-30, 320, 290)">25–30% w/ mood disorders</text>
+
+  <!-- Autism ↔ Depression -->
+  <line x1="660" y1="130" x2="600" y2="430" stroke="#f39c12" stroke-width="3" opacity="0.2"/>
+  <text x="680" y="290" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#f39c12" font-weight="600">30% w/ depression</text>
+
+  <!-- BPD ↔ Depression -->
+  <line x1="600" y1="430" x2="200" y2="430" stroke="#f39c12" stroke-width="3" opacity="0.15"/>
+  <text x="400" y="455" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#f39c12" font-weight="600">40% BPD + depression</text>
+
+  <!-- Schizophrenia ↔ Substance Use -->
+  <line x1="200" y1="430" x2="100" y2="290" stroke="#e74c3c" stroke-width="3" opacity="0.15"/>
+  <text x="130" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e74c3c" font-weight="600" transform="rotate(50, 130, 370)">40% w/ substance use</text>
+
+  <!-- Category labels -->
+  <rect x="15" y="15" width="110" height="22" rx="4" fill="#2980b9" opacity="0.15"/>
+  <text x="90" y="30" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" fill="#2980b9">Neurodevelopmental</text>
+
+  <rect x="680" y="15" width="105" height="22" rx="4" fill="#e67e22" opacity="0.15"/>
+  <text x="732" y="30" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" fill="#e67e22">Eating Disorders</text>
+
+  <rect x="660" y="485" width="110" height="22" rx="4" fill="#c0392b" opacity="0.15"/>
+  <text x="715" y="500" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" fill="#c0392b">Personality</text>
+
+  <rect x="15" y="485" width="105" height="22" rx="4" fill="#8e44ad" opacity="0.15"/>
+  <text x="67" y="500" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" fill="#8e44ad">Psychotic</text>
+
+  <rect x="15" y="310" width="105" height="22" rx="4" fill="#27ae60" opacity="0.15"/>
+  <text x="67" y="325" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" fill="#27ae60">Learning</text>
+
+  <!-- Legend -->
+  <text x="400" y="498" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">Thicker lines = higher comorbidity prevalence · ~60% of people with one condition have at least one other</text>
+</svg>

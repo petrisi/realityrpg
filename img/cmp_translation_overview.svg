@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">📖 Fantasy → Reality Translation Guide</text>
+  <text x="450" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">Quick visual reference for 25 mechanic translations</text>
+
+  <!-- Column headers -->
+  <rect x="30" y="60" width="380" height="30" rx="6" fill="#8e44ad"/>
+  <text x="220" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⚔️ FANTASY RPG</text>
+
+  <rect x="490" y="60" width="380" height="30" rx="6" fill="#27ae60"/>
+  <text x="680" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🏙️ REALITY RPG</text>
+
+  <!-- Row 1: HP → Health Track -->
+  <g transform="translate(0, 100)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">❤️ Hit Points</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🏥 Health Condition Track</text>
+  </g>
+
+  <!-- Row 2: Potion → Medicine -->
+  <g transform="translate(0, 126)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🧪 Healing Potion</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">💊 Medicine / Rest / Doctor Visit</text>
+  </g>
+
+  <!-- Row 3: Spell Slots → Mental Energy -->
+  <g transform="translate(0, 152)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">✨ Spell Slots</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🧠 Mental Energy / Willpower</text>
+  </g>
+
+  <!-- Row 4: Weapon → Professional Skills -->
+  <g transform="translate(0, 178)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🗡️ Weapon Proficiency</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">💼 Professional Skills</text>
+  </g>
+
+  <!-- Row 5: AC → Social Defenses -->
+  <g transform="translate(0, 204)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🛡️ Armor Class</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🛡️ Social Defenses / Coping</text>
+  </g>
+
+  <!-- Row 6: Spellbook → Education -->
+  <g transform="translate(0, 230)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">📖 Spellbook</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">📚 Education / Knowledge</text>
+  </g>
+
+  <!-- Row 7: Gold → Money -->
+  <g transform="translate(0, 256)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">💰 Gold Pieces</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">💵 Dollars / Budget / Finances</text>
+  </g>
+
+  <!-- Row 8: Dungeon → Challenges -->
+  <g transform="translate(0, 282)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🏰 Dungeon</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🏢 Challenging Environment</text>
+  </g>
+
+  <!-- Row 9: Boss → Crisis -->
+  <g transform="translate(0, 308)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🐉 Boss Monster</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">😰 Major Life Crisis</text>
+  </g>
+
+  <!-- Row 10: Quest → Goals -->
+  <g transform="translate(0, 334)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">📜 Quest</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🎯 Life Goal</text>
+  </g>
+
+  <!-- Row 11: XP → Practice -->
+  <g transform="translate(0, 360)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🏆 Experience Points</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🌱 Practice Points / Growth</text>
+  </g>
+
+  <!-- Row 12: Level Up → Milestones -->
+  <g transform="translate(0, 386)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">📊 Level Up</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🎓 Life Milestone</text>
+  </g>
+
+  <!-- Row 13: Class → Profession -->
+  <g transform="translate(0, 412)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">⚔️ Character Class</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">💼 Profession / Role</text>
+  </g>
+
+  <!-- Row 14: Race → Culture -->
+  <g transform="translate(0, 438)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🧝 Race (Elf, Dwarf)</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🌎 Ethnicity / Culture</text>
+  </g>
+
+  <!-- Row 15: Rest → Sleep -->
+  <g transform="translate(0, 464)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🏕️ Camp / Rest</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🏠 Home / Sleep / Self-Care</text>
+  </g>
+
+  <!-- Row 16: Navigation → GPS -->
+  <g transform="translate(0, 490)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🧭 Navigation</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">📱 GPS / Life Management</text>
+  </g>
+
+  <!-- Row 17: Crafting → Cooking -->
+  <g transform="translate(0, 516)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">⚗️ Alchemy / Crafting</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🍳 Cooking / DIY / Home Repair</text>
+  </g>
+
+  <!-- Row 18: Shop → Grocery -->
+  <g transform="translate(0, 542)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🏪 Merchant / Shop</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🛒 Grocery / Marketplace</text>
+  </g>
+
+  <!-- Row 19: Party → Community -->
+  <g transform="translate(0, 568)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">👥 Party</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">👨‍👩‍👧 Family / Community</text>
+  </g>
+
+  <!-- Row 20: Darkvision → Phone Light -->
+  <g transform="translate(0, 594)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🌙 Darkvision</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🔦 Phone Flashlight</text>
+  </g>
+
+  <!-- Row 21: Scroll → Forms -->
+  <g transform="translate(0, 620)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">📜 Scroll / Wand</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">📋 Forms / Bureaucratic Docs</text>
+  </g>
+
+  <!-- Row 22: Mount → Car -->
+  <g transform="translate(0, 646)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🐴 Mount</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🚗 Car / Public Transit</text>
+  </g>
+
+  <!-- Row 23: Stronghold → Home -->
+  <g transform="translate(0, 672)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">🏰 Stronghold</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🏠 Home / Apartment</text>
+  </g>
+
+  <!-- Row 24: Alignment → Values -->
+  <g transform="translate(0, 698)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">⚖️ Alignment</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">🧭 Values / Moral Framework</text>
+  </g>
+
+  <!-- Row 25: Perception → Social Awareness -->
+  <g transform="translate(0, 724)" filter="url(#shadow)">
+    <rect x="30" y="0" width="380" height="22" rx="4" fill="#f5eef8"/>
+    <text x="45" y="16" font-size="11">👁️ Perception Check</text>
+    <rect x="490" y="0" width="380" height="22" rx="4" fill="#eafaf1"/>
+    <text x="505" y="16" font-size="11">👀 Social Awareness / EQ</text>
+  </g>
+</svg>

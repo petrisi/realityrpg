@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="620" height="420" rx="10" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="310" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">The 24-Hour Daily Time Budget</text>
+  <text x="310" y="50" text-anchor="middle" font-size="11" fill="#7f8c8d">Where does a full-time working adult's day actually go?</text>
+
+  <!-- Stacked bar chart -->
+  <!-- Total bar width: 480px, starting at x=70, y=80. Each hour = 20px -->
+  <text x="70" y="72" font-size="11" font-weight="600" fill="#2c3e50">24 Hours</text>
+
+  <!-- Hour markers -->
+  <line x1="70" y1="76" x2="550" y2="76" stroke="#dcdcdc" stroke-width="0.5"/>
+  <text x="70" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">0</text>
+  <text x="150" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">4</text>
+  <text x="230" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">8</text>
+  <text x="310" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">12</text>
+  <text x="390" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">16</text>
+  <text x="470" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">20</text>
+  <text x="550" y="68" text-anchor="middle" font-size="8" fill="#7f8c8d">24</text>
+
+  <!-- Segments of the 24-hour bar (height 60px, y=85) -->
+  <!-- Sleep: 7.5h = 150px (blue) -->
+  <rect x="70" y="85" width="150" height="60" fill="#2980b9" rx="4"/>
+  <text x="145" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">😴 7.5h</text>
+  <text x="145" y="135" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.85)">31%</text>
+
+  <!-- Work: 8.0h = 160px (dark) -->
+  <rect x="220" y="85" width="160" height="60" fill="#2c3e50"/>
+  <text x="300" y="119" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">💼 8.0h</text>
+  <text x="300" y="135" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.85)">33%</text>
+
+  <!-- Commuting: 1.5h = 30px (gray) -->
+  <rect x="380" y="85" width="30" height="60" fill="#7f8c8d"/>
+  <text x="395" y="119" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">🚗</text>
+
+  <!-- Meals: 1.5h = 30px (gray) -->
+  <rect x="410" y="85" width="30" height="60" fill="#95a5a6"/>
+  <text x="425" y="119" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">🍽️</text>
+
+  <!-- Hygiene: 0.75h = 15px (gray) -->
+  <rect x="440" y="85" width="15" height="60" fill="#bdc3c7"/>
+
+  <!-- Chores: 1.25h = 25px (gray) -->
+  <rect x="455" y="85" width="25" height="60" fill="#95a5a6"/>
+  <text x="467" y="119" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">🏠</text>
+
+  <!-- FREE TIME: 3.5h = 70px (ORANGE — highlighted) -->
+  <rect x="480" y="85" width="70" height="60" fill="#e67e22" rx="0" filter="url(#shadow)"/>
+  <text x="515" y="113" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">🎮 3.5h</text>
+  <text x="515" y="128" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.9)">15%</text>
+
+  <!-- Arrow pointing to free time -->
+  <path d="M560,115 L580,115" stroke="#e67e22" stroke-width="2" fill="none"/>
+  <text x="585" y="105" font-size="10" fill="#e67e22" font-weight="700">THIS is</text>
+  <text x="585" y="118" font-size="10" fill="#e67e22" font-weight="700">everything</text>
+  <text x="585" y="131" font-size="10" fill="#e67e22" font-weight="700">else.</text>
+
+  <!-- Breakdown below -->
+  <text x="70" y="175" font-size="13" font-weight="700" fill="#2c3e50">Obligations vs Free Time</text>
+
+  <!-- Obligations bar -->
+  <text x="70" y="195" font-size="11" fill="#2c3e50">⬆️ Obligations (85%)</text>
+  <rect x="230" y="185" width="340" height="22" rx="4" fill="#e8e8e8"/>
+  <rect x="230" y="185" width="289" height="22" rx="4" fill="#2c3e50"/>
+  <text x="575" y="201" font-size="10" font-weight="600" fill="#2c3e50">20.5 hours</text>
+
+  <!-- Free time bar -->
+  <text x="70" y="230" font-size="11" fill="#e67e22" font-weight="600">🎮 Free Time (15%)</text>
+  <rect x="230" y="220" width="340" height="22" rx="4" fill="#e8e8e8"/>
+  <rect x="230" y="220" width="51" height="22" rx="4" fill="#e67e22"/>
+  <text x="575" y="236" font-size="10" font-weight="600" fill="#e67e22">3.5 hours</text>
+
+  <!-- Weekly summary -->
+  <rect x="70" y="260" width="460" height="80" rx="8" fill="#fdf2e9" stroke="#e67e22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="300" y="285" text-anchor="middle" font-size="12" font-weight="700" fill="#e67e22">📅 Weekly Free Time Reality</text>
+  <text x="300" y="305" text-anchor="middle" font-size="11" fill="#2c3e50">After work, chores, sleep, meals, hygiene…</text>
+  <text x="300" y="322" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">10–14 hours per week for everything else.</text>
+
+  <!-- What fits in 10-14 hours -->
+  <text x="70" y="370" font-size="11" font-weight="600" fill="#2c3e50">What fits in those 10–14 hours?</text>
+  <text x="70" y="387" font-size="10" fill="#7f8c8d">Leisure · Hobbies · Socializing · Self-care · Side hustles · Errands · Emergencies</text>
+
+  <!-- Bottom warning -->
+  <text x="310" y="410" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="600">When obligations exceed 24 hours, something must give. See §8.1 Time Under Stress.</text>
+</svg>

@@ -19,7 +19,12 @@
 <section class="content-section">
 <div class="container">
 
+<!-- ============================================================ -->
 <h2>⚖️ Core Rule: Everything Costs Something</h2>
+
+<div class="section-illustration">
+  <img src="img/inv_fantasy_vs_reality.svg" alt="Fantasy RPG vs Reality RPG: left side shows bottomless inventory grid with gold coins and replaceable magic items, right side shows real-world items with weight, cost, maintenance, and breaking — money as oxygen, not a score">
+</div>
 
 <p>In most RPGs, inventory is a grid of slots and gold is XP with a wallet. In Reality RPG, <strong>every object you own has mass, cost, maintenance, and a probability of breaking</strong>. Money is not a resource you earn to spend on fun — it is the oxygen that keeps you alive. Running out of money is not a setback. It is <em>the</em> setback.</p>
 
@@ -41,44 +46,95 @@
 <!-- ============================================================ -->
 <h2>🎒 1. Inventory System</h2>
 
+<div class="section-illustration">
+  <img src="img/inv_slot_map.svg" alt="Inventory Slot Map: a stylized human figure showing carrying zones — pockets, jacket, bag, backpack, hands, and vehicle trunk">
+</div>
+
 <h3>📍 Slot-Based Inventory</h3>
 
 <p>Characters do not have a bottomless backpack. They have <strong>physical slots</strong> determined by what they're wearing and carrying. Each slot can hold items up to a weight limit. Exceeding the limit applies penalties.</p>
 
-<table>
-<thead>
-<tr><th>Slot</th><th>Max Weight</th><th>Slots</th><th>Notes</th></tr>
-</thead>
-<tbody>
-<tr><td>👖 <strong>Pockets</strong> (jeans/pants)</td><td>0.5 lb each</td><td>4</td><td>Front and back pockets. Phone in back pocket = discomfort penalty.</td></tr>
-<tr><td>🧥 <strong>Jacket Pockets</strong></td><td>0.5 lb each</td><td>2–4</td><td>Depends on jacket type. Hoodie = 2 pockets. Winter coat = 4.</td></tr>
-<tr><td>👛 <strong>Purse/Crossbody Bag</strong></td><td>15 lb</td><td>1 container</td><td>Many sub-compartments. Organization matters — searching takes time.</td></tr>
-<tr><td>🎒 <strong>Backpack</strong></td><td>25 lb (comfortable)</td><td>1 container</td><td>Can carry more but beyond 25 lb, −1 to all physical rolls per 5 lb over.</td></tr>
-<tr><td>🛒 <strong>Shopping Cart</strong></td><td>40 lb</td><td>1 container</td><td>Only available at stores. Abandoning a cart in a parking lot = social penalty.</td></tr>
-<tr><td>🚗 <strong>Vehicle Trunk</strong></td><td>300–600 lb</td><td>1 container</td><td>Available only if character owns/has access to a vehicle.</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">👖</span>
+    <h3>Pockets (jeans/pants)</h3>
+    <p><strong>0.5 lb each</strong> · 4 slots<br>Front and back pockets. Phone in back pocket = discomfort penalty.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🧥</span>
+    <h3>Jacket Pockets</h3>
+    <p><strong>0.5 lb each</strong> · 2–4 slots<br>Depends on jacket type. Hoodie = 2 pockets. Winter coat = 4.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👛</span>
+    <h3>Purse / Crossbody Bag</h3>
+    <p><strong>15 lb</strong> · 1 container<br>Many sub-compartments. Organization matters — searching takes time.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎒</span>
+    <h3>Backpack</h3>
+    <p><strong>25 lb</strong> (comfortable) · 1 container<br>Can carry more but beyond 25 lb, −1 to all physical rolls per 5 lb over.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🛒</span>
+    <h3>Shopping Cart</h3>
+    <p><strong>40 lb</strong> · 1 container<br>Only available at stores. Abandoning a cart in a parking lot = social penalty.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚗</span>
+    <h3>Vehicle Trunk</h3>
+    <p><strong>300–600 lb</strong> · 1 container<br>Available only if character owns/has access to a vehicle.</p>
+  </div>
+</div>
 
 <h3>⚖️ Encumbrance Rules</h3>
+
+<div class="section-illustration">
+  <img src="img/inv_encumbrance_chart.svg" alt="Encumbrance chart: VIG score bands with max load bars growing proportionally from 15 to 70 pounds, with red penalty zones overlay">
+</div>
 
 <p>Real-world carrying capacity matters. A character's maximum comfortable load is determined by their <strong>VIG</strong> score and body type:</p>
 
 <table>
 <thead>
-<tr><th>VIG Score</th><th>Max Comfortable Load</th><th>Penalty When Overloaded</th></tr>
+<tr><th>VIG Score</th><th>Max Comfortable Load</th><th>Load Bar</th><th>Penalty When Overloaded</th></tr>
 </thead>
 <tbody>
-<tr><td>8 or below</td><td>15 lb</td><td>−2 to all physical rolls</td></tr>
-<tr><td>9–11</td><td>25 lb</td><td>−1 to all physical rolls</td></tr>
-<tr><td>12–14</td><td>40 lb</td><td>−1 to DEX-based rolls only</td></tr>
-<tr><td>15–17</td><td>55 lb</td><td>No penalty until 70 lb</td></tr>
-<tr><td>18+</td><td>70 lb</td><td>No penalty until 90 lb</td></tr>
+<tr>
+<td>8 or below</td><td>15 lb</td>
+<td><div class="stat-bar-wrap"><div class="stat-bar"><div class="stat-bar-fill" style="width:21%;background:#e74c3c;"></div></div></div></td>
+<td>−2 to all physical rolls</td>
+</tr>
+<tr>
+<td>9–11</td><td>25 lb</td>
+<td><div class="stat-bar-wrap"><div class="stat-bar"><div class="stat-bar-fill" style="width:36%;background:#e67e22;"></div></div></div></td>
+<td>−1 to all physical rolls</td>
+</tr>
+<tr>
+<td>12–14</td><td>40 lb</td>
+<td><div class="stat-bar-wrap"><div class="stat-bar"><div class="stat-bar-fill" style="width:57%;background:#f39c12;"></div></div></div></td>
+<td>−1 to DEX-based rolls only</td>
+</tr>
+<tr>
+<td>15–17</td><td>55 lb</td>
+<td><div class="stat-bar-wrap"><div class="stat-bar"><div class="stat-bar-fill" style="width:79%;background:#27ae60;"></div></div></div></td>
+<td>No penalty until 70 lb</td>
+</tr>
+<tr>
+<td>18+</td><td>70 lb</td>
+<td><div class="stat-bar-wrap"><div class="stat-bar"><div class="stat-bar-fill" style="width:100%;background:#27ae60;"></div></div></div></td>
+<td>No penalty until 90 lb</td>
+</tr>
 </tbody>
 </table>
 
 <p>Being overloaded also costs <strong>1 VIG per hour</strong> of carrying the excess weight. If a character's VIG reaches 0 while overloaded, they must set something down or risk injury (roll <span class="dice">1d20</span>; on 1–5, they drop everything and may sprain something).</p>
 
 <h3>😱 The Forgot-Something Penalty</h3>
+
+<div class="section-illustration">
+  <img src="img/inv_forgot_keys.png" alt="A person standing outside their apartment door, fumbling through pockets in morning light, realization dawning that they're locked out">
+</div>
 
 <p>Forgetting essential items is a common and devastating failure mode. At the start of each day, the GM may call for a <strong>Morning Routine Check</strong>:</p>
 
@@ -91,10 +147,14 @@
 <tr><td>👛 <strong>Wallet</strong></td><td><span class="dice">1d20</span>; on 1–4</td><td>Cannot pay for anything. No ID, no cards, no cash.</td><td>If at work: cannot buy lunch. If at store: must abandon cart. Social humiliation.</td></tr>
 <tr><td>📱 <strong>Phone</strong></td><td><span class="dice">1d20</span>; on 1–3</td><td>No communication, no maps, no mobile banking, no 2FA.</td><td>Cannot receive work calls. May miss emergency. Modern life nearly impossible without it.</td></tr>
 <tr><td>🧻 <strong>Toilet Paper</strong></td><td>Check inventory at start of day</td><td>Must improvise. Washcloth, paper towels, or the dreaded "dry method."</td><td>−2 to Mood Score for the day. If TP has been gone &gt;3 days, roll <span class="dice">1d20</span>; on 1, character develops a health issue requiring a doctor visit.</td></tr>
-<tr><td>💊 <strong>Medications</strong></td><td><span class="dice">1d20</span>; on 1–4 (if on prescription)</td><td>Missed dose. Effects depend on medication type.</td><td>Insulin missed = possible emergency (roll <span class="dice">1d20</span>; on 1–6, go to ER). Blood pressure meds missed = +2 SP, health risk next week.</td></tr>
+<tr><td>💊 <strong>Medications</strong></td><td><span class="dice">1d20</span>; on 1–4 (if on prescription)</td><td>Missed dose. Effects depend on medication type.</td><td>Insulin missed = possible emergency (roll <span class="dice">1d20</span>; on 1–6, go to ER). Blood pressure meds missed = +2 SP + health risk next week.</td></tr>
 <tr><td>🪪 <strong>ID / Driver's License</strong></td><td><span class="dice">1d20</span>; on 1–4</td><td>Cannot enter age-restricted places, cannot get cash from ATM, cannot board planes.</td><td>If stopped by police without ID: possible detention. Lost time: 2–8 hours.</td></tr>
 </tbody>
 </table>
+
+<div class="section-illustration">
+  <img src="img/inv_cascade_flowchart.svg" alt="Cascade flowchart: Forget Keys → Locked Out → Locksmith $150 → Late to Work → Boss Angry → Use PTO → Lose Pay → Can't Afford Groceries → Ramen Week → Low Energy → Poor Work Performance → Boss Relationship minus 1">
+</div>
 
 <div class="callout warning">
   <div class="callout-title">⚠️ The Cascade: One Forgotten Item Can Ruin a Week</div>
@@ -252,6 +312,10 @@
 <!-- ============================================================ -->
 <h2>💰 3. Money Management</h2>
 
+<div class="section-illustration">
+  <img src="img/inv_economic_cycle.svg" alt="The economic cycle showing how income flows through rent, food, transport, health costs, unexpected events, and back to earning">
+</div>
+
 <h3>🏦 Bank Accounts</h3>
 
 <p>Characters typically have at least two accounts:</p>
@@ -264,17 +328,12 @@
 
 <p><strong>Overdraft Protection</strong> costs $10–$35 per occurrence. Forgetting a bill payment and going into overdraft is a <strong>real and common</strong> way to lose money. Characters with a history of overdrafts should track an <strong>Overdraft Risk</strong> score:</p>
 
-<table>
-<thead>
-<tr><th>Account Balance vs. Minimum</th><th>Overdraft Risk</th><th>Roll</th></tr>
-</thead>
-<tbody>
-<tr><td>🟢 &gt;$500 above minimum</td><td>None</td><td>No roll needed</td></tr>
-<tr><td>🟡 $100–$500 above minimum</td><td>Low</td><td><span class="dice">1d20</span>; on 1, overdraft ($30)</td></tr>
-<tr><td>🟠 $0–$100 above minimum</td><td>Medium</td><td><span class="dice">1d20</span>; on 1–4, overdraft ($30)</td></tr>
-<tr><td>🔴 Below minimum</td><td>Critical</td><td><span class="dice">1d20</span>; on 1–8, overdraft ($30). On 1, multiple overdrafts ($90–$150)</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step healthy">🟢 None<br>&gt;$500 above<br><small>No roll needed</small></div>
+  <div class="condition-step tired">🟡 Low<br>$100–$500<br><small>Roll 1 = $30</small></div>
+  <div class="condition-step sick">🟠 Medium<br>$0–$100<br><small>Roll 1–4 = $30</small></div>
+  <div class="condition-step critical">🔴 Critical<br>Below min<br><small>Roll 1–8 = $30+</small></div>
+</div>
 
 <h3>💳 Credit Cards</h3>
 
@@ -285,19 +344,32 @@
 <tr><th>Factor</th><th>Details</th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Typical APR</strong></td><td>15–25% on purchases. 25–30% on cash advances. 0% intro offers last 12–18 months.</td></tr>
-<tr><td><strong>Minimum Payment</strong></td><td>1–3% of balance + interest. Paying only the minimum on a $5,000 balance at 20% APR takes <strong>32 years</strong> to pay off, costing <strong>$15,000+</strong> in interest.</td></tr>
-<tr><td><strong>Annual Fees</strong></td><td>$0–$550 for premium cards. Reward cards charge fees but offer cashback/points.</td></tr>
-<tr><td><strong>Credit Score Impact</strong></td><td>Utilization &gt;30% of limit = credit score drops. Maxing out cards = major score damage.</td></tr>
+<tr><td>💰 <strong>Typical APR</strong></td><td>15–25% on purchases. 25–30% on cash advances. 0% intro offers last 12–18 months.</td></tr>
+<tr><td>📉 <strong>Minimum Payment</strong></td><td>1–3% of balance + interest. Paying only the minimum on a $5,000 balance at 20% APR takes <strong>32 years</strong> to pay off, costing <strong>$15,000+</strong> in interest.</td></tr>
+<tr><td>📅 <strong>Annual Fees</strong></td><td>$0–$550 for premium cards. Reward cards charge fees but offer cashback/points.</td></tr>
+<tr><td>📊 <strong>Credit Score Impact</strong></td><td>Utilization &gt;30% of limit = credit score drops. Maxing out cards = major score damage.</td></tr>
 </tbody>
 </table>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: The Credit Card Trap</div>
-  <p>Diego puts a $1,200 car repair on his credit card (APR 22%). He can only afford the minimum payment of ~$35/month. After 1 year: he's paid $420 in payments but only reduced the balance to $1,003. After 3 years: he's paid $1,260 and still owes $642. After 5 years: he's paid <strong>$2,100 total</strong> for a $1,200 repair. The card charged him <strong>$900 in interest</strong>.</p>
+<div class="char-portrait">
+  <img src="img/char_diego.png" alt="Portrait of Diego">
+  <div class="char-info">
+    <div class="callout example" style="margin-top:0;">
+      <div class="callout-title">📝 Example: The Credit Card Trap — Diego</div>
+      <p>Diego puts a $1,200 car repair on his credit card (APR 22%). He can only afford the minimum payment of ~$35/month. After 1 year: he's paid $420 in payments but only reduced the balance to $1,003. After 3 years: he's paid $1,260 and still owes $642. After 5 years: he's paid <strong>$2,100 total</strong> for a $1,200 repair. The card charged him <strong>$900 in interest</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-illustration">
+  <img src="img/inv_credit_spiral.svg" alt="Credit card debt spiral: line chart showing balance declining slowly over 60 months — $1,200 repair costing $2,100 total with minimum payments">
 </div>
 
 <h3>📊 Budgeting As A Mechanic</h3>
+
+<div class="section-illustration">
+  <img src="img/inv_budget_gauge.svg" alt="Budget Score gauge: vertical meter from 0 to 100 with color zones — red Crisis 0-20, orange Stressed 20-40, yellow Stable 40-70, green Comfort 70-100 — needle at 50">
+</div>
 
 <p>Budgeting is not optional. Characters who actively budget gain mechanical benefits:</p>
 
@@ -308,95 +380,102 @@
   <li>Characters with BS &gt; 60 gain +5 to stress resistance checks. BS &lt; 30 imposes −5 to stress resistance.</li>
 </ul>
 
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">&gt;70</span><span class="tn-label">🟢 <strong>Financial Comfort</strong> — +5 to stress resistance checks</span></div>
+  <div class="tn-step easy"><span class="tn-value">40–70</span><span class="tn-label">🟡 <strong>Stable</strong> — normal operations</span></div>
+  <div class="tn-step hard"><span class="tn-value">20–40</span><span class="tn-label">🟠 <strong>Stressed</strong> — financial pressure mounting</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">&lt;20</span><span class="tn-label">🔴 <strong>Crisis</strong> — −5 to stress resistance. Approaching freefall.</span></div>
+</div>
+
 <h3>🚨 Emergency Fund</h3>
 
 <p>An emergency fund is <strong>the single most important financial tool</strong> a character can have. It is 3–6 months of essential expenses saved in a separate account.</p>
 
-<table>
-<thead>
-<tr><th>Emergency Fund Size</th><th>Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>🟢 6+ months</td><td>Immune to most financial crises. Can take job risks. +10 to Budget Score.</td></tr>
-<tr><td>🟡 3–6 months</td><td>Can survive most one-time events (car repair, medical bill). +5 to Budget Score.</td></tr>
-<tr><td>🟠 1–3 months</td><td>Vulnerable to larger events. Small emergencies manageable. No modifier.</td></tr>
-<tr><td>🔴 0–1 months</td><td>Any unexpected expense causes crisis. −5 to Budget Score. −2 to all mood checks.</td></tr>
-<tr><td>💀 None</td><td>Living paycheck to paycheck. One flat tire away from catastrophe. −10 to Budget Score. −3 to all mood checks.</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step healthy">🟢 6+ mo<br>Immune to crises<br><small>+10 BS</small></div>
+  <div class="condition-step tired">🟡 3–6 mo<br>Most events OK<br><small>+5 BS</small></div>
+  <div class="condition-step sick">🟠 1–3 mo<br>Vulnerable<br><small>No mod</small></div>
+  <div class="condition-step injured">🔴 0–1 mo<br>Crisis mode<br><small>−5 BS, −2 mood</small></div>
+  <div class="condition-step critical">💀 None<br>Paycheck to paycheck<br><small>−10 BS, −3 mood</small></div>
+</div>
 
 <h3>💀 Bankruptcy Risk</h3>
 
 <p>When a character's Budget Score drops below 10 for 3+ consecutive months, they enter <strong>Financial Freefall</strong>. Each month in freefall, roll <span class="dice">1d20</span>:</p>
 
-<table>
-<thead>
-<tr><th>Roll</th><th>Result</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td><strong>Catastrophe:</strong> Eviction, car repossession, or medical emergency without insurance. Immediate crisis event.</td></tr>
-<tr><td>2–4</td><td><strong>Major setback:</strong> Job loss, major repair, or unexpected medical bill ($1,000–$5,000).</td></tr>
-<tr><td>5–8</td><td><strong>Minor setback:</strong> Unexpected expense ($100–$500). A tire blows, a tooth needs work, clothes wear out.</td></tr>
-<tr><td>9–15</td><td><strong>Stress:</strong> Nothing happens this month, but Budget Score drops 5 more points from anxiety.</td></tr>
-<tr><td>16–20</td><td><strong>Small reprieve:</strong> A tax refund, a small windfall, or an expense was lower than expected. +5 to Budget Score.</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step near-impossible"><span class="tn-value">1</span><span class="tn-label">💀 <strong>Catastrophe:</strong> Eviction, repossession, or uninsured medical emergency</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">2–4</span><span class="tn-label">🔴 <strong>Major setback:</strong> Job loss, major repair, or unexpected bill ($1K–$5K)</span></div>
+  <div class="tn-step hard"><span class="tn-value">5–8</span><span class="tn-label">🟠 <strong>Minor setback:</strong> Unexpected expense ($100–$500)</span></div>
+  <div class="tn-step medium"><span class="tn-value">9–15</span><span class="tn-label">🟡 <strong>Stress:</strong> Nothing happens, but BS drops 5 from anxiety</span></div>
+  <div class="tn-step easy"><span class="tn-value">16–20</span><span class="tn-label">🟢 <small>Small reprieve:</small> Tax refund, windfall, or lower expense. +5 to BS.</span></div>
+</div>
 
 <p>After 6 months in Financial Freefall, the GM should offer the character a path to stabilization — but it will require <strong>roleplay sacrifice</strong> (moving in with family, taking a second job, cutting all discretionary spending, etc.).</p>
 
 <!-- ============================================================ -->
 <h2>📅 4. Monthly Budget Simulation</h2>
 
+<div class="section-illustration">
+  <img src="img/inv_budget_stress.png" alt="A person at their kitchen table at night, laptop open showing a budget spreadsheet, bills scattered around, looking stressed">
+</div>
+
 <h3>💡 Sample Budget: "Sarah" — 28, Office Worker, Standard Tier</h3>
 
-<div class="callout example">
-  <div class="callout-title">📝 Sarah's Monthly Budget</div>
-  <p><strong>Income:</strong> $4,200/month (after taxes, $50,400/year)</p>
+<div class="char-portrait">
+  <img src="img/char_sarah.png" alt="Portrait of Sarah">
+  <div class="char-info">
+    <div class="char-name">Sarah</div>
+    <div class="char-subtitle">28 · Office Worker · Standard Tier · $50,400/year</div>
+    <div class="callout example" style="margin-top:0.5em;">
+      <div class="callout-title">📝 Sarah's Monthly Budget</div>
+      <p><strong>Income:</strong> $4,200/month (after taxes)</p>
 
-  <table>
-  <thead>
-  <tr><th>Expense</th><th>Monthly Cost</th><th>% of Income</th></tr>
-  </thead>
-  <tbody>
-  <tr><td>🏠 Rent (1BR apartment)</td><td>$1,500</td><td>36%</td></tr>
-  <tr><td>💡 Utilities (electric, water, gas)</td><td>$120</td><td>3%</td></tr>
-  <tr><td>📶 Internet</td><td>$60</td><td>1%</td></tr>
-  <tr><td>📱 Phone Plan</td><td>$55</td><td>1%</td></tr>
-  <tr><td>🏥 Health Insurance (employer)</td><td>$180</td><td>4%</td></tr>
-  <tr><td>🚗 Car Payment</td><td>$280</td><td>7%</td></tr>
-  <tr><td>🚗 Car Insurance</td><td>$120</td><td>3%</td></tr>
-  <tr><td>⛽ Gas</td><td>$130</td><td>3%</td></tr>
-  <tr><td>🛒 Groceries</td><td>$350</td><td>8%</td></tr>
-  <tr><td>🍽️ Eating Out (2x/week)</td><td>$120</td><td>3%</td></tr>
-  <tr><td>💊 Medications</td><td>$25</td><td>1%</td></tr>
-  <tr><td>🧴 Toiletries/Personal</td><td>$40</td><td>1%</td></tr>
-  <tr><td>👕 Clothing (averaged)</td><td>$50</td><td>1%</td></tr>
-  <tr><td>🎬 Entertainment</td><td>$60</td><td>1%</td></tr>
-  <tr><td>🎁 Gifts/Occasional</td><td>$40</td><td>1%</td></tr>
-  <tr><td>📋 Miscellaneous</td><td>$50</td><td>1%</td></tr>
-  <tr><td>💰 Savings</td><td>$300</td><td>7%</td></tr>
-  </tbody>
-  <tfoot>
-  <tr><td><strong>Total</strong></td><td><strong>$4,380</strong></td><td><strong>104%</strong></td></tr>
-  </tfoot>
-  </table>
+      <table>
+      <thead>
+      <tr><th>Expense</th><th>Monthly</th><th>% Income</th></tr>
+      </thead>
+      <tbody>
+      <tr><td>🏠 Rent (1BR apartment)</td><td>$1,500</td><td>36%</td></tr>
+      <tr><td>💡 Utilities (electric, water, gas)</td><td>$120</td><td>3%</td></tr>
+      <tr><td>📶 Internet</td><td>$60</td><td>1%</td></tr>
+      <tr><td>📱 Phone Plan</td><td>$55</td><td>1%</td></tr>
+      <tr><td>🏥 Health Insurance (employer)</td><td>$180</td><td>4%</td></tr>
+      <tr><td>🚗 Car Payment</td><td>$280</td><td>7%</td></tr>
+      <tr><td>🚗 Car Insurance</td><td>$120</td><td>3%</td></tr>
+      <tr><td>⛽ Gas</td><td>$130</td><td>3%</td></tr>
+      <tr><td>🛒 Groceries</td><td>$350</td><td>8%</td></tr>
+      <tr><td>🍽️ Eating Out (2x/week)</td><td>$120</td><td>3%</td></tr>
+      <tr><td>💊 Medications</td><td>$25</td><td>1%</td></tr>
+      <tr><td>🧴 Toiletries/Personal</td><td>$40</td><td>1%</td></tr>
+      <tr><td>👕 Clothing (averaged)</td><td>$50</td><td>1%</td></tr>
+      <tr><td>🎬 Entertainment</td><td>$60</td><td>1%</td></tr>
+      <tr><td>🎁 Gifts/Occasional</td><td>$40</td><td>1%</td></tr>
+      <tr><td>📋 Miscellaneous</td><td>$50</td><td>1%</td></tr>
+      <tr><td>💰 Savings</td><td>$300</td><td>7%</td></tr>
+      </tbody>
+      <tfoot>
+      <tr><td><strong>Total</strong></td><td><strong>$4,380</strong></td><td><strong>104%</strong></td></tr>
+      </tfoot>
+      </table>
 
-  <p><strong>Deficit: −$180/month</strong>. Sarah is <em>already</em> over budget. She's either dipping into savings, using credit, or cutting somewhere not shown. After 3 months, she's $540 in the hole. After a year, $2,160.</p>
+      <p><strong>Deficit: −$180/month</strong>. Sarah is <em>already</em> over budget. She's either dipping into savings, using credit, or cutting somewhere not shown. After 3 months, she's $540 in the hole. After a year, $2,160.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-illustration">
+  <img src="img/inv_sarah_budget_pie.svg" alt="Donut chart of Sarah's budget: Rent 36% (dominant slice), Car 13%, Groceries 8%, Savings 7%, Health 4%, and other categories">
 </div>
 
 <h3>🔥 What Happens When You're Over Budget</h3>
 
-<table>
-<thead>
-<tr><th>Deficit Level</th><th>Monthly Shortfall</th><th>Consequence</th></tr>
-</thead>
-<tbody>
-<tr><td>🟡 <strong>Slight</strong></td><td>$50–$150</td><td>Can absorb from savings for a few months. Stress builds slowly.</td></tr>
-<tr><td>🟠 <strong>Moderate</strong></td><td>$150–$400</td><td>Savings drain in 3–6 months. Must cut expenses or use credit. Budget Score drops 5/month.</td></tr>
-<tr><td>🔴 <strong>Severe</strong></td><td>$400–$800</td><td>Savings gone in 1–2 months. Credit card debt accumulates. Budget Score drops 10/month. Must make lifestyle changes or find income.</td></tr>
-<tr><td>💀 <strong>Critical</strong></td><td>$800+</td><td>Cannot cover essentials. Rent late → eviction risk. Bills unpaid → shut-offs. Budget Score drops 15/month. Enter Financial Freefall within 2 months.</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step tired">🟡 Slight<br>$50–$150<br><small>Savings absorb</small></div>
+  <div class="condition-step sick">🟠 Moderate<br>$150–$400<br><small>BS −5/mo</small></div>
+  <div class="condition-step injured">🔴 Severe<br>$400–$800<br><small>BS −10/mo</small></div>
+  <div class="condition-step critical">💀 Critical<br>$800+<br><small>BS −15/mo<br>Freefall risk</small></div>
+</div>
 
 <div class="callout warning">
   <div class="callout-title">⚠️ The Latte Factor Is a Myth</div>
@@ -423,6 +502,10 @@
 
 <!-- ============================================================ -->
 <h2>🛍️ 5. Shopping and Consumption</h2>
+
+<div class="section-illustration">
+  <img src="img/inv_shopping_comparison.png" alt="Side-by-side: one person carefully price-comparing items in a discount store, another casually buying premium items — showing different financial realities">
+</div>
 
 <h3>🎮 Shopping As Gameplay</h3>
 
@@ -454,7 +537,7 @@
 </table>
 
 <div class="callout example">
-  <div class="callout-title">📝 Example: Budget Shopping vs. Premium Shopping</div>
+  <div class="callout-title">📝 Example: Budget Shopping vs. Premium Shopping — Alex</div>
   <p><strong>Alex</strong> needs a new laptop. Options:</p>
   <ul>
     <li><strong>Budget path:</strong> Buy a used laptop for $200. Takes 3 hours of searching. Roll <span class="dice">1d20</span> = 14 — found a decent one! But it only lasts 1 year before problems start. Total cost over 2 years: $400 (need to replace).</li>
@@ -484,7 +567,15 @@
 <!-- ============================================================ -->
 <h2>📉 6. Resource Depletion</h2>
 
+<div class="section-illustration">
+  <img src="img/inv_empty_pantry.png" alt="A nearly empty refrigerator — one wilting lettuce, half a jar of peanut butter, an egg — the anxiety of needing to grocery shop now">
+</div>
+
 <h3>⏳ Everything Runs Out</h3>
+
+<div class="section-illustration">
+  <img src="img/inv_depletion_timeline.svg" alt="Resource depletion timeline: a week-long horizontal view showing when TP, food, phone battery, gas, medications, and toiletries run low with warning thresholds marked">
+</div>
 
 <p>In fantasy RPGs, a character can eat a ration for 40 years. In Reality RPG, <strong>consumables deplete at realistic rates</strong>. Characters should track the status of key consumables:</p>
 
@@ -513,24 +604,37 @@
 <tr><th>Food Type</th><th>Shelf Life (Refrigerated)</th><th>Shelf Life (Pantry)</th><th>Waste Risk</th></tr>
 </thead>
 <tbody>
-<tr><td>🥬 <strong>Fresh vegetables</strong></td><td>3–7 days</td><td>Root veg: 2–4 weeks</td><td>High — 40% of purchased produce is wasted</td></tr>
-<tr><td>🍎 <strong>Fresh fruit</strong></td><td>5–10 days</td><td>Citrus: 2–3 weeks</td><td>Medium</td></tr>
-<tr><td>🥩 <strong>Raw meat</strong></td><td>1–3 days</td><td>Frozen: 3–6 months</td><td>High — must cook or freeze quickly</td></tr>
-<tr><td>🥛 <strong>Dairy</strong></td><td>5–14 days</td><td>Hard cheese: 3–4 weeks</td><td>Medium</td></tr>
-<tr><td>🍚 <strong>Rice, pasta, canned goods</strong></td><td>N/A</td><td>6–24 months</td><td>Low — staple foods don't spoil quickly</td></tr>
-<tr><td>🍞 <strong>Bread</strong></td><td>3–5 days</td><td>Frozen: 3 months</td><td>High — molds fast</td></tr>
+<tr><td>🥬 <strong>Fresh vegetables</strong></td><td>3–7 days</td><td>Root veg: 2–4 weeks</td><td>🔴 High — 40% of purchased produce is wasted</td></tr>
+<tr><td>🍎 <strong>Fresh fruit</strong></td><td>5–10 days</td><td>Citrus: 2–3 weeks</td><td>🟡 Medium</td></tr>
+<tr><td>🥩 <strong>Raw meat</strong></td><td>1–3 days</td><td>Frozen: 3–6 months</td><td>🔴 High — must cook or freeze quickly</td></tr>
+<tr><td>🥛 <strong>Dairy</strong></td><td>5–14 days</td><td>Hard cheese: 3–4 weeks</td><td>🟡 Medium</td></tr>
+<tr><td>🍚 <strong>Rice, pasta, canned goods</strong></td><td>N/A</td><td>6–24 months</td><td>🟢 Low — staple foods don't spoil quickly</td></tr>
+<tr><td>🍞 <strong>Bread</strong></td><td>3–5 days</td><td>Frozen: 3 months</td><td>🔴 High — molds fast</td></tr>
 </tbody>
 </table>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Grocery Run Gone Wrong</div>
-  <p>Maya buys $80 of groceries on Sunday, excited to cook healthy all week. By Wednesday, she's working late and orders take-out ($22) instead of cooking. By Friday, half the fresh produce has spoiled because she didn't meal-plan. She threw away $25 of food. Her effective grocery cost for the week is now $77 ($80 − $25 waste + $22 take-out), and she still didn't eat as well as planned. <strong>Meal planning is a mechanic, not a suggestion.</strong></p>
+<div class="char-portrait">
+  <img src="img/char_maya.png" alt="Portrait of Maya">
+  <div class="char-info">
+    <div class="callout example" style="margin-top:0;">
+      <div class="callout-title">📝 Example: Grocery Run Gone Wrong — Maya</div>
+      <p>Maya buys $80 of groceries on Sunday, excited to cook healthy all week. By Wednesday, she's working late and orders take-out ($22) instead of cooking. By Friday, half the fresh produce has spoiled because she didn't meal-plan. She threw away $25 of food. Her effective grocery cost for the week is now $77 ($80 − $25 waste + $22 take-out), and she still didn't eat as well as planned. <strong>Meal planning is a mechanic, not a suggestion.</strong></p>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================ -->
 <h2>🔧 7. Breaking Things</h2>
 
+<div class="section-illustration">
+  <img src="img/inv_car_breakdown.png" alt="A car with hood up on a quiet roadside, overcast day — the mundane reality of a breakdown, person standing beside it looking at phone for towing">
+</div>
+
 <h3>💥 Everything Breaks Eventually</h3>
+
+<div class="section-illustration">
+  <img src="img/inv_durability_bars.svg" alt="Item durability bars: Phone, Shoes, Car, Laptop, Work Clothes, Fridge — each showing a bar from New to Broken with relative lifespans">
+</div>
 
 <p>In Reality RPG, objects are not immortal. Every owned item has a <strong>Durability Score</strong> that degrades over time. When an item's durability reaches 0, it breaks. The GM determines when to roll for item failure:</p>
 
@@ -554,25 +658,40 @@
 
 <p>When something breaks, the character faces a real decision:</p>
 
-<table>
-<thead>
-<tr><th>Factor</th><th>Repair Favored</th><th>Replace Favored</th></tr>
-</thead>
-<tbody>
-<tr><td><strong>Cost ratio</strong></td><td>Repair &lt; 50% of replacement</td><td>Repair &gt; 70% of replacement</td></tr>
-<tr><td><strong>Age of item</strong></td><td>Newer item (&lt; 50% of lifespan)</td><td>Old item (&gt; 75% of lifespan)</td></tr>
-<tr><td><strong>Time available</strong></td><td>Can wait for repair</td><td>Need it immediately</td></tr>
-<tr><td><strong>Sentimental value</strong></td><td>Heirloom, gift, emotional attachment</td><td>No attachment, purely functional</td></tr>
-<tr><td><strong>Reliability after repair</strong></td><td>Will be "good as new"</td><td>May break again soon</td></tr>
-</tbody>
-</table>
+<div class="compare-grid">
+  <div class="compare-col fantasy">
+    <h4>🔧 Repair Favored</h4>
+    <table>
+    <tr><td><strong>Cost ratio</strong></td><td>Repair &lt; 50% of replacement</td></tr>
+    <tr><td><strong>Age of item</strong></td><td>Newer (&lt; 50% of lifespan)</td></tr>
+    <tr><td><strong>Time available</strong></td><td>Can wait for repair</td></tr>
+    <tr><td><strong>Sentimental value</strong></td><td>Heirloom, gift, emotional attachment</td></tr>
+    <tr><td><strong>Reliability</strong></td><td>Will be "good as new"</td></tr>
+    </table>
+  </div>
+  <div class="compare-col reality">
+    <h4>🔄 Replace Favored</h4>
+    <table>
+    <tr><td><strong>Cost ratio</strong></td><td>Repair &gt; 70% of replacement</td></tr>
+    <tr><td><strong>Age of item</strong></td><td>Old (&gt; 75% of lifespan)</td></tr>
+    <tr><td><strong>Time available</strong></td><td>Need it immediately</td></tr>
+    <tr><td><strong>Sentimental value</strong></td><td>No attachment, purely functional</td></tr>
+    <tr><td><strong>Reliability</strong></td><td>May break again soon</td></tr>
+    </table>
+  </div>
+</div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: The Car That Won't Die (Or Will It?)</div>
-  <p>Carlos's 2012 Honda Civic (current value: $4,500) needs a new transmission. Repair quote: $3,200. A used replacement car: $8,000–$12,000 plus insurance, registration, gas for a bigger car.</p>
-  <p><strong>Repair path:</strong> Spends $3,200 (uses credit card, 18 months to pay off). Car probably lasts 3 more years. Total 3-year cost: $3,200 repair + $3,600 interest + $4,800 insurance/gas = <strong>$11,600</strong>.</p>
-  <p><strong>Replace path:</strong> Buys $10,000 car. Financing: $350/month × 60 months = $21,000 total. Plus insurance increase: +$80/month = $4,800 over 5 years. Total 5-year cost: <strong>$25,800</strong>.</p>
-  <p><strong>There is no good option.</strong> This is the reality of car ownership.</p>
+<div class="char-portrait">
+  <img src="img/char_carlos.png" alt="Portrait of Carlos">
+  <div class="char-info">
+    <div class="callout example" style="margin-top:0;">
+      <div class="callout-title">📝 Example: The Car That Won't Die (Or Will It?) — Carlos</div>
+      <p>Carlos's 2012 Honda Civic (current value: $4,500) needs a new transmission. Repair quote: $3,200. A used replacement car: $8,000–$12,000 plus insurance, registration, gas for a bigger car.</p>
+      <p><strong>Repair path:</strong> Spends $3,200 (uses credit card, 18 months to pay off). Car probably lasts 3 more years. Total 3-year cost: $3,200 repair + $3,600 interest + $4,800 insurance/gas = <strong>$11,600</strong>.</p>
+      <p><strong>Replace path:</strong> Buys $10,000 car. Financing: $350/month × 60 months = $21,000 total. Plus insurance increase: +$80/month = $4,800 over 5 years. Total 5-year cost: <strong>$25,800</strong>.</p>
+      <p><strong>There is no good option.</strong> This is the reality of car ownership.</p>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================ -->
@@ -582,23 +701,58 @@
 
 <p>Insurance is money you pay <em>hoping you never get back</em>. But not having it is financial suicide. Every character needs to understand the insurance matrix:</p>
 
-<table>
-<thead>
-<tr><th>Type</th><th>Monthly Premium</th><th>Annual Cost</th><th>What It Covers</th><th>What It Doesn't</th></tr>
-</thead>
-<tbody>
-<tr><td>🏥 <strong>Health Insurance</strong></td><td>$100–$800</td><td>$1,200–$9,600</td><td>Doctor visits, hospital stays, prescriptions (partially)</td><td>Deductible ($1K–$6K), out-of-network care, cosmetic procedures</td></tr>
-<tr><td>🚗 <strong>Auto Insurance</strong></td><td>$80–$300</td><td>$960–$3,600</td><td>Accident damage, liability, theft (comprehensive)</td><td>Normal wear, mechanical failure, driving uninsured (obviously)</td></tr>
-<tr><td>🏠 <strong>Renter's Insurance</strong></td><td>$10–$30</td><td>$120–$360</td><td>Personal property, liability, temporary housing if displaced</td><td>Floods, earthquakes (need separate policies), pre-existing damage</td></tr>
-<tr><td>🏡 <strong>Homeowner's Insurance</strong></td><td>$100–$300</td><td>$1,200–$3,600</td><td>Structure, personal property, liability</td><td>Floods, earthquakes, maintenance issues, high-value items (need riders)</td></tr>
-<tr><td>💀 <strong>Life Insurance</strong></td><td>$10–$100</td><td>$120–$1,200</td><td>Death benefit for beneficiaries</td><td>Self (obviously), suicide within first 2 years, certain high-risk activities</td></tr>
-<tr><td>🦷 <strong>Dental Insurance</strong></td><td>$15–$50</td><td>$180–$600</td><td>Cleanings, basic procedures (up to annual max)</td><td>Cosmetic work, annual maximum ($1K–$2K), often doesn't cover major work</td></tr>
-<tr><td>👁️ <strong>Vision Insurance</strong></td><td>$5–$15</td><td>$60–$180</td><td>Eye exams, partial glasses/contacts discount</td><td>Usually saves less than it costs. Often not worth it.</td></tr>
-<tr><td>🔒 <strong>Umbrella Policy</strong></td><td>$15–$40</td><td>$180–$480</td><td>Extra liability coverage above other policies</td><td>Intentional acts, business activities, owned property damage</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏥</span>
+    <h3>Health Insurance</h3>
+    <p><strong>$100–$800/mo</strong> · $1,200–$9,600/yr<br>Covers: doctor visits, hospital stays, prescriptions (partially).<br>Excludes: deductible ($1K–$6K), out-of-network, cosmetic.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚗</span>
+    <h3>Auto Insurance</h3>
+    <p><strong>$80–$300/mo</strong> · $960–$3,600/yr<br>Covers: accident damage, liability, theft.<br>Excludes: normal wear, mechanical failure.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Renter's Insurance</h3>
+    <p><strong>$10–$30/mo</strong> · $120–$360/yr<br>Covers: personal property, liability, temporary housing.<br>Excludes: floods, earthquakes, pre-existing damage.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏡</span>
+    <h3>Homeowner's Insurance</h3>
+    <p><strong>$100–$300/mo</strong> · $1,200–$3,600/yr<br>Covers: structure, personal property, liability.<br>Excludes: floods, earthquakes, maintenance issues.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💀</span>
+    <h3>Life Insurance</h3>
+    <p><strong>$10–$100/mo</strong> · $120–$1,200/yr<br>Covers: death benefit for beneficiaries.<br>Excludes: self, suicide within 2 years, high-risk activities.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🦷</span>
+    <h3>Dental Insurance</h3>
+    <p><strong>$15–$50/mo</strong> · $180–$600/yr<br>Covers: cleanings, basic procedures (up to max).<br>Excludes: cosmetic, annual max ($1K–$2K), major work.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👁️</span>
+    <h3>Vision Insurance</h3>
+    <p><strong>$5–$15/mo</strong> · $60–$180/yr<br>Covers: eye exams, partial glasses/contacts discount.<br>Excludes: usually saves less than it costs. Often not worth it.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🔒</span>
+    <h3>Umbrella Policy</h3>
+    <p><strong>$15–$40/mo</strong> · $180–$480/yr<br>Covers: extra liability above other policies.<br>Excludes: intentional acts, business activities, property damage.</p>
+  </div>
+</div>
 
 <h3>📝 Filing a Claim</h3>
+
+<div class="section-illustration">
+  <img src="img/inv_claim_paperwork.png" alt="A person at a kitchen table surrounded by insurance paperwork — forms, photos of damaged items, receipts — the bureaucratic reality of filing a claim">
+</div>
+
+<div class="section-illustration">
+  <img src="img/inv_claim_flowchart.svg" alt="Insurance claim flowchart: Document → File Claim → Investigation 2wks-3mo → Payment 2-8wks → Premium Increase, with a Denied branch off Investigation">
+</div>
 
 <p>Getting money back from insurance is not automatic. Filing a claim is a <strong>process with its own challenges</strong>:</p>
 
@@ -620,11 +774,16 @@
   <p>Insurance is the most frustrating financial product in existence. You pay every month hoping never to use it. If you use it, your premiums go up. If you don't use it, you feel like you "wasted" the money. If you try to cancel it and then need it, you face catastrophic costs. <strong>The rational choice is to always have insurance.</strong> The emotional experience is constant resentment. This is by design.</p>
 </div>
 
-<div class="callout example">
-  <div class="callout-title">📝 Example: Insurance Claim Scenario</div>
-  <p>Jamal's apartment building has a pipe burst on the 3rd floor. Water damages his belongings: a laptop ($800), clothes ($300), and furniture ($500) = $1,600 total loss. He has renter's insurance with a $500 deductible and a $10,000 policy limit.</p>
-  <p><strong>Process:</strong> He files a claim. The adjuster visits (2 weeks later). They determine the laptop is "depreciated" (it's 3 years old) and only value it at $400. Some clothes are "normal wear" and not covered. Final settlement: $700 − $500 deductible = <strong>$200 check</strong>.</p>
-  <p>He lost $1,600 in belongings and received $200. His premium goes up $15/month for the next 3 years ($540 total increase). <strong>Net result: he lost $1,940.</strong> Insurance did not save him. This is normal.</p>
+<div class="char-portrait">
+  <img src="img/char_jamal.png" alt="Portrait of Jamal">
+  <div class="char-info">
+    <div class="callout example" style="margin-top:0;">
+      <div class="callout-title">📝 Example: Insurance Claim Scenario — Jamal</div>
+      <p>Jamal's apartment building has a pipe burst on the 3rd floor. Water damages his belongings: a laptop ($800), clothes ($300), and furniture ($500) = $1,600 total loss. He has renter's insurance with a $500 deductible and a $10,000 policy limit.</p>
+      <p><strong>Process:</strong> He files a claim. The adjuster visits (2 weeks later). They determine the laptop is "depreciated" (it's 3 years old) and only value it at $400. Some clothes are "normal wear" and not covered. Final settlement: $700 − $500 deductible = <strong>$200 check</strong>.</p>
+      <p>He lost $1,600 in belongings and received $200. His premium goes up $15/month for the next 3 years ($540 total increase). <strong>Net result: he lost $1,940.</strong> Insurance did not save him. This is normal.</p>
+    </div>
+  </div>
 </div>
 
 <!-- ============================================================ -->
@@ -632,21 +791,38 @@
 
 <p>Characters should maintain a combined tracker. Here's a recommended format:</p>
 
-<table>
-<thead>
-<tr><th>Category</th><th>Current Status</th><th>Next Replenishment</th><th>Monthly Cost</th><th>Priority</th></tr>
-</thead>
-<tbody>
-<tr><td>🧻 Toilet Paper</td><td>3 rolls left</td><td>3 days</td><td>$8/month</td><td>🔴 Critical</td></tr>
-<tr><td>🍕 Food</td><td>2 days of food</td><td>Tomorrow</td><td>$350/month</td><td>🔴 Critical</td></tr>
-<tr><td>📱 Phone</td><td>Working, battery 70%</td><td>N/A</td><td>$55/month (plan)</td><td>🟡 Important</td></tr>
-<tr><td>⛽ Gas</td><td>1/2 tank</td><td>~1 week</td><td>$130/month</td><td>🟡 Important</td></tr>
-<tr><td>💊 Medications</td><td>10 days left</td><td>10 days</td><td>$25/month</td><td>🔴 Critical</td></tr>
-<tr><td>👕 Clothes</td><td>5 clean outfits</td><td>Laundry in 2 days</td><td>$50/month (avg)</td><td>🟢 Normal</td></tr>
-<tr><td>🧴 Toiletries</td><td>Adequate</td><td>2 weeks</td><td>$40/month</td><td>🟢 Normal</td></tr>
-<tr><td>🏠 Rent</td><td>Paid through month-end</td><td>1st of next month</td><td>$1,500/month</td><td>🔴 Critical</td></tr>
-</tbody>
-</table>
+<div class="supplies-grid">
+  <div class="supply-item">
+    <img src="img/supplies_sheet.png" alt="Toilet paper supply">
+    <p><strong>🧻 Toilet Paper</strong><br>3 rolls left · 3 days<br><span style="color:#e74c3c;">🔴 Critical</span></p>
+    <div class="stat-bar-wrap"><div class="stat-bar-label"><span>Stock</span><span>30%</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:30%;background:#e74c3c;"></div></div></div>
+  </div>
+  <div class="supply-item">
+    <img src="img/supplies_coffee.png" alt="Food supply">
+    <p><strong>🍕 Food</strong><br>2 days left · Tomorrow<br><span style="color:#e74c3c;">🔴 Critical</span></p>
+    <div class="stat-bar-wrap"><div class="stat-bar-label"><span>Stock</span><span>25%</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:25%;background:#e74c3c;"></div></div></div>
+  </div>
+  <div class="supply-item">
+    <img src="img/supplies_heart.png" alt="Medications supply">
+    <p><strong>💊 Medications</strong><br>10 days left<br><span style="color:#e74c3c;">🔴 Critical</span></p>
+    <div class="stat-bar-wrap"><div class="stat-bar-label"><span>Stock</span><span>55%</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:55%;background:#f39c12;"></div></div></div>
+  </div>
+  <div class="supply-item">
+    <img src="img/supplies_pencils.png" alt="Phone supply">
+    <p><strong>📱 Phone</strong><br>Working · 70% battery<br><span style="color:#f39c12;">🟡 Important</span></p>
+    <div class="stat-bar-wrap"><div class="stat-bar-label"><span>Battery</span><span>70%</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:70%;background:#27ae60;"></div></div></div>
+  </div>
+  <div class="supply-item">
+    <img src="img/supplies_dice.png" alt="Gas supply">
+    <p><strong>⛽ Gas</strong><br>1/2 tank · ~1 week<br><span style="color:#f39c12;">🟡 Important</span></p>
+    <div class="stat-bar-wrap"><div class="stat-bar-label"><span>Tank</span><span>50%</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:50%;background:#f39c12;"></div></div></div>
+  </div>
+  <div class="supply-item">
+    <img src="img/supplies_dice_close.png" alt="Clothes supply">
+    <p><strong>👕 Clothes</strong><br>5 clean outfits<br><span style="color:#27ae60;">🟢 Normal</span></p>
+    <div class="stat-bar-wrap"><div class="stat-bar-label"><span>Stock</span><span>60%</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:60%;background:#27ae60;"></div></div></div>
+  </div>
+</div>
 
 <div class="callout rule">
   <div class="callout-title">⚖️ Final Rule: Scarcity Is The Game</div>

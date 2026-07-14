@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="112%" height="118%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#2c3e50" flood-opacity="0.13"/>
+    </filter>
+    <filter id="cardShadow" x="-3%" y="-3%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.8" flood-color="#2c3e50" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="advGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d5f5e3"/>
+      <stop offset="100%" stop-color="#a9dfbf"/>
+    </linearGradient>
+    <linearGradient id="disGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fadbd8"/>
+      <stop offset="100%" stop-color="#f1948a"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d6eaf8"/>
+      <stop offset="100%" stop-color="#aed6f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="200" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="300" y="24" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Personality Trait Selection</text>
+  <line x1="120" y1="32" x2="480" y2="32" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- ===== LEFT: 3 Advantage Cards ===== -->
+  <g transform="translate(20, 40)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="140" height="38" rx="8" fill="url(#advGrad)" stroke="#27ae60" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <!-- Checkmark icon -->
+    <circle cx="22" cy="19" r="10" fill="#27ae60"/>
+    <path d="M 16 19 L 20 23 L 28 15" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="40" y="17" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Advantage</text>
+    <text x="40" y="30" font-family="Segoe UI, sans-serif" font-size="10" fill="#27ae60">+3 pts each</text>
+
+    <!-- Card 2 -->
+    <rect x="0" y="44" width="140" height="38" rx="8" fill="url(#advGrad)" stroke="#27ae60" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <circle cx="22" cy="63" r="10" fill="#27ae60"/>
+    <path d="M 16 63 L 20 67 L 28 59" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="40" y="61" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Advantage</text>
+    <text x="40" y="74" font-family="Segoe UI, sans-serif" font-size="10" fill="#27ae60">+3 pts each</text>
+
+    <!-- Card 3 -->
+    <rect x="0" y="88" width="140" height="38" rx="8" fill="url(#advGrad)" stroke="#27ae60" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <circle cx="22" cy="107" r="10" fill="#27ae60"/>
+    <path d="M 16 107 L 20 111 L 28 103" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="40" y="105" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Advantage</text>
+    <text x="40" y="118" font-family="Segoe UI, sans-serif" font-size="10" fill="#27ae60">+3 pts each</text>
+
+    <!-- Label -->
+    <text x="70" y="148" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#27ae60">Pick 3</text>
+  </g>
+
+  <!-- ===== CENTER: Plus, Equals, Result ===== -->
+  <!-- Plus sign -->
+  <text x="185" y="108" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#7f8c8d">+</text>
+
+  <!-- Equals sign -->
+  <text x="415" y="108" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#7f8c8d">=</text>
+
+  <!-- Result card -->
+  <g transform="translate(440, 40)">
+    <rect x="0" y="0" width="140" height="126" rx="10" fill="url(#resultGrad)" stroke="#2980b9" stroke-width="2" filter="url(#cardShadow)"/>
+    <!-- Info icon -->
+    <circle cx="70" cy="35" r="14" fill="#2980b9"/>
+    <text x="70" y="41" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#fff">i</text>
+    <text x="70" y="65" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2c3e50">3 Net Points</text>
+    <text x="70" y="80" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#2980b9">from budget</text>
+    <!-- Breakdown -->
+    <line x1="25" y1="92" x2="115" y2="92" stroke="#d5dbdb" stroke-width="0.8"/>
+    <text x="70" y="106" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#27ae60">+9 (3 adv.)</text>
+    <text x="70" y="118" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">−6 (2 disadv.)</text>
+  </g>
+
+  <!-- ===== RIGHT: 2 Disadvantage Cards ===== -->
+  <g transform="translate(280, 40)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="120" height="56" rx="8" fill="url(#disGrad)" stroke="#c0392b" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <!-- X icon -->
+    <circle cx="22" cy="28" r="10" fill="#c0392b"/>
+    <path d="M 17 23 L 27 33 M 27 23 L 17 33" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="40" y="24" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Disadvantage</text>
+    <text x="40" y="38" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">−3 pts refund</text>
+
+    <!-- Card 2 -->
+    <rect x="0" y="64" width="120" height="56" rx="8" fill="url(#disGrad)" stroke="#c0392b" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <circle cx="22" cy="92" r="10" fill="#c0392b"/>
+    <path d="M 17 87 L 27 97 M 27 87 L 17 97" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="40" y="88" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Disadvantage</text>
+    <text x="40" y="102" font-family="Segoe UI, sans-serif" font-size="10" fill="#c0392b">−3 pts refund</text>
+
+    <!-- Label -->
+    <text x="60" y="148" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#c0392b">Pick 2</text>
+  </g>
+</svg>

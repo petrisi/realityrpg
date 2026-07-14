@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="tshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <linearGradient id="lvl0" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d5f5e3"/><stop offset="100%" stop-color="#a9dfbf"/>
+    </linearGradient>
+    <linearGradient id="lvl1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a9dfbf"/><stop offset="100%" stop-color="#82e0aa"/>
+    </linearGradient>
+    <linearGradient id="lvl2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#82e0aa"/><stop offset="100%" stop-color="#58d68d"/>
+    </linearGradient>
+    <linearGradient id="lvl3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58d68d"/><stop offset="100%" stop-color="#2ecc71"/>
+    </linearGradient>
+    <linearGradient id="lvl4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2ecc71"/><stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="430" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="26" text-anchor="middle" font-size="20" font-weight="700" fill="#2c3e50">Therapy Progression</text>
+  <text x="350" y="42" text-anchor="middle" font-size="11" fill="#7f8c8d">Each level unlocks deeper recovery benefits — progress with session milestones</text>
+
+  <!-- Ladder steps: 5 bars × 55px + 4 gaps × 18px = 332px, starting at y=52, ending at y=384 -->
+
+  <!-- Level 4: Resilience (top) -->
+  <g filter="url(#tshadow)">
+    <rect x="280" y="52" width="140" height="55" rx="10" fill="url(#lvl4)" stroke="#27ae60" stroke-width="2.5"/>
+    <text x="350" y="75" text-anchor="middle" font-size="11" font-weight="700" fill="white">LVL 4</text>
+    <text x="350" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="white">Resilience</text>
+  </g>
+  <text x="435" y="75" font-size="11" font-weight="600" fill="#2c3e50">41+ sessions</text>
+  <text x="435" y="91" font-size="10" fill="#7f8c8d">−5 SP + remission</text>
+
+  <!-- Arrow down -->
+  <path d="M350,107 L350,125" stroke="#27ae60" stroke-width="2.5"/>
+
+  <!-- Level 3: Management -->
+  <g filter="url(#tshadow)">
+    <rect x="250" y="125" width="200" height="55" rx="10" fill="url(#lvl3)" stroke="#2ecc71" stroke-width="2"/>
+    <text x="270" y="147" font-size="11" font-weight="700" fill="#1e8449">LVL 3</text>
+    <text x="270" y="165" font-size="11" font-weight="700" fill="#2c3e50">Management</text>
+    <text x="385" y="147" font-size="11" font-weight="600" fill="#2c3e50">25-40 sessions</text>
+    <text x="385" y="165" font-size="10" fill="#7f8c8d">−5 SP + severity drops</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M350,180 L350,198" stroke="#27ae60" stroke-width="2.5"/>
+
+  <!-- Level 2: Coping Skills -->
+  <g filter="url(#tshadow)">
+    <rect x="220" y="198" width="260" height="55" rx="10" fill="url(#lvl2)" stroke="#58d68d" stroke-width="2"/>
+    <text x="240" y="220" font-size="11" font-weight="700" fill="#1e8449">LVL 2</text>
+    <text x="240" y="238" font-size="11" font-weight="700" fill="#2c3e50">Coping Skills</text>
+    <text x="405" y="220" font-size="11" font-weight="600" fill="#2c3e50">13-24 sessions</text>
+    <text x="405" y="238" font-size="10" fill="#7f8c8d">−4 SP + self-regulate</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M350,253 L350,271" stroke="#27ae60" stroke-width="2.5"/>
+
+  <!-- Level 1: Awareness -->
+  <g filter="url(#tshadow)">
+    <rect x="190" y="271" width="320" height="55" rx="10" fill="url(#lvl1)" stroke="#82e0aa" stroke-width="2"/>
+    <text x="210" y="293" font-size="11" font-weight="700" fill="#1e8449">LVL 1</text>
+    <text x="210" y="311" font-size="11" font-weight="700" fill="#2c3e50">Awareness</text>
+    <text x="415" y="293" font-size="11" font-weight="600" fill="#2c3e50">5-12 sessions</text>
+    <text x="415" y="311" font-size="10" fill="#7f8c8d">−3 SP + identify triggers</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M350,326 L350,344" stroke="#27ae60" stroke-width="2.5"/>
+
+  <!-- Level 0: New (bottom) -->
+  <g filter="url(#tshadow)">
+    <rect x="160" y="344" width="380" height="55" rx="10" fill="url(#lvl0)" stroke="#a9dfbf" stroke-width="2"/>
+    <text x="180" y="366" font-size="11" font-weight="700" fill="#1e8449">LVL 0</text>
+    <text x="180" y="384" font-size="11" font-weight="700" fill="#2c3e50">New</text>
+    <text x="425" y="366" font-size="11" font-weight="600" fill="#2c3e50">0-4 sessions</text>
+    <text x="425" y="384" font-size="10" fill="#7f8c8d">−3 SP/session · Initial assessment</text>
+  </g>
+
+  <!-- Session milestones on right side -->
+  <g font-size="9" fill="#7f8c8d">
+    <text x="640" y="75" text-anchor="end">Session 41</text>
+    <line x1="645" y1="73" x2="645" y2="137" stroke="#d5f5e3" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="640" y="145" text-anchor="end">Session 25</text>
+    <line x1="645" y1="143" x2="645" y2="210" stroke="#d5f5e3" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="640" y="218" text-anchor="end">Session 13</text>
+    <line x1="645" y1="216" x2="645" y2="283" stroke="#d5f5e3" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="640" y="291" text-anchor="end">Session 5</text>
+    <line x1="645" y1="289" x2="645" y2="363" stroke="#d5f5e3" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="640" y="371" text-anchor="end">Session 1</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="350" y="420" text-anchor="middle" font-size="10" fill="#7f8c8d">Missing 3+ sessions = lose one level · Consistency is key</text>
+</svg>

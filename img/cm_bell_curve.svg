@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="350" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="450" y="24" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Percentile Roll (2d10 as d100) — Result Zones</text>
+  <text x="450" y="42" text-anchor="middle" font-size="11" fill="#7f8c8d">Each result 01–100 has equal 1% probability · Lower rolls are better</text>
+
+  <!-- Main chart area -->
+  <rect x="40" y="55" width="820" height="200" rx="6" fill="white" stroke="#e8ecef" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Zone backgrounds — mapped across 1-100 on x axis from x=60 to x=840 -->
+  <!-- Scale: each point = 7.8px, total range = 820px for 100 points -->
+  <!-- Zone boundaries: CS 1-5 (5%), SS 6-30 (25%), S 31-50 (20%), PS 51-70 (20%), F 71-95 (25%), CF 96-100 (5%) -->
+  <!-- CS: x=60 to x=60+5*7.8=99 -->
+  <rect x="60" y="55" width="39" height="200" fill="#27ae60" opacity="0.15" rx="0"/>
+  <!-- SS: x=99 to x=60+30*7.8=294 -->
+  <rect x="99" y="55" width="195" height="200" fill="#2ecc71" opacity="0.10"/>
+  <!-- S: x=294 to x=60+50*7.8=450 -->
+  <rect x="294" y="55" width="156" height="200" fill="#f1c40f" opacity="0.10"/>
+  <!-- PS: x=450 to x=60+70*7.8=606 -->
+  <rect x="450" y="55" width="156" height="200" fill="#e67e22" opacity="0.10"/>
+  <!-- F: x=606 to x=60+95*7.8=801 -->
+  <rect x="606" y="55" width="195" height="200" fill="#e74c3c" opacity="0.08"/>
+  <!-- CF: x=801 to x=840 -->
+  <rect x="801" y="55" width="39" height="200" fill="#c0392b" opacity="0.18" rx="0"/>
+
+  <!-- Zone labels inside the bar -->
+  <g font-weight="700" text-anchor="middle" fill="white" font-size="13">
+    <text x="79" y="160" fill="#27ae60">CRITICAL</text>
+    <text x="79" y="178" fill="#27ae60">SUCCESS</text>
+    <text x="197" y="160" fill="#27ae60">STRONG</text>
+    <text x="197" y="178" fill="#27ae60">SUCCESS</text>
+    <text x="372" y="160" fill="#f39c12">SUCCESS</text>
+    <text x="528" y="160" fill="#e67e22">PARTIAL</text>
+    <text x="528" y="178" fill="#e67e22">SUCCESS</text>
+    <text x="703" y="160" fill="#e74c3c">FAILURE</text>
+    <text x="820" y="160" fill="#c0392b">CRITICAL</text>
+    <text x="820" y="178" fill="#c0392b">FAILURE</text>
+  </g>
+
+  <!-- Percentage widths -->
+  <g font-size="10" fill="#7f8c8d" text-anchor="middle" font-weight="600">
+    <text x="79" y="196">5%</text>
+    <text x="197" y="196">25%</text>
+    <text x="372" y="196">20%</text>
+    <text x="528" y="196">20%</text>
+    <text x="703" y="196">25%</text>
+    <text x="820" y="196">5%</text>
+  </g>
+
+  <!-- Scale markers below the bar -->
+  <g font-size="10" fill="#2c3e50" text-anchor="middle" font-weight="600">
+    <!-- 00 -->
+    <line x1="60" y1="255" x2="60" y2="262" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="60" y="275">00</text>
+    <!-- 10 -->
+    <line x1="138" y1="255" x2="138" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="138" y="275">10</text>
+    <!-- 20 -->
+    <line x1="216" y1="255" x2="216" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="216" y="275">20</text>
+    <!-- 30 -->
+    <line x1="294" y1="255" x2="294" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="294" y="275">30</text>
+    <!-- 40 -->
+    <line x1="372" y1="255" x2="372" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="372" y="275">40</text>
+    <!-- 50 -->
+    <line x1="450" y1="255" x2="450" y2="262" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="450" y="275">50</text>
+    <!-- 60 -->
+    <line x1="528" y1="255" x2="528" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="528" y="275">60</text>
+    <!-- 70 -->
+    <line x1="606" y1="255" x2="606" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="606" y="275">70</text>
+    <!-- 80 -->
+    <line x1="684" y1="255" x2="684" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="684" y="275">80</text>
+    <!-- 90 -->
+    <line x1="762" y1="255" x2="762" y2="262" stroke="#2c3e50" stroke-width="1"/>
+    <text x="762" y="275">90</text>
+    <!-- 100 -->
+    <line x1="840" y1="255" x2="840" y2="262" stroke="#2c3e50" stroke-width="1.5"/>
+    <text x="840" y="275">100</text>
+  </g>
+
+  <!-- Axis label -->
+  <text x="450" y="300" text-anchor="middle" font-size="12" font-weight="600" fill="#2c3e50">Roll Result (00–100) — Lower is Better</text>
+
+  <!-- Direction arrows -->
+  <text x="55" y="100" font-size="16" fill="#27ae60" font-weight="800" text-anchor="middle">▼</text>
+  <text x="835" y="100" font-size="16" fill="#c0392b" font-weight="800" text-anchor="middle">▲</text>
+
+  <!-- Legend below -->
+  <g transform="translate(150, 320)" font-size="9" fill="#7f8c8d">
+    <text x="0" y="0" font-weight="600" fill="#2c3e50">Result determined by: Roll + Modifier vs. Target Number (TN) · Roll must be ≤ TN to succeed</text>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="nshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8f9fa"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" rx="12" fill="#fafbfc"/>
+
+  <!-- Card -->
+  <g filter="url(#nshadow)">
+    <rect x="30" y="25" width="440" height="255" rx="12" fill="url(#cardGrad)" stroke="#d5dbdb" stroke-width="1.5"/>
+  </g>
+
+  <!-- Header bar -->
+  <rect x="30" y="25" width="440" height="44" rx="12" fill="#1abc9c"/>
+  <rect x="30" y="47" width="440" height="22" fill="#1abc9c"/>
+  <text x="250" y="53" text-anchor="middle" font-size="18" font-weight="700" fill="white">Areas of Connection</text>
+  <text x="250" y="68" text-anchor="middle" font-size="10" fill="#d1f2eb">ASPD characters have genuine attachments — map them here</text>
+
+  <!-- Slot 1: Family Dog -->
+  <g filter="url(#nshadow)">
+    <rect x="55" y="90" width="155" height="38" rx="19" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="132" y="114" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">🐕 Family Dog</text>
+  </g>
+
+  <!-- Slot 2: Music -->
+  <g filter="url(#nshadow)">
+    <rect x="230" y="90" width="110" height="38" rx="19" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="285" y="114" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">🎸 Music</text>
+  </g>
+
+  <!-- Slot 3: Justice for the powerless -->
+  <g filter="url(#nshadow)">
+    <rect x="55" y="142" width="285" height="38" rx="19" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="197" y="166" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">⚖️ Justice for the powerless</text>
+  </g>
+
+  <!-- Slot 4: Younger sister -->
+  <g filter="url(#nshadow)">
+    <rect x="55" y="194" width="170" height="38" rx="19" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="140" y="218" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">👧 Younger sister</text>
+  </g>
+
+  <!-- Slot 5: Childhood home -->
+  <g filter="url(#nshadow)">
+    <rect x="240" y="194" width="170" height="38" rx="19" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="325" y="218" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">🏠 Childhood home</text>
+  </g>
+
+  <!-- Bottom note -->
+  <g>
+    <rect x="60" y="248" width="380" height="22" rx="6" fill="#d1f2eb" opacity="0.7"/>
+    <text x="250" y="263" text-anchor="middle" font-size="10" fill="#16a085" font-style="italic">These connections are real — they're where the character's humanity shows through.</text>
+  </g>
+</svg>

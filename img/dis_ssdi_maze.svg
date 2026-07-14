@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+    </marker>
+    <marker id="arrRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <text x="300" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">SSDI Application Process — The Bureaucratic Maze</text>
+
+  <!-- Step 1: Apply -->
+  <rect x="150" y="50" width="300" height="55" rx="8" fill="#27ae60" filter="url(#s)"/>
+  <text x="300" y="75" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">📝 Step 1: Initial Application (TN 45)</text>
+  <text x="300" y="93" text-anchor="middle" font-size="11" fill="#d5f5e3">INT + EXP bureaucracy · 2–6 months</text>
+
+  <line x1="300" y1="105" x2="300" y2="130" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Decision diamond -->
+  <polygon points="300,130 380,165 300,200 220,165" fill="#f39c12" filter="url(#s)"/>
+  <text x="300" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">📋 Decision</text>
+  <text x="300" y="178" text-anchor="middle" font-size="11" fill="#fff">70% DENIED</text>
+
+  <!-- DENIED branch going right -->
+  <line x1="380" y1="165" x2="460" y2="165" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrRed)"/>
+  <rect x="460" y="145" width="110" height="40" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="515" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">❌ DENIED</text>
+  <text x="515" y="176" text-anchor="middle" font-size="10" fill="#922b21">70% chance</text>
+
+  <!-- DENIED → appeals path going down-left -->
+  <line x1="515" y1="185" x2="515" y2="230" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4"/>
+  <line x1="515" y1="230" x2="450" y2="230" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4"/>
+
+  <!-- Step 2: Reconsideration -->
+  <rect x="150" y="220" width="300" height="55" rx="8" fill="#f39c12" filter="url(#s)"/>
+  <text x="300" y="245" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">📄 Step 2: Reconsideration (TN 50)</text>
+  <text x="300" y="263" text-anchor="middle" font-size="11" fill="#fef9e7">Appeal the denial · 1–3 months</text>
+
+  <line x1="300" y1="275" x2="300" y2="300" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Decision 2 -->
+  <polygon points="300,300 380,335 300,370 220,335" fill="#e67e22" filter="url(#s)"/>
+  <text x="300" y="332" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">📋 Decision 2</text>
+  <text x="300" y="348" text-anchor="middle" font-size="11" fill="#fff">Most denied again</text>
+
+  <line x1="300" y1="370" x2="300" y2="395" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 3: Hearing -->
+  <rect x="150" y="395" width="300" height="55" rx="8" fill="#e67e22" filter="url(#s)"/>
+  <text x="300" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">⚖️ Step 3: Admin Hearing (TN 55)</text>
+  <text x="300" y="438" text-anchor="middle" font-size="11" fill="#fdebd0">Present before ALJ · 6–18 months · Lawyer $2K–$7K</text>
+
+  <line x1="300" y1="450" x2="300" y2="470" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 4: Appeals + Court -->
+  <rect x="150" y="470" width="300" height="42" rx="8" fill="#c0392b" filter="url(#s)"/>
+  <text x="300" y="489" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🏛️ Appeals Council (TN 60) → Federal Court (TN 65)</text>
+  <text x="300" y="505" text-anchor="middle" font-size="10" fill="#f5b7b1">10% approval · 1–3 years total · Last resort</text>
+
+  <!-- Total time note -->
+  <text x="300" y="520" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Total process: 2–5 years from first application to final decision</text>
+</svg>

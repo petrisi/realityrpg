@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <text x="350" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Chronic Condition Management — Weekly Cycle</text>
+
+  <!-- WEEK START -->
+  <rect x="30" y="55" width="200" height="70" rx="10" fill="#27ae60" filter="url(#s)"/>
+  <text x="130" y="82" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">📅 Week Starts</text>
+  <text x="130" y="100" text-anchor="middle" font-size="12" fill="#d5f5e3">GM calls for RES check</text>
+  <text x="130" y="116" text-anchor="middle" font-size="11" fill="#a9dfbf">TN = 40 − Management Modifier</text>
+
+  <!-- Arrow down -->
+  <line x1="130" y1="125" x2="130" y2="150" stroke="#7f8c8d" stroke-width="2"/>
+
+  <!-- SUCCESS / FAILURE split -->
+  <!-- SUCCESS path -->
+  <rect x="30" y="150" width="300" height="100" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#s)"/>
+  <text x="180" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#1e8449">✅ SUCCESS — Well-Controlled</text>
+  <text x="180" y="195" text-anchor="middle" font-size="12" fill="#1e8449">Condition managed this week</text>
+  <text x="180" y="212" text-anchor="middle" font-size="12" fill="#1e8449">Daily EP costs apply normally</text>
+  <text x="180" y="229" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">No complication events</text>
+  <text x="180" y="243" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Character functions as expected</text>
+
+  <!-- FAILURE path -->
+  <rect x="370" y="150" width="300" height="100" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#s)"/>
+  <text x="520" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#922b21">❌ FAILURE — Complication</text>
+  <text x="520" y="195" text-anchor="middle" font-size="12" fill="#922b21">Roll 1d10 on condition's</text>
+  <text x="520" y="212" text-anchor="middle" font-size="12" fill="#922b21">complication event table</text>
+  <text x="520" y="229" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">Each condition has different</text>
+  <text x="520" y="243" text-anchor="middle" font-size="11" fill="#7f8c8d" font-style="italic">possible complications</text>
+
+  <!-- Arrows from week start to both paths -->
+  <line x1="130" y1="125" x2="180" y2="150" stroke="#27ae60" stroke-width="2"/>
+  <line x1="130" y1="125" x2="520" y2="150" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Management Modifiers reference -->
+  <rect x="30" y="275" width="640" height="110" rx="10" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#s)"/>
+  <text x="350" y="300" text-anchor="middle" font-size="14" font-weight="700" fill="#2471a3">📊 Management Modifier Quick Reference</text>
+  <line x1="60" y1="310" x2="640" y2="310" stroke="#aed6f1" stroke-width="1"/>
+
+  <text x="60" y="330" font-size="12" fill="#2c3e50">💊 Diabetes: +10 (treated) | +5 (partial) | 0 (untreated)</text>
+  <text x="60" y="348" font-size="12" fill="#2c3e50">🫁 Asthma: +10 (proper meds) | +5 (partial) | 0 (untreated)</text>
+  <text x="60" y="366" font-size="12" fill="#2c3e50">⚡ Epilepsy: +12 (proper meds) | +5 (partial) | 0 (untreated)</text>
+  <text x="60" y="384" font-size="12" fill="#2c3e50">🧠 MS: +8 (disease therapy) | +3 (symptomatic only)</text>
+
+  <!-- Untreated note -->
+  <text x="350" y="400" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="600">⚠️ Untreated characters suffer complications EVERY week</text>
+</svg>

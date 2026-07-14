@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 530" width="600" height="530" role="img" aria-label="Contraception Effectiveness Comparison Bar Chart">
+  <style>
+    .title { font: bold 18px system-ui, sans-serif; fill: #2c3e50; }
+    .label { font: 13px system-ui, sans-serif; fill: #2c3e50; }
+    .cost { font: 11px system-ui, sans-serif; fill: #7f8c8d; }
+    .axis { font: 11px system-ui, sans-serif; fill: #95a5a6; }
+    .note { font: italic 11px system-ui, sans-serif; fill: #7f8c8d; }
+  </style>
+
+  <!-- Background -->
+  <rect width="600" height="530" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <text class="title" x="300" y="30" text-anchor="middle">Contraception Effectiveness Comparison</text>
+
+  <!-- Axis line -->
+  <line x1="160" y1="425" x2="570" y2="425" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- Scale ticks -->
+  <line x1="160" y1="423" x2="160" y2="429" stroke="#bdc3c7" stroke-width="1"/>
+  <text class="axis" x="160" y="441" text-anchor="middle">0%</text>
+
+  <line x1="365" y1="423" x2="365" y2="429" stroke="#bdc3c7" stroke-width="1"/>
+  <text class="axis" x="365" y="441" text-anchor="middle">50%</text>
+
+  <line x1="570" y1="423" x2="570" y2="429" stroke="#bdc3c7" stroke-width="1"/>
+  <text class="axis" x="570" y="441" text-anchor="middle">100%</text>
+
+  <!-- Grid lines -->
+  <line x1="365" y1="50" x2="365" y2="415" stroke="#ecf0f1" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Bar area: x160 = 0%, x570 = 100%. Scale = (570-160)/100 = 4.1 px per percent point -->
+  <!-- Bar height = 36px, gap = 22px, start y = 50 -->
+
+  <!-- Row 1: IUD 99% -->
+  <g>
+    <text class="label" x="150" y="71" text-anchor="end">🔒 IUD</text>
+    <rect x="160" y="50" width="405.9" height="36" rx="4" fill="#27ae60"/>
+    <text class="label" x="550" y="75" text-anchor="end" fill="#fff" font-weight="bold">99%</text>
+    <text class="cost" x="160" y="108">$0–$1,300 one-time</text>
+  </g>
+
+  <!-- Row 2: The Shot 94% -->
+  <g>
+    <text class="label" x="150" y="133" text-anchor="end">💉 The Shot</text>
+    <rect x="160" y="118" width="385.4" height="36" rx="4" fill="#27ae60"/>
+    <text class="label" x="525.4" y="137" text-anchor="end" fill="#fff" font-weight="bold">94%</text>
+    <text class="cost" x="160" y="170">$20–$75 per injection</text>
+  </g>
+
+  <!-- Row 3: Patch/Ring 92% -->
+  <g>
+    <text class="label" x="150" y="195" text-anchor="end">🩹 Patch/Ring</text>
+    <rect x="160" y="180" width="378.2" height="36" rx="4" fill="#27ae60"/>
+    <text class="label" x="518.2" y="202" text-anchor="end" fill="#fff" font-weight="bold">92%</text>
+    <text class="cost" x="160" y="232">$0–$60/mo</text>
+  </g>
+
+  <!-- Row 4: Birth Control Pill 91% -->
+  <g>
+    <text class="label" x="150" y="257" text-anchor="end">💊 Birth Control Pill</text>
+    <rect x="160" y="242" width="374.1" height="36" rx="4" fill="#27ae60"/>
+    <text class="label" x="514.1" y="264" text-anchor="end" fill="#fff" font-weight="bold">91%</text>
+    <text class="cost" x="160" y="294">$0–$50/mo</text>
+  </g>
+
+  <!-- Row 5: Condoms 87% -->
+  <g>
+    <text class="label" x="150" y="319" text-anchor="end">🛡️ Condoms</text>
+    <rect x="160" y="304" width="356.7" height="36" rx="4" fill="#f1c40f"/>
+    <text class="label" x="496.7" y="326" text-anchor="end" fill="#fff" font-weight="bold">87%</text>
+    <text class="cost" x="160" y="356">$20–$50/box</text>
+  </g>
+
+  <!-- Row 6: Natural Methods 78% -->
+  <g>
+    <text class="label" x="150" y="381" text-anchor="end">🌿 Natural Methods</text>
+    <rect x="160" y="366" width="319.8" height="36" rx="4" fill="#e74c3c"/>
+    <text class="label" x="459.8" y="388" text-anchor="end" fill="#fff" font-weight="bold">78%</text>
+    <text class="cost" x="160" y="418">Free</text>
+  </g>
+
+  <!-- Footer note -->
+  <text class="note" x="300" y="469" text-anchor="middle">Effectiveness = typical-use rate. Perfect use is higher for all methods.</text>
+  <text class="note" x="300" y="486" text-anchor="middle">Condoms also provide STI protection.</text>
+
+  <!-- Legend -->
+  <rect x="340" y="7" width="10" height="10" rx="2" fill="#27ae60"/>
+  <text class="label" x="354" y="16" fill="#2c3e50">90%+</text>
+  <rect x="395" y="7" width="10" height="10" rx="2" fill="#f1c40f"/>
+  <text class="label" x="409" y="16" fill="#2c3e50">80–89%</text>
+  <rect x="465" y="7" width="10" height="10" rx="2" fill="#e74c3c"/>
+  <text class="label" x="479" y="16" fill="#2c3e50">Below 80%</text>
+</svg>

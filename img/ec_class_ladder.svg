@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 555" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="ladderBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4efdf"/>
+      <stop offset="20%" stop-color="#d5f5e3"/>
+      <stop offset="40%" stop-color="#fef9e7"/>
+      <stop offset="60%" stop-color="#fdebd0"/>
+      <stop offset="80%" stop-color="#fadbd8"/>
+      <stop offset="100%" stop-color="#e8daef"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="555" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">💰 Socioeconomic Spectrum</text>
+  <text x="400" y="48" text-anchor="middle" font-size="11" fill="#7f8c8d">Where each character sits on the class ladder + monthly discretionary income</text>
+
+  <!-- ===== CLASS TIER BANDS ===== -->
+  <!-- Band widths: 600px for income bars. Circle at cx=110, bar track x=135, width=500, fill scaled to $2050 max -->
+  <!-- Each row needs ~36px: 14px circle + 12px name + 5px top/bottom padding = 36px per row -->
+  <!-- Wealthy: 1 row (Elaine), height=46, y=70 -->
+  <rect x="80" y="70" width="600" height="46" rx="6" fill="#d4efdf" opacity="0.5"/>
+  <!-- Upper Mid: 2 rows (Mei, Raj), height=92, y=126 -->
+  <rect x="80" y="126" width="600" height="92" rx="6" fill="#d5f5e3" opacity="0.5"/>
+  <!-- Middle: 1 row (Tallulah), height=46, y=228 -->
+  <rect x="80" y="228" width="600" height="46" rx="6" fill="#fef9e7" opacity="0.5"/>
+  <!-- Working: 3 rows (Marcus, Youssef, Derek), height=138, y=284 -->
+  <rect x="80" y="284" width="600" height="138" rx="6" fill="#fdebd0" opacity="0.5"/>
+  <!-- Poor: 1 row (Carlos), height=46, y=432 -->
+  <rect x="80" y="432" width="600" height="46" rx="6" fill="#fadbd8" opacity="0.5"/>
+
+  <!-- Tier labels (left column, end-anchored at x=75, centered in each band) -->
+  <text x="75" y="95" text-anchor="end" font-size="12" font-weight="700" fill="#27ae60">Wealthy</text>
+  <text x="75" y="174" text-anchor="end" font-size="12" font-weight="700" fill="#2ecc71">Upper Mid</text>
+  <text x="75" y="253" text-anchor="end" font-size="12" font-weight="700" fill="#f1c40f">Middle</text>
+  <text x="75" y="356" text-anchor="end" font-size="12" font-weight="700" fill="#e67e22">Working</text>
+  <text x="75" y="457" text-anchor="end" font-size="12" font-weight="700" fill="#e74c3c">Poor</text>
+
+  <!-- ===== CHARACTER ROWS ===== -->
+  <!-- Circles vertically centered within each band. Bar centered on circle. Name below at cy+16 -->
+
+  <!-- Row 1: Elaine — Wealthy band center cy=93 ($2,050 fill=500px) -->
+  <circle cx="110" cy="93" r="14" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="110" y="97" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">E</text>
+  <text x="110" y="113" text-anchor="middle" font-size="7" fill="#7f8c8d">Elaine</text>
+  <rect x="135" y="88" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="88" width="500" height="16" rx="4" fill="#27ae60"/>
+  <text x="645" y="100" font-size="9" font-weight="700" fill="#fff">$2,050</text>
+
+  <!-- Row 2: Mei — Upper Mid band, top row cy=154 ($850 fill=207px) -->
+  <circle cx="110" cy="154" r="14" fill="#2980b9" filter="url(#shadow)"/>
+  <text x="110" y="158" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">M</text>
+  <text x="110" y="174" text-anchor="middle" font-size="7" fill="#7f8c8d">Mei</text>
+  <rect x="135" y="149" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="149" width="207" height="16" rx="4" fill="#2ecc71"/>
+  <text x="352" y="161" font-size="9" font-weight="700" fill="#2c3e50">$850</text>
+
+  <!-- Row 3: Raj — Upper Mid band, bottom row cy=190 (−$300 fill=0) -->
+  <circle cx="110" cy="190" r="14" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="110" y="194" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">R</text>
+  <text x="110" y="210" text-anchor="middle" font-size="7" fill="#7f8c8d">Raj</text>
+  <rect x="135" y="185" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <text x="142" y="197" font-size="9" font-weight="700" fill="#e74c3c">−$300 ⚠️</text>
+
+  <!-- Row 4: Tallulah — Middle band center cy=251 ($1,300 fill=317px) -->
+  <circle cx="110" cy="251" r="14" fill="#8e44ad" filter="url(#shadow)"/>
+  <text x="110" y="255" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">T</text>
+  <text x="110" y="271" text-anchor="middle" font-size="7" fill="#7f8c8d">Tallulah</text>
+  <rect x="135" y="246" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="246" width="317" height="16" rx="4" fill="#f1c40f"/>
+  <text x="462" y="258" font-size="9" font-weight="700" fill="#2c3e50">$1,300</text>
+
+  <!-- Row 5: Marcus — Working band, top row cy=317 ($800 fill=195px) -->
+  <circle cx="110" cy="317" r="14" fill="#e67e22" filter="url(#shadow)"/>
+  <text x="110" y="321" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">M</text>
+  <text x="110" y="337" text-anchor="middle" font-size="7" fill="#7f8c8d">Marcus</text>
+  <rect x="135" y="312" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="312" width="195" height="16" rx="4" fill="#e67e22"/>
+  <text x="340" y="324" font-size="9" font-weight="700" fill="#2c3e50">$800</text>
+
+  <!-- Row 6: Youssef — Working band, middle row cy=353 ($350 fill=85px) -->
+  <circle cx="110" cy="353" r="14" fill="#1abc9c" filter="url(#shadow)"/>
+  <text x="110" y="357" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Y</text>
+  <text x="110" y="373" text-anchor="middle" font-size="7" fill="#7f8c8d">Youssef</text>
+  <rect x="135" y="348" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="348" width="85" height="16" rx="4" fill="#e67e22"/>
+  <text x="230" y="360" font-size="9" font-weight="700" fill="#2c3e50">$350</text>
+
+  <!-- Row 7: Derek — Working band, bottom row cy=389 ($1,200 fill=293px) -->
+  <circle cx="110" cy="389" r="14" fill="#34495e" filter="url(#shadow)"/>
+  <text x="110" y="393" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">D</text>
+  <text x="110" y="409" text-anchor="middle" font-size="7" fill="#7f8c8d">Derek</text>
+  <rect x="135" y="384" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="384" width="293" height="16" rx="4" fill="#e67e22"/>
+  <text x="438" y="396" font-size="9" font-weight="700" fill="#2c3e50">$1,200</text>
+
+  <!-- Row 8: Carlos — Poor band center cy=455 (~$0 fill=0) -->
+  <circle cx="110" cy="455" r="14" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="110" y="459" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">C</text>
+  <text x="110" y="475" text-anchor="middle" font-size="7" fill="#7f8c8d">Carlos</text>
+  <rect x="135" y="450" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <rect x="135" y="450" width="4" height="16" rx="2" fill="#e74c3c"/>
+  <text x="149" y="462" font-size="9" font-weight="700" fill="#e74c3c">~$0 ⚠️</text>
+
+  <!-- ===== KEY INSIGHT BOX ===== -->
+  <rect x="80" y="497" width="600" height="42" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1" filter="url(#shadow)"/>
+  <text x="380" y="514" text-anchor="middle" font-size="11" font-weight="600" fill="#2980b9">💡 Elaine has $2,050/month. Carlos starts with $20. That's a 100× gap.</text>
+  <text x="380" y="531" text-anchor="middle" font-size="10" fill="#2c3e50">Raj is Upper Middle Class but running a NEGATIVE budget — class ≠ financial security.</text>
+</svg>

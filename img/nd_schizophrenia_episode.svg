@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 580" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#7f8c8d"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="580" rx="12" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Schizophrenia Episode Progression</text>
+  <text x="350" y="55" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">How symptoms escalate and treatment paths diverge</text>
+
+  <!-- === STAGE 1: Baseline (top) === -->
+  <rect x="200" y="75" width="300" height="70" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="100" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#27ae60">Stage 1 — Baseline Symptoms</text>
+  <text x="350" y="118" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Hallucinations every 1d6 hours · −5 INT penalty</text>
+  <text x="350" y="134" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">+2 SP/day chronic drain</text>
+
+  <!-- Arrow down: SP increases -->
+  <line x1="350" y1="145" x2="350" y2="180" stroke="#7f8c8d" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+  <rect x="310" y="152" width="80" height="20" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="350" y="167" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="600" fill="#e67e22">SP increases</text>
+
+  <!-- === STAGE 2: Heightened (middle) === -->
+  <rect x="180" y="180" width="340" height="75" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="205" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#e67e22">Stage 2 — Heightened Symptoms</text>
+  <text x="350" y="223" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">More frequent hallucinations · Delusions strengthen</text>
+  <text x="350" y="239" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Cognitive impairment worsens · Social withdrawal</text>
+  <text x="350" y="250" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">RES TN 60 to recognize hallucinations</text>
+
+  <!-- Arrow down: SP reaches max -->
+  <line x1="350" y1="255" x2="350" y2="295" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <rect x="290" y="262" width="120" height="20" rx="4" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="350" y="277" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#c0392b">SP reaches MAX</text>
+
+  <!-- === STAGE 3: ACUTE EPISODE (center) === -->
+  <rect x="150" y="295" width="400" height="90" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="3" filter="url(#shadow)"/>
+  <text x="350" y="322" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#c0392b">🌪️ ACUTE PSYCHOTIC EPISODE</text>
+  <text x="350" y="342" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Hallucinations every 1d4 hours · Delusions become fixed</text>
+  <text x="350" y="358" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#c0392b" font-weight="700">ALL CHECKS: +10 TN</text>
+  <text x="350" y="375" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">Paranoia, dissociation, disorganized speech</text>
+
+  <!-- === BRANCH: WITH TREATMENT (left) === -->
+  <line x1="250" y1="385" x2="180" y2="420" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+  <rect x="50" y="420" width="260" height="85" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="445" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#27ae60">✅ With Treatment</text>
+  <text x="180" y="463" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Episode lasts 1d4 days</text>
+  <text x="180" y="479" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Antipsychotics reduce hallucinations to 1d12 hrs</text>
+  <text x="180" y="495" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Cognitive penalty: −5 → −2 → 0 (with therapy)</text>
+
+  <!-- === BRANCH: WITHOUT TREATMENT (right) === -->
+  <line x1="450" y1="385" x2="520" y2="420" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <rect x="390" y="420" width="260" height="85" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="520" y="445" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#c0392b">❌ Without Treatment</text>
+  <text x="520" y="463" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Episode lasts 1d4 WEEKS</text>
+  <text x="520" y="479" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Hospitalization required (1d4 weeks out of play)</text>
+  <text x="520" y="495" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">SP resets to 0 · Medication started</text>
+
+  <!-- === BOTTOM: Stabilization === -->
+  <line x1="180" y1="505" x2="250" y2="530" stroke="#27ae60" stroke-width="2"/>
+  <line x1="520" y1="505" x2="450" y2="530" stroke="#27ae60" stroke-width="2"/>
+  <rect x="230" y="530" width="240" height="35" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="552" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#27ae60">→ Stabilization &amp; Recovery Path →</text>
+
+  <!-- Side annotations for TN escalation -->
+  <rect x="15" y="200" width="140" height="110" rx="8" fill="#fff" stroke="#dcdcdc" stroke-width="1" filter="url(#shadow)"/>
+  <text x="85" y="222" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">TN Escalation</text>
+  <line x1="30" y1="228" x2="140" y2="228" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="25" y="248" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60">Baseline: −5 INT</text>
+  <text x="25" y="268" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#f39c12">Heightened: −5 INT</text>
+  <text x="25" y="282" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#f39c12">−5 EXP checks</text>
+  <text x="25" y="302" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#c0392b" font-weight="700">Acute: +10 TN all</text>
+
+  <!-- Hallucination frequency annotation -->
+  <rect x="545" y="200" width="140" height="110" rx="8" fill="#fff" stroke="#dcdcdc" stroke-width="1" filter="url(#shadow)"/>
+  <text x="615" y="222" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">Hallucination Freq.</text>
+  <line x1="560" y1="228" x2="680" y2="228" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="560" y="248" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60">Baseline: 1d6 hrs</text>
+  <text x="560" y="268" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#f39c12">Heightened: more</text>
+  <text x="560" y="282" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#f39c12">frequent</text>
+  <text x="560" y="302" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#c0392b" font-weight="700">Acute: 1d4 hours</text>
+</svg>

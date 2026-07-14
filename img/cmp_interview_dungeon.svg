@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="410" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">🏰 The Job Interview — A Real-World Dungeon Map</text>
+
+  <!-- Dungeon corridor background -->
+  <rect x="20" y="50" width="780" height="450" rx="12" fill="#fdf6ec" stroke="#d5b8e8" stroke-width="2"/>
+
+  <!-- Entrance -->
+  <rect x="20" y="70" width="120" height="40" rx="6" fill="#2c3e50"/>
+  <text x="80" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🚪 ENTRANCE</text>
+
+  <!-- Room 1: Reception -->
+  <rect x="160" y="70" width="180" height="100" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#2980b9">Room 1: Reception</text>
+  <text x="250" y="115" text-anchor="middle" font-size="11" fill="#2c3e50">First Impression Check</text>
+  <text x="250" y="130" text-anchor="middle" font-size="11" fill="#2c3e50">PRC +5 (suit penalty −5)</text>
+  <!-- Trap icon -->
+  <text x="310" y="155" font-size="16">⚠️</text>
+  <text x="325" y="155" font-size="9" fill="#c0392b">wrinkled suit</text>
+
+  <!-- Corridor 1→2 -->
+  <line x1="340" y1="120" x2="380" y2="120" stroke="#7f8c8d" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Room 2: Screening Call -->
+  <rect x="390" y="70" width="180" height="100" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#2980b9">Room 2: Screening Call</text>
+  <text x="480" y="115" text-anchor="middle" font-size="11" fill="#2c3e50">Communication Check</text>
+  <text x="480" y="130" text-anchor="middle" font-size="11" fill="#2c3e50">TN 55 — articulate without</text>
+  <text x="480" y="145" text-anchor="middle" font-size="11" fill="#2c3e50">sounding arrogant or insecure</text>
+
+  <!-- Corridor 2→3 -->
+  <line x1="570" y1="120" x2="610" y2="120" stroke="#7f8c8d" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Room 3: Panel Interview (BOSS ROOM) -->
+  <rect x="160" y="200" width="500" height="150" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="3" filter="url(#shadow)"/>
+  <text x="410" y="230" text-anchor="middle" font-size="15" font-weight="700" fill="#e67e22">⚔️ BOSS ROOM: Panel Interview</text>
+  <text x="410" y="250" text-anchor="middle" font-size="11" fill="#2c3e50">Three simultaneous checks — each interviewer has a different style:</text>
+
+  <!-- Three interviewer boxes -->
+  <rect x="190" y="265" width="140" height="65" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="260" y="285" text-anchor="middle" font-size="11" font-weight="600" fill="#27ae60">😊 Friendly</text>
+  <text x="260" y="300" text-anchor="middle" font-size="10" fill="#2c3e50">Communication + Empathy</text>
+  <text x="260" y="315" text-anchor="middle" font-size="10" fill="#2c3e50">TN 50 — build rapport</text>
+
+  <rect x="340" y="265" width="140" height="65" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="410" y="285" text-anchor="middle" font-size="11" font-weight="600" fill="#e74c3c">😤 Hostile</text>
+  <text x="410" y="300" text-anchor="middle" font-size="10" fill="#2c3e50">Communication + RES</text>
+  <text x="410" y="315" text-anchor="middle" font-size="10" fill="#2c3e50">TN 65 — stay composed</text>
+
+  <rect x="490" y="265" width="140" height="65" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="560" y="285" text-anchor="middle" font-size="11" font-weight="600" fill="#f39c12">🤔 Curious</text>
+  <text x="560" y="300" text-anchor="middle" font-size="10" fill="#2c3e50">INT + Professional</text>
+  <text x="560" y="315" text-anchor="middle" font-size="10" fill="#2c3e50">TN 60 — answer hard Qs</text>
+
+  <!-- Corridor 3→4 -->
+  <line x1="410" y1="350" x2="410" y2="390" stroke="#7f8c8d" stroke-width="3" stroke-dasharray="6,4"/>
+
+  <!-- Room 4: Salary Negotiation -->
+  <rect x="260" y="395" width="300" height="80" rx="8" fill="#f5eef8" stroke="#8e44ad" stroke-width="2" filter="url(#shadow)"/>
+  <text x="410" y="420" text-anchor="middle" font-size="13" font-weight="700" fill="#8e44ad">Room 4: Salary Negotiation</text>
+  <text x="410" y="438" text-anchor="middle" font-size="11" fill="#2c3e50">INT + Finance Check — TN 60</text>
+  <text x="410" y="455" text-anchor="middle" font-size="10" fill="#7f8c8d">Counter without seeming greedy or desperate</text>
+
+  <!-- Treasure Chest -->
+  <rect x="580" y="400" width="180" height="70" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="425" text-anchor="middle" font-size="22">💰</text>
+  <text x="670" y="445" text-anchor="middle" font-size="11" font-weight="700" fill="#e67e22">$45,000/year</text>
+  <text x="670" y="460" text-anchor="middle" font-size="9" fill="#c0392b">⚠️ 90-min commute, benefits</text>
+  <text x="670" y="470" text-anchor="middle" font-size="9" fill="#c0392b">start in 90 days</text>
+
+  <!-- Arrow: Room 4 → Treasure -->
+  <line x1="560" y1="435" x2="575" y2="435" stroke="#7f8c8d" stroke-width="2"/>
+</svg>

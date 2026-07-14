@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <text x="150" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Budget Score Gauge</text>
+
+  <!-- Gauge body -->
+  <g transform="translate(150, 230)">
+    <!-- Background arc — full range -->
+    <path d="M -100,80 A 100,100 0 0,1 100,80" fill="none" stroke="#e8e8e8" stroke-width="30" stroke-linecap="round"/>
+
+    <!-- Red zone: 0-20 (Crisis) — bottom 20% -->
+    <path d="M -100,80 A 100,100 0 0,1 -100,80" fill="none" stroke="#e74c3c" stroke-width="30" stroke-linecap="round"
+          stroke-dasharray="31.4 596.9" stroke-dashoffset="0" transform="rotate(0)"/>
+
+    <!-- Build the colored zones using layered arcs -->
+    <!-- Full arc length = PI * 100 = 314.16 for half circle -->
+    <!-- Red: 0-20% = 62.83 -->
+    <!-- Orange: 20-40% = 62.83 -->
+    <!-- Yellow: 40-70% = 94.25 -->
+    <!-- Green: 70-100% = 94.25 -->
+
+    <!-- Actually let me use a simpler approach: stacked rects rotated -->
+    <defs>
+      <clipPath id="gaugeClip">
+        <path d="M -100,80 A 100,100 0 0,1 100,80"/>
+      </clipPath>
+    </defs>
+
+    <!-- Green zone (70-100%) — top right -->
+    <path d="M 60,-20 A 100,100 0 0,1 100,80" fill="none" stroke="#27ae60" stroke-width="30" stroke-linecap="butt"/>
+    <!-- Yellow zone (40-70%) -->
+    <path d="M -60,-20 A 100,100 0 0,1 60,-20" fill="none" stroke="#f39c12" stroke-width="30" stroke-linecap="butt"/>
+    <!-- Orange zone (20-40%) -->
+    <path d="M -100,20 A 100,100 0 0,1 -60,-20" fill="none" stroke="#e67e22" stroke-width="30" stroke-linecap="butt"/>
+    <!-- Red zone (0-20%) — bottom left -->
+    <path d="M -100,80 A 100,100 0 0,1 -100,20" fill="none" stroke="#e74c3c" stroke-width="30" stroke-linecap="butt"/>
+
+    <!-- Needle pointing at 50 (middle = straight up) -->
+    <line x1="0" y1="80" x2="0" y2="-10" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="80" r="8" fill="#2c3e50"/>
+
+    <!-- Score display -->
+    <text x="0" y="120" text-anchor="middle" font-size="36" font-weight="700" fill="#2c3e50">50</text>
+    <text x="0" y="140" text-anchor="middle" font-size="13" fill="#7f8c8d">Starting Score</text>
+  </g>
+
+  <!-- Zone labels -->
+  <g font-size="12" font-weight="600">
+    <!-- Green -->
+    <text x="230" y="140" fill="#27ae60">70–100</text>
+    <text x="230" y="156" fill="#27ae60" font-size="11">Comfort</text>
+    <text x="230" y="170" fill="#7f8c8d" font-size="10" font-weight="400">+5 stress resist</text>
+
+    <!-- Yellow -->
+    <text x="230" y="210" fill="#f39c12">40–70</text>
+    <text x="230" y="226" fill="#f39c12" font-size="11">Stable</text>
+    <text x="230" y="240" fill="#7f8c8d" font-size="10" font-weight="400">Normal ops</text>
+
+    <!-- Orange -->
+    <text x="230" y="280" fill="#e67e22">20–40</text>
+    <text x="230" y="296" fill="#e67e22" font-size="11">Stressed</text>
+    <text x="230" y="310" fill="#7f8c8d" font-size="10" font-weight="400">Pressure rising</text>
+
+    <!-- Red -->
+    <text x="230" y="350" fill="#e74c3c">0–20</text>
+    <text x="230" y="366" fill="#e74c3c" font-size="11">Crisis</text>
+    <text x="230" y="380" fill="#7f8c8d" font-size="10" font-weight="400">−5 stress resist</text>
+  </g>
+
+  <!-- Left side labels -->
+  <g font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="65" y="140">100</text>
+    <text x="65" y="210">50</text>
+    <text x="65" y="310">0</text>
+  </g>
+</svg>

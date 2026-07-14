@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Social Dynamics — Reality RPG</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,6 +19,11 @@
 <section class="content-section">
 <div class="container">
 
+<!-- Section Banner -->
+<div class="section-banner">
+  <img src="img/sd_banner_social.png" alt="Diverse community of people connected through social relationships">
+</div>
+
 <div class="callout rule">
   <div class="callout-title">📜 Core Principle</div>
   <p>In Reality RPG, <strong>social connections are as mechanically vital as health or money</strong>. A person with no relationships suffers real, quantifiable penalties to mental health, opportunity access, and daily functioning. Conversely, a rich social network provides buffers against stress, doors to opportunity, and meaning itself. Every person in the game — PCs and NPCs alike — navigates the same social systems.</p>
@@ -31,14 +36,49 @@
 
 <p>Every person your character has meaningfully encountered is tracked at one of seven relationship tiers. The tier determines what mechanical benefits, obligations, and narrative weight that connection carries.</p>
 
+<!-- Relationship Web Diagram -->
+<div class="section-illustration">
+  <img src="img/sd_relationship_web.svg" alt="Network graph showing a character's social web with connections at various relationship tiers">
+</div>
+
 <h3>Relationship Tiers</h3>
+
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">👤</span>
+    <span class="tn-label"><strong>Stranger</strong> — Default state for anyone not yet encountered. No benefits, no obligations.</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">👋</span>
+    <span class="tn-label"><strong>Acquaintance</strong> — Exchanged names; brief conversation. <span class="dice">1d6</span> at <strong>+1</strong>. Minor favors only.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">🤙</span>
+    <span class="tn-label"><strong>Friend</strong> — Shared meaningful experiences; met 3+ times. <span class="dice">1d6</span> at <strong>+2</strong>. <strong>+1 Mental Health</strong> when together.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">💛</span>
+    <span class="tn-label"><strong>Close Friend</strong> — Vulnerability shared; 6+ months consistent. <span class="dice">1d6</span> at <strong>+3</strong>. <strong>+2 Mental Health</strong>. Will answer at 2 AM.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">🤫</span>
+    <span class="tn-label"><strong>Confidant</strong> — Deep secrets shared; trust proven. <span class="dice">1d6</span> at <strong>+4</strong>. <strong>+3 Mental Health</strong>. Will lie to protect you.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">❤️</span>
+    <span class="tn-label"><strong>Partner/Spouse</strong> — Romantic commitment; shared life. <span class="dice">1d6</span> at <strong>+5</strong>. <strong>+4 Mental Health</strong>. Full resource integration.</span>
+  </div>
+  <div class="tn-step near-impossible" style="background:#fadbd8;">
+    <span class="tn-value">🏠</span>
+    <span class="tn-label"><strong>Family-Level Bond</strong> — Blood or chosen family; unconditional. <span class="dice">1d6</span> at <strong>+5</strong>. <strong>+4 Mental Health</strong>. Cannot be unfriended, only estranged.</span>
+  </div>
+</div>
 
 <div class="table-wrap">
 <table>
 <thead>
 <tr>
   <th>Tier</th>
-  <th>Emoji</th>
   <th>How It Forms</th>
   <th>Mechanical Benefits</th>
   <th>Obligations</th>
@@ -46,53 +86,46 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Stranger</strong></td>
-  <td>👤</td>
+  <td><strong>Stranger</strong> 👤</td>
   <td>Default state for anyone not yet encountered</td>
   <td>None</td>
   <td>None</td>
 </tr>
 <tr>
-  <td><strong>Acquaintance</strong></td>
-  <td>👋</td>
+  <td><strong>Acquaintance</strong> 👋</td>
   <td>Exchanged names; brief conversation; seen in passing multiple times</td>
-  <td>Can ask for minor, low-effort favors (finding an item, a quick direction). <span class="dice">1d6</span> check at <strong>+1</strong> modifier.</td>
+  <td>Can ask for minor, low-effort favors. <span class="dice">1d6</span> at <strong>+1</strong>.</td>
   <td>Minimal — a polite greeting if you pass each other</td>
 </tr>
 <tr>
-  <td><strong>Friend</strong></td>
-  <td>🤙</td>
+  <td><strong>Friend</strong> 🤙</td>
   <td>Shared a meaningful experience; reached out voluntarily; met 3+ times</td>
-  <td>Can request favors requiring moderate effort. <span class="dice">1d6</span> at <strong>+2</strong>. Provides <strong>+1 to Mental Health checks</strong> when spending time together. Can call for a ride, borrow small items, ask for advice.</td>
-  <td>Expected to respond to texts within 24–48 hours; show up to planned hangouts</td>
+  <td><span class="dice">1d6</span> at <strong>+2</strong>. <strong>+1 to Mental Health</strong> when spending time together. Can call for a ride, borrow items, ask for advice.</td>
+  <td>Expected to respond within 24–48 hours; show up to planned hangouts</td>
 </tr>
 <tr>
-  <td><strong>Close Friend</strong></td>
-  <td>💛</td>
-  <td>Vulnerability shared; supported each other through difficulty; 6+ months of consistent contact</td>
-  <td>Significant favors possible. <span class="dice">1d6</span> at <strong>+3</strong>. <strong>+2 to Mental Health checks</strong> when spending time together. Will pick up the phone at 2 AM. Can borrow money (up to $100). Will vouch for you.</td>
+  <td><strong>Close Friend</strong> 💛</td>
+  <td>Vulnerability shared; supported through difficulty; 6+ months consistent</td>
+  <td><span class="dice">1d6</span> at <strong>+3</strong>. <strong>+2 to Mental Health</strong>. Will pick up at 2 AM. Can borrow money (up to $100). Will vouch for you.</td>
   <td>Expected to show genuine support during crises; remember important dates</td>
 </tr>
 <tr>
-  <td><strong>Confidant</strong></td>
-  <td>🤫</td>
+  <td><strong>Confidant</strong> 🤫</td>
   <td>Deep secrets shared; trust tested and proven; knows your darkest thoughts</td>
-  <td>Will go to great lengths for you. <span class="dice">1d6</span> at <strong>+4</strong>. <strong>+3 to Mental Health checks</strong>. Will lend significant money. Will lie to protect you. Knows how to reach you in any emergency.</td>
+  <td><span class="dice">1d6</span> at <strong>+4</strong>. <strong>+3 to Mental Health</strong>. Will lend significant money. Will lie to protect you.</td>
   <td>Must maintain trust — betrayal here is devastating and nearly unforgivable</td>
 </tr>
 <tr>
-  <td><strong>Partner/Spouse</strong></td>
-  <td>❤️</td>
+  <td><strong>Partner/Spouse</strong> ❤️</td>
   <td>Romantic commitment; shared life goals; often shared living space</td>
-  <td>Full integration of resources. <span class="dice">1d6</span> at <strong>+5</strong>. <strong>+4 to Mental Health checks</strong> if relationship is healthy. Shared finances, shared housing costs, shared decision-making. Co-parenting benefits if applicable.</td>
-  <td>Joint financial responsibility; emotional availability; fidelity expectations; shared legal liability</td>
+  <td><span class="dice">1d6</span> at <strong>+5</strong>. <strong>+4 to Mental Health</strong>. Shared finances, housing, decision-making.</td>
+  <td>Joint financial responsibility; emotional availability; fidelity; shared legal liability</td>
 </tr>
 <tr>
-  <td><strong>Family-Level Bond</strong></td>
-  <td>🏠</td>
-  <td>Blood relation OR a bond so deep it transcends choice (chosen family, lifelong best friend)</td>
-  <td>Unconditional support baseline. <span class="dice">1d6</span> at <strong>+5</strong>. <strong>+4 to Mental Health checks</strong> if healthy. Will take you in with no questions. Will fight for you. Cannot be "unfriended" — can only be estranged.</td>
-  <td>Deep obligation; family gatherings expected; holidays matter; their problems become your problems</td>
+  <td><strong>Family-Level Bond</strong> 🏠</td>
+  <td>Blood relation OR a bond so deep it transcends choice</td>
+  <td><span class="dice">1d6</span> at <strong>+5</strong>. <strong>+4 to Mental Health</strong>. Will take you in with no questions. Cannot be "unfriended."</td>
+  <td>Deep obligation; family gatherings expected; their problems become your problems</td>
 </tr>
 </tbody>
 </table>
@@ -102,51 +135,39 @@
 
 <p>Relationships deepen through <strong>shared time and shared vulnerability</strong>. The GM tracks relationship progression using a simple point system:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-  <th>Action</th>
-  <th>Points Gained</th>
-  <th>Time Invested</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Casual conversation (coffee, passing chat)</td>
-  <td>+1</td>
-  <td>30 min – 1 hour</td>
-</tr>
-<tr>
-  <td>Shared activity (watching a movie, playing games, working out)</td>
-  <td>+2</td>
-  <td>1–3 hours</td>
-</tr>
-<tr>
-  <td>Meaningful conversation (personal topics, advice, life updates)</td>
-  <td>+3</td>
-  <td>1–2 hours</td>
-</tr>
-<tr>
-  <td>Shared hardship or crisis (helping them through something)</td>
-  <td>+4</td>
-  <td>Variable</td>
-</tr>
-<tr>
-  <td>Vulnerability exchange (sharing a deep secret, admitting fear)</td>
-  <td>+5</td>
-  <td>30 min – 1 hour</td>
-</tr>
-<tr>
-  <td>Major life event together (wedding, funeral, graduation, hospital visit)</td>
-  <td>+6</td>
-  <td>Half day – full day</td>
-</tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">+1</span>
+    <span class="tn-label">☕ <strong>Casual conversation</strong> — Coffee, passing chat (30 min – 1 hour)</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">+2</span>
+    <span class="tn-label">🎮 <strong>Shared activity</strong> — Movie, games, working out (1–3 hours)</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">+3</span>
+    <span class="tn-label">💬 <strong>Meaningful conversation</strong> — Personal topics, advice, life updates (1–2 hours)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">+4</span>
+    <span class="tn-label">🆘 <strong>Shared hardship or crisis</strong> — Helping them through something (variable)</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">+5</span>
+    <span class="tn-label">🤫 <strong>Vulnerability exchange</strong> — Sharing a deep secret, admitting fear (30 min – 1 hour)</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">+6</span>
+    <span class="tn-label">🎓 <strong>Major life event together</strong> — Wedding, funeral, graduation, hospital visit (half – full day)</span>
+  </div>
 </div>
 
-<p>Each tier requires a cumulative threshold: <strong>Acquaintance = 3 points</strong>, <strong>Friend = 10 points</strong>, <strong>Close Friend = 25 points</strong>, <strong>Confidant = 50 points</strong>, <strong>Partner = 75 points</strong> (plus mutual romantic interest), <strong>Family-Level = 100+ points</strong> or blood relation.</p>
+<p>Each tier requires a cumulative threshold: <strong>Acquaintance = 3 pts</strong>, <strong>Friend = 10 pts</strong>, <strong>Close Friend = 25 pts</strong>, <strong>Confidant = 50 pts</strong>, <strong>Partner = 75 pts</strong> (plus mutual romantic interest), <strong>Family-Level = 100+ pts</strong> or blood relation.</p>
+
+<!-- Relationship Progression Flowchart -->
+<div class="section-illustration">
+  <img src="img/sd_relationship_progression.svg" alt="Flowchart showing relationship point progression thresholds and decay penalties over time">
+</div>
 
 <div class="callout warning">
   <div class="callout-title">⚠️ Relationship Decay</div>
@@ -155,6 +176,20 @@
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: Building a Friendship</div>
+  <div class="section-illustration">
+    <img src="img/sd_jamila_kevin_lunch.png" alt="Two colleagues having a relaxed lunch conversation at a cafe">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_jamila.png" alt="Portrait of Jamila">
+    <div class="char-info">
+      <div class="char-name">Jamila</div>
+      <div class="char-subtitle">Protagonist — Building connections</div>
+      <div class="char-stats">
+        <span class="char-stat">Communication: +3</span>
+        <span class="char-stat">Empathy: +2</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Jamila</strong> notices a quiet colleague, <strong>Kevin</strong>, eating lunch alone every day. She invites him to join her. They talk about the commute (+1 point). A week later, she asks if he wants to grab dinner after work — they discover they both love the same obscure band (+3 points for meaningful conversation). When Kevin's car breaks down, Jamila drives him home (+4 for shared hardship). After a month of consistent contact, Kevin moves from Stranger → Acquaintance (3 pts) → Friend (10 pts). He now provides <strong>+1 to Jamila's Mental Health checks</strong> when they hang out, and will help her move apartments next month.</p>
 </div>
 
@@ -167,43 +202,27 @@
 
 <p>Used when you need to <strong>persuade, negotiate, explain something complex, or make an important ask</strong>. Roll <span class="dice">2d10</span> + <strong>Communication Skill</strong> (derived from Presence and Intellect). The GM sets a target number based on difficulty:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-  <th>Difficulty</th>
-  <th>Target Number</th>
-  <th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Easy</td>
-  <td>5+</td>
-  <td>Asking a friend to watch your cat while you travel</td>
-</tr>
-<tr>
-  <td>Standard</td>
-  <td>7+</td>
-  <td>Pitching a new idea to your boss</td>
-</tr>
-<tr>
-  <td>Hard</td>
-  <td>9+</td>
-  <td>Asking your landlord for a rent reduction</td>
-</tr>
-<tr>
-  <td>Very Hard</td>
-  <td>10+</td>
-  <td>Convincing a skeptical parent to support your career change</td>
-</tr>
-<tr>
-  <td>Nearly Impossible</td>
-  <td>11+</td>
-  <td>Talking a stranger out of calling the police on you</td>
-</tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">5+</span>
+    <span class="tn-label">🟢 <strong>Easy</strong> — Asking a friend to watch your cat while you travel</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">7+</span>
+    <span class="tn-label">🔵 <strong>Standard</strong> — Pitching a new idea to your boss</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">9+</span>
+    <span class="tn-label">🟠 <strong>Hard</strong> — Asking your landlord for a rent reduction</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">10+</span>
+    <span class="tn-label">🔴 <strong>Very Hard</strong> — Convincing a skeptical parent to support your career change</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">11+</span>
+    <span class="tn-label">⚫ <strong>Nearly Impossible</strong> — Talking a stranger out of calling the police on you</span>
+  </div>
 </div>
 
 <p><strong>Relationship tier modifiers apply:</strong> the closer the person is to you, the lower the target number (−1 per tier above Acquaintance).</p>
@@ -212,74 +231,54 @@
 
 <p>Used when you need to <strong>read someone's true feelings, detect if someone is lying, understand an unspoken tension, or pick up on social cues</strong>. Roll <span class="dice">2d10</span> + <strong>Empathy Skill</strong> (derived from Resolve and Presence). Success tells you <em>what</em> the person is feeling, even if they're hiding it.</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-  <th>Empathy Check Result</th>
-  <th>What You Learn</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td><strong>Fail</strong> (4 or lower)</td>
-  <td>You misread the situation entirely. May act inappropriately.</td>
-</tr>
-<tr>
-  <td><strong>Partial</strong> (5–6)</td>
-  <td>You sense something is "off" but can't pinpoint what</td>
-</tr>
-<tr>
-  <td><strong>Success</strong> (7–8)</td>
-  <td>You correctly identify the person's dominant emotion</td>
-</tr>
-<tr>
-  <td><strong>Strong</strong> (9–10)</td>
-  <td>You understand their emotion AND their underlying motivation</td>
-</tr>
-<tr>
-  <td><strong>Exceptional</strong> (11+)</td>
-  <td>You perceive the full emotional landscape — what they feel, what they want, and what they're afraid to say</td>
-</tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">4−</span>
+    <span class="tn-label">❌ <strong>Fail</strong> — You misread the situation entirely. May act inappropriately.</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">5–6</span>
+    <span class="tn-label">🔍 <strong>Partial</strong> — You sense something is "off" but can't pinpoint what</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">7–8</span>
+    <span class="tn-label">✅ <strong>Success</strong> — You correctly identify the person's dominant emotion</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">9–10</span>
+    <span class="tn-label">🧠 <strong>Strong</strong> — You understand their emotion AND their underlying motivation</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">11+</span>
+    <span class="tn-label">👁️‍🗨️ <strong>Exceptional</strong> — Full emotional landscape: feelings, wants, and hidden fears</span>
+  </div>
 </div>
 
 <h3>Deception Checks 🎭</h3>
 
 <p>Used when you <strong>lie, exaggerate, omit the truth, or present a false persona</strong>. Roll <span class="dice">2d10</span> + <strong>Deception Skill</strong> (derived from Presence and Expression). The target is trying to read you — their Empathy Skill is subtracted from your result.</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-  <th>Your Result vs. Their Empathy</th>
-  <th>Outcome</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>You beat them by 3+</td>
-  <td>They fully believe you. No suspicion.</td>
-</tr>
-<tr>
-  <td>You beat them by 1–2</td>
-  <td>They believe you, but something feels slightly off</td>
-</tr>
-<tr>
-  <td>Tie</td>
-  <td>They're unsure. They may probe further or let it go.</td>
-</tr>
-<tr>
-  <td>You lose by 1–2</td>
-  <td>They suspect you're hiding something</td>
-</tr>
-<tr>
-  <td>You lose by 3+</td>
-  <td>They know you're lying. Consequences follow.</td>
-</tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">+3</span>
+    <span class="tn-label">🟢 <strong>You beat them by 3+</strong> — They fully believe you. No suspicion.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">+1–2</span>
+    <span class="tn-label">🟡 <strong>You beat them by 1–2</strong> — They believe you, but something feels slightly off</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">=</span>
+    <span class="tn-label">⚖️ <strong>Tie</strong> — They're unsure. May probe further or let it go.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">−1–2</span>
+    <span class="tn-label">🟠 <strong>You lose by 1–2</strong> — They suspect you're hiding something</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">−3+</span>
+    <span class="tn-label">🔴 <strong>You lose by 3+</strong> — They know you're lying. Consequences follow.</span>
+  </div>
 </div>
 
 <div class="callout warning">
@@ -289,6 +288,20 @@
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The Awkward Dinner</div>
+  <div class="section-illustration">
+    <img src="img/sd_carlos_sophie_date.png" alt="A couple on a date at a candlelit restaurant, the man looking nervous">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_carlos.png" alt="Portrait of Carlos">
+    <div class="char-info">
+      <div class="char-name">Carlos</div>
+      <div class="char-subtitle">On a first date — nervous but sincere</div>
+      <div class="char-stats">
+        <span class="char-stat">Presence: +2</span>
+        <span class="char-stat">Communication: +1</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Carlos</strong> is on a date with <strong>Sophie</strong>. He wants to ask if she's interested in a second date, but his Communication check rolls a <strong>1</strong>. Instead of "Would you want to do this again?", he blurts out, "So… do you think we should see each other again?" — which sounds like a demand rather than an invitation. Sophie rolls Empathy and succeeds — she understands he's nervous, not pushy, but the moment is still awkward. Carlos loses <strong>1 relationship point</strong> for the stumble, but Sophie's empathy saves the interaction from disaster.</p>
 </div>
 
@@ -309,49 +322,32 @@
 
 <p>Each round of escalation increases the <strong>Stress</strong> of both parties by <strong>1 point</strong>. Escalation also risks relationship damage — every round of active arguing costs <strong>1 relationship point</strong>.</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-  <th>Escalation Level</th>
-  <th>Description</th>
-  <th>Stress Gain</th>
-  <th>Relationship Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>1 — Disagreement</td>
-  <td>Calm but firm exchange of differing views</td>
-  <td>0</td>
-  <td>0</td>
-</tr>
-<tr>
-  <td>2 — Heated Discussion</td>
-  <td>Voices raised, personal points made, but still civil</td>
-  <td>1</td>
-  <td>1 point</td>
-</tr>
-<tr>
-  <td>3 — Argument</td>
-  <td>Accusations, interruptions, past grievances brought up</td>
-  <td>2</td>
-  <td>2 points</td>
-</tr>
-<tr>
-  <td>4 — Fight (Verbal)</td>
-  <td>Insults, shouting, threats, character attacks</td>
-  <td>3</td>
-  <td>3–5 points</td>
-</tr>
-<tr>
-  <td>5 — Physical Violence</td>
-  <td>Pushing, hitting, throwing things</td>
-  <td>5+</td>
-  <td>Relationship may drop 1–2 tiers</td>
-</tr>
-</tbody>
-</table>
+<!-- Conflict Escalation Tree -->
+<div class="section-illustration">
+  <img src="img/sd_conflict_escalation.svg" alt="Branching decision tree showing conflict escalation from disagreement to physical violence with consequences">
+</div>
+
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">Lv 1</span>
+    <span class="tn-label">💬 <strong>Disagreement</strong> — Calm but firm exchange of differing views (Stress: 0, Relationship cost: 0)</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">Lv 2</span>
+    <span class="tn-label">🗣️ <strong>Heated Discussion</strong> — Voices raised, personal points made, still civil (Stress: +1, Cost: 1 pt)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">Lv 3</span>
+    <span class="tn-label">🔥 <strong>Argument</strong> — Accusations, interruptions, past grievances brought up (Stress: +2, Cost: 2 pts)</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">Lv 4</span>
+    <span class="tn-label">💥 <strong>Fight (Verbal)</strong> — Insults, shouting, threats, character attacks (Stress: +3, Cost: 3–5 pts)</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">Lv 5</span>
+    <span class="tn-label">🥊 <strong>Physical Violence</strong> — Pushing, hitting, throwing things (Stress: +5+, Relationship may drop 1–2 tiers)</span>
+  </div>
 </div>
 
 <h3>Physical Violence — Real Consequences 🥊</h3>
@@ -386,6 +382,21 @@
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The Roommate Fight</div>
+  <div class="section-illustration">
+    <img src="img/sd_aisha_marcus_fight.png" alt="Two roommates in a heated argument with a third person intervening">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_aisha_leader.png" alt="Portrait of Aisha">
+    <div class="char-info">
+      <div class="char-name">Aisha & Marcus</div>
+      <div class="char-subtitle">Roommates for 8 months — Close Friends (28 pts) fighting about unpaid bills</div>
+      <div class="char-stats">
+        <span class="char-stat">Relationship: 24 pts</span>
+        <span class="char-stat">Stress: +3 each</span>
+        <span class="char-stat">Mediator: DeShawn</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Aisha</strong> and <strong>Marcus</strong>, roommates for 8 months (Close Friends, 28 points), have a fight about unpaid bills. It escalates to Level 4 — insults about family, character attacks. Both gain 3 Stress. The relationship loses 4 points (now at 24, teetering on the edge of dropping to Friend). Their mutual friend <strong>DeShawn</strong> (Confidant to both) intervenes — rolls <span class="dice">2d10</span> + 7 and gets a 12. Mediation succeeds. A 5-day cooling-off period begins. During those 5 days, Aisha and Marcus text DeShawn but not each other. On day 6, Marcus sends an apology text (Communication check, target 9, rolls 10 — success). Aisha accepts. They don't regain lost points immediately, but the decay stops, and slow rebuilding begins.</p>
 </div>
 
@@ -409,17 +420,17 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Attraction</strong></td>
+  <td>💘 <strong>Attraction</strong></td>
   <td><span class="dice">2d10</span> + Presence</td>
   <td>Determines if the other person finds you romantically interesting. Target 7+. Modifiers for shared values (−1), different life stages (+1 difficulty), cultural compatibility (GM discretion)</td>
 </tr>
 <tr>
-  <td><strong>Compatibility</strong></td>
+  <td>🤝 <strong>Compatibility</strong></td>
   <td><span class="dice">2d10</span> + Empathy</td>
-  <td>Determines if you can build a lasting connection. Target 7+. This checks shared values, communication styles, life goals alignment</td>
+  <td>Determines if you can build a lasting connection. Target 7+. Checks shared values, communication styles, life goals alignment</td>
 </tr>
 <tr>
-  <td><strong>Vulnerability</strong></td>
+  <td>💪 <strong>Vulnerability</strong></td>
   <td><span class="dice">2d10</span> + Resolve</td>
   <td>Each date requires a small vulnerability check — sharing something real. Failure means staying in "small talk" mode, which doesn't build relationship points</td>
 </tr>
@@ -427,62 +438,48 @@
 </table>
 </div>
 
+<!-- Dating Roadmap -->
+<div class="section-illustration">
+  <img src="img/sd_dating_roadmap.svg" alt="Roadmap showing the progression of a romantic relationship from first attraction to marriage with breakup exit paths">
+</div>
+
 <h3>Relationship Milestones 🏁</h3>
 
 <p>Romantic relationships progress through identifiable milestones. Each milestone is a narrative event that the GM calls out:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-  <th>Milestone</th>
-  <th>Description</th>
-  <th>Mechanical Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>First Date</td>
-  <td>Intentional one-on-one romantic outing</td>
-  <td>Relationship enters romantic track; points build faster (+2 per date)</td>
-</tr>
-<tr>
-  <td>Second Date</td>
-  <td>They wanted to see you again</td>
-  <td>Mutual interest confirmed; attraction check no longer needed</td>
-</tr>
-<tr>
-  <td>"I Like You"</td>
-  <td>First expression of romantic interest</td>
-  <td>Relationship points accelerate; vulnerability checks become easier (−1 to target)</td>
-</tr>
-<tr>
-  <td>Exclusive</td>
-  <td>Agreement to only date each other</td>
-  <td>Relationship tier increases by 1 (minimum Friend). Fidelity expectations begin</td>
-</tr>
-<tr>
-  <td>"I Love You"</td>
-  <td>First expression of deep romantic commitment</td>
-  <td>Relationship tier increases by 1 (minimum Close Friend). Mental Health bonus activates</td>
-</tr>
-<tr>
-  <td>Meeting Family</td>
-  <td>Introduced to each other's family</td>
-  <td>Relationship deepens; family dynamics now intersect with your social network</td>
-</tr>
-<tr>
-  <td>Moving In Together</td>
-  <td>Sharing a living space</td>
-  <td>Partner tier reached. Finances intertwine. Daily life mechanics now shared.</td>
-</tr>
-<tr>
-  <td>Engagement/Marriage</td>
-  <td>Formal commitment</td>
-  <td>Spouse tier. Legal and financial merger. Shared liability. Maximum Mental Health bonus.</td>
-</tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">☕</span>
+    <span class="tn-label"><strong>First Date</strong> — Intentional one-on-one romantic outing. Relationship enters romantic track; points build faster (+2 per date)</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">🔄</span>
+    <span class="tn-label"><strong>Second Date</strong> — They wanted to see you again. Mutual interest confirmed; attraction check no longer needed</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">💗</span>
+    <span class="tn-label"><strong>"I Like You"</strong> — First expression of romantic interest. Relationship points accelerate; vulnerability checks easier (−1 to target)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">💍</span>
+    <span class="tn-label"><strong>Exclusive</strong> — Agreement to only date each other. Relationship tier increases by 1 (minimum Friend). Fidelity expectations begin</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">❤️</span>
+    <span class="tn-label"><strong>"I Love You"</strong> — First expression of deep romantic commitment. Tier increases by 1 (minimum Close Friend). Mental Health bonus activates</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">👨‍👩‍👧</span>
+    <span class="tn-label"><strong>Meeting Family</strong> — Introduced to each other's family. Relationship deepens; family dynamics now intersect with your network</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">🏠</span>
+    <span class="tn-label"><strong>Moving In Together</strong> — Sharing a living space. Partner tier reached. Finances intertwine. Daily life mechanics now shared</span>
+  </div>
+  <div class="tn-step near-impossible" style="background:#fadbd8;">
+    <span class="tn-value">💒</span>
+    <span class="tn-label"><strong>Engagement/Marriage</strong> — Formal commitment. Spouse tier. Legal and financial merger. Shared liability. Maximum Mental Health bonus</span>
+  </div>
 </div>
 
 <h3>Breakups and Divorce 💔</h3>
@@ -505,6 +502,22 @@
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The First Date</div>
+  <div class="section-illustration">
+    <img src="img/sd_priya_james_coffee.png" alt="Two people on a first date at a cozy coffee shop">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_priya.png" alt="Portrait of Priya">
+    <div class="char-info">
+      <div class="char-name">Priya & James</div>
+      <div class="char-subtitle">First date — matched on a dating app</div>
+      <div class="char-stats">
+        <span class="char-stat">Priya Attraction: 10 ✓</span>
+        <span class="char-stat">James Attraction: 7 ✓</span>
+        <span class="char-stat">Priya Vuln: +3 pts</span>
+        <span class="char-stat">James Vuln: +1 pt</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Priya</strong> and <strong>James</strong> matched on a dating app. First date at a coffee shop. Priya rolls Attraction: <span class="dice">2d10</span> (7) + Presence (3) = 10. James rolls Attraction: <span class="dice">2d10</span> (5) + Presence (2) = 7. Both succeed — mutual attraction confirmed. They then roll Vulnerability: Priya gets a 9 (shares her passion for photography), James gets a 4 (stays in small talk, talks about the weather). Priya gains <strong>+3 relationship points</strong> (meaningful conversation), but James only gains <strong>+1</strong> (superficial). The GM notes that James needs to open up more on the second date for the connection to deepen.</p>
 </div>
 
@@ -526,24 +539,24 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Parents/Guardians</strong></td>
+  <td>👨‍👩‍👧 <strong>Parents/Guardians</strong></td>
   <td>Family-Level (if close) or Close Friend (if distant)</td>
-  <td>Provide financial support (if able), emotional support, housing (if young adult). Expect regular contact. Can enable or undermine life choices.</td>
+  <td>Provide financial support, emotional support, housing. Expect regular contact. Can enable or undermine life choices.</td>
 </tr>
 <tr>
-  <td><strong>Siblings</strong></td>
+  <td>👫 <strong>Siblings</strong></td>
   <td>Friend to Close Friend (based on relationship quality)</td>
   <td>Shared history creates automatic connection points. Can be allies or rivals. Sibling rivalry adds <strong>+1 difficulty</strong> to Communication checks between them.</td>
 </tr>
 <tr>
-  <td><strong>Children</strong></td>
+  <td>👶 <strong>Children</strong></td>
   <td>Family-Level (automatic)</td>
-  <td>Massive time and financial investment. Provide <strong>+3 to Mental Health</strong> when relationship is healthy, but <strong>−3 to free time, savings rate, and sleep quality</strong>. Children add <strong>2–4 hours daily</strong> of care obligations.</td>
+  <td>Massive time and financial investment. <strong>+3 to Mental Health</strong> when healthy, but <strong>−3 to free time, savings rate, and sleep</strong>. Add <strong>2–4 hours daily</strong> of care obligations.</td>
 </tr>
 <tr>
-  <td><strong>Extended Family</strong> (aunts, uncles, cousins, grandparents)</td>
+  <td>👵 <strong>Extended Family</strong></td>
   <td>Acquaintance to Friend</td>
-  <td>Expected at gatherings. Can provide networking opportunities, emotional support, or additional obligations. <strong>+1 to Social Capital</strong> in your cultural community for maintaining these ties.</td>
+  <td>Expected at gatherings. Can provide networking, support, or obligations. <strong>+1 to Social Capital</strong> in your cultural community for maintaining ties.</td>
 </tr>
 </tbody>
 </table>
@@ -554,10 +567,10 @@
 <p>Family ties create <strong>mechanical obligations</strong> — things your character is expected to do, whether they want to or not:</p>
 
 <ul>
-  <li><strong>Holidays and gatherings:</strong> Expected attendance. Missing one costs <strong>1–3 relationship points</strong> per absent event. Attending costs a day of time and $50–200 in expenses.</li>
-  <li><strong>Financial support:</strong> Family members may request money. Refusing costs relationship points; accepting costs actual money. GM sets the amount and frequency.</li>
-  <li><strong>Emotional labor:</strong> Being "the strong one" or "the counselor" in the family costs <strong>1 Stress per week</strong> of sustained emotional support for others.</li>
-  <li><strong>Caregiving:</strong> A sick or aging parent may require <strong>2–10 hours per week</strong> of caregiving, reducing available time for work, social life, and self-care.</li>
+  <li>🎄 <strong>Holidays and gatherings:</strong> Expected attendance. Missing one costs <strong>1–3 relationship points</strong> per absent event. Attending costs a day of time and $50–200.</li>
+  <li>💰 <strong>Financial support:</strong> Family members may request money. Refusing costs relationship points; accepting costs actual money.</li>
+  <li>🫂 <strong>Emotional labor:</strong> Being "the strong one" costs <strong>1 Stress per week</strong> of sustained emotional support for others.</li>
+  <li>🏥 <strong>Caregiving:</strong> A sick or aging parent may require <strong>2–10 hours per week</strong> of caregiving, reducing available time.</li>
 </ul>
 
 <h3>Estrangement Mechanics 🚪</h3>
@@ -566,14 +579,29 @@
 
 <ul>
   <li><strong>Causes:</strong> Abuse (emotional, physical, financial), betrayal, irreconcilable values, chronic disappointment, or a single devastating event</li>
-  <li><strong>Mechanical effect:</strong> The estranged person is treated as a <strong>Stranger</strong>. All relationship points are frozen at <strong>0</strong>. No new points can be earned for <strong>at minimum 1 year</strong> of game time.</li>
-  <li><strong>Mental health impact:</strong> Estrangement causes <strong>ongoing Stress</strong> — <strong>1 per week</strong> if the estrangement was forced upon the character, <strong>0</strong> if the character chose it (though the GM may rule otherwise based on the character's personality).</li>
-  <li><strong>Reconciliation:</strong> Requires a <strong>Very Hard Communication check (10+)</strong> AND a <strong>Strong Vulnerability check (9+)</strong>. Both must succeed. Even then, the relationship only rebuilds from Acquaintance level.</li>
+  <li><strong>Mechanical effect:</strong> The estranged person is treated as a <strong>Stranger</strong>. All relationship points frozen at <strong>0</strong>. No new points for <strong>at minimum 1 year</strong> of game time.</li>
+  <li><strong>Mental health impact:</strong> Estrangement causes <strong>ongoing Stress</strong> — <strong>1 per week</strong> if forced upon the character, <strong>0</strong> if the character chose it.</li>
+  <li><strong>Reconciliation:</strong> Requires a <strong>Very Hard Communication check (10+)</strong> AND a <strong>Strong Vulnerability check (9+)</strong>. Both must succeed. Even then, rebuilds only from Acquaintance level.</li>
 </ul>
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The Family Dinner</div>
-  <p><strong>Diego</strong> is invited to his family's annual holiday dinner. His father (Close Friend tier, 22 points) expects him to attend. Diego has been working double shifts and is exhausted — attending would cost him <strong>$80</strong> (gift + travel) and <strong>6 hours</strong>. If he goes: gains <strong>+3 relationship points</strong> with his father, but loses the evening's sleep (−1 to next day's Physical checks). If he doesn't go: loses <strong>3 relationship points</strong> with his father AND his mother (who sides with her husband). Diego rolls a <span class="dice">1d6</span> on his Stress — he's at 4/10, so he's not in crisis. He decides to go. The dinner is pleasant but his father makes a comment about Diego still not being "successful" — Diego rolls an Empathy check (fails) and takes it as a personal attack rather than his father's own insecurity manifesting. Diego gains <strong>+2</strong> relationship points (net gain of −1 from the comment), leaving him at 21. Close call.</p>
+  <div class="section-illustration">
+    <img src="img/sd_diego_family_dinner.png" alt="A family holiday dinner with a tired-looking son and a critical father">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_diego.png" alt="Portrait of Diego">
+    <div class="char-info">
+      <div class="char-name">Diego</div>
+      <div class="char-subtitle">At his family's holiday dinner — exhausted but committed</div>
+      <div class="char-stats">
+        <span class="char-stat">Stress: 4/10</span>
+        <span class="char-stat">Father: 22 pts (Close Friend)</span>
+        <span class="char-stat">Cost: $80 + 6 hrs</span>
+      </div>
+    </div>
+  </div>
+  <p><strong>Diego</strong> is invited to his family's annual holiday dinner. His father (Close Friend tier, 22 points) expects him to attend. Diego has been working double shifts and is exhausted — attending would cost him <strong>$80</strong> (gift + travel) and <strong>6 hours</strong>. If he goes: gains <strong>+3 relationship points</strong> with his father, but loses the evening's sleep (−1 to next day's Physical checks). If he doesn't go: loses <strong>3 relationship points</strong> with his father AND his mother. Diego rolls a <span class="dice">1d6</span> on his Stress — he's at 4/10, so he's not in crisis. He decides to go. The dinner is pleasant but his father makes a comment about Diego still not being "successful" — Diego rolls an Empathy check (fails) and takes it as a personal attack rather than his father's own insecurity manifesting. Diego gains <strong>+2</strong> relationship points (net gain of −1 from the comment), leaving him at 21. Close call.</p>
 </div>
 
 <!-- ============================================================ -->
@@ -584,6 +612,20 @@
 <h3>Social Capital Pool 💰</h3>
 
 <p>Each character starts with <strong>5–15 Social Capital points</strong> (based on their background and community standing). Social Capital is <strong>community-specific</strong> — you may have high capital in your workplace but low capital in your neighborhood.</p>
+
+<!-- Social Capital Flow Diagram -->
+<div class="section-illustration">
+  <img src="img/sd_social_capital_flow.svg" alt="Flow diagram showing how social capital enters and leaves a character's pool, and what it can be spent on">
+</div>
+
+<div class="condition-track">
+  <div class="condition-step dead"><strong>Outcast</strong><br>0–2</div>
+  <div class="condition-step sick"><strong>Unknown</strong><br>3–5</div>
+  <div class="condition-step tired"><strong>Known</strong><br>6–10</div>
+  <div class="condition-step healthy"><strong>Respected</strong><br>11–15</div>
+  <div class="condition-step healthy" style="background:#2ecc71;"><strong>Highly Regarded</strong><br>16–20</div>
+  <div class="condition-step critical" style="background:#f1c40f;"><strong>Legendary</strong><br>21+</div>
+</div>
 
 <div class="table-wrap">
 <table>
@@ -596,34 +638,34 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Outcast</strong></td>
+  <td>🚫 <strong>Outcast</strong></td>
   <td>0–2</td>
   <td>People are unfriendly or avoidant. Services are slower. You're the last to hear good news.</td>
 </tr>
 <tr>
-  <td><strong>Unknown</strong></td>
+  <td>❓ <strong>Unknown</strong></td>
   <td>3–5</td>
   <td>Neutral. People treat you politely but without warmth or special consideration.</td>
 </tr>
 <tr>
-  <td><strong>Known</strong></td>
+  <td>👋 <strong>Known</strong></td>
   <td>6–10</td>
   <td>People recognize you and are generally friendly. You get small courtesies (holding doors, remembering your name).</td>
 </tr>
 <tr>
-  <td><strong>Respected</strong></td>
+  <td>⭐ <strong>Respected</strong></td>
   <td>11–15</td>
-  <td>People seek your input. You get preferential treatment. Managers listen to your ideas. Neighbors help without asking.</td>
+  <td>People seek your input. Preferential treatment. Managers listen. Neighbors help without asking.</td>
 </tr>
 <tr>
-  <td><strong>Highly Regarded</strong></td>
+  <td>🏆 <strong>Highly Regarded</strong></td>
   <td>16–20</td>
-  <td>You're a community pillar. People go out of their way for you. Opportunities find you. Your word carries weight.</td>
+  <td>Community pillar. People go out of their way for you. Opportunities find you. Your word carries weight.</td>
 </tr>
 <tr>
-  <td><strong>Legendary</strong></td>
+  <td>👑 <strong>Legendary</strong></td>
   <td>21+</td>
-  <td>Rare. You're known beyond your immediate circle. Your reputation opens doors that are normally closed.</td>
+  <td>Rare. Known beyond your immediate circle. Your reputation opens doors that are normally closed.</td>
 </tr>
 </tbody>
 </table>
@@ -632,31 +674,36 @@
 <h3>Gaining Social Capital 📈</h3>
 
 <ul>
-  <li><strong>Helping others:</strong> +1 per meaningful act of kindness (volunteering, helping a neighbor, mentoring)</li>
-  <li><strong>Community participation:</strong> +1 per month of active participation in community events</li>
-  <li><strong>Professional achievement:</strong> +2 for a promotion, published work, or recognized accomplishment</li>
-  <li><strong>Generosity:</strong> +1 per significant act of generosity (hosting, donating, lending)</li>
+  <li>🤲 <strong>Helping others:</strong> +1 per meaningful act of kindness (volunteering, helping a neighbor, mentoring)</li>
+  <li>🏘️ <strong>Community participation:</strong> +1 per month of active participation in community events</li>
+  <li>🎖️ <strong>Professional achievement:</strong> +2 for a promotion, published work, or recognized accomplishment</li>
+  <li>💝 <strong>Generosity:</strong> +1 per significant act of generosity (hosting, donating, lending)</li>
 </ul>
 
 <h3>Losing Social Capital 📉</h3>
 
 <ul>
-  <li><strong>Conflict in public:</strong> −2 per public argument or scene</li>
-  <li><strong>Broken promises:</strong> −1 per broken commitment</li>
-  <li><strong>Gossip:</strong> −1 to −3 per damaging rumor that spreads (see below)</li>
-  <li><strong>Legal trouble:</strong> −3 to −5 per arrest, conviction, or public legal proceeding</li>
-  <li><strong>Being unreliable:</strong> −1 per instance of flaking on plans or being consistently late</li>
+  <li>💥 <strong>Conflict in public:</strong> −2 per public argument or scene</li>
+  <li>❌ <strong>Broken promises:</strong> −1 per broken commitment</li>
+  <li>🗣️ <strong>Gossip:</strong> −1 to −3 per damaging rumor that spreads (see below)</li>
+  <li>⚖️ <strong>Legal trouble:</strong> −3 to −5 per arrest, conviction, or public legal proceeding</li>
+  <li>⏰ <strong>Being unreliable:</strong> −1 per instance of flaking on plans or being consistently late</li>
 </ul>
 
 <h3>Gossip Mechanics 💬</h3>
 
+<!-- Gossip Spread Diagram -->
+<div class="section-illustration">
+  <img src="img/sd_gossip_spread.svg" alt="Ripple diagram showing how gossip spreads outward from a character over time">
+</div>
+
 <p>Gossip is a <strong>slow-moving but powerful force</strong>. When something noteworthy happens to a character, it spreads through their social network:</p>
 
 <ul>
-  <li><strong>Day 1–3:</strong> Only close contacts know (Close Friends and above)</li>
-  <li><strong>Day 4–14:</strong> Spreads to Friends tier and wider acquaintance network</li>
-  <li><strong>Day 15–30:</strong> Community-wide awareness. Affects Social Capital.</li>
-  <li><strong>Day 31+:</strong> Becomes part of the character's <strong>reputation</strong> — a lasting modifier to how strangers initially treat them</li>
+  <li>📅 <strong>Day 1–3:</strong> Only close contacts know (Close Friends and above)</li>
+  <li>📅 <strong>Day 4–14:</strong> Spreads to Friends tier and wider acquaintance network</li>
+  <li>📅 <strong>Day 15–30:</strong> Community-wide awareness. Affects Social Capital.</li>
+  <li>📅 <strong>Day 31+:</strong> Becomes part of the character's <strong>reputation</strong> — a lasting modifier to how strangers initially treat them</li>
 </ul>
 
 <div class="callout tip">
@@ -666,6 +713,20 @@
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The Gossip Spiral</div>
+  <div class="section-illustration">
+    <img src="img/sd_nina_office_party.png" alt="A woman looking upset at an office holiday party while coworkers whisper">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_nina.png" alt="Portrait of Nina">
+    <div class="char-info">
+      <div class="char-name">Nina</div>
+      <div class="char-subtitle">After a public argument at the office party — Social Capital spiraling down</div>
+      <div class="char-stats">
+        <span class="char-stat">SC: 12 → 10 → 8 → 5</span>
+        <span class="char-stat">Status: Respected → Known → Unknown</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Nina</strong> gets into a public argument with a coworker at the office holiday party (Escalation Level 4). Word spreads quickly. By Monday morning, half the office knows. Nina loses <strong>2 Social Capital</strong> in her workplace community (from 12 to 10 — drops from "Respected" to "Known"). Her boss asks her to "be more professional." Over the next month, the story mutates — people say Nina "started crying and threw a drink" (she didn't). Nina loses another <strong>2 Social Capital</strong> (now at 8). She spends 3 Social Capital to have her manager send a clarifying email to the team, bringing her back to 5 — barely out of "Unknown" territory. It will take months of consistent good behavior to rebuild.</p>
 </div>
 
@@ -673,6 +734,11 @@
 <h2>7. Networking and Professional Relationships 💼</h2>
 
 <p>Your professional network is one of the most valuable resources in modern life. It affects career advancement, job opportunities, and even personal well-being.</p>
+
+<!-- Networking Map -->
+<div class="section-illustration">
+  <img src="img/sd_networking_map.svg" alt="Professional network diagram showing six types of contacts and maintenance schedules">
+</div>
 
 <h3>Professional Contact Types 📇</h3>
 
@@ -687,34 +753,34 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Colleague</strong></td>
+  <td>👔 <strong>Colleague</strong></td>
   <td>Work alongside each other</td>
-  <td>Information sharing, cover for you when you're absent, reference for future jobs</td>
+  <td>Information sharing, cover for you when absent, reference for future jobs</td>
 </tr>
 <tr>
-  <td><strong>Mentor</strong></td>
+  <td>🧭 <strong>Mentor</strong></td>
   <td>Experienced person who guides you (formal or informal)</td>
-  <td><strong>−1 to all career-related checks</strong> while mentorship is active. Can advocate for promotions. Provides career advice that prevents costly mistakes.</td>
+  <td><strong>−1 to all career-related checks</strong> while active. Can advocate for promotions. Prevents costly mistakes.</td>
 </tr>
 <tr>
-  <td><strong>Mentee</strong></td>
+  <td>🎓 <strong>Mentee</strong></td>
   <td>Someone you're guiding</td>
-  <td>Builds your professional reputation (+1 Social Capital per quarter of active mentoring). Future mentees may become powerful contacts.</td>
+  <td>Builds professional reputation (+1 Social Capital per quarter). Future mentees may become powerful contacts.</td>
 </tr>
 <tr>
-  <td><strong>Industry Contact</strong></td>
+  <td>🌐 <strong>Industry Contact</strong></td>
   <td>Met through conferences, LinkedIn, professional groups</td>
   <td>Job leads, industry information, referral opportunities. <span class="dice">1d6</span> per quarter for a potential job opportunity (TN 45).</td>
 </tr>
 <tr>
-  <td><strong>Former Boss</strong></td>
+  <td>📋 <strong>Former Boss</strong></td>
   <td>Previously worked under them</td>
-  <td>Can provide a reference (worth <strong>+2 to job interview checks</strong> if relationship is positive). If relationship is negative, they can <strong>block opportunities</strong> (−2).</td>
+  <td>Can provide a reference (<strong>+2 to interview checks</strong> if positive). If negative, can <strong>block opportunities</strong> (−2).</td>
 </tr>
 <tr>
-  <td><strong>Competitor</strong></td>
+  <td>⚔️ <strong>Competitor</strong></td>
   <td>Works in the same field/level</td>
-  <td>Can be an ally (information sharing) or obstacle (blocking your advancement). Roll <span class="dice">1d6</span> per major career decision — on a 1, they actively work against you.</td>
+  <td>Can be ally or obstacle. Roll <span class="dice">1d6</span> per major career decision — on a 1, they actively work against you.</td>
 </tr>
 </tbody>
 </table>
@@ -725,9 +791,9 @@
 <p>Professional relationships require <strong>active maintenance</strong>, just like personal ones:</p>
 
 <ul>
-  <li><strong>Monthly:</strong> Reach out to at least <strong>2 contacts</strong> (coffee, call, LinkedIn message). Failure to maintain = contact degrades one tier per quarter of neglect.</li>
-  <li><strong>Quarterly:</strong> Attend <strong>1 networking event</strong> (industry meetup, conference, happy hour). Costs $20–100 and 2–4 hours. Provides <strong>+1 Social Capital</strong> in your professional community.</li>
-  <li><strong>Annually:</strong> Update your professional presence (resume, LinkedIn, portfolio). Costs time but prevents <strong>−1 Social Capital</strong> for appearing "out of touch."</li>
+  <li>📞 <strong>Monthly:</strong> Reach out to at least <strong>2 contacts</strong> (coffee, call, LinkedIn message). Failure to maintain = contact degrades one tier per quarter of neglect.</li>
+  <li>🎪 <strong>Quarterly:</strong> Attend <strong>1 networking event</strong> (industry meetup, conference, happy hour). Costs $20–100 and 2–4 hours. Provides <strong>+1 Social Capital</strong> in your professional community.</li>
+  <li>📄 <strong>Annually:</strong> Update your professional presence (resume, LinkedIn, portfolio). Costs time but prevents <strong>−1 Social Capital</strong> for appearing "out of touch."</li>
 </ul>
 
 <h3>How Contacts Help (or Hinder) 🤲</h3>
@@ -735,14 +801,28 @@
 <p>When a character needs professional help, the GM checks their contact list:</p>
 
 <ul>
-  <li><strong>Warm introduction:</strong> A contact introduces you to someone they know. <span class="dice">1d6</span> — on 4+, the introduction is positive and you gain an Acquaintance with the new person.</li>
-  <li><strong>Job referral:</strong> A contact puts your name forward for a position. <span class="dice">1d6</span> — on 5+, you get an interview. The contact's Social Capital in their company affects the roll (+1 per tier above 10).</li>
-  <li><strong>Reference:</strong> A contact vouches for your character. Adds <strong>+1 to +3</strong> (based on relationship tier) to the relevant check.</li>
-  <li><strong>Burned bridge:</strong> If a character left a job poorly or had a negative relationship, that contact can <strong>actively block</strong> opportunities. <span class="dice">1d6</span> — on 1–2, the contact speaks negatively about the character, causing <strong>−2 to the relevant check</strong>.</li>
+  <li>🔥 <strong>Warm introduction:</strong> A contact introduces you to someone they know. <span class="dice">1d6</span> — on 4+, the introduction is positive and you gain an Acquaintance with the new person.</li>
+  <li>💼 <strong>Job referral:</strong> A contact puts your name forward for a position. <span class="dice">1d6</span> — on 5+, you get an interview. The contact's Social Capital in their company affects the roll (+1 per tier above 10).</li>
+  <li>📝 <strong>Reference:</strong> A contact vouches for your character. Adds <strong>+1 to +3</strong> (based on relationship tier) to the relevant check.</li>
+  <li>🔥 <strong>Burned bridge:</strong> If a character left a job poorly, that contact can <strong>actively block</strong> opportunities. <span class="dice">1d6</span> — on 1–2, the contact speaks negatively, causing <strong>−2 to the relevant check</strong>.</li>
 </ul>
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The Mentor's Call</div>
+  <div class="section-illustration">
+    <img src="img/sd_raj_patricia_mentor.png" alt="A senior mentor encouraging a younger professional">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_raj.png" alt="Portrait of Raj">
+    <div class="char-info">
+      <div class="char-name">Raj</div>
+      <div class="char-subtitle">Applying for a lead role with mentor Patricia's advocacy</div>
+      <div class="char-stats">
+        <span class="char-stat">Mentor: Patricia (Close Friend)</span>
+        <span class="char-stat">Interview: 8 + mods = 11 ✓</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Raj</strong> has been mentored by <strong>Patricia</strong>, a senior engineer at his company, for 18 months (Mentor relationship, Close Friend tier). Raj wants to apply for a lead role that just opened. Patricia agrees to advocate for him. This gives Raj <strong>−1 to his interview check</strong> (easier target) AND <strong>+2 from her reference</strong>. Raj rolls <span class="dice">2d10</span> for the interview: gets an 8. With modifiers, that's effectively a 11 — a strong success. Raj gets the promotion. Patricia gains <strong>+1 Social Capital</strong> in the engineering community for developing talent. Raj gains <strong>+2 Social Capital</strong> for the promotion itself.</p>
 </div>
 
@@ -765,43 +845,48 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Neighborhood</strong></td>
+  <td>🏘️ <strong>Neighborhood</strong></td>
   <td>Live there</td>
   <td>Local knowledge, neighborly help, safety in numbers. <strong>+1 to Social Capital</strong> per quarter of active participation.</td>
   <td>HOA fees, neighborhood expectations, gossip exposure</td>
 </tr>
 <tr>
-  <td><strong>Religious/Spiritual Community</strong></td>
+  <td>⛪ <strong>Religious/Spiritual</strong></td>
   <td>Attend services or participate</td>
   <td><strong>+2 to Mental Health checks</strong> per month of attendance. Strong support network. <strong>+1 Social Capital</strong> within that community.</td>
   <td>Time commitment (2–4 hours/week), possible financial contributions, doctrinal expectations</td>
 </tr>
 <tr>
-  <td><strong>Hobby/Interest Group</strong></td>
+  <td>🎨 <strong>Hobby/Interest Group</strong></td>
   <td>Share the interest; attend meetings</td>
-  <td><strong>+1 to Mental Health checks</strong> per month of participation. Skill improvement in the hobby area. Social connections with shared interests.</td>
+  <td><strong>+1 to Mental Health checks</strong> per month of participation. Skill improvement in the hobby. Social connections with shared interests.</td>
   <td>Time commitment, equipment costs, possible membership fees</td>
 </tr>
 <tr>
-  <td><strong>Civic/Volunteer Organization</strong></td>
+  <td>🏛️ <strong>Civic/Volunteer</strong></td>
   <td>Sign up; show up</td>
   <td><strong>+2 Social Capital</strong> in the wider community. <strong>+1 to Mental Health checks</strong>. Networking opportunities. Resume building.</td>
   <td>Significant time commitment (4–10 hours/week depending on role)</td>
 </tr>
 <tr>
-  <td><strong>Cultural/Ethnic Community</strong></td>
+  <td>🌍 <strong>Cultural/Ethnic</strong></td>
   <td>Shared heritage or identity</td>
   <td><strong>+2 to Mental Health checks</strong> (sense of belonging). Cultural support during holidays and crises. <strong>+1 Social Capital</strong> within the cultural community.</td>
   <td>Expectations around cultural participation; possible pressure to conform</td>
 </tr>
 <tr>
-  <td><strong>Online Community</strong></td>
+  <td>💻 <strong>Online Community</strong></td>
   <td>Join forums, Discord, social media groups</td>
-  <td><strong>+1 to Mental Health checks</strong> per month of active participation. Information sharing, niche connections. Lower time cost than in-person.</td>
-  <td>Less deep connection (cannot reach Friend tier without meeting in person). Risk of echo chambers and online conflict.</td>
+  <td><strong>+1 to Mental Health checks</strong> per month of active participation. Information sharing, niche connections. Lower time cost.</td>
+  <td>Less deep connection (cannot reach Friend tier in person). Risk of echo chambers and online conflict.</td>
 </tr>
 </tbody>
 </table>
+</div>
+
+<!-- Isolation Spiral -->
+<div class="section-illustration">
+  <img src="img/sd_isolation_spiral.svg" alt="Spiral diagram showing the compounding effects of social isolation and the path to break free">
 </div>
 
 <h3>Isolation Mechanics 🏝️</h3>
@@ -814,7 +899,7 @@
     <li><strong>+1 Stress per week</strong> (loneliness, lack of support)</li>
     <li><strong>−1 to Communication checks</strong> (social skills atrophy without practice)</li>
     <li><strong>No Social Capital gains</strong> — without community, there's no one to build reputation with</li>
-    <li><strong>Job search penalty:</strong> <strong>+1 difficulty</strong> on all job-related checks (most jobs are found through networks)</li>
+    <li><strong>Job search penalty:</strong> <strong>+1 difficulty</strong> on all job-related checks (most jobs found through networks)</li>
   </ul>
   <p>Isolation is <strong>compounding</strong> — the longer a character remains isolated, the harder it becomes to break out. After <strong>3 months</strong> of isolation, all Mental Health penalties increase by <strong>1</strong>. After <strong>6 months</strong>, increase by <strong>1 more</strong>.</p>
 </div>
@@ -824,13 +909,28 @@
 <p>Rebuilding community takes effort and time. A character who wants to escape isolation must:</p>
 
 <ol>
-  <li><strong>Take an initiative action:</strong> Join a class, attend a community event, volunteer, or reach out to someone. Requires a <strong>Resolve check</strong> (<span class="dice">2d10</span> + Resolve, TN 50) if the character is deeply isolated (3+ months).</li>
+  <li><strong>Take an initiative action:</strong> Join a class, attend a community event, volunteer, or reach out to someone. Requires a <strong>Resolve check</strong> (<span class="dice">2d10</span> + Resolve, TN 50) if deeply isolated (3+ months).</li>
   <li><strong>Attend consistently:</strong> Showing up once doesn't count. <strong>3+ attendances</strong> within a month establishes a foothold.</li>
   <li><strong>Build a connection:</strong> Within the new community, form at least <strong>1 Acquaintance-level relationship</strong> within 2 months.</li>
 </ol>
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: Breaking the Isolation</div>
+  <div class="section-illustration">
+    <img src="img/sd_tom_keisha_running.png" alt="A man joining a running club for the first time, welcomed by a friendly regular">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_tom.png" alt="Portrait of Tom">
+    <div class="char-info">
+      <div class="char-name">Tom, 42</div>
+      <div class="char-subtitle">Recently isolated — joining a running club to rebuild connections</div>
+      <div class="char-stats">
+        <span class="char-stat">Isolated: 2 weeks</span>
+        <span class="char-stat">Resolve check: 10 ✓</span>
+        <span class="char-stat">New contact: Keisha</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Tom</strong>, 42, recently moved to a new city for work. His old friends are 3 states away (relationship points decaying). He has no local community, no Close Friends, and only 1 Acquaintance (his new coworker). Tom is <strong>isolated</strong>. He gains <strong>+1 Stress per week</strong> and has <strong>−2 to Mental Health checks</strong>. After 2 weeks, his Mental Health check to handle his morning routine fails — he's struggling.</p>
   <p>Tom decides to join a local running club. Resolve check: <span class="dice">2d10</span> (8) + Resolve (2) = 10. Success — he shows up. The first meeting is awkward (Communication check fails — he doesn't know anyone). But he shows up again the next week, and the week after that. On the third visit, a regular named <strong>Keisha</strong> notices him and introduces herself. They bond over their mutual struggle with hill training. Tom gains his first local Acquaintance. The isolation penalties begin to lift — the <strong>+1 Stress per week stops</strong>. It will take months to fully rebuild, but the dam has cracked.</p>
 </div>
@@ -844,6 +944,13 @@
 
 <p>The GM may call for a <strong>Discrimination Check</strong> when a character's identity puts them at a disadvantage in a given situation. This is <strong>not</strong> a roll the character makes — it's a roll the <strong>GM makes</strong> to determine whether bias is present:</p>
 
+<div class="condition-track">
+  <div class="condition-step critical"><strong>Open</strong><br>d6: 1–2<br>Overt bias</div>
+  <div class="condition-step injured"><strong>Subtle</strong><br>d6: 3–4<br>Microaggression</div>
+  <div class="condition-step sick"><strong>Ambiguous</strong><br>d6: 5<br>Coincidence?</div>
+  <div class="condition-step healthy"><strong>None</strong><br>d6: 6<br>Neutral</div>
+</div>
+
 <div class="table-wrap">
 <table>
 <thead>
@@ -856,22 +963,22 @@
 <tbody>
 <tr>
   <td>1–2</td>
-  <td><strong>Open discrimination:</strong> Overt bias, explicit prejudice, possibly hostile</td>
+  <td>🚨 <strong>Open discrimination:</strong> Overt bias, explicit prejudice, possibly hostile</td>
   <td>A landlord refuses to show an apartment to a Black family; a trans person is denied service; a woman is interrupted repeatedly in a meeting</td>
 </tr>
 <tr>
   <td>3–4</td>
-  <td><strong>Subtle discrimination:</strong> Microaggression, implicit bias, differential treatment</td>
-  <td>A resume with a "sounding ethnic" name gets fewer callbacks; an older worker is excluded from "team building" drinks; a disabled person's needs are treated as an inconvenience</td>
+  <td>⚠️ <strong>Subtle discrimination:</strong> Microaggression, implicit bias, differential treatment</td>
+  <td>A resume with a "sounding ethnic" name gets fewer callbacks; an older worker is excluded from "team building" drinks; a disabled person's needs treated as an inconvenience</td>
 </tr>
 <tr>
   <td>5</td>
-  <td><strong>Ambiguous situation:</strong> Could be bias, could be coincidence. The character must decide how to interpret it</td>
+  <td>❓ <strong>Ambiguous situation:</strong> Could be bias, could be coincidence. Character must decide how to interpret</td>
   <td>A security guard follows a person of color in a store; a manager doesn't promote someone — was it bias or qualifications?</td>
 </tr>
 <tr>
   <td>6</td>
-  <td><strong>No discrimination:</strong> The situation proceeds without bias</td>
+  <td>✅ <strong>No discrimination:</strong> The situation proceeds without bias</td>
   <td>The interaction is neutral or positive</td>
 </tr>
 </tbody>
@@ -895,24 +1002,24 @@
 </thead>
 <tbody>
 <tr>
-  <td><strong>Stand Up</strong> — confront the bias directly</td>
+  <td>📢 <strong>Stand Up</strong> — confront the bias directly</td>
   <td><span class="dice">2d10</span> + Resolve + Communication, TN 55</td>
-  <td>Success: The biased person backs down; bystanders may support you. <strong>+1 Social Capital</strong> among allies. Failure: The situation escalates; you may face retaliation. <strong>+2 Stress</strong> regardless of outcome.</td>
+  <td>Success: Biased person backs down; bystanders may support. <strong>+1 Social Capital</strong> among allies. Failure: Escalation; retaliation. <strong>+2 Stress</strong> regardless.</td>
 </tr>
 <tr>
-  <td><strong>Stay Quiet</strong> — swallow the discomfort and move on</td>
+  <td>🤐 <strong>Stay Quiet</strong> — swallow the discomfort and move on</td>
   <td>None (automatic)</td>
-  <td>No immediate escalation. <strong>+1 Stress</strong> (suppressed anger/frustration). <strong>−1 to next Mental Health check</strong> (internalized harm). No Social Capital change.</td>
+  <td>No immediate escalation. <strong>+1 Stress</strong> (suppressed anger). <strong>−1 to next Mental Health check</strong> (internalized harm).</td>
 </tr>
 <tr>
-  <td><strong>Document/Report</strong> — file a complaint, record evidence</td>
+  <td>📝 <strong>Document/Report</strong> — file a complaint, record evidence</td>
   <td><span class="dice">2d10</span> + Expression, TN 50</td>
-  <td>Success: The incident is formally recorded. May lead to institutional change (slow) or personal vindication. <strong>+1 Social Capital</strong> among those who know. Failure: The complaint is dismissed or backfires. <strong>+2 Stress</strong>.</td>
+  <td>Success: Incident formally recorded. May lead to institutional change. <strong>+1 Social Capital</strong>. Failure: Dismissed or backfires. <strong>+2 Stress</strong>.</td>
 </tr>
 <tr>
-  <td><strong>Seek Support</strong> — tell a trusted person, process it</td>
+  <td>🫂 <strong>Seek Support</strong> — tell a trusted person, process it</td>
   <td>None (automatic if you have the relationship)</td>
-  <td>Stress is <strong>halved</strong> (rounded down) if you have a Close Friend or above to talk to. <strong>+1 relationship point</strong> with the person you confide in.</td>
+  <td>Stress is <strong>halved</strong> (rounded down) if you have a Close Friend or above to talk to. <strong>+1 relationship point</strong> with the confidant.</td>
 </tr>
 </tbody>
 </table>
@@ -923,21 +1030,33 @@
 <p>Characters who are <strong>not directly affected</strong> by a given form of discrimination can still play a crucial role as allies:</p>
 
 <ul>
-  <li><strong>Bystander intervention:</strong> When someone else faces discrimination, an ally can step in. Roll <span class="dice">2d10</span> + Courage + Communication, TN 50. Success de-escalates the situation. The affected person gains <strong>+1 relationship point</strong> with the ally.</li>
-  <li><strong>Amplification:</strong> In group settings, an ally can amplify marginalized voices. The ally takes a <strong>−1 penalty</strong> to their own Communication check to give the marginalized person a <strong>+2 bonus</strong> on theirs.</li>
-  <li><strong>Institutional allyship:</strong> An ally in a position of power can use their privilege to change policies, hire diversely, or challenge systemic bias. Requires <span class="dice">2d10</span> + Social Capital (as a numeric bonus), TN 55. Success creates a <strong>lasting positive modifier</strong> for affected characters in that institution.</li>
+  <li>🛡️ <strong>Bystander intervention:</strong> When someone else faces discrimination, an ally can step in. Roll <span class="dice">2d10</span> + Courage + Communication, TN 50. Success de-escalates. Affected person gains <strong>+1 relationship point</strong> with the ally.</li>
+  <li>📢 <strong>Amplification:</strong> In group settings, an ally can amplify marginalized voices. The ally takes a <strong>−1 penalty</strong> to their own Communication check to give the marginalized person a <strong>+2 bonus</strong> on theirs.</li>
+  <li>🏛️ <strong>Institutional allyship:</strong> An ally in power can use privilege to change policies, hire diversely, or challenge systemic bias. Requires <span class="dice">2d10</span> + Social Capital (as a numeric bonus), TN 55. Creates a <strong>lasting positive modifier</strong> for affected characters.</li>
 </ul>
 
 <h3>Cumulative Impact ⚡</h3>
 
 <p>The real damage of discrimination is <strong>cumulative</strong>. The GM tracks a character's <strong>Bias Exposure Score</strong> — the total number of discrimination encounters they've faced (whether they responded or not):</p>
 
-<ul>
-  <li><strong>0–5 encounters:</strong> No lasting mechanical effect beyond individual incident consequences</li>
-  <li><strong>6–15 encounters:</strong> <strong>−1 to Communication checks</strong> in settings where the bias originates (hypervigilance, exhaustion)</li>
-  <li><strong>16–30 encounters:</strong> <strong>−2 to Mental Health checks</strong> in those settings. Character develops <strong>coping mechanisms</strong> (GM and player discuss what these look like).</li>
-  <li><strong>31+ encounters:</strong> <strong>−3 to all checks</strong> in those settings. Character may develop a <strong>trauma response</strong> (see Mental Health page). The GM should check in with the player out of game.</li>
-</ul>
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">😐</span>
+    <span class="tn-label"><strong>0–5 encounters</strong> — No lasting mechanical effect beyond individual incident consequences</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">😟</span>
+    <span class="tn-label"><strong>6–15 encounters</strong> — <strong>−1 to Communication checks</strong> in settings where the bias originates (hypervigilance, exhaustion)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">😰</span>
+    <span class="tn-label"><strong>16–30 encounters</strong> — <strong>−2 to Mental Health checks</strong> in those settings. Character develops coping mechanisms</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">🚨</span>
+    <span class="tn-label"><strong>31+ encounters</strong> — <strong>−3 to all checks</strong> in those settings. May develop a trauma response. GM should check in with player</span>
+  </div>
+</div>
 
 <div class="callout tip">
   <div class="callout-title">💡 GM Guidance</div>
@@ -946,6 +1065,21 @@
 
 <div class="callout example">
   <div class="callout-title">📖 Scenario: The Interview</div>
+  <div class="section-illustration">
+    <img src="img/sd_amara_interview.png" alt="A Black woman in a corporate interview, professionally composed but with subtle tension">
+  </div>
+  <div class="char-portrait">
+    <img src="img/char_amara.png" alt="Portrait of Amara">
+    <div class="char-info">
+      <div class="char-name">Amara</div>
+      <div class="char-subtitle">Interviewing for a corporate finance role — facing subtle discrimination</div>
+      <div class="char-stats">
+        <span class="char-stat">Discrimination roll: 3 (subtle)</span>
+        <span class="char-stat">Communication: 14 ✓</span>
+        <span class="char-stat">Bias Score: 12</span>
+      </div>
+    </div>
+  </div>
   <p><strong>Amara</strong>, a Black woman interviewing for a corporate finance role, faces a Discrimination Check from the GM. He rolls <span class="dice">1d6</span>: gets a 3 — <strong>subtle discrimination</strong>. During the interview, the interviewers ask Amara if she can "code-switch" and seem surprised when she mentions her church community. They don't ask the white candidate these questions.</p>
   <p>Amara's player chooses <strong>Stay Quiet</strong> — she answers professionally but internally burns with frustration. <strong>+1 Stress, −1 to her next Mental Health check</strong>. However, Amara's strong Communication skill carries her through the interview itself — she rolls <span class="dice">2d10</span> (10) + Communication (4) = 14. She gets the job despite the bias. Her Bias Exposure Score increases to 12 — she's now at the threshold where she'll gain a <strong>−1 to Communication checks</strong> in corporate settings (the weight of knowing this happens every time).</p>
   <p>Later, Amara's coworker <strong>David</strong> witnesses a similar incident with a new hire. He chooses <strong>Bystander Intervention</strong>, rolling <span class="dice">2d10</span> (9) + Courage (2) + Communication (3) = 14. He gently redirects the conversation. The new hire gains <strong>+1 relationship point</strong> with David, and the team culture begins to shift.</p>
@@ -957,15 +1091,39 @@
 <div class="callout">
   <div class="callout-title">📋 Social Stress Tracker</div>
   <p>Social interactions generate Stress just like physical danger does. Track cumulative Stress from:</p>
-  <ul>
-    <li>Arguments and conflicts: <strong>1–5 per incident</strong> (based on escalation level)</li>
-    <li>Failed Communication checks: <strong>1 per failure</strong></li>
-    <li>Discrimination encounters: <strong>1–2 per encounter</strong></li>
-    <li>Isolation: <strong>1 per week</strong></li>
-    <li>Family obligations (emotional labor): <strong>1 per week</strong></li>
-    <li>Breakups: <strong>3–8 per incident</strong></li>
-  </ul>
-  <p>Stress is reduced through <strong>positive social interaction</strong> (−1 per meaningful hangout), <strong>community participation</strong> (−1 per event), <strong>sleep</strong> (−1 per full night's rest), and <strong>professional help</strong> (−2 per therapy session).</p>
+
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">💥 Arguments & Conflicts</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+    <span style="font-size:0.85rem;">1–5 per incident</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">❌ Failed Comm. Checks</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated"></div></div>
+    <span style="font-size:0.85rem;">1 per failure</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">🚧 Discrimination</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+    <span style="font-size:0.85rem;">1–2 per encounter</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">🏝️ Isolation</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated"></div></div>
+    <span style="font-size:0.85rem;">1 per week</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">🫂 Family Obligations</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated"></div></div>
+    <span style="font-size:0.85rem;">1 per week</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">💔 Breakups</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill episode"></div></div>
+    <span style="font-size:0.85rem;">3–8 per incident</span>
+  </div>
+
+  <p style="margin-top:1em;">Stress is reduced through <strong>positive social interaction</strong> (−1 per meaningful hangout), <strong>community participation</strong> (−1 per event), <strong>sleep</strong> (−1 per full night's rest), and <strong>professional help</strong> (−2 per therapy session).</p>
 </div>
 
 <div class="callout comparison">

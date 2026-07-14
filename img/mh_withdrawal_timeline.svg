@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="wshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <linearGradient id="arcFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#27ae60" stop-opacity="0.15"/>
+      <stop offset="20%" stop-color="#f39c12" stop-opacity="0.15"/>
+      <stop offset="40%" stop-color="#e67e22" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#c0392b" stop-opacity="0.25"/>
+      <stop offset="80%" stop-color="#f39c12" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#27ae60" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="280" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="28" text-anchor="middle" font-size="20" font-weight="700" fill="#2c3e50">Withdrawal Severity Arc</text>
+  <text x="400" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">Severity over time after last dose — peak at 48-72 hours</text>
+
+  <!-- Bell curve area fill -->
+  <path d="M80,160 Q150,155 220,145 Q300,125 360,95 Q400,75 440,75 Q480,75 520,95 Q580,125 650,145 Q710,155 720,160 L720,180 L80,180 Z" fill="url(#arcFill)"/>
+
+  <!-- Bell curve line -->
+  <path d="M80,160 Q150,155 220,145 Q300,125 360,95 Q400,75 440,75 Q480,75 520,95 Q580,125 650,145 Q710,155 720,160" stroke="#c0392b" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Severity labels on curve — positioned clearly -->
+  <text x="150" y="150" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="600">Mild</text>
+  <text x="270" y="130" text-anchor="middle" font-size="10" fill="#f39c12" font-weight="600">Moderate</text>
+  <text x="380" y="88" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="600">Severe</text>
+  <text x="440" y="66" text-anchor="middle" font-size="13" fill="#c0392b" font-weight="700">PEAK</text>
+  <text x="590" y="128" text-anchor="middle" font-size="10" fill="#f39c12" font-weight="600">Subsiding</text>
+
+  <!-- Severity axis label -->
+  <text x="22" y="120" text-anchor="middle" font-size="10" font-weight="600" fill="#7f8c8d" transform="rotate(-90 22 120)">Severity</text>
+
+  <!-- Timeline axis -->
+  <line x1="80" y1="185" x2="720" y2="185" stroke="#bdc3c7" stroke-width="2"/>
+
+  <!-- Phase color bands on the axis -->
+  <rect x="100" y="183" width="60" height="5" rx="2" fill="#27ae60"/>
+  <rect x="160" y="183" width="110" height="5" rx="2" fill="#f39c12"/>
+  <rect x="270" y="183" width="110" height="5" rx="2" fill="#e67e22"/>
+  <rect x="380" y="183" width="130" height="5" rx="2" fill="#c0392b"/>
+  <rect x="510" y="183" width="210" height="5" rx="2" fill="#f39c12" opacity="0.6"/>
+
+  <!-- Time markers -->
+  <g font-size="11" fill="#2c3e50" font-weight="600">
+    <line x1="130" y1="185" x2="130" y2="193" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="130" y="207" text-anchor="middle">0-6h</text>
+
+    <line x1="270" y1="185" x2="270" y2="193" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="270" y="207" text-anchor="middle">6-24h</text>
+
+    <line x1="380" y1="185" x2="380" y2="193" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="380" y="207" text-anchor="middle">24-48h</text>
+
+    <line x1="510" y1="185" x2="510" y2="193" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="510" y="207" text-anchor="middle">48-72h</text>
+
+    <line x1="660" y1="185" x2="660" y2="193" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="660" y="207" text-anchor="middle">72h+</text>
+  </g>
+
+  <!-- Phase descriptions below — spaced out with no overlap -->
+  <g font-size="9" fill="#7f8c8d">
+    <text x="130" y="228" text-anchor="middle">Irritability,</text>
+    <text x="130" y="240" text-anchor="middle">mild discomfort</text>
+
+    <text x="270" y="228" text-anchor="middle">Tremors, sweating,</text>
+    <text x="270" y="240" text-anchor="middle">nausea</text>
+
+    <text x="380" y="228" text-anchor="middle">VIG check to avoid</text>
+    <text x="380" y="240" text-anchor="middle">health damage</text>
+
+    <text x="510" y="228" text-anchor="middle" fill="#c0392b" font-weight="600">All checks +5 TN</text>
+    <text x="510" y="240" text-anchor="middle" fill="#c0392b" font-weight="600">barely functional</text>
+
+    <text x="660" y="228" text-anchor="middle">SP gain decreases,</text>
+    <text x="660" y="240" text-anchor="middle">recovery begins</text>
+  </g>
+</svg>

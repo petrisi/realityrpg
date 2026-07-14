@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="100%" height="100%">
+  <style>
+    .title { font: bold 18px system-ui, sans-serif; fill: #2c3e50; }
+    .subtitle { font: 13px system-ui, sans-serif; fill: #7f8c8d; }
+    .axis-label { font: 12px system-ui, sans-serif; fill: #95a5a6; }
+    .sti-name { font: 14px system-ui, sans-serif; fill: #2c3e50; }
+    .bar-label { font: bold 13px system-ui, sans-serif; fill: #2c3e50; }
+    .treatment { font: 11px system-ui, sans-serif; fill: #7f8c8d; }
+    .note { font: italic 11px system-ui, sans-serif; fill: #e67e22; }
+  </style>
+
+  <!-- Background -->
+  <rect width="700" height="420" rx="8" fill="#fafbfc" stroke="#e0e4e8" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="350" y="36" text-anchor="middle" class="title">STI Transmission Risk per Act</text>
+  <text x="350" y="56" text-anchor="middle" class="subtitle">Unprotected sex with infected partner · Condoms reduce ~80%</text>
+
+  <!-- Scale axis -->
+  <g transform="translate(0, 0)">
+    <line x1="140" y1="92" x2="640" y2="92" stroke="#d5dbdb" stroke-width="1"/>
+    <!-- 0% -->
+    <line x1="140" y1="88" x2="140" y2="96" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="140" y="84" text-anchor="middle" class="axis-label">0%</text>
+    <!-- 10% -->
+    <line x1="240" y1="88" x2="240" y2="96" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="240" y="84" text-anchor="middle" class="axis-label">10%</text>
+    <!-- 25% -->
+    <line x1="390" y1="88" x2="390" y2="96" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="390" y="84" text-anchor="middle" class="axis-label">25%</text>
+    <!-- 50% -->
+    <line x1="640" y1="88" x2="640" y2="96" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="640" y="84" text-anchor="middle" class="axis-label">50%</text>
+  </g>
+
+  <!-- Bars: x starts at 140, width for 50% = 500px (10px per 1%) -->
+  <!-- Bar height: 28px, gap between rows: 44px, first bar y = 108 -->
+
+  <!-- Chlamydia: 25% → width = 250 -->
+  <g transform="translate(0, 108)">
+    <text x="130" y="18" text-anchor="end" class="sti-name">Chlamydia</text>
+    <rect x="140" y="2" width="250" height="28" rx="4" fill="#e67e22" opacity="0.85"/>
+    <text x="396" y="20" class="bar-label">25%</text>
+    <text x="140" y="44" class="treatment">Antibiotics · 1wk cure</text>
+  </g>
+
+  <!-- Gonorrhea: 20% → width = 200 -->
+  <g transform="translate(0, 152)">
+    <text x="130" y="18" text-anchor="end" class="sti-name">Gonorrhea</text>
+    <rect x="140" y="2" width="200" height="28" rx="4" fill="#e67e22" opacity="0.85"/>
+    <text x="346" y="20" class="bar-label">20%</text>
+    <text x="140" y="44" class="treatment">Antibiotics · 1wk cure</text>
+  </g>
+
+  <!-- HIV: ~2% → width = 20 (very short) -->
+  <g transform="translate(0, 196)">
+    <text x="130" y="18" text-anchor="end" class="sti-name">HIV</text>
+    <rect x="140" y="2" width="20" height="28" rx="4" fill="#e74c3c" opacity="0.85"/>
+    <text x="166" y="20" class="bar-label">0.1–1.4%</text>
+    <text x="140" y="44" class="treatment">ART · Lifelong · Manageable</text>
+    <text x="500" y="20" class="note">* per act</text>
+  </g>
+
+  <!-- Herpes HSV: 30% → width = 300 -->
+  <g transform="translate(0, 240)">
+    <text x="130" y="18" text-anchor="end" class="sti-name">Herpes HSV</text>
+    <rect x="140" y="2" width="300" height="28" rx="4" fill="#d35400" opacity="0.85"/>
+    <text x="446" y="20" class="bar-label">30%</text>
+    <text x="140" y="44" class="treatment">Antiviral · Manageable</text>
+  </g>
+
+  <!-- HPV: 50% → width = 500 -->
+  <g transform="translate(0, 284)">
+    <text x="130" y="18" text-anchor="end" class="sti-name">HPV</text>
+    <rect x="140" y="2" width="500" height="28" rx="4" fill="#c0392b" opacity="0.85"/>
+    <text x="646" y="20" class="bar-label">50%</text>
+    <text x="140" y="44" class="treatment">Vaccine available</text>
+    <text x="550" y="20" class="note">* over lifetime</text>
+  </g>
+
+  <!-- Syphilis: 30% → width = 300 -->
+  <g transform="translate(0, 328)">
+    <text x="130" y="18" text-anchor="end" class="sti-name">Syphilis</text>
+    <rect x="140" y="2" width="300" height="28" rx="4" fill="#d35400" opacity="0.85"/>
+    <text x="446" y="20" class="bar-label">30%</text>
+    <text x="140" y="44" class="treatment">Penicillin · Cures if early</text>
+  </g>
+
+  <!-- Divider line under bars -->
+  <line x1="140" y1="400" x2="640" y2="400" stroke="#ecf0f1" stroke-width="1"/>
+</svg>

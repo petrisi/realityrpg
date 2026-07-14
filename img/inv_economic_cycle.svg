@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#2c3e50">The Economic Cycle of Real Life</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#7f8c8d">There is no final boss. There is only next month's bills.</text>
+
+  <!-- Arrows between nodes (curved, clockwise) -->
+  <g stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.35">
+    <!-- 1→2: Earn Income → Pay Rent -->
+    <path d="M 558,155 Q 610,200 600,248"/>
+    <!-- 2→3: Pay Rent → Buy Food -->
+    <path d="M 582,298 Q 560,350 500,385"/>
+    <!-- 3→4: Buy Food → Maintain Car -->
+    <path d="M 455,405 Q 380,420 320,400"/>
+    <!-- 4→5: Maintain Car → Health Costs -->
+    <path d="M 260,385 Q 200,340 215,290"/>
+    <!-- 5→6: Health Costs → Unexpected Events -->
+    <path d="M 225,252 Q 240,195 290,165"/>
+    <!-- 6→7: Unexpected Events → Stress -->
+    <path d="M 340,148 Q 380,120 425,130"/>
+    <!-- 7→8: Stress → Work Performance -->
+    <path d="M 465,135 Q 510,125 540,140"/>
+    <!-- 8→1: Work Performance → Earn Income (closing loop) -->
+    <path d="M 548,155 Q 555,155 558,155"/>
+  </g>
+
+  <!-- Node 1: Earn Income (top-right) -->
+  <g filter="url(#shadow)">
+    <circle cx="558" cy="155" r="52" fill="#27ae60" stroke="#fff" stroke-width="2"/>
+    <text x="558" y="148" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">💰</text>
+    <text x="558" y="165" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Earn Income</text>
+  </g>
+
+  <!-- Node 2: Pay Rent (right) -->
+  <g filter="url(#shadow)">
+    <circle cx="600" cy="298" r="52" fill="#c0392b" stroke="#fff" stroke-width="2"/>
+    <text x="600" y="291" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🏠</text>
+    <text x="600" y="308" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Pay Rent</text>
+  </g>
+
+  <!-- Node 3: Buy Food (bottom-right) -->
+  <g filter="url(#shadow)">
+    <circle cx="500" cy="405" r="52" fill="#e67e22" stroke="#fff" stroke-width="2"/>
+    <text x="500" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🛒</text>
+    <text x="500" y="415" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Buy Food</text>
+  </g>
+
+  <!-- Node 4: Maintain Car (bottom) -->
+  <g filter="url(#shadow)">
+    <circle cx="320" cy="405" r="52" fill="#f39c12" stroke="#fff" stroke-width="2"/>
+    <text x="320" y="398" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🚗</text>
+    <text x="320" y="415" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Maintain Car</text>
+  </g>
+
+  <!-- Node 5: Health Costs (bottom-left) -->
+  <g filter="url(#shadow)">
+    <circle cx="225" cy="290" r="52" fill="#2980b9" stroke="#fff" stroke-width="2"/>
+    <text x="225" y="283" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🏥</text>
+    <text x="225" y="300" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Health Costs</text>
+  </g>
+
+  <!-- Node 6: Unexpected Events (top-left) -->
+  <g filter="url(#shadow)">
+    <circle cx="290" cy="165" r="52" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+    <text x="290" y="155" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">💥</text>
+    <text x="290" y="172" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Unexpected</text>
+    <text x="290" y="185" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Events</text>
+  </g>
+
+  <!-- Node 7: Stress (top-center) -->
+  <g filter="url(#shadow)">
+    <circle cx="425" cy="135" r="52" fill="#7f8c8d" stroke="#fff" stroke-width="2"/>
+    <text x="425" y="128" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">😰</text>
+    <text x="425" y="145" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Stress</text>
+  </g>
+
+  <!-- Node 8: Work Performance (inner, between stress and income) -->
+  <g filter="url(#shadow)">
+    <circle cx="490" cy="165" r="44" fill="#34495e" stroke="#fff" stroke-width="2"/>
+    <text x="490" y="158" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">💼</text>
+    <text x="490" y="172" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Work</text>
+    <text x="490" y="184" text-anchor="middle" font-size="9" font-weight="600" fill="#fff">Performance</text>
+  </g>
+
+  <!-- Center label -->
+  <text x="400" y="285" text-anchor="middle" font-size="28" font-weight="700" fill="#2c3e50" opacity="0.15">∞</text>
+  <text x="400" y="310" text-anchor="middle" font-size="13" fill="#7f8c8d">Perpetual Loop</text>
+
+  <!-- Bottom annotation -->
+  <rect x="175" y="460" width="450" height="46" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="400" y="480" text-anchor="middle" font-size="12" fill="#7f8c8d">Every output becomes next month's input. The cycle never stops.</text>
+  <text x="400" y="498" text-anchor="middle" font-size="11" fill="#e67e22" font-weight="600">Scarcity is the game.</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="bshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <marker id="barr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#7f8c8d"/>
+    </marker>
+    <linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#34495e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="300" y="32" text-anchor="middle" font-size="22" font-weight="700" fill="#2c3e50">Bipolar Phase Cycle</text>
+  <text x="300" y="50" text-anchor="middle" font-size="11" fill="#7f8c8d">Weekly Phase Roll (1d6) determines current phase</text>
+
+  <!-- Transition arrows between phases -->
+  <!-- Stable → Depressive (top to left) -->
+  <path d="M220,145 Q175,155 155,195" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#barr)"/>
+  <!-- Depressive → Hypomanic (left to bottom-left) -->
+  <path d="M155,305 Q175,355 220,375" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#barr)"/>
+  <!-- Hypomanic → Manic (bottom-left to bottom-right) -->
+  <path d="M300,380 Q350,385 380,375" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#barr)"/>
+  <!-- Manic → Mixed (bottom-right to right) -->
+  <path d="M435,360 Q455,310 445,260" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#barr)"/>
+  <!-- Mixed → Stable (right to top) -->
+  <path d="M445,195 Q455,155 420,145" stroke="#7f8c8d" stroke-width="2" fill="none" marker-end="url(#barr)"/>
+
+  <!-- Phase nodes arranged in a pentagon -->
+  <!-- Stable (top, green) -->
+  <g filter="url(#bshadow)">
+    <circle cx="300" cy="130" r="42" fill="#eafaf1" stroke="#27ae60" stroke-width="3"/>
+    <text x="300" y="122" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Stable</text>
+    <text x="300" y="138" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="600">d6: 2-3</text>
+  </g>
+
+  <!-- Depressive (left, blue) -->
+  <g filter="url(#bshadow)">
+    <circle cx="160" cy="250" r="42" fill="#eaf2f8" stroke="#2980b9" stroke-width="3"/>
+    <text x="160" y="242" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Depressive</text>
+    <text x="160" y="258" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">d6: 1</text>
+    <text x="160" y="270" text-anchor="middle" font-size="9" fill="#7f8c8d">2d6 days</text>
+  </g>
+
+  <!-- Hypomanic (bottom-left, yellow) -->
+  <g filter="url(#bshadow)">
+    <circle cx="240" cy="400" r="42" fill="#fef9e7" stroke="#f39c12" stroke-width="3"/>
+    <text x="240" y="392" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Hypomanic</text>
+    <text x="240" y="408" text-anchor="middle" font-size="10" fill="#f39c12" font-weight="600">d6: 4-5</text>
+    <text x="240" y="420" text-anchor="middle" font-size="9" fill="#7f8c8d">1d6 days</text>
+  </g>
+
+  <!-- Manic (bottom-right, orange) -->
+  <g filter="url(#bshadow)">
+    <circle cx="430" cy="400" r="42" fill="#f5e6cc" stroke="#e67e22" stroke-width="3"/>
+    <text x="430" y="392" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Manic</text>
+    <text x="430" y="408" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="600">d6:6→1d2:1</text>
+    <text x="430" y="420" text-anchor="middle" font-size="9" fill="#7f8c8d">1d4 days</text>
+  </g>
+
+  <!-- Mixed (right, red) -->
+  <g filter="url(#bshadow)">
+    <circle cx="440" cy="250" r="42" fill="#fdedec" stroke="#c0392b" stroke-width="3"/>
+    <text x="440" y="242" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">Mixed</text>
+    <text x="440" y="258" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="600">d6:6→1d2:2</text>
+    <text x="440" y="270" text-anchor="middle" font-size="9" fill="#7f8c8d">1d4 days</text>
+  </g>
+
+  <!-- Center circle -->
+  <g filter="url(#bshadow)">
+    <circle cx="300" cy="280" r="65" fill="url(#centerGrad)" stroke="#2c3e50" stroke-width="2"/>
+    <text x="300" y="260" text-anchor="middle" font-size="13" font-weight="700" fill="#ecf0f1">Weekly Phase</text>
+    <text x="300" y="278" text-anchor="middle" font-size="13" font-weight="700" fill="#ecf0f1">Roll</text>
+    <text x="300" y="300" text-anchor="middle" font-size="18" font-weight="700" fill="#e67e22">(1d6)</text>
+  </g>
+
+  <!-- Inner decorative ring -->
+  <circle cx="300" cy="280" r="100" fill="none" stroke="#e8ecef" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Bottom note -->
+  <text x="300" y="560" text-anchor="middle" font-size="10" fill="#7f8c8d">Each phase has different effects on checks, EXP, and daily function</text>
+  <text x="300" y="578" text-anchor="middle" font-size="10" fill="#7f8c8d">Phase changes occur weekly; duration listed per phase</text>
+</svg>

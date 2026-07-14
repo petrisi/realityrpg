@@ -16,6 +16,13 @@
 <h1>🧠 Mental Health</h1>
 <p>Mental health is not a side quest in Reality RPG — it <em>is</em> the game. Every character carries psychological weight, and how they manage it shapes every other mechanic in play. This page covers the full mental health system: the Stress framework, detailed conditions, treatment, recovery, stigma, and safety tools for the table.</p>
 
+<!-- BANNER IMAGE -->
+<div class="section-banner">
+  <img src="img/mh_banner.png"
+       alt="A person sitting quietly in a softly lit room with a cup of tea, morning light through the window — a peaceful moment of mental self-care"
+       loading="eager">
+</div>
+
 <div class="callout warning">
   <div class="callout-title">⚠️ Table Responsibility</div>
   <p>This section deals with real mental health conditions. The GM <strong>must</strong> establish safety tools (see §7 below) before introducing any mental health mechanics. Players may opt out of having their character carry a diagnosed condition. Never pressure a player to roleplay something that mirrors their own trauma.</p>
@@ -26,6 +33,31 @@
 
 <h3>1.1 Stress Points (SP)</h3>
 <p>Every character has a <strong>Stress Pool</strong> measured in <strong>Stress Points (SP)</strong>. The maximum Stress capacity equals <code>20 + RES modifier × 5</code>. Characters begin play at 0 SP. Stress persists across days — recovery requires rest, support, and time. See the <a href="core-mechanics.html#stress">Core Mechanics page</a> for the full stress framework.</p>
+
+<!-- STRESS BARS: visual representation of stress tiers -->
+<div style="margin:1.5em 0; background:var(--color-surface); border-radius:var(--radius); padding:1.2em; box-shadow:var(--shadow-sm); border:1px solid var(--color-border);">
+  <p style="font-size:0.85rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.8em;">Stress Pool — Filling Toward Episode</p>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">😌 Stable</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stable"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">😐 Elevated</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">😟 Stressed</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">😰 Overwhelmed</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">💥 Episode</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill episode"></div></div>
+  </div>
+</div>
 
 <div class="table-wrap">
 <table>
@@ -77,6 +109,35 @@
 
 <h3>1.3 Stress Recovery</h3>
 <p>Stress reduces through the same channels defined in the <a href="core-mechanics.html#stress">Core Mechanics stress system</a>:</p>
+
+<!-- RECOVERY METHODS ICON GRID -->
+<div class="supplies-grid" style="margin:1em 0;">
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🛏️</div>
+    <p><strong>Rest</strong><br>−1 SP per good night's sleep</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🗣️</div>
+    <p><strong>Social Support</strong><br>−2 SP per meaningful conversation</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🏃</div>
+    <p><strong>Exercise</strong><br>−1 SP per workout session</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🛋️</div>
+    <p><strong>Therapy</strong><br>−3 to −5 SP per session</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">✈️</div>
+    <p><strong>Time Away</strong><br>From stressors</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">💊</div>
+    <p><strong>Medication</strong><br>50% SP gain reduction</p>
+  </div>
+</div>
+
 <ul>
 <li><strong>Rest</strong>: −1 SP per good night's sleep. At 😟 Stressed and above, a <span class="dice">RES check (TN 40)</span> is required each night for restful sleep — failure means no SP recovery that night.</li>
 <li><strong>Social support</strong>: −2 SP per meaningful conversation with a trusted person</li>
@@ -102,6 +163,14 @@
 <li>The character <strong>cannot gain additional SP</strong> — they are at maximum stress</li>
 <li>After the Episode ends, SP resets to <strong>50% of maximum</strong></li>
 </ul>
+
+<!-- EPISODE FLOW DIAGRAM -->
+<div class="section-illustration">
+  <img src="img/mh_episode_flow.svg"
+       alt="Episode cycle flow diagram showing: SP fills → SP reaches Max → Episode begins (1d4 hours/days) → all checks plus 10 TN → Episode ends → SP resets to 50 percent → back to stable period. Red arrows for breakdown phase, green arrows for recovery phase."
+       style="max-width:700px; width:100%;"
+       loading="lazy">
+</div>
 
 <div class="callout tip">
   <div class="callout-title">💡 GM Tip: Episodes as Narrative Beats</div>
@@ -149,7 +218,13 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Depression in Play</div>
-  <p><strong>Marcus</strong> (INT 12, RES 8, VIG 10) has Moderate MDD. He's been in a mild Episode for 2 days. His effective VIG is now 5 (mod +0 instead of +2). He needs to prepare a presentation at work — a normal <span class="dice">INT + Communication (TN 55)</span> check. But with depression: the TN becomes 65 (episode penalty), and his INT check suffers −3 from concentration issues. He rolls <span class="dice">2d10</span> = 47, adds INT mod (+2) and Communication skill (+2) = 51 total. TN is effectively 65. <strong>Failure.</strong> He fumbles the presentation, gains +5 SP, and the Episode likely continues. The GM narrates that Marcus's mind went blank, his voice shook, and his boss noticed the decline.</p>
+  <div class="section-illustration-right">
+    <img src="img/mh_marcus_depression.png"
+         alt="A man sitting alone in a dim apartment with curtains drawn, phone buzzing unanswered — a scene of depression isolation">
+    <div class="illust-text">
+      <p><strong>Marcus</strong> (INT 12, RES 8, VIG 10) has Moderate MDD. He's been in a mild Episode for 2 days. His effective VIG is now 5 (mod +0 instead of +2). He needs to prepare a presentation at work — a normal <span class="dice">INT + Communication (TN 55)</span> check. But with depression: the TN becomes 65 (episode penalty), and his INT check suffers −3 from concentration issues. He rolls <span class="dice">2d10</span> = 47, adds INT mod (+2) and Communication skill (+2) = 51 total. TN is effectively 65. <strong>Failure.</strong> He fumbles the presentation, gains +5 SP, and the Episode likely continues. The GM narrates that Marcus's mind went blank, his voice shook, and his boss noticed the decline.</p>
+    </div>
+  </div>
 </div>
 
 <h3>2.2 Generalized Anxiety Disorder (GAD) 😰</h3>
@@ -184,7 +259,13 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Panic Attack at Work</div>
-  <p><strong>Yuki</strong> (RES 10) has Moderate GAD. Her boss unexpectedly calls an all-hands meeting to discuss layoffs — a classic uncertainty trigger. The GM calls for a <span class="dice">RES check (TN 50)</span>. Yuki rolls <span class="dice">2d10</span> = 63. With her RES mod of +2 and −2 baseline anxiety penalty, her total is 63. <strong>Failure.</strong> The GM triggers a panic attack: Yuki's heart races, she can't breathe properly, and she has to leave the room. She gains +5 SP and is incapacitated for <span class="dice">1d6</span> = 4 minutes. Her colleague notices and helps her — a potential social bonding moment.</p>
+  <div class="section-illustration-right">
+    <img src="img/mh_panic_attack.png"
+         alt="A woman in a corporate meeting room, gripping her chair, looking like she needs to leave — internal panic while maintaining composure">
+    <div class="illust-text">
+      <p><strong>Yuki</strong> (RES 10) has Moderate GAD. Her boss unexpectedly calls an all-hands meeting to discuss layoffs — a classic uncertainty trigger. The GM calls for a <span class="dice">RES check (TN 50)</span>. Yuki rolls <span class="dice">2d10</span> = 63. With her RES mod of +2 and −2 baseline anxiety penalty, her total is 63. <strong>Failure.</strong> The GM triggers a panic attack: Yuki's heart races, she can't breathe properly, and she has to leave the room. She gains +5 SP and is incapacitated for <span class="dice">1d6</span> = 4 minutes. Her colleague notices and helps her — a potential social bonding moment.</p>
+    </div>
+  </div>
 </div>
 
 <h3>2.3 Post-Traumatic Stress Disorder (PTSD) 💔</h3>
@@ -226,6 +307,14 @@
 
 <h3>2.4 Bipolar Disorder 🎢</h3>
 <p>Characterized by cycling between depressive and manic phases. The unpredictability is the real mechanic — characters (and players) never know which phase they're in until it hits.</p>
+
+<!-- BIPOLAR PHASE CYCLE DIAGRAM -->
+<div class="section-illustration">
+  <img src="img/mh_bipolar_cycle.svg"
+       alt="Bipolar phase cycle diagram showing five phases arranged in a circle: Stable (green), Depressive (blue), Hypomanic (yellow), Manic (orange), Mixed (red). Center shows weekly phase roll 1d6. Arrows connect the phases showing transitions."
+       style="max-width:500px; width:100%;"
+       loading="lazy">
+</div>
 
 <h4>Symptoms</h4>
 <p><strong>Depressive phase:</strong> Same as MDD — low mood, fatigue, anhedonia, sleep disruption.<br>
@@ -314,6 +403,14 @@
 <h4>Nuance Track</h4>
 <p>Not all characters with ASPD are the same. The GM and player should establish a <strong>Nuance Track</strong> — 3–5 specific areas where the character <em>does</em> feel connection or care. This prevents the character from being a flat "villain" and creates compelling roleplay opportunities.</p>
 
+<!-- ASPD NUANCE TRACK VISUAL -->
+<div class="section-illustration">
+  <img src="img/mh_nuance_track.svg"
+       alt="Nuance Track card showing five areas of connection for an ASPD character: Family Dog, Music, Justice, Younger sister, Childhood home. These connections are where the character's humanity shows through."
+       style="max-width:500px; width:100%;"
+       loading="lazy">
+</div>
+
 <div class="callout tip">
   <div class="callout-title">💡 GM Tip: Playing ASPD</div>
   <p>ASPD characters are powerful social tools but can derail a campaign if they exploit other players' characters. Establish clear boundaries: ASPD characters can be charming and manipulative in the <em>world</em>, but not <em>at</em> other players. The charm bonus applies to NPCs, not to coercing fellow players into uncomfortable situations.</p>
@@ -361,6 +458,15 @@
 <h3>2.7 Substance Use Disorder (SUD) 🍷</h3>
 <p>Addiction modeled as a progressive mechanical system. The substance provides real short-term benefits that mask long-term harm — exactly as in reality.</p>
 
+<!-- ADDICTION PROGRESSION BAR -->
+<div class="condition-track" style="margin:1em 0;">
+  <div class="condition-step healthy">🧪<br>Experiment</div>
+  <div class="condition-step tired">📊<br>Regular</div>
+  <div class="condition-step sick">⛓️<br>Dependence</div>
+  <div class="condition-step injured">🔥<br>Addiction</div>
+  <div class="condition-step critical">💀<br>Severe</div>
+</div>
+
 <h4>Addiction Stages</h4>
 <div class="table-wrap">
 <table>
@@ -397,6 +503,15 @@
 
 <h4>Withdrawal Effects</h4>
 <p>When a dependent or addicted character goes without their substance:</p>
+
+<!-- WITHDRAWAL TIMELINE DIAGRAM -->
+<div class="section-illustration">
+  <img src="img/mh_withdrawal_timeline.svg"
+       alt="Withdrawal severity timeline showing a bell curve arc peaking at 48-72 hours. Five phases from mild discomfort at 0-6 hours through peak severity at 48-72 hours to subsiding after 72 hours."
+       style="max-width:800px; width:100%;"
+       loading="lazy">
+</div>
+
 <div class="table-wrap">
 <table>
 <thead><tr><th>Hours Without</th><th>Effect</th><th>SP Gained</th></tr></thead>
@@ -415,7 +530,14 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Addiction Progression</div>
-  <p><strong>Derek</strong> (RES 9, mod +1) starts drinking socially at a party — <strong>Experimentation</strong>. He gets +2 to social checks and has a great time. Over the next months, he drinks regularly at bars — <strong>Regular Use</strong>. The +2 benefit shrinks to +1 as tolerance builds. When his ex moves in across the hall, the stress pushes him into <strong>Dependence</strong>. He now needs a drink each evening or he gets +3 SP from withdrawal. He tries to quit — <span class="dice">RES check (TN 55)</span> daily. He rolls <span class="dice">2d10</span> = 44. With his +1 mod, total is 44. <strong>Success!</strong> He makes it through the day. But on day 3, a work crisis adds +5 SP. Relapse check: <span class="dice">RES (TN 60)</span>. He rolls <span class="dice">2d10</span> = 58. Total 59. <strong>Failure.</strong> He goes to the store and buys a bottle. The cycle continues.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:1em;">
+    <img src="img/char_derek.png"
+         alt="Derek O'Brien, 31, construction worker in alcohol recovery"
+         style="width:80px; height:80px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Derek</strong> (RES 9, mod +1) starts drinking socially at a party — <strong>Experimentation</strong>. He gets +2 to social checks and has a great time. Over the next months, he drinks regularly at bars — <strong>Regular Use</strong>. The +2 benefit shrinks to +1 as tolerance builds. When his ex moves in across the hall, the stress pushes him into <strong>Dependence</strong>. He now needs a drink each evening or he gets +3 SP from withdrawal. He tries to quit — <span class="dice">RES check (TN 55)</span> daily. He rolls <span class="dice">2d10</span> = 44. With his +1 mod, total is 44. <strong>Success!</strong> He makes it through the day. But on day 3, a work crisis adds +5 SP. Relapse check: <span class="dice">RES (TN 60)</span>. He rolls <span class="dice">2d10</span> = 58. Total 59. <strong>Failure.</strong> He goes to the store and buys a bottle. The cycle continues.</p>
+    </div>
+  </div>
 </div>
 
 <h2>3. Treatment Mechanics</h2>
@@ -423,6 +545,14 @@
 
 <h3>3.1 Therapy Sessions 🛋️</h3>
 <p>Regular therapy is the most reliable treatment mechanic. Each session takes <strong>1 hour of game time</strong> and costs <strong>$50–$200</strong> (depending on insurance/status). The character gains a <strong>Therapy Level</strong> that improves over time, similar to a skill.</p>
+
+<!-- THERAPY PROGRESSION LADDER -->
+<div class="section-illustration">
+  <img src="img/mh_therapy_ladder.svg"
+       alt="Therapy progression ladder showing five ascending levels: Level 0 New (0-4 sessions) through Level 4 Resilience (41+ sessions), with increasing benefits at each level. Green gradient getting brighter as levels increase."
+       style="max-width:600px; width:100%;"
+       loading="lazy">
+</div>
 
 <div class="table-wrap">
 <table>
@@ -444,6 +574,14 @@
 
 <h3>3.2 Medication 💊</h3>
 <p>Medication provides mechanical benefits but also carries side effects. The GM and player should discuss medication choices — there is no "best" option, only trade-offs.</p>
+
+<!-- MEDICATION TRADE-OFF CHART -->
+<div class="section-illustration">
+  <img src="img/mh_medication_chart.svg"
+       alt="Medication trade-off chart showing paired bars for five medications: green benefit bars on the left, red side-effect bars on the right. Antidepressants, Anxiolytics, Mood Stabilizers, Antipsychotics, and Stimulants each have different benefit-to-side-effect ratios."
+       style="max-width:700px; width:100%;"
+       loading="lazy">
+</div>
 
 <div class="table-wrap">
 <table>
@@ -491,6 +629,34 @@
 <h3>3.3 Lifestyle Changes 🌱</h3>
 <p>Non-clinical interventions that provide modest but meaningful mechanical benefits:</p>
 
+<!-- LIFESTYLE PRACTICES ICON GRID -->
+<div class="supplies-grid" style="margin:1em 0;">
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🏃</div>
+    <p><strong>Exercise</strong><br>3x/week, −1 SP/session</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🧘</div>
+    <p><strong>Meditation</strong><br>20 min/day, −1 SP/session</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">📖</div>
+    <p><strong>Journaling</strong><br>15 min/day, −1 SP/session</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🌙</div>
+    <p><strong>Sleep Hygiene</strong><br>7-9 hours, full SP recovery</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🥗</div>
+    <p><strong>Nutrition</strong><br>−1 to chronic SP drain</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">👥</div>
+    <p><strong>Support Groups</strong><br>1-2 hrs/week, −2 SP/session</p>
+  </div>
+</div>
+
 <div class="table-wrap">
 <table>
 <thead><tr><th>Practice</th><th>Time Required</th><th>Benefit</th></tr></thead>
@@ -507,6 +673,23 @@
 
 <h2>4. Recovery Track 📈</h2>
 <p>Recovery is not linear. The Recovery Track models the ups and downs of long-term mental health improvement. Characters progress through stages, but setbacks are normal and expected.</p>
+
+<!-- RECOVERY SPIRAL DIAGRAM -->
+<div class="section-illustration">
+  <img src="img/mh_recovery_spiral.svg"
+       alt="Recovery spiral diagram showing five concentric rings from Crisis on the outside through Seeking Help, Managing, Stable, to Remission at the center. A setback arrow loops outward one stage. Labeled: Recovery is a spiral, not a straight line."
+       style="max-width:400px; width:100%;"
+       loading="lazy">
+</div>
+
+<!-- RECOVERY CONDITION TRACK -->
+<div class="condition-track" style="margin:1em 0;">
+  <div class="condition-step critical">🔴<br>Crisis</div>
+  <div class="condition-step injured">🟠<br>Seeking</div>
+  <div class="condition-step sick">🟡<br>Managing</div>
+  <div class="condition-step tired">🟢<br>Stable</div>
+  <div class="condition-step healthy">🌿<br>Remission</div>
+</div>
 
 <h4>Recovery Stages</h4>
 <div class="table-wrap">
@@ -534,7 +717,7 @@
 <td>Condition effects reduced by 75%. Chronic SP drain eliminated. Episodes only occur during major life crises. Character has developed strong coping skills.</td>
 </tr>
 <tr>
-<td><strong>🟢 Remission</strong></td>
+<td><strong>🌿 Remission</strong></td>
 <td>12+ months of stability; Therapy Level 4+</td>
 <td>Condition effects are <strong>minimal</strong> (only 25% of original penalties). Character can reduce treatment frequency. <strong>Not cured</strong> — relapse is still possible under extreme stress.</td>
 </tr>
@@ -549,6 +732,14 @@
 
 <h2>5. Stigma Mechanics 🏷️</h2>
 <p>Mental health conditions carry social weight in the real world. NPCs react to disclosed conditions based on their own beliefs, culture, and knowledge. This creates real mechanical consequences for choosing to be open or secretive.</p>
+
+<!-- DISCLOSURE DECISION TREE -->
+<div class="section-illustration">
+  <img src="img/mh_disclosure_tree.svg"
+       alt="Disclosure decision tree: Disclose condition? Yes branches to NPC Reaction roll with three outcomes (Supportive, Neutral, Stigmatizing). No branch shows masking penalty of minus 2 on EXP checks."
+       style="max-width:600px; width:100%;"
+       loading="lazy">
+</div>
 
 <h3>5.1 Disclosure Effects</h3>
 <div class="table-wrap">
@@ -596,7 +787,31 @@
 <h3>Scenario 1: The Depression Spiral</h3>
 <div class="callout example">
   <div class="callout-title">📝 Marcus's Week</div>
-  <p><strong>Setup:</strong> Marcus (MDD, Moderate; Therapy Level 1; on SSRIs) has had a rough start to the week. He's at 12/25 SP.</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:0.8em;">
+    <img src="img/char_marcus.png"
+         alt="Marcus Johnson"
+         style="width:70px; height:70px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Setup:</strong> Marcus (MDD, Moderate; Therapy Level 1; on SSRIs) has had a rough start to the week. He's at 12/25 SP.</p>
+    </div>
+  </div>
+  <!-- MINI SP TRACKER for Marcus's week -->
+  <div style="margin:0.5em 0 1em; background:#f0faf4; border-radius:var(--radius); padding:0.8em 1em; border:1px solid #a9dfbf;">
+    <p style="font-size:0.82rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.4em;">Marcus's SP This Week (Max 25)</p>
+    <div style="display:flex; gap:0.4em; align-items:center; flex-wrap:wrap;">
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#d5f5e3; padding:0.15em 0.4em; border-radius:3px;">Start: 12</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#d4efdf; padding:0.15em 0.4em; border-radius:3px;">Mon −3 = 9</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fef9e7; padding:0.15em 0.4em; border-radius:3px;">Thu +5 = 14</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fdebd0; padding:0.15em 0.4em; border-radius:3px;">Fri +3 = 17</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fadbd8; padding:0.15em 0.4em; border-radius:3px;">Sat: 14</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fef9e7; padding:0.15em 0.4em; border-radius:3px;">Mon −5 = 9</span>
+    </div>
+  </div>
   <p><strong>Monday:</strong> Marcus wakes up. SSRIs reduce his chronic SP gain to +1 instead of +2. He attends therapy (−3 SP → 9). He feels better. Goes to work and crushes a presentation (<span class="dice">INT + Communication = 42 vs TN 55</span> — success!).</p>
   <p><strong>Wednesday:</strong> His medication adherence check: <span class="dice">RES (TN 40)</span>. He rolls <span class="dice">2d10</span> = 48. With RES mod +1, total = 47. <strong>Failure.</strong> He's been skipping doses. Medication benefits drop to 50% for the rest of the week.</p>
   <p><strong>Thursday:</strong> His girlfriend breaks up with him text-message. +5 SP (significant trauma). Chronic SP gain (+1). He's at 6 SP — entering the "Stressed" zone. −5 on RES and INT checks. That night: <span class="dice">RES sleep check (TN 50)</span>. Rolls <span class="dice">2d10</span> = 55. With −5 stress penalty and +1 RES mod: effective roll = 51. <strong>Failure.</strong> No SP recovery. He's still at 6.</p>
@@ -608,17 +823,45 @@
 <h3>Scenario 2: The PTSD Trigger Chain</h3>
 <div class="callout example">
   <div class="callout-title">📝 Amara's Night Out</div>
-  <p><strong>Setup:</strong> Amara (PTSD from a car accident; RES 14, mod +2; Therapy Level 2) is going to a friend's birthday party at a bar near a busy intersection. She's at 4/30 SP.</p>
-  <p><strong>Arrival:</strong> The party is loud. Background noise alone is mildly stressful (+1 SP → 5). She's in the "Elevated" zone now (−2 on RES checks).</p>
-  <p><strong>The Trigger:</strong> A car backfires outside. <strong>Trigger hit.</strong> +5 SP → 10. She's now "Stressed." The GM calls for a <span class="dice">RES check (TN 60)</span> to avoid a flashback. Her Therapy Level 2 gives her advantage (roll twice, take better). She rolls <span class="dice">2d10</span> = 28 and <span class="dice">2d10</span> = 52. Takes 28. With +2 RES mod and −2 stress penalty: 28. <strong>Success!</strong> She feels the wave of panic but her grounding techniques (learned in therapy) keep her from fully breaking. She excuses herself to the bathroom for 5 minutes.</p>
-  <p><strong>Hypervigilance in play:</strong> While in the bathroom, she hears shouting from the next room. Her hypervigilance bonus (+3 to threat perception) kicks in — she correctly identifies that it's just friends playing a drinking game, not a real fight. But the penalty (−3 to relaxation checks) means she can't actually calm down. She stays in the bathroom for 20 more minutes.</p>
-  <p><strong>Resolution:</strong> She leaves the party early. The social cost (she missed the celebration) is real, but she managed it. The GM rewards her self-awareness: she texts her friend "I had a bad time but I'm okay" — a vulnerable but healthy communication that strengthens their relationship (+1 to future social checks with this friend).</p>
+  <div class="section-illustration-right">
+    <img src="img/mh_grounding_bathroom.png"
+         alt="A woman alone in a bar bathroom, hands pressed against the mirror, taking deep breaths to ground herself after a PTSD trigger">
+    <div class="illust-text">
+      <p><strong>Setup:</strong> Amara (PTSD from a car accident; RES 14, mod +2; Therapy Level 2) is going to a friend's birthday party at a bar near a busy intersection. She's at 4/30 SP.</p>
+      <p><strong>Arrival:</strong> The party is loud. Background noise alone is mildly stressful (+1 SP → 5). She's in the "Elevated" zone now (−2 on RES checks).</p>
+      <p><strong>The Trigger:</strong> A car backfires outside. <strong>Trigger hit.</strong> +5 SP → 10. She's now "Stressed." The GM calls for a <span class="dice">RES check (TN 60)</span> to avoid a flashback. Her Therapy Level 2 gives her advantage (roll twice, take better). She rolls <span class="dice">2d10</span> = 28 and <span class="dice">2d10</span> = 52. Takes 28. With +2 RES mod and −2 stress penalty: 28. <strong>Success!</strong> She feels the wave of panic but her grounding techniques (learned in therapy) keep her from fully breaking. She excuses herself to the bathroom for 5 minutes.</p>
+      <p><strong>Hypervigilance in play:</strong> While in the bathroom, she hears shouting from the next room. Her hypervigilance bonus (+3 to threat perception) kicks in — she correctly identifies that it's just friends playing a drinking game, not a real fight. But the penalty (−3 to relaxation checks) means she can't actually calm down. She stays in the bathroom for 20 more minutes.</p>
+      <p><strong>Resolution:</strong> She leaves the party early. The social cost (she missed the celebration) is real, but she managed it. The GM rewards her self-awareness: she texts her friend "I had a bad time but I'm okay" — a vulnerable but healthy communication that strengthens their relationship (+1 to future social checks with this friend).</p>
+    </div>
+  </div>
 </div>
 
 <h3>Scenario 3: The Addiction Relapse</h3>
 <div class="callout example">
   <div class="callout-title">📝 Derek's Toughest Month</div>
-  <p><strong>Setup:</strong> Derek (Severe Alcohol Addiction; RES 9, mod +1) has been sober for 21 days. He's in a support group (Therapy Level 1 for SUD). He's at 3/25 SP. His last relapse was 3 months ago (so relapse TN = 60 + 5 = 65).</p>
+  <div style="display:flex; gap:1em; align-items:flex-start; flex-wrap:wrap; margin-bottom:0.8em;">
+    <img src="img/char_derek.png"
+         alt="Derek O'Brien, in alcohol recovery"
+         style="width:70px; height:70px; object-fit:cover; border-radius:6px; flex-shrink:0;">
+    <div style="flex:1; min-width:0;">
+      <p><strong>Setup:</strong> Derek (Severe Alcohol Addiction; RES 9, mod +1) has been sober for 21 days. He's in a support group (Therapy Level 1 for SUD). He's at 3/25 SP. His last relapse was 3 months ago (so relapse TN = 60 + 5 = 65).</p>
+    </div>
+  </div>
+  <!-- MINI ADDICTION TRACKER for Derek's month -->
+  <div style="margin:0.5em 0 1em; background:#fdf2e9; border-radius:var(--radius); padding:0.8em 1em; border:1px solid #f5cba7;">
+    <p style="font-size:0.82rem; font-weight:600; font-family:var(--font-heading); margin-bottom:0.4em;">Derek's Sobriety Arc</p>
+    <div style="display:flex; gap:0.4em; align-items:center; flex-wrap:wrap;">
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#d5f5e3; padding:0.15em 0.4em; border-radius:3px;">🟢 Sober D1-14</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fef9e7; padding:0.15em 0.4em; border-radius:3px;">🟡 Temptation D15</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#d5f5e3; padding:0.15em 0.4em; border-radius:3px;">✅ Resisted</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fadbd8; padding:0.15em 0.4em; border-radius:3px;">🔴 Relapse D21</span>
+      <span style="color:var(--color-muted);">→</span>
+      <span style="font-size:0.78rem; font-family:var(--font-mono); background:#fef9e7; padding:0.15em 0.4em; border-radius:3px;">🟡 Support Group</span>
+    </div>
+  </div>
   <p><strong>Week 1 of sobriety:</strong> Daily <span class="dice">RES (TN 65)</span> to resist craving. Monday: rolls <span class="dice">2d10</span> = 37. Total 38. <strong>Success.</strong> Tuesday: rolls <span class="dice">2d10</span> = 60. Total 61. <strong>Success.</strong> He's feeling good. Support group helps (−2 SP → 1).</p>
   <p><strong>Week 2:</strong> Things get harder. Withdrawal subsided, but the psychological craving remains. He gets a promotion at work — celebratory drinks are offered. This is a massive trigger. The GM calls for his relapse check: <span class="dice">RES (TN 65)</span>. He rolls <span class="dice">2d10</span> = 55. Total 56. <strong>Success — barely.</strong> He declines. His boss notices and respects it (+2 to future professional checks with boss).</p>
   <p><strong>Week 3:</strong> His anniversary of the accident that killed his brother arrives. +8 SP (catastrophic stressor). He's at 9 SP — entering "Stressed." The relapse check becomes harder because his SP is high: the GM adds +1 to the TN per 5 SP above 5. New TN = 65 + 1 = 66. He rolls <span class="dice">2d10</span> = 62. Total 63. <strong>Failure.</strong></p>
@@ -629,6 +872,26 @@
 
 <h2>7. Safety Tools for the Table 🛡️</h2>
 <p>Mental health content is powerful and necessary in a realistic RPG — but it demands responsibility. These tools are <strong>mandatory</strong>, not optional, when mental health mechanics are in play.</p>
+
+<!-- SAFETY TOOLS ICON GRID -->
+<div class="supplies-grid" style="margin:1em 0;">
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🚫</div>
+    <p><strong>Lines & Veils</strong><br>Topics completely off-limits or fade-to-black</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">🤚</div>
+    <p><strong>Check-Ins</strong><br>Green/Yellow/Red temperature checks</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">⚠️</div>
+    <p><strong>Content Warnings</strong><br>Mild/Moderate/Strong advance notice</p>
+  </div>
+  <div class="supply-item">
+    <div style="font-size:2.5rem; margin-bottom:0.4em;">✖️</div>
+    <p><strong>X-Card</strong><br>Stop immediately, no questions asked</p>
+  </div>
+</div>
 
 <h3>7.1 Lines and Veils</h3>
 <p>Before the first session, every player (including the GM) establishes:</p>

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="105%" height="105%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#2c3e50" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="refundGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#27ae60" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="premiumGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e67e22" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#e67e22" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="400" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Attribute Point Buy Cost Curve</text>
+
+  <!-- Chart area: x=80..630, y=55..340 -->
+  <!-- Axes -->
+  <line x1="80" y1="55" x2="80" y2="340" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="80" y1="340" x2="630" y2="340" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Grid lines (horizontal) -->
+  <g stroke="#d5dbdb" stroke-width="0.5" stroke-dasharray="4,4">
+    <line x1="80" y1="67" x2="630" y2="67"/>
+    <line x1="80" y1="92" x2="630" y2="92"/>
+    <line x1="80" y1="117" x2="630" y2="117"/>
+    <line x1="80" y1="142" x2="630" y2="142"/>
+    <line x1="80" y1="167" x2="630" y2="167"/>
+    <line x1="80" y1="192" x2="630" y2="192"/>
+    <line x1="80" y1="217" x2="630" y2="217"/>
+    <line x1="80" y1="242" x2="630" y2="242"/>
+    <line x1="80" y1="267" x2="630" y2="267"/>
+    <line x1="80" y1="292" x2="630" y2="292"/>
+    <line x1="80" y1="317" x2="630" y2="317"/>
+  </g>
+
+  <!-- Y-axis labels: -5 to +25, range = 30, chart height = 285px -->
+  <!-- y_px = 340 - ((val - (-5)) / 30) * 285 -->
+  <g font-family="Segoe UI, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="end">
+    <text x="72" y="343">−5</text>
+    <text x="72" y="318">0</text>
+    <text x="72" y="293">5</text>
+    <text x="72" y="268">10</text>
+    <text x="72" y="243">15</text>
+    <text x="72" y="218">20</text>
+    <text x="72" y="193">25</text>
+  </g>
+
+  <!-- X-axis labels: scores 3-15 -->
+  <!-- x_px = 80 + ((score - 3) / 12) * 550 -->
+  <g font-family="Segoe UI, sans-serif" font-size="11" fill="#7f8c8d" text-anchor="middle">
+    <text x="80" y="358">3</text>
+    <text x="125.8" y="358">4</text>
+    <text x="171.7" y="358">5</text>
+    <text x="217.5" y="358">6</text>
+    <text x="263.3" y="358">7</text>
+    <text x="309.2" y="358">8</text>
+    <text x="355" y="358">9</text>
+    <text x="400.8" y="358">10</text>
+    <text x="446.7" y="358">11</text>
+    <text x="492.5" y="358">12</text>
+    <text x="538.3" y="358">13</text>
+    <text x="584.2" y="358">14</text>
+    <text x="630" y="358">15</text>
+  </g>
+
+  <!-- Axis titles -->
+  <text x="355" y="388" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Attribute Score</text>
+  <text x="22" y="198" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#2c3e50" transform="rotate(-90,22,198)">Point Cost</text>
+
+  <!-- Refund zone (scores 3-7) -->
+  <rect x="80" y="55" width="183.3" height="285" fill="url(#refundGrad)" rx="0"/>
+  <!-- Premium zone (scores 9-15) -->
+  <rect x="355" y="55" width="275" height="285" fill="url(#premiumGrad)" rx="0"/>
+
+  <!-- Zone labels -->
+  <text x="171.5" y="72" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#27ae60" font-weight="600">REFUND ZONE</text>
+  <text x="492.5" y="72" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#e67e22" font-weight="600">PREMIUM ZONE</text>
+
+  <!-- Score 8 dashed highlight -->
+  <line x1="309.2" y1="55" x2="309.2" y2="340" stroke="#2c3e50" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="309.2" y="48" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#2c3e50" font-weight="700">⬇ The Human Average</text>
+
+  <!-- Data points: (score, cost) → px -->
+  <!-- 3,-5 → x=80, y=340 -->
+  <!-- 4,-4 → x=125.8, y=315 -->
+  <!-- 5,-2 → x=171.7, y=265 -->
+  <!-- 6,-1 → x=217.5, y=240 -->
+  <!-- 7,0  → x=263.3, y=215 -->
+  <!-- 8,5  → x=309.2, y=140 -->
+  <!-- 9,5  → x=355, y=140 -->
+  <!-- 10,10 → x=400.8, y=65 -->
+  <!-- 11,10 → x=446.7, y=65 -->
+  <!-- 12,15 → x=492.5, y=65 -->
+  <!-- 13,15 → x=538.3, y=65 -->
+  <!-- 14,20 → x=584.2, y=65 -->
+  <!-- 15,25 → x=630, y=65 -->
+
+  <!-- Line connecting points -->
+  <polyline points="80,340 125.8,315 171.7,265 217.5,240 263.3,215 309.2,140 355,140 400.8,65 446.7,65 492.5,65 538.3,65 584.2,65 630,65"
+    fill="none" stroke="#2c3e50" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#shadow)"/>
+
+  <!-- Data point dots + labels -->
+  <g font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" text-anchor="middle">
+    <!-- Score 3, cost -5 -->
+    <circle cx="80" cy="340" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+    <text x="80" y="332" fill="#27ae60">−5</text>
+
+    <!-- Score 4, cost -4 -->
+    <circle cx="125.8" cy="315" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+    <text x="125.8" y="307" fill="#27ae60">−4</text>
+
+    <!-- Score 5, cost -2 -->
+    <circle cx="171.7" cy="265" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+    <text x="171.7" y="257" fill="#27ae60">−2</text>
+
+    <!-- Score 6, cost -1 -->
+    <circle cx="217.5" cy="240" r="4" fill="#27ae60" stroke="#fff" stroke-width="1.5"/>
+    <text x="217.5" y="232" fill="#27ae60">−1</text>
+
+    <!-- Score 7, cost 0 -->
+    <circle cx="263.3" cy="215" r="4" fill="#7f8c8d" stroke="#fff" stroke-width="1.5"/>
+    <text x="263.3" y="207" fill="#7f8c8d">0</text>
+
+    <!-- Score 8, cost 5 — highlighted -->
+    <circle cx="309.2" cy="140" r="6" fill="#e67e22" stroke="#fff" stroke-width="2"/>
+    <text x="309.2" y="132" fill="#e67e22" font-size="11">5 ★</text>
+
+    <!-- Score 9, cost 5 -->
+    <circle cx="355" cy="140" r="4" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+    <text x="355" y="132" fill="#e67e22">5</text>
+
+    <!-- Score 10, cost 10 -->
+    <circle cx="400.8" cy="65" r="4" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+    <text x="400.8" y="57" fill="#e67e22">10</text>
+
+    <!-- Score 11, cost 10 -->
+    <circle cx="446.7" cy="65" r="4" fill="#e67e22" stroke="#fff" stroke-width="1.5"/>
+    <text x="446.7" y="57" fill="#e67e22">10</text>
+
+    <!-- Score 12, cost 15 -->
+    <circle cx="492.5" cy="65" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+    <text x="492.5" y="57" fill="#c0392b">15</text>
+
+    <!-- Score 13, cost 15 -->
+    <circle cx="538.3" cy="65" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+    <text x="538.3" y="57" fill="#c0392b">15</text>
+
+    <!-- Score 14, cost 20 -->
+    <circle cx="584.2" cy="65" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+    <text x="584.2" y="57" fill="#c0392b">20</text>
+
+    <!-- Score 15, cost 25 -->
+    <circle cx="630" cy="65" r="4" fill="#c0392b" stroke="#fff" stroke-width="1.5"/>
+    <text x="630" y="57" fill="#c0392b">25</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="600" rx="12" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Stacking Conditions Decision Tree</text>
+  <text x="350" y="55" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">When a character has multiple conditions — what rules apply?</text>
+
+  <!-- === ROOT NODE === -->
+  <rect x="150" y="75" width="400" height="50" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="350" y="98" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">Character has Condition A + Condition B</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="125" x2="350" y2="155" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <!-- === QUESTION 1: Same check type? === -->
+  <rect x="170" y="155" width="360" height="45" rx="8" fill="#2980b9" filter="url(#shadow)"/>
+  <text x="350" y="175" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">Do both conditions affect the SAME check type?</text>
+  <text x="350" y="192" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#d4efff">(e.g., both have a penalty on routine checks)</text>
+
+  <!-- YES branch (left) -->
+  <line x1="250" y1="200" x2="180" y2="235" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+  <text x="210" y="222" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">YES</text>
+
+  <rect x="50" y="235" width="260" height="55" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="180" y="258" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#27ae60">Apply the WORST penalty</text>
+  <text x="180" y="275" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">(not the sum! minus-5 + minus-5 does not equal minus-10)</text>
+  <text x="180" y="288" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Use the single larger penalty</text>
+
+  <!-- NO branch (right) -->
+  <line x1="450" y1="200" x2="520" y2="235" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arrowGray)"/>
+  <text x="490" y="222" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#c0392b">NO</text>
+
+  <rect x="390" y="235" width="260" height="55" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="520" y="258" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#c0392b">Apply both independently</text>
+  <text x="520" y="275" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">(each condition penalties apply</text>
+  <text x="520" y="288" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">to their respective check types)</text>
+
+  <!-- Arrow from both branches down to Q2 -->
+  <line x1="180" y1="290" x2="180" y2="340" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="520" y1="290" x2="520" y2="340" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="180" y1="340" x2="520" y2="340" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="350" y1="340" x2="350" y2="370" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <!-- === QUESTION 2: SP Drain? === -->
+  <rect x="200" y="370" width="300" height="40" rx="8" fill="#e67e22" filter="url(#shadow)"/>
+  <text x="350" y="395" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">SP drain from each condition?</text>
+
+  <rect x="200" y="415" width="300" height="40" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="433" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#e67e22">SP drain ALWAYS stacks</text>
+  <text x="350" y="448" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">ADHD (+1/day) + Autism (+1/day) = +2 SP/day</text>
+
+  <!-- Arrow down to Q3 -->
+  <line x1="350" y1="455" x2="350" y2="480" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <!-- === QUESTION 3: Triggers? === -->
+  <rect x="200" y="480" width="300" height="40" rx="8" fill="#8e44ad" filter="url(#shadow)"/>
+  <text x="350" y="505" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">Each condition has own triggers</text>
+
+  <rect x="200" y="525" width="300" height="35" rx="8" fill="#e8daef" stroke="#8e44ad" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="547" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">Both trigger sets apply — double the landmines</text>
+</svg>

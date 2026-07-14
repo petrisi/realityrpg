@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="dot" markerWidth="6" markerHeight="6" refX="3" refY="3">
+      <circle cx="3" cy="3" r="3" fill="#e67e22"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="35" text-anchor="middle" font-size="22" font-weight="700" fill="#2c3e50">Inventory Slot Map</text>
+  <text x="350" y="55" text-anchor="middle" font-size="13" fill="#7f8c8d">Your body is your inventory. Every item needs a slot.</text>
+
+  <!-- Human figure — simplified stick with zones -->
+  <g transform="translate(350,280)" filter="url(#s)">
+    <!-- Body outline -->
+    <circle cx="0" cy="-140" r="30" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2"/>
+    <!-- Head features -->
+    <text x="0" y="-135" text-anchor="middle" font-size="20">🧑</text>
+
+    <!-- Torso -->
+    <rect x="-35" y="-105" width="70" height="90" rx="8" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2"/>
+
+    <!-- Legs -->
+    <rect x="-25" y="-10" width="20" height="80" rx="5" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2"/>
+    <rect x="5" y="-10" width="20" height="80" rx="5" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2"/>
+
+    <!-- Arms -->
+    <rect x="-60" y="-95" width="25" height="60" rx="6" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2" transform="rotate(10, -48, -65)"/>
+    <rect x="35" y="-95" width="25" height="60" rx="6" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2" transform="rotate(-10, 48, -65)"/>
+
+    <!-- Slot zones — colored overlays -->
+    <!-- Pockets (jeans) -->
+    <rect x="-33" y="10" width="26" height="25" rx="4" fill="#27ae60" opacity="0.7"/>
+    <rect x="7" y="10" width="26" height="25" rx="4" fill="#27ae60" opacity="0.7"/>
+
+    <!-- Jacket pockets (torso) -->
+    <rect x="-30" y="-80" width="22" height="20" rx="4" fill="#2980b9" opacity="0.7"/>
+    <rect x="8" y="-80" width="22" height="20" rx="4" fill="#2980b9" opacity="0.7"/>
+
+    <!-- Backpack (back) -->
+    <rect x="-30" y="-95" width="60" height="70" rx="8" fill="#e67e22" opacity="0.3" stroke="#e67e22" stroke-width="2" stroke-dasharray="6,3"/>
+  </g>
+
+  <!-- Labels with lines pointing to zones -->
+  <g font-size="12" font-weight="600">
+    <!-- Pockets label -->
+    <line x1="380" y1="295" x2="440" y2="310" stroke="#27ae60" stroke-width="2"/>
+    <rect x="440" y="295" width="170" height="30" rx="5" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="452" y="315" fill="#27ae60">👖 Pockets — 0.5 lb each (4)</text>
+
+    <!-- Jacket label -->
+    <line x1="390" y1="200" x2="440" y2="190" stroke="#2980b9" stroke-width="2"/>
+    <rect x="440" y="175" width="170" height="30" rx="5" fill="#d4efdf" stroke="#2980b9" stroke-width="1"/>
+    <text x="452" y="195" fill="#2980b9">🧥 Jacket — 0.5 lb each (2-4)</text>
+
+    <!-- Backpack label -->
+    <line x1="310" y1="200" x2="250" y2="190" stroke="#e67e22" stroke-width="2"/>
+    <rect x="70" y="175" width="180" height="30" rx="5" fill="#fdebd0" stroke="#e67e22" stroke-width="1"/>
+    <text x="82" y="195" fill="#e67e22">🎒 Backpack — 25 lb max</text>
+
+    <!-- Purse label -->
+    <line x1="300" y1="310" x2="240" y2="320" stroke="#f39c12" stroke-width="2"/>
+    <rect x="70" y="305" width="170" height="30" rx="5" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+    <text x="82" y="325" fill="#f39c12">👛 Purse — 15 lb container</text>
+
+    <!-- Shopping cart label -->
+    <rect x="440" y="340" width="170" height="30" rx="5" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+    <text x="452" y="360" fill="#c0392b">🛒 Cart — 40 lb (in stores)</text>
+
+    <!-- Vehicle trunk label -->
+    <rect x="440" y="380" width="170" height="30" rx="5" fill="#e8daef" stroke="#8e44ad" stroke-width="1"/>
+    <text x="452" y="400" fill="#8e44ad">🚗 Trunk — 300-600 lb</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="350" y="470" text-anchor="middle" font-size="12" fill="#7f8c8d">Exceeding slot weight limits applies penalties. No bottomless backpacks in reality.</text>
+
+  <!-- Legend -->
+  <g transform="translate(80,430)" font-size="10">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#27ae60" opacity="0.7"/>
+    <text x="14" y="10" fill="#2c3e50">Personal slots</text>
+    <rect x="100" y="0" width="10" height="10" rx="2" fill="#2980b9" opacity="0.7"/>
+    <text x="114" y="10" fill="#2c3e50">Clothing slots</text>
+    <rect x="210" y="0" width="10" height="10" rx="2" fill="#e67e22" opacity="0.3"/>
+    <text x="224" y="10" fill="#2c3e50">Carried containers</text>
+  </g>
+</svg>

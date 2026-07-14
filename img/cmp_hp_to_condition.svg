@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="hpGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+    <linearGradient id="condGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#1e8449"/>
+    </linearGradient>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="410" y="32" text-anchor="middle" font-size="20" font-weight="700" fill="#2c3e50">Fantasy HP Pool vs. Reality Condition Track</text>
+  <text x="410" y="52" text-anchor="middle" font-size="12" fill="#7f8c8d">Damage degrades health differently in each system</text>
+
+  <!-- LEFT: Fantasy HP Pool -->
+  <rect x="30" y="75" width="360" height="310" rx="10" fill="#f5eef8" stroke="#d5b8e8" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="210" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#8e44ad">⚔️ Fantasy: Hit Points (45 HP)</text>
+
+  <!-- HP Bar full -->
+  <rect x="50" y="125" width="320" height="28" rx="6" fill="#e8e8e8"/>
+  <rect x="50" y="125" width="320" height="28" rx="6" fill="url(#hpGrad)"/>
+  <text x="210" y="144" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">45 / 45 HP — Full Health</text>
+
+  <!-- HP Bar damaged -->
+  <rect x="50" y="170" width="320" height="28" rx="6" fill="#e8e8e8"/>
+  <rect x="50" y="170" width="224" height="28" rx="6" fill="#e67e22"/>
+  <text x="210" y="189" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">31 / 45 HP — Took 14 damage</text>
+
+  <!-- HP Bar low -->
+  <rect x="50" y="215" width="320" height="28" rx="6" fill="#e8e8e8"/>
+  <rect x="50" y="215" width="80" height="28" rx="6" fill="#e74c3c"/>
+  <text x="210" y="234" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">10 / 45 HP — Critical</text>
+
+  <!-- HP Bar zero -->
+  <rect x="50" y="260" width="320" height="28" rx="6" fill="#e8e8e8"/>
+  <text x="210" y="279" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">0 / 45 HP — Unconscious</text>
+
+  <!-- Arrows between HP bars -->
+  <line x1="210" y1="155" x2="210" y2="166" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <line x1="210" y1="200" x2="210" y2="211" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <line x1="210" y1="245" x2="210" y2="256" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <!-- Fantasy notes -->
+  <text x="210" y="310" text-anchor="middle" font-size="11" fill="#8e44ad" font-style="italic">"Quantitative — a number goes down"</text>
+  <text x="210" y="328" text-anchor="middle" font-size="11" fill="#8e44ad" font-style="italic">"Healing potion: +1d4+1 HP (instant)"</text>
+  <text x="210" y="346" text-anchor="middle" font-size="11" fill="#8e44ad" font-style="italic">"Long rest: recover ALL HP"</text>
+
+  <!-- RIGHT: Reality Condition Track -->
+  <rect x="430" y="75" width="360" height="310" rx="10" fill="#eafaf1" stroke="#a9dfbf" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="610" y="105" text-anchor="middle" font-size="15" font-weight="700" fill="#27ae60">🏥 Reality: Condition Track</text>
+
+  <!-- Condition steps -->
+  <rect x="450" y="125" width="320" height="28" rx="6" fill="#27ae60"/>
+  <text x="610" y="144" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">❤️ Healthy</text>
+
+  <rect x="450" y="165" width="320" height="28" rx="6" fill="#2ecc71"/>
+  <text x="610" y="184" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">😴 Tired (−5 to checks)</text>
+
+  <rect x="450" y="205" width="320" height="28" rx="6" fill="#f39c12"/>
+  <text x="610" y="224" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">🤒 Sick (−10 to VIG/INT)</text>
+
+  <rect x="450" y="245" width="320" height="28" rx="6" fill="#e67e22"/>
+  <text x="610" y="264" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">🤕 Injured (specific effects)</text>
+
+  <rect x="450" y="285" width="320" height="28" rx="6" fill="#e74c3c"/>
+  <text x="610" y="304" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🚨 Critical (ER visit + bills)</text>
+
+  <!-- Arrows between condition steps -->
+  <line x1="610" y1="155" x2="610" y2="161" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <line x1="610" y1="195" x2="610" y2="201" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <line x1="610" y1="235" x2="610" y2="241" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <line x1="610" y1="275" x2="610" y2="281" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowGray)"/>
+
+  <!-- Reality notes -->
+  <text x="610" y="336" text-anchor="middle" font-size="11" fill="#27ae60" font-style="italic">"Qualitative — a STATE changes"</text>
+  <text x="610" y="354" text-anchor="middle" font-size="11" fill="#27ae60" font-style="italic">"Recovery: days of rest + medicine + time"</text>
+</svg>

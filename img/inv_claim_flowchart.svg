@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Insurance Claim Process</text>
+
+  <!-- Step boxes horizontal flow -->
+  <g font-size="12" font-weight="600" text-anchor="middle">
+
+    <!-- Step 1: Document -->
+    <rect x="30" y="50" width="130" height="60" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="2" filter="url(#s)"/>
+    <text x="95" y="75" fill="#27ae60">📋 Document</text>
+    <text x="95" y="92" font-size="10" fill="#2c3e50">Loss/Damage</text>
+    <text x="95" y="105" font-size="10" fill="#7f8c8d">1–4 hours</text>
+
+    <!-- arrow -->
+    <line x1="160" y1="80" x2="190" y2="80" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+    <!-- Step 2: File Claim -->
+    <rect x="190" y="50" width="130" height="60" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="2" filter="url(#s)"/>
+    <text x="255" y="75" fill="#27ae60">📞 File Claim</text>
+    <text x="255" y="92" font-size="10" fill="#2c3e50">Call/Online</text>
+    <text x="255" y="105" font-size="10" fill="#7f8c8d">30min–2hrs</text>
+
+    <!-- arrow -->
+    <line x1="320" y1="80" x2="350" y2="80" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+    <!-- Step 3: Investigation -->
+    <rect x="350" y="50" width="150" height="60" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#s)"/>
+    <text x="425" y="72" fill="#f39c12">🔍 Investigation</text>
+    <text x="425" y="89" font-size="10" fill="#2c3e50">Adjuster reviews</text>
+    <text x="425" y="102" font-size="10" fill="#7f8c8d">2wks – 3mo</text>
+
+    <!-- arrow -->
+    <line x1="500" y1="80" x2="530" y2="80" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+    <!-- Step 4: Payment -->
+    <rect x="530" y="50" width="130" height="60" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="2" filter="url(#s)"/>
+    <text x="595" y="75" fill="#27ae60">💰 Payment</text>
+    <text x="595" y="92" font-size="10" fill="#2c3e50">Check arrives</text>
+    <text x="595" y="105" font-size="10" fill="#7f8c8d">2–8 weeks</text>
+
+    <!-- arrow -->
+    <line x1="660" y1="80" x2="690" y2="80" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+    <!-- Step 5: Premium Increase -->
+    <rect x="690" y="50" width="80" height="60" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#s)"/>
+    <text x="730" y="75" fill="#e74c3c">📈 Premium</text>
+    <text x="730" y="92" font-size="10" fill="#e74c3c">Goes Up</text>
+    <text x="730" y="105" font-size="10" fill="#7f8c8d">+10–50%</text>
+  </g>
+
+  <!-- Denied branch (from Investigation) -->
+  <g>
+    <line x1="425" y1="110" x2="425" y2="150" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,3"/>
+    <rect x="340" y="150" width="170" height="50" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#s)"/>
+    <text x="425" y="172" text-anchor="middle" font-size="12" font-weight="700" fill="#e74c3c">❌ Claim Denied</text>
+    <text x="425" y="188" text-anchor="middle" font-size="10" fill="#c0392b">Roll 1d20; on 1–4: technicality</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="400" y="240" text-anchor="middle" font-size="12" fill="#7f8c8d">The longer the process, the more you forget how much you're owed.</text>
+
+  <!-- Timeline bar -->
+  <g transform="translate(0, 255)" font-size="10" fill="#7f8c8d">
+    <text x="400" y="0" text-anchor="middle">Total time: 2 weeks to 4+ months. You still lose money. Insurance is designed this way.</text>
+  </g>
+</svg>

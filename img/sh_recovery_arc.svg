@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Recovery Arc — Nonlinear Healing chart showing 4-phase therapy progression with setbacks">
+  <style>
+    text { font-family: system-ui, sans-serif; }
+    .zone-label { font-size: 13px; fill: #555; font-weight: 500; }
+    .axis-label { font-size: 12px; fill: #444; }
+    .title { font-size: 18px; font-weight: bold; fill: #333; }
+    .subtitle { font-size: 12px; fill: #777; }
+    .note { font-size: 12px; fill: #666; font-style: italic; }
+    .annotation { font-size: 11px; fill: #333; }
+    .phase-line { stroke: #999; stroke-width: 0.5; stroke-dasharray: 4,4; }
+  </style>
+
+  <!-- Background -->
+  <rect width="700" height="500" fill="#ffffff" rx="4"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" class="title">Recovery Arc — Nonlinear Healing</text>
+
+  <!-- Chart area: x=70..650, y=55..400 -->
+  <!-- Plotting area: width=580, height=345 -->
+  <!-- X scale: month m → px = 70 + (m/24)*580 -->
+  <!-- Y scale: progress p → py = 400 - (p/100)*345 -->
+
+  <!-- Zone backgrounds -->
+  <!-- Post-Traumatic Growth: 75-100% → py 12.5 to 48.75 -->
+  <rect x="70" y="48.75" width="580" height="33.75" fill="#d5f5e3"/>
+  <!-- Integration: 50-75% → py 48.75 to 107.5 -->
+  <rect x="70" y="107.5" width="580" height="58.75" fill="#fef9e7"/>
+  <!-- Processing: 25-50% → py 107.5 to 196.25 -->
+  <rect x="70" y="196.25" width="580" height="88.75" fill="#fdebd0"/>
+  <!-- Stabilization: 0-25% → py 196.25 to 400 -->
+  <rect x="70" y="196.25" width="580" height="203.75" fill="#fadbd8"/>
+
+  <!-- Phase boundary lines -->
+  <line x1="70" y1="196.25" x2="650" y2="196.25" class="phase-line"/>
+  <line x1="70" y1="107.5" x2="650" y2="107.5" class="phase-line"/>
+  <line x1="70" y1="48.75" x2="650" y2="48.75" class="phase-line"/>
+
+  <!-- Zone labels (left side) -->
+  <text x="76" y="300" class="zone-label">Stabilization</text>
+  <text x="76" y="250" class="zone-label">Processing</text>
+  <text x="76" y="156" class="zone-label">Integration</text>
+  <text x="76" y="70" class="zone-label">Post-Traumatic Growth</text>
+
+  <!-- Y-axis -->
+  <line x1="70" y1="55" x2="70" y2="400" stroke="#333" stroke-width="1.5"/>
+  <!-- Y-axis ticks and labels -->
+  <line x1="65" y1="400" x2="70" y2="400" stroke="#333" stroke-width="1"/>
+  <text x="62" y="404" text-anchor="end" class="axis-label">0</text>
+  <line x1="65" y1="313.75" x2="70" y2="313.75" stroke="#333" stroke-width="1"/>
+  <text x="62" y="317.75" text-anchor="end" class="axis-label">25</text>
+  <line x1="65" y1="225" x2="70" y2="225" stroke="#333" stroke-width="1"/>
+  <text x="62" y="229" text-anchor="end" class="axis-label">50</text>
+  <line x1="65" y1="136.25" x2="70" y2="136.25" stroke="#333" stroke-width="1"/>
+  <text x="62" y="140.25" text-anchor="end" class="axis-label">75</text>
+  <line x1="65" y1="55" x2="70" y2="55" stroke="#333" stroke-width="1"/>
+  <text x="62" y="59" text-anchor="end" class="axis-label">100</text>
+
+  <!-- Y-axis title -->
+  <text x="22" y="227.5" text-anchor="middle" class="axis-label" transform="rotate(-90, 22, 227.5)">Recovery Progress</text>
+
+  <!-- X-axis -->
+  <line x1="70" y1="400" x2="650" y2="400" stroke="#333" stroke-width="1.5"/>
+  <!-- X-axis ticks and labels -->
+  <g class="axis-label" text-anchor="middle">
+    <line x1="70" y1="400" x2="70" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="70" y="418">0</text>
+    <line x1="148.33" y1="400" x2="148.33" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="148.33" y="418">4</text>
+    <line x1="226.67" y1="400" x2="226.67" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="226.67" y="418">8</text>
+    <line x1="305" y1="400" x2="305" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="305" y="418">12</text>
+    <line x1="383.33" y1="400" x2="383.33" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="383.33" y="418">16</text>
+    <line x1="461.67" y1="400" x2="461.67" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="461.67" y="418">20</text>
+    <line x1="540" y1="400" x2="540" y2="405" stroke="#333" stroke-width="1"/>
+    <text x="540" y="418">24</text>
+  </g>
+  <!-- X-axis title -->
+  <text x="360" y="440" text-anchor="middle" class="axis-label">Time (months)</text>
+
+  <!--
+    Recovery line path.
+    Month → px: 70 + (m/24)*580
+    Progress → py: 400 - (p/100)*345
+
+    Data points (month, progress):
+    0, 0    → (70, 400)
+    1, 8    → (94.17, 372.8)
+    2, 12   → (118.33, 358.6)
+    2.5, 6  → (135.42, 379.7)  ← small dip
+    3, 20   → (152.5, 331.0)
+    4, 22   → (176.67, 324.7)
+    5, 28   → (200.83, 304.0)
+    6, 35   → (225, 279.6)
+    6.5, 22 → (242.08, 324.7)  ← bigger dip (anniversary)
+    7, 26   → (259.17, 310.5)
+    8, 33   → (283.33, 286.1)
+    9, 40   → (307.5, 261.8)
+    10, 42 → (331.67, 255.5)
+    11, 48 → (355.83, 234.6)
+    12, 52 → (372.92, 220.4)
+    13, 58 → (397.08, 199.5)
+    14, 62 → (414.17, 185.3)
+    15, 66 → (431.25, 171.2)
+    15.5, 56 → (448.33, 183.2)  ← small dip
+    16, 68 → (465.42, 164.9)
+    17, 74 → (489.58, 144.0)
+    18, 78 → (506.67, 129.8)
+    19, 82 → (523.75, 115.7)
+    20, 86 → (540.83, 101.5)
+    21, 88 → (565, 95.2)
+    22, 90 → (589.17, 88.9)
+    23, 93 → (613.33, 79.3)
+    24, 96 → (637.5, 69.8)
+  -->
+
+  <!-- Recovery arc line (smooth curve through points) -->
+  <path d="
+    M 70,400
+    C 82,390 86,380 94.17,372.8
+    C 102,366 106,362 118.33,358.6
+    C 126,360 130,370 135.42,379.7
+    C 140,370 146,350 152.5,331
+    C 160,326 168,325 176.67,324.7
+    C 186,320 190,312 200.83,304
+    C 210,296 218,288 225,279.6
+    C 230,290 236,310 242.08,324.7
+    C 248,318 252,314 259.17,310.5
+    C 268,304 274,296 283.33,286.1
+    C 292,280 300,270 307.5,261.8
+    C 316,258 324,256 331.67,255.5
+    C 340,252 348,242 355.83,234.6
+    C 362,228 368,224 372.92,220.4
+    C 382,214 390,206 397.08,199.5
+    C 404,194 409,189 414.17,185.3
+    C 420,182 426,176 431.25,171.2
+    C 436,176 442,180 448.33,183.2
+    C 454,178 458,172 465.42,164.9
+    C 474,156 480,150 489.58,144
+    C 496,140 502,134 506.67,129.8
+    C 512,126 518,120 523.75,115.7
+    C 530,112 536,106 540.83,101.5
+    C 548,98 556,96 565,95.2
+    C 574,93 580,91 589.17,88.9
+    C 598,86 606,82 613.33,79.3
+    C 622,76 630,73 637.5,69.8
+  " fill="none" stroke="#8e44ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Arrow at end of line -->
+  <polygon points="637.5,69.8 630,82 645,82" fill="#8e44ad"/>
+
+  <!-- Annotations with leader lines -->
+  <!-- Month 3: "Baseline SP reduced" at (152.5, 331) -->
+  <line x1="152.5" y1="331" x2="152.5" y2="352" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="152.5" cy="331" r="4" fill="#8e44ad"/>
+  <rect x="108" y="354" width="89" height="20" rx="3" fill="#f0e6f6" stroke="#8e44ad" stroke-width="0.5"/>
+  <text x="152.5" y="368" text-anchor="middle" class="annotation">Baseline SP reduced</text>
+
+  <!-- Month 6: "Anniversary setback" at (242.08, 324.7) — the dip point -->
+  <line x1="242.08" y1="324.7" x2="242.08" y2="345" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="242.08" cy="324.7" r="4" fill="#8e44ad"/>
+  <rect x="194" y="347" width="96" height="20" rx="3" fill="#f0e6f6" stroke="#8e44ad" stroke-width="0.5"/>
+  <text x="242.08" y="361" text-anchor="middle" class="annotation">Anniversary setback</text>
+
+  <!-- Month 12: "Triggers reduced" at (372.92, 220.4) -->
+  <line x1="372.92" y1="220.4" x2="372.92" y2="241" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="372.92" cy="220.4" r="4" fill="#8e44ad"/>
+  <rect x="328" y="243" width="89" height="20" rx="3" fill="#f0e6f6" stroke="#8e44ad" stroke-width="0.5"/>
+  <text x="372.92" y="257" text-anchor="middle" class="annotation">Triggers reduced</text>
+
+  <!-- Month 20: "Full integration" at (540.83, 101.5) -->
+  <line x1="540.83" y1="101.5" x2="540.83" y2="82" stroke="#8e44ad" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="540.83" cy="101.5" r="4" fill="#8e44ad"/>
+  <rect x="496" y="58" width="89" height="20" rx="3" fill="#f0e6f6" stroke="#8e44ad" stroke-width="0.5"/>
+  <text x="540.83" y="72" text-anchor="middle" class="annotation">Full integration</text>
+
+  <!-- Bottom note -->
+  <text x="350" y="475" text-anchor="middle" class="note">Recovery is nonlinear. Every journey is different.</text>
+</svg>

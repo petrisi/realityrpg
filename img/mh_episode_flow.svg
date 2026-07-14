@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="eshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <marker id="egreen" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#27ae60"/>
+    </marker>
+    <marker id="ered" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c0392b"/>
+    </marker>
+    <marker id="ered-end" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="250" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#2c3e50">Episode Cycle</text>
+  <text x="350" y="48" text-anchor="middle" font-size="11" fill="#7f8c8d">Stress Point accumulation → breakdown → recovery loop</text>
+
+  <!-- Nodes - top row (buildup → breakdown) -->
+  <!-- Node 1: SP fills -->
+  <g filter="url(#eshadow)">
+    <rect x="30" y="70" width="110" height="50" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="85" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">SP fills</text>
+    <text x="85" y="110" text-anchor="middle" font-size="10" fill="#7f8c8d">daily stress</text>
+  </g>
+
+  <!-- Green arrow 1→2 -->
+  <path d="M140,95 L190,95" stroke="#27ae60" stroke-width="2.5" marker-end="url(#egreen)"/>
+
+  <!-- Node 2: SP reaches Max -->
+  <g filter="url(#eshadow)">
+    <rect x="195" y="70" width="130" height="50" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="260" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">SP reaches Max</text>
+    <text x="260" y="110" text-anchor="middle" font-size="10" fill="#7f8c8d">threshold</text>
+  </g>
+
+  <!-- Red arrow 2→3 (breakdown begins) -->
+  <path d="M325,95 L375,95" stroke="#c0392b" stroke-width="3" marker-end="url(#ered)"/>
+
+  <!-- Node 3: Episode begins -->
+  <g filter="url(#eshadow)">
+    <rect x="380" y="70" width="155" height="50" rx="10" fill="#fdedec" stroke="#c0392b" stroke-width="2"/>
+    <text x="457" y="94" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">Episode begins</text>
+    <text x="457" y="110" text-anchor="middle" font-size="10" fill="#7f8c8d">1d4 hrs/days</text>
+  </g>
+
+  <!-- Red arrow 3→4 -->
+  <path d="M535,95 L585,95" stroke="#c0392b" stroke-width="3" marker-end="url(#ered)"/>
+
+  <!-- Node 4: All checks +10 TN -->
+  <g filter="url(#eshadow)">
+    <rect x="590" y="70" width="100" height="50" rx="10" fill="#fdedec" stroke="#c0392b" stroke-width="2"/>
+    <text x="640" y="94" text-anchor="middle" font-size="12" font-weight="600" fill="#2c3e50">All checks</text>
+    <text x="640" y="110" text-anchor="middle" font-size="10" fill="#7f8c8d">+10 TN</text>
+  </g>
+
+  <!-- Red arrow 4→5 (downward right side) -->
+  <path d="M640,120 L640,155" stroke="#c0392b" stroke-width="3" marker-end="url(#ered)"/>
+
+  <!-- Node 5: Episode ends (bottom right) -->
+  <g filter="url(#eshadow)">
+    <rect x="555" y="155" width="130" height="50" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="620" y="179" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">Episode ends</text>
+    <text x="620" y="195" text-anchor="middle" font-size="10" fill="#7f8c8d">recovery starts</text>
+  </g>
+
+  <!-- Green arrow 5→6 (left along bottom) -->
+  <path d="M555,180 L505,180" stroke="#27ae60" stroke-width="2.5" marker-end="url(#egreen)"/>
+
+  <!-- Node 6: SP resets to 50% Max (bottom center) -->
+  <g filter="url(#eshadow)">
+    <rect x="300" y="155" width="195" height="50" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="397" y="179" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">SP resets to 50% Max</text>
+    <text x="397" y="195" text-anchor="middle" font-size="10" fill="#7f8c8d">halfway restored</text>
+  </g>
+
+  <!-- Green arrow 6→7 (left along bottom) -->
+  <path d="M300,180 L250,180" stroke="#27ae60" stroke-width="2.5" marker-end="url(#egreen)"/>
+
+  <!-- Node 7: Stable period (bottom left) -->
+  <g filter="url(#eshadow)">
+    <rect x="115" y="155" width="120" height="50" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="175" y="179" text-anchor="middle" font-size="13" font-weight="600" fill="#2c3e50">Stable period</text>
+    <text x="175" y="195" text-anchor="middle" font-size="10" fill="#7f8c8d">functioning</text>
+  </g>
+
+  <!-- Green arrow 7→1 (upward left side — back to start) -->
+  <path d="M85,180 L85,120" stroke="#27ae60" stroke-width="2.5" marker-end="url(#egreen)"/>
+
+  <!-- Legend -->
+  <g transform="translate(30, 225)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke="#c0392b" stroke-width="3"/>
+    <text x="38" y="4" font-size="10" fill="#7f8c8d">Breakdown</text>
+    <line x1="100" y1="0" x2="130" y2="0" stroke="#27ae60" stroke-width="2.5"/>
+    <text x="138" y="4" font-size="10" fill="#7f8c8d">Recovery</text>
+  </g>
+</svg>

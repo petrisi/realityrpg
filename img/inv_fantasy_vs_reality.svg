@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <linearGradient id="fantasyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8e44ad"/>
+      <stop offset="100%" stop-color="#5b2c8e"/>
+    </linearGradient>
+    <linearGradient id="realityBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ==================== LEFT PANEL: Fantasy RPG ==================== -->
+  <rect x="0" y="0" width="400" height="460" fill="url(#fantasyBg)" rx="0"/>
+
+  <!-- Panel title -->
+  <text x="200" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#f5eef8">Fantasy RPG</text>
+  <line x1="80" y1="48" x2="320" y2="48" stroke="#d5b8e8" stroke-width="1" opacity="0.5"/>
+
+  <!-- Inventory grid -->
+  <text x="200" y="78" text-anchor="middle" font-size="12" fill="#d5b8e8" font-weight="600">Inventory: 20-slot grid</text>
+  <g transform="translate(60, 90)">
+    <rect x="0" y="0" width="280" height="90" rx="6" fill="#2c3e50" stroke="#d5b8e8" stroke-width="1" opacity="0.6"/>
+    <!-- Grid cells -->
+    <rect x="8" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="23" y="28" text-anchor="middle" font-size="14">⚔️</text>
+    <rect x="44" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="59" y="28" text-anchor="middle" font-size="14">🛡️</text>
+    <rect x="80" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="95" y="28" text-anchor="middle" font-size="14">🧪</text>
+    <rect x="116" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="131" y="28" text-anchor="middle" font-size="14">🗝️</text>
+    <rect x="152" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="167" y="28" text-anchor="middle" font-size="14">📜</text>
+    <rect x="188" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="203" y="28" text-anchor="middle" font-size="14">💎</text>
+    <rect x="224" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="239" y="28" text-anchor="middle" font-size="14">🏹</text>
+    <rect x="260" y="8" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.5"/>
+    <text x="275" y="28" text-anchor="middle" font-size="14">🔮</text>
+    <!-- Row 2 -->
+    <rect x="8" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="44" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="80" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="116" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="152" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="188" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="224" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <rect x="260" y="44" width="30" height="30" rx="3" fill="#8e44ad" opacity="0.3"/>
+    <text x="140" y="74" text-anchor="middle" font-size="10" fill="#d5b8e8" opacity="0.7">...12 more empty slots</text>
+  </g>
+
+  <!-- Gold coins -->
+  <text x="200" y="210" text-anchor="middle" font-size="12" fill="#d5b8e8" font-weight="600">Gold: XP with a wallet</text>
+  <g transform="translate(200, 250)" filter="url(#glow)">
+    <circle cx="-40" cy="0" r="18" fill="#f1c40f" stroke="#f39c12" stroke-width="2"/>
+    <text x="-40" y="5" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608">G</text>
+    <circle cx="0" cy="-10" r="18" fill="#f1c40f" stroke="#f39c12" stroke-width="2"/>
+    <text x="0" y="-5" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608">G</text>
+    <circle cx="40" cy="0" r="18" fill="#f1c40f" stroke="#f39c12" stroke-width="2"/>
+    <text x="40" y="5" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608">G</text>
+    <circle cx="-20" cy="18" r="18" fill="#f1c40f" stroke="#f39c12" stroke-width="2"/>
+    <text x="-20" y="23" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608">G</text>
+    <circle cx="20" cy="18" r="18" fill="#f1c40f" stroke="#f39c12" stroke-width="2"/>
+    <text x="20" y="23" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608">G</text>
+  </g>
+  <text x="200" y="295" text-anchor="middle" font-size="11" fill="#d5b8e8" opacity="0.7">1,247 gold pieces</text>
+
+  <!-- Replaceable items -->
+  <text x="200" y="335" text-anchor="middle" font-size="12" fill="#d5b8e8" font-weight="600">Items: Replaceable at next town</text>
+  <g transform="translate(200, 370)">
+    <rect x="-90" y="-20" width="60" height="40" rx="4" fill="#2c3e50" stroke="#d5b8e8" stroke-width="1"/>
+    <text x="-60" y="-2" text-anchor="middle" font-size="16">⚔️</text>
+    <text x="-60" y="14" text-anchor="middle" font-size="8" fill="#d5b8e8">+1 Sword</text>
+    <rect x="30" y="-20" width="60" height="40" rx="4" fill="#2c3e50" stroke="#d5b8e8" stroke-width="1"/>
+    <text x="60" y="-2" text-anchor="middle" font-size="16">🛡️</text>
+    <text x="60" y="14" text-anchor="middle" font-size="8" fill="#d5b8e8">+2 Shield</text>
+  </g>
+  <text x="200" y="420" text-anchor="middle" font-size="11" fill="#d5b8e8" opacity="0.7">"Lose it? Just buy another."</text>
+
+  <!-- ==================== DIVIDER ==================== -->
+  <rect x="398" y="0" width="4" height="460" fill="#f39c12" opacity="0.8"/>
+  <text x="400" y="235" text-anchor="middle" font-size="22" font-weight="700" fill="#f39c12" transform="rotate(90, 400, 235)">VS</text>
+
+  <!-- ==================== RIGHT PANEL: Reality RPG ==================== -->
+  <rect x="400" y="0" width="400" height="460" fill="url(#realityBg)"/>
+
+  <!-- Panel title -->
+  <text x="600" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#ecf0f1">Reality RPG</text>
+  <line x1="480" y1="48" x2="720" y2="48" stroke="#7f8c8d" stroke-width="1" opacity="0.5"/>
+
+  <!-- Three financial pools -->
+  <text x="600" y="78" text-anchor="middle" font-size="12" fill="#95a5a6" font-weight="600">Money = Oxygen. Track 3 pools:</text>
+  <g transform="translate(440, 92)">
+    <!-- Cash -->
+    <rect x="0" y="0" width="120" height="50" rx="6" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="1"/>
+    <text x="60" y="20" text-anchor="middle" font-size="16">💵</text>
+    <text x="60" y="36" text-anchor="middle" font-size="10" font-weight="600" fill="#27ae60">Cash on Hand</text>
+    <text x="60" y="48" text-anchor="middle" font-size="9" fill="#95a5a6">$42</text>
+    <!-- Bank -->
+    <rect x="130" y="0" width="120" height="50" rx="6" fill="#2980b9" opacity="0.2" stroke="#2980b9" stroke-width="1"/>
+    <text x="190" y="20" text-anchor="middle" font-size="16">🏦</text>
+    <text x="190" y="36" text-anchor="middle" font-size="10" font-weight="600" fill="#2980b9">Bank Balance</text>
+    <text x="190" y="48" text-anchor="middle" font-size="9" fill="#95a5a6">$1,284</text>
+    <!-- Credit -->
+    <rect x="260" y="0" width="120" height="50" rx="6" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="1"/>
+    <text x="320" y="20" text-anchor="middle" font-size="16">💳</text>
+    <text x="320" y="36" text-anchor="middle" font-size="10" font-weight="600" fill="#e74c3c">Credit Limit</text>
+    <text x="320" y="48" text-anchor="middle" font-size="9" fill="#e74c3c">TRAP</text>
+  </g>
+
+  <!-- Every item has 4 properties -->
+  <text x="600" y="168" text-anchor="middle" font-size="12" fill="#95a5a6" font-weight="600">Every item has 4 properties:</text>
+  <g transform="translate(440, 180)">
+    <rect x="0" y="0" width="85" height="55" rx="6" fill="#e74c3c" opacity="0.15" stroke="#e74c3c" stroke-width="1"/>
+    <text x="42" y="20" text-anchor="middle" font-size="16">⚖️</text>
+    <text x="42" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#e74c3c">Mass</text>
+    <text x="42" y="48" text-anchor="middle" font-size="8" fill="#95a5a6">0.3 lb</text>
+
+    <rect x="95" y="0" width="85" height="55" rx="6" fill="#e67e22" opacity="0.15" stroke="#e67e22" stroke-width="1"/>
+    <text x="137" y="20" text-anchor="middle" font-size="16">💲</text>
+    <text x="137" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#e67e22">Cost</text>
+    <text x="137" y="48" text-anchor="middle" font-size="8" fill="#95a5a6">$847</text>
+
+    <rect x="190" y="0" width="85" height="55" rx="6" fill="#f39c12" opacity="0.15" stroke="#f39c12" stroke-width="1"/>
+    <text x="232" y="20" text-anchor="middle" font-size="16">🔧</text>
+    <text x="232" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#f39c12">Maintain</text>
+    <text x="232" y="48" text-anchor="middle" font-size="8" fill="#95a5a6">Monthly</text>
+
+    <rect x="285" y="0" width="85" height="55" rx="6" fill="#c0392b" opacity="0.15" stroke="#c0392b" stroke-width="1"/>
+    <text x="327" y="20" text-anchor="middle" font-size="16">💥</text>
+    <text x="327" y="36" text-anchor="middle" font-size="9" font-weight="600" fill="#c0392b">Breaks</text>
+    <text x="327" y="48" text-anchor="middle" font-size="8" fill="#95a5a6">Roll 1d20</text>
+  </g>
+
+  <!-- Irreplaceable items with durability -->
+  <text x="600" y="262" text-anchor="middle" font-size="12" fill="#95a5a6" font-weight="600">Items: Irreplaceable in the short term</text>
+  <g transform="translate(440, 275)">
+    <!-- Phone -->
+    <rect x="0" y="0" width="105" height="70" rx="6" fill="#34495e" stroke="#7f8c8d" stroke-width="1"/>
+    <text x="52" y="22" text-anchor="middle" font-size="18">📱</text>
+    <text x="52" y="38" text-anchor="middle" font-size="9" font-weight="600" fill="#ecf0f1">Phone</text>
+    <rect x="10" y="44" width="85" height="6" rx="3" fill="#e8e8e8"/>
+    <rect x="10" y="44" width="55" height="6" rx="3" fill="#f39c12"/>
+    <text x="52" y="64" text-anchor="middle" font-size="8" fill="#95a5a6">Durability 65%</text>
+
+    <!-- Car -->
+    <rect x="115" y="0" width="105" height="70" rx="6" fill="#34495e" stroke="#7f8c8d" stroke-width="1"/>
+    <text x="167" y="22" text-anchor="middle" font-size="18">🚗</text>
+    <text x="167" y="38" text-anchor="middle" font-size="9" font-weight="600" fill="#ecf0f1">Car</text>
+    <rect x="125" y="44" width="85" height="6" rx="3" fill="#e8e8e8"/>
+    <rect x="125" y="44" width="40" height="6" rx="3" fill="#e74c3c"/>
+    <text x="167" y="64" text-anchor="middle" font-size="8" fill="#95a5a6">Durability 47%</text>
+
+    <!-- Meds -->
+    <rect x="230" y="0" width="105" height="70" rx="6" fill="#34495e" stroke="#7f8c8d" stroke-width="1"/>
+    <text x="282" y="22" text-anchor="middle" font-size="18">💊</text>
+    <text x="282" y="38" text-anchor="middle" font-size="9" font-weight="600" fill="#ecf0f1">Meds</text>
+    <rect x="240" y="44" width="85" height="6" rx="3" fill="#e8e8e8"/>
+    <rect x="240" y="44" width="25" height="6" rx="3" fill="#c0392b"/>
+    <text x="282" y="64" text-anchor="middle" font-size="8" fill="#e74c3c">CRITICAL 29%</text>
+  </g>
+
+  <!-- Cascade warning -->
+  <text x="600" y="375" text-anchor="middle" font-size="12" fill="#95a5a6" font-weight="600">Lose one item = cascading consequences</text>
+  <g transform="translate(440, 390)">
+    <rect x="0" y="0" width="320" height="44" rx="8" fill="#e74c3c" opacity="0.15" stroke="#e74c3c" stroke-width="1"/>
+    <text x="160" y="18" text-anchor="middle" font-size="10" fill="#e74c3c" font-weight="600">🔑 Lose keys → locked out → $150 locksmith → late to work</text>
+    <text x="160" y="34" text-anchor="middle" font-size="10" fill="#e74c3c">→ boss angry → lose pay → can't buy food → ramen week</text>
+  </g>
+
+  <text x="600" y="450" text-anchor="middle" font-size="11" fill="#95a5a6" font-style="italic">"There is no final boss. Only next month's bills."</text>
+</svg>

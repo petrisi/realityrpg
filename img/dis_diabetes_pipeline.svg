@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Type 1 Diabetes — Daily Insulin Management Pipeline</text>
+
+  <!-- Step 1 -->
+  <rect x="30" y="60" width="200" height="120" rx="12" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#s)"/>
+  <text x="130" y="90" text-anchor="middle" font-size="24">🩸</text>
+  <text x="130" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">Step 1</text>
+  <text x="130" y="130" text-anchor="middle" font-size="12" fill="#1e8449">Blood Glucose</text>
+  <text x="130" y="146" text-anchor="middle" font-size="12" fill="#1e8449">Check</text>
+  <text x="130" y="168" text-anchor="middle" font-size="11" fill="#7f8c8d">DXT TN 30</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="230" y1="120" x2="280" y2="120" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 2 -->
+  <rect x="280" y="60" width="200" height="120" rx="12" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#s)"/>
+  <text x="380" y="90" text-anchor="middle" font-size="24">💉</text>
+  <text x="380" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#7d6608">Step 2</text>
+  <text x="380" y="130" text-anchor="middle" font-size="12" fill="#7d6608">Insulin Dosing</text>
+  <text x="380" y="146" text-anchor="middle" font-size="12" fill="#7d6608">Calculate &amp;</text>
+  <text x="380" y="160" text-anchor="middle" font-size="12" fill="#7d6608">Administer</text>
+  <text x="380" y="176" text-anchor="middle" font-size="11" fill="#7f8c8d">INT TN 35</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="480" y1="120" x2="530" y2="120" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 3 -->
+  <rect x="530" y="60" width="200" height="120" rx="12" fill="#fdebd0" stroke="#e67e22" stroke-width="2" filter="url(#s)"/>
+  <text x="630" y="90" text-anchor="middle" font-size="24">🍽️</text>
+  <text x="630" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#7e5109">Step 3</text>
+  <text x="630" y="130" text-anchor="middle" font-size="12" fill="#7e5109">Meal Planning</text>
+  <text x="630" y="146" text-anchor="middle" font-size="12" fill="#7e5109">Carb Counting</text>
+  <text x="630" y="168" text-anchor="middle" font-size="11" fill="#7f8c8d">INT TN 40</text>
+
+  <!-- Failure branches going down -->
+  <line x1="130" y1="180" x2="130" y2="220" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5"/>
+  <line x1="380" y1="180" x2="380" y2="220" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5"/>
+  <line x1="630" y1="180" x2="630" y2="220" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5"/>
+
+  <!-- Failure boxes -->
+  <rect x="20" y="220" width="220" height="60" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="130" y="242" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">❌ Wrong Reading</text>
+  <text x="130" y="258" text-anchor="middle" font-size="11" fill="#922b21">±20 mg/dL error</text>
+  <text x="130" y="272" text-anchor="middle" font-size="11" fill="#922b21">Cascades to Step 2</text>
+
+  <rect x="270" y="220" width="220" height="60" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="380" y="242" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">❌ Wrong Dose</text>
+  <text x="380" y="258" text-anchor="middle" font-size="11" fill="#922b21">Under: +5 SP (hyper)</text>
+  <text x="380" y="272" text-anchor="middle" font-size="11" fill="#922b21">Over: hypo risk</text>
+
+  <rect x="520" y="220" width="220" height="60" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="630" y="242" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">❌ Blood Sugar Swing</text>
+  <text x="630" y="258" text-anchor="middle" font-size="11" fill="#922b21">After-meal spike or drop</text>
+  <text x="630" y="272" text-anchor="middle" font-size="11" fill="#922b21">+2 SP, mood changes</text>
+
+  <!-- CGM note -->
+  <rect x="100" y="310" width="600" height="55" rx="10" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#s)"/>
+  <text x="400" y="334" text-anchor="middle" font-size="13" font-weight="700" fill="#2471a3">📊 Continuous Glucose Monitor (CGM)</text>
+  <text x="400" y="354" text-anchor="middle" font-size="12" fill="#2980b9">Automates Steps 1–2 · Reduces daily EP cost by 1 · $70–$150/month for sensors</text>
+
+  <!-- Daily cost note -->
+  <text x="400" y="390" text-anchor="middle" font-size="12" fill="#7f8c8d" font-style="italic">Total daily cost: 2 EP (1 EP with CGM) · Weekly RES check for complications</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="fantasyBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5eef8"/>
+      <stop offset="100%" stop-color="#e8daef"/>
+    </linearGradient>
+    <linearGradient id="realityBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eafaf1"/>
+      <stop offset="100%" stop-color="#d5f5e3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LEFT PANEL: Fantasy -->
+  <rect x="20" y="20" width="420" height="240" rx="12" fill="url(#fantasyBg)" stroke="#d5b8e8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="230" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#8e44ad">⚔️ Fantasy RPG</text>
+
+  <!-- Fantasy icons grid -->
+  <text x="100" y="110" text-anchor="middle" font-size="36">🐉</text>
+  <text x="100" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Dragons</text>
+
+  <text x="200" y="110" text-anchor="middle" font-size="36">🧙</text>
+  <text x="200" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Magic</text>
+
+  <text x="300" y="110" text-anchor="middle" font-size="36">🏰</text>
+  <text x="300" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Dungeons</text>
+
+  <text x="400" y="110" text-anchor="middle" font-size="36">💎</text>
+  <text x="400" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Gold &amp; Loot</text>
+
+  <text x="150" y="180" text-anchor="middle" font-size="36">🗡️</text>
+  <text x="150" y="206" text-anchor="middle" font-size="10" fill="#7f8c8d">Swords</text>
+
+  <text x="250" y="180" text-anchor="middle" font-size="36">🧪</text>
+  <text x="250" y="206" text-anchor="middle" font-size="10" fill="#7f8c8d">Potions</text>
+
+  <text x="350" y="180" text-anchor="middle" font-size="36">📜</text>
+  <text x="350" y="206" text-anchor="middle" font-size="10" fill="#7f8c8d">Quests</text>
+
+  <text x="230" y="240" text-anchor="middle" font-size="11" fill="#8e44ad" font-style="italic">Escapism &amp; Adventure</text>
+
+  <!-- RIGHT PANEL: Reality -->
+  <rect x="460" y="20" width="420" height="240" rx="12" fill="url(#realityBg)" stroke="#a9dfbf" stroke-width="2" filter="url(#shadow)"/>
+  <text x="670" y="55" text-anchor="middle" font-size="18" font-weight="700" fill="#27ae60">🏙️ Reality RPG</text>
+
+  <!-- Reality icons grid -->
+  <text x="540" y="110" text-anchor="middle" font-size="36">😰</text>
+  <text x="540" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Crisis</text>
+
+  <text x="640" y="110" text-anchor="middle" font-size="36">🔧</text>
+  <text x="640" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Systems</text>
+
+  <text x="740" y="110" text-anchor="middle" font-size="36">🏢</text>
+  <text x="740" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Challenges</text>
+
+  <text x="840" y="110" text-anchor="middle" font-size="36">💵</text>
+  <text x="840" y="136" text-anchor="middle" font-size="10" fill="#7f8c8d">Budget</text>
+
+  <text x="590" y="180" text-anchor="middle" font-size="36">📱</text>
+  <text x="590" y="206" text-anchor="middle" font-size="10" fill="#7f8c8d">Infrastructure</text>
+
+  <text x="690" y="180" text-anchor="middle" font-size="36">💊</text>
+  <text x="690" y="206" text-anchor="middle" font-size="10" fill="#7f8c8d">Recovery</text>
+
+  <text x="790" y="180" text-anchor="middle" font-size="36">🎯</text>
+  <text x="790" y="206" text-anchor="middle" font-size="10" fill="#7f8c8d">Goals</text>
+
+  <text x="670" y="240" text-anchor="middle" font-size="11" fill="#27ae60" font-style="italic">Engagement &amp; Meaning</text>
+
+  <!-- CENTER DIVIDER with RPG text -->
+  <line x1="450" y1="40" x2="450" y2="250" stroke="#2c3e50" stroke-width="3" stroke-dasharray="8,4"/>
+  <rect x="415" y="120" width="70" height="40" rx="8" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="450" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">🎲 RPG</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 620" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="310" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">💼 Profession Role Wheel — Reality's "Character Classes"</text>
+
+  <!-- Center hub -->
+  <circle cx="310" cy="310" r="60" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="310" y="300" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">REALITY RPG</text>
+  <text x="310" y="318" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Professions</text>
+
+  <!-- Connection lines to professions -->
+  <line x1="350" y1="260" x2="460" y2="160" stroke="#2980b9" stroke-width="2"/>
+  <line x1="360" y1="310" x2="500" y2="310" stroke="#27ae60" stroke-width="2"/>
+  <line x1="350" y1="360" x2="460" y2="460" stroke="#e67e22" stroke-width="2"/>
+  <line x1="270" y1="360" x2="160" y2="460" stroke="#f39c12" stroke-width="2"/>
+  <line x1="260" y1="310" x2="120" y2="310" stroke="#8e44ad" stroke-width="2"/>
+  <line x1="270" y1="260" x2="160" y2="160" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Profession 1: Nurse (top-right) -->
+  <rect x="400" y="100" width="160" height="120" rx="10" fill="#eaf2f8" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="128" text-anchor="middle" font-size="22">🏥</text>
+  <text x="480" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#2980b9">Nurse</text>
+  <text x="480" y="166" text-anchor="middle" font-size="10" fill="#2c3e50">Empathy + Professional</text>
+  <text x="480" y="180" text-anchor="middle" font-size="10" fill="#2c3e50">Works shifts, emotional labor</text>
+  <text x="480" y="194" text-anchor="middle" font-size="10" fill="#2c3e50">"The Cleric equivalent"</text>
+
+  <!-- Profession 2: Teacher (right) -->
+  <rect x="500" y="250" width="110" height="120" rx="10" fill="#d4efdf" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="555" y="278" text-anchor="middle" font-size="22">📚</text>
+  <text x="555" y="298" text-anchor="middle" font-size="13" font-weight="700" fill="#27ae60">Teacher</text>
+  <text x="555" y="316" text-anchor="middle" font-size="10" fill="#2c3e50">Communication</text>
+  <text x="555" y="330" text-anchor="middle" font-size="10" fill="#2c3e50">+ Academics</text>
+  <text x="555" y="348" text-anchor="middle" font-size="10" fill="#2c3e50">Public-facing,</text>
+  <text x="555" y="362" text-anchor="middle" font-size="10" fill="#2c3e50">underpaid</text>
+
+  <!-- Profession 3: Software Engineer (bottom-right) -->
+  <rect x="400" y="440" width="160" height="120" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="468" text-anchor="middle" font-size="22">💻</text>
+  <text x="480" y="488" text-anchor="middle" font-size="13" font-weight="700" fill="#e67e22">Software Engineer</text>
+  <text x="480" y="506" text-anchor="middle" font-size="10" fill="#2c3e50">INT + Technology</text>
+  <text x="480" y="520" text-anchor="middle" font-size="10" fill="#2c3e50">Sedentary, burnout risk</text>
+
+  <!-- Profession 4: Mechanic (bottom-left) -->
+  <rect x="60" y="440" width="160" height="120" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="468" text-anchor="middle" font-size="22">🔧</text>
+  <text x="140" y="488" text-anchor="middle" font-size="13" font-weight="700" fill="#f39c12">Mechanic</text>
+  <text x="140" y="506" text-anchor="middle" font-size="10" fill="#2c3e50">DEX + Manual Labor</text>
+  <text x="140" y="520" text-anchor="middle" font-size="10" fill="#2c3e50">Technical skills,</text>
+  <text x="140" y="534" text-anchor="middle" font-size="10" fill="#2c3e50">physical work</text>
+
+  <!-- Profession 5: Unemployed (left) -->
+  <rect x="10" y="250" width="110" height="120" rx="10" fill="#f5eef8" stroke="#8e44ad" stroke-width="2" filter="url(#shadow)"/>
+  <text x="65" y="278" text-anchor="middle" font-size="22">🏠</text>
+  <text x="65" y="298" text-anchor="middle" font-size="13" font-weight="700" fill="#8e44ad">Unemployed</text>
+  <text x="65" y="316" text-anchor="middle" font-size="10" fill="#2c3e50">Job hunting +</text>
+  <text x="65" y="330" text-anchor="middle" font-size="10" fill="#2c3e50">benefits navigation</text>
+  <text x="65" y="348" text-anchor="middle" font-size="10" fill="#2c3e50">Social stigma</text>
+
+  <!-- Profession 6: "Fighter" equivalent (top-left) -->
+  <rect x="60" y="100" width="160" height="120" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="140" y="128" text-anchor="middle" font-size="22">👷</text>
+  <text x="140" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#e74c3c">Construction</text>
+  <text x="140" y="166" text-anchor="middle" font-size="10" fill="#2c3e50">VIG + Manual Labor</text>
+  <text x="140" y="180" text-anchor="middle" font-size="10" fill="#2c3e50">Physical risk, high injury</text>
+  <text x="140" y="194" text-anchor="middle" font-size="10" fill="#2c3e50">"The Fighter equivalent"</text>
+
+  <!-- Shared skill nodes -->
+  <circle cx="310" cy="560" r="25" fill="#7f8c8d"/>
+  <text x="310" y="558" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">SHARED</text>
+  <text x="310" y="570" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">SKILLS</text>
+</svg>

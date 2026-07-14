@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 500" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="780" height="500" rx="10" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="390" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">The Time Deficit Cascade</text>
+  <text x="390" y="50" text-anchor="middle" font-size="11" fill="#7f8c8d">When stress hits, obligations expand — but the day is still only 24 hours</text>
+
+  <!-- LEFT: Normal Day -->
+  <text x="190" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#27ae60">✅ Normal Day</text>
+
+  <!-- Normal day bar segments -->
+  <!-- 20.5h total obligations in 24h = fits! -->
+  <rect x="60" y="90" width="260" height="40" rx="6" fill="#e8e8e8"/>
+  <!-- Sleep 7.5h -->
+  <rect x="60" y="90" width="81" height="40" fill="#2980b9" rx="6"/>
+  <text x="100" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">7.5h</text>
+  <!-- Work 8.0h -->
+  <rect x="141" y="90" width="87" height="40" fill="#2c3e50"/>
+  <text x="184" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">8.0h</text>
+  <!-- Other 5.0h -->
+  <rect x="228" y="90" width="54" height="40" fill="#7f8c8d"/>
+  <text x="255" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">5.0h</text>
+  <!-- Free time 3.5h -->
+  <rect x="282" y="90" width="38" height="40" fill="#27ae60" rx="0 6 6 0"/>
+  <text x="301" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">3.5h</text>
+
+  <text x="190" y="148" text-anchor="middle" font-size="10" fill="#27ae60">20.5h obligations + 3.5h free = 24h ✓</text>
+
+  <!-- RIGHT: Stress Day -->
+  <text x="590" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#c0392b">🔥 Stress Day</text>
+
+  <!-- Stress day bar — overflows! -->
+  <rect x="460" y="90" width="260" height="40" rx="6" fill="#e8e8e8"/>
+  <!-- Sleep 9.5h (insomnia) -->
+  <rect x="460" y="90" width="103" height="40" fill="#e67e22" rx="6"/>
+  <text x="511" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">9.5h</text>
+  <!-- Work 10.0h (overtime) -->
+  <rect x="563" y="90" width="109" height="40" fill="#c0392b"/>
+  <text x="617" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">10.0h</text>
+  <!-- Other 4.5h -->
+  <rect x="672" y="90" width="49" height="40" fill="#d35400"/>
+  <text x="696" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">4.5h</text>
+  <!-- OVERFLOW: 3.0h spilling off -->
+  <rect x="721" y="90" width="40" height="40" fill="#c0392b" rx="0 6 6 0" opacity="0.5"/>
+  <text x="741" y="114" text-anchor="middle" font-size="10" fill="#fff" font-weight="600">3.0h</text>
+
+  <!-- Overflow indicator -->
+  <text x="770" y="105" font-size="16" fill="#c0392b">⚠️</text>
+  <text x="190" y="170" text-anchor="middle" font-size="10" fill="#7f8c8d">Fits in 24 hours</text>
+  <text x="590" y="170" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="700">27.0h — OVERFLOW! Free time = 0</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="190" x2="720" y2="190" stroke="#dcdcdc" stroke-width="1"/>
+
+  <!-- The Four Sacrifices -->
+  <text x="390" y="220" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">What do you cut? Every choice has consequences…</text>
+
+  <!-- Four branching paths -->
+  <!-- Path 1: Cut Sleep -->
+  <rect x="60" y="240" width="160" height="100" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="140" y="262" text-anchor="middle" font-size="18">😴</text>
+  <text x="140" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Cut Sleep</text>
+  <text x="140" y="298" text-anchor="middle" font-size="9" fill="#2c3e50">Sleep debt</text>
+  <text x="140" y="311" text-anchor="middle" font-size="9" fill="#2c3e50">accumulates</text>
+  <text x="140" y="324" text-anchor="middle" font-size="9" fill="#2c3e50">→ −1 to all rolls</text>
+  <text x="140" y="337" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="600">per day</text>
+
+  <!-- Path 2: Cut Meals -->
+  <rect x="240" y="240" width="160" height="100" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="320" y="262" text-anchor="middle" font-size="18">🍽️</text>
+  <text x="320" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Cut Meals</text>
+  <text x="320" y="298" text-anchor="middle" font-size="9" fill="#2c3e50">Nutrition drops</text>
+  <text x="320" y="311" text-anchor="middle" font-size="9" fill="#2c3e50">→ −1 to −2 per day</text>
+  <text x="320" y="324" text-anchor="middle" font-size="9" fill="#2c3e50">Long-term illness</text>
+  <text x="320" y="337" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="600">risk</text>
+
+  <!-- Path 3: Cut Chores -->
+  <rect x="420" y="240" width="160" height="100" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="500" y="262" text-anchor="middle" font-size="18">🏠</text>
+  <text x="500" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Cut Chores</text>
+  <text x="500" y="298" text-anchor="middle" font-size="9" fill="#2c3e50">Environment</text>
+  <text x="500" y="311" text-anchor="middle" font-size="9" fill="#2c3e50">decays → pests</text>
+  <text x="500" y="324" text-anchor="middle" font-size="9" fill="#2c3e50">→ health hazard</text>
+  <text x="500" y="337" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="600">→ eviction</text>
+
+  <!-- Path 4: Cut Leisure -->
+  <rect x="600" y="240" width="120" height="100" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="660" y="262" text-anchor="middle" font-size="18">🎮</text>
+  <text x="660" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Cut Leisure</text>
+  <text x="660" y="298" text-anchor="middle" font-size="9" fill="#2c3e50">+3 SP after 3 days</text>
+  <text x="660" y="311" text-anchor="middle" font-size="9" fill="#2c3e50">+5 SP after 7 days</text>
+  <text x="660" y="324" text-anchor="middle" font-size="9" fill="#2c3e50">→ Burnout Event</text>
+  <text x="660" y="337" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="600">risk</text>
+
+  <!-- Bottom: No right answer -->
+  <rect x="190" y="370" width="400" height="50" rx="8" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="390" y="393" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">There is no "right" answer — only trade-offs.</text>
+  <text x="390" y="411" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.8)">This is the core tension of Reality RPG.</text>
+
+  <!-- Arrows from each sacrifice pointing down -->
+  <path d="M140,345 L140,365" stroke="#c0392b" stroke-width="1.5" fill="none"/>
+  <path d="M320,345 L320,365" stroke="#c0392b" stroke-width="1.5" fill="none"/>
+  <path d="M500,345 L500,365" stroke="#c0392b" stroke-width="1.5" fill="none"/>
+  <path d="M660,345 L660,365" stroke="#c0392b" stroke-width="1.5" fill="none"/>
+
+  <text x="390" y="455" text-anchor="middle" font-size="10" fill="#7f8c8d">Each sacrifice worsens other systems, creating a cascade failure loop</text>
+  <text x="390" y="472" text-anchor="middle" font-size="10" fill="#c0392b" font-weight="600">↻ Cut sleep → worse work → boss angry → more stress → can't sleep…</text>
+</svg>

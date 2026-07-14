@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="10" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#2c3e50">The Daily Life Cycle — All Systems Interconnected</text>
+  <text x="400" y="58" text-anchor="middle" font-size="12" fill="#7f8c8d">Neglect one system and the cascade spreads to all others</text>
+
+  <!-- Central hub -->
+  <circle cx="400" cy="270" r="55" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="400" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">DAILY</text>
+  <text x="400" y="282" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">LIFE</text>
+
+  <!-- 9 system nodes arranged in a circle -->
+  <!-- Node positions: radius ~180 from center (400,270) -->
+  <!-- §1 Sleep: top (400, 90) -->
+  <rect x="340" y="68" width="120" height="44" rx="8" fill="#2980b9" filter="url(#shadow)"/>
+  <text x="400" y="87" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">😴 Sleep</text>
+  <text x="400" y="102" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§1</text>
+
+  <!-- §2 Hygiene: upper right (580, 145) -->
+  <rect x="520" y="123" width="120" height="44" rx="8" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="580" y="142" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">🚿 Hygiene</text>
+  <text x="580" y="157" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§2</text>
+
+  <!-- §3 Nutrition: right (640, 270) -->
+  <rect x="580" y="248" width="120" height="44" rx="8" fill="#e67e22" filter="url(#shadow)"/>
+  <text x="640" y="267" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">🍽️ Nutrition</text>
+  <text x="640" y="282" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§3</text>
+
+  <!-- §4 Work: lower right (580, 395) -->
+  <rect x="520" y="373" width="120" height="44" rx="8" fill="#c0392b" filter="url(#shadow)"/>
+  <text x="580" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">💼 Work</text>
+  <text x="580" y="407" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§4</text>
+
+  <!-- §5 Commuting: bottom right (480, 460) -->
+  <rect x="420" y="440" width="120" height="44" rx="8" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="480" y="459" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">🚗 Commuting</text>
+  <text x="480" y="474" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§5</text>
+
+  <!-- §6 Home Maintenance: bottom (320, 460) -->
+  <rect x="260" y="440" width="120" height="44" rx="8" fill="#7f8c8d" filter="url(#shadow)"/>
+  <text x="320" y="459" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">🏠 Home Maint.</text>
+  <text x="320" y="474" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§6</text>
+
+  <!-- §7 Leisure: bottom left (220, 395) -->
+  <rect x="160" y="373" width="120" height="44" rx="8" fill="#8e44ad" filter="url(#shadow)"/>
+  <text x="220" y="392" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">🎮 Leisure</text>
+  <text x="220" y="407" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§7</text>
+
+  <!-- §8 Time Budgeting: left (160, 270) -->
+  <rect x="100" y="248" width="120" height="44" rx="8" fill="#16a085" filter="url(#shadow)"/>
+  <text x="160" y="267" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">⏰ Time Budget</text>
+  <text x="160" y="282" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§8</text>
+
+  <!-- §9 Aging: upper left (220, 145) -->
+  <rect x="160" y="123" width="120" height="44" rx="8" fill="#d35400" filter="url(#shadow)"/>
+  <text x="220" y="142" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">👴 Aging</text>
+  <text x="220" y="157" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.8)">§9</text>
+
+  <!-- Green flow arrows (normal cycle clockwise) -->
+  <!-- Sleep → Hygiene -->
+  <path d="M455,95 L520,135" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Hygiene → Nutrition -->
+  <path d="M640,150 L640,245" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Nutrition → Work -->
+  <path d="M640,295 L580,370" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Work → Commuting -->
+  <path d="M540,400 L490,440" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Commuting → Home Maint -->
+  <path d="M420,455 L340,455" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Home Maint → Leisure -->
+  <path d="M280,430 L220,400" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Leisure → Time Budget -->
+  <path d="M160,380 L100,285" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Time Budget → Aging -->
+  <path d="M120,255 L170,155" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+  <!-- Aging → Sleep (closes the loop) -->
+  <path d="M240,125 L370,85" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <!-- Red cascade arrows (failure propagation) -->
+  <!-- Work failure → Home Maint (can't pay bills) -->
+  <path d="M530,390 L350,445" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="440" y="420" font-size="8" fill="#c0392b" text-anchor="middle">can't pay bills</text>
+
+  <!-- Home Maint failure → Hygiene (no bathroom access) -->
+  <path d="M270,430 L180,370" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowRed)"/>
+
+  <!-- Sleep failure → Work (poor performance) -->
+  <path d="M380,115 L530,380" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="455" y="255" font-size="8" fill="#c0392b" text-anchor="middle">poor performance</text>
+
+  <!-- Aging → Work (harder to find jobs) -->
+  <path d="M260,160 L530,380" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="395" y="275" font-size="8" fill="#c0392b" text-anchor="middle">health events</text>
+
+  <!-- Leisure deficit → Stress (feeding back) -->
+  <path d="M220,370 L160,295" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowRed)"/>
+
+  <!-- Legend -->
+  <rect x="280" y="496" width="240" height="20" rx="4" fill="none"/>
+  <line x1="290" y1="506" x2="320" y2="506" stroke="#27ae60" stroke-width="2"/>
+  <text x="325" y="510" font-size="10" fill="#2c3e50">Normal flow</text>
+  <line x1="420" y1="506" x2="450" y2="506" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="455" y="510" font-size="10" fill="#2c3e50">Cascade failure</text>
+</svg>

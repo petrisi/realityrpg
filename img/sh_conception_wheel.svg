@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 550" width="500" height="550">
+  <defs>
+    <style>
+      .title { font-family: system-ui, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; text-anchor: middle; }
+      .subtitle { font-family: system-ui, sans-serif; font-size: 13px; fill: #5a6a7a; text-anchor: middle; }
+      .center-label { font-family: system-ui, sans-serif; font-size: 13px; fill: #2c3e50; text-anchor: middle; }
+      .center-emoji { font-size: 40px; text-anchor: middle; }
+      .node-label { font-family: system-ui, sans-serif; font-size: 12px; fill: #2c3e50; text-anchor: middle; }
+      .node-emoji { font-size: 18px; text-anchor: middle; }
+      .line-green { stroke: #27ae60; stroke-width: 2; fill: none; }
+      .line-orange { stroke: #e67e22; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
+      .line-red { stroke: #e74c3c; stroke-width: 2; fill: none; stroke-dasharray: 6,4; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="250" y="30" class="title">Conception Probability Modifiers</text>
+  <text x="250" y="50" class="subtitle">Roll 2d10×5 vs adjusted percentage</text>
+
+  <!-- Center circle -->
+  <circle cx="250" cy="280" r="72" fill="#ecf0f1" stroke="#34495e" stroke-width="3"/>
+  <text x="250" y="255" class="center-emoji">🤰</text>
+  <text x="250" y="280" class="center-label" font-weight="bold" font-size="14px">Base Chance</text>
+  <text x="250" y="300" class="center-label" font-weight="bold" font-size="14px">25–30% per act</text>
+
+  <!-- Node 1: 📅 Fertile window (top) — GREEN -->
+  <line x1="250" y1="208" x2="250" y2="125" class="line-green"/>
+  <circle cx="250" cy="95" r="44" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="250" y="82" class="node-emoji">📅</text>
+  <text x="250" y="100" class="node-label" font-weight="bold">Fertile window</text>
+  <text x="250" y="114" class="node-label">(days 10–16)</text>
+  <text x="250" y="128" class="node-label" fill="#27ae60" font-weight="bold">+base</text>
+
+  <!-- Node 2: 📅 Non-fertile days (upper-right) — GREEN -->
+  <line x1="305" y1="240" x2="380" y2="180" class="line-green"/>
+  <circle cx="420" cy="150" r="40" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="420" y="137" class="node-emoji">📅</text>
+  <text x="420" y="155" class="node-label" font-weight="bold">Non-fertile</text>
+  <text x="420" y="169" class="node-label">days</text>
+  <text x="420" y="183" class="node-label" fill="#27ae60" font-weight="bold">5%</text>
+
+  <!-- Node 3: 👩 Age 20-34 (lower-right) — GREEN -->
+  <line x1="305" y1="320" x2="380" y2="380" class="line-green"/>
+  <circle cx="420" cy="410" r="42" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="420" y="397" class="node-emoji">👩</text>
+  <text x="420" y="415" class="node-label" font-weight="bold">Age 20–34</text>
+  <text x="420" y="429" class="node-label">Base (peak)</text>
+
+  <!-- Node 4: 👵 Age 35-39 (lower-right-inner) — ORANGE -->
+  <line x1="295" y1="335" x2="355" y2="445" class="line-orange"/>
+  <circle cx="380" cy="470" r="42" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="380" y="457" class="node-emoji">👵</text>
+  <text x="380" y="475" class="node-label" font-weight="bold">Age 35–39</text>
+  <text x="380" y="489" class="node-label" fill="#e67e22" font-weight="bold">−5%</text>
+
+  <!-- Node 5: 👴 Age 40+ (lower-left-inner) — RED -->
+  <line x1="205" y1="335" x2="145" y2="445" class="line-red"/>
+  <circle cx="120" cy="470" r="42" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="120" y="457" class="node-emoji">👴</text>
+  <text x="120" y="475" class="node-label" font-weight="bold">Age 40+</text>
+  <text x="120" y="489" class="node-label" fill="#e74c3c" font-weight="bold">−10%</text>
+
+  <!-- Node 6: 😰 High SP (lower-left) — ORANGE -->
+  <line x1="195" y1="320" x2="120" y2="380" class="line-orange"/>
+  <circle cx="80" cy="410" r="42" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="80" y="397" class="node-emoji">😰</text>
+  <text x="80" y="415" class="node-label" font-weight="bold">High SP (&gt;10)</text>
+  <text x="80" y="429" class="node-label" fill="#e67e22" font-weight="bold">−5%</text>
+
+  <!-- Node 7: 💔 Low VIG (upper-left) — ORANGE -->
+  <line x1="195" y1="240" x2="120" y2="180" class="line-orange"/>
+  <circle cx="80" cy="150" r="42" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="80" y="137" class="node-emoji">💔</text>
+  <text x="80" y="155" class="node-label" font-weight="bold">Low VIG (&lt;4)</text>
+  <text x="80" y="169" class="node-label" fill="#e67e22" font-weight="bold">−5%</text>
+</svg>

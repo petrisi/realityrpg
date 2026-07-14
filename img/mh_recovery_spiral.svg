@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="rshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <marker id="rarrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#e67e22"/>
+    </marker>
+    <marker id="rarrowGreen" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-size="22" font-weight="700" fill="#2c3e50">Recovery Spiral</text>
+  <text x="250" y="48" text-anchor="middle" font-size="11" fill="#7f8c8d">Recovery is a spiral, not a straight line</text>
+
+  <!-- Spiral rings - centered at 250,265 -->
+  <!-- Ring 1: Crisis (outermost, red) -->
+  <g filter="url(#rshadow)">
+    <circle cx="250" cy="265" r="160" fill="none" stroke="#c0392b" stroke-width="18" opacity="0.2"/>
+    <circle cx="250" cy="265" r="160" fill="none" stroke="#c0392b" stroke-width="3"/>
+    <text x="250" y="105" text-anchor="middle" font-size="16" font-weight="700" fill="#c0392b">🔴 Crisis</text>
+  </g>
+
+  <!-- Ring 2: Seeking Help (orange) -->
+  <g filter="url(#rshadow)">
+    <circle cx="250" cy="265" r="125" fill="none" stroke="#e67e22" stroke-width="15" opacity="0.18"/>
+    <circle cx="250" cy="265" r="125" fill="none" stroke="#e67e22" stroke-width="2.5"/>
+    <text x="250" y="148" text-anchor="middle" font-size="14" font-weight="700" fill="#e67e22">🟠 Seeking Help</text>
+  </g>
+
+  <!-- Ring 3: Managing (yellow) -->
+  <g filter="url(#rshadow)">
+    <circle cx="250" cy="265" r="92" fill="none" stroke="#f39c12" stroke-width="13" opacity="0.15"/>
+    <circle cx="250" cy="265" r="92" fill="none" stroke="#f39c12" stroke-width="2.5"/>
+    <text x="250" y="188" text-anchor="middle" font-size="13" font-weight="700" fill="#d4a017">🟡 Managing</text>
+  </g>
+
+  <!-- Ring 4: Stable (green) -->
+  <g filter="url(#rshadow)">
+    <circle cx="250" cy="265" r="62" fill="none" stroke="#27ae60" stroke-width="11" opacity="0.15"/>
+    <circle cx="250" cy="265" r="62" fill="none" stroke="#27ae60" stroke-width="2.5"/>
+    <text x="250" y="218" text-anchor="middle" font-size="13" font-weight="700" fill="#27ae60">🟢 Stable</text>
+  </g>
+
+  <!-- Center: Remission -->
+  <g filter="url(#rshadow)">
+    <circle cx="250" cy="265" r="35" fill="#eafaf1" stroke="#27ae60" stroke-width="3"/>
+    <text x="250" y="260" text-anchor="middle" font-size="12" font-weight="700" fill="#27ae60">🟢</text>
+    <text x="250" y="275" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Remission</text>
+  </g>
+
+  <!-- Progress arrows going inward (clockwise spiral) -->
+  <!-- Crisis → Seeking Help -->
+  <path d="M370,200 Q380,220 370,240" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#rarrowGreen)"/>
+  <!-- Seeking Help → Managing -->
+  <path d="M350,280 Q355,295 345,310" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#rarrowGreen)"/>
+  <!-- Managing → Stable -->
+  <path d="M290,340 Q275,345 260,340" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#rarrowGreen)"/>
+  <!-- Stable → Remission -->
+  <path d="M235,310 Q230,295 235,285" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#rarrowGreen)"/>
+
+  <!-- Setback arrow - loops outward from Managing to Seeking Help -->
+  <path d="M160,290 Q110,280 110,240 Q110,200 160,185" stroke="#e67e22" stroke-width="2.5" fill="none" stroke-dasharray="8,5" marker-end="url(#rarrow)"/>
+  <text x="95" y="245" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="600" transform="rotate(-90 95 245)">setback</text>
+
+  <!-- Another setback arrow from Stable to Managing -->
+  <path d="M175,310 Q135,310 135,280" stroke="#e67e22" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#rarrow)"/>
+
+  <!-- Bottom note -->
+  <g>
+    <rect x="100" y="440" width="300" height="36" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#rshadow)"/>
+    <text x="250" y="456" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50">Recovery is a spiral, not a straight line</text>
+    <text x="250" y="469" text-anchor="middle" font-size="9" fill="#7f8c8d">Setbacks don't erase progress — you return with more tools</text>
+  </g>
+</svg>
