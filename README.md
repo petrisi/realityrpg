@@ -533,6 +533,29 @@ realityrpg/
 └── img/                          # Character portraits, diagrams, maps
 ```
 
+## 🤝 Contributing
+
+Reality RPG welcomes contributions from the community. Whether you're a writer, designer, developer, or illustrator, there's a place for you.
+
+### Areas where help is especially needed
+
+- **Illustrations and imagery:** Many diagrams and scene images in the project are AI-generated placeholders. Replacing them with hand-crafted illustrations, commissioned art, or higher-quality alternatives is one of the most impactful ways to contribute.
+- **Content writing:** Expanding mechanics, writing example scenarios, or clarifying rules.
+- **Web development:** Improving the site's accessibility, responsiveness, or navigation.
+- **Bug reports and playtesting:** Finding inconsistencies, broken links, or unclear rules.
+
+### How to contribute
+
+1. Fork the repository and create a branch for your changes.
+2. Make your changes and commit with clear, descriptive messages.
+3. Open a pull request describing what you've changed and why.
+
+For art contributions, please include attribution and licensing information. All imagery should be original or used under a license compatible with the project's goals.
+
+If you're unsure whether something is a good fit, open an issue first to discuss.
+
+---
+
 ## 📖 License
 
 This project is released under the **Creative Commons Attribution-ShareAlike 4.0 International** license. You are free to share and adapt this material for any purpose, provided you give appropriate credit and distribute your contributions under the same license.
