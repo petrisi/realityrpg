@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 340" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
   <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Item Durability &amp; Failure Rates</text>
   <text x="350" y="46" text-anchor="middle" font-size="12" fill="#7f8c8d">When durability reaches 0, the item breaks. Roll monthly/quarterly/yearly.</text>
 

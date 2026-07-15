@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 500" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 780 500" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
   <defs>
     <filter id="shadow" x="-3%" y="-3%" width="110%" height="110%">
       <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>

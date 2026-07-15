@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>The Economic Cycle of Real Life</title>
+  <desc>Perpetual feedback loop of financial pressures: Earn Income → Pay Rent → Buy Food → Maintain Car → Health Costs → Unexpected Events → Stress → Work Performance</desc>
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.1"/>
@@ -29,7 +31,7 @@
     <!-- 7→8: Stress → Work Performance -->
     <path d="M 465,135 Q 510,125 540,140"/>
     <!-- 8→1: Work Performance → Earn Income (closing loop) -->
-    <path d="M 548,155 Q 555,155 558,155"/>
+    <path d="M 530,150 Q 545,120 558,130"/>
   </g>
 
   <!-- Node 1: Earn Income (top-right) -->

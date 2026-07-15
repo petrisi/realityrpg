@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 430" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 500 430" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Union Organizing Campaign Flowchart</title>
+  <desc>Six-step flowchart from Build Support through Ratification with dice roll mechanics at each step</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/></filter>
     <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#27ae60"/></marker>
@@ -32,10 +34,10 @@
   <text x="250" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">④ Election — &gt;50% vote yes = certified</text>
   <text x="250" y="288" text-anchor="middle" font-size="10" fill="#7f8c8d">Success margin determines bargaining power</text>
 
-  <!-- Branch: employer fights -->
-  <line x1="400" y1="274" x2="440" y2="274" stroke="#e74c3c" stroke-width="1.5"/>
-  <text x="445" y="278" font-size="9" fill="#e74c3c" font-weight="600">Employer</text>
-  <text x="445" y="290" font-size="9" fill="#e74c3c" font-weight="600">counter-effort</text>
+  <!-- Branch: employer fights — arrow above text to avoid overlap -->
+  <line x1="400" y1="265" x2="440" y2="265" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="430" y="278" font-size="9" fill="#e74c3c" font-weight="600">Employer</text>
+  <text x="430" y="290" font-size="9" fill="#e74c3c" font-weight="600">counter-effort</text>
 
   <line x1="250" y1="296" x2="250" y2="318" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)"/>
 
@@ -48,5 +50,5 @@
 
   <!-- Step 6: Ratification -->
   <rect x="120" y="392" width="260" height="32" rx="16" fill="#27ae60" filter="url(#shadow)"/>
-  <text x="250" y="413" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⑥ Ratification — <tspan font-family="Consolas,monospace" fill="#ffeaa7">2d10+EXP vs TN 6</tspan></text>
+  <text x="250" y="413" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⑥ Ratification — <tspan font-family="Consolas,monospace" fill="#fff">2d10+EXP vs TN 6</tspan></text>
 </svg>

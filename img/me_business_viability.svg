@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 560 400" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Monthly Business Viability Check</title>
+  <desc>10x10 outcome grid for 2d10 vs TN 7 with color-coded cells from Crit Fail to Crit Success</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/></filter>
   </defs>
 
   <text x="200" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#2c3e50">Monthly Business Viability Check</text>
-  <text x="200" y="40" text-anchor="middle" font-size="10" fill="#7f8c8d">2d10 outcome grid · TN 7 (modified by ECS)</text>
+  <text x="200" y="36" text-anchor="middle" font-size="10" fill="#7f8c8d">2d10 outcome grid · TN 7 (modified by ECS)</text>
 
   <!-- Grid: 10x10, each cell 30x30, starting at x=50 y=55 -->
   <!-- Row labels (die 1) -->
@@ -89,14 +91,14 @@
     <text x="68" y="390">Fail (3-4): Loss −5 to −15%</text>
   </g>
   <g font-size="10" font-weight="600">
-    <rect x="200" y="365" width="12" height="12" fill="#f39c12" rx="2"/>
-    <text x="218" y="375">Fail (5-6): Barely break even</text>
-    <rect x="200" y="380" width="12" height="12" fill="#27ae60" rx="2"/>
-    <text x="218" y="390">Success (7-8): Profit 10-30%</text>
+    <rect x="230" y="365" width="12" height="12" fill="#f39c12" rx="2"/>
+    <text x="248" y="375">Fail (5-6): Barely break even</text>
+    <rect x="230" y="380" width="12" height="12" fill="#27ae60" rx="2"/>
+    <text x="248" y="390">Success (7-8): Profit 10-30%</text>
   </g>
   <g font-size="10" font-weight="600">
-    <rect x="350" y="365" width="12" height="12" fill="#1abc9c" rx="2"/>
-    <text x="368" y="375">Crit Success (9-10):</text>
-    <text x="368" y="390">Breakthrough! Revenue ×2</text>
+    <rect x="410" y="365" width="12" height="12" fill="#1abc9c" rx="2"/>
+    <text x="428" y="375">Crit Success (9-10):</text>
+    <text x="428" y="390">Breakthrough! ×2</text>
   </g>
 </svg>

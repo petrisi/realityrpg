@@ -1,69 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 720 370" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Compound Interest Growth Curves</title>
+  <desc>Three line curves showing $200/month at 8% return starting at ages 25, 35, and 45 with final values $552K, $254K, and $111K</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/></filter>
   </defs>
 
-  <text x="300" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Compound Interest: Why Starting Early Matters</text>
-  <text x="300" y="40" text-anchor="middle" font-size="11" fill="#7f8c8d">$200/month at 8% annual return</text>
+  <text x="360" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Compound Interest: Why Starting Early Matters</text>
+  <text x="360" y="40" text-anchor="middle" font-size="11" fill="#7f8c8d">$200/month at 8% annual return</text>
 
-  <!-- Chart area: x=80..560, y=55..300 -->
+  <!-- Chart area: x=80..680, y=55..300. 9 tick positions, 75px apart: 80,155,230,305,380,455,530,605,680 -->
   <!-- Grid -->
   <g stroke="#e8e8e8" stroke-width="1">
-    <line x1="80" y1="55" x2="560" y2="55"/>
-    <line x1="80" y1="115" x2="560" y2="115"/>
-    <line x1="80" y1="175" x2="560" y2="175"/>
-    <line x1="80" y1="235" x2="560" y2="235"/>
-    <line x1="80" y1="300" x2="560" y2="300"/>
+    <line x1="80" y1="55" x2="680" y2="55"/>
+    <line x1="80" y1="105" x2="680" y2="105"/>
+    <line x1="80" y1="155" x2="680" y2="155"/>
+    <line x1="80" y1="205" x2="680" y2="205"/>
+    <line x1="80" y1="255" x2="680" y2="255"/>
+    <line x1="80" y1="300" x2="680" y2="300"/>
   </g>
 
-  <!-- Y-axis: $0 to $500K -->
+  <!-- Y-axis: $0 to $600K -->
   <g font-size="10" fill="#7f8c8d" text-anchor="end">
-    <text x="72" y="59">$500K</text>
-    <text x="72" y="119">$400K</text>
-    <text x="72" y="179">$300K</text>
-    <text x="72" y="239">$200K</text>
+    <text x="72" y="59">$600K</text>
+    <text x="72" y="109">$500K</text>
+    <text x="72" y="159">$400K</text>
+    <text x="72" y="209">$300K</text>
+    <text x="72" y="259">$200K</text>
     <text x="72" y="304">$100K</text>
   </g>
 
-  <!-- X-axis: Age 25 to 65 -->
+  <!-- X-axis: Age 25 to 65 (every 5 years, 9 ticks at 75px intervals) -->
   <g font-size="10" fill="#7f8c8d" text-anchor="middle">
     <text x="80" y="318">25</text>
-    <text x="160" y="318">30</text>
-    <text x="240" y="318">35</text>
-    <text x="320" y="318">40</text>
-    <text x="400" y="318">45</text>
-    <text x="480" y="318">50</text>
-    <text x="560" y="318">65</text>
-    <text x="320" y="340" font-size="12" font-weight="600">Age →</text>
+    <text x="155" y="318">30</text>
+    <text x="230" y="318">35</text>
+    <text x="305" y="318">40</text>
+    <text x="380" y="318">45</text>
+    <text x="455" y="318">50</text>
+    <text x="530" y="318">55</text>
+    <text x="605" y="318">60</text>
+    <text x="680" y="318">65</text>
+    <text x="380" y="340" font-size="12" font-weight="600">Age →</text>
   </g>
 
-  <!-- Curve 1: Start at 25 (40 years of compounding) -->
-  <!-- $200/mo at 8% for 40 yrs ≈ $552K -->
-  <path d="M 80,300 Q 120,298 160,290 Q 200,278 240,260 Q 280,238 320,210 Q 360,178 400,145 Q 440,118 480,95 Q 520,78 560,65"
+  <!-- Curve 1: Start at 25 (40 years of compounding) — extends to x=680 (age 65) -->
+  <path d="M 80,300 Q 115,298 155,290 Q 192,278 230,260 Q 267,238 305,210 Q 342,178 380,145 Q 417,118 455,95 Q 492,78 530,68 Q 605,60 680,58"
         fill="none" stroke="#27ae60" stroke-width="3" stroke-linecap="round" filter="url(#shadow)"/>
 
-  <!-- Curve 2: Start at 35 (30 years) -->
-  <!-- $200/mo at 8% for 30 yrs ≈ $254K -->
-  <path d="M 80,300 L 240,300 Q 280,298 320,285 Q 360,268 400,245 Q 440,220 480,195 Q 520,178 560,165"
+  <!-- Curve 2: Start at 35 (30 years) — starts flat at 35, then grows to age 65 -->
+  <path d="M 80,300 L 230,300 Q 267,298 305,285 Q 342,268 380,245 Q 417,220 455,195 Q 492,178 530,165 Q 605,155 680,150"
         fill="none" stroke="#f39c12" stroke-width="3" stroke-linecap="round" stroke-dasharray="8,4" filter="url(#shadow)"/>
 
-  <!-- Curve 3: Start at 45 (20 years) -->
-  <!-- $200/mo at 8% for 20 yrs ≈ $111K -->
-  <path d="M 80,300 L 400,300 Q 440,298 480,290 Q 520,282 560,275"
+  <!-- Curve 3: Start at 45 (20 years) — starts flat at 45, then grows to age 65 -->
+  <path d="M 80,300 L 380,300 Q 417,298 455,290 Q 492,282 530,275 Q 605,265 680,260"
         fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round" stroke-dasharray="4,4" filter="url(#shadow)"/>
 
-  <!-- Annotations -->
-  <rect x="370" y="50" width="130" height="22" rx="4" fill="#27ae60" opacity="0.9"/>
-  <text x="435" y="65" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Start at 25: $552K</text>
+  <!-- Annotations — shifted right to align with extended chart -->
+  <rect x="480" y="45" width="130" height="22" rx="4" fill="#27ae60" opacity="0.9"/>
+  <text x="545" y="60" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Start at 25: $552K</text>
 
-  <rect x="370" y="155" width="130" height="22" rx="4" fill="#f39c12" opacity="0.9"/>
-  <text x="435" y="170" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Start at 35: $254K</text>
+  <rect x="480" y="140" width="130" height="22" rx="4" fill="#f39c12" opacity="0.9"/>
+  <text x="545" y="155" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Start at 35: $254K</text>
 
-  <rect x="370" y="265" width="130" height="22" rx="4" fill="#e74c3c" opacity="0.9"/>
-  <text x="435" y="280" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Start at 45: $111K</text>
+  <rect x="480" y="250" width="130" height="22" rx="4" fill="#e74c3c" opacity="0.9"/>
+  <text x="545" y="265" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Start at 45: $111K</text>
 
   <!-- Legend -->
-  <text x="100" y="50" font-size="10" font-weight="600" fill="#27ae60">━━ Start at 25</text>
-  <text x="200" y="50" font-size="10" font-weight="600" fill="#f39c12">┈┈ Start at 35</text>
-  <text x="310" y="50" font-size="10" font-weight="600" fill="#e74c3c">┄┄ Start at 45</text>
+  <text x="100" y="55" font-size="10" font-weight="600" fill="#27ae60">━━ Start at 25</text>
+  <text x="200" y="55" font-size="10" font-weight="600" fill="#f39c12">┈┈ Start at 35</text>
+  <text x="310" y="55" font-size="10" font-weight="600" fill="#e74c3c">┄┄ Start at 45</text>
 </svg>

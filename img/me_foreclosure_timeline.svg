@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 500 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Foreclosure Escalation Timeline</title>
+  <desc>Five-stage escalation from Late Fee to Eviction with SP penalties and credit damage at each stage</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
   </defs>
@@ -47,4 +49,5 @@
   <!-- Bottom warning -->
   <rect x="125" y="365" width="340" height="30" rx="6" fill="#2c3e50"/>
   <text x="295" y="384" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Campaign-altering event · Treat with narrative weight</text>
+  <text x="295" y="410" text-anchor="middle" font-size="8" fill="#7f8c8d">* Trauma: permanent psychological condition — see Mental Health rules</text>
 </svg>

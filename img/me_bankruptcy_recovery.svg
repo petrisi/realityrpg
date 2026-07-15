@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 600 300" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Post-Bankruptcy Credit Recovery Path</title>
+  <desc>Recovery curve from 300 to 780+ credit score over 7 years with milestone markers at key thresholds</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/></filter>
     <linearGradient id="recoverGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#27ae60"/>
-      <stop offset="100%" stop-color="#c0392b"/>
+      <stop offset="0%" stop-color="#c0392b"/>
+      <stop offset="100%" stop-color="#27ae60"/>
     </linearGradient>
   </defs>
 

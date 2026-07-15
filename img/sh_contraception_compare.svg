@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 530" width="600" height="530" role="img" aria-label="Contraception Effectiveness Comparison Bar Chart">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 600 530" width="600" height="530" role="img" aria-label="Contraception Effectiveness Comparison Bar Chart">
   <style>
     .title { font: bold 18px system-ui, sans-serif; fill: #2c3e50; }
     .label { font: 13px system-ui, sans-serif; fill: #2c3e50; }

@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 600 400" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Investment Risk vs Return Matrix</title>
+  <desc>Scatter plot of 6 investment types (Bonds, Index Funds, REITs, Stocks, Private Biz, Crypto) plotted by risk level vs return</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
   </defs>
@@ -13,16 +15,20 @@
     <line x1="100" y1="210" x2="550" y2="210"/>
     <line x1="100" y1="290" x2="550" y2="290"/>
     <line x1="100" y1="340" x2="550" y2="340"/>
+    <!-- Vertical grid lines -->
+    <line x1="210" y1="50" x2="210" y2="340"/>
+    <line x1="320" y1="50" x2="320" y2="340"/>
+    <line x1="430" y1="50" x2="430" y2="340"/>
   </g>
 
   <!-- X-axis labels: Risk (Low → Extreme) -->
   <g font-size="10" fill="#7f8c8d" text-anchor="middle">
     <text x="100" y="360">Low</text>
     <text x="210" y="360">Medium</text>
-    <text x="320" y="360">High</text>
+    <text x="320" y="355">High</text>
     <text x="430" y="360">Very High</text>
     <text x="550" y="360">Extreme</text>
-    <text x="325" y="390" font-size="12" font-weight="600">Risk Level →</text>
+    <text x="325" y="370" font-size="12" font-weight="600">Risk Level →</text>
   </g>
 
   <!-- Y-axis labels: Return -->
@@ -67,11 +73,11 @@
   <text x="555" y="104" font-size="10" font-weight="600" fill="#e74c3c">Crypto</text>
 
   <!-- Risk zones -->
-  <rect x="100" y="50" width="80" height="290" fill="#27ae60" opacity="0.05" rx="4"/>
-  <rect x="180" y="50" width="120" height="290" fill="#2980b9" opacity="0.05" rx="4"/>
-  <rect x="300" y="50" width="110" height="290" fill="#f39c12" opacity="0.05" rx="4"/>
-  <rect x="410" y="50" width="110" height="290" fill="#e67e22" opacity="0.05" rx="4"/>
-  <rect x="520" y="50" width="30" height="290" fill="#e74c3c" opacity="0.05" rx="4"/>
+  <rect x="100" y="50" width="80" height="290" fill="#27ae60" opacity="0.03" rx="4"/>
+  <rect x="180" y="50" width="120" height="290" fill="#2980b9" opacity="0.03" rx="4"/>
+  <rect x="300" y="50" width="110" height="290" fill="#f39c12" opacity="0.03" rx="4"/>
+  <rect x="410" y="50" width="110" height="290" fill="#e67e22" opacity="0.03" rx="4"/>
+  <rect x="520" y="50" width="30" height="290" fill="#e74c3c" opacity="0.03" rx="4"/>
 
   <!-- Size = volatility range -->
   <text x="300" y="380" text-anchor="middle" font-size="10" fill="#7f8c8d">Dot size = volatility range · Bigger dot = wider possible outcomes</text>

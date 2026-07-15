@@ -1,87 +1,141 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 750 780" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Career Ladder Salary Comparison</title>
+  <desc>Grouped bar chart comparing salary ranges across 6 career paths (Corporate, Tech, Healthcare, Trades, Federal, Education) at 6 levels</desc>
   <defs>
     <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/></filter>
   </defs>
 
-  <text x="300" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Career Ladder Salary Comparison</text>
-  <text x="300" y="40" text-anchor="middle" font-size="10" fill="#7f8c8d">Same level, different pay — compare career paths</text>
+  <text x="375" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Career Ladder Salary Comparison</text>
+  <text x="375" y="40" text-anchor="middle" font-size="10" fill="#7f8c8d">Same level, different pay — compare career paths</text>
 
-  <!-- Horizontal bars for each career at each level -->
-  <!-- Y positions: L1=60, L2=100, L3=140, L4=180, L5=220, L6=260 -->
-  <!-- X scale: $0..$600K maps to 120..560 -->
+  <!-- X-axis: $0..$600K maps to 150..710 (560px wide) -->
+  <!-- Each level: 6 career bars, 14px tall, 4px gap = 18px per career, 6*18 = 108px per level + 16px gap between levels = 124px per level -->
+  <!-- 6 levels * 124 = 744px. y starts at 55, ends at ~800. -->
 
-  <g font-size="10" font-weight="600" fill="#2c3e50" text-anchor="end">
-    <text x="115" y="64">Level 1</text>
-    <text x="115" y="104">Level 2</text>
-    <text x="115" y="144">Level 3</text>
-    <text x="115" y="184">Level 4</text>
-    <text x="115" y="224">Level 5</text>
-    <text x="115" y="264">Level 6</text>
+  <!-- Grid lines — extended to cover all 6 levels -->
+  <g stroke="#e8e8e8" stroke-width="1">
+    <line x1="150" y1="55" x2="710" y2="55"/>
+    <line x1="150" y1="179" x2="710" y2="179"/>
+    <line x1="150" y1="303" x2="710" y2="303"/>
+    <line x1="150" y1="427" x2="710" y2="427"/>
+    <line x1="150" y1="551" x2="710" y2="551"/>
+    <line x1="150" y1="675" x2="710" y2="675"/>
   </g>
 
-  <!-- Corporate: $40-60K, $60-90K, $90-130K, $130-180K, $180-300K, $300K-1M -->
-  <g filter="url(#shadow)">
-    <rect x="125" y="52" width="30" height="16" rx="3" fill="#2980b9" opacity="0.8"/>
-    <rect x="125" y="92" width="50" height="16" rx="3" fill="#2980b9" opacity="0.8"/>
-    <rect x="125" y="132" width="83" height="16" rx="3" fill="#2980b9" opacity="0.8"/>
-    <rect x="125" y="172" width="113" height="16" rx="3" fill="#2980b9" opacity="0.8"/>
-    <rect x="125" y="212" width="163" height="16" rx="3" fill="#2980b9" opacity="0.8"/>
-    <rect x="125" y="252" width="200" height="16" rx="3" fill="#2980b9" opacity="0.8"/>
+  <!-- X-axis scale labels — moved down below all levels -->
+  <g font-size="10" fill="#7f8c8d" text-anchor="middle">
+    <text x="150" y="720">$0</text>
+    <text x="243" y="720">$100K</text>
+    <text x="337" y="720">$200K</text>
+    <text x="430" y="720">$300K</text>
+    <text x="523" y="720">$400K</text>
+    <text x="617" y="720">$500K</text>
+    <text x="710" y="720">$600K</text>
   </g>
 
-  <!-- Healthcare: $30-45K, $45-60K, $60-95K, $95-130K, $180-400K -->
-  <g filter="url(#shadow)">
-    <rect x="125" y="52" width="23" height="16" rx="3" fill="#27ae60" opacity="0.6"/>
-    <rect x="125" y="92" width="38" height="16" rx="3" fill="#27ae60" opacity="0.6"/>
-    <rect x="125" y="132" width="68" height="16" rx="3" fill="#27ae60" opacity="0.6"/>
-    <rect x="125" y="172" width="83" height="16" rx="3" fill="#27ae60" opacity="0.6"/>
-    <rect x="125" y="212" width="163" height="16" rx="3" fill="#27ae60" opacity="0.6"/>
+  <!-- Career name labels (left column, end-anchored) -->
+  <g font-size="8" fill="#7f8c8d" text-anchor="end">
+    <!-- Level 1 labels -->
+    <text x="142" y="68">Corporate</text>
+    <text x="142" y="86">Healthcare</text>
+    <text x="142" y="104">Tech</text>
+    <text x="142" y="122">Trades</text>
+    <text x="142" y="140">Federal</text>
+    <text x="142" y="158">Education</text>
+    <!-- Level 2 labels -->
+    <text x="142" y="192">Corporate</text>
+    <text x="142" y="210">Healthcare</text>
+    <text x="142" y="228">Tech</text>
+    <text x="142" y="246">Trades</text>
+    <text x="142" y="264">Federal</text>
+    <text x="142" y="282">Education</text>
+    <!-- Level 3 labels -->
+    <text x="142" y="316">Corporate</text>
+    <text x="142" y="334">Healthcare</text>
+    <text x="142" y="352">Tech</text>
+    <text x="142" y="370">Trades</text>
+    <text x="142" y="388">Federal</text>
+    <text x="142" y="406">Education</text>
+    <!-- Level 4 labels -->
+    <text x="142" y="440">Corporate</text>
+    <text x="142" y="458">Healthcare</text>
+    <text x="142" y="476">Tech</text>
+    <text x="142" y="494">Trades</text>
+    <text x="142" y="512">Federal</text>
+    <text x="142" y="530">Education</text>
+    <!-- Level 5 labels -->
+    <text x="142" y="564">Corporate</text>
+    <text x="142" y="582">Healthcare</text>
+    <text x="142" y="600">Tech</text>
+    <text x="142" y="618">Trades</text>
+    <text x="142" y="636">Federal</text>
+    <text x="142" y="654">Education</text>
+    <!-- Level 6 labels -->
+    <text x="142" y="688">Corporate</text>
+    <text x="142" y="706">Tech</text>
   </g>
 
-  <!-- Tech: $60-90K, $90-140K, $140-200K, $200-300K, $200-350K, $300-600K -->
-  <g filter="url(#shadow)">
-    <rect x="125" y="52" width="50" height="16" rx="3" fill="#e67e22" opacity="0.8"/>
-    <rect x="125" y="92" width="83" height="16" rx="3" fill="#e67e22" opacity="0.8"/>
-    <rect x="125" y="132" width="113" height="16" rx="3" fill="#e67e22" opacity="0.8"/>
-    <rect x="125" y="172" width="140" height="16" rx="3" fill="#e67e22" opacity="0.8"/>
-    <rect x="125" y="212" width="153" height="16" rx="3" fill="#e67e22" opacity="0.8"/>
-    <rect x="125" y="252" width="200" height="16" rx="3" fill="#e67e22" opacity="0.8"/>
+  <!-- Level labels (to the left of career names) -->
+  <g font-size="11" font-weight="600" fill="#2c3e50" text-anchor="end">
+    <text x="100" y="118">L1</text>
+    <text x="100" y="242">L2</text>
+    <text x="100" y="366">L3</text>
+    <text x="100" y="490">L4</text>
+    <text x="100" y="614">L5</text>
+    <text x="100" y="702">L6</text>
   </g>
 
-  <!-- Trades: $30-45K, $45-70K, $70-100K, $80-120K, $100-250K -->
-  <g filter="url(#shadow)">
-    <rect x="125" y="52" width="23" height="16" rx="3" fill="#f39c12" opacity="0.6"/>
-    <rect x="125" y="92" width="55" height="16" rx="3" fill="#f39c12" opacity="0.6"/>
-    <rect x="125" y="132" width="73" height="16" rx="3" fill="#f39c12" opacity="0.6"/>
-    <rect x="125" y="172" width="93" height="16" rx="3" fill="#f39c12" opacity="0.6"/>
-    <rect x="125" y="212" width="127" height="16" rx="3" fill="#f39c12" opacity="0.6"/>
-  </g>
+  <!-- ===== LEVEL 1 (y base = 55) ===== -->
+  <rect x="150" y="55" width="56" height="14" rx="3" fill="#2980b9" filter="url(#shadow)"/>
+  <rect x="150" y="73" width="42" height="14" rx="3" fill="#27ae60" filter="url(#shadow)"/>
+  <rect x="150" y="91" width="84" height="14" rx="3" fill="#e67e22" filter="url(#shadow)"/>
+  <rect x="150" y="109" width="42" height="14" rx="3" fill="#f39c12" filter="url(#shadow)"/>
+  <rect x="150" y="127" width="53" height="14" rx="3" fill="#8e44ad" filter="url(#shadow)"/>
+  <rect x="150" y="145" width="65" height="14" rx="3" fill="#1abc9c" filter="url(#shadow)"/>
 
-  <!-- Federal GS: $30-55K, $55-85K, $85-115K, $115-165K, $165-220K -->
-  <g filter="url(#shadow)">
-    <rect x="125" y="52" width="35" height="16" rx="3" fill="#8e44ad" opacity="0.6"/>
-    <rect x="125" y="92" width="65" height="16" rx="3" fill="#8e44ad" opacity="0.6"/>
-    <rect x="125" y="132" width="93" height="16" rx="3" fill="#8e44ad" opacity="0.6"/>
-    <rect x="125" y="172" width="123" height="16" rx="3" fill="#8e44ad" opacity="0.6"/>
-    <rect x="125" y="212" width="147" height="16" rx="3" fill="#8e44ad" opacity="0.6"/>
-  </g>
+  <!-- ===== LEVEL 2 (y base = 179) ===== -->
+  <rect x="150" y="179" width="84" height="14" rx="3" fill="#2980b9" filter="url(#shadow)"/>
+  <rect x="150" y="197" width="56" height="14" rx="3" fill="#27ae60" filter="url(#shadow)"/>
+  <rect x="150" y="215" width="131" height="14" rx="3" fill="#e67e22" filter="url(#shadow)"/>
+  <rect x="150" y="233" width="65" height="14" rx="3" fill="#f39c12" filter="url(#shadow)"/>
+  <rect x="150" y="251" width="79" height="14" rx="3" fill="#8e44ad" filter="url(#shadow)"/>
+  <rect x="150" y="269" width="79" height="14" rx="3" fill="#1abc9c" filter="url(#shadow)"/>
 
-  <!-- Education: $45-70K, $65-85K, $75-100K, $85-120K, $100-180K -->
-  <g filter="url(#shadow)">
-    <rect x="125" y="52" width="38" height="16" rx="3" fill="#1abc9c" opacity="0.6"/>
-    <rect x="125" y="92" width="65" height="16" rx="3" fill="#1abc9c" opacity="0.6"/>
-    <rect x="125" y="132" width="78" height="16" rx="3" fill="#1abc9c" opacity="0.6"/>
-    <rect x="125" y="172" width="93" height="16" rx="3" fill="#1abc9c" opacity="0.6"/>
-    <rect x="125" y="212" width="113" height="16" rx="3" fill="#1abc9c" opacity="0.6"/>
-  </g>
+  <!-- ===== LEVEL 3 (y base = 303) ===== -->
+  <rect x="150" y="303" width="121" height="14" rx="3" fill="#2980b9" filter="url(#shadow)"/>
+  <rect x="150" y="321" width="88" height="14" rx="3" fill="#27ae60" filter="url(#shadow)"/>
+  <rect x="150" y="339" width="187" height="14" rx="3" fill="#e67e22" filter="url(#shadow)"/>
+  <rect x="150" y="357" width="93" height="14" rx="3" fill="#f39c12" filter="url(#shadow)"/>
+  <rect x="150" y="375" width="112" height="14" rx="3" fill="#8e44ad" filter="url(#shadow)"/>
+  <rect x="150" y="393" width="93" height="14" rx="3" fill="#1abc9c" filter="url(#shadow)"/>
 
-  <!-- Legend -->
-  <g font-size="9" font-weight="600">
-    <rect x="125" y="285" width="10" height="10" rx="2" fill="#2980b9"/><text x="140" y="294">Corporate</text>
-    <rect x="200" y="285" width="10" height="10" rx="2" fill="#e67e22"/><text x="215" y="294">Tech</text>
-    <rect x="260" y="285" width="10" height="10" rx="2" fill="#27ae60"/><text x="275" y="294">Healthcare</text>
-    <rect x="350" y="285" width="10" height="10" rx="2" fill="#f39c12"/><text x="365" y="294">Trades</text>
-    <rect x="420" y="285" width="10" height="10" rx="2" fill="#8e44ad"/><text x="435" y="294">Federal</text>
-    <rect x="490" y="285" width="10" height="10" rx="2" fill="#1abc9c"/><text x="505" y="294">Education</text>
+  <!-- ===== LEVEL 4 (y base = 427) ===== -->
+  <rect x="150" y="427" width="171" height="14" rx="3" fill="#2980b9" filter="url(#shadow)"/>
+  <rect x="150" y="445" width="121" height="14" rx="3" fill="#27ae60" filter="url(#shadow)"/>
+  <rect x="150" y="463" width="280" height="14" rx="3" fill="#e67e22" filter="url(#shadow)"/>
+  <rect x="150" y="481" width="112" height="14" rx="3" fill="#f39c12" filter="url(#shadow)"/>
+  <rect x="150" y="499" width="154" height="14" rx="3" fill="#8e44ad" filter="url(#shadow)"/>
+  <rect x="150" y="517" width="112" height="14" rx="3" fill="#1abc9c" filter="url(#shadow)"/>
+
+  <!-- ===== LEVEL 5 (y base = 551) ===== -->
+  <rect x="150" y="551" width="280" height="14" rx="3" fill="#2980b9" filter="url(#shadow)"/>
+  <rect x="150" y="569" width="373" height="14" rx="3" fill="#27ae60" filter="url(#shadow)"/>
+  <rect x="150" y="587" width="327" height="14" rx="3" fill="#e67e22" filter="url(#shadow)"/>
+  <rect x="150" y="605" width="233" height="14" rx="3" fill="#f39c12" filter="url(#shadow)"/>
+  <rect x="150" y="623" width="205" height="14" rx="3" fill="#8e44ad" filter="url(#shadow)"/>
+  <rect x="150" y="641" width="171" height="14" rx="3" fill="#1abc9c" filter="url(#shadow)"/>
+
+  <!-- ===== LEVEL 6 (y base = 675) ===== -->
+  <rect x="150" y="675" width="560" height="14" rx="3" fill="#2980b9" filter="url(#shadow)"/>
+  <rect x="150" y="693" width="560" height="14" rx="3" fill="#e67e22" filter="url(#shadow)"/>
+
+  <!-- Legend — moved below the X-axis labels -->
+  <g font-size="10" font-weight="600">
+    <rect x="150" y="745" width="12" height="12" rx="2" fill="#2980b9"/><text x="168" y="755">Corporate</text>
+    <rect x="240" y="745" width="12" height="12" rx="2" fill="#e67e22"/><text x="258" y="755">Tech</text>
+    <rect x="310" y="745" width="12" height="12" rx="2" fill="#27ae60"/><text x="328" y="755">Healthcare</text>
+    <rect x="410" y="745" width="12" height="12" rx="2" fill="#f39c12"/><text x="428" y="755">Trades</text>
+    <rect x="480" y="745" width="12" height="12" rx="2" fill="#8e44ad"/><text x="498" y="755">Federal</text>
+    <rect x="560" y="745" width="12" height="12" rx="2" fill="#1abc9c"/><text x="578" y="755">Education</text>
   </g>
 </svg>

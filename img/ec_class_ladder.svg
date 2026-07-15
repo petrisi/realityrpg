@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 555" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 555" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Socioeconomic Spectrum</title>
+  <desc>Eight character rows across five class tiers (Wealthy to Poor) with monthly discretionary income bars</desc>
   <defs>
     <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
@@ -24,15 +26,15 @@
   <!-- Band widths: 600px for income bars. Circle at cx=110, bar track x=135, width=500, fill scaled to $2050 max -->
   <!-- Each row needs ~36px: 14px circle + 12px name + 5px top/bottom padding = 36px per row -->
   <!-- Wealthy: 1 row (Elaine), height=46, y=70 -->
-  <rect x="80" y="70" width="600" height="46" rx="6" fill="#d4efdf" opacity="0.5"/>
+  <rect x="80" y="70" width="600" height="46" rx="6" fill="#d4efdf"/>
   <!-- Upper Mid: 2 rows (Mei, Raj), height=92, y=126 -->
-  <rect x="80" y="126" width="600" height="92" rx="6" fill="#d5f5e3" opacity="0.5"/>
+  <rect x="80" y="126" width="600" height="92" rx="6" fill="#d5f5e3"/>
   <!-- Middle: 1 row (Tallulah), height=46, y=228 -->
-  <rect x="80" y="228" width="600" height="46" rx="6" fill="#fef9e7" opacity="0.5"/>
+  <rect x="80" y="228" width="600" height="46" rx="6" fill="#fef9e7"/>
   <!-- Working: 3 rows (Marcus, Youssef, Derek), height=138, y=284 -->
-  <rect x="80" y="284" width="600" height="138" rx="6" fill="#fdebd0" opacity="0.5"/>
+  <rect x="80" y="284" width="600" height="138" rx="6" fill="#fdebd0"/>
   <!-- Poor: 1 row (Carlos), height=46, y=432 -->
-  <rect x="80" y="432" width="600" height="46" rx="6" fill="#fadbd8" opacity="0.5"/>
+  <rect x="80" y="432" width="600" height="46" rx="6" fill="#fadbd8"/>
 
   <!-- Tier labels (left column, end-anchored at x=75, centered in each band) -->
   <text x="75" y="95" text-anchor="end" font-size="12" font-weight="700" fill="#27ae60">Wealthy</text>
@@ -42,7 +44,6 @@
   <text x="75" y="457" text-anchor="end" font-size="12" font-weight="700" fill="#e74c3c">Poor</text>
 
   <!-- ===== CHARACTER ROWS ===== -->
-  <!-- Circles vertically centered within each band. Bar centered on circle. Name below at cy+16 -->
 
   <!-- Row 1: Elaine — Wealthy band center cy=93 ($2,050 fill=500px) -->
   <circle cx="110" cy="93" r="14" fill="#f39c12" filter="url(#shadow)"/>
@@ -60,11 +61,13 @@
   <rect x="135" y="149" width="207" height="16" rx="4" fill="#2ecc71"/>
   <text x="352" y="161" font-size="9" font-weight="700" fill="#2c3e50">$850</text>
 
-  <!-- Row 3: Raj — Upper Mid band, bottom row cy=190 (−$300 fill=0) -->
+  <!-- Row 3: Raj — Upper Mid band, bottom row cy=190 (−$300 negative bar) -->
   <circle cx="110" cy="190" r="14" fill="#e74c3c" filter="url(#shadow)"/>
   <text x="110" y="194" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">R</text>
   <text x="110" y="210" text-anchor="middle" font-size="7" fill="#7f8c8d">Raj</text>
   <rect x="135" y="185" width="500" height="16" rx="4" fill="#e8ecef"/>
+  <!-- Negative bar: $300/$2050 * 500 = 73px, shown as red bar left of track, stopping before circle -->
+  <rect x="100" y="185" width="35" height="16" rx="4" fill="#e74c3c"/>
   <text x="142" y="197" font-size="9" font-weight="700" fill="#e74c3c">−$300 ⚠️</text>
 
   <!-- Row 4: Tallulah — Middle band center cy=251 ($1,300 fill=317px) -->
@@ -99,13 +102,13 @@
   <rect x="135" y="384" width="293" height="16" rx="4" fill="#e67e22"/>
   <text x="438" y="396" font-size="9" font-weight="700" fill="#2c3e50">$1,200</text>
 
-  <!-- Row 8: Carlos — Poor band center cy=455 (~$0 fill=0) -->
+  <!-- Row 8: Carlos — Poor band center cy=455 (~$0 fill=8px min) -->
   <circle cx="110" cy="455" r="14" fill="#27ae60" filter="url(#shadow)"/>
   <text x="110" y="459" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">C</text>
   <text x="110" y="475" text-anchor="middle" font-size="7" fill="#7f8c8d">Carlos</text>
   <rect x="135" y="450" width="500" height="16" rx="4" fill="#e8ecef"/>
-  <rect x="135" y="450" width="4" height="16" rx="2" fill="#e74c3c"/>
-  <text x="149" y="462" font-size="9" font-weight="700" fill="#e74c3c">~$0 ⚠️</text>
+  <rect x="135" y="450" width="8" height="16" rx="2" fill="#e74c3c"/>
+  <text x="153" y="462" font-size="9" font-weight="700" fill="#e74c3c">~$0 ⚠️</text>
 
   <!-- ===== KEY INSIGHT BOX ===== -->
   <rect x="80" y="497" width="600" height="42" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1" filter="url(#shadow)"/>

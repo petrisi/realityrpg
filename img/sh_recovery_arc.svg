@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Recovery Arc — Nonlinear Healing chart showing 4-phase therapy progression with setbacks">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 500" width="700" height="500" role="img" aria-label="Recovery Arc — Nonlinear Healing chart showing 4-phase therapy progression with setbacks">
   <style>
     text { font-family: system-ui, sans-serif; }
     .zone-label { font-size: 13px; fill: #555; font-weight: 500; }

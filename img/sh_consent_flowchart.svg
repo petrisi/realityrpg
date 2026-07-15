@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700">
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 700" width="800" height="700">
   <defs>
     <!-- Arrowhead markers -->
     <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
