@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 350" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Credit Score Calculation Formula</text>
+
+  <!-- 5 Input boxes -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="50" width="110" height="60" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="85" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">Payment</text>
+    <text x="85" y="88" text-anchor="middle" font-size="11" fill="#2980b9">History</text>
+    <text x="85" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">35%</text>
+
+    <rect x="155" y="50" width="110" height="60" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="210" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">Amounts</text>
+    <text x="210" y="88" text-anchor="middle" font-size="11" fill="#2980b9">Owed</text>
+    <text x="210" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">30%</text>
+
+    <rect x="280" y="50" width="110" height="60" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="335" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">Length of</text>
+    <text x="335" y="88" text-anchor="middle" font-size="11" fill="#2980b9">History</text>
+    <text x="335" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#f39c12">15%</text>
+
+    <rect x="405" y="50" width="110" height="60" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="460" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">New</text>
+    <text x="460" y="88" text-anchor="middle" font-size="11" fill="#2980b9">Credit</text>
+    <text x="460" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#f39c12">10%</text>
+
+    <rect x="530" y="50" width="110" height="60" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="585" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">Credit</text>
+    <text x="585" y="88" text-anchor="middle" font-size="11" fill="#2980b9">Mix</text>
+    <text x="585" y="104" text-anchor="middle" font-size="13" font-weight="700" fill="#f39c12">10%</text>
+  </g>
+
+  <!-- Arrows down to formula -->
+  <g stroke="#2c3e50" stroke-width="1.5" opacity="0.4">
+    <line x1="85" y1="110" x2="200" y2="145"/>
+    <line x1="210" y1="110" x2="250" y2="145"/>
+    <line x1="335" y1="110" x2="350" y2="145"/>
+    <line x1="460" y1="110" x2="450" y2="145"/>
+    <line x1="585" y1="110" x2="500" y2="145"/>
+  </g>
+
+  <!-- Formula box 1: Weighted average -->
+  <rect x="130" y="145" width="440" height="50" rx="8" fill="#fdf2e9" stroke="#e67e22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="350" y="168" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">Raw Score = (Payment×0.35) + (Amounts×0.30) + (Length×0.15) + (New×0.10) + (Mix×0.10)</text>
+  <text x="350" y="186" text-anchor="middle" font-size="11" fill="#7f8c8d">Each component scored 0–100 · Weighted average gives Raw Score 0–100</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="195" x2="350" y2="220" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="345,218 355,218 350,228" fill="#2c3e50"/>
+
+  <!-- Formula box 2: FICO scaling -->
+  <rect x="150" y="225" width="400" height="50" rx="8" fill="#f0faf4" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="350" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">FICO Score = 300 + (Raw Score × 5.5)</text>
+  <text x="350" y="266" text-anchor="middle" font-size="11" fill="#7f8c8d">Scales Raw Score 0–100 → FICO range 300–850</text>
+
+  <!-- Worked example -->
+  <rect x="100" y="290" width="500" height="50" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1" filter="url(#shadow)"/>
+  <text x="350" y="310" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50">Example: Payment 80, Amounts 60, Length 50, New 90, Mix 60</text>
+  <text x="350" y="328" text-anchor="middle" font-size="11" fill="#2c3e50">Raw = 28+18+7.5+9+6 = 68.5 → FICO = 300+(68.5×5.5) = <tspan font-weight="700" fill="#27ae60">677</tspan></text>
+</svg>

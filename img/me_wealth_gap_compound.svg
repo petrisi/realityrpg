@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/></filter>
+  </defs>
+
+  <text x="300" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">The Wealth Gap Compounds Over Time</text>
+  <text x="300" y="40" text-anchor="middle" font-size="11" fill="#7f8c8d">Without either character changing their behavior</text>
+
+  <!-- Chart area: x=80..560, y=55..280 -->
+  <g stroke="#e8e8e8" stroke-width="1">
+    <line x1="80" y1="55" x2="560" y2="55"/>
+    <line x1="80" y1="120" x2="560" y2="120"/>
+    <line x1="80" y1="185" x2="560" y2="185"/>
+    <line x1="80" y1="250" x2="560" y2="250"/>
+    <line x1="80" y1="280" x2="560" y2="280"/>
+  </g>
+
+  <!-- Y-axis -->
+  <g font-size="10" fill="#7f8c8d" text-anchor="end">
+    <text x="72" y="59">$300K</text>
+    <text x="72" y="124">$200K</text>
+    <text x="72" y="189">$100K</text>
+    <text x="72" y="254">$0</text>
+    <text x="72" y="284">−$50K</text>
+  </g>
+
+  <!-- X-axis -->
+  <g font-size="10" fill="#7f8c8d" text-anchor="middle">
+    <text x="80" y="300">Year 0</text>
+    <text x="220" y="300">Year 5</text>
+    <text x="360" y="300">Year 10</text>
+    <text x="500" y="300">Year 20</text>
+    <text x="320" y="330" font-size="12" font-weight="600">Time →</text>
+  </g>
+
+  <!-- Wealthy curve: $100K at 8% → $172K at yr 10 → $466K at yr 20 -->
+  <path d="M 80,185 Q 150,175 220,162 Q 290,148 360,130 Q 430,100 500,65 Q 540,58 560,55"
+        fill="none" stroke="#27ae60" stroke-width="3" stroke-linecap="round" filter="url(#shadow)"/>
+
+  <!-- Poor curve: $0, can't invest, may go into debt -->
+  <path d="M 80,250 Q 150,252 220,255 Q 290,258 360,260 Q 430,265 500,272 Q 540,277 560,280"
+        fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round" filter="url(#shadow)"/>
+
+  <!-- Gap arrow at year 0 -->
+  <line x1="80" y1="185" x2="80" y2="250" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="75,188 85,188 80,180" fill="#8e44ad"/>
+  <polygon points="75,247 85,247 80,255" fill="#8e44ad"/>
+  <rect x="10" y="210" width="60" height="20" rx="4" fill="#8e44ad"/>
+  <text x="40" y="224" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">$100K</text>
+
+  <!-- Gap arrow at year 10 -->
+  <line x1="360" y1="130" x2="360" y2="260" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="355,133 365,133 360,125" fill="#8e44ad"/>
+  <polygon points="355,257 365,257 360,265" fill="#8e44ad"/>
+  <rect x="370" y="185" width="70" height="20" rx="4" fill="#8e44ad"/>
+  <text x="405" y="199" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">$172K</text>
+
+  <!-- Gap arrow at year 20 -->
+  <line x1="500" y1="65" x2="500" y2="272" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="495,68 505,68 500,60" fill="#8e44ad"/>
+  <polygon points="495,269 505,269 500,277" fill="#8e44ad"/>
+  <rect x="510" y="155" width="80" height="20" rx="4" fill="#8e44ad"/>
+  <text x="550" y="169" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">$466K+</text>
+
+  <!-- Legend -->
+  <text x="80" y="48" font-size="10" font-weight="600" fill="#27ae60">━━ Wealthy ($100K invested at 8%)</text>
+  <text x="310" y="48" font-size="10" font-weight="600" fill="#e74c3c">━━ Poor ($0, survival mode)</text>
+</svg>

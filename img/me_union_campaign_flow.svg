@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 430" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#27ae60"/></marker>
+  </defs>
+
+  <text x="250" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Union Organizing Campaign Flowchart</text>
+
+  <!-- Step 1 -->
+  <rect x="100" y="42" width="300" height="44" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="62" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">① Build Support</text>
+  <text x="250" y="78" text-anchor="middle" font-size="10" fill="#7f8c8d"><tspan font-family="Consolas,monospace" fill="#e67e22">2d10+EXP vs TN 7</tspan> · Need 30% auth cards · 3–9 months</text>
+
+  <line x1="250" y1="86" x2="250" y2="108" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="100" y="112" width="300" height="44" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">② File for Election</text>
+  <text x="250" y="148" text-anchor="middle" font-size="10" fill="#7f8c8d"><tspan font-family="Consolas,monospace" fill="#e67e22">2d10+PRC vs TN 6</tspan> · File with NLRB · Failure = delayed</text>
+
+  <line x1="250" y1="156" x2="250" y2="178" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="100" y="182" width="300" height="44" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="202" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">③ Election Campaign</text>
+  <text x="250" y="218" text-anchor="middle" font-size="10" fill="#7f8c8d"><tspan font-family="Consolas,monospace" fill="#e67e22">2d10+EXP+INT vs TN 8</tspan> · Employer fights back</text>
+
+  <line x1="250" y1="226" x2="250" y2="248" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Election -->
+  <rect x="100" y="252" width="300" height="44" rx="8" fill="#f0faf4" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="250" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">④ Election — &gt;50% vote yes = certified</text>
+  <text x="250" y="288" text-anchor="middle" font-size="10" fill="#7f8c8d">Success margin determines bargaining power</text>
+
+  <!-- Branch: employer fights -->
+  <line x1="400" y1="274" x2="440" y2="274" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="445" y="278" font-size="9" fill="#e74c3c" font-weight="600">Employer</text>
+  <text x="445" y="290" font-size="9" fill="#e74c3c" font-weight="600">counter-effort</text>
+
+  <line x1="250" y1="296" x2="250" y2="318" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 5 -->
+  <rect x="100" y="322" width="300" height="44" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="342" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">⑤ First Contract Negotiation</text>
+  <text x="250" y="358" text-anchor="middle" font-size="10" fill="#7f8c8d"><tspan font-family="Consolas,monospace" fill="#e67e22">2d10+EXP vs TN 8</tspan> per demand · Each success wins a demand</text>
+
+  <line x1="250" y1="366" x2="250" y2="388" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6: Ratification -->
+  <rect x="120" y="392" width="260" height="32" rx="16" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="250" y="413" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">⑥ Ratification — <tspan font-family="Consolas,monospace" fill="#ffeaa7">2d10+EXP vs TN 6</tspan></text>
+</svg>

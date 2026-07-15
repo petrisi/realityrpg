@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/></filter>
+  </defs>
+
+  <text x="250" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Gig Stacking: Income vs Burnout</text>
+  <text x="250" y="40" text-anchor="middle" font-size="10" fill="#7f8c8d">More gigs ≠ more income. Penalties and SP accumulate.</text>
+
+  <!-- Tier 1: 1 gig -->
+  <rect x="30" y="60" width="140" height="260" rx="10" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="100" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">1 Gig</text>
+  <text x="100" y="105" text-anchor="middle" font-size="10" fill="#7f8c8d">Baseline</text>
+  <line x1="50" y1="115" x2="150" y2="115" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="100" y="135" text-anchor="middle" font-size="11" fill="#2c3e50">Check mod: <tspan font-weight="700" fill="#27ae60">0</tspan></text>
+  <text x="100" y="155" text-anchor="middle" font-size="11" fill="#2c3e50">SP burnout: <tspan font-weight="700" fill="#27ae60">0</tspan></text>
+  <text x="100" y="180" text-anchor="middle" font-size="11" fill="#2c3e50">Net income:</text>
+  <text x="100" y="200" text-anchor="middle" font-size="18" font-weight="700" fill="#27ae60">$1,200</tspan></text>
+  <text x="100" y="220" text-anchor="middle" font-size="10" fill="#7f8c8d">/month</text>
+  <text x="100" y="250" text-anchor="middle" font-size="10" fill="#27ae60">✅ Sustainable</text>
+  <text x="100" y="270" text-anchor="middle" font-size="10" fill="#27ae60">No exhaustion</text>
+  <text x="100" y="290" text-anchor="middle" font-size="10" fill="#27ae60">check needed</text>
+
+  <!-- Tier 2: 2 gigs -->
+  <rect x="180" y="60" width="140" height="260" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">2 Gigs</text>
+  <text x="250" y="105" text-anchor="middle" font-size="10" fill="#7f8c8d">Stacking begins</text>
+  <line x1="200" y1="115" x2="300" y2="115" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="250" y="135" text-anchor="middle" font-size="11" fill="#2c3e50">Check mod: <tspan font-weight="700" fill="#e74c3c">−1</tspan></text>
+  <text x="250" y="155" text-anchor="middle" font-size="11" fill="#2c3e50">SP burnout: <tspan font-weight="700" fill="#f39c12">+1/mo</tspan></text>
+  <text x="250" y="180" text-anchor="middle" font-size="11" fill="#2c3e50">Net income:</text>
+  <text x="250" y="200" text-anchor="middle" font-size="18" font-weight="700" fill="#f39c12">$1,500</tspan></text>
+  <text x="250" y="220" text-anchor="middle" font-size="10" fill="#7f8c8d">/month</text>
+  <text x="250" y="250" text-anchor="middle" font-size="10" fill="#f39c12">⚠️ Diminishing</text>
+  <text x="250" y="270" text-anchor="middle" font-size="10" fill="#f39c12">returns</text>
+  <text x="250" y="290" text-anchor="middle" font-size="10" fill="#f39c12">+25% income</text>
+  <text x="250" y="305" text-anchor="middle" font-size="10" fill="#f39c12">for 100% more work</text>
+
+  <!-- Tier 3: 3+ gigs -->
+  <rect x="330" y="60" width="140" height="260" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="85" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">3+ Gigs</text>
+  <text x="400" y="105" text-anchor="middle" font-size="10" fill="#7f8c8d">Danger zone</text>
+  <line x1="350" y1="115" x2="450" y2="115" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="400" y="135" text-anchor="middle" font-size="11" fill="#2c3e50">Check mod: <tspan font-weight="700" fill="#e74c3c">−2</tspan></text>
+  <text x="400" y="155" text-anchor="middle" font-size="11" fill="#2c3e50">SP burnout: <tspan font-weight="700" fill="#e74c3c">+2/mo</tspan></text>
+  <text x="400" y="180" text-anchor="middle" font-size="11" fill="#2c3e50">Net income:</text>
+  <text x="400" y="200" text-anchor="middle" font-size="18" font-weight="700" fill="#e74c3c">$1,130</tspan></text>
+  <text x="400" y="220" text-anchor="middle" font-size="10" fill="#7f8c8d">/month</text>
+  <text x="400" y="250" text-anchor="middle" font-size="10" fill="#e74c3c">🔴 LESS than</text>
+  <text x="400" y="265" text-anchor="middle" font-size="10" fill="#e74c3c">1 gig!</text>
+  <text x="400" y="290" text-anchor="middle" font-size="10" fill="#e74c3c">VIG+RES check</text>
+  <text x="400" y="305" text-anchor="middle" font-size="10" fill="#e74c3c">vs TN 8 each month</text>
+</svg>

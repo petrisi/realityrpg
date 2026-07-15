@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/></filter>
+    <linearGradient id="recoverGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <text x="300" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Post-Bankruptcy Credit Recovery Path</text>
+
+  <!-- Chart area: x=80..560, y=50..250 -->
+  <g stroke="#e8e8e8" stroke-width="1">
+    <line x1="80" y1="50" x2="560" y2="50"/>
+    <line x1="80" y1="105" x2="560" y2="105"/>
+    <line x1="80" y1="160" x2="560" y2="160"/>
+    <line x1="80" y1="215" x2="560" y2="215"/>
+    <line x1="80" y1="250" x2="560" y2="250"/>
+  </g>
+
+  <!-- Y-axis: Credit Score 300-800 -->
+  <g font-size="10" fill="#7f8c8d" text-anchor="end">
+    <text x="72" y="54">800</text>
+    <text x="72" y="109">700</text>
+    <text x="72" y="164">600</text>
+    <text x="72" y="219">500</text>
+    <text x="72" y="254">400</text>
+  </g>
+
+  <!-- X-axis: Time -->
+  <g font-size="10" fill="#7f8c8d" text-anchor="middle">
+    <text x="80" y="270">Discharge</text>
+    <text x="176" y="270">6 mo</text>
+    <text x="272" y="270">18 mo</text>
+    <text x="368" y="270">3 yr</text>
+    <text x="464" y="270">5 yr</text>
+    <text x="560" y="270">7 yr</text>
+  </g>
+
+  <!-- Recovery curve: 300→450→550→650→720→780 -->
+  <path d="M 80,250 Q 128,240 176,225 Q 224,200 272,180 Q 320,155 368,130 Q 416,100 464,80 Q 512,65 560,55"
+        fill="none" stroke="url(#recoverGrad)" stroke-width="3" stroke-linecap="round" filter="url(#shadow)"/>
+
+  <!-- Milestone markers -->
+  <circle cx="176" cy="225" r="6" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+  <text x="176" y="245" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">450</text>
+  <text x="176" y="258" text-anchor="middle" font-size="8" fill="#7f8c8d">Secured cards</text>
+
+  <circle cx="272" cy="180" r="6" fill="#e67e22" stroke="#fff" stroke-width="2"/>
+  <text x="272" y="200" text-anchor="middle" font-size="9" fill="#e67e22" font-weight="600">550</text>
+  <text x="272" y="213" text-anchor="middle" font-size="8" fill="#7f8c8d">FHA loans</text>
+
+  <circle cx="368" cy="130" r="6" fill="#f39c12" stroke="#fff" stroke-width="2"/>
+  <text x="368" y="150" text-anchor="middle" font-size="9" fill="#f39c12" font-weight="600">650</text>
+  <text x="368" y="163" text-anchor="middle" font-size="8" fill="#7f8c8d">Conventional</text>
+
+  <circle cx="464" cy="80" r="6" fill="#27ae60" stroke="#fff" stroke-width="2"/>
+  <text x="464" y="100" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">720</text>
+  <text x="464" y="113" text-anchor="middle" font-size="8" fill="#7f8c8d">Nearly full</text>
+
+  <circle cx="560" cy="55" r="6" fill="#2ecc71" stroke="#fff" stroke-width="2"/>
+  <text x="560" y="75" text-anchor="middle" font-size="9" fill="#2ecc71" font-weight="600">780+</text>
+  <text x="560" y="88" text-anchor="middle" font-size="8" fill="#7f8c8d">Recovered</text>
+
+  <!-- Bottom note -->
+  <text x="320" y="295" text-anchor="middle" font-size="10" fill="#7f8c8d">Recovery is possible but slow · Bankruptcy stays on report 7–10 years</text>
+</svg>

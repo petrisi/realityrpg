@@ -11,6 +11,7 @@
 <div id="slot-header"></div>
 
 <section class="hero">
+  <div class="hero-bg"><img src="img/econ_cycle.png" alt=""></div>
   <span class="hero-icon">📊</span>
   <h1>Macro-Economy, Careers &amp; Wealth</h1>
   <p class="subtitle">The invisible hand is actually a fist. Credit scores, housing markets, career ladders, union drives, AI disruption — the economic world doesn't care about your hit points.</p>
@@ -38,44 +39,60 @@
 
 <p>The broader economy is not static. It breathes — expanding, contracting, overheating, cooling — and every character feels it. The GM tracks the <strong>Economic Climate</strong> on a simple tracker that shifts every 3–6 months of in-game time (or whenever the GM wants to introduce drama).</p>
 
+<div class="section-illustration">
+  <img src="img/inv_economic_cycle.svg" alt="The Economic Cycle of Real Life — perpetual feedback loop of financial pressures">
+</div>
+
 <h3>1.1 Economic Climate Tracker</h3>
 
 <p>The GM maintains a single number: the <strong>Economic Climate Score</strong> (ECS), ranging from −10 (Deep Depression) to +10 (Overheated Boom). It starts at 0 (Stable) and shifts by 1–3 per cycle event. Players can see the current ECS on the campaign board.</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>ECS Range</th><th>Climate</th><th>Unemployment</th><th>Effect on Characters</th></tr>
-</thead>
-<tbody>
-<tr><td>+8 to +10</td><td>🔥 Overheated Boom</td><td>2–3%</td><td>Jobs plentiful, wages rising, but inflation eating savings. Housing prices surging. <strong>TN −1 to find work, +2 to loan approval.</strong></td></tr>
-<tr><td>+5 to +7</td><td>📈 Expansion</td><td>3–5%</td><td>Good job market. Moderate wage growth. Credit still available. <strong>TN −1 to job interviews.</strong></td></tr>
-<tr><td>+1 to +4</td><td>✅ Growing</td><td>4–6%</td><td>Normal economy. Steady but not exciting. <strong>No modifiers.</strong></td></tr>
-<tr><td>−1 to +0</td><td>⚖️ Stable</td><td>5–7%</td><td>Baseline. Everything functions normally. <strong>No modifiers.</strong></td></tr>
-<tr><td>−2 to −4</td><td>📉 Slowing</td><td>7–9%</td><td>Job growth stalls. Hiring freezes. Credit standards tighten. <strong>+1 TN to job interviews, +1 to loan approval.</strong></td></tr>
-<tr><td>−5 to −7</td><td>🟠 Recession</td><td>9–12%</td><td>Layoffs common. Credit scarce. Housing market softens. <strong>+2 TN to job interviews, +2 to loans. Job loss risk: roll 2d10 monthly; 10+ = laid off.</strong></td></tr>
-<tr><td>−8 to −10</td><td>🔴 Depression</td><td>12%+</td><td>Mass unemployment. Banks fail. Everything crashes. <strong>+4 TN to job interviews. Loans denied to all but highest credit scores. Job loss risk: roll 2d10 monthly; 8+ = laid off.</strong></td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/me_ecs_tracker.svg" alt="ECS Tracker −10 to +10 with climate zones">
+</div>
+
+<div class="condition-track">
+  <div class="condition-step" style="background:#c0392b;">🔴 Depression<br><small>−8 to −10<br>12%+ unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">+4 TN jobs. Loans denied. 8+ = laid off.</span></div>
+  <div class="condition-step" style="background:#e67e22;">🟠 Recession<br><small>−5 to −7<br>9–12% unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">+2 TN jobs/loans. 10+ = laid off.</span></div>
+  <div class="condition-step" style="background:#f39c12;">📉 Slowing<br><small>−2 to −4<br>7–9% unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">+1 TN jobs/loans</span></div>
+  <div class="condition-step" style="background:#27ae60;">⚖️ Stable<br><small>−1 to +0<br>5–7% unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">No modifiers</span></div>
+  <div class="condition-step" style="background:#2ecc71;">✅ Growing<br><small>+1 to +4<br>4–6% unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">No modifiers</span></div>
+  <div class="condition-step" style="background:#1abc9c;">📈 Expansion<br><small>+5 to +7<br>3–5% unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">TN −1 to interviews</span></div>
+  <div class="condition-step" style="background:#e74c3c;">🔥 Overheated<br><small>+8 to +10<br>2–3% unemp.</small><br><span style="font-size:0.78rem;font-weight:400;">TN −1 work, +2 loans. High inflation.</span></div>
 </div>
 
 <h3>1.2 Inflation Mechanic</h3>
 
 <p>During Expansion or Overheated Boom phases, the GM applies an <strong>inflation rate</strong> to all prices each month. This is not abstract — it directly impacts character budgets.</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>ECS</th><th>Monthly Inflation</th><th>Example (Rent = $1,500)</th></tr>
-</thead>
-<tbody>
-<tr><td>+10 (Overheated)</td><td>4%</td><td>$1,560 → $1,622 → $1,687 after 3 months</td></tr>
-<tr><td>+7 (Expansion)</td><td>2%</td><td>$1,530 → $1,561 → $1,592 after 3 months</td></tr>
-<tr><td>+0 (Stable)</td><td>1%</td><td>$1,515 → $1,528 → $1,541 after 3 months</td></tr>
-<tr><td>−5 (Recession)</td><td>0% (deflation possible)</td><td>Prices hold or drop slightly</td></tr>
-<tr><td>−10 (Depression)</td><td>−2% (deflation)</td><td>$1,470 → $1,441 → $1,412 after 3 months</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/inv_budget_gauge.svg" alt="Budget Score Gauge — visual indicator of financial health under inflation">
+</div>
+
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔥 +10 Overheated</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:100%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">4% — $1,560→$1,687/3mo</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📈 +7 Expansion</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:66%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">2% — $1,530→$1,592/3mo</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">⚖️ +0 Stable</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#27ae60;width:33%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">1% — $1,515→$1,541/3mo</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📉 −5 Recession</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:16%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">0% — prices hold</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔴 −10 Depression</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:5%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−2% — $1,470→$1,412/3mo</span>
 </div>
 
 <div class="callout rule">
@@ -87,23 +104,24 @@
 
 <p>When ECS drops below −3, the GM introduces <strong>recession events</strong>. Roll 1d6 or choose narratively:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>d6</th><th>Event</th><th>Mechanical Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td><strong>Mass Layoff</strong></td><td>All employed characters roll <span class="dice">2d10 + EXP mod vs TN 7</span>. Failure = laid off. Characters with &lt;6 EXP roll twice.</td></tr>
-<tr><td>2</td><td><strong>Credit Crunch</strong></td><td>Loan TN increases by +2 for 3 months. Credit card limits reduced by 20%. No new credit cards issued.</td></tr>
-<tr><td>3</td><td><strong>Housing Market Dip</strong></td><td>Home values drop 5–15%. Underwater mortgages possible. Foreclosure risk increases for characters with high DTI.</td></tr>
-<tr><td>4</td><td><strong>Benefits Cut</strong></td><td>Government assistance reduced. SNAP/Unemployment benefits delayed by 2–4 weeks. +2 SP to affected characters.</td></tr>
-<tr><td>5</td><td><strong>Supply Chain Crisis</strong></td><td>Grocery prices +15%. Gas prices spike. Essential goods occasionally unavailable. Budget TN +2.</td></tr>
-<tr><td>6</td><td><strong>Bank Failure / FDIC Event</strong></td><td>Characters who bank at the failed institution lose access to funds for 2–4 weeks. +4 SP. Insurance covers up to $250k.</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">1️⃣</span><h3>💥 Mass Layoff</h3><p>All employed roll <span class="dice">2d10 + EXP mod vs TN 7</span>. Failure = laid off. &lt;6 EXP roll twice.</p></div>
+  <div class="card"><span class="card-icon">2️⃣</span><h3>🔒 Credit Crunch</h3><p>Loan TN +2 for 3 months. Credit card limits −20%. No new cards issued.</p></div>
+  <div class="card"><span class="card-icon">3️⃣</span><h3>📉 Housing Market Dip</h3><p>Home values drop 5–15%. Underwater mortgages possible. Foreclosure risk ↑ for high DTI.</p></div>
+  <div class="card"><span class="card-icon">4️⃣</span><h3>✂️ Benefits Cut</h3><p>SNAP/Unemployment delayed 2–4 weeks. <strong>+2 SP</strong> to affected characters.</p></div>
+  <div class="card"><span class="card-icon">5️⃣</span><h3>🚚 Supply Chain Crisis</h3><p>Grocery prices +15%. Gas spike. Essential goods unavailable. Budget TN +2.</p></div>
+  <div class="card"><span class="card-icon">6️⃣</span><h3>🏦 Bank Failure / FDIC</h3><p>Funds locked 2–4 weeks. <strong>+4 SP</strong>. Insurance covers up to $250k.</p></div>
 </div>
 
 <h3>1.4 The GM's Economic Dashboard</h3>
+
+<div class="section-illustration">
+  <img src="img/me_gm_dashboard.svg" alt="GM's Economic Dashboard — ECS, inflation, job market, credit, housing, stocks">
+</div>
+
+<div class="section-illustration">
+  <img src="img/me_economic_dm_dashboard.png" alt="GM campaign board with economic tracker sticky notes and dice">
+</div>
 
 <p>The GM should keep a simple tracker visible (or in notes) with these fields:</p>
 
@@ -128,26 +146,27 @@
 
 <p>In the American financial system, your credit score is more powerful than your character's level. It determines whether you can rent an apartment, get a car loan, qualify for a mortgage, and in some cases, even whether you get hired. Reality RPG models the FICO score system (300–850).</p>
 
+<div class="section-illustration">
+  <img src="img/inv_credit_spiral.svg" alt="Credit Card Trap — how minimum payments extend debt over years">
+</div>
+
 <h3>2.1 Credit Score Components</h3>
 
 <p>A character's credit score is determined by five factors, weighted as follows:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Factor</th><th>Weight</th><th>Score Range</th><th>Description</th></tr>
-</thead>
-<tbody>
-<tr><td>📋 Payment History</td><td>35%</td><td>0–100</td><td>Have you paid bills on time? Each late payment drops this score. 30+ days late = −10 to this component. 90+ days late = −25.</td></tr>
-<tr><td>📊 Amounts Owed</td><td>30%</td><td>0–100</td><td>What percentage of your credit limit are you using? Below 30% = good. Above 50% = bad. Above 80% = terrible. Score = 100 − (utilization × 1.5), minimum 0.</td></tr>
-<tr><td>📅 Length of History</td><td>15%</td><td>0–100</td><td>How long have you had credit? Each year of credit history = +5, max 100. New credit = 0.</td></tr>
-<tr><td>🆕 New Credit</td><td>10%</td><td>0–100</td><td>How many new accounts opened recently? Each inquiry in last 6 months = −5. Score starts at 100.</td></tr>
-<tr><td>🗂️ Credit Mix</td><td>10%</td><td>0–100</td><td>Do you have different types of credit (revolving, installment, mortgage)? 1 type = 40, 2 types = 60, 3+ types = 100.</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">📋</span><h3>Payment History <span style="color:var(--color-danger);font-size:0.85rem;">35%</span></h3><p>0–100 scale. 30+ days late = −10. 90+ days late = −25. Biggest impact on your score.</p></div>
+  <div class="card"><span class="card-icon">📊</span><h3>Amounts Owed <span style="color:var(--color-warning);font-size:0.85rem;">30%</span></h3><p>0–100 scale. &lt;30% utilization = good. &gt;50% = bad. &gt;80% = terrible. Score = 100 − (util × 1.5).</p></div>
+  <div class="card"><span class="card-icon">📅</span><h3>Length of History <span style="color:var(--color-info);font-size:0.85rem;">15%</span></h3><p>0–100 scale. Each year = +5, max 100. New credit = 0. Older accounts = better score.</p></div>
+  <div class="card"><span class="card-icon">🆕</span><h3>New Credit <span style="color:var(--color-muted);font-size:0.85rem;">10%</span></h3><p>0–100 scale. Each inquiry in 6 months = −5. Starts at 100. Too many new accounts hurts.</p></div>
+  <div class="card"><span class="card-icon">🗂️</span><h3>Credit Mix <span style="color:var(--color-muted);font-size:0.85rem;">10%</span></h3><p>0–100 scale. 1 type = 40, 2 types = 60, 3+ types = 100. Revolving + installment + mortgage is ideal.</p></div>
 </div>
 
 <h3>2.2 Calculating Credit Score</h3>
+
+<div class="section-illustration">
+  <img src="img/me_credit_formula.svg" alt="Credit Score Calculation Formula — 5 weighted components to FICO">
+</div>
 
 <p>Weighted average of the five components, scaled to 300–850:</p>
 
@@ -160,41 +179,27 @@ Example: A character with Payment 80, Amounts 60, Length 50, New 90, Mix 60 → 
 
 <h3>2.3 Credit Score Tiers and Effects</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Score</th><th>Tier</th><th>Loan Approval</th><th>Interest Rate Adder</th><th>Apartment Hunting</th><th>Job Applications</th></tr>
-</thead>
-<tbody>
-<tr><td>750–850</td><td>🟢 Excellent</td><td>Auto-approve everything</td><td>Best rates (−0.5% APR)</td><td>No screening issues</td><td>No background check issues</td></tr>
-<tr><td>700–749</td><td>🟢 Good</td><td>Approve most loans</td><td>Standard rates</td><td>Easy approval</td><td>No issues</td></tr>
-<tr><td>650–699</td><td>🟡 Fair</td><td>Approve with scrutiny</td><td>+1% APR adder</td><td>May require co-signer</td><td>Some employers flag</td></tr>
-<tr><td>580–649</td><td>🟠 Poor</td><td>Subprime only; +3% APR</td><td>+3% APR adder</td><td>Large deposits required (×2 rent)</td><td>Defense, finance, gov't jobs deny</td></tr>
-<tr><td>300–579</td><td>🔴 Very Poor</td><td>Denied most loans; payday loans only</td><td>+8%+ APR adder</td><td>Denied most apartments</td><td>Many employers deny outright</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value" style="color:#27ae60;">750–850</span><span class="tn-label"><strong>🟢 Excellent</strong> — Auto-approve everything. Best rates (−0.5% APR). No apartment/job screening issues.</span></div>
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">700–749</span><span class="tn-label"><strong>🟢 Good</strong> — Approve most loans. Standard rates. Easy apartment approval.</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">650–699</span><span class="tn-label"><strong>🟡 Fair</strong> — Scrutiny on loans. +1% APR. May need co-signer for apartments. Some employers flag.</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">580–649</span><span class="tn-label"><strong>🟠 Poor</strong> — Subprime only. +3% APR. Double deposits for rent. Defense/finance/gov't jobs deny.</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value" style="color:#e74c3c;">300–579</span><span class="tn-label"><strong>🔴 Very Poor</strong> — Denied most loans. +8%+ APR. Denied most apartments. Many employers deny outright.</span></div>
 </div>
 
 <h3>2.4 Credit Score Changes Over Time</h3>
 
 <p>Credit scores don't change dramatically overnight. Each month, the GM adjusts based on the character's financial behavior:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Action</th><th>Score Change</th><th>Time to Take Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>✅ Pay all bills on time</td><td>+3 to +8</td><td>1–2 months (reporting cycle)</td></tr>
-<tr><td>⚠️ One bill 30 days late</td><td>−30 to −60</td><td>Immediate (next reporting cycle)</td></tr>
-<tr><td>❌ One bill 90+ days late / charge-off</td><td>−80 to −120</td><td>Immediate; stays on report 7 years</td></tr>
-<tr><td>💳 Pay off a credit card balance</td><td>+5 to +20</td><td>1 month (utilization drops)</td></tr>
-<tr><td>🆕 Open a new credit card</td><td>−5 (inquiry) then +10 over 6 months</td><td>Inquiry hits immediately; limit increase helps utilization</td></tr>
-<tr><td>🏦 Become authorized user on parent's card</td><td>+20 to +50</td><td>1–2 months</td></tr>
-<tr><td>📋 File for bankruptcy</td><td>−150 to −250</td><td>Immediate; stays on report 7–10 years</td></tr>
-<tr><td>🔧 Successful credit dispute</td><td>+10 to +30</td><td>30–45 days</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;"><span class="card-icon">✅</span><h3>Pay bills on time</h3><p><strong style="color:#27ae60;">+3 to +8</strong> · 1–2 months</p></div>
+  <div class="card" style="border-left:3px solid #f39c12;"><span class="card-icon">⚠️</span><h3>Bill 30 days late</h3><p><strong style="color:#e74c3c;">−30 to −60</strong> · Immediate</p></div>
+  <div class="card" style="border-left:3px solid #e74c3c;"><span class="card-icon">❌</span><h3>Bill 90+ days late</h3><p><strong style="color:#e74c3c;">−80 to −120</strong> · Stays 7 years</p></div>
+  <div class="card" style="border-left:3px solid #27ae60;"><span class="card-icon">💳</span><h3>Pay off card balance</h3><p><strong style="color:#27ae60;">+5 to +20</strong> · 1 month</p></div>
+  <div class="card" style="border-left:3px solid #2980b9;"><span class="card-icon">🆕</span><h3>Open new credit card</h3><p><strong>−5 then +10</strong> · 6 months</p></div>
+  <div class="card" style="border-left:3px solid #27ae60;"><span class="card-icon">🏦</span><h3>Auth user on parent's card</h3><p><strong style="color:#27ae60;">+20 to +50</strong> · 1–2 months</p></div>
+  <div class="card" style="border-left:3px solid #e74c3c;"><span class="card-icon">📋</span><h3>File bankruptcy</h3><p><strong style="color:#e74c3c;">−150 to −250</strong> · Stays 7–10 yrs</p></div>
+  <div class="card" style="border-left:3px solid #27ae60;"><span class="card-icon">🔧</span><h3>Successful dispute</h3><p><strong style="color:#27ae60;">+10 to +30</strong> · 30–45 days</p></div>
 </div>
 
 <h3>2.5 Credit Score Checks</h3>
@@ -207,6 +212,10 @@ Example: A character with Payment 80, Amounts 60, Length 50, New 90, Mix 60 → 
   <li><strong>Apply for a credit-builder loan:</strong> <span class="dice">2d10 + INT mod vs TN 5</span>. Success: loan approved; builds credit over 12 months (+20 score).</li>
   <li><strong>Convince landlord to waive credit check:</strong> <span class="dice">2d10 + EXP mod vs TN 9</span>. Success: apartment available. Failure: denied; may need co-signer or double deposit.</li>
 </ul>
+
+<div class="section-illustration">
+  <img src="img/me_marcus_credit_repair.png" alt="Marcus at kitchen table with credit reports and dispute letter">
+</div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Marcus Repairs His Credit</div>
@@ -235,57 +244,44 @@ Example: A character with Payment 80, Amounts 60, Length 50, New 90, Mix 60 → 
 
 <h3>3.2 Mortgage Qualification</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Requirement</th><th>Minimum</th><th>Ideal</th><th>Check</th></tr>
-</thead>
-<tbody>
-<tr><td>📊 Credit Score</td><td>620 (conventional), 580 (FHA)</td><td>740+</td><td>Checked automatically</td></tr>
-<tr><td>💰 DTI Ratio</td><td>≤ 43%</td><td>≤ 36%</td><td>Calculated from income and debts</td></tr>
-<tr><td>📄 Down Payment</td><td>3–3.5% (conventional), 3.5% (FHA)</td><td>20%</td><td>Savings must be verified</td></tr>
-<tr><td>📋 Employment History</td><td>2 years in same field</td><td>5+ years, stable</td><td><span class="dice">2d10 + EXP mod vs TN 6</span> if employment is spotty</td></tr>
-<tr><td>🏦 Cash Reserves</td><td>2 months of payments</td><td>6 months</td><td>Checked automatically</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/me_mortgage_pipeline.svg" alt="Mortgage Qualification Pipeline — 5-gate decision tree">
+</div>
+
+<div class="card-grid">
+  <div class="card"><span class="card-icon">📊</span><h3>Credit Score</h3><p><strong>Min:</strong> 620 conv / 580 FHA · <strong>Ideal:</strong> 740+ · Auto-checked</p></div>
+  <div class="card"><span class="card-icon">💰</span><h3>DTI Ratio</h3><p><strong>Min:</strong> ≤43% · <strong>Ideal:</strong> ≤36% · Calculated from income + debts</p></div>
+  <div class="card"><span class="card-icon">📄</span><h3>Down Payment</h3><p><strong>Min:</strong> 3–3.5% · <strong>Ideal:</strong> 20% · Savings verified</p></div>
+  <div class="card"><span class="card-icon">📋</span><h3>Employment History</h3><p><strong>Min:</strong> 2 yrs same field · <strong>Ideal:</strong> 5+ yrs · <span class="dice">2d10+EXP vs TN 6</span> if spotty</p></div>
+  <div class="card"><span class="card-icon">🏦</span><h3>Cash Reserves</h3><p><strong>Min:</strong> 2 months payments · <strong>Ideal:</strong> 6 months · Auto-checked</p></div>
 </div>
 
 <h3>3.3 Home Appreciation / Depreciation</h3>
 
 <p>Every 6 months, the GM adjusts home values based on the ECS:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>ECS</th><th>Home Value Change</th><th>Roll</th></tr>
-</thead>
-<tbody>
-<tr><td>+8 to +10</td><td>🔥 Hot market: +8–15%</td><td>2d10 ÷ 2 + 8</td></tr>
-<tr><td>+5 to +7</td><td>📈 Growing: +3–8%</td><td>2d10 ÷ 2 + 3</td></tr>
-<tr><td>−1 to +4</td><td>⚖️ Stable: ±1–3%</td><td>2d10 ÷ 2 − 4 (can be negative)</td></tr>
-<tr><td>−5 to −7</td><td>📉 Declining: −3 to −8%</td><td>2d10 ÷ 2 + 3 (subtract from value)</td></tr>
-<tr><td>−8 to −10</td><td>🔴 Crashing: −8 to −20%</td><td>2d10 + 8</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step" style="background:#e74c3c;">🔥 Hot<br><small>+8 to +10</small><br><span style="font-size:0.78rem;font-weight:400;">+8–15%<br>Roll: 2d10÷2+8</span></div>
+  <div class="condition-step" style="background:#27ae60;">📈 Growing<br><small>+5 to +7</small><br><span style="font-size:0.78rem;font-weight:400;">+3–8%<br>Roll: 2d10÷2+3</span></div>
+  <div class="condition-step" style="background:#2980b9;">⚖️ Stable<br><small>−1 to +4</small><br><span style="font-size:0.78rem;font-weight:400;">±1–3%<br>Roll: 2d10÷2−4</span></div>
+  <div class="condition-step" style="background:#e67e22;">📉 Declining<br><small>−5 to −7</small><br><span style="font-size:0.78rem;font-weight:400;">−3 to −8%<br>Roll: 2d10÷2+3</span></div>
+  <div class="condition-step" style="background:#c0392b;">🔴 Crashing<br><small>−8 to −10</small><br><span style="font-size:0.78rem;font-weight:400;">−8 to −20%<br>Roll: 2d10+8</span></div>
 </div>
 
 <h3>3.4 Foreclosure Mechanics</h3>
 
+<div class="section-illustration">
+  <img src="img/me_foreclosure_timeline.svg" alt="Foreclosure Escalation Timeline — 5 stages from late fee to eviction">
+</div>
+
 <p>If a homeowner misses mortgage payments, foreclosure begins. This is a <strong>time bomb</strong> — once it starts, the clock is ticking.</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Missed Payments</th><th>Stage</th><th>Effect</th><th>SP Cost</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>🟡 Late Fee</td><td>+1.5% late fee. Credit score −25 if reported (30+ days).</td><td>+2 SP</td></tr>
-<tr><td>2</td><td>🟠 Seriously Delinquent</td><td>Second late fee. Credit score drops another 30–50. Collections contacted.</td><td>+4 SP</td></tr>
-<tr><td>3</td><td>🔴 Pre-Foreclosure Notice</td><td>Lender files notice. Character has 30–90 days to cure. Can sell, refinance, or negotiate.</td><td>+6 SP</td></tr>
-<tr><td>4–5</td><td>🔴 Foreclosure Auction</td><td>Home goes to auction. Character loses equity. Credit score drops 100–160 points. Character must move out.</td><td>+10 SP (potential breakdown)</td></tr>
-<tr><td>After</td><td>🔴 Evicted</td><td>Character on the street or in temporary housing. Credit ruined for 7 years.</td><td>+10 SP. Possible trauma event.</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step" style="background:#f39c12;">🟡 Late Fee<br><small>1 missed</small><br><span style="font-size:0.78rem;font-weight:400;">−25 credit<br><strong>+2 SP</strong></span></div>
+  <div class="condition-step" style="background:#e67e22;">🟠 Delinquent<br><small>2 missed</small><br><span style="font-size:0.78rem;font-weight:400;">−30–50 credit<br><strong>+4 SP</strong></span></div>
+  <div class="condition-step" style="background:#d35400;">🔴 Pre-Foreclosure<br><small>3 missed</small><br><span style="font-size:0.78rem;font-weight:400;">30–90 days to cure<br><strong>+6 SP</strong></span></div>
+  <div class="condition-step" style="background:#e74c3c;">🔴 Auction<br><small>4–5 missed</small><br><span style="font-size:0.78rem;font-weight:400;">−100–160 credit<br><strong>+10 SP</strong></span></div>
+  <div class="condition-step" style="background:#c0392b;">🔴 Evicted<br><small>After</small><br><span style="font-size:0.78rem;font-weight:400;">Credit ruined 7 yrs<br><strong>+10 SP</strong></span></div>
 </div>
 
 <div class="callout warning">
@@ -304,6 +300,10 @@ Example: A character with Payment 80, Amounts 60, Length 50, New 90, Mix 60 → 
   <li><strong>Down Payment Assistance (DPA):</strong> State/local programs. Grants or forgivable loans for down payment.</li>
 </ul>
 
+<div class="section-illustration">
+  <img src="img/me_chen_house_hunting.png" alt="The Chen family viewing their first home">
+</div>
+
 <div class="callout example">
   <div class="callout-title">📝 Example: The Chen Family Buys Their First Home</div>
   <p>The Chen family (combined income $95,000/year) has been renting a 2-bedroom for $1,800/month in a Growing market (ECS +3). They've saved $40,000 for a down payment. They find a $280,000 house.</p>
@@ -321,22 +321,23 @@ Example: A character with Payment 80, Amounts 60, Length 50, New 90, Mix 60 → 
 
 <p>Investing is how characters build long-term wealth beyond their salary. In Reality RPG, investing is a <strong>skill-based activity</strong> — characters with higher INT and EXP make better decisions. But luck matters too, because markets are unpredictable.</p>
 
+<div class="section-illustration">
+  <img src="img/lc_paycheck_waterfall.svg" alt="How Your Paycheck Gets Built — gross to net income waterfall">
+</div>
+
 <h3>4.1 Investment Types</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Type</th><th>Risk</th><th>Avg. Return</th><th>INT Check TN</th><th>Liquidity</th></tr>
-</thead>
-<tbody>
-<tr><td>📊 Index Funds (S&amp;P 500)</td><td>Medium</td><td>7–10% annually</td><td>TN 5 (set and forget)</td><td>High (sell anytime)</td></tr>
-<tr><td>📈 Individual Stocks</td><td>High</td><td>−50% to +200%</td><td>TN 8 per stock pick</td><td>High</td></tr>
-<tr><td>🏛️ Bonds (Treasury)</td><td>Low</td><td>2–5% annually</td><td>TN 4</td><td>Medium</td></tr>
-<tr><td>🏠 Real Estate (REITs)</td><td>Medium</td><td>5–8% + dividends</td><td>TN 6</td><td>Medium</td></tr>
-<tr><td>₿ Crypto</td><td>Extreme</td><td>−90% to +1000%</td><td>TN 10 (speculative)</td><td>High</td></tr>
-<tr><td>🏢 Private Business</td><td>Very High</td><td>Varies wildly</td><td>TN 10+</td><td>Very Low</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/me_investment_risk_matrix.svg" alt="Investment Risk vs Return Matrix — 6 investment types plotted">
+</div>
+
+<div class="card-grid">
+  <div class="card"><span class="card-icon">📊</span><h3>Index Funds (S&amp;P 500)</h3><p><strong>Risk:</strong> Medium · <strong>Return:</strong> 7–10%/yr · <span class="dice">TN 5</span> · Liquidity: High</p></div>
+  <div class="card"><span class="card-icon">📈</span><h3>Individual Stocks</h3><p><strong>Risk:</strong> High · <strong>Return:</strong> −50% to +200% · <span class="dice">TN 8</span> · Liquidity: High</p></div>
+  <div class="card"><span class="card-icon">🏛️</span><h3>Bonds (Treasury)</h3><p><strong>Risk:</strong> Low · <strong>Return:</strong> 2–5%/yr · <span class="dice">TN 4</span> · Liquidity: Medium</p></div>
+  <div class="card"><span class="card-icon">🏠</span><h3>Real Estate (REITs)</h3><p><strong>Risk:</strong> Medium · <strong>Return:</strong> 5–8% + div · <span class="dice">TN 6</span> · Liquidity: Medium</p></div>
+  <div class="card"><span class="card-icon">₿</span><h3>Crypto</h3><p><strong>Risk:</strong> Extreme · <strong>Return:</strong> −90% to +1000% · <span class="dice">TN 10</span> · Liquidity: High</p></div>
+  <div class="card"><span class="card-icon">🏢</span><h3>Private Business</h3><p><strong>Risk:</strong> Very High · <strong>Return:</strong> Wildly varies · <span class="dice">TN 10+</span> · Liquidity: Very Low</p></div>
 </div>
 
 <h3>4.2 Investment Checks</h3>
@@ -360,6 +361,10 @@ Example: A character with Payment 80, Amounts 60, Length 50, New 90, Mix 60 → 
 
 <h3>4.4 Compound Interest Mechanic</h3>
 
+<div class="section-illustration">
+  <img src="img/me_compound_interest_curve.svg" alt="Compound Interest Growth Curves — start at 25 vs 35 vs 45">
+</div>
+
 <div class="callout rule">
   <div class="callout-title">⚖️ Compound Interest</div>
   <p>For every year of in-game time, invested money grows by the market return rate. The GM can use a simplified formula:<br>
@@ -371,18 +376,11 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>Characters have a <strong>Risk Tolerance</strong> score based on their RES and life circumstances:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Risk Tolerance</th><th>RES Modifier</th><th>Investment Style</th><th>Max Crypto/Speculative %</th></tr>
-</thead>
-<tbody>
-<tr><td>Conservative</td><td>RES mod ≤ −1</td><td>Bonds, index funds, CDs</td><td>0–5%</td></tr>
-<tr><td>Moderate</td><td>RES mod 0 to +1</td><td>Index funds, some stocks</td><td>5–15%</td></tr>
-<tr><td>Aggressive</td><td>RES mod ≥ +2</td><td>Individual stocks, sector funds</td><td>15–30%</td></tr>
-<tr><td>Reckless</td><td>RES mod ≥ +3 or INT mod ≤ −2</td><td>Crypto, options, penny stocks</td><td>30%+</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">Conserv.</span><span class="tn-label"><strong>Bonds, index funds, CDs</strong> · RES mod ≤−1 · Max crypto: 0–5%</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#2980b9;">Moderate</span><span class="tn-label"><strong>Index funds, some stocks</strong> · RES mod 0 to +1 · Max crypto: 5–15%</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">Aggress.</span><span class="tn-label"><strong>Individual stocks, sector funds</strong> · RES mod ≥+2 · Max crypto: 15–30%</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value" style="color:#e74c3c;">Reckless</span><span class="tn-label"><strong>Crypto, options, penny stocks</strong> · RES mod ≥+3 or INT ≤−2 · Max crypto: 30%+</span></div>
 </div>
 
 <h3>4.6 Market Crash Events</h3>
@@ -395,6 +393,10 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
   <li><strong>Crypto investors</strong> lose 50–90%. <span class="dice">2d10 vs TN 12</span> to avoid total loss.</li>
   <li><strong>Bond holders</strong> lose 0–10%. Government bonds may even gain value.</li>
 </ul>
+
+<div class="section-illustration">
+  <img src="img/me_market_crash_trading_floor.png" alt="Three monitors showing different portfolio states during market crash">
+</div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: The 2029 Market Crash</div>
@@ -411,25 +413,26 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>Not all characters start equal. In Reality RPG, <strong>starting wealth</strong> (determined during character creation by socioeconomic background) has a massive, lasting impact on a character's trajectory. This is not a game mechanic to "balance" — it is a <em>feature</em> of the simulation.</p>
 
+<div class="section-illustration">
+  <img src="img/ec_class_ladder.svg" alt="Socioeconomic Spectrum — character discretionary income by class tier">
+</div>
+
 <h3>5.1 Starting Wealth Tiers</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Tier</th><th>Starting Cash</th><th>Starting Assets</th><th>Safety Net</th><th>Credit Score Start</th></tr>
-</thead>
-<tbody>
-<tr><td>🔴 Poverty</td><td>$0–$200</td><td>None. Possibly negative (debt).</td><td>None. One emergency away from disaster.</td><td>300–550 (no credit history or bad)</td></tr>
-<tr><td>🟠 Working Class</td><td>$200–$1,000</td><td>Old car, basic furniture</td><td>1 month of expenses in savings (if lucky)</td><td>550–650</td></tr>
-<tr><td>🟡 Lower Middle</td><td>$1,000–$5,000</td><td>Reliable car, decent apartment</td><td>2–3 months of expenses</td><td>650–700</td></tr>
-<tr><td>🟢 Middle Class</td><td>$5,000–$20,000</td><td>Good car, home equity or good rental</td><td>3–6 months of expenses</td><td>700–750</td></tr>
-<tr><td>🔵 Upper Middle</td><td>$20,000–$100,000</td><td>Home, retirement accounts, investments</td><td>6–12 months of expenses</td><td>750–800</td></tr>
-<tr><td>🟣 Wealthy</td><td>$100,000+</td><td>Multiple properties, investments, trust funds</td><td>12+ months of expenses. Family safety net.</td><td>800+</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step" style="background:#c0392b;">🔴 Poverty<br><small>$0–$200</small><br><span style="font-size:0.78rem;font-weight:400;">No assets/debt<br>No safety net<br>Credit: 300–550</span></div>
+  <div class="condition-step" style="background:#e67e22;">🟠 Working<br><small>$200–$1K</small><br><span style="font-size:0.78rem;font-weight:400;">Old car, basics<br>1 mo savings<br>Credit: 550–650</span></div>
+  <div class="condition-step" style="background:#f39c12;">🟡 Low. Mid.<br><small>$1K–$5K</small><br><span style="font-size:0.78rem;font-weight:400;">Reliable car<br>2–3 mo buffer<br>Credit: 650–700</span></div>
+  <div class="condition-step" style="background:#27ae60;">🟢 Mid. Class<br><small>$5K–$20K</small><br><span style="font-size:0.78rem;font-weight:400;">Good car/home<br>3–6 mo buffer<br>Credit: 700–750</span></div>
+  <div class="condition-step" style="background:#2980b9;">🔵 Upper Mid.<br><small>$20K–$100K</small><br><span style="font-size:0.78rem;font-weight:400;">Home + invest<br>6–12 mo buffer<br>Credit: 750–800</span></div>
+  <div class="condition-step" style="background:#8e44ad;">🟣 Wealthy<br><small>$100K+</small><br><span style="font-size:0.78rem;font-weight:400;">Multi-property<br>Family net<br>Credit: 800+</span></div>
 </div>
 
 <h3>5.2 The Wealth Gap Mechanic</h3>
+
+<div class="section-illustration">
+  <img src="img/me_wealth_gap_compound.svg" alt="Wealth Gap Compounding — wealthy vs poor over 20 years">
+</div>
 
 <div class="callout rule">
   <div class="callout-title">⚖️ The Gap Widens</div>
@@ -441,20 +444,35 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>When an emergency strikes (car repair, medical bill, job loss), the character's wealth tier determines their response:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Wealth Tier</th><th>$2,000 Emergency</th><th>SP Cost</th><th>Recovery Time</th></tr>
-</thead>
-<tbody>
-<tr><td>🔴 Poverty</td><td>Catastrophic. Must borrow, sell possessions, or skip essentials.</td><td>+6 SP</td><td>Months to years (debt spiral)</td></tr>
-<tr><td>🟠 Working Class</td><td>Severe. Depletes all savings. Credit card debt likely.</td><td>+4 SP</td><td>6–12 months</td></tr>
-<tr><td>🟡 Lower Middle</td><td>Stressful but manageable. Depletes emergency fund.</td><td>+2 SP</td><td>3–6 months to rebuild</td></tr>
-<tr><td>🟢 Middle Class</td><td>Unpleasant. Comes from savings.</td><td>+1 SP</td><td>1–2 months to rebuild</td></tr>
-<tr><td>🔵 Upper Middle</td><td>Inconvenient. Barely noticed.</td><td>+0 SP</td><td>1 month</td></tr>
-<tr><td>🟣 Wealthy</td><td>Irrelevant. Comes from reserves.</td><td>+0 SP</td><td>Immediate</td></tr>
-</tbody>
-</table>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔴 Poverty</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:100%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+6 SP</strong> · Months to years</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🟠 Working Class</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:80%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+4 SP</strong> · 6–12 months</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🟡 Lower Middle</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:60%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+2 SP</strong> · 3–6 months</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🟢 Middle Class</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#27ae60;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+1 SP</strong> · 1–2 months</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔵 Upper Middle</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:20%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+0 SP</strong> · 1 month</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🟣 Wealthy</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#8e44ad;width:5%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+0 SP</strong> · Immediate</span>
 </div>
 
 <h3>5.4 Generational Wealth Transfer</h3>
@@ -494,22 +512,29 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>6.2 Chapter 7 vs. Chapter 13</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Feature</th><th>Chapter 7 (Liquidation)</th><th>Chapter 13 (Reorganization)</th></tr>
-</thead>
-<tbody>
-<tr><td>📋 Process</td><td>Sell non-exempt assets, discharge remaining debt</td><td>3–5 year repayment plan, then discharge</td></tr>
-<tr><td>💰 Income Requirement</td><td>Must pass "means test" (income below median)</td><td>Must have regular income to fund plan</td></tr>
-<tr><td>🏠 Home Equity</td><td>Lose home if equity exceeds exemption (~$20k–$150k state-dependent)</td><td>Keep home if you can make plan payments</td></tr>
-<tr><td>🚗 Car</td><td>Lose car if value exceeds exemption</td><td>Keep car if included in plan</td></tr>
-<tr><td>⏱️ Duration</td><td>3–6 months to discharge</td><td>36–60 months of payments</td></tr>
-<tr><td>📊 Credit Impact</td><td>−150 to −250 points. Stays on report 10 years.</td><td>−100 to −200 points. Stays on report 7 years.</td></tr>
-<tr><td>🧠 SP Cost</td><td>+8 to +12 SP (shame, loss, uncertainty)</td><td>+5 to +8 SP (humiliation, long-term stress)</td></tr>
-<tr><td>⚖️ INT Check</td><td><span class="dice">2d10 + INT mod vs TN 7</span> to navigate filing</td><td><span class="dice">2d10 + INT mod + PRC mod vs TN 8</span> to create viable plan</td></tr>
-</tbody>
-</table>
+<div class="card-grid" style="grid-template-columns:1fr 1fr;">
+  <div class="card" style="border-top:4px solid #e74c3c;">
+    <span class="card-icon">📋</span>
+    <h3>Chapter 7 — Liquidation</h3>
+    <p><strong>Process:</strong> Sell non-exempt assets, discharge remaining debt</p>
+    <p><strong>Income:</strong> Must pass means test (below median)</p>
+    <p><strong>Home:</strong> Lose if equity > exemption ($20k–$150k)</p>
+    <p><strong>Car:</strong> Lose if value > exemption</p>
+    <p><strong>Duration:</strong> 3–6 months to discharge</p>
+    <p><strong>Credit:</strong> −150 to −250 pts · 10 years on report</p>
+    <p><strong>SP:</strong> +8 to +12 · <span class="dice">2d10+INT vs TN 7</span></p>
+  </div>
+  <div class="card" style="border-top:4px solid #f39c12;">
+    <span class="card-icon">📋</span>
+    <h3>Chapter 13 — Reorganization</h3>
+    <p><strong>Process:</strong> 3–5 year repayment plan, then discharge</p>
+    <p><strong>Income:</strong> Must have regular income to fund plan</p>
+    <p><strong>Home:</strong> Keep if you can make plan payments</p>
+    <p><strong>Car:</strong> Keep if included in plan</p>
+    <p><strong>Duration:</strong> 36–60 months of payments</p>
+    <p><strong>Credit:</strong> −100 to −200 pts · 7 years on report</p>
+    <p><strong>SP:</strong> +5 to +8 · <span class="dice">2d10+INT+PRC vs TN 8</span></p>
+  </div>
 </div>
 
 <h3>6.3 The Emotional Toll</h3>
@@ -524,20 +549,21 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>6.4 Recovery Timeline</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Time After Discharge</th><th>Credit Score</th><th>What's Available</th><th>Recovery Check</th></tr>
-</thead>
-<tbody>
-<tr><td>0–6 months</td><td>300–450</td><td>Secured credit cards only. No loans.</td><td><span class="dice">2d10 + PRC mod vs TN 8</span> to establish basic budgeting</td></tr>
-<tr><td>6–18 months</td><td>450–550</td><td>Subprime credit cards. High-interest auto loans.</td><td><span class="dice">2d10 + INT mod vs TN 7</span> to build credit slowly</td></tr>
-<tr><td>18–36 months</td><td>550–650</td><td>Subprime mortgages (FHA). Auto loans at higher rates.</td><td><span class="dice">2d10 + EXP mod vs TN 6</span> to negotiate better terms</td></tr>
-<tr><td>3–5 years</td><td>650–720</td><td>Conventional loans available. Rates still above prime.</td><td><span class="dice">2d10 + INT mod vs TN 5</span> to optimize finances</td></tr>
-<tr><td>5–7 years</td><td>720–780</td><td>Nearly full recovery. Best rates available.</td><td>Normal checks apply</td></tr>
-<tr><td>7+ years</td><td>780+</td><td>Fully recovered. Bankruptcy falls off report.</td><td>Normal checks apply</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/me_bankruptcy_recovery.svg" alt="Post-Bankruptcy Credit Recovery Path — 300 to 780+ over 7 years">
+</div>
+
+<div class="condition-track">
+  <div class="condition-step" style="background:#c0392b;">0–6 mo<br><small>300–450</small><br><span style="font-size:0.78rem;font-weight:400;">Secured cards only<br><span class="dice" style="font-size:0.72rem;">PRC vs TN 8</span></span></div>
+  <div class="condition-step" style="background:#e74c3c;">6–18 mo<br><small>450–550</small><br><span style="font-size:0.78rem;font-weight:400;">Subprime cards/loans<br><span class="dice" style="font-size:0.72rem;">INT vs TN 7</span></span></div>
+  <div class="condition-step" style="background:#e67e22;">18–36 mo<br><small>550–650</small><br><span style="font-size:0.78rem;font-weight:400;">FHA mortgages<br><span class="dice" style="font-size:0.72rem;">EXP vs TN 6</span></span></div>
+  <div class="condition-step" style="background:#f39c12;">3–5 yrs<br><small>650–720</small><br><span style="font-size:0.78rem;font-weight:400;">Conventional loans<br><span class="dice" style="font-size:0.72rem;">INT vs TN 5</span></span></div>
+  <div class="condition-step" style="background:#27ae60;">5–7 yrs<br><small>720–780</small><br><span style="font-size:0.78rem;font-weight:400;">Nearly full recovery<br>Normal checks</span></div>
+  <div class="condition-step" style="background:#2ecc71;">7+ yrs<br><small>780+</small><br><span style="font-size:0.78rem;font-weight:400;">Fully recovered<br>Falls off report</span></div>
+</div>
+
+<div class="section-illustration">
+  <img src="img/me_sarah_bankruptcy_filing.png" alt="Sarah filing bankruptcy at a public library computer">
 </div>
 
 <div class="callout example">
@@ -560,24 +586,21 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>Before a business can open, the character must complete these steps:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Step</th><th>Check</th><th>Cost</th><th>Time</th></tr>
-</thead>
-<tbody>
-<tr><td>📝 Business Plan</td><td><span class="dice">2d10 + INT mod vs TN 7</span></td><td>$0–$5,000 (if hiring a consultant)</td><td>1–3 months</td></tr>
-<tr><td>📋 Legal Formation (LLC, etc.)</td><td><span class="dice">2d10 + PRC mod vs TN 6</span></td><td>$100–$800 (state-dependent)</td><td>2–4 weeks</td></tr>
-<tr><td>🏛️ Licenses &amp; Permits</td><td><span class="dice">2d10 + PRC mod vs TN 7</span></td><td>$200–$5,000</td><td>1–6 months</td></tr>
-<tr><td>🏦 Business Bank Account</td><td>No check needed</td><td>$0–$30/month</td><td>1 day</td></tr>
-<tr><td>💰 Startup Capital</td><td>Must have funds or secure a loan (<span class="dice">2d10 + EXP mod vs TN 8</span>)</td><td>Varies wildly ($500 side hustle to $500k+ brick-and-mortar)</td><td>Depends on funding source</td></tr>
-<tr><td>📍 Location/Setup</td><td><span class="dice">2d10 + EXP mod vs TN 7</span> to find good location</td><td>Varies ($0 online to $50k+ lease deposit)</td><td>1–3 months</td></tr>
-<tr><td>📢 Marketing Launch</td><td><span class="dice">2d10 + EXP mod vs TN 7</span></td><td>$500–$20,000</td><td>1–2 months</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">📝</span><h3>Business Plan</h3><p><span class="dice">2d10+INT vs TN 7</span> · $0–$5K · 1–3 months</p></div>
+  <div class="card"><span class="card-icon">📋</span><h3>Legal Formation (LLC)</h3><p><span class="dice">2d10+PRC vs TN 6</span> · $100–$800 · 2–4 weeks</p></div>
+  <div class="card"><span class="card-icon">🏛️</span><h3>Licenses &amp; Permits</h3><p><span class="dice">2d10+PRC vs TN 7</span> · $200–$5K · 1–6 months</p></div>
+  <div class="card"><span class="card-icon">🏦</span><h3>Business Bank Account</h3><p>No check · $0–$30/mo · 1 day</p></div>
+  <div class="card"><span class="card-icon">💰</span><h3>Startup Capital</h3><p><span class="dice">2d10+EXP vs TN 8</span> for loan · $500–$500K+ · Varies</p></div>
+  <div class="card"><span class="card-icon">📍</span><h3>Location/Setup</h3><p><span class="dice">2d10+EXP vs TN 7</span> · $0–$50K+ · 1–3 months</p></div>
+  <div class="card"><span class="card-icon">📢</span><h3>Marketing Launch</h3><p><span class="dice">2d10+EXP vs TN 7</span> · $500–$20K · 1–2 months</p></div>
 </div>
 
 <h3>7.2 Monthly Business Operations</h3>
+
+<div class="section-illustration">
+  <img src="img/me_business_viability.svg" alt="Monthly Business Viability Check — 2d10 outcome grid">
+</div>
 
 <p>Each month, the GM calls for a <strong>Business Viability Check</strong>:</p>
 
@@ -594,20 +617,13 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>Characters can run side hustles alongside their main job. Side hustles are lower-stakes but also lower-reward:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Side Hustle</th><th>Startup Cost</th><th>Monthly Earnings</th><th>Time Required</th><th>Check</th></tr>
-</thead>
-<tbody>
-<tr><td>🛒 E-commerce (Etsy, Amazon FBA)</td><td>$500–$5,000</td><td>$200–$3,000/month</td><td>10–20 hrs/week</td><td><span class="dice">2d10 + DXT mod vs TN 6</span></td></tr>
-<tr><td>🍔 Food Truck</td><td>$50,000–$150,000</td><td>$3,000–$10,000/month</td><td>40+ hrs/week</td><td><span class="dice">2d10 + EXP mod vs TN 8</span></td></tr>
-<tr><td>💻 Consulting/Freelancing</td><td>$0–$500</td><td>$1,000–$8,000/month</td><td>10–30 hrs/week</td><td><span class="dice">2d10 + INT mod + EXP mod vs TN 6</span></td></tr>
-<tr><td>🏠 Property Management (Airbnb)</td><td>$0–$10,000 (if you own property)</td><td>$500–$5,000/month</td><td>5–15 hrs/week</td><td><span class="dice">2d10 + PRC mod vs TN 7</span></td></tr>
-<tr><td>🔧 Handyman Services</td><td>$200–$2,000 (tools)</td><td>$800–$4,000/month</td><td>15–30 hrs/week</td><td><span class="dice">2d10 + DXT mod vs TN 5</span></td></tr>
-<tr><td>📚 Tutoring</td><td>$0</td><td>$300–$1,500/month</td><td>5–15 hrs/week</td><td><span class="dice">2d10 + INT mod vs TN 4</span></td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">🛒</span><h3>E-commerce</h3><p><strong>Startup:</strong> $500–$5K · <strong>Earn:</strong> $200–$3K/mo · 10–20 hrs/wk · <span class="dice">DXT vs TN 6</span></p></div>
+  <div class="card"><span class="card-icon">🍔</span><h3>Food Truck</h3><p><strong>Startup:</strong> $50K–$150K · <strong>Earn:</strong> $3K–$10K/mo · 40+ hrs/wk · <span class="dice">EXP vs TN 8</span></p></div>
+  <div class="card"><span class="card-icon">💻</span><h3>Consulting/Freelance</h3><p><strong>Startup:</strong> $0–$500 · <strong>Earn:</strong> $1K–$8K/mo · 10–30 hrs/wk · <span class="dice">INT+EXP vs TN 6</span></p></div>
+  <div class="card"><span class="card-icon">🏠</span><h3>Airbnb / Prop. Mgmt</h3><p><strong>Startup:</strong> $0–$10K · <strong>Earn:</strong> $500–$5K/mo · 5–15 hrs/wk · <span class="dice">PRC vs TN 7</span></p></div>
+  <div class="card"><span class="card-icon">🔧</span><h3>Handyman Services</h3><p><strong>Startup:</strong> $200–$2K · <strong>Earn:</strong> $800–$4K/mo · 15–30 hrs/wk · <span class="dice">DXT vs TN 5</span></p></div>
+  <div class="card"><span class="card-icon">📚</span><h3>Tutoring</h3><p><strong>Startup:</strong> $0 · <strong>Earn:</strong> $300–$1.5K/mo · 5–15 hrs/wk · <span class="dice">INT vs TN 4</span></p></div>
 </div>
 
 <h3>7.4 Hiring Employees</h3>
@@ -629,6 +645,10 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
   <p><strong>Total Tax Rate ≈ 25–40% of net profit</strong> (depending on income bracket and deductions). Characters must set aside this money each month. <span class="dice">2d10 + INT mod vs TN 50</span> each quarter to file taxes correctly. Failure = penalties (5–25% of unpaid taxes) or audit risk. Finance skill ≥ +1 grants +5.</p>
 </div>
 
+<div class="section-illustration">
+  <img src="img/me_jamal_consulting_launch.png" alt="Jamal launching his consulting business from home office">
+</div>
+
 <div class="callout example">
   <div class="callout-title">📝 Example: Jamal's Consulting Business</div>
   <p>Jamal (INT 13, EXP 11, PRC 8) has been a software developer for 8 years. He wants to start a consulting business helping small companies with cybersecurity.</p>
@@ -644,6 +664,10 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
      SECTION 8 — CAREER LADDERS
      ============================================================ -->
 <h2>🪜 8. Career Ladders</h2>
+
+<div class="section-illustration">
+  <img src="img/me_career_convergence.svg" alt="Career Ladder Salary Comparison — 6 professions across levels">
+</div>
 
 <p>Career advancement is one of the primary ways characters increase their income and quality of life. Each profession has a defined <strong>career ladder</strong> with promotion requirements, salary ranges, and advancement checks.</p>
 
@@ -661,106 +685,64 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>8.2 Corporate Ladder</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Level</th><th>Title</th><th>Salary Range</th><th>Years to Reach</th><th>Promotion TN</th><th>Key Skills</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Entry-Level / Associate</td><td>$40k–$60k</td><td>0–2</td><td>N/A (starting position)</td><td>Degree or equivalent experience</td></tr>
-<tr><td>2</td><td>Mid-Level / Specialist</td><td>$60k–$90k</td><td>2–5</td><td>TN 6</td><td>EXP, INT; proven track record</td></tr>
-<tr><td>3</td><td>Senior / Lead</td><td>$90k–$130k</td><td>5–8</td><td>TN 7</td><td>EXP +1; leadership demonstrated</td></tr>
-<tr><td>4</td><td>Director / Manager</td><td>$130k–$180k</td><td>8–12</td><td>TN 8</td><td>EXP +2; managing teams</td></tr>
-<tr><td>5</td><td>VP / Senior Director</td><td>$180k–$300k</td><td>12–18</td><td>TN 9</td><td>EXP +3; strategic thinking</td></tr>
-<tr><td>6</td><td>C-Suite (CEO, CFO, COO)</td><td>$300k–$1M+</td><td>18–25+</td><td>TN 10</td><td>EXP +4; board-level politics</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">L1</span><span class="tn-label"><strong>Entry-Level / Associate</strong> · $40k–$60k · 0–2 yrs · Starting position</span></div>
+  <div class="tn-step easy"><span class="tn-value">L2</span><span class="tn-label"><strong>Mid-Level / Specialist</strong> · $60k–$90k · 2–5 yrs · <span class="dice">TN 6</span> (EXP, INT)</span></div>
+  <div class="tn-step medium"><span class="tn-value">L3</span><span class="tn-label"><strong>Senior / Lead</strong> · $90k–$130k · 5–8 yrs · <span class="dice">TN 7</span> (EXP +1)</span></div>
+  <div class="tn-step hard"><span class="tn-value">L4</span><span class="tn-label"><strong>Director / Manager</strong> · $130k–$180k · 8–12 yrs · <span class="dice">TN 8</span> (EXP +2)</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">L5</span><span class="tn-label"><strong>VP / Sr. Director</strong> · $180k–$300k · 12–18 yrs · <span class="dice">TN 9</span> (EXP +3)</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value">L6</span><span class="tn-label"><strong>C-Suite (CEO/CFO/COO)</strong> · $300k–$1M+ · 18–25+ yrs · <span class="dice">TN 10</span> (EXP +4)</span></div>
 </div>
 
 <h3>8.3 Healthcare Ladder</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Level</th><th>Title</th><th>Salary Range</th><th>Education Required</th><th>Promotion TN</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>CNA / Medical Assistant</td><td>$30k–$45k</td><td>Certificate (4–12 months)</td><td>N/A</td></tr>
-<tr><td>2</td><td>LPN / LVN</td><td>$45k–$60k</td><td>Associate degree (1–2 years)</td><td>TN 6 (INT check)</td></tr>
-<tr><td>3</td><td>RN (Registered Nurse)</td><td>$60k–$95k</td><td>Bachelor's or Associate + NCLEX</td><td>TN 7 (INT + VIG checks)</td></tr>
-<tr><td>4</td><td>Nurse Practitioner (NP)</td><td>$95k–$130k</td><td>Master's degree (2–3 years)</td><td>TN 8 (INT check)</td></tr>
-<tr><td>5</td><td>Physician / Surgeon</td><td>$180k–$400k+</td><td>Medical school + residency (7–15 years)</td><td>TN 10 (INT + VIG mod + RES checks)</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">L1</span><span class="tn-label"><strong>CNA / Med Assistant</strong> · $30k–$45k · Certificate (4–12 mo)</span></div>
+  <div class="tn-step easy"><span class="tn-value">L2</span><span class="tn-label"><strong>LPN / LVN</strong> · $45k–$60k · Assoc. deg · <span class="dice">TN 6</span> (INT)</span></div>
+  <div class="tn-step medium"><span class="tn-value">L3</span><span class="tn-label"><strong>RN</strong> · $60k–$95k · Bachelor's + NCLEX · <span class="dice">TN 7</span> (INT+VIG)</span></div>
+  <div class="tn-step hard"><span class="tn-value">L4</span><span class="tn-label"><strong>Nurse Practitioner</strong> · $95k–$130k · Master's (2–3 yr) · <span class="dice">TN 8</span> (INT)</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value">L5</span><span class="tn-label"><strong>Physician / Surgeon</strong> · $180k–$400K+ · Med school+resid (7–15 yr) · <span class="dice">TN 10</span> (INT+VIG+RES)</span></div>
 </div>
 
 <h3>8.4 Tech Industry Ladder</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Level</th><th>Title</th><th>Salary Range</th><th>Years to Reach</th><th>Promotion TN</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Junior Developer</td><td>$60k–$90k</td><td>0–2</td><td>N/A</td></tr>
-<tr><td>2</td><td>Software Engineer</td><td>$90k–$140k</td><td>2–5</td><td>TN 6 (DXT + INT)</td></tr>
-<tr><td>3</td><td>Senior Engineer</td><td>$140k–$200k</td><td>5–8</td><td>TN 7 (DXT + EXP)</td></tr>
-<tr><td>4</td><td>Staff / Principal Engineer or Architect</td><td>$200k–$300k</td><td>8–12</td><td>TN 8 (DXT + INT mod + EXP)</td></tr>
-<tr><td>5</td><td>Engineering Manager / Director</td><td>$200k–$350k</td><td>10–15</td><td>TN 9 (EXP dominant)</td></tr>
-<tr><td>6</td><td>VP of Engineering / CTO</td><td>$300k–$600k+</td><td>15–20+</td><td>TN 10 (EXP + INT)</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">L1</span><span class="tn-label"><strong>Junior Developer</strong> · $60k–$90k · 0–2 yrs</span></div>
+  <div class="tn-step easy"><span class="tn-value">L2</span><span class="tn-label"><strong>Software Engineer</strong> · $90k–$140k · 2–5 yrs · <span class="dice">TN 6</span> (DXT+INT)</span></div>
+  <div class="tn-step medium"><span class="tn-value">L3</span><span class="tn-label"><strong>Senior Engineer</strong> · $140k–$200k · 5–8 yrs · <span class="dice">TN 7</span> (DXT+EXP)</span></div>
+  <div class="tn-step hard"><span class="tn-value">L4</span><span class="tn-label"><strong>Staff / Principal / Architect</strong> · $200k–$300k · 8–12 yrs · <span class="dice">TN 8</span> (DXT+INT+EXP)</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">L5</span><span class="tn-label"><strong>Eng. Manager / Director</strong> · $200k–$350k · 10–15 yrs · <span class="dice">TN 9</span> (EXP)</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value">L6</span><span class="tn-label"><strong>VP Eng. / CTO</strong> · $300k–$600K+ · 15–20+ yrs · <span class="dice">TN 10</span> (EXP+INT)</span></div>
 </div>
 
 <h3>8.5 Education Ladder</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Level</th><th>Title</th><th>Salary Range</th><th>Requirements</th><th>Promotion TN</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Teacher (Classroom)</td><td>$45k–$70k</td><td>Bachelor's + teaching certificate</td><td>N/A</td></tr>
-<tr><td>2</td><td>Senior Teacher / Mentor</td><td>$65k–$85k</td><td>5+ years experience</td><td>TN 6 (EXP + INT)</td></tr>
-<tr><td>3</td><td>Department Head / Coordinator</td><td>$75k–$100k</td><td>Master's degree; leadership experience</td><td>TN 7 (EXP)</td></tr>
-<tr><td>4</td><td>Principal</td><td>$85k–$120k</td><td>Admin credential; 5+ years teaching</td><td>TN 8 (EXP + PRC)</td></tr>
-<tr><td>5</td><td>Superintendent / District Admin</td><td>$100k–$180k</td><td>Doctorate preferred; 10+ years</td><td>TN 9 (EXP + INT)</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">L1</span><span class="tn-label"><strong>Teacher</strong> · $45k–$70k · Bachelor's + certificate</span></div>
+  <div class="tn-step easy"><span class="tn-value">L2</span><span class="tn-label"><strong>Senior Teacher / Mentor</strong> · $65k–$85k · 5+ yrs · <span class="dice">TN 6</span> (EXP+INT)</span></div>
+  <div class="tn-step medium"><span class="tn-value">L3</span><span class="tn-label"><strong>Dept. Head / Coordinator</strong> · $75k–$100k · Master's · <span class="dice">TN 7</span> (EXP)</span></div>
+  <div class="tn-step hard"><span class="tn-value">L4</span><span class="tn-label"><strong>Principal</strong> · $85k–$120k · Admin credential · <span class="dice">TN 8</span> (EXP+PRC)</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">L5</span><span class="tn-label"><strong>Superintendent / Dist. Admin</strong> · $100k–$180k · Doctorate · <span class="dice">TN 9</span> (EXP+INT)</span></div>
 </div>
 
 <h3>8.6 Trades Ladder</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Level</th><th>Title</th><th>Salary Range</th><th>Requirements</th><th>Promotion TN</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>Apprentice</td><td>$30k–$45k</td><td>Apprenticeship program enrollment</td><td>N/A</td></tr>
-<tr><td>2</td><td>Journeyman</td><td>$45k–$70k</td><td>Complete 4-year apprenticeship + license exam</td><td>TN 6 (DXT + VIG)</td></tr>
-<tr><td>3</td><td>Master / Lead</td><td>$70k–$100k</td><td>2+ years as journeyman + master exam</td><td>TN 7 (DXT + EXP)</td></tr>
-<tr><td>4</td><td>Foreman / Supervisor</td><td>$80k–$120k</td><td>Management skills; 5+ years experience</td><td>TN 8 (EXP + DXT)</td></tr>
-<tr><td>5</td><td>Contractor / Business Owner</td><td>$100k–$250k+</td><td>Business license; bonding; insurance</td><td>TN 9 (EXP + INT mod + PRC)</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">L1</span><span class="tn-label"><strong>Apprentice</strong> · $30k–$45k · Apprenticeship enrollment</span></div>
+  <div class="tn-step easy"><span class="tn-value">L2</span><span class="tn-label"><strong>Journeyman</strong> · $45k–$70k · 4-yr apprenticeship + license · <span class="dice">TN 6</span> (DXT+VIG)</span></div>
+  <div class="tn-step medium"><span class="tn-value">L3</span><span class="tn-label"><strong>Master / Lead</strong> · $70k–$100k · 2+ yrs as journeyman · <span class="dice">TN 7</span> (DXT+EXP)</span></div>
+  <div class="tn-step hard"><span class="tn-value">L4</span><span class="tn-label"><strong>Foreman / Supervisor</strong> · $80k–$120k · 5+ yrs · <span class="dice">TN 8</span> (EXP+DXT)</span></div>
+  <div class="tn-step very-hard"><span class="tn-value">L5</span><span class="tn-label"><strong>Contractor / Biz Owner</strong> · $100k–$250K+ · License+bonding · <span class="dice">TN 9</span> (EXP+INT+PRC)</span></div>
 </div>
 
 <h3>8.7 Federal Government Ladder (GS System)</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Level</th><th>GS Grade</th><th>Salary Range</th><th>Years to Reach</th><th>Promotion TN</th></tr>
-</thead>
-<tbody>
-<tr><td>1</td><td>GS-5 to GS-7</td><td>$30k–$55k</td><td>0–3</td><td>N/A</td></tr>
-<tr><td>2</td><td>GS-9 to GS-11</td><td>$55k–$85k</td><td>3–7</td><td>TN 6 (PRC + INT)</td></tr>
-<tr><td>3</td><td>GS-12 to GS-13</td><td>$85k–$115k</td><td>7–12</td><td>TN 7 (EXP + PRC)</td></tr>
-<tr><td>4</td><td>GS-14 to GS-15</td><td>$115k–$165k</td><td>12–18</td><td>TN 8 (EXP + INT)</td></tr>
-<tr><td>5</td><td>SES / Executive</td><td>$165k–$220k+</td><td>18–25+</td><td>TN 10 (EXP dominant)</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value">L1</span><span class="tn-label"><strong>GS-5 to GS-7</strong> · $30k–$55k · 0–3 yrs</span></div>
+  <div class="tn-step easy"><span class="tn-value">L2</span><span class="tn-label"><strong>GS-9 to GS-11</strong> · $55k–$85k · 3–7 yrs · <span class="dice">TN 6</span> (PRC+INT)</span></div>
+  <div class="tn-step medium"><span class="tn-value">L3</span><span class="tn-label"><strong>GS-12 to GS-13</strong> · $85k–$115k · 7–12 yrs · <span class="dice">TN 7</span> (EXP+PRC)</span></div>
+  <div class="tn-step hard"><span class="tn-value">L4</span><span class="tn-label"><strong>GS-14 to GS-15</strong> · $115k–$165k · 12–18 yrs · <span class="dice">TN 8</span> (EXP+INT)</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value">L5</span><span class="tn-label"><strong>SES / Executive</strong> · $165k–$220K+ · 18–25+ yrs · <span class="dice">TN 10</span> (EXP)</span></div>
 </div>
 
 <div class="callout tip">
@@ -777,23 +759,20 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>9.1 Union Membership Benefits</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Benefit</th><th>Non-Union</th><th>Union</th><th>Quantified Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>💰 Wages</td><td>Market rate</td><td>15–30% above market</td><td>+15–30% to monthly income</td></tr>
-<tr><td>🏥 Health Insurance</td><td>Employer-provided or ACA</td><td>Negotiated comprehensive plan</td><td>Lower premiums, better coverage</td></tr>
-<tr><td>⚖️ Job Security</td><td>At-will employment</td><td>Just-cause termination only</td><td>Cannot be fired without due process</td></tr>
-<tr><td>📋 Grievance Process</td><td>Complain to HR (risky)</td><td>Formal grievance procedure</td><td>Protected complaint process</td></tr>
-<tr><td>🎓 Training</td><td>Minimal</td><td>Apprenticeship, continuing ed</td><td>Free skill development</td></tr>
-<tr><td>💸 Dues</td><td>N/A</td><td>1–2% of salary</td><td>Cost of membership</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">💰</span><h3>Wages</h3><p><strong>Non-union:</strong> Market rate · <strong style="color:#27ae60;">Union:</strong> +15–30% above market</p></div>
+  <div class="card"><span class="card-icon">🏥</span><h3>Health Insurance</h3><p><strong>Non-union:</strong> Employer or ACA · <strong style="color:#27ae60;">Union:</strong> Negotiated comprehensive plan</p></div>
+  <div class="card"><span class="card-icon">⚖️</span><h3>Job Security</h3><p><strong>Non-union:</strong> At-will · <strong style="color:#27ae60;">Union:</strong> Just-cause termination only</p></div>
+  <div class="card"><span class="card-icon">📋</span><h3>Grievance Process</h3><p><strong>Non-union:</strong> Complain to HR · <strong style="color:#27ae60;">Union:</strong> Formal protected procedure</p></div>
+  <div class="card"><span class="card-icon">🎓</span><h3>Training</h3><p><strong>Non-union:</strong> Minimal · <strong style="color:#27ae60;">Union:</strong> Apprenticeship + continuing ed</p></div>
+  <div class="card"><span class="card-icon">💸</span><h3>Dues</h3><p><strong>Cost:</strong> 1–2% of salary · Worth it for the wage premium alone</p></div>
 </div>
 
 <h3>9.2 Workplace Organizing</h3>
+
+<div class="section-illustration">
+  <img src="img/me_union_campaign_flow.svg" alt="Union Organizing Campaign Flowchart — 6 steps from support to ratification">
+</div>
 
 <p>Characters can attempt to organize their workplace into a union. This is a multi-step campaign arc:</p>
 
@@ -813,24 +792,21 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>A strike is the nuclear option. Workers walk off the job, costing the employer money and the workers income. Strikes are high-risk:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Factor</th><th>Mechanic</th><th>Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>📅 Strike Duration</td><td>Each week of strike = lost wages for strikers</td><td>Characters without savings take +2 SP/week</td></tr>
-<tr><td>💰 Strike Fund</td><td>Union may provide $100–$500/week</td><td>Covers basic expenses but not full income</td></tr>
-<tr><td>🏢 Employer Response</td><td>GM rolls <span class="dice">2d10</span> weekly</td><td>7+: employer holds firm. 8+: employer hires scabs. 9+: employer threatens permanent replacement.</td></tr>
-<tr><td>📰 Public Opinion</td><td><span class="dice">2d10 + EXP mod vs TN 7</span> to maintain support</td><td>Success = media sympathy, donations. Failure = public turns against union.</td></tr>
-<tr><td>⚖️ Resolution</td><td><span class="dice">2d10 + EXP mod vs TN 8</span> per week after week 4</td><td>Success = contract won. Failure = strike dragged out longer. Critical failure = union loses.</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">📅</span><h3>Strike Duration</h3><p>Each week = lost wages. No savings = <strong>+2 SP/week</strong></p></div>
+  <div class="card"><span class="card-icon">💰</span><h3>Strike Fund</h3><p>Union provides $100–$500/wk. Covers basics, not full income.</p></div>
+  <div class="card"><span class="card-icon">🏢</span><h3>Employer Response</h3><p>GM rolls <span class="dice">2d10</span>/wk · 7+: holds firm · 8+: hires scabs · 9+: permanent replacement</p></div>
+  <div class="card"><span class="card-icon">📰</span><h3>Public Opinion</h3><p><span class="dice">2d10+EXP vs TN 7</span> · Success: media sympathy · Failure: public turns</p></div>
+  <div class="card"><span class="card-icon">⚖️</span><h3>Resolution</h3><p><span class="dice">2d10+EXP vs TN 8</span> after wk 4 · Success: contract · Crit fail: union loses</p></div>
 </div>
 
 <div class="callout warning">
   <div class="callout-title">⚠️ Strike Risks</div>
   <p>In "right-to-work" states, employers can permanently replace striking workers. Even in union states, a long strike can bankrupt individual workers. Characters who strike should understand: <strong>they are risking their livelihood</strong>. This is not a casual choice. Characters without savings or with dependents may be unable to strike even if they want to.</p>
+</div>
+
+<div class="section-illustration">
+  <img src="img/me_maria_union_organizing.png" alt="Maria organizing warehouse workers in the breakroom">
 </div>
 
 <div class="callout example">
@@ -853,20 +829,17 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>10.1 Job Risk Assessment</h3>
 
+<div class="section-illustration">
+  <img src="img/me_ai_displacement_radar.svg" alt="AI Displacement Risk Radar — 4-axis assessment by profession">
+</div>
+
 <p>Each profession has an <strong>AI Risk Score</strong> from 1 (safe) to 10 (extremely vulnerable):</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Risk</th><th>Profession Examples</th><th>Timeline</th><th>Displacement Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>🟢 1–2 (Safe)</td><td>Healthcare providers, teachers, social workers, electricians, plumbers</td><td>20+ years</td><td>AI augments but doesn't replace</td></tr>
-<tr><td>🟡 3–5 (Moderate)</td><td>Accountants, paralegals, radiologists, customer service, data entry</td><td>5–15 years</td><td>Partial automation; roles shift</td></tr>
-<tr><td>🟠 6–8 (High)</td><td>Journalists, translators, basic coding, graphic design, copywriting</td><td>3–10 years</td><td>Significant displacement; retraining needed</td></tr>
-<tr><td>🔴 9–10 (Critical)</td><td>Data annotators, basic content writers, telemarketers, assembly line, basic bookkeeping</td><td>1–5 years</td><td>Near-total displacement likely</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step trivial"><span class="tn-value" style="color:#27ae60;">1–2</span><span class="tn-label"><strong>🟢 Safe</strong> · Healthcare, teachers, trades, plumbers · 20+ yrs · AI augments, doesn't replace</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">3–5</span><span class="tn-label"><strong>🟡 Moderate</strong> · Accountants, paralegals, radiologists, data entry · 5–15 yrs · Partial automation</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">6–8</span><span class="tn-label"><strong>🟠 High</strong> · Journalists, translators, coding, design, copywriting · 3–10 yrs · Retraining needed</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value" style="color:#e74c3c;">9–10</span><span class="tn-label"><strong>🔴 Critical</strong> · Data annotators, content writers, telemarketers, assembly · 1–5 yrs · Near-total displacement</span></div>
 </div>
 
 <h3>10.2 AI Displacement Events</h3>
@@ -882,18 +855,11 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>Characters displaced by AI can attempt to retrain for a safer profession:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Action</th><th>Check</th><th>Time</th><th>Cost</th><th>Effect</th></tr>
-</thead>
-<tbody>
-<tr><td>📚 Online Course / Bootcamp</td><td><span class="dice">2d10 + INT mod vs TN 6</span></td><td>3–6 months</td><td>$500–$15,000</td><td>Gain new skills; may qualify for new career ladder</td></tr>
-<tr><td>🎓 Degree Program</td><td><span class="dice">2d10 + INT mod vs TN 7</span></td><td>2–4 years</td><td>$10,000–$100,000+</td><td>Full career change; student debt likely</td></tr>
-<tr><td>🔧 Apprenticeship (Trades)</td><td><span class="dice">2d10 + DXT mod vs TN 5</span></td><td>3–5 years</td><td>$0–$5,000 (earn while learning)</td><td>AI-resistant career; steady income</td></tr>
-<tr><td>💼 Career Coaching</td><td><span class="dice">2d10 + EXP mod vs TN 6</span></td><td>1–3 months</td><td>$500–$5,000</td><td>Transfer existing skills to new field</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">📚</span><h3>Online Course / Bootcamp</h3><p><span class="dice">INT vs TN 6</span> · 3–6 mo · $500–$15K · Gain new skills for new ladder</p></div>
+  <div class="card"><span class="card-icon">🎓</span><h3>Degree Program</h3><p><span class="dice">INT vs TN 7</span> · 2–4 yrs · $10K–$100K+ · Full career change; student debt likely</p></div>
+  <div class="card"><span class="card-icon">🔧</span><h3>Apprenticeship (Trades)</h3><p><span class="dice">DXT vs TN 5</span> · 3–5 yrs · $0–$5K · AI-resistant; earn while learning</p></div>
+  <div class="card"><span class="card-icon">💼</span><h3>Career Coaching</h3><p><span class="dice">EXP vs TN 6</span> · 1–3 mo · $500–$5K · Transfer existing skills to new field</p></div>
 </div>
 
 <div class="callout warning">
@@ -910,20 +876,13 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>11.1 Gig Work Options</h3>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Gig Type</th><th>Hourly Rate</th><th>Hours Available</th><th>Vehicle Needed?</th><th>VIG Check Required?</th></tr>
-</thead>
-<tbody>
-<tr><td>🚗 Ride-share (Uber/Lyft)</td><td>$15–$25/hr (before expenses)</td><td>10–20 hrs/week</td><td>Yes (reliable car)</td><td>Yes (fatigue)</td></tr>
-<tr><td>🍕 Food Delivery (DoorDash/UberEats)</td><td>$12–$20/hr (before expenses)</td><td>10–25 hrs/week</td><td>Yes (car or bike)</td><td>Yes (fatigue)</td></tr>
-<tr><td>📦 Package Delivery (Amazon Flex)</td><td>$18–$25/hr</td><td>5–15 hrs/week</td><td>Yes (car or SUV)</td><td>Yes (heavy lifting)</td></tr>
-<tr><td>🏠 TaskRabbit / Handyman</td><td>$25–$50/hr</td><td>5–15 hrs/week</td><td>No</td><td>Yes (physical work)</td></tr>
-<tr><td>💻 Freelance (Upwork/Fiverr)</td><td>$20–$100+/hr</td><td>5–30 hrs/week</td><td>No</td><td>No</td></tr>
-<tr><td>🧹 Cleaning Services</td><td>$20–$35/hr</td><td>10–20 hrs/week</td><td>Yes</td><td>Yes (physical work)</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card"><span class="card-icon">🚗</span><h3>Ride-share (Uber/Lyft)</h3><p><strong>$15–$25/hr</strong> · 10–20 hrs/wk · Needs car · VIG: fatigue</p></div>
+  <div class="card"><span class="card-icon">🍕</span><h3>Food Delivery</h3><p><strong>$12–$20/hr</strong> · 10–25 hrs/wk · Car or bike · VIG: fatigue</p></div>
+  <div class="card"><span class="card-icon">📦</span><h3>Package Delivery</h3><p><strong>$18–$25/hr</strong> · 5–15 hrs/wk · Car/SUV · VIG: heavy lifting</p></div>
+  <div class="card"><span class="card-icon">🏠</span><h3>TaskRabbit / Handyman</h3><p><strong>$25–$50/hr</strong> · 5–15 hrs/wk · No vehicle · VIG: physical</p></div>
+  <div class="card"><span class="card-icon">💻</span><h3>Freelance (Upwork)</h3><p><strong>$20–$100+/hr</strong> · 5–30 hrs/wk · No vehicle · No VIG check</p></div>
+  <div class="card"><span class="card-icon">🧹</span><h3>Cleaning Services</h3><p><strong>$20–$35/hr</strong> · 10–20 hrs/wk · Needs vehicle · VIG: physical</p></div>
 </div>
 
 <h3>11.2 Income Volatility</h3>
@@ -954,11 +913,19 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <h3>11.4 Gig Stacking</h3>
 
+<div class="section-illustration">
+  <img src="img/me_gig_stack_burnout.svg" alt="Gig Stacking: Income vs Burnout — 1 vs 2 vs 3+ gigs comparison">
+</div>
+
 <p>Many characters work <strong>multiple gigs simultaneously</strong> to make ends meet. This is called "gig stacking" and it has mechanical consequences:</p>
 
 <div class="callout rule">
   <div class="callout-title">⚖️ Gig Stacking Penalty</div>
   <p>For each additional gig beyond the first, the character takes a <strong>−1 penalty</strong> to all gig income checks and a <strong>+1 SP per month</strong> from burnout. At 3+ stacked gigs, the character must also roll <span class="dice">2d10 + VIG mod + RES mod vs TN 8</span> each month to avoid physical/emotional exhaustion. Failure = forced rest (no gig income for 1 week) or health event.</p>
+</div>
+
+<div class="section-illustration">
+  <img src="img/me_kevin_gig_stack.png" alt="Kevin in his car at midnight between gig shifts">
 </div>
 
 <div class="callout example">
@@ -980,23 +947,54 @@ Example: $10,000 invested at 8% for 10 years = $10,000 × 2.16 = <strong>$21,589
 
 <p>Financial hardship generates Stress Points just like physical danger in a combat RPG. The following events generate SP:</p>
 
-<div class="table-wrap">
-<table>
-<thead>
-<tr><th>Event</th><th>SP Cost</th><th>RES Save</th></tr>
-</thead>
-<tbody>
-<tr><td>Can't pay rent on time</td><td>+2 SP</td><td><span class="dice">2d10 + RES mod vs TN 7</span></td></tr>
-<tr><td>Max out a credit card</td><td>+2 SP</td><td><span class="dice">2d10 + RES mod vs TN 7</span></td></tr>
-<tr><td>Lose a job</td><td>+4 SP</td><td><span class="dice">2d10 + RES mod vs TN 8</span></td></tr>
-<tr><td>Receive a medical bill you can't afford</td><td>+3 SP</td><td><span class="dice">2d10 + RES mod vs TN 7</span></td></tr>
-<tr><td>Car breaks down (no spare money)</td><td>+2 SP</td><td><span class="dice">2d10 + RES mod vs TN 6</span></td></tr>
-<tr><td>Eviction notice</td><td>+6 SP</td><td><span class="dice">2d10 + RES mod vs TN 9</span></td></tr>
-<tr><td>Bankruptcy filing</td><td>+8 SP</td><td><span class="dice">2d10 + RES mod vs TN 10</span></td></tr>
-<tr><td>Student loan repayment begins</td><td>+1 SP/month</td><td><span class="dice">2d10 + RES mod vs TN 6</span> (monthly)</td></tr>
-<tr><td>Watch investment portfolio crash</td><td>+2 to +4 SP</td><td><span class="dice">2d10 + RES mod vs TN 7</span></td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/ec_stress_economy.svg" alt="Daily Stress Economy — SP sources and coping mechanisms">
+</div>
+
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💸 Can't pay rent</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#27ae60;width:25%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+2 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 7</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💳 Max credit card</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#27ae60;width:25%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+2 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 7</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🚗 Car breakdown</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#27ae60;width:25%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+2 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 6</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📋 Student loans begin</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#82e0aa;width:12%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+1 SP/mo</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 6</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🏥 Unaffordable medical</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:38%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+3 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 7</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📉 Portfolio crash</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+2–4 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 7</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔥 Lose a job</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+4 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 8</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🏚️ Eviction notice</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:75%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+6 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 9</span></span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💀 Bankruptcy filing</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#c0392b;width:100%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;"><strong>+8 SP</strong> · <span class="dice" style="font-size:0.75rem;">RES vs TN 10</span></span>
 </div>
 
 <div class="callout rule">

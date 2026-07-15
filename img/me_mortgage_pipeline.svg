@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 480" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
+    <marker id="arrowG" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#27ae60"/></marker>
+    <marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#e74c3c"/></marker>
+  </defs>
+
+  <text x="250" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50">Mortgage Qualification Pipeline</text>
+
+  <!-- Gate 1: Credit Score -->
+  <rect x="100" y="45" width="300" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">① Credit Score Check</text>
+  <text x="250" y="86" text-anchor="middle" font-size="11" fill="#7f8c8d">≥620 conventional · ≥580 FHA</text>
+
+  <line x1="250" y1="97" x2="250" y2="120" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="270" y="112" font-size="9" fill="#27ae60">PASS</text>
+  <line x1="400" y1="71" x2="440" y2="71" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="445" y="75" font-size="10" fill="#e74c3c" font-weight="600">DENIED</text>
+
+  <!-- Gate 2: DTI -->
+  <rect x="100" y="125" width="300" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">② DTI Ratio ≤ 43%</text>
+  <text x="250" y="166" text-anchor="middle" font-size="11" fill="#7f8c8d">Total debt ÷ gross monthly income</text>
+
+  <line x1="250" y1="177" x2="250" y2="200" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="270" y="192" font-size="9" fill="#27ae60">PASS</text>
+  <line x1="400" y1="151" x2="440" y2="151" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="445" y="155" font-size="10" fill="#e74c3c" font-weight="600">DENIED</text>
+
+  <!-- Gate 3: Down Payment -->
+  <rect x="100" y="205" width="300" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">③ Down Payment ≥ 3.5%</text>
+  <text x="250" y="246" text-anchor="middle" font-size="11" fill="#7f8c8d">Savings verified · 20% ideal (no PMI)</text>
+
+  <line x1="250" y1="257" x2="250" y2="280" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="270" y="272" font-size="9" fill="#27ae60">PASS</text>
+  <line x1="400" y1="231" x2="440" y2="231" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="445" y="235" font-size="10" fill="#e74c3c" font-weight="600">DENIED</text>
+
+  <!-- Gate 4: Employment -->
+  <rect x="100" y="285" width="300" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="308" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">④ Employment History</text>
+  <text x="250" y="326" text-anchor="middle" font-size="11" fill="#7f8c8d">2 yrs same field · <tspan font-family="Consolas,monospace" font-weight="600" fill="#e67e22">2d10+EXP vs TN 6</tspan> if spotty</text>
+
+  <line x1="250" y1="337" x2="250" y2="360" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowG)"/>
+  <text x="270" y="352" font-size="9" fill="#27ae60">PASS</text>
+  <line x1="400" y1="311" x2="440" y2="311" stroke="#e74c3c" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="445" y="315" font-size="10" fill="#e74c3c" font-weight="600">DENIED</text>
+
+  <!-- Gate 5: Cash Reserves -->
+  <rect x="100" y="365" width="300" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="388" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">⑤ Cash Reserves ≥ 2 months</text>
+  <text x="250" y="406" text-anchor="middle" font-size="11" fill="#7f8c8d">6 months ideal · Auto-checked</text>
+
+  <!-- Final: APPROVED -->
+  <line x1="250" y1="417" x2="250" y2="440" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowG)"/>
+  <rect x="160" y="440" width="180" height="32" rx="16" fill="#27ae60"/>
+  <text x="250" y="461" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">✅ APPROVED</text>
+</svg>
