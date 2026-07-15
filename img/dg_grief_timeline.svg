@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <defs>
+    <linearGradient id="spGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Grief Process Timeline — SP Accumulation Curve</text>
+  <text x="450" y="52" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">Each phase has duration, weekly SP cost, and a RES exit check. Failed checks loop you backward.</text>
+
+  <!-- PHASE BANDS — top section -->
+  <rect x="100" y="75" width="140" height="50" rx="6" fill="#f39c12" opacity="0.25"/>
+  <text x="170" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e67e22">😶 Denial</text>
+  <text x="170" y="113" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">2–6 weeks · +3 SP/wk</text>
+
+  <rect x="250" y="75" width="140" height="50" rx="6" fill="#e67e22" opacity="0.25"/>
+  <text x="320" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e67e22">😤 Anger</text>
+  <text x="320" y="113" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">2–8 weeks · +2 SP/wk</text>
+
+  <rect x="400" y="75" width="140" height="50" rx="6" fill="#e67e22" opacity="0.2"/>
+  <text x="470" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e67e22">🤝 Bargaining</text>
+  <text x="470" y="113" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">1–4 weeks · +2 SP/wk</text>
+
+  <rect x="550" y="75" width="150" height="50" rx="6" fill="#e74c3c" opacity="0.25"/>
+  <text x="625" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e74c3c">😢 Depression</text>
+  <text x="625" y="113" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#e74c3c">4–16 weeks · +4 SP/wk ⚠️</text>
+
+  <rect x="720" y="75" width="150" height="50" rx="6" fill="#27ae60" opacity="0.2"/>
+  <text x="795" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#27ae60">🌅 Acceptance</text>
+  <text x="795" y="113" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#27ae60">Not timed · SP fading</text>
+
+  <!-- Arrows between phases -->
+  <path d="M240,100 L250,100" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M390,100 L400,100" stroke="#2c3e50" stroke-width="2"/>
+  <path d="M540,100 L550,100" stroke="#2c3e50" stroke-width="2"/>
+  <path d="M700,100 L720,100" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- SP CURVE AREA -->
+  <!-- Y axis labels -->
+  <text x="85" y="175" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">Max SP</text>
+  <text x="85" y="230" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">75%</text>
+  <text x="85" y="285" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">50%</text>
+  <text x="85" y="340" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">25%</text>
+  <text x="85" y="385" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">0</text>
+
+  <!-- Grid lines -->
+  <line x1="100" y1="170" x2="860" y2="170" stroke="#ddd" stroke-dasharray="4"/>
+  <line x1="100" y1="225" x2="860" y2="225" stroke="#ddd" stroke-dasharray="4"/>
+  <line x1="100" y1="280" x2="860" y2="280" stroke="#ddd" stroke-dasharray="4"/>
+  <line x1="100" y1="335" x2="860" y2="335" stroke="#ddd" stroke-dasharray="4"/>
+  <line x1="100" y1="380" x2="860" y2="380" stroke="#ccc" stroke-width="2"/>
+
+  <!-- Danger zone label -->
+  <text x="105" y="163" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="600">EPISODE ZONE</text>
+  <line x1="100" y1="170" x2="860" y2="170" stroke="#e74c3c" stroke-width="1" opacity="0.5"/>
+
+  <!-- SP curve — filled area under curve -->
+  <path d="M100,380 L100,350 L170,310 L240,260 L250,260 L320,240 L380,225 L400,225 L470,210 L540,195 L550,195 L625,155 L700,170 L720,170 L795,250 L860,380 Z" fill="url(#spGrad)"/>
+
+  <!-- SP curve — line -->
+  <path d="M100,350 L170,310 L240,260 L320,240 L380,225 L470,210 L540,195 L625,155 L700,170 L795,250 L860,380" fill="none" stroke="#e74c3c" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Curve dots at key points -->
+  <circle cx="170" cy="310" r="4" fill="#e67e22"/>
+  <circle cx="320" cy="240" r="4" fill="#e67e22"/>
+  <circle cx="470" cy="210" r="4" fill="#e67e22"/>
+  <circle cx="625" cy="155" r="5" fill="#e74c3c"/>
+  <circle cx="795" cy="250" r="4" fill="#27ae60"/>
+
+  <!-- RES check markers -->
+  <rect x="225" y="130" width="50" height="18" rx="3" fill="#fff" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="250" y="143" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22" font-weight="600">TN 50</text>
+
+  <rect x="375" y="130" width="50" height="18" rx="3" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="400" y="143" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22" font-weight="600">TN 55</text>
+
+  <rect x="525" y="130" width="50" height="18" rx="3" fill="#fff" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="550" y="143" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22" font-weight="600">TN 60</text>
+
+  <rect x="675" y="130" width="55" height="18" rx="3" fill="#fff" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="702" y="143" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e74c3c" font-weight="600">TN 65</text>
+
+  <!-- Loop-back arrows for failed checks -->
+  <path d="M245,152 C200,175 170,175 170,145" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3" fill="none" opacity="0.6"/>
+  <text x="195" y="170" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8" fill="#e74c3c" opacity="0.7">fail→Denial</text>
+
+  <path d="M395,152 C350,175 320,175 320,145" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3" fill="none" opacity="0.6"/>
+  <text x="350" y="170" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8" fill="#e74c3c" opacity="0.7">fail→Denial</text>
+
+  <!-- Therapy annotation -->
+  <rect x="590" y="135" width="80" height="16" rx="3" fill="#27ae60" opacity="0.15"/>
+  <text x="630" y="147" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#27ae60" font-weight="600">Therapy: −10 TN</text>
+
+  <!-- X axis — week markers -->
+  <text x="100" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W0</text>
+  <text x="170" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W4</text>
+  <text x="250" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W8</text>
+  <text x="320" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W12</text>
+  <text x="470" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W20</text>
+  <text x="625" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W30</text>
+  <text x="795" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W40</text>
+  <text x="860" y="405" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">W48+</text>
+
+  <!-- Y axis label -->
+  <text x="30" y="275" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d" transform="rotate(-90,30,275)">Stress Points (SP)</text>
+
+  <!-- Legend -->
+  <rect x="100" y="415" width="12" height="12" rx="2" fill="#e74c3c"/>
+  <text x="118" y="426" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">SP Level over time</text>
+  <rect x="260" y="415" width="12" height="12" rx="2" fill="#fff" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="278" y="426" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">RES exit check (TN escalates)</text>
+  <line x1="420" y1="421" x2="440" y2="421" stroke="#e74c3c" stroke-width="1" stroke-dasharray="3"/>
+  <text x="445" y="426" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Failed check → loop backward</text>
+  <rect x="640" y="415" width="12" height="12" rx="2" fill="#27ae60" opacity="0.3"/>
+  <text x="658" y="426" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Therapy reduces TN by 10</text>
+</svg>

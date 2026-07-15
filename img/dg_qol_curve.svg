@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Quality of Life — Treatment Path Comparison</text>
+  <text x="350" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">Aggressive treatment extends time but adds suffering. Palliative care accepts decline with dignity.</text>
+
+  <!-- Y axis labels -->
+  <text x="70" y="90" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">10</text>
+  <text x="70" y="145" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">8</text>
+  <text x="70" y="200" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">6</text>
+  <text x="70" y="255" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">4</text>
+  <text x="70" y="310" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">2</text>
+  <text x="70" y="355" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">0</text>
+
+  <!-- Grid lines -->
+  <line x1="90" y1="85" x2="650" y2="85" stroke="#eee" stroke-width="1"/>
+  <line x1="90" y1="140" x2="650" y2="140" stroke="#eee" stroke-width="1"/>
+  <line x1="90" y1="195" x2="650" y2="195" stroke="#eee" stroke-width="1"/>
+  <line x1="90" y1="250" x2="650" y2="250" stroke="#eee" stroke-width="1"/>
+  <line x1="90" y1="305" x2="650" y2="305" stroke="#eee" stroke-width="1"/>
+  <line x1="90" y1="350" x2="650" y2="350" stroke="#ccc" stroke-width="2"/>
+
+  <!-- QoL zone annotations -->
+  <rect x="555" y="85" width="95" height="55" rx="4" fill="#27ae60" opacity="0.1"/>
+  <text x="602" y="105" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#27ae60">Fully functional</text>
+  <text x="602" y="118" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#27ae60">(QoL 7–10)</text>
+
+  <rect x="555" y="140" width="95" height="55" rx="4" fill="#f39c12" opacity="0.1"/>
+  <text x="602" y="160" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#f39c12">Needs some</text>
+  <text x="602" y="173" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#f39c12">assistance (4–6)</text>
+
+  <rect x="555" y="250" width="95" height="55" rx="4" fill="#e74c3c" opacity="0.1"/>
+  <text x="602" y="270" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e74c3c">Full-time care</text>
+  <text x="602" y="283" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e74c3c">needed (1–3)</text>
+
+  <!-- PALLIATIVE CURVE — steady decline -->
+  <!-- Points: Month 0=QoL7, M2=6, M4=5, M6=4, M8=3, M10=2, M12=1, M14=0 -->
+  <!-- Y mapping: QoL 0→350, QoL 10→85. Each QoL point = 26.5px -->
+  <!-- QoL 7 = 85 + 3×26.5 = 164.5; QoL 6 = 191; QoL 5 = 217.5; QoL 4 = 244; QoL 3 = 270.5; QoL 2 = 297; QoL 1 = 323.5; QoL 0 = 350 -->
+  <path d="M110,164 L170,191 L230,217.5 L290,244 L350,270.5 L410,297 L470,323.5 L530,350"
+        fill="none" stroke="#2980b9" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- AGGRESSIVE CURVE — slower decline with SP spikes -->
+  <!-- Points: Month 0=QoL7, M2=6.5, M4=5.5, M6=5, M8=4.5, M10=4, M12=3, M14=2, M16=1, M18=0 -->
+  <!-- QoL 6.5 = 177.5; QoL 5.5 = 204; QoL 4.5 = 256.5; QoL 3.5 = 283 -->
+  <path d="M110,164 L170,177.5 L230,204 L290,244 L350,256.5 L410,297 L470,323.5 L530,336.5 L590,350"
+        fill="none" stroke="#e67e22" stroke-width="3" stroke-linejoin="round" stroke-dasharray="8,4"/>
+
+  <!-- SP spike annotations on aggressive curve -->
+  <text x="170" y="170" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22">⚡</text>
+  <text x="230" y="196" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22">⚡</text>
+  <text x="350" y="248" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22">⚡</text>
+  <text x="410" y="289" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22">⚡</text>
+
+  <!-- X axis labels -->
+  <text x="110" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M0</text>
+  <text x="170" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M2</text>
+  <text x="230" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M4</text>
+  <text x="290" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M6</text>
+  <text x="350" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M8</text>
+  <text x="410" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M10</text>
+  <text x="470" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M12</text>
+  <text x="530" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M14</text>
+  <text x="590" y="370" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M18</text>
+
+  <!-- Y axis label -->
+  <text x="25" y="217" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d" transform="rotate(-90,25,217)">Quality of Life</text>
+
+  <!-- Legend -->
+  <line x1="110" y1="390" x2="140" y2="390" stroke="#2980b9" stroke-width="3"/>
+  <text x="148" y="394" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Palliative Care — steady decline, lower SP</text>
+  <line x1="400" y1="390" x2="430" y2="390" stroke="#e67e22" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="438" y="394" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Aggressive — slower decline, +3 SP/wk, ⚡ = treatment cycle</text>
+</svg>

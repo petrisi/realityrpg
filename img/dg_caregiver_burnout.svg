@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520">
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Caregiver Burnout Progression</text>
+  <text x="350" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">Daily burden accumulates. Monthly VIG checks prevent or accelerate burnout.</text>
+
+  <!-- Start node -->
+  <rect x="200" y="70" width="300" height="50" rx="10" fill="#eaf2f8" stroke="#2980b9" stroke-width="2"/>
+  <text x="350" y="93" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#2980b9">Daily Caregiving Burden</text>
+  <text x="350" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">+2 SP/day · 4–12 hrs/day of care</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="120" x2="350" y2="145" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- Monthly VIG Check node -->
+  <rect x="175" y="145" width="350" height="55" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="350" y="168" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e67e22">Monthly VIG Check</text>
+  <text x="350" y="188" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2c3e50">2d10 vs VIG (TN 50) · TN +5 each dementia stage</text>
+
+  <!-- Split arrows: Success left, Failure right -->
+  <line x1="250" y1="200" x2="180" y2="240" stroke="#27ae60" stroke-width="2"/>
+  <line x1="450" y1="200" x2="520" y2="240" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Success label -->
+  <text x="200" y="222" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="700">SUCCESS</text>
+  <!-- Failure label -->
+  <text x="490" y="222" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="700">FAILURE</text>
+
+  <!-- SUCCESS PATH — continues to next month -->
+  <rect x="80" y="240" width="200" height="50" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+  <text x="180" y="263" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#27ae60">Stable — Continue</text>
+  <text x="180" y="280" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Care continues to next month</text>
+
+  <!-- Loop arrow back to monthly check -->
+  <path d="M180,290 C180,320 250,330 350,200" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5" fill="none"/>
+
+  <!-- FAILURE PATH — Fatigue Marker -->
+  <rect x="420" y="240" width="200" height="50" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+  <text x="520" y="263" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#e74c3c">⚠ Fatigue Marker #1</text>
+  <text x="520" y="280" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">−1 temp VIG · +3 SP</text>
+
+  <!-- Arrow down to marker accumulation -->
+  <line x1="520" y1="290" x2="520" y2="320" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Marker accumulation -->
+  <rect x="400" y="320" width="240" height="70" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="520" y="343" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#e74c3c">Accumulate 3 Fatigue Markers</text>
+  <text x="520" y="360" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Without taking at least 2 days off</text>
+  <text x="520" y="378" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="600">Each failure = another marker</text>
+
+  <!-- Arrow down to BURNOUT -->
+  <line x1="520" y1="390" x2="520" y2="420" stroke="#e74c3c" stroke-width="3"/>
+
+  <!-- BURNOUT EVENT -->
+  <rect x="380" y="420" width="280" height="65" rx="10" fill="#e74c3c"/>
+  <text x="520" y="445" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">🔥 BURNOUT EVENT</text>
+  <text x="520" y="462" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#fff">−2 temp VIG · +8 SP</text>
+  <text x="520" y="478" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#fff">Medically unable to care for 2–4 weeks</text>
+
+  <!-- RESPIRE CARE BRANCH — from the side -->
+  <line x1="200" y1="295" x2="100" y2="350" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5"/>
+  <rect x="10" y="350" width="180" height="70" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+  <text x="100" y="373" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#27ae60">✅ Respite Care</text>
+  <text x="100" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Hire help 1–2 days/week</text>
+  <text x="100" y="406" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="600">$25–$30/hr · −2 SP/day</text>
+
+  <!-- Arrow from respite care to "prevents burnout" -->
+  <text x="100" y="435" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="700">Prevents burnout</text>
+  <path d="M100,445 C100,470 300,480 400,455" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5" fill="none"/>
+
+  <!-- Bottom annotation -->
+  <rect x="100" y="498" width="500" height="20" rx="4" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
+  <text x="350" y="512" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e67e22">Dementia caregiving: +3 SP/day instead of +2 · TN increases by 5 per stage</text>
+</svg>

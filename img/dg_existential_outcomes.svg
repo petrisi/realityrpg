@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 520" width="750" height="520">
+  <!-- Title -->
+  <text x="375" y="30" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Existential Crisis — Outcome Map</text>
+  <text x="375" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">4 RES checks over 12 weeks. Track successes vs failures to determine outcome path.</text>
+
+  <!-- START -->
+  <rect x="275" y="70" width="200" height="40" rx="20" fill="#2c3e50"/>
+  <text x="375" y="95" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#fff">❓ Crisis Triggered</text>
+
+  <!-- Check 1: Week 1 TN 50 -->
+  <line x1="375" y1="110" x2="375" y2="135" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="295" y="135" width="160" height="45" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="2"/>
+  <text x="375" y="155" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#27ae60">Week 1 — TN 50</text>
+  <text x="375" y="170" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Basic functioning</text>
+
+  <!-- Check 2: Week 3 TN 60 -->
+  <line x1="375" y1="180" x2="375" y2="205" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="295" y="205" width="160" height="45" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="375" y="225" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#f39c12">Week 3 — TN 60</text>
+  <text x="375" y="240" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Depression or foothold?</text>
+
+  <!-- Check 3: Week 6 TN 65 -->
+  <line x1="375" y1="250" x2="375" y2="275" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="295" y="275" width="160" height="45" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="375" y="295" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#e67e22">Week 6 — TN 65</text>
+  <text x="375" y="310" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Find new framework?</text>
+
+  <!-- Check 4: Week 12 TN 70 -->
+  <line x1="375" y1="320" x2="375" y2="345" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="295" y="345" width="160" height="45" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="375" y="365" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#e74c3c">Week 12 — TN 70</text>
+  <text x="375" y="380" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Integration into worldview</text>
+
+  <!-- Split to outcomes -->
+  <line x1="295" y1="360" x2="170" y2="400" stroke="#e74c3c" stroke-width="2"/>
+  <line x1="455" y1="360" x2="580" y2="400" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- NEGATIVE SPIRAL (left) -->
+  <rect x="50" y="400" width="240" height="110" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+  <text x="170" y="423" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#e74c3c">🌑 Negative Spiral</text>
+  <text x="170" y="440" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">(3+ failures)</text>
+  <text x="170" y="458" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">+5 SP permanently · Episode</text>
+  <text x="170" y="473" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Withdrawal · Nihilism · Risky behavior</text>
+  <text x="170" y="488" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="600">4 failures + low RES + no support</text>
+  <text x="170" y="503" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="600">→ GM must check in with player</text>
+
+  <!-- POSITIVE TRANSFORMATION (right) -->
+  <rect x="460" y="400" width="240" height="110" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+  <text x="580" y="423" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#27ae60">🌟 Positive Transformation</text>
+  <text x="580" y="440" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">(3+ successes)</text>
+  <text x="580" y="458" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">−5 SP · New life purpose (+2 RES/yr)</text>
+  <text x="580" y="473" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">+1 RES permanent · Deepens 1–2 bonds</text>
+  <text x="580" y="488" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">New worldview · +1 to future crisis TNs</text>
+  <text x="580" y="503" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="600">Creative output · EXP gains possible</text>
+
+  <!-- THERAPY INTERVENTION node — center, between checks and outcomes -->
+  <rect x="260" y="330" width="80" height="35" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="300" y="346" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="700" fill="#2980b9">Therapy</text>
+  <text x="300" y="358" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8" fill="#2980b9">−TN by 10</text>
+  <line x1="260" y1="348" x2="295" y2="360" stroke="#2980b9" stroke-width="1" stroke-dasharray="3"/>
+
+  <!-- Success/Failure counters -->
+  <rect x="20" y="70" width="100" height="300" rx="8" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="70" y="93" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">Track</text>
+  <text x="70" y="120" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60">☐ Success</text>
+  <text x="70" y="140" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60">☐ Success</text>
+  <text x="70" y="160" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60">☐ Success</text>
+  <text x="70" y="185" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">vs</text>
+  <text x="70" y="210" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c">☐ Failure</text>
+  <text x="70" y="230" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c">☐ Failure</text>
+  <text x="70" y="250" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c">☐ Failure</text>
+  <text x="70" y="280" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Each fail =</text>
+  <text x="70" y="295" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">+3 SP</text>
+</svg>

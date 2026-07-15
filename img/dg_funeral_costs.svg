@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="20" font-weight="700" fill="#2c3e50">Funeral Cost Comparison</text>
+  <text x="400" y="52" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">Average US costs by service type — a direct hit to the PC's finances during grief</text>
+
+  <!-- Bars: Y positions, bar height = 40px, gap = 20px -->
+  <!-- Scale: max $15,000 maps to bar width of 500px (33px per $1000) -->
+
+  <!-- Grid lines -->
+  <line x1="200" y1="80" x2="200" y2="360" stroke="#ddd" stroke-width="1"/>
+  <line x1="333" y1="80" x2="333" y2="360" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="467" y1="80" x2="467" y2="360" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="600" y1="80" x2="600" y2="360" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="700" y1="80" x2="700" y2="360" stroke="#eee" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- X axis labels -->
+  <text x="200" y="378" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">$0</text>
+  <text x="333" y="378" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">$5K</text>
+  <text x="467" y="378" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">$10K</text>
+  <text x="600" y="378" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">$15K</text>
+  <text x="700" y="378" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">$20K</text>
+
+  <!-- Bar 1: Traditional $7K-$15K (233px - 500px) -->
+  <text x="190" y="105" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="600">⚰️ Traditional</text>
+  <rect x="200" y="90" width="233" height="30" rx="4" fill="#e74c3c"/>
+  <rect x="200" y="90" width="500" height="30" rx="4" fill="none" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+  <text x="445" y="110" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7b1a1a" font-weight="700">$7,000–$15,000+</text>
+
+  <!-- Bar 2: Cremation $3K-$7K (100px - 233px) -->
+  <text x="190" y="155" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="600">🔥 Cremation</text>
+  <rect x="200" y="140" width="100" height="30" rx="4" fill="#e67e22"/>
+  <rect x="200" y="140" width="233" height="30" rx="4" fill="none" stroke="#e67e22" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+  <text x="345" y="160" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7a3e00" font-weight="700">$3,000–$7,000</text>
+
+  <!-- Bar 3: Green Burial $2K-$5K (67px - 167px) -->
+  <text x="190" y="205" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="600">🌿 Green Burial</text>
+  <rect x="200" y="190" width="67" height="30" rx="4" fill="#f39c12"/>
+  <rect x="200" y="190" width="167" height="30" rx="4" fill="none" stroke="#f39c12" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+  <text x="290" y="210" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7a5c00" font-weight="700">$2,000–$5,000</text>
+
+  <!-- Bar 4: Memorial $500-$3K (17px - 100px) -->
+  <text x="190" y="255" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="600">🏛️ Memorial</text>
+  <rect x="200" y="240" width="17" height="30" rx="4" fill="#27ae60"/>
+  <rect x="200" y="240" width="100" height="30" rx="4" fill="none" stroke="#27ae60" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+  <text x="330" y="260" text-anchor="start" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#27ae60" font-weight="700">$500–$3,000</text>
+
+  <!-- Bar 5: Home Funeral $200-$1K (7px - 33px) -->
+  <text x="190" y="305" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="600">🏠 Home Funeral</text>
+  <rect x="200" y="290" width="7" height="30" rx="4" fill="#2ecc71"/>
+  <rect x="200" y="290" width="33" height="30" rx="4" fill="none" stroke="#2ecc71" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+  <text x="245" y="310" text-anchor="start" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#2ecc71" font-weight="700">$200–$1,000</text>
+
+  <!-- Bar 6: Medical Donation $0-$500 (0px - 17px) -->
+  <text x="190" y="355" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#2c3e50" font-weight="600">🏥 Body Donation</text>
+  <rect x="200" y="340" width="0" height="30" rx="4" fill="#27ae60"/>
+  <rect x="200" y="340" width="17" height="30" rx="4" fill="none" stroke="#27ae60" stroke-width="1" stroke-dasharray="4" opacity="0.5"/>
+  <text x="230" y="360" text-anchor="start" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#27ae60" font-weight="700">$0–$500</text>
+
+  <!-- Annotation -->
+  <rect x="200" y="395" width="500" height="22" rx="4" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
+  <text x="450" y="410" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e67e22">⚠️ Planning a funeral adds +4 SP for the week of logistics, on top of grief SP</text>
+</svg>
