@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420">
+  <!-- Title -->
+  <text x="300" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🧘 Wellness Investment Matrix</text>
+  <text x="300" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Cost vs. SP Reduction · Which activities give the best bang for buck?</text>
+
+  <!-- Axes -->
+  <line x1="80" y1="370" x2="560" y2="370" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="80" y1="370" x2="80" y2="60" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- X-axis label -->
+  <text x="320" y="400" text-anchor="middle" font-size="12" font-weight="600" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">COST → (Free → Expensive)</text>
+  <text x="140" y="390" text-anchor="middle" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$0</text>
+  <text x="260" y="390" text-anchor="middle" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$15-50</text>
+  <text x="380" y="390" text-anchor="middle" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$50-120</text>
+  <text x="500" y="390" text-anchor="middle" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$60-150</text>
+
+  <!-- Y-axis label -->
+  <text x="35" y="215" text-anchor="middle" font-size="12" font-weight="600" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" transform="rotate(-90,35,215)">SP REDUCTION →</text>
+  <text x="75" y="365" text-anchor="end" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−1 SP</text>
+  <text x="75" y="270" text-anchor="end" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−2 SP</text>
+  <text x="75" y="175" text-anchor="end" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−3 SP</text>
+  <text x="75" y="80" text-anchor="end" font-size="9" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−4 SP</text>
+
+  <!-- Quadrant labels -->
+  <text x="200" y="340" text-anchor="middle" font-size="11" font-weight="700" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" opacity="0.5">BEST VALUE</text>
+  <text x="460" y="340" text-anchor="middle" font-size="11" font-weight="700" fill="#e74c3c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" opacity="0.5">SPLURGE</text>
+  <text x="200" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" opacity="0.5">BUDGET FRIENDLY</text>
+  <text x="460" y="100" text-anchor="middle" font-size="11" font-weight="700" fill="#f39c12" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" opacity="0.5">WORTH IT</text>
+
+  <!-- Grid lines (light) -->
+  <line x1="80" y1="270" x2="560" y2="270" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="80" y1="175" x2="560" y2="175" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="80" y1="80" x2="560" y2="80" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="200" y1="60" x2="200" y2="370" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="320" y1="60" x2="320" y2="370" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="440" y1="60" x2="440" y2="370" stroke="#dcdcdc" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- DATA POINTS -->
+  <!-- 🧘 Meditation: −2 SP, $0-15 → BEST VALUE area -->
+  <circle cx="120" cy="270" r="22" fill="#27ae60" stroke="#1e8449" stroke-width="2" opacity="0.9"/>
+  <text x="120" y="266" text-anchor="middle" font-size="16">🧘</text>
+  <text x="120" y="283" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−2 SP</text>
+  <text x="120" y="300" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Meditation</text>
+  <text x="120" y="312" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$0-15/mo</text>
+
+  <!-- 🌿 Nature: −2 SP, $0 → BEST VALUE area (best of best) -->
+  <circle cx="100" cy="270" r="22" fill="#1e8449" stroke="#196f3d" stroke-width="2" opacity="0.9"/>
+  <text x="100" y="266" text-anchor="middle" font-size="16">🌿</text>
+  <text x="100" y="283" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−2 SP</text>
+  <text x="100" y="300" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Nature</text>
+  <text x="100" y="312" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">FREE</text>
+
+  <!-- 🏃 Exercise: −2 SP, $0-50 → BEST VALUE area -->
+  <circle cx="170" cy="270" r="22" fill="#27ae60" stroke="#1e8449" stroke-width="2" opacity="0.9"/>
+  <text x="170" y="266" text-anchor="middle" font-size="16">🏃</text>
+  <text x="170" y="283" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−2 SP</text>
+  <text x="170" y="300" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Exercise</text>
+  <text x="170" y="312" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$0-50/mo</text>
+
+  <!-- 🧖 Sauna: −3 SP, $15-50 → BEST VALUE area -->
+  <circle cx="160" cy="175" r="22" fill="#27ae60" stroke="#1e8449" stroke-width="2" opacity="0.9"/>
+  <text x="160" y="171" text-anchor="middle" font-size="16">🧖</text>
+  <text x="160" y="188" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−3 SP</text>
+  <text x="160" y="205" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Sauna</text>
+  <text x="160" y="217" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$15-50</text>
+
+  <!-- 🧘‍♀️ Yoga: −3 SP, $15-25/class → BEST VALUE area -->
+  <circle cx="190" cy="175" r="22" fill="#27ae60" stroke="#1e8449" stroke-width="2" opacity="0.9"/>
+  <text x="190" y="171" text-anchor="middle" font-size="16">🧘‍♀️</text>
+  <text x="190" y="188" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−3 SP</text>
+  <text x="190" y="205" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Yoga</text>
+  <text x="190" y="217" text-anchor="middle" font-size="8" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$15-25</text>
+
+  <!-- 📍 Acupuncture: −3 SP, $50-120 → WORTH IT area -->
+  <circle cx="370" cy="175" r="22" fill="#2980b9" stroke="#1f6da0" stroke-width="2" opacity="0.9"/>
+  <text x="370" y="171" text-anchor="middle" font-size="16">📍</text>
+  <text x="370" y="188" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−3 SP</text>
+  <text x="370" y="205" text-anchor="middle" font-size="8" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Acupuncture</text>
+  <text x="370" y="217" text-anchor="middle" font-size="8" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$50-120</text>
+
+  <!-- 💆 Massage: −4 SP, $60-150 → SPLURGE area (but highest SP) -->
+  <circle cx="460" cy="80" r="22" fill="#e67e22" stroke="#d35400" stroke-width="2" opacity="0.9"/>
+  <text x="460" y="76" text-anchor="middle" font-size="16">💆</text>
+  <text x="460" y="93" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−4 SP</text>
+  <text x="460" y="110" text-anchor="middle" font-size="8" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Massage</text>
+  <text x="460" y="122" text-anchor="middle" font-size="8" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$60-150</text>
+
+  <!-- 🛁 Self-care: −1 SP, $5-30 → LOW VALUE area -->
+  <circle cx="150" cy="340" r="22" fill="#f39c12" stroke="#d4a017" stroke-width="2" opacity="0.9"/>
+  <text x="150" y="336" text-anchor="middle" font-size="16">🛁</text>
+  <text x="150" y="353" text-anchor="middle" font-size="8" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−1 SP</text>
+  <text x="150" y="370" text-anchor="middle" font-size="8" fill="#d4a017" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Self-care</text>
+  <text x="150" y="382" text-anchor="middle" font-size="8" fill="#d4a017" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$5-30</text>
+
+  <!-- Legend note -->
+  <text x="300" y="412" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-style="italic">Wellness Bonus: 3 months regular practice → +5 to all RES checks, −2 daily SP gain · Budget: $50-300/month</text>
+</svg>

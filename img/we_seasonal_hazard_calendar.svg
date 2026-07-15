@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" width="560" height="560">
+  <!-- Title -->
+  <text x="280" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">📅 Seasonal Hazard Calendar</text>
+
+  <!-- Center circle -->
+  <circle cx="280" cy="290" r="40" fill="#2c3e50"/>
+  <text x="280" y="286" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SEASONS</text>
+  <text x="280" y="300" text-anchor="middle" font-size="10" fill="#d4efdf" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Rotate 3mo</text>
+
+  <!-- WINTER quadrant (top-left) -->
+  <path d="M 280 290 L 280 120 A 170 170 0 0 0 110 290 Z" fill="#d6eaf8" stroke="#2980b9" stroke-width="2"/>
+  <text x="195" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">❄️ WINTER</text>
+  <text x="195" y="186" text-anchor="middle" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Dec – Feb</text>
+  <line x1="145" y1="196" x2="245" y2="196" stroke="#1a5276" stroke-width="1"/>
+  <text x="145" y="212" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +2 snow/ice</text>
+  <text x="145" y="227" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +1 overcast</text>
+  <text x="145" y="247" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 Heat +$50-150/mo</text>
+  <text x="145" y="262" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 Holidays $200-1K</text>
+  <text x="145" y="282" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🤧 SAD: RES TN 45</text>
+  <text x="145" y="297" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🤧 Flu: +5 TN health</text>
+
+  <!-- SPRING quadrant (top-right) -->
+  <path d="M 280 290 L 280 120 A 170 170 0 0 1 450 290 Z" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="365" y="170" text-anchor="middle" font-size="14" font-weight="700" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌸 SPRING</text>
+  <text x="365" y="186" text-anchor="middle" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Mar – May</text>
+  <line x1="315" y1="196" x2="415" y2="196" stroke="#1e8449" stroke-width="1"/>
+  <text x="315" y="212" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +2 rain rolls</text>
+  <text x="315" y="227" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +1 partly cloudy</text>
+  <text x="315" y="247" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 Allergy meds $10-60</text>
+  <text x="315" y="262" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 Spring cleaning 1-2 EP</text>
+  <text x="315" y="282" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🤧 Pollen: RES TN 40</text>
+  <text x="315" y="297" font-size="10" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">😊 −1 SP/wk non-allergic</text>
+
+  <!-- FALL quadrant (bottom-right) — text starts just below midline y=290 -->
+  <path d="M 280 290 L 450 290 A 170 170 0 0 1 280 460 Z" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="365" y="310" text-anchor="middle" font-size="14" font-weight="700" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🍂 FALL</text>
+  <text x="365" y="326" text-anchor="middle" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Sep – Nov</text>
+  <line x1="315" y1="336" x2="415" y2="336" stroke="#a04000" stroke-width="1"/>
+  <text x="315" y="352" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +2 overcast</text>
+  <text x="315" y="367" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +1 rain</text>
+  <text x="315" y="387" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 School $500-2K</text>
+  <text x="315" y="402" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 HVAC $100-300</text>
+  <text x="315" y="422" font-size="10" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🥬 Produce cheaper</text>
+  <text x="315" y="437" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🤧 Flu risk; SAD: RES 50</text>
+
+  <!-- SUMMER quadrant (bottom-left) — text starts just below midline y=290 -->
+  <path d="M 280 290 L 110 290 A 170 170 0 0 0 280 460 Z" fill="#fdebd0" stroke="#f39c12" stroke-width="2"/>
+  <text x="195" y="310" text-anchor="middle" font-size="14" font-weight="700" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">☀️ SUMMER</text>
+  <text x="195" y="326" text-anchor="middle" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Jun – Aug</text>
+  <line x1="145" y1="336" x2="245" y2="336" stroke="#7d6608" stroke-width="1"/>
+  <text x="145" y="352" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +2 clear/sunny</text>
+  <text x="145" y="367" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌡️ +1 thunderstorm</text>
+  <text x="145" y="387" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 AC +$40-120/mo</text>
+  <text x="145" y="402" font-size="10" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💰 Vacation $500-3K</text>
+  <text x="145" y="422" font-size="10" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🏃 −2 TN outdoor exercise</text>
+  <text x="145" y="437" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🔥 Heat stress (§1.3)</text>
+
+  <!-- Outer ring month labels -->
+  <text x="280" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">DEC JAN FEB</text>
+  <text x="462" y="293" text-anchor="start" font-size="11" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">MAR APR MAY</text>
+  <text x="280" y="478" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">JUN JUL AUG</text>
+  <text x="98" y="293" text-anchor="end" font-size="11" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SEP OCT NOV</text>
+
+  <!-- Budget check reminder -->
+  <text x="280" y="540" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-style="italic">Seasonal Budget Check: INT TN 45 at start of each season · Failure = +$100-500 emergency +3 SP</text>
+</svg>

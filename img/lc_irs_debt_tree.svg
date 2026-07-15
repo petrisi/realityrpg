@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1115 650" width="1115" height="650">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+    <marker id="arrBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2980b9"/>
+    </marker>
+    <marker id="arrRed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c0392b"/>
+    </marker>
+    <marker id="arrOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e67e22"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1115" height="650" rx="12" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="550" y="32" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">IRS Debt Resolution — Decision Tree</text>
+  <text x="550" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7f8c8d">What to do when you can't pay your tax debt</text>
+  <line x1="180" y1="58" x2="935" y2="58" stroke="#2980b9" stroke-width="2"/>
+
+  <!-- ════════════════════════════════════════
+       ROOT: "You Can't Pay What You Owe"
+       ════════════════════════════════════════ -->
+  <rect x="425" y="68" width="350" height="44" rx="22" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="550" y="89" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">💸 You Can't Pay What You Owe</text>
+  <text x="550" y="104" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#bdc3c7">IRS has filed a notice of levy / lien</text>
+
+  <!-- Arrow down to branching point -->
+  <line x1="550" y1="112" x2="550" y2="138" stroke="#2c3e50" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Horizontal bus line connecting all 4 branches -->
+  <line x1="100" y1="148" x2="1010" y2="148" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- Vertical arrows from bus to each branch (aligned to box centers: 175, 445, 715, 985) -->
+  <line x1="175" y1="138" x2="175" y2="148" stroke="#27ae60" stroke-width="2" marker-end="url(#arrGreen)"/>
+  <line x1="445" y1="138" x2="445" y2="148" stroke="#2980b9" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <line x1="715" y1="138" x2="715" y2="148" stroke="#e67e22" stroke-width="2" marker-end="url(#arrOrange)"/>
+  <line x1="985" y1="138" x2="985" y2="148" stroke="#c0392b" stroke-width="2" marker-end="url(#arrRed)"/>
+
+  <!-- Difficulty labels on bus -->
+  <text x="140" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="700" fill="#27ae60">Easy</text>
+  <text x="410" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="700" fill="#2980b9">Moderate</text>
+  <text x="680" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="700" fill="#e67e22">Hard</text>
+  <text x="950" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="700" fill="#c0392b">Hardest</text>
+
+  <!-- ════════════════════════════════════════
+       BRANCH 1: Short-Term Extension (green)
+       x=50, w=250, center=175
+       ════════════════════════════════════════ -->
+  <rect x="50" y="158" width="250" height="175" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="50" y="158" width="250" height="30" rx="10" fill="#27ae60"/>
+  <rect x="50" y="178" width="250" height="10" fill="#27ae60"/>
+  <text x="175" y="179" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">📋 Short-Term Extension</text>
+
+  <text x="65" y="208" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1e8449" font-weight="600">Eligibility: ≤$100K debt</text>
+  <text x="65" y="226" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1e8449" font-weight="600">TN: 35 (Easy)</text>
+  <text x="65" y="244" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1e8449" font-weight="600">Duration: 6 months max</text>
+  <text x="65" y="262" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1e8449" font-weight="600">Cost: FREE</text>
+
+  <rect x="65" y="272" width="220" height="30" rx="5" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <text x="175" y="286" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7d6608" font-weight="600">⚠ Only one extension allowed;</text>
+  <text x="175" y="300" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7d6608">penalties still accrue</text>
+
+  <!-- ════════════════════════════════════════
+       BRANCH 2: Installment Agreement (blue)
+       x=320, w=250, center=445
+       ════════════════════════════════════════ -->
+  <rect x="320" y="158" width="250" height="175" rx="10" fill="#d6eaf8" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="320" y="158" width="250" height="30" rx="10" fill="#2980b9"/>
+  <rect x="320" y="178" width="250" height="10" fill="#2980b9"/>
+  <text x="445" y="179" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">💳 Installment Agreement</text>
+
+  <text x="335" y="208" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1a5276" font-weight="600">Eligibility: ≤$50K (≤$25K auto)</text>
+  <text x="335" y="226" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1a5276" font-weight="600">TN: 45 (Moderate)</text>
+  <text x="335" y="244" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1a5276" font-weight="600">Payment: Monthly, 72 mo max</text>
+  <text x="335" y="262" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#1a5276" font-weight="600">Fee: $65 – $225 setup</text>
+
+  <rect x="335" y="272" width="220" height="30" rx="5" fill="#ffeaa7" stroke="#f39c12" stroke-width="1"/>
+  <text x="445" y="286" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7d6608" font-weight="600">⚠ Must file all returns; default</text>
+  <text x="445" y="300" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7d6608">→ immediate levy</text>
+
+  <!-- ════════════════════════════════════════
+       BRANCH 3: Offer in Compromise (orange)
+       x=590, w=250, center=715
+       ════════════════════════════════════════ -->
+  <rect x="590" y="158" width="250" height="175" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="590" y="158" width="250" height="30" rx="10" fill="#e67e22"/>
+  <rect x="590" y="178" width="250" height="10" fill="#e67e22"/>
+  <text x="715" y="179" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">🤝 Offer in Compromise</text>
+
+  <text x="605" y="208" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#a04000" font-weight="600">Eligibility: Doubt of collectibility</text>
+  <text x="605" y="226" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#a04000" font-weight="600">TN: 60–70 (Hard–Very Hard)</text>
+  <text x="605" y="244" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#a04000" font-weight="600">Approval: ~38% success rate</text>
+  <text x="605" y="262" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#a04000" font-weight="600">Fee: $220 app + $186 payment</text>
+
+  <rect x="605" y="272" width="220" height="30" rx="5" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="715" y="286" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#922b21" font-weight="600">⚠ Rejected = debt still owed;</text>
+  <text x="715" y="300" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#922b21">5-yr compliance required</text>
+
+  <!-- ════════════════════════════════════════
+       BRANCH 4: Currently Not Collectible (red)
+       x=860, w=250, center=985
+       ════════════════════════════════════════ -->
+  <rect x="860" y="158" width="250" height="175" rx="10" fill="#fadbd8" stroke="#c0392b" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="860" y="158" width="250" height="30" rx="10" fill="#c0392b"/>
+  <rect x="860" y="178" width="250" height="10" fill="#c0392b"/>
+  <text x="985" y="179" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">🛑 Currently Not Collectible</text>
+
+  <text x="875" y="208" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#922b21" font-weight="600">Eligibility: Financial hardship</text>
+  <text x="875" y="226" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#922b21" font-weight="600">TN: 50 (Medium–Hard)</text>
+  <text x="875" y="244" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#922b21" font-weight="600">Duration: 1–24 months pause</text>
+  <text x="875" y="262" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#922b21" font-weight="600">Cost: FREE</text>
+
+  <rect x="875" y="272" width="220" height="30" rx="5" fill="#fadbd8" stroke="#c0392b" stroke-width="1"/>
+  <text x="985" y="286" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#922b21" font-weight="600">⚠ Interest still accrues;</text>
+  <text x="985" y="300" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#922b21">IRS reviews annually</text>
+
+  <!-- ════════════════════════════════════════
+       Bottom: TN Reference & Warning
+       ════════════════════════════════════════ -->
+
+  <!-- TN Reference bar -->
+  <rect x="50" y="360" width="1015" height="50" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="557" y="381" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff">🎲 TN Reference — Roll 2d10 (2–20) vs. Target Number</text>
+  <text x="557" y="400" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#bdc3c7">Lower TN = easier approval · Higher TN = harder · TN 35 ≈ 80% success · TN 50 ≈ 50% · TN 70 ≈ 10%</text>
+
+  <!-- 2d10 probability mini-chart -->
+  <rect x="50" y="430" width="1015" height="130" rx="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="557" y="452" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">2d10 Probability Distribution (roll ≥ TN)</text>
+
+  <!-- Probability bars -->
+  <text x="60" y="474" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d" font-weight="600">TN</text>
+  <text x="60" y="490" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">35</text>
+  <text x="60" y="506" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">45</text>
+  <text x="60" y="522" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">50</text>
+  <text x="60" y="538" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">60</text>
+  <text x="60" y="554" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">70</text>
+
+  <!-- Bars (scaled to 1000px width: max bar = 900px) -->
+  <rect x="80" y="482" width="870" height="14" rx="3" fill="#27ae60"/>
+  <text x="955" y="493" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#1e8449" font-weight="600">~80%</text>
+
+  <rect x="80" y="498" width="700" height="14" rx="3" fill="#2980b9"/>
+  <text x="785" y="509" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#1a5276" font-weight="600">~55%</text>
+
+  <rect x="80" y="514" width="645" height="14" rx="3" fill="#f39c12"/>
+  <text x="730" y="525" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#7d6608" font-weight="600">~50%</text>
+
+  <rect x="80" y="530" width="385" height="14" rx="3" fill="#e67e22"/>
+  <text x="470" y="541" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#a04000" font-weight="600">~30%</text>
+
+  <rect x="80" y="546" width="130" height="14" rx="3" fill="#c0392b"/>
+  <text x="214" y="557" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#922b21" font-weight="600">~10%</text>
+
+  <!-- Warning note -->
+  <rect x="50" y="575" width="1015" height="60" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="557" y="597" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#7d6608" font-weight="600">⚠️ All options: interest &amp; penalties continue to accrue unless specifically waived</text>
+  <text x="557" y="615" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#9a7d0a">Failure to comply with any agreement triggers immediate levy on wages, bank accounts, and tax refunds</text>
+  <text x="557" y="630" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#9a7d0a">Consider hiring a tax professional (TN −10 modifier) if your debt exceeds $25K</text>
+</svg>

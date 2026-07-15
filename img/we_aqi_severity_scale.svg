@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" width="700" height="280">
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌬️ Air Quality Index (AQI) Severity Scale</text>
+  <text x="350" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">GM sets AQI based on location and conditions · Wildfire smoke, pollution, seasonal factors</text>
+
+  <!-- Main severity bar -->
+  <rect x="40" y="62" width="620" height="40" rx="4" fill="#27ae60"/>
+  <rect x="144" y="62" width="155" height="40" rx="0" fill="#2ecc71"/>
+  <rect x="299" y="62" width="155" height="40" rx="0" fill="#f39c12"/>
+  <rect x="454" y="62" width="103" height="40" rx="0" fill="#e67e22"/>
+  <rect x="557" y="62" width="80" height="40" rx="0" fill="#8e44ad"/>
+  <rect x="637" y="62" width="23" height="40" rx="4" fill="#2c3e50"/>
+
+  <!-- Labels on bar -->
+  <text x="72" y="87" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Good</text>
+  <text x="221" y="87" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Moderate</text>
+  <text x="426" y="87" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Unhealthy Sensitive</text>
+  <text x="505" y="87" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Unhealthy</text>
+  <text x="597" y="87" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Very Unhealthy</text>
+  <text x="649" y="87" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">⚫</text>
+
+  <!-- AQI ranges below bar -->
+  <text x="72" y="116" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Consolas, monospace">0–50</text>
+  <text x="221" y="116" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Consolas, monospace">51–100</text>
+  <text x="426" y="116" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Consolas, monospace">101–150</text>
+  <text x="505" y="116" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Consolas, monospace">151–200</text>
+  <text x="597" y="116" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Consolas, monospace">201–300</text>
+  <text x="649" y="116" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Consolas, monospace">300+</text>
+
+  <!-- Detail rows -->
+  <!-- Good -->
+  <rect x="40" y="130" width="104" height="130" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1"/>
+  <text x="92" y="152" text-anchor="middle" font-size="18" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">✅</text>
+  <text x="92" y="172" text-anchor="middle" font-size="11" font-weight="600" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Good</text>
+  <text x="92" y="192" text-anchor="middle" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">VIG: No penalty</text>
+  <text x="92" y="208" text-anchor="middle" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">RES: None</text>
+  <text x="92" y="228" text-anchor="middle" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Outdoor: Normal</text>
+  <text x="92" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Baseline</text>
+
+  <!-- Moderate -->
+  <rect x="148" y="130" width="104" height="130" rx="6" fill="#eafaf1" stroke="#2ecc71" stroke-width="1"/>
+  <text x="200" y="152" text-anchor="middle" font-size="18" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🟡</text>
+  <text x="200" y="172" text-anchor="middle" font-size="11" font-weight="600" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Moderate</text>
+  <text x="200" y="192" text-anchor="middle" font-size="10" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">VIG: No penalty</text>
+  <text x="200" y="208" text-anchor="middle" font-size="10" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Asthmatics:</text>
+  <text x="200" y="222" text-anchor="middle" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">RES TN 40 daily</text>
+  <text x="200" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Sensitive groups</text>
+
+  <!-- Unhealthy for Sensitive -->
+  <rect x="256" y="130" width="104" height="130" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="308" y="152" text-anchor="middle" font-size="18" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🟠</text>
+  <text x="308" y="172" text-anchor="middle" font-size="10" font-weight="600" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Unhealthy Sensitive</text>
+  <text x="308" y="192" text-anchor="middle" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">VIG: −1 (sensitive)</text>
+  <text x="308" y="208" text-anchor="middle" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Outdoor VIG: −2</text>
+  <text x="308" y="228" text-anchor="middle" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Respiratory irritation</text>
+  <text x="308" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Eye/throat irritation</text>
+
+  <!-- Unhealthy -->
+  <rect x="364" y="130" width="104" height="130" rx="6" fill="#fdebd0" stroke="#e67e22" stroke-width="1"/>
+  <text x="416" y="152" text-anchor="middle" font-size="18" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🔴</text>
+  <text x="416" y="172" text-anchor="middle" font-size="11" font-weight="600" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Unhealthy</text>
+  <text x="416" y="192" text-anchor="middle" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">VIG: −2</text>
+  <text x="416" y="208" text-anchor="middle" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">RES TN 45</text>
+  <text x="416" y="222" text-anchor="middle" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">each day outdoors</text>
+  <text x="416" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Stay indoors</text>
+
+  <!-- Very Unhealthy -->
+  <rect x="472" y="130" width="104" height="130" rx="6" fill="#f5eef8" stroke="#8e44ad" stroke-width="1"/>
+  <text x="524" y="152" text-anchor="middle" font-size="18" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🟣</text>
+  <text x="524" y="172" text-anchor="middle" font-size="10" font-weight="600" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Very Unhealthy</text>
+  <text x="524" y="192" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">VIG: −3</text>
+  <text x="524" y="208" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Outdoor: +5 TN</text>
+  <text x="524" y="222" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">RES TN 50</text>
+  <text x="524" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Even indoors w/o purifier</text>
+
+  <!-- Hazardous -->
+  <rect x="580" y="130" width="80" height="130" rx="6" fill="#eaecee" stroke="#2c3e50" stroke-width="1"/>
+  <text x="620" y="152" text-anchor="middle" font-size="18" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">⚫</text>
+  <text x="620" y="172" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Hazardous</text>
+  <text x="620" y="192" text-anchor="middle" font-size="10" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">VIG: −4</text>
+  <text x="620" y="208" text-anchor="middle" font-size="10" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">RES TN 55</text>
+  <text x="620" y="222" text-anchor="middle" font-size="10" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">ER risk</text>
+  <text x="620" y="248" text-anchor="middle" font-size="10" font-style="italic" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Shelter in place</text>
+
+  <!-- Mitigation note -->
+  <text x="350" y="272" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-style="italic">Air purifiers ($100–$500) reduce VIG penalty by 1 at all levels · HEPA filters ($20–$100) for sustained protection</text>
+</svg>

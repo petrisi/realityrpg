@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 510" width="600" height="480">
+  <!-- Title -->
+  <text x="300" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">📱 Social Media Intensity (SMI) Scale</text>
+  <text x="300" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 0 (no accounts) → SMI 5 (addicted)</text>
+
+  <!-- SMI 0 -->
+  <rect x="40" y="62" width="520" height="52" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="70" y="84" font-size="18" font-weight="700" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 0</text>
+  <text x="145" y="84" font-size="12" font-weight="600" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">None</text>
+  <text x="220" y="84" font-size="11" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">0 hrs/day</text>
+  <text x="320" y="84" font-size="11" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SP: ±0</text>
+  <text x="410" y="75" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">No doomscrolling risk</text>
+  <text x="410" y="90" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">More free time</text>
+
+  <!-- SMI 1 -->
+  <rect x="40" y="120" width="520" height="52" rx="8" fill="#d4efdf" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="70" y="142" font-size="18" font-weight="700" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 1</text>
+  <text x="145" y="142" font-size="12" font-weight="600" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Light</text>
+  <text x="220" y="142" font-size="11" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">30 min/day</text>
+  <text x="320" y="142" font-size="11" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SP: +1/day</text>
+  <text x="410" y="133" font-size="10" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Stay connected</text>
+  <text x="410" y="148" font-size="10" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−2 SP from social contact</text>
+
+  <!-- SMI 2 -->
+  <rect x="40" y="178" width="520" height="68" rx="8" fill="#d4efdf" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="70" y="208" font-size="18" font-weight="700" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 2</text>
+  <text x="145" y="208" font-size="12" font-weight="600" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Moderate</text>
+  <text x="220" y="208" font-size="11" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">1–2 hrs/day</text>
+  <text x="320" y="208" font-size="11" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SP: +2/day</text>
+  <text x="410" y="199" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">⚠️ RES TN 40 daily</text>
+  <text x="410" y="214" font-size="10" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Community engagement</text>
+  <text x="410" y="229" font-size="10" fill="#196f3d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−3 SP social contact</text>
+
+  <!-- SMI 3 -->
+  <rect x="40" y="252" width="520" height="52" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5"/>
+  <text x="70" y="282" font-size="18" font-weight="700" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 3</text>
+  <text x="145" y="282" font-size="12" font-weight="600" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Heavy</text>
+  <text x="220" y="282" font-size="11" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">3–4 hrs/day</text>
+  <text x="320" y="282" font-size="11" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SP: +3/day</text>
+  <text x="410" y="273" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">⚠️ RES TN 45 daily</text>
+  <text x="410" y="288" font-size="10" fill="#7d6608" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Doomscroll risk; sleep disruption</text>
+
+  <!-- SMI 4 -->
+  <rect x="40" y="312" width="520" height="68" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="70" y="342" font-size="18" font-weight="700" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 4</text>
+  <text x="145" y="342" font-size="12" font-weight="600" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Excessive</text>
+  <text x="220" y="342" font-size="11" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">5+ hrs/day</text>
+  <text x="320" y="342" font-size="11" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SP: +5/day</text>
+  <text x="410" y="333" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">⚠️ RES TN 50 daily</text>
+  <text x="410" y="348" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Internet addiction risk</text>
+  <text x="410" y="363" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−1 VIG; FOMO severe</text>
+
+  <!-- SMI 5 -->
+  <rect x="40" y="388" width="520" height="52" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="70" y="410" font-size="18" font-weight="700" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SMI 5</text>
+  <text x="145" y="410" font-size="12" font-weight="600" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Addicted</text>
+  <text x="220" y="410" font-size="11" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">All day</text>
+  <text x="320" y="410" font-size="11" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SP: +8/day</text>
+  <text x="410" y="401" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🚨 RES TN 55; −2 VIG</text>
+  <text x="410" y="416" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">IRL isolation; job/school suffers</text>
+
+  <!-- Escalation arrow on right -->
+  <line x1="575" y1="70" x2="575" y2="431" stroke="#e74c3c" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="590" y="255" text-anchor="middle" font-size="10" font-weight="700" fill="#e74c3c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" transform="rotate(90,590,255)">ESCALATION</text>
+
+  <!-- Bottom info -->
+  <rect x="40" y="456" width="520" height="40" rx="8" fill="#f0f0f0" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="300" y="474" text-anchor="middle" font-size="11" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-style="italic">FOMO: SMI ≥ 2 characters gain +2 SP when seeing events they weren't invited to</text>
+  <text x="300" y="489" text-anchor="middle" font-size="11" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-style="italic">Internet Addiction: SMI 5 or 3+ failed RES checks/week → −2 VIG, −3 EXP checks, RES TN 60 to reduce</text>
+</svg>

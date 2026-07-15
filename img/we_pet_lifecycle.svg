@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300">
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🐾 Pet Ownership Lifecycle</text>
+  <text x="350" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Adoption → Daily Care → Vet Visits → Emergencies → Old Age → Grief</text>
+
+  <!-- Timeline line -->
+  <line x1="50" y1="140" x2="650" y2="140" stroke="#2c3e50" stroke-width="3"/>
+
+  <!-- Phase 1: Adoption -->
+  <circle cx="80" cy="140" r="18" fill="#27ae60" stroke="#1e8449" stroke-width="2"/>
+  <text x="80" y="145" text-anchor="middle" font-size="16" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🐕</text>
+  <text x="80" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Adoption</text>
+  <text x="80" y="96" text-anchor="middle" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$50–$3,000</text>
+  <text x="80" y="110" text-anchor="middle" font-size="10" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">initial cost</text>
+
+  <!-- Phase 2: Daily Routine -->
+  <circle cx="200" cy="140" r="18" fill="#2980b9" stroke="#1f6da0" stroke-width="2"/>
+  <text x="200" y="145" text-anchor="middle" font-size="16" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🍖</text>
+  <text x="200" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Daily Routine</text>
+  <text x="200" y="96" text-anchor="middle" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">0.5–2 EP/day</text>
+  <text x="200" y="110" text-anchor="middle" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">walk/feed/play/groom</text>
+  <text x="200" y="175" text-anchor="middle" font-size="10" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−2 SP/day baseline</text>
+  <text x="200" y="190" text-anchor="middle" font-size="10" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">+3 to +5 SP recovery</text>
+
+  <!-- Phase 3: Annual Vet -->
+  <circle cx="320" cy="140" r="18" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="320" y="145" text-anchor="middle" font-size="16" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🏥</text>
+  <text x="320" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Annual Vet</text>
+  <text x="320" y="96" text-anchor="middle" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">INT TN 40</text>
+  <text x="320" y="110" text-anchor="middle" font-size="10" fill="#a04000" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">miss signs → $200-2K</text>
+  <text x="320" y="175" text-anchor="middle" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$100-3,000/year</text>
+  <text x="320" y="190" text-anchor="middle" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">ongoing cost</text>
+
+  <!-- Phase 4: Emergency Risk -->
+  <circle cx="440" cy="140" r="18" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="440" y="145" text-anchor="middle" font-size="16" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🚨</text>
+  <text x="440" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Emergency</text>
+  <text x="440" y="96" text-anchor="middle" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">1d10 per health issue</text>
+  <text x="440" y="110" text-anchor="middle" font-size="10" fill="#922b21" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">roll 8 = $2K-8K surgery</text>
+  <text x="440" y="175" text-anchor="middle" font-size="10" fill="#e74c3c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">+5 SP financial stress</text>
+  <text x="440" y="190" text-anchor="middle" font-size="10" fill="#e74c3c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">use emergency fund</text>
+
+  <!-- Phase 5: Old Age -->
+  <circle cx="560" cy="140" r="18" fill="#8e44ad" stroke="#6c3483" stroke-width="2"/>
+  <text x="560" y="145" text-anchor="middle" font-size="16" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">👴</text>
+  <text x="560" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Old Age</text>
+  <text x="560" y="96" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Chronic conditions</text>
+  <text x="560" y="110" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">$100-500/month</text>
+  <text x="560" y="175" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">EP benefit −1</text>
+  <text x="560" y="190" text-anchor="middle" font-size="10" fill="#6c3483" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">more care needed</text>
+
+  <!-- Phase 6: Grief -->
+  <circle cx="650" cy="140" r="18" fill="#2c3e50" stroke="#1a252f" stroke-width="2"/>
+  <text x="650" y="145" text-anchor="middle" font-size="16" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🖤</text>
+  <text x="650" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Loss &amp; Grief</text>
+  <text x="650" y="96" text-anchor="middle" font-size="10" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">+8 to +15 SP</text>
+  <text x="650" y="110" text-anchor="middle" font-size="10" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−1 all attributes 1-4 wks</text>
+  <text x="650" y="175" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Grief Episode</text>
+  <text x="650" y="190" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🖤 on character sheet</text>
+
+  <!-- ESA note -->
+  <rect x="125" y="220" width="450" height="45" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="350" y="240" text-anchor="middle" font-size="11" font-weight="700" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">💡 ESA Letter: $100-300 from therapist → housing accommodations</text>
+  <text x="350" y="257" text-anchor="middle" font-size="10" fill="#1a5276" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Pets allowed in no-pet buildings · Waived pet deposits up to $500 · +3 to RES vs loneliness</text>
+
+  <!-- Bottom: emotional support summary -->
+  <rect x="55" y="275" width="590" height="22" rx="6" fill="#f0faf4" stroke="#27ae60" stroke-width="1"/>
+  <text x="350" y="290" text-anchor="middle" font-size="10" font-style="italic" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">"Unconditional positive regard — a rare and powerful resource in reality" · +5 SP recovery (30+ min interaction) · −2 SP/day baseline</text>
+</svg>

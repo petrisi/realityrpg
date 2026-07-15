@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      text { font-family: system-ui, sans-serif; }
+      .title { font-size: 20px; font-weight: 700; fill: #2c3e50; }
+      .subtitle { font-size: 12px; fill: #7f8c8d; }
+      .col-header { font-size: 13px; font-weight: 700; fill: #fff; }
+      .row-label { font-size: 13px; font-weight: 600; fill: #2c3e50; }
+      .cell-text { font-size: 12px; fill: #34495e; }
+      .cell-text-bold { font-size: 12px; font-weight: 600; fill: #2c3e50; }
+      .highlight-label { font-size: 11px; font-weight: 600; fill: #fff; }
+      .note { font-size: 11px; fill: #e67e22; font-style: italic; }
+      .legend-text { font-size: 11px; fill: #555; }
+      .grid-line { stroke: #ddd; stroke-width: 0.75; }
+      .grid-line-strong { stroke: #bbb; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" rx="8" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">Tax Credits Comparison</text>
+  <text x="450" y="50" text-anchor="middle" class="subtitle">Major U.S. tax credits that reduce what low-to-moderate income families owe</text>
+
+  <!-- ===== HEADER ROW ===== -->
+  <!-- x: 30 + 140(col1) + 160(col2) + 140(col3) + 160(col4) + 140(col5) = 900 -->
+  <!-- Col1 (credit name): x=30..170 (w=140)  -->
+  <!-- Col2 (max value):   x=170..330 (w=160) -->
+  <!-- Col3 (refundable): x=330..470 (w=140) -->
+  <!-- Col4 (income thr): x=470..630 (w=160) -->
+  <!-- Col5 (phase-out):  x=630..770 (w=140) -->
+  <!-- right padding ends at 870, so col5 is 630..870 (w=240) -- no let me recalculate -->
+  <!-- 30 left pad, 30 right pad => 840 content width -->
+  <!-- 5 cols: 140, 160, 130, 160, 250 = 840 -->
+
+  <!-- Header background -->
+  <rect x="30" y="62" width="140" height="34" rx="6" fill="#34495e"/>
+  <rect x="170" y="62" width="160" height="34" fill="#34495e"/>
+  <rect x="330" y="62" width="130" height="34" fill="#34495e"/>
+  <rect x="460" y="62" width="160" height="34" fill="#34495e"/>
+  <rect x="620" y="62" width="250" height="34" rx="6" fill="#34495e"/>
+
+  <!-- Column headers -->
+  <text x="100" y="84" text-anchor="middle" class="col-header">Credit</text>
+  <text x="250" y="84" text-anchor="middle" class="col-header">Max Value</text>
+  <text x="395" y="84" text-anchor="middle" class="col-header">Refundable?</text>
+  <text x="540" y="84" text-anchor="middle" class="col-header">Income Threshold</text>
+  <text x="745" y="84" text-anchor="middle" class="col-header">Phase-Out</text>
+
+  <!-- ===== ROW 1: EITC (highlighted) ===== -->
+  <rect x="30" y="106" width="840" height="62" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <!-- EITC star badge -->
+  <rect x="30" y="106" width="140" height="22" rx="6" fill="#27ae60"/>
+  <text x="100" y="121" text-anchor="middle" class="highlight-label">⭐ EITC</text>
+  <text x="100" y="148" text-anchor="middle" class="cell-text" fill="#27ae60">Earned Income Tax Credit</text>
+
+  <text x="250" y="130" text-anchor="middle" class="cell-text-bold">Up to $7,430</text>
+  <text x="250" y="148" text-anchor="middle" class="cell-text">(3+ qualifying children)</text>
+
+  <rect x="345" y="122" width="100" height="22" rx="4" fill="#27ae60"/>
+  <text x="395" y="137" text-anchor="middle" class="highlight-label">YES ✓</text>
+
+  <text x="540" y="130" text-anchor="middle" class="cell-text-bold">&lt; $60,000</text>
+  <text x="540" y="148" text-anchor="middle" class="cell-text">(varies by children)</text>
+
+  <text x="745" y="130" text-anchor="middle" class="cell-text-bold">Gradual phase-out</text>
+  <text x="745" y="148" text-anchor="middle" class="cell-text">~$20k–$60k range</text>
+
+  <!-- Small note under EITC row -->
+  <text x="450" y="178" text-anchor="middle" class="note" font-size="10">Largest anti-poverty program in the United States</text>
+
+  <!-- ===== ROW 2: CTC ===== -->
+  <rect x="30" y="196" width="840" height="56" rx="6" fill="#fff" stroke="#e0e4e8" stroke-width="0.75"/>
+  <text x="100" y="226" text-anchor="middle" class="row-label">CTC</text>
+  <text x="100" y="242" text-anchor="middle" class="cell-text" font-size="10">Child Tax Credit</text>
+
+  <text x="250" y="226" text-anchor="middle" class="cell-text-bold">$2,000/child</text>
+  <text x="250" y="242" text-anchor="middle" class="cell-text" font-size="10">Under age 17</text>
+
+  <rect x="345" y="214" width="100" height="22" rx="4" fill="#f9e79f"/>
+  <text x="395" y="229" text-anchor="middle" font-size="11" font-weight="600" fill="#7d6608">Partial</text>
+
+  <text x="540" y="226" text-anchor="middle" class="cell-text-bold">&lt; $400,000</text>
+  <text x="540" y="242" text-anchor="middle" class="cell-text" font-size="10">($200k single)</text>
+
+  <text x="745" y="226" text-anchor="middle" class="cell-text-bold">$50/100 of AGI</text>
+  <text x="745" y="242" text-anchor="middle" class="cell-text" font-size="10">Gradual reduction</text>
+
+  <!-- ===== ROW 3: AOTC ===== -->
+  <rect x="30" y="262" width="840" height="56" rx="6" fill="#fff" stroke="#e0e4e8" stroke-width="0.75"/>
+  <text x="100" y="292" text-anchor="middle" class="row-label">AOTC</text>
+  <text x="100" y="308" text-anchor="middle" class="cell-text" font-size="10">American Opportunity Credit</text>
+
+  <text x="250" y="292" text-anchor="middle" class="cell-text-bold">$2,500/child</text>
+  <text x="250" y="308" text-anchor="middle" class="cell-text" font-size="10">First 4 yrs college</text>
+
+  <rect x="345" y="280" width="100" height="22" rx="4" fill="#f9e79f"/>
+  <text x="395" y="295" text-anchor="middle" font-size="11" font-weight="600" fill="#7d6608">Partial</text>
+
+  <text x="540" y="292" text-anchor="middle" class="cell-text-bold">&lt; $160,000</text>
+  <text x="540" y="308" text-anchor="middle" class="cell-text" font-size="10">($80k single)</text>
+
+  <text x="745" y="292" text-anchor="middle" class="cell-text-bold">Phase-out range</text>
+  <text x="745" y="308" text-anchor="middle" class="cell-text" font-size="10">$80k–$160k (MFJ)</text>
+
+  <!-- ===== ROW 4: PTC ===== -->
+  <rect x="30" y="328" width="840" height="56" rx="6" fill="#fff" stroke="#e0e4e8" stroke-width="0.75"/>
+  <text x="100" y="358" text-anchor="middle" class="row-label">PTC</text>
+  <text x="100" y="374" text-anchor="middle" class="cell-text" font-size="10">Premium Tax Credit (ACA)</text>
+
+  <text x="250" y="358" text-anchor="middle" class="cell-text-bold">Varies widely</text>
+  <text x="250" y="374" text-anchor="middle" class="cell-text" font-size="10">Health insurance subsidy</text>
+
+  <rect x="345" y="346" width="100" height="22" rx="4" fill="#27ae60"/>
+  <text x="395" y="361" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">YES ✓</text>
+
+  <text x="540" y="358" text-anchor="middle" class="cell-text-bold">&lt; 400% FPL</text>
+  <text x="540" y="374" text-anchor="middle" class="cell-text" font-size="10">~$57,750 (single)</text>
+
+  <text x="745" y="358" text-anchor="middle" class="cell-text-bold">Phase-out range</text>
+  <text x="745" y="374" text-anchor="middle" class="cell-text" font-size="10">150–400% FPL</text>
+
+  <!-- ===== ROW 5: Saver's Credit ===== -->
+  <rect x="30" y="394" width="840" height="56" rx="6" fill="#fff" stroke="#e0e4e8" stroke-width="0.75"/>
+  <text x="100" y="424" text-anchor="middle" class="row-label">Saver's Credit</text>
+  <text x="100" y="440" text-anchor="middle" class="cell-text" font-size="10">Retirement Savings Credit</text>
+
+  <text x="250" y="424" text-anchor="middle" class="cell-text-bold">$1,000</text>
+  <text x="250" y="440" text-anchor="middle" class="cell-text" font-size="10">5–50% of contributions</text>
+
+  <rect x="345" y="412" width="100" height="22" rx="4" fill="#27ae60"/>
+  <text x="395" y="427" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">YES ✓</text>
+
+  <text x="540" y="424" text-anchor="middle" class="cell-text-bold">&lt; $43,000</text>
+  <text x="540" y="440" text-anchor="middle" class="cell-text" font-size="10">($21,000 single)</text>
+
+  <text x="745" y="424" text-anchor="middle" class="cell-text-bold">Phase-out range</text>
+  <text x="745" y="440" text-anchor="middle" class="cell-text" font-size="10">$20k–$43k (MFJ)</text>
+
+  <!-- ===== LEGEND ===== -->
+  <line x1="30" y1="470" x2="870" y2="470" class="grid-line-strong"/>
+  <rect x="30" y="480" width="16" height="12" rx="3" fill="#27ae60"/>
+  <text x="52" y="490" class="legend-text">Refundable</text>
+  <rect x="140" y="480" width="16" height="12" rx="3" fill="#f9e79f"/>
+  <text x="162" y="490" class="legend-text">Partially Refundable</text>
+  <rect x="310" y="480" width="16" height="12" rx="3" fill="#eaecee"/>
+  <text x="332" y="490" class="legend-text">Non-Refundable</text>
+  <text x="450" y="490" text-anchor="middle" class="note" font-size="10">2024 tax year figures · AGI = Adjusted Gross Income · MFJ = Married Filing Jointly</text>
+</svg>

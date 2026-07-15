@@ -51,30 +51,91 @@
 </ul>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Election Action</th><th>Time Cost</th><th>SP Effect</th><th>Check</th></tr></thead>
-<tbody>
-<tr><td>Vote in person</td><td>1–2 hours</td><td>±0 (fulfilling civic duty)</td><td>None</td></tr>
-<tr><td>Volunteer for a campaign</td><td>5–15 hrs/week</td><td>+1 SP (stress), +1 Morale if candidate wins</td><td>PRC ≥ 3 to be effective</td></tr>
-<tr><td>Donate money</td><td>Immediate</td><td>None</td><td>None</td></tr>
-<tr><td>Get out the vote (phone banking)</td><td>3–8 hours/session</td><td>+1 SP per session</td><td>PRC + EXP check</td></tr>
-</tbody>
-</table>
+<p>Election actions cost time and stress but can provide <strong>Morale events</strong> if your preferred outcome wins. Choose what level of involvement your character has:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🗳️</span>
+  <h3>Vote in person</h3>
+  <p>⏱️ <strong>Time:</strong> 1–2 hours</p>
+  <p>😌 <strong>SP Effect:</strong> ±0 (fulfilling civic duty)</p>
+  <p>🎲 <strong>Check:</strong> None</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">📣</span>
+  <h3>Volunteer for a campaign</h3>
+  <p>⏱️ <strong>Time:</strong> 5–15 hrs/week</p>
+  <p>😌 <strong>SP Effect:</strong> +1 SP (stress), +1 Morale if candidate wins</p>
+  <p>🎲 <strong>Check:</strong> PRC ≥ 3 to be effective</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💸</span>
+  <h3>Donate money</h3>
+  <p>⏱️ <strong>Time:</strong> Immediate</p>
+  <p>😌 <strong>SP Effect:</strong> None</p>
+  <p>🎲 <strong>Check:</strong> None</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">📞</span>
+  <h3>Get out the vote (phone banking)</h3>
+  <p>⏱️ <strong>Time:</strong> 3–8 hours/session</p>
+  <p>😌 <strong>SP Effect:</strong> +1 SP per session</p>
+  <p>🎲 <strong>Check:</strong> PRC + EXP check</p>
+</div>
+
+</div>
 </div>
 
 <h3>1.3 Protesting</h3>
 <p>Characters may participate in protests, rallies, or civil disobedience. Protests are <strong>high-risk, high-reward</strong> events:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Protest Type</th><th>SP Gain</th><th>Risk</th><th>Roll</th></tr></thead>
-<tbody>
-<tr><td>Peaceful rally (legal)</td><td>+1 SP (crowd stress)</td><td>Low: possible police presence</td><td>None if lawful</td></tr>
-<tr><td>March with permit</td><td>+1 SP</td><td>Low: counter-protesters</td><td><span class="dice">1d10</span> on 9–10: confrontation</td></tr>
-<tr><td>Civil disobedience (sit-in, blockade)</td><td>+2 SP</td><td>Medium: arrest possible</td><td><span class="dice">2d10 + RES mod</span> vs TN 35</td></tr>
-<tr><td>Unpermitted protest / riot</td><td>+3 SP</td><td>High: arrest, injury, property damage</td><td><span class="dice">2d10 + RES mod</span> vs TN 40</td></tr>
-</tbody>
-</table>
+<p>Protests are <strong>high-risk, high-reward</strong> events. The type of protest determines the stress, risk level, and dice check required:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🕊️</span>
+  <h3>Peaceful rally (legal)</h3>
+  <p>😰 <strong>SP Gain:</strong> +1 SP (crowd stress)</p>
+  <p>⚠️ <strong>Risk:</strong> Low: possible police presence</p>
+  <p>🎲 <strong>Roll:</strong> None if lawful</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🚶‍♂️</span>
+  <h3>March with permit</h3>
+  <p>😰 <strong>SP Gain:</strong> +1 SP</p>
+  <p>⚠️ <strong>Risk:</strong> Low: counter-protesters</p>
+  <p>🎲 <strong>Roll:</strong> <span class="dice">1d10</span> on 9–10: confrontation</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">✊</span>
+  <h3>Civil disobedience (sit-in, blockade)</h3>
+  <p>😰 <strong>SP Gain:</strong> +2 SP</p>
+  <p>⚠️ <strong>Risk:</strong> Medium: arrest possible</p>
+  <p>🎲 <strong>Roll:</strong> <span class="dice">2d10 + RES mod</span> vs TN 35</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🔥</span>
+  <h3>Unpermitted protest / riot</h3>
+  <p>😰 <strong>SP Gain:</strong> +3 SP</p>
+  <p>⚠️ <strong>Risk:</strong> High: arrest, injury, property damage</p>
+  <p>🎲 <strong>Roll:</strong> <span class="dice">2d10 + RES mod</span> vs TN 40</p>
+</div>
+
+</div>
+
+<div class="condition-track">
+  <div class="condition-step healthy">🕊️ Peaceful Rally<br><small>+1 SP</small></div>
+  <div class="condition-step tired">🚶 March<br><small>+1 SP</small></div>
+  <div class="condition-step sick">✊ Civil Disobedience<br><small>+2 SP</small></div>
+  <div class="condition-step injured">🔥 Riot<br><small>+3 SP</small></div>
+</div>
 </div>
 
 <p><strong>Arrest at a protest:</strong> If a character fails their RES check, they are arrested. This triggers a <strong>Legal System event</strong> (Section 2) with charges of <strong>Disorderly Conduct</strong> or <strong>Trespassing</strong>. Bail is <span class="dice">$200–$2,000</span>. A conviction adds a criminal record entry.</p>
@@ -96,20 +157,56 @@
      ============================================================ -->
 <h2>⚖️ 2. The Legal System</h2>
 
+<div class="section-illustration"><img src="img/lc_legal_flowchart.svg" alt="Legal System Flowchart — from police encounter through court outcomes"></div>
+
 <h3>2.1 Traffic Tickets</h3>
 <p>The most common legal encounter. Characters receive traffic tickets based on driving behavior and <span class="dice">2d10 + DXT mod</span> checks when driving in risky situations.</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Violation</th><th>Fine</th><th>Points</th><th>Insurance Impact</th></tr></thead>
-<tbody>
-<tr><td>Speeding (minor, &lt;10 mph over)</td><td>$100–$150</td><td>1 point</td><td>None or +5%</td></tr>
-<tr><td>Speeding (moderate, 10–20 mph over)</td><td>$150–$300</td><td>2 points</td><td>+10–15%</td></tr>
-<tr><td>Running a red light / stop sign</td><td>$150–$350</td><td>2 points</td><td>+10–20%</td></tr>
-<tr><td>Reckless driving</td><td>$200–$500</td><td>3–4 points</td><td>+20–30%</td></tr>
-<tr><td>DUI/DWI</td><td>$500–$2,500</td><td>4–6 points</td><td>+50–100% or denial</td></tr>
-</tbody>
-</table>
+<p>Characters receive traffic tickets based on driving behavior and <span class="dice">2d10 + DXT mod</span> checks when driving in risky situations. Each violation carries fines, points, and insurance consequences:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🚗</span>
+  <h3>Speeding (minor, &lt;10 mph over)</h3>
+  <p>💰 <strong>Fine:</strong> $100–$150</p>
+  <p>📋 <strong>Points:</strong> 1 point</p>
+  <p>📈 <strong>Insurance Impact:</strong> None or +5%</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏎️</span>
+  <h3>Speeding (moderate, 10–20 mph over)</h3>
+  <p>💰 <strong>Fine:</strong> $150–$300</p>
+  <p>📋 <strong>Points:</strong> 2 points</p>
+  <p>📈 <strong>Insurance Impact:</strong> +10–15%</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🚦</span>
+  <h3>Running a red light / stop sign</h3>
+  <p>💰 <strong>Fine:</strong> $150–$350</p>
+  <p>📋 <strong>Points:</strong> 2 points</p>
+  <p>📈 <strong>Insurance Impact:</strong> +10–20%</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💥</span>
+  <h3>Reckless driving</h3>
+  <p>💰 <strong>Fine:</strong> $200–$500</p>
+  <p>📋 <strong>Points:</strong> 3–4 points</p>
+  <p>📈 <strong>Insurance Impact:</strong> +20–30%</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🍺</span>
+  <h3>DUI/DWI</h3>
+  <p>💰 <strong>Fine:</strong> $500–$2,500</p>
+  <p>📋 <strong>Points:</strong> 4–6 points</p>
+  <p>📈 <strong>Insurance Impact:</strong> +50–100% or denial</p>
+</div>
+
+</div>
 </div>
 
 <p><strong>Points on license:</strong> Accumulating 6+ points in 12 months triggers a <strong>license suspension</strong> (1–6 months). During suspension, the character cannot legally drive. Roll <span class="dice">1d10</span> each time they drive anyway: on a <strong>1–3</strong>, they are pulled over and face additional penalties.</p>
@@ -124,19 +221,74 @@
   <li><strong>Stress:</strong> +5 SP at time of arrest; +2 SP/month for 3 months during legal proceedings</li>
 </ul>
 
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🚨 Arrest moment</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill episode"></div></div>
+  <span>+5 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📋 Month 1 of legal</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+  <span>+2 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📋 Month 2 of legal</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  <span>+2 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📋 Month 3 of legal</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  <span>+2 SP</span>
+</div>
+
 <h3>2.3 Minor Criminal Charges</h3>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Charge</th><th>Typical Fine</th><th>Jail Risk</th><th>Record Impact</th></tr></thead>
-<tbody>
-<tr><td>Disorderly conduct</td><td>$100–$500</td><td>Low (1–24 hrs)</td><td>Misdemeanor</td></tr>
-<tr><td>Public intoxication</td><td>$50–$300</td><td>Low (overnight hold)</td><td>Misdemeanor</td></tr>
-<tr><td>Shoplifting (&lt;$500)</td><td>$100–$1,000</td><td>Low–Medium</td><td>Misdemeanor</td></tr>
-<tr><td>Drug possession (personal)</td><td>$250–$2,000</td><td>Medium</td><td>Misdemeanor/Felony</td></tr>
-<tr><td>Assault (simple)</td><td>$500–$5,000</td><td>Medium (30–90 days)</td><td>Felony possible</td></tr>
-</tbody>
-</table>
+<p>Minor criminal charges range from petty offenses to serious felonies. Each charge carries fines, potential jail time, and a permanent mark on the character's record:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">📢</span>
+  <h3>Disorderly conduct</h3>
+  <p>💰 <strong>Typical Fine:</strong> $100–$500</p>
+  <p>🔒 <strong>Jail Risk:</strong> Low (1–24 hrs)</p>
+  <p>📋 <strong>Record Impact:</strong> Misdemeanor</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🍻</span>
+  <h3>Public intoxication</h3>
+  <p>💰 <strong>Typical Fine:</strong> $50–$300</p>
+  <p>🔒 <strong>Jail Risk:</strong> Low (overnight hold)</p>
+  <p>📋 <strong>Record Impact:</strong> Misdemeanor</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🛒</span>
+  <h3>Shoplifting (&lt;$500)</h3>
+  <p>💰 <strong>Typical Fine:</strong> $100–$1,000</p>
+  <p>🔒 <strong>Jail Risk:</strong> Low–Medium</p>
+  <p>📋 <strong>Record Impact:</strong> Misdemeanor</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💊</span>
+  <h3>Drug possession (personal)</h3>
+  <p>💰 <strong>Typical Fine:</strong> $250–$2,000</p>
+  <p>🔒 <strong>Jail Risk:</strong> Medium</p>
+  <p>📋 <strong>Record Impact:</strong> Misdemeanor/Felony</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">👊</span>
+  <h3>Assault (simple)</h3>
+  <p>💰 <strong>Typical Fine:</strong> $500–$5,000</p>
+  <p>🔒 <strong>Jail Risk:</strong> Medium (30–90 days)</p>
+  <p>📋 <strong>Record Impact:</strong> Felony possible</p>
+</div>
+
+</div>
 </div>
 
 <h3>2.4 Police Encounters</h3>
@@ -159,39 +311,97 @@
   </ul>
 </div>
 
+<div class="section-illustration"><img src="img/lc_police_outcomes.svg" alt="Police Interaction Outcomes — decision tree from routine stop to escalation"></div>
+
 <div class="table-wrap">
-<table>
-<thead><tr><th>Situation</th><th>TN</th><th>On Success</th><th>On Failure</th></tr></thead>
-<tbody>
-<tr><td>Routine traffic stop</td><td>30</td><td>Warning or ticket, released</td><td>Ticket + extended stop</td></tr>
-<tr><td>Investigatory stop (no crime observed)</td><td>35</td><td>Released with warning</td><td>Search, detention, possible ticket</td></tr>
-<tr><td>Domestic disturbance call</td><td>35</td><td>Mediation, no charges</td><td>Arrest of one or both parties</td></tr>
-<tr><td>Protest / crowd control</td><td>40</td><td>Released without incident</td><td>Arrest, possible use of force</td></tr>
-<tr><td>Use of force escalation</td><td>45</td><td>De-escalated, possible charges</td><td>Physical injury (roll damage), arrest</td></tr>
-</tbody>
-</table>
+<p>The GM rolls a <strong>Police Interaction Check</strong>: <span class="dice">2d10 + RES mod + EXP mod</span> vs. the TN for the situation. Demographic modifiers apply (see callout above):</p>
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">30</span>
+    <span class="tn-label">Routine traffic stop — Warning or ticket, released</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">35</span>
+    <span class="tn-label">Investigatory stop — Released with warning (or search/detention)</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">35</span>
+    <span class="tn-label">Domestic disturbance — Mediation, no charges (or arrest)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">40</span>
+    <span class="tn-label">Protest / crowd control — Released without incident (or arrest)</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">45</span>
+    <span class="tn-label">Use of force escalation — De-escalated (or physical injury + arrest)</span>
+  </div>
+</div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📋 Example: Traffic Stop</div>
-  <p><strong>Marcus</strong> (Black, 24, RES 3, EXP 2) is pulled over for a broken taillight. Base TN = 30. Modifiers: +10 (ethnicity) + 5 (young male) − 5 (calm and compliant) = <strong>TN 40</strong>. Marcus rolls <span class="dice">2d10 + RES mod + EXP mod</span> = 6 + 4 + 1 + 0 = <strong>11 &lt; 40 ✗</strong>. He remains calm, hands are visible, answers politely — but the TN is high due to systemic bias. Officer gives him a <strong>$125 ticket</strong> (warning would have been more typical for a white driver in the same situation) and a stern lecture about the taillight. +2 SP from the humiliation of knowing he was treated differently. Marcus walks away unharmed but frustrated.</p>
+  <div class="section-illustration"><img src="img/lc_marcus_traffic_stop.png" alt="Marcus at a nighttime traffic stop"></div>
+  <div class="char-portrait">
+  <img src="img/char_marcus.png" alt="Marcus">
+  <div class="char-info">
+    <div class="char-name">Marcus</div>
+    <div class="char-subtitle">24, Police encounter example</div>
+    <p><strong>Marcus</strong> (Black, 24, RES 3, EXP 2) is pulled over for a broken taillight. Base TN = 30. Modifiers: +10 (ethnicity) + 5 (young male) − 5 (calm and compliant) = <strong>TN 40</strong>. Marcus rolls <span class="dice">2d10 + RES mod + EXP mod</span> = 6 + 4 + 1 + 0 = <strong>11 &lt; 40 ✗</strong>. He remains calm, hands are visible, answers politely — but the TN is high due to systemic bias. Officer gives him a <strong>$125 ticket</strong> (warning would have been more typical for a white driver in the same situation) and a stern lecture about the taillight. +2 SP from the humiliation of knowing he was treated differently. Marcus walks away unharmed but frustrated.</p>
+  </div>
+</div>
   <p><strong>Same roll, different character:</strong> If Marcus had rolled 2 + 3 = 5, total = 5 + 1 + 0 = <strong>6 &lt; 40 ✗</strong>. Major failure. The officer extends the stop, asks to search the vehicle. Marcus refuses. Officer finds a small amount of marijuana in the glove box (GM fiat). Marcus is <strong>arrested for possession</strong> — see Minor Criminal Charges table.</p>
 </div>
 
 <h3>2.5 Civil Lawsuits &amp; Small Claims Court</h3>
+<div class="section-illustration"><img src="img/lc_small_claims_court.png" alt="Small claims courtroom — bureaucratic, not dramatic"></div>
 <p>Characters can be sued or file lawsuits. <strong>Small claims court</strong> handles disputes under <span class="dice">$5,000–$25,000</span> (varies by state) without attorneys.</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Claim Type</th><th>Typical Amount</th><th>Prep Time</th><th>Stress</th></tr></thead>
-<tbody>
-<tr><td>Landlord-tenant dispute</td><td>$500–$5,000</td><td>5–10 hours</td><td>+2 SP</td></tr>
-<tr><td>Unpaid debt / loan</td><td>$200–$10,000</td><td>3–8 hours</td><td>+2 SP</td></tr>
-<tr><td>Property damage</td><td>$300–$15,000</td><td>5–15 hours</td><td>+3 SP</td></tr>
-<tr><td>Personal injury (minor)</td><td>$1,000–$25,000</td><td>10–40 hours</td><td>+4 SP</td></tr>
-<tr><td>Employment dispute (wage theft)</td><td>$1,000–$20,000</td><td>15–30 hours</td><td>+3 SP</td></tr>
-</tbody>
-</table>
+<p><strong>Small claims court</strong> handles disputes under <span class="dice">$5,000–$25,000</span> (varies by state) without attorneys. Each claim type has different amounts, prep requirements, and stress levels:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🏠</span>
+  <h3>Landlord-tenant dispute</h3>
+  <p>💰 <strong>Typical Amount:</strong> $500–$5,000</p>
+  <p>⏱️ <strong>Prep Time:</strong> 5–10 hours</p>
+  <p>😰 <strong>Stress:</strong> +2 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💳</span>
+  <h3>Unpaid debt / loan</h3>
+  <p>💰 <strong>Typical Amount:</strong> $200–$10,000</p>
+  <p>⏱️ <strong>Prep Time:</strong> 3–8 hours</p>
+  <p>😰 <strong>Stress:</strong> +2 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏚️</span>
+  <h3>Property damage</h3>
+  <p>💰 <strong>Typical Amount:</strong> $300–$15,000</p>
+  <p>⏱️ <strong>Prep Time:</strong> 5–15 hours</p>
+  <p>😰 <strong>Stress:</strong> +3 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🤕</span>
+  <h3>Personal injury (minor)</h3>
+  <p>💰 <strong>Typical Amount:</strong> $1,000–$25,000</p>
+  <p>⏱️ <strong>Prep Time:</strong> 10–40 hours</p>
+  <p>😰 <strong>Stress:</strong> +4 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💼</span>
+  <h3>Employment dispute (wage theft)</h3>
+  <p>💰 <strong>Typical Amount:</strong> $1,000–$20,000</p>
+  <p>⏱️ <strong>Prep Time:</strong> 15–30 hours</p>
+  <p>😰 <strong>Stress:</strong> +3 SP</p>
+</div>
+
+</div>
 </div>
 
 <p><strong>Winning a small claims case:</strong> Roll <span class="dice">2d10 + INT mod + EXP mod</span> vs TN 35. Higher INT (knowledge of procedure) and EXP (previous legal experience) help. On success, the character wins <span class="dice">50–100%</span> of the claimed amount. On failure, they may owe court costs ($50–$200) and the other party's claimed amount.</p>
@@ -247,6 +457,8 @@
 <h4>How Withholding Works</h4>
 <p>Think of withholding as the government taking its share <em>throughout the year</em> rather than demanding one lump sum in April. Each paycheck, the employer calculates how much federal income tax to send to the IRS on the character's behalf, based on the W-4 information and the current tax bracket tables.</p>
 
+<div class="section-illustration"><img src="img/lc_paycheck_waterfall.svg" alt="Paycheck Waterfall — gross pay minus federal tax, FICA, state tax, and benefits to net pay"></div>
+
 <div class="callout tip">
   <div class="callout-title">💡 The Paycheck Flow</div>
   <p>Every paycheck goes through this pipeline: <strong>Gross Pay</strong> → minus <strong>Federal Income Tax (withholding)</strong> → minus <strong>FICA (Social Security + Medicare)</strong> → minus <strong>State Income Tax</strong> (if applicable) → minus <strong>Employer-sponsored benefits</strong> (health insurance, 401k, etc.) → <strong>Net Pay</strong> (what actually hits the bank account).</p>
@@ -256,14 +468,30 @@
 <p>Separate from federal income tax withholding, every paycheck also has <strong>FICA taxes</strong> deducted. These are <em>not</em> income taxes — they fund specific government programs and are calculated at a flat rate regardless of income bracket:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Tax</th><th>Employee Rate</th><th>Employer Match</th><th>Wages Fund</th></tr></thead>
-<tbody>
-<tr><td><strong>Social Security (OASDI)</strong></td><td>6.2%</td><td>6.2%</td><td>Retirement, disability, and survivor benefits</td></tr>
-<tr><td><strong>Medicare (HI)</strong></td><td>1.45%</td><td>1.45%</td><td>Healthcare coverage for age 65+ and certain disabled people</td></tr>
-<tr><td><strong>Total FICA</strong></td><td><strong>7.65%</strong></td><td><strong>7.65%</strong></td><td><strong>15.3% combined</strong></td></tr>
-</tbody>
-</table>
+<p>FICA taxes are flat-rate payroll taxes deducted from every paycheck — separate from income tax — funding specific government programs:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">🛡️</div>
+<h3>Social Security (OASDI)</h3>
+<p>💰 Employee Rate: 6.2%</p>
+<p>🏢 Employer Match: 6.2%</p>
+<p>🎯 Funds: Retirement, disability, and survivor benefits</p>
+</div>
+<div class="card">
+<div class="card-icon">🏥</div>
+<h3>Medicare (HI)</h3>
+<p>💰 Employee Rate: 1.45%</p>
+<p>🏢 Employer Match: 1.45%</p>
+<p>🎯 Funds: Healthcare coverage for age 65+ and certain disabled people</p>
+</div>
+<div class="card">
+<div class="card-icon">📊</div>
+<h3>Total FICA</h3>
+<p>💰 Employee Rate: <strong>7.65%</strong></p>
+<p>🏢 Employer Match: <strong>7.65%</strong></p>
+<p>🎯 Combined: <strong>15.3% combined</strong></p>
+</div>
+</div>
 </div>
 
 <p><strong>Key details:</strong></p>
@@ -283,14 +511,30 @@
 <p>The whole point of withholding is to pre-pay your annual tax obligation. But if the W-4 is mis-calibrated (or if the character's income situation changes during the year), the math doesn't line up:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Scenario</th><th>During the Year</th><th>In April</th><th>Financial Effect</th></tr></thead>
-<tbody>
-<tr><td><strong>Withholding too high</strong></td><td>Smaller paychecks than necessary</td><td>Large refund check</td><td>You gave the government an <strong>interest-free loan</strong> for the year. You could have had that money earning interest or paying down debt.</td></tr>
-<tr><td><strong>Withholding just right</strong></td><td>Paychecks match actual tax obligation</td><td>Small refund (<span class="dice">$0–$500</span>) or small payment</td><td>Optimal. You kept your money all year and owe nothing extra.</td></tr>
-<tr><td><strong>Withholding too low</strong></td><td>Larger paychecks than warranted</td><td>Owe money — potentially with <strong>underpayment penalty</strong></td><td>You enjoyed bigger paychecks but must pay the difference in April. If you owe <strong>more than $1,000</strong>, the IRS charges a penalty (roughly 3–10% of the underpayment, prorated). +3 SP from the stress of an unexpected bill.</td></tr>
-</tbody>
-</table>
+<p>If your W-4 is mis-calibrated, the math doesn't line up during the year or come April:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">📉</div>
+<h3>Withholding too high</h3>
+<p>📅 During the Year: Smaller paychecks than necessary</p>
+<p>🗓️ In April: Large refund check</p>
+<p>💸 Financial Effect: You gave the government an <strong>interest-free loan</strong> for the year. You could have had that money earning interest or paying down debt.</p>
+</div>
+<div class="card">
+<div class="card-icon">🎯</div>
+<h3>Withholding just right</h3>
+<p>📅 During the Year: Paychecks match actual tax obligation</p>
+<p>🗓️ In April: Small refund (<span class="dice">$0–$500</span>) or small payment</p>
+<p>💸 Financial Effect: Optimal. You kept your money all year and owe nothing extra.</p>
+</div>
+<div class="card">
+<div class="card-icon">📈</div>
+<h3>Withholding too low</h3>
+<p>📅 During the Year: Larger paychecks than warranted</p>
+<p>🗓️ In April: Owe money — potentially with <strong>underpayment penalty</strong></p>
+<p>💸 Financial Effect: You enjoyed bigger paychecks but must pay the difference in April. If you owe <strong>more than $1,000</strong>, the IRS charges a penalty (roughly 3–10% of the underpayment, prorated). +3 SP from the stress of an unexpected bill.</p>
+</div>
+</div>
 </div>
 
 <div class="callout rule">
@@ -331,7 +575,14 @@
 
 <div class="callout example">
   <div class="callout-title">📋 Example: Full Paycheck Breakdown</div>
-  <p><strong>Maya Chen</strong>, 28, single software developer in Austin, TX. She just started her first job out of college.</p>
+  <div class="char-portrait">
+  <img src="img/char_maya.png" alt="Maya Chen">
+  <div class="char-info">
+    <div class="char-name">Maya Chen</div>
+    <div class="char-subtitle">28, Software developer — Paycheck breakdown</div>
+    <p><strong>Maya Chen</strong>, 28, single software developer in Austin, TX. She just started her first job out of college.</p>
+  </div>
+</div>
   <p><strong>Attributes:</strong> VIG 4, <strong>INT 7</strong> (mod +1), EXP 3, DXT 5, RES 5, PRC 4.<br>
   <strong>Finance skill:</strong> +0 (no formal training yet).<br>
   <strong>Annual salary:</strong> <span class="dice">$65,000</span> → <span class="dice">$2,500/paycheck</span> gross (paid biweekly, 26 pay periods).</p>
@@ -341,19 +592,56 @@
   <p><strong>Biweekly Paycheck Breakdown:</strong></p>
 
   <div class="table-wrap">
-  <table>
-  <thead><tr><th>Deduction</th><th>Amount</th><th>Note</th></tr></thead>
-  <tbody>
-  <tr><td><strong>Gross pay</strong></td><td><strong>$2,500.00</strong></td><td>Base salary, biweekly</td></tr>
-  <tr><td>Federal income tax (withholding)</td><td>−$312.50</td><td>~12.5% withheld (slightly high due to W-4 miss)</td></tr>
-  <tr><td>Social Security (6.2%)</td><td>−$155.00</td><td>FICA — mandatory, no W-4 adjustment</td></tr>
-  <tr><td>Medicare (1.45%)</td><td>−$36.25</td><td>FICA — mandatory, no W-4 adjustment</td></tr>
-  <tr><td>Texas state income tax</td><td>$0.00</td><td>Texas has no state income tax 🤠</td></tr>
-  <tr><td>Health insurance (employee share)</td><td>−$85.00</td><td>PPO plan through employer</td></tr>
-  <tr><td>401(k) contribution (5%)</td><td>−$125.00</td><td>Employer matches 50% up to 6%</td></tr>
-  <tr><td colspan="2"><strong>Net pay: $1,786.25</strong></td><td>What actually hits her bank account</td></tr>
-  </tbody>
-  </table>
+  <div class="card-grid">
+  <div class="card">
+  <div class="card-icon">💵</div>
+  <h3>Gross pay</h3>
+  <p>💰 Amount: <strong>$2,500.00</strong></p>
+  <p>📝 Note: Base salary, biweekly</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🏛️</div>
+  <h3>Federal income tax (withholding)</h3>
+  <p>💰 Amount: −$312.50</p>
+  <p>📝 Note: ~12.5% withheld (slightly high due to W-4 miss)</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🛡️</div>
+  <h3>Social Security (6.2%)</h3>
+  <p>💰 Amount: −$155.00</p>
+  <p>📝 Note: FICA — mandatory, no W-4 adjustment</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🏥</div>
+  <h3>Medicare (1.45%)</h3>
+  <p>💰 Amount: −$36.25</p>
+  <p>📝 Note: FICA — mandatory, no W-4 adjustment</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🤠</div>
+  <h3>Texas state income tax</h3>
+  <p>💰 Amount: $0.00</p>
+  <p>📝 Note: Texas has no state income tax 🤠</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🏥</div>
+  <h3>Health insurance (employee share)</h3>
+  <p>💰 Amount: −$85.00</p>
+  <p>📝 Note: PPO plan through employer</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">📈</div>
+  <h3>401(k) contribution (5%)</h3>
+  <p>💰 Amount: −$125.00</p>
+  <p>📝 Note: Employer matches 50% up to 6%</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🏦</div>
+  <h3>Net pay: $1,786.25</h3>
+  <p>💰 Amount: <strong>$1,786.25</strong></p>
+  <p>📝 Note: What actually hits her bank account</p>
+  </div>
+  </div>
   </div>
 
   <p><strong>Annual reconciliation (April of next year):</strong></p>
@@ -377,6 +665,9 @@
      ============================================================ -->
 
 <h3>3.1b The Filing Process — Step by Step</h3>
+
+<div class="section-illustration"><img src="img/lc_tax_filing_flow.svg" alt="Tax Filing Process Flow — from document gathering through filing and refund"></div>
+
 <p>Filing taxes is not a single roll — it is a <strong>multi-step process</strong> spanning January through April. Each step has its own cost, risk, and potential for disaster. The GM should walk characters through each phase:</p>
 
 <h4>Step 1: Gathering Your Documents</h4>
@@ -386,15 +677,33 @@
   <div class="callout-title">📄 Document Gathering Check</div>
   <p><strong>Roll:</strong> <span class="dice">2d10 + INT mod + Finance mod</span> vs TN set by complexity:</p>
   <div class="table-wrap">
-  <table>
-  <thead><tr><th>Income Situation</th><th>TN</th><th>Time Required</th></tr></thead>
-  <tbody>
-  <tr><td>Single W-2, no dependents</td><td>30</td><td>2–4 hours</td></tr>
-  <tr><td>W-2 + side gig (1099)</td><td>40</td><td>4–8 hours</td></tr>
-  <tr><td>Self-employed / Schedule C</td><td>50</td><td>8–20 hours</td></tr>
-  <tr><td>Multiple income + investments + dependents</td><td>55</td><td>15–30 hours</td></tr>
-  </tbody>
-  </table>
+  <p>The difficulty of gathering documents depends on your income situation:</p>
+  <div class="card-grid">
+  <div class="card">
+  <div class="card-icon">📄</div>
+  <h3>Single W-2, no dependents</h3>
+  <p>🎯 TN: 30</p>
+  <p>⏱️ Time Required: 2–4 hours</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">📑</div>
+  <h3>W-2 + side gig (1099)</h3>
+  <p>🎯 TN: 40</p>
+  <p>⏱️ Time Required: 4–8 hours</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">📊</div>
+  <h3>Self-employed / Schedule C</h3>
+  <p>🎯 TN: 50</p>
+  <p>⏱️ Time Required: 8–20 hours</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🗂️</div>
+  <h3>Multiple income + investments + dependents</h3>
+  <p>🎯 TN: 55</p>
+  <p>⏱️ Time Required: 15–30 hours</p>
+  </div>
+  </div>
   </div>
   <p><strong>On success:</strong> You have everything you need. File cleanly.</p>
   <p><strong>On failure:</strong> You're missing something. Roll <span class="dice">1d6</span>: (1–2) A W-2 or 1099 never arrived — call the employer, file Form 4852 as a substitute (+3 days delay, +1 SP from the hassle). (3–4) You can't find receipts for deductions worth <span class="dice">$500–$3,000</span> — those deductions are lost. (5–6) You discover an income source you forgot about (a forgotten gig, an old bank account with interest). This means your filing is wrong and you'll need to amend later (+2 SP).</p>
@@ -404,18 +713,44 @@
 <p>How you file matters — both for accuracy and for cost. Characters must choose before starting:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Method</th><th>Cost</th><th>Accuracy Bonus</th><th>Complexity Limit</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td><strong>Free filing</strong><br>(IRS Free File, VITA volunteer sites)</td><td>$0</td><td>None</td><td>Simple returns only<br>(AGI &lt;$79,000)</td><td>VITA sites are staffed by volunteers; quality varies. Free File programs have eligibility limits that change yearly.</td></tr>
-<tr><td><strong>Tax software</strong><br>(TurboTax, H&amp;R Block Online, FreeTaxUSA)</td><td>$15–$200<br>(state return: $10–$60 extra)</td><td>+5 to filing check</td><td>Most situations<br>(software guides you through)</td><td>TurboTax upsells aggressively — the "free" version won't handle itemized deductions or credits. Characters who don't read carefully end up paying for features they didn't need. Roll <span class="dice">1d10</span>: on 1–3, the character overpaid for software features (+$50–$150 wasted).</td></tr>
-<tr><td><strong>Tax preparer</strong><br>(local tax office, QuickBooks Live)</td><td>$150–$400</td><td>+10 to filing check<br>(effectively auto-succeed for medium complexity)</td><td>Most situations</td><td>A human reviews your return. Good for self-employed or itemizers. Roll <span class="dice">1d10</span>: on 1, the preparer made an error (you'll owe more or lose a refund — discovered 2–6 months later, +3 SP).</td></tr>
-<tr><td><strong>CPA / enrolled agent</strong><br>(certified public accountant)</td><td>$400–$800+<br>(complex returns $1,000–$3,000)</td><td>Auto-succeed</td><td>Any complexity</td><td>Best option for business owners, landlords, or characters with international income. A CPA will find deductions and credits the character didn't know existed. Worth every penny for complex situations.</td></tr>
-</tbody>
-</table>
+<p>How you file matters — both for accuracy and for cost. Characters must choose before starting:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">🆓</div>
+<h3>Free filing<br>(IRS Free File, VITA volunteer sites)</h3>
+<p>💲 Cost: $0</p>
+<p>🎯 Accuracy Bonus: None</p>
+<p>📏 Complexity Limit: Simple returns only (AGI &lt;$79,000)</p>
+<p>📝 Notes: VITA sites are staffed by volunteers; quality varies. Free File programs have eligibility limits that change yearly.</p>
+</div>
+<div class="card">
+<div class="card-icon">💻</div>
+<h3>Tax software<br>(TurboTax, H&amp;R Block Online, FreeTaxUSA)</h3>
+<p>💲 Cost: $15–$200 (state return: $10–$60 extra)</p>
+<p>🎯 Accuracy Bonus: +5 to filing check</p>
+<p>📏 Complexity Limit: Most situations (software guides you through)</p>
+<p>📝 Notes: TurboTax upsells aggressively — the "free" version won't handle itemized deductions or credits. Characters who don't read carefully end up paying for features they didn't need. Roll <span class="dice">1d10</span>: on 1–3, the character overpaid for software features (+$50–$150 wasted).</p>
+</div>
+<div class="card">
+<div class="card-icon">🧑‍💼</div>
+<h3>Tax preparer<br>(local tax office, QuickBooks Live)</h3>
+<p>💲 Cost: $150–$400</p>
+<p>🎯 Accuracy Bonus: +10 to filing check (effectively auto-succeed for medium complexity)</p>
+<p>📏 Complexity Limit: Most situations</p>
+<p>📝 Notes: A human reviews your return. Good for self-employed or itemizers. Roll <span class="dice">1d10</span>: on 1, the preparer made an error (you'll owe more or lose a refund — discovered 2–6 months later, +3 SP).</p>
+</div>
+<div class="card">
+<div class="card-icon">🎓</div>
+<h3>CPA / enrolled agent<br>(certified public accountant)</h3>
+<p>💲 Cost: $400–$800+ (complex returns $1,000–$3,000)</p>
+<p>🎯 Accuracy Bonus: Auto-succeed</p>
+<p>📏 Complexity Limit: Any complexity</p>
+<p>📝 Notes: Best option for business owners, landlords, or characters with international income. A CPA will find deductions and credits the character didn't know existed. Worth every penny for complex situations.</p>
+</div>
+</div>
 </div>
 
-<div class="callout tip">
+<div class="callout walkthrough">
   <div class="callout-title">💡 GM: The TurboTax Trap</div>
   <p>A common real-world experience: characters who use free software and discover mid-way that they need the paid version to file. The software has already guided them through entering all their data — now they're held hostage. This costs <strong>$50–$150</strong> and <strong>+1 SP</strong> from frustration. Characters with <span class="dice">INT ≥ 5</span> or <strong>Finance +2 or higher</strong> can see the upsell coming and avoid it.</p>
 </div>
@@ -437,14 +772,27 @@
   <p><strong>On success:</strong> The return is filed correctly. The character will receive the correct refund or owe the correct amount.</p>
   <p><strong>On failure:</strong> An error was made. The severity depends on how far below the TN the roll fell:</p>
   <div class="table-wrap">
-  <table>
-  <thead><tr><th>Margin of Failure</th><th>Consequence</th><th>Discovery</th></tr></thead>
-  <tbody>
-  <tr><td>1–5 below TN</td><td>Minor math error. Refund reduced by <span class="dice">$50–$300</span>, or owe <span class="dice">$100–$500</span> extra.</td><td>Discovered when refund is smaller than expected, or via IRS notice in 2–8 weeks.</td></tr>
-  <tr><td>6–10 below TN</td><td>Missed deduction or incorrect credit. Owe <span class="dice">$500–$2,000</span> more than necessary, or lost a larger refund.</td><td>May not be discovered until next year's filing. +1 SP when realized.</td></tr>
-  <tr><td>11+ below TN</td><td>Major error — possibly flagged for audit. Owe <span class="dice">$2,000–$10,000</span> in back taxes plus <span class="dice">0.5%</span>/month penalty (up to 25%). Triggers audit (see Section 3.4).</td><td>IRS sends a notice 2–12 months later. +5 SP from audit stress.</td></tr>
-  </tbody>
-  </table>
+  <p>The severity of an error depends on how far below the TN the roll fell:</p>
+  <div class="card-grid">
+  <div class="card">
+  <div class="card-icon">😬</div>
+  <h3>1–5 below TN</h3>
+  <p>💥 Consequence: Minor math error. Refund reduced by <span class="dice">$50–$300</span>, or owe <span class="dice">$100–$500</span> extra.</p>
+  <p>🔍 Discovery: Discovered when refund is smaller than expected, or via IRS notice in 2–8 weeks.</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">😰</div>
+  <h3>6–10 below TN</h3>
+  <p>💥 Consequence: Missed deduction or incorrect credit. Owe <span class="dice">$500–$2,000</span> more than necessary, or lost a larger refund.</p>
+  <p>🔍 Discovery: May not be discovered until next year's filing. +1 SP when realized.</p>
+  </div>
+  <div class="card">
+  <div class="card-icon">🔥</div>
+  <h3>11+ below TN</h3>
+  <p>💥 Consequence: Major error — possibly flagged for audit. Owe <span class="dice">$2,000–$10,000</span> in back taxes plus <span class="dice">0.5%</span>/month penalty (up to 25%). Triggers audit (see Section 3.4).</p>
+  <p>🔍 Discovery: IRS sends a notice 2–12 months later. +5 SP from audit stress.</p>
+  </div>
+  </div>
   </div>
 </div>
 
@@ -452,13 +800,23 @@
 <p>After completing the return, the character must submit it:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Submission Method</th><th>Processing Time</th><th>Additional Risk</th><th>Refund Speed</th></tr></thead>
-<tbody>
-<tr><td><strong>E-file</strong> (electronic)</td><td>21 days average for refund; 2–3 weeks for acceptance confirmation</td><td>Low. The IRS validates the data electronically before accepting.</td><td><strong>Fastest option.</strong> Direct deposit refunds arrive in 7–21 days after acceptance.</td></tr>
-<tr><td><strong>Mail</strong> (paper return)</td><td>6–8 weeks average; up to 12 weeks during peak season</td><td>Medium. Paper returns can be lost in the mail (roll <span class="dice">1d100</span>: on 1, lost — must refile, +3 SP). Handwritten errors are more common.</td><td><strong>Slowest option.</strong> Paper checks are also slower and can be lost or stolen from mailboxes.</td></tr>
-</tbody>
-</table>
+<p>After completing the return, the character must submit it — e-file or mail:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">⚡</div>
+<h3>E-file (electronic)</h3>
+<p>⏱️ Processing Time: 21 days average for refund; 2–3 weeks for acceptance confirmation</p>
+<p>⚠️ Additional Risk: Low. The IRS validates the data electronically before accepting.</p>
+<p>🚀 Refund Speed: <strong>Fastest option.</strong> Direct deposit refunds arrive in 7–21 days after acceptance.</p>
+</div>
+<div class="card">
+<div class="card-icon">📮</div>
+<h3>Mail (paper return)</h3>
+<p>⏱️ Processing Time: 6–8 weeks average; up to 12 weeks during peak season</p>
+<p>⚠️ Additional Risk: Medium. Paper returns can be lost in the mail (roll <span class="dice">1d100</span>: on 1, lost — must refile, +3 SP). Handwritten errors are more common.</p>
+<p>🐌 Refund Speed: <strong>Slowest option.</strong> Paper checks are also slower and can be lost or stolen from mailboxes.</p>
+</div>
+</div>
 </div>
 
 <div class="callout tip">
@@ -502,7 +860,15 @@
 
 <div class="callout example">
   <div class="callout-title">📋 Example: Filing Taxes as a Freelancer</div>
-  <p><strong>Jamal</strong> (INT 5, Finance +2) is a freelance graphic designer earning $52,000 in 2024. He has no employees, one client on a 1099-NEC, and did some side work paid in cash (reported honestly).</p>
+  <div class="section-illustration"><img src="img/lc_jamal_tax_night.png" alt="Jamal doing taxes at a cluttered desk late at night"></div>
+  <div class="char-portrait">
+  <img src="img/char_jamal.png" alt="Jamal">
+  <div class="char-info">
+    <div class="char-name">Jamal</div>
+    <div class="char-subtitle">Freelance graphic designer — Tax filing example</div>
+    <p><strong>Jamal</strong> (INT 5, Finance +2) is a freelance graphic designer earning $52,000 in 2024. He has no employees, one client on a 1099-NEC, and did some side work paid in cash (reported honestly).</p>
+  </div>
+</div>
   <p><strong>Step 1 — Gather docs:</strong> <span class="dice">2d10 + 1 + 2</span> vs TN 50 (self-employed). Rolls 9 + 7 = 16 + 3 = <strong>19 &lt; 50</strong>. Major failure (missed by 31). Jamal can't find receipts for $1,800 in home office expenses and realizes he forgot about $2,000 in cash payments from a side project he did in March. Jamal can't find receipts for $1,800 in home office expenses and realizes he forgot about $2,000 in cash payments from a side project he did in March.</p>
   <p><strong>Step 2 — Method:</strong> Jamal hires a local tax preparer for $275. Gets +10 to his filing check.</p>
   <p><strong>Step 3 — File:</strong> <span class="dice">2d10 + 1 + 2 + 10</span> vs TN 50. Rolls 5 + 8 = 13 + 13 = <strong>26 &lt; 50</strong>. Still fails (missed by 24). Even with a preparer, self-employed filing is hard. The preparer miscategorized some expenses. The IRS will flag this 4 months later (+5 SP, owes $3,200 in back taxes + $160 in penalties).</p>
@@ -519,18 +885,14 @@
 <h3>3.2 Federal Income Tax Brackets (Simplified)</h3>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Income Range (Single)</th><th>Tax Rate</th><th>Approx. Annual Tax</th></tr></thead>
-<tbody>
-<tr><td>$0 – $11,000</td><td>10%</td><td>$0 – $1,100</td></tr>
-<tr><td>$11,001 – $44,725</td><td>12%</td><td>$1,100 – $5,147</td></tr>
-<tr><td>$44,726 – $95,375</td><td>22%</td><td>$5,147 – $16,310</td></tr>
-<tr><td>$95,376 – $182,100</td><td>24%</td><td>$16,310 – $37,124</td></tr>
-<tr><td>$182,101 – $231,250</td><td>32%</td><td>$37,124 – $52,852</td></tr>
-<tr><td>$231,251 – $578,125</td><td>35%</td><td>$52,852 – $174,557</td></tr>
-<tr><td>$578,126+</td><td>37%</td><td>$174,557+</td></tr>
-</tbody>
-</table>
+<p>2024 federal income tax brackets for single filers (progressive — each bracket only applies to income within that range):</p>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>10% — $0–$11,000</span><span>$0–$1,100/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:10%;background:#27ae60;"></div></div></div>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>12% — $11,001–$44,725</span><span>$1,100–$5,147/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:12%;background:#2ecc71;"></div></div></div>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>22% — $44,726–$95,375</span><span>$5,147–$16,310/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:22%;background:#f1c40f;"></div></div></div>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>24% — $95,376–$182,100</span><span>$16,310–$37,124/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:24%;background:#f39c12;"></div></div></div>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>32% — $182,101–$231,250</span><span>$37,124–$52,852/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:32%;background:#e67e22;"></div></div></div>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>35% — $231,251–$578,125</span><span>$52,852–$174,557/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:35%;background:#e74c3c;"></div></div></div>
+<div class="stat-bar-wrap"><div class="stat-bar-label"><span>37% — $578,126+</span><span>$174,557+/yr</span></div><div class="stat-bar"><div class="stat-bar-fill" style="width:37%;background:#c0392b;"></div></div></div>
 </div>
 
 <p><em>Note: These are 2024 brackets. The GM may adjust for the game timeline.</em></p>
@@ -548,9 +910,12 @@
 </ul>
 
 <h3>3.3b Tax Credits</h3>
+
+<div class="section-illustration"><img src="img/lc_credit_comparison.svg" alt="Tax Credits vs Deductions Comparison — dollar-for-dollar impact illustration"></div>
+
 <p>Tax credits are <strong>more powerful than deductions</strong>. A deduction reduces your <em>taxable income</em> — saving you money equal to your marginal tax rate (10–37%). A credit reduces your <em>tax bill directly, dollar for dollar</em>. A $1,000 credit saves you exactly $1,000 regardless of your bracket. Some credits are even <strong>refundable</strong> — meaning you receive money back even if your tax liability is already zero.</p>
 
-<div class="callout tip">
+<div class="callout comparison">
   <div class="callout-title">💡 Credits vs. Deductions — The Key Difference</div>
   <p>Think of it this way: a <strong>deduction</strong> is like getting a discount on the price of your groceries. A <strong>credit</strong> is like getting cash back at the register. Credits are always better, dollar for dollar. A character earning $40,000 (22% bracket) would need a <strong>$4,545 deduction</strong> to save the same amount as a <strong>$1,000 credit</strong>.</p>
 </div>
@@ -559,15 +924,37 @@
 <p>The EITC is the <strong>largest anti-poverty program</strong> in the United States. It provides a refundable credit to low- and moderate-income workers, with the amount increasing (not decreasing) as income rises — up to a point. This is the one credit where <strong>earning more money initially increases your refund</strong>, up to the phase-in peak.</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Filing Status</th><th>Max Credit (2024)</th><th>Income Phase-Out Begins</th><th>Income Phase-Out Ends</th></tr></thead>
-<tbody>
-<tr><td>No children</td><td>$600</td><td>$9,800</td><td>$16,000</td></tr>
-<tr><td>1 child</td><td>$3,638</td><td>$11,610</td><td>$21,710</td></tr>
-<tr><td>2 children</td><td>$5,960</td><td>$11,610</td><td>$24,210</td></tr>
-<tr><td>3+ children</td><td>$6,938</td><td>$11,610</td><td>$25,820</td></tr>
-</tbody>
-</table>
+<p>EITC amounts vary by number of qualifying children. The credit increases with more children but phases out at higher incomes:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">👤</div>
+<h3>No children</h3>
+<p>💰 Max Credit (2024): $600</p>
+<p>📉 Phase-Out Begins: $9,800</p>
+<p>🛑 Phase-Out Ends: $16,000</p>
+</div>
+<div class="card">
+<div class="card-icon">👶</div>
+<h3>1 child</h3>
+<p>💰 Max Credit (2024): $3,638</p>
+<p>📉 Phase-Out Begins: $11,610</p>
+<p>🛑 Phase-Out Ends: $21,710</p>
+</div>
+<div class="card">
+<div class="card-icon">👧👦</div>
+<h3>2 children</h3>
+<p>💰 Max Credit (2024): $5,960</p>
+<p>📉 Phase-Out Begins: $11,610</p>
+<p>🛑 Phase-Out Ends: $24,210</p>
+</div>
+<div class="card">
+<div class="card-icon">👨‍👩‍👧‍👦</div>
+<h3>3+ children</h3>
+<p>💰 Max Credit (2024): $6,938</p>
+<p>📉 Phase-Out Begins: $11,610</p>
+<p>🛑 Phase-Out Ends: $25,820</p>
+</div>
+</div>
 </div>
 
 <p><strong>Phase-out mechanics:</strong> For every dollar earned above the "phase-out begins" threshold, the credit decreases by a fixed percentage until it reaches zero at the "phase-out ends" income. Characters earning above the phase-out end receive <strong>no EITC</strong>.</p>
@@ -580,13 +967,25 @@
 <h4>Child Tax Credit (CTC) &amp; Child and Dependent Care Credit</h4>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Credit</th><th>Amount</th><th>Eligibility</th><th>Refundable?</th><th>Phase-Out</th></tr></thead>
-<tbody>
-<tr><td><strong>Child Tax Credit</strong></td><td>$2,000/child<br>(under age 17)</td><td>Child is a qualifying dependent</td><td>Partially — up to $1,600/child is refundable as the "Additional CTC"</td><td>Phases out for MAGI &gt;$200,000 (single) or &gt;$400,000 (married)</td></tr>
-<tr><td><strong>Child &amp; Dependent Care Credit</strong></td><td>20–35% of qualifying expenses<br>(max $3,000 for 1 child, $6,000 for 2+)</td><td>Paid for childcare to enable work</td><td>No (non-refundable)</td><td>Phase-out begins at $15,000; percentage drops as income rises</td></tr>
-</tbody>
-</table>
+<p>Two major credits available to parents and caregivers:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">👶</div>
+<h3>Child Tax Credit</h3>
+<p>💰 Amount: $2,000/child (under age 17)</p>
+<p>✅ Eligibility: Child is a qualifying dependent</p>
+<p>🔄 Refundable?: Partially — up to $1,600/child is refundable as the "Additional CTC"</p>
+<p>📉 Phase-Out: Phases out for MAGI &gt;$200,000 (single) or &gt;$400,000 (married)</p>
+</div>
+<div class="card">
+<div class="card-icon">🧒</div>
+<h3>Child &amp; Dependent Care Credit</h3>
+<p>💰 Amount: 20–35% of qualifying expenses (max $3,000 for 1 child, $6,000 for 2+)</p>
+<p>✅ Eligibility: Paid for childcare to enable work</p>
+<p>🔄 Refundable?: No (non-refundable)</p>
+<p>📉 Phase-Out: Phase-out begins at $15,000; percentage drops as income rises</p>
+</div>
+</div>
 </div>
 
 <p>The <strong>Child and Dependent Care Credit</strong> is particularly valuable for working parents. A character spending $6,000/year on daycare for two children could receive a credit of <span class="dice">$1,200–$2,100</span> depending on their income bracket. Lower-income characters get the higher percentage.</p>
@@ -625,15 +1024,33 @@
 <p>A credit for low- to moderate-income characters who contribute to a retirement account (IRA, 401(k), Roth IRA, etc.):</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>AGI Range (Single)</th><th>Credit Rate</th><th>Max Credit</th></tr></thead>
-<tbody>
-<tr><td>$0 – $7,500</td><td>50%</td><td>$1,000</td></tr>
-<tr><td>$7,501 – $10,000</td><td>20%</td><td>$400</td></tr>
-<tr><td>$10,001 – $12,500</td><td>10%</td><td>$200</td></tr>
-<tr><td>$12,501+</td><td>0%</td><td>$0</td></tr>
-</tbody>
-</table>
+<p>The Saver's Credit rate depends on your AGI — lower income gets a higher credit rate:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">💎</div>
+<h3>$0 – $7,500 AGI</h3>
+<p>📊 Credit Rate: 50%</p>
+<p>💰 Max Credit: $1,000</p>
+</div>
+<div class="card">
+<div class="card-icon">🥈</div>
+<h3>$7,501 – $10,000 AGI</h3>
+<p>📊 Credit Rate: 20%</p>
+<p>💰 Max Credit: $400</p>
+</div>
+<div class="card">
+<div class="card-icon">🥉</div>
+<h3>$10,001 – $12,500 AGI</h3>
+<p>📊 Credit Rate: 10%</p>
+<p>💰 Max Credit: $200</p>
+</div>
+<div class="card">
+<div class="card-icon">🚫</div>
+<h3>$12,501+ AGI</h3>
+<p>📊 Credit Rate: 0%</p>
+<p>💰 Max Credit: $0</p>
+</div>
+</div>
 </div>
 
 <p>The credit is calculated on the first <span class="dice">$2,000</span> of retirement contributions. A character earning $6,000 who contributes $2,000 to a traditional IRA gets a <strong>$1,000 credit</strong> — effectively making half their retirement contribution free. This is one of the best deals available to low-income savers.</p>
@@ -687,14 +1104,30 @@
 <p>For the 41 states (plus DC) that do levy income tax, rates vary dramatically:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Rate Range</th><th>Lowest State</th><th>Highest State</th><th>Typical Structure</th></tr></thead>
-<tbody>
-<tr><td><strong>Flat tax</strong></td><td>3.23% (Illinois)</td><td>5.25% (Utah)</td><td>Same rate regardless of income. 7 states use flat tax.</td></tr>
-<tr><td><strong>Progressive (low end)</strong></td><td>~4% for first bracket</td><td>~5% for first bracket</td><td>Most states have 3–5 brackets.</td></tr>
-<tr><td><strong>Top marginal rate</strong></td><td>5.25% (Utah flat)</td><td>13.34% (California)</td><td>CA, NY, and HI have the highest top rates.</td></tr>
-</tbody>
-</table>
+<p>State income tax rates vary dramatically across the 41 states (plus DC) that levy them:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">📏</div>
+<h3>Flat tax</h3>
+<p>📉 Lowest State: 3.23% (Illinois)</p>
+<p>📈 Highest State: 5.25% (Utah)</p>
+<p>🏗️ Structure: Same rate regardless of income. 7 states use flat tax.</p>
+</div>
+<div class="card">
+<div class="card-icon">📊</div>
+<h3>Progressive (low end)</h3>
+<p>📉 Lowest State: ~4% for first bracket</p>
+<p>📈 Highest State: ~5% for first bracket</p>
+<p>🏗️ Structure: Most states have 3–5 brackets.</p>
+</div>
+<div class="card">
+<div class="card-icon">🔝</div>
+<h3>Top marginal rate</h3>
+<p>📉 Lowest State: 5.25% (Utah flat)</p>
+<p>📈 Highest State: 13.34% (California)</p>
+<p>🏗️ Structure: CA, NY, and HI have the highest top rates.</p>
+</div>
+</div>
 </div>
 
 <p><strong>Approximate annual state tax:</strong> For a character earning $50,000, state income tax typically ranges from <span class="dice">$0</span> (no-tax state) to <span class="dice">$3,000–$5,000</span> (high-tax state like California or New York).</p>
@@ -732,7 +1165,14 @@
 
 <div class="callout example">
   <div class="callout-title">📋 Example: Dual-State Filing</div>
-  <p><strong>Carlos</strong> lives in New Jersey but commutes to Manhattan for his $75,000 job. NJ and NY have a reciprocal agreement — Carlos only pays income tax to New Jersey. He files one state return instead of two. <strong>Saves:</strong> ~$200 in software/preparer fees, 3–5 hours of work, and +1 SP of stress.</p>
+  <div class="char-portrait">
+  <img src="img/char_carlos.png" alt="Carlos">
+  <div class="char-info">
+    <div class="char-name">Carlos</div>
+    <div class="char-subtitle">NJ commuter — Cross-state filing example</div>
+    <p><strong>Carlos</strong> lives in New Jersey but commutes to Manhattan for his $75,000 job. NJ and NY have a reciprocal agreement — Carlos only pays income tax to New Jersey. He files one state return instead of two. <strong>Saves:</strong> ~$200 in software/preparer fees, 3–5 hours of work, and +1 SP of stress.</p>
+  </div>
+</div>
   <p><strong>Contrast:</strong> <strong>Leila</strong> lives in Arizona but works remotely for a company based in California. AZ has no income tax, but California used to tax remote workers who worked for CA companies from out of state (this changed in 2020, but the GM may use older rules or a different state pair). Leila must file in both states. She rolls her cross-state check: <span class="dice">2d10 + 1 + 0</span> vs TN 45. Rolls 4 + 3 = 7 + 1 = <strong>8 &lt; 45</strong>. She messes up the credit for taxes paid and ends up owing an extra $1,200 to Arizona. +2 SP from the amendment process.</p>
 </div>
 
@@ -789,14 +1229,27 @@
 </div>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Amended Return Outcome</th><th>Roll Result</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td><strong>Correct amendment</strong></td><td>Meets or exceeds TN 50</td><td>The IRS processes the correction. Refund or additional payment adjusted within 16 weeks. +0 SP.</td></tr>
-<tr><td><strong>Minor error on the amendment</strong></td><td>Rolls 5+ below TN</td><td>The 1040-X is rejected or delayed. Character must re-file the amendment. Adds <span class="dice">4–8 weeks</span> to processing. +1 SP.</td></tr>
-<tr><td><strong>Major error — makes things worse</strong></td><td>Rolls 10+ below TN</td><td>The amendment introduces a new discrepancy. The IRS owes less (or the character owes more) than originally calculated. +2 SP.</td></tr>
-</tbody>
-</table>
+<p>The outcome of an amended return depends on how the roll compares to TN 50:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">✅</div>
+<h3>Correct amendment</h3>
+<p>🎲 Roll Result: Meets or exceeds TN 50</p>
+<p>💥 Effect: The IRS processes the correction. Refund or additional payment adjusted within 16 weeks. +0 SP.</p>
+</div>
+<div class="card">
+<div class="card-icon">⚠️</div>
+<h3>Minor error on the amendment</h3>
+<p>🎲 Roll Result: Rolls 5+ below TN</p>
+<p>💥 Effect: The 1040-X is rejected or delayed. Character must re-file the amendment. Adds <span class="dice">4–8 weeks</span> to processing. +1 SP.</p>
+</div>
+<div class="card">
+<div class="card-icon">🔥</div>
+<h3>Major error — makes things worse</h3>
+<p>🎲 Roll Result: Rolls 10+ below TN</p>
+<p>💥 Effect: The amendment introduces a new discrepancy. The IRS owes less (or the character owes more) than originally calculated. +2 SP.</p>
+</div>
+</div>
 </div>
 
 <div class="callout warning">
@@ -824,6 +1277,10 @@
      3.8 WHEN YOU CAN'T PAY
      ============================================================ -->
 <h3>3.8 When You Can't Pay What You Owe</h3>
+
+<div class="section-illustration"><img src="img/lc_irs_debt_tree.svg" alt="IRS Debt Resolution Tree — from assessment through payment plans, offers in compromise, and bankruptcy"></div>
+<div class="section-illustration"><img src="img/lc_irs_letter_shock.png" alt="Opening an IRS determination letter you can't pay"></div>
+
 <p>The IRS determination letter arrives: <strong>"You owe $12,470."</strong> The character checks their bank account: <strong>$203.18.</strong> This is one of the most stressful situations in adult life, and the Reality RPG treats it that way. The good news — there are options. The bad news — every option has costs, and ignoring the problem is always the worst path.</p>
 
 <div class="callout warning">
@@ -854,16 +1311,44 @@
 </div>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Amount Owed</th><th>Min. Monthly Payment</th><th>Payoff Period</th><th>Setup Fee</th></tr></thead>
-<tbody>
-<tr><td>$1,000 or less</td><td>$25/month or full payoff in 120 months</td><td>Up to 60 months</td><td>None</td></tr>
-<tr><td>$1,001 – $25,000</td><td>Enough to pay in full within 72 months</td><td>Up to 72 months</td><td>$65 (or $42/month in 4 payments)</td></tr>
-<tr><td>$25,001 – $50,000</td><td>Same, plus a Financial Statement (Form 433-F)</td><td>Up to 72 months</td><td>$149 (or $42/month in 4 payments)</td></tr>
-<tr><td>$50,001+</td><td>Requires Form 433-F + Form 433-A; IRS reviews full finances</td><td>Negotiated case by case</td><td>$225 (or $42/month in 4 payments)</td></tr>
-<tr><td>Guaranteed agreement (&lt;$10k, under 72 months)</td><td>Any amount the character can afford</td><td>Must clear within 72 months</td><td>None</td></tr>
-</tbody>
-</table>
+<p>The minimum monthly payment depends on the total amount owed:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">💵</div>
+<h3>$1,000 or less</h3>
+<p>💳 Min. Monthly Payment: $25/month or full payoff in 120 months</p>
+<p>⏱️ Payoff Period: Up to 60 months</p>
+<p>🏷️ Setup Fee: None</p>
+</div>
+<div class="card">
+<div class="card-icon">💰</div>
+<h3>$1,001 – $25,000</h3>
+<p>💳 Min. Monthly Payment: Enough to pay in full within 72 months</p>
+<p>⏱️ Payoff Period: Up to 72 months</p>
+<p>🏷️ Setup Fee: $65 (or $42/month in 4 payments)</p>
+</div>
+<div class="card">
+<div class="card-icon">💸</div>
+<h3>$25,001 – $50,000</h3>
+<p>💳 Min. Monthly Payment: Same, plus a Financial Statement (Form 433-F)</p>
+<p>⏱️ Payoff Period: Up to 72 months</p>
+<p>🏷️ Setup Fee: $149 (or $42/month in 4 payments)</p>
+</div>
+<div class="card">
+<div class="card-icon">🏦</div>
+<h3>$50,001+</h3>
+<p>💳 Min. Monthly Payment: Requires Form 433-F + Form 433-A; IRS reviews full finances</p>
+<p>⏱️ Payoff Period: Negotiated case by case</p>
+<p>🏷️ Setup Fee: $225 (or $42/month in 4 payments)</p>
+</div>
+<div class="card">
+<div class="card-icon">✅</div>
+<h3>Guaranteed agreement (&lt;$10k, under 72 months)</h3>
+<p>💳 Min. Monthly Payment: Any amount the character can afford</p>
+<p>⏱️ Payoff Period: Must clear within 72 months</p>
+<p>🏷️ Setup Fee: None</p>
+</div>
+</div>
 </div>
 
 <div class="callout rule">
@@ -915,19 +1400,35 @@
 <h4>The Consequences of Doing Nothing</h4>
 <p>If a character ignores the IRS entirely — doesn't file, doesn't pay, doesn't respond to notices — the escalation ladder is brutal:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Time After Non-Payment</th><th>IRS Action</th><th>Effect on Character</th><th>Stress</th></tr></thead>
-<tbody>
-<tr><td><strong>Months 1–2</strong></td><td>Notice letters (CP14, CP501, CP503)</td><td>Ignored letters pile up. The character may not even open them.</td><td>+1 SP per notice (3 total)</td></tr>
-<tr><td><strong>Months 3–6</strong></td><td>Final Notice &amp; Intent to Levy (CP90)</td><td>The IRS threatens to seize assets. Bank accounts at risk.</td><td>+2 SP</td></tr>
-<tr><td><strong>Months 6–12</strong></td><td><strong>Federal Tax Lien</strong> filed</td><td>Public record of debt. Credit score destroyed. Cannot get loans, credit cards, or favorable mortgage rates. Visible to employers who run background checks.</td><td>+3 SP</td></tr>
-<tr><td><strong>Year 1–2</strong></td><td><strong>Wage Garnishment (Levy)</strong></td><td>The IRS takes up to <strong>65% of disposable income</strong> directly from the paycheck. The character cannot stop this without a payment arrangement.</td><td>+3 SP</td></tr>
-<tr><td><strong>Year 2–3</strong></td><td><strong>Bank Levy</strong></td><td>The IRS freezes and seizes funds in the character's bank account(s). All accounts, all at once.</td><td>+2 SP</td></tr>
-<tr><td><strong>Year 3+</strong></td><td><strong>Passport revocation / denial</strong></td><td>For debts over $59,000 (2024 threshold), the State Department will deny a new passport or revoke an existing one. The character cannot travel internationally.</td><td>+2 SP</td></tr>
-<tr><td><strong>Year 5+</strong></td><td><strong>Property seizure / auction</strong></td><td>The IRS can seize and sell the character's home, vehicle, or other assets. Primary residence is rarely taken but <em>can</em> be.</td><td>+5 SP</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step healthy">Months 1–2<br><small>Notice letters</small></div>
+  <div class="condition-step tired">Months 3–6<br><small>Intent to Levy</small></div>
+  <div class="condition-step sick">Months 6–12<br><small>Tax Lien</small></div>
+  <div class="condition-step injured">Year 1–2<br><small>Wage Garnishment</small></div>
+  <div class="condition-step critical">Year 2–3<br><small>Bank Levy</small></div>
+  <div class="condition-step critical">Year 3+<br><small>Passport Revoked</small></div>
+  <div class="condition-step dead">Year 5+<br><small>Property Seized</small></div>
+</div>
+
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📬 Notice letters</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill elevated"></div></div>
+  <span>+3 SP total</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">⚠️ Intent to Levy</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  <span>+5 SP cumulative</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📜 Tax Lien filed</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+  <span>+8 SP cumulative</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💰 Wage Garnishment</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill episode"></div></div>
+  <span>+11 SP cumulative</span>
 </div>
 
 <div class="callout warning">
@@ -945,68 +1446,199 @@
 <p>The IRS and its partners provide genuinely free filing for qualifying characters. "Free" here means <strong>$0 cost to file a federal AND state return</strong>.</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Program</th><th>Income Limit</th><th>Who Qualifies</th><th>Limitations</th></tr></thead>
-<tbody>
-<tr><td><strong>IRS Free File</strong></td><td>AGI ≤ $79,000 (2024)</td><td>Any taxpayer meeting the income threshold</td><td>Partnered software (TurboTax, H&amp;R Block) may restrict features for higher-income users within the bracket; some states not available</td></tr>
-<tr><td><strong>FreeFile Alliance</strong></td><td>AGI ≤ $79,000</td><td>Character uses the IRS FreeFile matching tool to find a partner</td><td>Each partner software has its own additional restrictions (e.g., must have W-2s only, cannot itemize)</td></tr>
-<tr><td><strong>VITA</strong> (Volunteer Income Tax Assistance)</td><td>AGI ≤ $64,000</td><td>Low-income, elderly, disabled, limited-English speakers</td><td>Free in-person help; cannot handle complex situations (business income, capital gains above basic levels); appointment-based, limited availability</td></tr>
-<tr><td><strong>TCE</strong> (Tax Counseling for the Elderly)</td><td>No income limit</td><td>Age 60+</td><td>Specializes in pension and retirement-related tax questions; free in-person help</td></tr>
-<tr><td><strong>Direct File</strong> (IRS pilot, 2024+)</td><td>AGI ≤ $100,000; simple returns</td><td>Characters in participating states with W-2/1099-R income only</td><td>New program; limited to the simplest return types; not available in all states</td></tr>
-</tbody>
-</table>
+<p>The IRS and its partners provide genuinely free filing for qualifying characters:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">🏛️</div>
+<h3>IRS Free File</h3>
+<p>💰 Income Limit: AGI ≤ $79,000 (2024)</p>
+<p>👤 Who Qualifies: Any taxpayer meeting the income threshold</p>
+<p>⚠️ Limitations: Partnered software (TurboTax, H&amp;R Block) may restrict features for higher-income users within the bracket; some states not available</p>
+</div>
+<div class="card">
+<div class="card-icon">🤝</div>
+<h3>FreeFile Alliance</h3>
+<p>💰 Income Limit: AGI ≤ $79,000</p>
+<p>👤 Who Qualifies: Character uses the IRS FreeFile matching tool to find a partner</p>
+<p>⚠️ Limitations: Each partner software has its own additional restrictions (e.g., must have W-2s only, cannot itemize)</p>
+</div>
+<div class="card">
+<div class="card-icon">🙋</div>
+<h3>VITA (Volunteer Income Tax Assistance)</h3>
+<p>💰 Income Limit: AGI ≤ $64,000</p>
+<p>👤 Who Qualifies: Low-income, elderly, disabled, limited-English speakers</p>
+<p>⚠️ Limitations: Free in-person help; cannot handle complex situations (business income, capital gains above basic levels); appointment-based, limited availability</p>
+</div>
+<div class="card">
+<div class="card-icon">👴</div>
+<h3>TCE (Tax Counseling for the Elderly)</h3>
+<p>💰 Income Limit: No income limit</p>
+<p>👤 Who Qualifies: Age 60+</p>
+<p>⚠️ Limitations: Specializes in pension and retirement-related tax questions; free in-person help</p>
+</div>
+<div class="card">
+<div class="card-icon">🆕</div>
+<h3>Direct File (IRS pilot, 2024+)</h3>
+<p>💰 Income Limit: AGI ≤ $100,000; simple returns</p>
+<p>👤 Who Qualifies: Characters in participating states with W-2/1099-R income only</p>
+<p>⚠️ Limitations: New program; limited to the simplest return types; not available in all states</p>
+</div>
+</div>
 </div>
 
 <h4>Paid Software</h4>
 <p>Commercial tax software dominates the market. The trade-off is cost vs. accuracy and ease of use.</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Software</th><th>Cost Range</th><th>Best For</th><th>Accuracy Bonus</th><th>Notable Features</th></tr></thead>
-<tbody>
-<tr><td><strong>TurboTax</strong></td><td>Free (basic) – $200+ (deluxe/self-employed)</td><td>Most users; the market leader</td><td>+3 to Tax Filing Check (TN 40)</td><td>Most comprehensive credit detection; audit support guarantee; can e-file most return types; expensive for anything beyond basic</td></tr>
-<tr><td><strong>H&amp;R Block Online</strong></td><td>Free (basic) – $170 (premium)</td><td>Simple to moderate returns</td><td>+2 to Tax Filing Check</td><td>Good middle ground; audit support included; slightly less thorough credit detection than TurboTax</td></tr>
-<tr><td><strong>TaxAct</strong></td><td>$19 (basic) – $65 (deluxe)</td><td>Budget-conscious filers with moderate complexity</td><td>+2 to Tax Filing Check</td><td>Best value; surprisingly capable; interface less polished; fewer hand-holding prompts (requires higher INT to use effectively — INT ≥ 3 recommended)</td></tr>
-<tr><td><strong>Credit Karma Taxes</strong></td><td>Free (federal + state)</td><td>Very simple returns (W-2 income, standard deduction only)</td><td>+1 to Tax Filing Check</td><td>Genuinely free with no income cap for basic returns; cannot handle itemized deductions, business income, or most credits; fast and simple</td></tr>
-<tr><td><strong>FreeTaxUSA</strong></td><td>$15 (federal) – $35 (federal + state)</td><td>Budget filers who need itemized deductions</td><td>+2 to Tax Filing Check</td><td>Low cost; handles itemized deductions and some credits; limited support; interface is functional but bare-bones</td></tr>
-</tbody>
-</table>
+<p>Commercial tax software dominates the market. The trade-off is cost vs. accuracy and ease of use:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">🟡</div>
+<h3>TurboTax</h3>
+<p>💲 Cost: Free (basic) – $200+ (deluxe/self-employed)</p>
+<p>🎯 Best For: Most users; the market leader</p>
+<p>🎲 Accuracy Bonus: +3 to Tax Filing Check (TN 40)</p>
+<p>📝 Features: Most comprehensive credit detection; audit support guarantee; can e-file most return types; expensive for anything beyond basic</p>
+</div>
+<div class="card">
+<div class="card-icon">🔵</div>
+<h3>H&amp;R Block Online</h3>
+<p>💲 Cost: Free (basic) – $170 (premium)</p>
+<p>🎯 Best For: Simple to moderate returns</p>
+<p>🎲 Accuracy Bonus: +2 to Tax Filing Check</p>
+<p>📝 Features: Good middle ground; audit support included; slightly less thorough credit detection than TurboTax</p>
+</div>
+<div class="card">
+<div class="card-icon">🟢</div>
+<h3>TaxAct</h3>
+<p>💲 Cost: $19 (basic) – $65 (deluxe)</p>
+<p>🎯 Best For: Budget-conscious filers with moderate complexity</p>
+<p>🎲 Accuracy Bonus: +2 to Tax Filing Check</p>
+<p>📝 Features: Best value; surprisingly capable; interface less polished; fewer hand-holding prompts (requires higher INT to use effectively — INT ≥ 3 recommended)</p>
+</div>
+<div class="card">
+<div class="card-icon">⚫</div>
+<h3>Credit Karma Taxes</h3>
+<p>💲 Cost: Free (federal + state)</p>
+<p>🎯 Best For: Very simple returns (W-2 income, standard deduction only)</p>
+<p>🎲 Accuracy Bonus: +1 to Tax Filing Check</p>
+<p>📝 Features: Genuinely free with no income cap for basic returns; cannot handle itemized deductions, business income, or most credits; fast and simple</p>
+</div>
+<div class="card">
+<div class="card-icon">🟠</div>
+<h3>FreeTaxUSA</h3>
+<p>💲 Cost: $15 (federal) – $35 (federal + state)</p>
+<p>🎯 Best For: Budget filers who need itemized deductions</p>
+<p>🎲 Accuracy Bonus: +2 to Tax Filing Check</p>
+<p>📝 Features: Low cost; handles itemized deductions and some credits; limited support; interface is functional but bare-bones</p>
+</div>
+</div>
 </div>
 
 <h4>In-Person Services</h4>
 <p>Some situations require a human. Characters with complex finances, business ownership, or low confidence in their own abilities may prefer face-to-face help.</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Service</th><th>Cost Range</th><th>When to Use</th><th>Accuracy Bonus</th></tr></thead>
-<tbody>
-<tr><td><strong>H&amp;R Block (in-person office)</strong></td><td>$150 – $450</td><td>Moderate complexity; characters who want to talk through their situation; W-2 + some 1099 income</td><td>+4 to Tax Filing Check (auto-succeeds for returns with TN ≤ 50)</td></tr>
-<tr><td><strong>Liberty Tax / Jackson Hewitt</strong></td><td>$100 – $350</td><td>Lower-cost in-person option; simple to moderate returns; often found in strip malls</td><td>+3 to Tax Filing Check</td></tr>
-<tr><td><strong>Local CPA / Enrolled Agent</strong></td><td>$300 – $1,500+</td><td>Complex returns: self-employed, rental properties, investment income, international accounts, estate planning</td><td>+6 to Tax Filing Check (auto-succeeds for returns with TN ≤ 60)</td></tr>
-<tr><td><strong>Tax Attorney</strong></td><td>$500 – $3,000+</td><td>Only for characters under audit, facing criminal tax charges, or with multi-year unresolved issues</td><td>+8 to Tax Filing Check; −5 to audit TN if already audited</td></tr>
-</tbody>
-</table>
+<p>Some situations require a human. In-person services range from budget offices to specialized attorneys:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">🏪</div>
+<h3>H&amp;R Block (in-person office)</h3>
+<p>💲 Cost: $150 – $450</p>
+<p>🎯 When to Use: Moderate complexity; characters who want to talk through their situation; W-2 + some 1099 income</p>
+<p>🎲 Accuracy Bonus: +4 to Tax Filing Check (auto-succeeds for returns with TN ≤ 50)</p>
+</div>
+<div class="card">
+<div class="card-icon">🏬</div>
+<h3>Liberty Tax / Jackson Hewitt</h3>
+<p>💲 Cost: $100 – $350</p>
+<p>🎯 When to Use: Lower-cost in-person option; simple to moderate returns; often found in strip malls</p>
+<p>🎲 Accuracy Bonus: +3 to Tax Filing Check</p>
+</div>
+<div class="card">
+<div class="card-icon">🎓</div>
+<h3>Local CPA / Enrolled Agent</h3>
+<p>💲 Cost: $300 – $1,500+</p>
+<p>🎯 When to Use: Complex returns: self-employed, rental properties, investment income, international accounts, estate planning</p>
+<p>🎲 Accuracy Bonus: +6 to Tax Filing Check (auto-succeeds for returns with TN ≤ 60)</p>
+</div>
+<div class="card">
+<div class="card-icon">⚖️</div>
+<h3>Tax Attorney</h3>
+<p>💲 Cost: $500 – $3,000+</p>
+<p>🎯 When to Use: Only for characters under audit, facing criminal tax charges, or with multi-year unresolved issues</p>
+<p>🎲 Accuracy Bonus: +8 to Tax Filing Check; −5 to audit TN if already audited</p>
+</div>
+</div>
 </div>
 
 <h4>Decision Framework — Which Filer for Which Situation?</h4>
 <p>The following table helps the GM (and players) match a character's financial complexity to the appropriate filing method:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>If the character's situation is…</th><th>Recommended filing method</th><th>Why</th></tr></thead>
-<tbody>
-<tr><td>Single W-2, standard deduction, AGI &lt; $79k</td><td><strong>IRS Free File / Credit Karma</strong></td><td>Genuinely free. No reason to spend money.</td></tr>
-<tr><td>Single W-2 + 1099-INT (interest), standard deduction</td><td><strong>TurboTax Free / FreeTaxUSA</strong></td><td>Still simple, but may need slightly more capability than the most basic free tools.</td></tr>
-<tr><td>W-2 + itemized deductions (mortgage, charity, SALT)</td><td><strong>TaxAct / FreeTaxUSA Deluxe</strong></td><td>Itemizing requires more capable software; these handle it at low cost.</td></tr>
-<tr><td>W-2 + dependent(s), claiming EITC / Child Tax Credit</td><td><strong>TurboTax / H&amp;R Block Online</strong></td><td>Credit detection matters most here; TurboTax's credit optimizer catches the most credits.</td></tr>
-<tr><td>Self-employed (1099-NEC), Schedule C</td><td><strong>TurboTax Self-Employed / H&amp;R Block Deluxe</strong></td><td>Business deductions are complex; need the software to prompt for write-offs the character wouldn't think of.</td></tr>
-<tr><td>Multiple income types (W-2 + 1099 + investment + rental)</td><td><strong>TurboTax Premier / CPA</strong></td><td>Cross-interacting deductions and income types need expert-level handling.</td></tr>
-<tr><td>International income, foreign bank accounts (FBAR), expat status</td><td><strong>CPA only</strong></td><td>Software cannot reliably handle international tax law. A specialist is mandatory.</td></tr>
-<tr><td>Recently divorced, splitting assets, alimony</td><td><strong>CPA / H&amp;R Block in-person</strong></td><td>Filing status changes and asset division create edge cases that software mishandles.</td></tr>
-<tr><td>Under audit or received a CP2000 notice</td><td><strong>Tax attorney or Enrolled Agent</strong></td><td>Do not attempt to self-file during an active audit. Professional representation is essential.</td></tr>
-<tr><td>INT mod ≤ 0, Finance skill ≤ 0, and any non-basic situation</td><td><strong>In-person service (minimum H&amp;R Block office)</strong></td><td>The character lacks the cognitive toolkit to file correctly on their own. Pay for help.</td></tr>
-</tbody>
-</table>
+<p>The following framework helps match a character's financial complexity to the appropriate filing method:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">📄</div>
+<h3>Single W-2, standard deduction, AGI &lt; $79k</h3>
+<p>✅ Recommended: <strong>IRS Free File / Credit Karma</strong></p>
+<p>💡 Why: Genuinely free. No reason to spend money.</p>
+</div>
+<div class="card">
+<div class="card-icon">📄</div>
+<h3>Single W-2 + 1099-INT (interest), standard deduction</h3>
+<p>✅ Recommended: <strong>TurboTax Free / FreeTaxUSA</strong></p>
+<p>💡 Why: Still simple, but may need slightly more capability than the most basic free tools.</p>
+</div>
+<div class="card">
+<div class="card-icon">🏠</div>
+<h3>W-2 + itemized deductions (mortgage, charity, SALT)</h3>
+<p>✅ Recommended: <strong>TaxAct / FreeTaxUSA Deluxe</strong></p>
+<p>💡 Why: Itemizing requires more capable software; these handle it at low cost.</p>
+</div>
+<div class="card">
+<div class="card-icon">👶</div>
+<h3>W-2 + dependent(s), claiming EITC / Child Tax Credit</h3>
+<p>✅ Recommended: <strong>TurboTax / H&amp;R Block Online</strong></p>
+<p>💡 Why: Credit detection matters most here; TurboTax's credit optimizer catches the most credits.</p>
+</div>
+<div class="card">
+<div class="card-icon">💼</div>
+<h3>Self-employed (1099-NEC), Schedule C</h3>
+<p>✅ Recommended: <strong>TurboTax Self-Employed / H&amp;R Block Deluxe</strong></p>
+<p>💡 Why: Business deductions are complex; need the software to prompt for write-offs the character wouldn't think of.</p>
+</div>
+<div class="card">
+<div class="card-icon">📊</div>
+<h3>Multiple income types (W-2 + 1099 + investment + rental)</h3>
+<p>✅ Recommended: <strong>TurboTax Premier / CPA</strong></p>
+<p>💡 Why: Cross-interacting deductions and income types need expert-level handling.</p>
+</div>
+<div class="card">
+<div class="card-icon">🌍</div>
+<h3>International income, foreign bank accounts (FBAR), expat status</h3>
+<p>✅ Recommended: <strong>CPA only</strong></p>
+<p>💡 Why: Software cannot reliably handle international tax law. A specialist is mandatory.</p>
+</div>
+<div class="card">
+<div class="card-icon">💔</div>
+<h3>Recently divorced, splitting assets, alimony</h3>
+<p>✅ Recommended: <strong>CPA / H&amp;R Block in-person</strong></p>
+<p>💡 Why: Filing status changes and asset division create edge cases that software mishandles.</p>
+</div>
+<div class="card">
+<div class="card-icon">🔍</div>
+<h3>Under audit or received a CP2000 notice</h3>
+<p>✅ Recommended: <strong>Tax attorney or Enrolled Agent</strong></p>
+<p>💡 Why: Do not attempt to self-file during an active audit. Professional representation is essential.</p>
+</div>
+<div class="card">
+<div class="card-icon">🧠</div>
+<h3>INT mod ≤ 0, Finance skill ≤ 0, and any non-basic situation</h3>
+<p>✅ Recommended: <strong>In-person service (minimum H&amp;R Block office)</strong></p>
+<p>💡 Why: The character lacks the cognitive toolkit to file correctly on their own. Pay for help.</p>
+</div>
+</div>
 </div>
 
 <h4>Mechanics: Using the Wrong Filer</h4>
@@ -1018,16 +1650,39 @@
 </div>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Complexity Level</th><th>Definition</th><th>Min. Recommended Filer</th></tr></thead>
-<tbody>
-<tr><td><strong>Level 1 — Basic</strong></td><td>Single W-2, standard deduction, no dependents</td><td>Any free tool</td></tr>
-<tr><td><strong>Level 2 — Simple</strong></td><td>W-2 + 1–2 additional 1099s, standard deduction, 0–1 dependents</td><td>TurboTax Free / TaxAct Basic</td></tr>
-<tr><td><strong>Level 3 — Moderate</strong></td><td>Itemized deductions, dependents with credits, some investment income</td><td>TurboTax Deluxe / H&amp;R Block Online / TaxAct Deluxe</td></tr>
-<tr><td><strong>Level 4 — Complex</strong></td><td>Self-employment (Schedule C), rental income, multiple properties</td><td>TurboTax Premier / Self-Employed / In-person preparer</td></tr>
-<tr><td><strong>Level 5 — Expert</strong></td><td>International income, trusts/estates, business entities, prior audit</td><td>CPA / Tax Attorney only</td></tr>
-</tbody>
-</table>
+<p>Compare the character's financial complexity level to their filing method's capability level:</p>
+<div class="card-grid">
+<div class="card">
+<div class="card-icon">1️⃣</div>
+<h3>Level 1 — Basic</h3>
+<p>📋 Definition: Single W-2, standard deduction, no dependents</p>
+<p>✅ Min. Recommended Filer: Any free tool</p>
+</div>
+<div class="card">
+<div class="card-icon">2️⃣</div>
+<h3>Level 2 — Simple</h3>
+<p>📋 Definition: W-2 + 1–2 additional 1099s, standard deduction, 0–1 dependents</p>
+<p>✅ Min. Recommended Filer: TurboTax Free / TaxAct Basic</p>
+</div>
+<div class="card">
+<div class="card-icon">3️⃣</div>
+<h3>Level 3 — Moderate</h3>
+<p>📋 Definition: Itemized deductions, dependents with credits, some investment income</p>
+<p>✅ Min. Recommended Filer: TurboTax Deluxe / H&amp;R Block Online / TaxAct Deluxe</p>
+</div>
+<div class="card">
+<div class="card-icon">4️⃣</div>
+<h3>Level 4 — Complex</h3>
+<p>📋 Definition: Self-employment (Schedule C), rental income, multiple properties</p>
+<p>✅ Min. Recommended Filer: TurboTax Premier / Self-Employed / In-person preparer</p>
+</div>
+<div class="card">
+<div class="card-icon">5️⃣</div>
+<h3>Level 5 — Expert</h3>
+<p>📋 Definition: International income, trusts/estates, business entities, prior audit</p>
+<p>✅ Min. Recommended Filer: CPA / Tax Attorney only</p>
+</div>
+</div>
 </div>
 
 <div class="callout rule">
@@ -1067,6 +1722,7 @@
 <h2>🏛️ 4. Government Services</h2>
 
 <h3>4.1 DMV Visits</h3>
+<div class="section-illustration"><img src="img/lc_dmv_waiting_room.png" alt="Crowded DMV waiting room — the universal stress experience"></div>
 <p>The Department of Motor Vehicles is universally recognized as a stress-inducing institution.</p>
 
 <div class="callout warning">
@@ -1125,21 +1781,78 @@
      ============================================================ -->
 <h2>🌍 5. Immigration &amp; Citizenship</h2>
 
+<div class="section-illustration"><img src="img/lc_immigration_path.svg" alt="Immigration Pathways — from visa entry through green card to naturalization"></div>
+
 <h3>5.1 Visa Types</h3>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Visa Type</th><th>Purpose</th><th>Duration</th><th>Work Allowed?</th><th>Path to Green Card?</th></tr></thead>
-<tbody>
-<tr><td>B-1/B-2 (Tourist/Business)</td><td>Travel, short visits</td><td>Up to 6 months</td><td>No</td><td>No</td></tr>
-<tr><td>F-1 (Student)</td><td>Full-time study</td><td>Duration of program + 60 days</td><td>20 hrs/week on campus</td><td>Yes (via H-1B or adjustment)</td></tr>
-<tr><td>H-1B (Specialty Worker)</td><td>Professional employment</td><td>3 years, renewable to 6</td><td>Yes (specific employer)</td><td>Yes</td></tr>
-<tr><td>L-1 (Intra-company Transfer)</td><td>Corporate transfer</td><td>Up to 7 years</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>Family-based (IR, CR)</td><td>Spouse/child of citizen</td><td>Indefinite (leads to green card)</td><td>Yes</td><td>Already on path</td></tr>
-<tr><td>T (Trafficking victim)</td><td>Victims of trafficking</td><td>Up to 4 years</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>U (Crime victim)</td><td>Victims of certain crimes</td><td>Up to 4 years</td><td>Yes</td><td>Yes</td></tr>
-</tbody>
-</table>
+<p>Different visa types serve different purposes and have different rules for work, duration, and immigration path. Choose the visa that matches your character's situation:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🗺️</span>
+  <h3>B-1/B-2 (Tourist/Business)</h3>
+  <p>🎯 <strong>Purpose:</strong> Travel, short visits</p>
+  <p>⏱️ <strong>Duration:</strong> Up to 6 months</p>
+  <p>💼 <strong>Work Allowed?</strong> No</p>
+  <p>🟢 <strong>Path to Green Card?</strong> No</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🎓</span>
+  <h3>F-1 (Student)</h3>
+  <p>🎯 <strong>Purpose:</strong> Full-time study</p>
+  <p>⏱️ <strong>Duration:</strong> Duration of program + 60 days</p>
+  <p>💼 <strong>Work Allowed?</strong> 20 hrs/week on campus</p>
+  <p>🟢 <strong>Path to Green Card?</strong> Yes (via H-1B or adjustment)</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💼</span>
+  <h3>H-1B (Specialty Worker)</h3>
+  <p>🎯 <strong>Purpose:</strong> Professional employment</p>
+  <p>⏱️ <strong>Duration:</strong> 3 years, renewable to 6</p>
+  <p>💼 <strong>Work Allowed?</strong> Yes (specific employer)</p>
+  <p>🟢 <strong>Path to Green Card?</strong> Yes</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏢</span>
+  <h3>L-1 (Intra-company Transfer)</h3>
+  <p>🎯 <strong>Purpose:</strong> Corporate transfer</p>
+  <p>⏱️ <strong>Duration:</strong> Up to 7 years</p>
+  <p>💼 <strong>Work Allowed?</strong> Yes</p>
+  <p>🟢 <strong>Path to Green Card?</strong> Yes</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">👨‍👩‍👧</span>
+  <h3>Family-based (IR, CR)</h3>
+  <p>🎯 <strong>Purpose:</strong> Spouse/child of citizen</p>
+  <p>⏱️ <strong>Duration:</strong> Indefinite (leads to green card)</p>
+  <p>💼 <strong>Work Allowed?</strong> Yes</p>
+  <p>🟢 <strong>Path to Green Card?</strong> Already on path</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🛡️</span>
+  <h3>T (Trafficking victim)</h3>
+  <p>🎯 <strong>Purpose:</strong> Victims of trafficking</p>
+  <p>⏱️ <strong>Duration:</strong> Up to 4 years</p>
+  <p>💼 <strong>Work Allowed?</strong> Yes</p>
+  <p>🟢 <strong>Path to Green Card?</strong> Yes</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">⚖️</span>
+  <h3>U (Crime victim)</h3>
+  <p>🎯 <strong>Purpose:</strong> Victims of certain crimes</p>
+  <p>⏱️ <strong>Duration:</strong> Up to 4 years</p>
+  <p>💼 <strong>Work Allowed?</strong> Yes</p>
+  <p>🟢 <strong>Path to Green Card?</strong> Yes</p>
+</div>
+
+</div>
 </div>
 
 <h3>5.2 Green Card Process</h3>
@@ -1242,6 +1955,8 @@
      ============================================================ -->
 <h2>🚨 7. Emergency Situations</h2>
 
+<div class="section-illustration"><img src="img/lc_emergency_scale.svg" alt="Emergency Severity Scale — from minor incidents to disaster-level events"></div>
+
 <h3>7.1 Medical Emergencies</h3>
 <p>When a character experiences a medical emergency (heart attack, stroke, severe injury, allergic reaction):</p>
 
@@ -1256,17 +1971,58 @@
 </div>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Emergency Type</th><th>Severity Roll</th><th>Treatment Cost (Uninsured)</th><th>Recovery Time</th></tr></thead>
-<tbody>
-<tr><td>Broken bone</td><td>Moderate</td><td>$2,000–$6,000</td><td>4–12 weeks</td></tr>
-<tr><td>Appendicitis</td><td>Moderate</td><td>$8,000–$15,000</td><td>2–6 weeks</td></tr>
-<tr><td>Heart attack</td><td>Severe</td><td>$20,000–$70,000</td><td>1–6 months</td></tr>
-<tr><td>Stroke</td><td>Severe</td><td>$25,000–$100,000+</td><td>3–12 months, possible permanent disability</td></tr>
-<tr><td>Severe allergic reaction</td><td>Moderate</td><td>$3,000–$12,000</td><td>1–7 days</td></tr>
-<tr><td>Concussion</td><td>Moderate</td><td>$1,000–$5,000</td><td>1–4 weeks</td></tr>
-</tbody>
-</table>
+<p>Each type of medical emergency has different severity, costs, and recovery timelines. Use this table to determine the impact on your character:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🦴</span>
+  <h3>Broken bone</h3>
+  <p>⚡ <strong>Severity:</strong> Moderate</p>
+  <p>💰 <strong>Treatment Cost (Uninsured):</strong> $2,000–$6,000</p>
+  <p>⏱️ <strong>Recovery Time:</strong> 4–12 weeks</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏥</span>
+  <h3>Appendicitis</h3>
+  <p>⚡ <strong>Severity:</strong> Moderate</p>
+  <p>💰 <strong>Treatment Cost (Uninsured):</strong> $8,000–$15,000</p>
+  <p>⏱️ <strong>Recovery Time:</strong> 2–6 weeks</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">❤️</span>
+  <h3>Heart attack</h3>
+  <p>⚡ <strong>Severity:</strong> Severe</p>
+  <p>💰 <strong>Treatment Cost (Uninsured):</strong> $20,000–$70,000</p>
+  <p>⏱️ <strong>Recovery Time:</strong> 1–6 months</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🧠</span>
+  <h3>Stroke</h3>
+  <p>⚡ <strong>Severity:</strong> Severe</p>
+  <p>💰 <strong>Treatment Cost (Uninsured):</strong> $25,000–$100,000+</p>
+  <p>⏱️ <strong>Recovery Time:</strong> 3–12 months, possible permanent disability</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🤧</span>
+  <h3>Severe allergic reaction</h3>
+  <p>⚡ <strong>Severity:</strong> Moderate</p>
+  <p>💰 <strong>Treatment Cost (Uninsured):</strong> $3,000–$12,000</p>
+  <p>⏱️ <strong>Recovery Time:</strong> 1–7 days</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💫</span>
+  <h3>Concussion</h3>
+  <p>⚡ <strong>Severity:</strong> Moderate</p>
+  <p>💰 <strong>Treatment Cost (Uninsured):</strong> $1,000–$5,000</p>
+  <p>⏱️ <strong>Recovery Time:</strong> 1–4 weeks</p>
+</div>
+
+</div>
 </div>
 
 <h3>7.2 Fires</h3>
@@ -1274,36 +2030,109 @@
 
 <div class="callout rule">
   <div class="callout-title">🔥 Home Fire Event Table</div>
-  <p>Roll <span class="dice">1d8</span> for severity:</p>
+  <p>Roll <span class="dice">1d8</span> for severity. Each result determines the damage level, financial loss, displacement duration, and stress impact:</p>
   <div class="table-wrap">
-  <table>
-  <thead><tr><th>Roll</th><th>Damage Level</th><th>Financial Loss</th><th>Displacement</th><th>SP Impact</th></tr></thead>
-  <tbody>
-  <tr><td>1–2</td><td>Minor (single room)</td><td>$500–$3,000</td><td>None</td><td>+2 SP</td></tr>
-  <tr><td>3–4</td><td>Moderate (partial structure)</td><td>$3,000–$15,000</td><td>1–4 weeks</td><td>+3 SP</td></tr>
-  <tr><td>5–6</td><td>Major (most of home)</td><td>$15,000–$100,000</td><td>1–6 months</td><td>+5 SP</td></tr>
-  <tr><td>7</td><td>Total loss</td><td>$100,000–$500,000+</td><td>Indefinite</td><td>+7 SP</td></tr>
-  <tr><td>8</td><td>Total loss + injury/death</td><td>Same + medical costs</td><td>Indefinite</td><td>+10 SP</td></tr>
-  </tbody>
-  </table>
+  <div class="card-grid">
+
+  <div class="card">
+    <span class="card-icon">🔥</span>
+    <h3>Roll 1–2: Minor (single room)</h3>
+    <p>💰 <strong>Financial Loss:</strong> $500–$3,000</p>
+    <p>🏠 <strong>Displacement:</strong> None</p>
+    <p>😰 <strong>SP Impact:</strong> +2 SP</p>
+  </div>
+
+  <div class="card">
+    <span class="card-icon">🔥</span>
+    <h3>Roll 3–4: Moderate (partial structure)</h3>
+    <p>💰 <strong>Financial Loss:</strong> $3,000–$15,000</p>
+    <p>🏠 <strong>Displacement:</strong> 1–4 weeks</p>
+    <p>😰 <strong>SP Impact:</strong> +3 SP</p>
+  </div>
+
+  <div class="card">
+    <span class="card-icon">🔥</span>
+    <h3>Roll 5–6: Major (most of home)</h3>
+    <p>💰 <strong>Financial Loss:</strong> $15,000–$100,000</p>
+    <p>🏠 <strong>Displacement:</strong> 1–6 months</p>
+    <p>😰 <strong>SP Impact:</strong> +5 SP</p>
+  </div>
+
+  <div class="card">
+    <span class="card-icon">🔥</span>
+    <h3>Roll 7: Total loss</h3>
+    <p>💰 <strong>Financial Loss:</strong> $100,000–$500,000+</p>
+    <p>🏠 <strong>Displacement:</strong> Indefinite</p>
+    <p>😰 <strong>SP Impact:</strong> +7 SP</p>
+  </div>
+
+  <div class="card">
+    <span class="card-icon">💀</span>
+    <h3>Roll 8: Total loss + injury/death</h3>
+    <p>💰 <strong>Financial Loss:</strong> Same + medical costs</p>
+    <p>🏠 <strong>Displacement:</strong> Indefinite</p>
+    <p>😰 <strong>SP Impact:</strong> +10 SP</p>
+  </div>
+
+  </div>
   </div>
   <p><strong>Insurance:</strong> Homeowner's insurance typically covers fire damage minus deductible (<span class="dice">$500–$2,500</span>). Roll <span class="dice">1d10</span>: on 1–2, the insurance company disputes the claim, reducing payout by <span class="dice">20–50%</span> (+2 SP from the fight).</p>
 </div>
 
 <h3>7.3 Natural Disasters</h3>
+<div class="section-illustration"><img src="img/lc_evacuation_morning.png" alt="Family evacuating for a hurricane at dawn"></div>
 <p>The GM may introduce natural disasters as <strong>campaign-wide events</strong> affecting all characters in a region:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Disaster</th><th>Frequency (1d100/year)</th><th>Evacuation Required?</th><th>Avg. Property Damage</th><th>Recovery</th></tr></thead>
-<tbody>
-<tr><td>Hurricane</td><td>1–5 (coastal)</td><td>Yes (Category 2+)</td><td>$10,000–$200,000</td><td>3–18 months</td></tr>
-<tr><td>Tornado</td><td>1–4 (Tornado Alley)</td><td>Shelter in place</td><td>$0–$500,000</td><td>1–12 months</td></tr>
-<tr><td>Wildfire</td><td>1–3 (western states)</td><td>Yes (if in path)</td><td>$5,000–$1,000,000+</td><td>6–24 months</td></tr>
-<tr><td>Earthquake</td><td>1–2 (fault zones)</td><td>Shelter in place</td><td>$0–$300,000</td><td>3–12 months</td></tr>
-<tr><td>Flood</td><td>1–6 (flood plains)</td><td>Yes (major flood)</td><td>$5,000–$100,000</td><td>2–9 months</td></tr>
-</tbody>
-</table>
+<p>Natural disasters are campaign-wide events. Each disaster type has different frequency, evacuation needs, damage potential, and recovery timelines:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">🌀</span>
+  <h3>Hurricane</h3>
+  <p>🎲 <strong>Frequency (1d100/year):</strong> 1–5 (coastal)</p>
+  <p>🚨 <strong>Evacuation Required?</strong> Yes (Category 2+)</p>
+  <p>💥 <strong>Avg. Property Damage:</strong> $10,000–$200,000</p>
+  <p>⏱️ <strong>Recovery:</strong> 3–18 months</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🌪️</span>
+  <h3>Tornado</h3>
+  <p>🎲 <strong>Frequency (1d100/year):</strong> 1–4 (Tornado Alley)</p>
+  <p>🚨 <strong>Evacuation Required?</strong> Shelter in place</p>
+  <p>💥 <strong>Avg. Property Damage:</strong> $0–$500,000</p>
+  <p>⏱️ <strong>Recovery:</strong> 1–12 months</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🔥</span>
+  <h3>Wildfire</h3>
+  <p>🎲 <strong>Frequency (1d100/year):</strong> 1–3 (western states)</p>
+  <p>🚨 <strong>Evacuation Required?</strong> Yes (if in path)</p>
+  <p>💥 <strong>Avg. Property Damage:</strong> $5,000–$1,000,000+</p>
+  <p>⏱️ <strong>Recovery:</strong> 6–24 months</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏚️</span>
+  <h3>Earthquake</h3>
+  <p>🎲 <strong>Frequency (1d100/year):</strong> 1–2 (fault zones)</p>
+  <p>🚨 <strong>Evacuation Required?</strong> Shelter in place</p>
+  <p>💥 <strong>Avg. Property Damage:</strong> $0–$300,000</p>
+  <p>⏱️ <strong>Recovery:</strong> 3–12 months</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🌊</span>
+  <h3>Flood</h3>
+  <p>🎲 <strong>Frequency (1d100/year):</strong> 1–6 (flood plains)</p>
+  <p>🚨 <strong>Evacuation Required?</strong> Yes (major flood)</p>
+  <p>💥 <strong>Avg. Property Damage:</strong> $5,000–$100,000</p>
+  <p>⏱️ <strong>Recovery:</strong> 2–9 months</p>
+</div>
+
+</div>
 </div>
 
 <div class="callout rule">
@@ -1311,22 +2140,77 @@
   <p><strong>Evacuation:</strong> Characters must leave within <span class="dice">1–6 hours</span>. Roll <span class="dice">2d10 + EXP mod</span> vs TN 35: on success, they evacuate with essential belongings. On failure, they must leave something behind (roll <span class="dice">1d6</span> items lost).</p>
   <p><strong>Property damage:</strong> Roll <span class="dice">1d10</span>: 1–4 = no damage, 5–7 = minor ($1,000–$10,000), 8–9 = moderate ($10,000–$50,000), 10 = severe ($50,000+).</p>
   <p><strong>Stress:</strong> +3 SP minimum. +5 SP if property damaged. +8 SP if family member injured.</p>
+
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🌪️ Disaster minimum</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  <span>+3 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🏚️ Property damaged</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+  <span>+5 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">😱 Family injured</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill episode"></div></div>
+  <span>+8 SP</span>
+</div>
   <p><strong>FEMA assistance:</strong> Characters may apply for federal disaster aid. Roll <span class="dice">2d10 + INT mod</span> vs TN 35: on success, receive <span class="dice">$2,000–$20,000</span> in grants or low-interest loans. On failure, application denied or delayed 3–6 months.</p>
 </div>
 
 <h3>7.4 Accidents</h3>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Accident Type</th><th>Annual Risk (1d100)</th><th>Injury Severity</th><th>Cost</th><th>Legal Liability?</th></tr></thead>
-<tbody>
-<tr><td>Car crash</td><td>1–8</td><td>Minor to fatal</td><td>$1,000–$100,000+</td><td>Yes (if at fault)</td></tr>
-<tr><td>Workplace injury</td><td>1–4</td><td>Minor to disabling</td><td>Covered by workers' comp</td><td>Employer liable</td></tr>
-<tr><td>Sports injury</td><td>1–5</td><td>Minor to moderate</td><td>$200–$15,000</td><td>No (assumption of risk)</td></tr>
-<tr><td>Fall (home)</td><td>1–6</td><td>Minor to severe</td><td>$500–$50,000</td><td>Landlord liable if negligence</td></tr>
-<tr><td>Poisoning / foodborne illness</td><td>1–3</td><td>Minor to severe</td><td>$100–$10,000</td><td>Product liability possible</td></tr>
-</tbody>
-</table>
+<p>Accidents happen randomly each year. Each type has different risk frequency, injury severity, cost, and potential legal liability:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">💥</span>
+  <h3>Car crash</h3>
+  <p>🎲 <strong>Annual Risk (1d100):</strong> 1–8</p>
+  <p>⚡ <strong>Injury Severity:</strong> Minor to fatal</p>
+  <p>💰 <strong>Cost:</strong> $1,000–$100,000+</p>
+  <p>⚖️ <strong>Legal Liability?</strong> Yes (if at fault)</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏗️</span>
+  <h3>Workplace injury</h3>
+  <p>🎲 <strong>Annual Risk (1d100):</strong> 1–4</p>
+  <p>⚡ <strong>Injury Severity:</strong> Minor to disabling</p>
+  <p>💰 <strong>Cost:</strong> Covered by workers' comp</p>
+  <p>⚖️ <strong>Legal Liability?</strong> Employer liable</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">⚽</span>
+  <h3>Sports injury</h3>
+  <p>🎲 <strong>Annual Risk (1d100):</strong> 1–5</p>
+  <p>⚡ <strong>Injury Severity:</strong> Minor to moderate</p>
+  <p>💰 <strong>Cost:</strong> $200–$15,000</p>
+  <p>⚖️ <strong>Legal Liability?</strong> No (assumption of risk)</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🤕</span>
+  <h3>Fall (home)</h3>
+  <p>🎲 <strong>Annual Risk (1d100):</strong> 1–6</p>
+  <p>⚡ <strong>Injury Severity:</strong> Minor to severe</p>
+  <p>💰 <strong>Cost:</strong> $500–$50,000</p>
+  <p>⚖️ <strong>Legal Liability?</strong> Landlord liable if negligence</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">☠️</span>
+  <h3>Poisoning / foodborne illness</h3>
+  <p>🎲 <strong>Annual Risk (1d100):</strong> 1–3</p>
+  <p>⚡ <strong>Injury Severity:</strong> Minor to severe</p>
+  <p>💰 <strong>Cost:</strong> $100–$10,000</p>
+  <p>⚖️ <strong>Legal Liability?</strong> Product liability possible</p>
+</div>
+
+</div>
 </div>
 
 <div class="callout example">
@@ -1371,15 +2255,37 @@
 <p>Characters can prepare emergency kits. Having one provides mechanical benefits during disaster events:</p>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Kit Level</th><th>Cost</th><th>Contents</th><th>Benefit</th></tr></thead>
-<tbody>
-<tr><td>Basic First Aid Kit</td><td>$15–$40</td><td>Bandages, gauze, antiseptic, pain relievers</td><td>Self-treat minor injuries at home (−25% cost)</td></tr>
-<tr><td>Home Emergency Kit</td><td>$50–$150</td><td>Water, non-perishable food, flashlight, radio, batteries, first aid</td><td>72-hour self-sufficiency during power outage or evacuation</td></tr>
-<tr><td>Disaster Preparedness Kit</td><td>$200–$500</td><td>Everything above + shelter, communication, 2-week supplies</td><td>Full self-sufficiency for 2 weeks; −2 SP during disaster events</td></tr>
-<tr><td>Vehicle Emergency Kit</td><td>$30–$80</td><td>Jumper cables, flashlight, blanket, first aid, water</td><td>If stranded, roll <span class="dice">1d10</span>: on 4–10, character stays safe and warm until rescue</td></tr>
-</tbody>
-</table>
+<p>Characters can prepare emergency kits at different levels. Higher investment provides greater mechanical benefits during disaster events:</p>
+<div class="supplies-grid">
+  <div class="supply-item">
+    <div class="card-icon">🩹</div>
+    <h3>Basic First Aid Kit</h3>
+    <p><strong>Cost:</strong> $15–$40</p>
+    <p>Bandages, gauze, antiseptic, pain relievers</p>
+    <p><em>Self-treat minor injuries (−25% cost)</em></p>
+  </div>
+  <div class="supply-item">
+    <div class="card-icon">🏠</div>
+    <h3>Home Emergency Kit</h3>
+    <p><strong>Cost:</strong> $50–$150</p>
+    <p>Water, food, flashlight, radio, batteries, first aid</p>
+    <p><em>72-hour self-sufficiency</em></p>
+  </div>
+  <div class="supply-item">
+    <div class="card-icon">🎒</div>
+    <h3>Disaster Preparedness Kit</h3>
+    <p><strong>Cost:</strong> $200–$500</p>
+    <p>Everything above + shelter, comms, 2-week supplies</p>
+    <p><em>Full 2-week self-sufficiency; −2 SP during disasters</em></p>
+  </div>
+  <div class="supply-item">
+    <div class="card-icon">🚗</div>
+    <h3>Vehicle Emergency Kit</h3>
+    <p><strong>Cost:</strong> $30–$80</p>
+    <p>Jumper cables, flashlight, blanket, first aid, water</p>
+    <p><em>If stranded, 1d10: on 4–10, safe until rescue</em></p>
+  </div>
+</div>
 </div>
 
 <div class="callout tip">
@@ -1394,9 +2300,17 @@
 
 <div class="callout example">
   <div class="callout-title">📋 Scenario: The Storm</div>
+  <div class="section-illustration"><img src="img/lc_hurricane_night.png" alt="Hurricane hitting a Florida neighborhood — Diego, Yuki, and Mr. Henderson"></div>
   <p><strong>Setup:</strong> It's September in South Florida. A Category 3 hurricane is making landfall. Three characters are in the area:</p>
 
-  <p><strong>Diego</strong> — 34, undocumented construction worker, lives in a mobile home. VIG 6, INT 3, EXP 4, DXT 5, RES 5, PRC 4. No insurance. No emergency kit.</p>
+  <div class="char-portrait">
+  <img src="img/char_diego.png" alt="Diego">
+  <div class="char-info">
+    <div class="char-name">Diego</div>
+    <div class="char-subtitle">34, Undocumented construction worker — Hurricane scenario</div>
+    <p><strong>Diego</strong> — 34, undocumented construction worker, lives in a mobile home. VIG 6, INT 3, EXP 4, DXT 5, RES 5, PRC 4. No insurance. No emergency kit.</p>
+  </div>
+</div>
 
   <p><strong>Yuki</strong> — 29, nurse, owns a condo. VIG 4, INT 6, EXP 3, DXT 4, RES 7, PRC 6. Has homeowner's insurance and a disaster preparedness kit. CPR certified.</p>
 
@@ -1425,21 +2339,90 @@
 <h2>📋 Quick Reference: Civic &amp; Emergency Events</h2>
 
 <div class="table-wrap">
-<table>
-<thead><tr><th>Event</th><th>Trigger</th><th>Key Roll</th><th>SP Impact</th></tr></thead>
-<tbody>
-<tr><td>Jury duty</td><td>1d100: 1–5/year</td><td>None (automatic)</td><td>+2 SP</td></tr>
-<tr><td>Traffic ticket</td><td>DXT failure while driving</td><td>2d10 + DXT mod vs TN 35</td><td>+1 SP</td></tr>
-<tr><td>Tax audit</td><td>1d100: 98–100/year</td><td>2d10 + INT mod vs TN 40</td><td>+5 SP</td></tr>
-<tr><td>DMV visit</td><td>Required by situation</td><td>None (automatic stress)</td><td>+2 SP</td></tr>
-<tr><td>Home fire</td><td>1d100: 1–3/year</td><td>1d8 severity</td><td>+2 to +10 SP</td></tr>
-<tr><td>Natural disaster</td><td>GM campaign event</td><td>2d10 + EXP mod vs TN 35</td><td>+3 to +8 SP</td></tr>
-<tr><td>Car crash</td><td>1d100: 1–8/year</td><td>2d10 + VIG mod vs TN 40</td><td>+2 to +5 SP</td></tr>
-<tr><td>Police encounter</td><td>Situation-dependent</td><td>2d10 + RES mod + EXP mod vs TN 30–45</td><td>+2 to +5 SP</td></tr>
-<tr><td>Medical emergency</td><td>Random or triggered</td><td>2d10 + VIG mod vs TN 35</td><td>+3 to +7 SP</td></tr>
-<tr><td>Protest arrest</td><td>Failed RES check at protest</td><td>2d10 + RES mod vs TN 35–40</td><td>+3 SP + legal consequences</td></tr>
-</tbody>
-</table>
+<p>Use this quick reference to resolve civic and emergency events at a glance. Each event shows its trigger conditions, the key dice roll, and stress point impact:</p>
+<div class="card-grid">
+
+<div class="card">
+  <span class="card-icon">⚖️</span>
+  <h3>Jury duty</h3>
+  <p>🎲 <strong>Trigger:</strong> 1d100: 1–5/year</p>
+  <p>🎯 <strong>Key Roll:</strong> None (automatic)</p>
+  <p>😰 <strong>SP Impact:</strong> +2 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🚗</span>
+  <h3>Traffic ticket</h3>
+  <p>🎲 <strong>Trigger:</strong> DXT failure while driving</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + DXT mod vs TN 35</p>
+  <p>😰 <strong>SP Impact:</strong> +1 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🔍</span>
+  <h3>Tax audit</h3>
+  <p>🎲 <strong>Trigger:</strong> 1d100: 98–100/year</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + INT mod vs TN 40</p>
+  <p>😰 <strong>SP Impact:</strong> +5 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🏛️</span>
+  <h3>DMV visit</h3>
+  <p>🎲 <strong>Trigger:</strong> Required by situation</p>
+  <p>🎯 <strong>Key Roll:</strong> None (automatic stress)</p>
+  <p>😰 <strong>SP Impact:</strong> +2 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🔥</span>
+  <h3>Home fire</h3>
+  <p>🎲 <strong>Trigger:</strong> 1d100: 1–3/year</p>
+  <p>🎯 <strong>Key Roll:</strong> 1d8 severity</p>
+  <p>😰 <strong>SP Impact:</strong> +2 to +10 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🌪️</span>
+  <h3>Natural disaster</h3>
+  <p>🎲 <strong>Trigger:</strong> GM campaign event</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + EXP mod vs TN 35</p>
+  <p>😰 <strong>SP Impact:</strong> +3 to +8 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">💥</span>
+  <h3>Car crash</h3>
+  <p>🎲 <strong>Trigger:</strong> 1d100: 1–8/year</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + VIG mod vs TN 40</p>
+  <p>😰 <strong>SP Impact:</strong> +2 to +5 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🚔</span>
+  <h3>Police encounter</h3>
+  <p>🎲 <strong>Trigger:</strong> Situation-dependent</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + RES mod + EXP mod vs TN 30–45</p>
+  <p>😰 <strong>SP Impact:</strong> +2 to +5 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">🚑</span>
+  <h3>Medical emergency</h3>
+  <p>🎲 <strong>Trigger:</strong> Random or triggered</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + VIG mod vs TN 35</p>
+  <p>😰 <strong>SP Impact:</strong> +3 to +7 SP</p>
+</div>
+
+<div class="card">
+  <span class="card-icon">✊</span>
+  <h3>Protest arrest</h3>
+  <p>🎲 <strong>Trigger:</strong> Failed RES check at protest</p>
+  <p>🎯 <strong>Key Roll:</strong> 2d10 + RES mod vs TN 35–40</p>
+  <p>😰 <strong>SP Impact:</strong> +3 SP + legal consequences</p>
+</div>
+
+</div>
 </div>
 
 <div class="callout tip">
@@ -1447,6 +2430,7 @@
   <p>Law, government, and emergencies are the <strong>structural forces</strong> that make Reality RPG feel real. They should not overwhelm the game — they should <em>frame</em> it. Use these systems to create moments of tension, growth, and community. A well-timed jury duty event, a shared disaster, or a character's first time voting can be just as memorable as any combat encounter in a fantasy RPG. The real world is full of stakes. Your job is to make them feel meaningful, not paralyzing.</p>
 </div>
 
+</div>
 </div>
 </section>
 

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7f8c8d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">🌪️ Disaster Response Flowchart</text>
+
+  <!-- START: Disaster Strikes -->
+  <rect x="225" y="45" width="250" height="40" rx="8" fill="#c0392b" stroke="#a93226" stroke-width="2"/>
+  <text x="350" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">⚡ DISASTER STRIKES</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="85" x2="350" y2="105" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 1: Assess Severity -->
+  <rect x="200" y="105" width="300" height="40" rx="8" fill="#2c3e50" stroke="#1a252f" stroke-width="2"/>
+  <text x="350" y="130" text-anchor="middle" font-size="13" font-weight="600" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Step 1: Roll 1d8 → Assess Severity Level</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="145" x2="350" y2="165" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2: Check Preparedness (diamond) -->
+  <polygon points="350,165 500,210 350,255 200,210" fill="#2980b9" stroke="#1f6da0" stroke-width="2"/>
+  <text x="350" y="205" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Emergency Kit?</text>
+  <text x="350" y="222" text-anchor="middle" font-size="11" fill="#d4efdf" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">INT TN 40; +10 bonus if yes</text>
+
+  <!-- YES branch (right) -->
+  <line x1="500" y1="210" x2="540" y2="210" stroke="#27ae60" stroke-width="2"/>
+  <text x="518" y="205" text-anchor="middle" font-size="11" font-weight="700" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">YES</text>
+  <rect x="540" y="195" width="140" height="30" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="610" y="214" text-anchor="middle" font-size="11" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">+10 to survival</text>
+  <text x="610" y="226" text-anchor="middle" font-size="11" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">−3 SP</text>
+
+  <!-- NO branch (left) -->
+  <line x1="200" y1="210" x2="160" y2="210" stroke="#e74c3c" stroke-width="2"/>
+  <text x="182" y="205" text-anchor="middle" font-size="11" font-weight="700" fill="#e74c3c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">NO</text>
+  <rect x="40" y="195" width="120" height="30" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="100" y="214" text-anchor="middle" font-size="11" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">No bonus</text>
+  <text x="100" y="226" text-anchor="middle" font-size="11" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Full SP cost</text>
+
+  <!-- Arrows converge back to center -->
+  <line x1="540" y1="210" x2="540" y2="280" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="40" y1="210" x2="40" y2="280" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="40" y1="280" x2="540" y2="280" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3: DXT Survival Check -->
+  <rect x="150" y="280" width="400" height="40" rx="8" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="350" y="305" text-anchor="middle" font-size="13" font-weight="600" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Step 2: DXT Survival Check (TN 45–65 by severity)</text>
+
+  <!-- Arrow down, split -->
+  <line x1="350" y1="320" x2="350" y2="340" stroke="#7f8c8d" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- SUCCESS branch -->
+  <line x1="350" y1="340" x2="200" y2="340" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="200" y1="340" x2="200" y2="360" stroke="#27ae60" stroke-width="2"/>
+  <text x="275" y="335" text-anchor="middle" font-size="11" font-weight="700" fill="#27ae60" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">SUCCESS</text>
+  <rect x="90" y="360" width="220" height="40" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+  <text x="200" y="378" text-anchor="middle" font-size="12" font-weight="600" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">✅ Survived</text>
+  <text x="200" y="393" text-anchor="middle" font-size="11" fill="#1e8449" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Property damage by severity level</text>
+
+  <!-- FAILURE branch -->
+  <line x1="350" y1="340" x2="500" y2="340" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="500" y1="340" x2="500" y2="360" stroke="#e74c3c" stroke-width="2"/>
+  <text x="425" y="335" text-anchor="middle" font-size="11" font-weight="700" fill="#e74c3c" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">FAILURE</text>
+  <rect x="390" y="360" width="220" height="40" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="500" y="378" text-anchor="middle" font-size="12" font-weight="600" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">❌ Injury or Death</text>
+  <text x="500" y="393" text-anchor="middle" font-size="11" fill="#c0392b" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Health track advance; +5–10 SP</text>
+
+  <!-- Arrows converge to recovery -->
+  <line x1="200" y1="400" x2="200" y2="440" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="500" y1="400" x2="500" y2="440" stroke="#7f8c8d" stroke-width="1.5"/>
+  <line x1="200" y1="440" x2="500" y2="440" stroke="#7f8c8d" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4: Recovery Phase -->
+  <rect x="150" y="440" width="400" height="40" rx="8" fill="#3498db" stroke="#2175b7" stroke-width="2"/>
+  <text x="350" y="458" text-anchor="middle" font-size="13" font-weight="600" fill="#fff" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Step 3: Recovery Phase (1 week → 2 years by severity)</text>
+  <text x="350" y="473" text-anchor="middle" font-size="11" fill="#d4efdf" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">Repair costs; SP accumulation; possible displacement</text>
+
+  <!-- Severity reference box -->
+  <rect x="15" y="490" width="670" height="28" rx="6" fill="#f9f9f9" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="350" y="509" text-anchor="middle" font-size="10" fill="#7f8c8d" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-style="italic">Severity: 🟢 Minor (TN 45) → 🟡 Moderate (TN 50) → 🟠 Severe (TN 55) → 🔴 Catastrophic (TN 65)</text>
+</svg>
