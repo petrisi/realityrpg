@@ -26,36 +26,70 @@
   <p>Every move — whether across the street or across the ocean — costs <strong>time</strong>, <strong>money</strong>, and <strong>Stress Points</strong>. The distance and complexity of the move scale all three costs. No move is free, and no move is instant.</p>
 </div>
 
+<!-- PHASE 2 SVG: Relocation Decision Tree -->
+<div class="section-illustration">
+  <img src="img/gm_relocation_decision_tree.svg" alt="Relocation Decision Tree flowchart — from distance assessment through apartment hunting or visa process to final move outcome" loading="lazy">
+</div>
+
 <h2>1. 🏠 Moving Within the Country</h2>
+
+<!-- PHASE 2 SVG: Cost of Living Comparison -->
+<div class="section-illustration">
+  <img src="img/gm_cost_of_living_comparison.svg" alt="Cost of Living Comparison bar chart showing monthly expenses across four city tiers from NYC to small towns" loading="lazy">
+</div>
 
 <h3>Apartment Hunting</h3>
 <p>Finding a new place to live is a full-time activity. In competitive markets, good units are rented within hours of listing. In slower markets, the search itself is a marathon of bad options.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>City Tier</th><th>Search Time</th><th>Application Fee</th><th>Deposit</th><th>First Month + Deposit</th></tr></thead>
-<tbody>
-<tr><td>Tier 1 (NYC, SF)</td><td>2–6 weeks</td><td>$100–$200</td><td>1–2× monthly rent</td><td>$4,000–$8,000+</td></tr>
-<tr><td>Tier 2 (Austin, Denver)</td><td>1–4 weeks</td><td>$50–$150</td><td>1× monthly rent</td><td>$2,000–$4,000</td></tr>
-<tr><td>Tier 3 (Midwest, rural)</td><td>1–3 weeks</td><td>$0–$75</td><td>1× monthly rent</td><td>$800–$2,000</td></tr>
-<tr><td>Tier 4 (Small town)</td><td>3 days–2 weeks</td><td>$0–$50</td><td>1× monthly rent</td><td>$500–$1,200</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #1: City Tier Table → .card-grid -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🏙️</span>
+    <h3>Tier 1 (NYC, SF)</h3>
+    <p><strong>Search:</strong> 2–6 weeks<br><strong>App Fee:</strong> $100–$200<br><strong>Deposit:</strong> 1–2× monthly rent<br><strong>Total Move-In:</strong> $4,000–$8,000+</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🌆</span>
+    <h3>Tier 2 (Austin, Denver)</h3>
+    <p><strong>Search:</strong> 1–4 weeks<br><strong>App Fee:</strong> $50–$150<br><strong>Deposit:</strong> 1× monthly rent<br><strong>Total Move-In:</strong> $2,000–$4,000</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🏘️</span>
+    <h3>Tier 3 (Midwest, rural)</h3>
+    <p><strong>Search:</strong> 1–3 weeks<br><strong>App Fee:</strong> $0–$75<br><strong>Deposit:</strong> 1× monthly rent<br><strong>Total Move-In:</strong> $800–$2,000</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏡</span>
+    <h3>Tier 4 (Small town)</h3>
+    <p><strong>Search:</strong> 3 days–2 weeks<br><strong>App Fee:</strong> $0–$50<br><strong>Deposit:</strong> 1× monthly rent<br><strong>Total Move-In:</strong> $500–$1,200</p>
+  </div>
 </div>
 
 <h4>Credit Check Mechanics</h4>
 <p>Landlords run credit checks. Your character's credit score determines their housing options:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Credit Score</th><th>Effect</th><th>Landlord Response</th><th>Co-signer Needed?</th></tr></thead>
-<tbody>
-<tr><td>750+</td><td>Excellent</td><td>Instant approval at most places</td><td>No</td></tr>
-<tr><td>650–749</td><td>Good</td><td>Approved at most places</td><td>No</td></tr>
-<tr><td>550–649</td><td>Fair</td><td>Some landlords reject; may require larger deposit</td><td>Sometimes</td></tr>
-<tr><td>Below 550</td><td>Poor</td><td>Many landlords reject outright</td><td>Almost always</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #2: Credit Score Table → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    🟢 750+<br>
+    <small>Excellent</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Instant approval at most places. No co-signer.</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    🔵 650–749<br>
+    <small>Good</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Approved at most places. No co-signer.</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    🟡 550–649<br>
+    <small>Fair</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Some landlords reject; may require larger deposit. Co-signer sometimes.</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🔴 Below 550<br>
+    <small>Poor</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Many landlords reject outright. Co-signer almost always.</span>
+  </div>
 </div>
 
 <div class="callout tip">
@@ -65,32 +99,60 @@
 
 <h3>Moving Costs</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Method</th><th>Cost Range</th><th>Time Required</th><th>Best For</th></tr></thead>
-<tbody>
-<tr><td>🚗 Personal vehicle</td><td>$100–$500 (gas, hotel)</td><td>1–3 days</td><td>Studio/1BR, short distance</td></tr>
-<tr><td>🚚 U-Haul / Budget mover</td><td>$300–$1,500</td><td>1–2 days</td><td>1–3BR, cross-country</td></tr>
-<tr><td>📦 Friend help + truck</td><td>$50–$200 (pizza, beer)</td><td>1 day</td><td>Any size if friends are available</td></tr>
-<tr><td>🏢 Professional movers</td><td>$1,000–$5,000+</td><td>1 day (they do the work)</td><td>3BR+, fragile items, no energy</td></tr>
-<tr><td>📦 Moving containers (Pod)</td><td>$1,500–$4,000</td><td>Flexible scheduling</td><td>Long distance, uncertain dates</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #3: Moving Costs Table → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🚗</span>
+    <h3>Personal Vehicle</h3>
+    <p>$100–$500 (gas, hotel) · 1–3 days · Best for studio/1BR, short distance</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚚</span>
+    <h3>U-Haul / Budget Mover</h3>
+    <p>$300–$1,500 · 1–2 days · Best for 1–3BR, cross-country</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📦</span>
+    <h3>Friend Help + Truck</h3>
+    <p>$50–$200 (pizza, beer) · 1 day · Any size if friends are available</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏢</span>
+    <h3>Professional Movers</h3>
+    <p>$1,000–$5,000+ · 1 day (they do the work) · Best for 3BR+, fragile items</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📦</span>
+    <h3>Moving Containers (Pod)</h3>
+    <p>$1,500–$4,000 · Flexible scheduling · Best for long distance, uncertain dates</p>
+  </div>
 </div>
 
 <h3>Packing: A Time-Consuming Event</h3>
 <p>Packing is not optional. Even with professional movers, someone has to pack boxes. The GM should track packing as a real time investment:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Living Space</th><th>Packing Time (self)</th><th>Boxes Needed</th><th>VIG Check Required</th></tr></thead>
-<tbody>
-<tr><td>Studio</td><td>2–3 full days</td><td>30–50</td><td>TN 8 (2 checks)</td></tr>
-<tr><td>1 Bedroom</td><td>3–5 full days</td><td>50–80</td><td>TN 9 (3 checks)</td></tr>
-<tr><td>2 Bedroom</td><td>5–7 full days</td><td>80–120</td><td>TN 10 (4 checks)</td></tr>
-<tr><td>3+ Bedroom</td><td>7–14 days</td><td>120–200+</td><td>TN 11 (5 checks)</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #4: Packing Table → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    Studio<br>
+    <small>2–3 days</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">30–50 boxes<br>TN 8 (2 VIG checks)</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    1 Bedroom<br>
+    <small>3–5 days</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">50–80 boxes<br>TN 9 (3 VIG checks)</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    2 Bedroom<br>
+    <small>5–7 days</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">80–120 boxes<br>TN 10 (4 VIG checks)</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    3+ Bedroom<br>
+    <small>7–14 days</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">120–200+ boxes<br>TN 11 (5 VIG checks)</span>
+  </div>
 </div>
 
 <p>Each VIG check represents a day of heavy lifting. Failure means the character develops back pain (−2 to VIG for 1 week) or breaks something. Critical failure (double 1) means a broken appliance or damaged furniture worth $100–$1,000.</p>
@@ -112,19 +174,46 @@
 <h3>The Stress of Moving</h3>
 <p>Every move inflicts a <strong>minimum of +5 SP</strong> regardless of distance. The GM adds additional SP based on complications:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Complication</th><th>Additional SP</th></tr></thead>
-<tbody>
-<tr><td>Moving during a storm or extreme weather</td><td>+2 SP</td></tr>
-<tr><td>Last-minute move (less than 2 weeks notice)</td><td>+3 SP</td></tr>
-<tr><td>Lost or damaged belongings</td><td>+2 SP per item over $500 value</td></tr>
-<tr><td>Conflict with roommate during move</td><td>+3 SP</td></tr>
-<tr><td>Realizing you forgot something important after arriving</td><td>+2 SP</td></tr>
-<tr><td>Moving alone (no help)</td><td>+2 SP</td></tr>
-<tr><td>Having to sell/donate most possessions</td><td>+3 SP (emotional attachment)</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #5: Moving Stress Complications → .stress-bar-row -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🌧️ Storm / extreme weather</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">⏰ Last-minute (&lt;2 weeks)</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:60%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+3 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📦 Lost / damaged items</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP / item &gt;$500</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">👥 Roommate conflict</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:60%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+3 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">😱 Forgot something important</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🚶 Moving alone</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💔 Sell / donate possessions</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:60%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+3 SP (emotional)</span>
+</div>
+
+<!-- PHASE 2 SVG: Commute Stress Radar -->
+<div class="section-illustration">
+  <img src="img/gm_commute_stress_radar.svg" alt="Commute Stress chart showing how base +5 SP compounds with multiple moving complications up to +17 SP worst case" loading="lazy">
 </div>
 
 <h3>New City Adaptation Period</h3>
@@ -132,31 +221,83 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Maya's Cross-Country Move</div>
+
+  <!-- PHASE 3 Scene: Maya apartment rejection -->
+  <div class="section-illustration">
+    <img src="img/gm_maya_apartment_rejection.png" alt="Maya looking disappointed on her phone outside an apartment building as a realtor leads another prospect inside" loading="lazy">
+  </div>
+
   <p>Maya, a 28-year-old graphic designer, is relocating from Columbus, Ohio to Austin, Texas for a new job. Here's how her move plays out:</p>
   <p><strong>Apartment hunting:</strong> Maya rolls <span class="dice">2d10 + INT mod</span> = 7 + 2 = <strong>9</strong> vs TN 10. She fails by 1, meaning her first apartment choice falls through — the place she wanted gets rented before her application is processed. She has to settle for a slightly worse unit 15 minutes farther from her office.</p>
+
+  <!-- PHASE 3 Scene: Maya packing -->
+  <div class="section-illustration">
+    <img src="img/gm_maya_packing_boxes.png" alt="Maya on the floor of a cluttered 2BR apartment taping boxes, surrounded by stacks of packed boxes and coffee cups" loading="lazy">
+  </div>
+
   <p><strong>Moving costs:</strong> Maya rents a U-Haul for 5 days: <strong>$890</strong>. She has a 2BR apartment, so she needs about 100 boxes. Packing takes her <strong>6 days</strong> over two weekends. She rolls her VIG checks (VIG 10, mod 0): all three checks at TN 10 are successes, though she's exhausted.</p>
   <p><strong>Stress:</strong> Base +5 SP for moving. She moved alone (+2 SP). She forgot her favorite cookbook and had to mail it (+2 SP). Total: <strong>+9 SP</strong>. Maya's SP max is 20 + RES(12, +1) × 5 = 25. She goes from 3 SP to 12 SP — nearly half her stress capacity in one event.</p>
+
+  <!-- PHASE 3 Scene: Maya arrival in Austin -->
+  <div class="section-illustration">
+    <img src="img/gm_maya_austin_arrival.png" alt="Maya standing alone in her new Austin apartment looking out the window at an unfamiliar skyline, boxes still unpacked" loading="lazy">
+  </div>
+
   <p><strong>Adaptation:</strong> For her first month in Austin, Maya has −5 to all social checks. She knows nobody. Her first week at the new job, she tries to bond with coworkers but rolls a 4 on her social check (even with the penalty). It takes her three weeks to have a meaningful connection with a coworker named Carlos.</p>
 </div>
 
 <h2>2. ✈️ Moving Abroad</h2>
 
+<!-- PHASE 3 Scene: Visa Interview -->
+<div class="section-illustration">
+  <img src="img/gm_visa_interview_nervous.png" alt="A character sitting in a sterile government office holding a thick folder of documents facing a consular officer across a desk" loading="lazy">
+</div>
+
 <h3>Visa Types and Requirements</h3>
 <p>Every country has its own immigration system, but the categories are roughly universal. The GM should adapt these to the specific destination country:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Visa Type</th><th>Cost</th><th>Processing Time</th><th>Key Requirements</th><th>Duration</th></tr></thead>
-<tbody>
-<tr><td>💼 Work Visa</td><td>$500–$1,500</td><td>2–6 months</td><td>Job offer, employer sponsorship, relevant qualifications</td><td>1–3 years (renewable)</td></tr>
-<tr><td>🎓 Student Visa</td><td>$350–$800</td><td>4–12 weeks</td><td>Acceptance letter, proof of funds ($15K–$40K/year)</td><td>Duration of program</td></tr>
-<tr><td>🌐 Digital Nomad Visa</td><td>$200–$1,000</td><td>2–8 weeks</td><td>Remote job, income threshold ($2K–$5K/month)</td><td>6–24 months</td></tr>
-<tr><td>💍 Spouse/Partner Visa</td><td>$500–$2,500</td><td>6–24 months</td><td>Proof of genuine relationship, sponsor's income</td><td>2 years (then PR)</td></tr>
-<tr><td>🛡️ Asylum</td><td>$0–$400</td><td>1–5 years</td><td>Fear of persecution (race, religion, nationality, etc.)</td><td>Indefinite (if granted)</td></tr>
-<tr><td>🏳️ Refugee Status</td><td>$0</td><td>6 months–2 years</td><td>UNHCR determination, outside home country</td><td>Indefinite (if granted)</td></tr>
-<tr><td>🏖️ Tourist Visa</td><td>$0–$160</td><td>1–3 weeks</td><td>Return ticket, proof of funds, no intent to work</td><td>30–90 days</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #6: Visa Types Table → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">💼</span>
+    <h3>Work Visa</h3>
+    <p><strong>Cost:</strong> $500–$1,500<br><strong>Processing:</strong> 2–6 months<br><strong>Needs:</strong> Job offer, employer sponsorship<br><strong>Duration:</strong> 1–3 years (renewable)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎓</span>
+    <h3>Student Visa</h3>
+    <p><strong>Cost:</strong> $350–$800<br><strong>Processing:</strong> 4–12 weeks<br><strong>Needs:</strong> Acceptance letter, proof of funds<br><strong>Duration:</strong> Program length</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌐</span>
+    <h3>Digital Nomad Visa</h3>
+    <p><strong>Cost:</strong> $200–$1,000<br><strong>Processing:</strong> 2–8 weeks<br><strong>Needs:</strong> Remote job, $2K–$5K/mo income<br><strong>Duration:</strong> 6–24 months</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💍</span>
+    <h3>Spouse/Partner Visa</h3>
+    <p><strong>Cost:</strong> $500–$2,500<br><strong>Processing:</strong> 6–24 months<br><strong>Needs:</strong> Genuine relationship proof<br><strong>Duration:</strong> 2 years (then PR)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🛡️</span>
+    <h3>Asylum</h3>
+    <p><strong>Cost:</strong> $0–$400<br><strong>Processing:</strong> 1–5 years<br><strong>Needs:</strong> Fear of persecution<br><strong>Duration:</strong> Indefinite (if granted)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🏳️</span>
+    <h3>Refugee Status</h3>
+    <p><strong>Cost:</strong> $0<br><strong>Processing:</strong> 6mo–2yr<br><strong>Needs:</strong> UNHCR determination<br><strong>Duration:</strong> Indefinite (if granted)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏖️</span>
+    <h3>Tourist Visa</h3>
+    <p><strong>Cost:</strong> $0–$160<br><strong>Processing:</strong> 1–3 weeks<br><strong>Needs:</strong> Return ticket, proof of funds<br><strong>Duration:</strong> 30–90 days</p>
+  </div>
+</div>
+
+<!-- PHASE 2 SVG: Visa Process Flowchart -->
+<div class="section-illustration">
+  <img src="img/gm_visa_process_flowchart.svg" alt="Visa Application Process flowchart showing steps from choosing visa type through document gathering, submission, processing, interview, and approval or denial branches" loading="lazy">
 </div>
 
 <h3>Visa Interview Mechanics</h3>
@@ -188,19 +329,36 @@
 
 <h2>3. 🌏 Expat Life</h2>
 
+<!-- PHASE 2 SVG: Adaptation Timeline -->
+<div class="section-illustration">
+  <img src="img/gm_adaptation_timeline.svg" alt="The Full Expat Journey Timeline showing Months 1 through 24 with four adaptation phases, SP effects, language milestones, and key events" loading="lazy">
+</div>
+
 <h3>The Cultural Adaptation Curve</h3>
 <p>Research shows expats go through four distinct phases. In Reality RPG, each phase has mechanical effects:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Phase</th><th>Timing</th><th>SP Effect</th><th>Social Check Modifier</th><th>Description</th></tr></thead>
-<tbody>
-<tr><td>🎉 Honeymoon</td><td>Weeks 1–4</td><td>−1 SP/week (novelty)</td><td>+2 (everyone is friendly)</td><td>Everything is exciting and new. The character is energized.</td></tr>
-<tr><td>😤 Frustration</td><td>Months 2–6</td><td>+2 SP/week (culture shock)</td><td>−3 (misunderstandings)</td><td>The reality sets in. Daily life is harder. The character misses home.</td></tr>
-<tr><td>⚖️ Adjustment</td><td>Months 6–18</td><td>0 SP/week (baseline)</td><td>−1 (still adapting)</td><td>Routines form. The character finds their footing. Small wins accumulate.</td></tr>
-<tr><td>🏠 Mastery</td><td>Year 2+</td><td>−1 SP/month (fulfillment)</td><td>0 (fully adapted)</td><td>The character feels at home. They may even prefer it to home.</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #7: Cultural Adaptation Curve → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#1abc9c;">
+    🎉 Honeymoon<br>
+    <small>Weeks 1–4</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−1 SP/week (novelty)<br>+2 social checks<br>Everything is exciting</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    😤 Frustration<br>
+    <small>Months 2–6</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+2 SP/week (culture shock)<br>−3 social checks<br>Reality sets in</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    ⚖️ Adjustment<br>
+    <small>Months 6–18</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">0 SP/week (baseline)<br>−1 social checks<br>Finding footing</span>
+  </div>
+  <div class="condition-step" style="background:#27ae60;">
+    🏠 Mastery<br>
+    <small>Year 2+</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−1 SP/month (fulfillment)<br>0 social checks<br>Feels at home</span>
+  </div>
 </div>
 
 <div class="callout tip">
@@ -211,17 +369,33 @@
 <h3>Language Learning Mechanics</h3>
 <p>Learning a new language is the single most impactful investment an expat can make. It takes real time and has measurable levels:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Proficiency</th><th>Time Investment</th><th>Effect</th><th>Daily Study (min)</th></tr></thead>
-<tbody>
-<tr><td>🌱 Beginner (A1)</td><td>60–100 hours</td><td>Order food, ask directions, basic greetings</td><td>30 min/day for 2–3 months</td></tr>
-<tr><td>🌿 Elementary (A2)</td><td>150–200 hours</td><td>Handle simple transactions, understand slow speech</td><td>30 min/day for 5–6 months total</td></tr>
-<tr><td>🌳 Conversational (B1)</td><td>350–400 hours</td><td>Hold conversations, work in limited settings</td><td>45 min/day for 10–12 months total</td></tr>
-<tr><td>🏔️ Fluent (B2)</td><td>600–750 hours</td><td>Work in the language, understand media</td><td>1 hour/day for 2+ years total</td></tr>
-<tr><td>🏛️ Near-Native (C1)</td><td>1,000+ hours</td><td>Professional-level communication, nuance</td><td>Immersion + 1.5+ years</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #8: Language Proficiency → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value" style="color:#27ae60;">🌱 A1</span>
+    <span class="tn-label"><strong>Beginner</strong> — 60–100 hrs · Order food, ask directions, basic greetings · 30 min/day for 2–3 months</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value" style="color:#2ecc71;">🌿 A2</span>
+    <span class="tn-label"><strong>Elementary</strong> — 150–200 hrs · Handle simple transactions, understand slow speech · 30 min/day for 5–6 months total</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value" style="color:#f39c12;">🌳 B1</span>
+    <span class="tn-label"><strong>Conversational</strong> — 350–400 hrs · Hold conversations, work in limited settings · 45 min/day for 10–12 months total</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value" style="color:#e67e22;">🏔️ B2</span>
+    <span class="tn-label"><strong>Fluent</strong> — 600–750 hrs · Work in the language, understand media · 1 hr/day for 2+ years total</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value" style="color:#e74c3c;">🏛️ C1</span>
+    <span class="tn-label"><strong>Near-Native</strong> — 1,000+ hrs · Professional-level communication, nuance · Immersion + 1.5+ years</span>
+  </div>
+</div>
+
+<!-- PHASE 2 SVG: Language Progression -->
+<div class="section-illustration">
+  <img src="img/gm_language_progression.svg" alt="Language Progression chart showing five proficiency levels with cumulative hours and calendar time estimates at different daily study rates" loading="lazy">
 </div>
 
 <div class="callout rule">
@@ -253,10 +427,28 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Example: James in Japan</div>
+
+  <!-- PHASE 3 Scene: James Tokyo Honeymoon -->
+  <div class="section-illustration">
+    <img src="img/gm_james_tokyo_honeymoon.png" alt="James at a Tokyo welcome party smiling and holding a drink surrounded by other expats in a neon-lit izakaya" loading="lazy">
+  </div>
+
   <p>James, age 26, moves to Tokyo for a 2-year teaching position. Here's his expat journey:</p>
   <p><strong>Month 1 (Honeymoon):</strong> James is thrilled. Everything is novel. He gains −1 SP/week from the excitement. His social checks have +2 — everyone seems friendly. He makes an expat friend named Sarah at a welcome party.</p>
+
+  <!-- PHASE 3 Scene: James Bank Bureaucracy -->
+  <div class="section-illustration">
+    <img src="img/gm_james_bank_bureaucracy.png" alt="James sitting at a Japanese bank counter confused with a stack of unreadable forms while the teller speaks quickly in Japanese" loading="lazy">
+  </div>
+
   <p><strong>Months 2–5 (Frustration):</strong> The reality hits. James can't read signs, can't order at restaurants, and the bureaucracy for setting up a bank account takes 3 visits over 2 weeks. He rolls <span class="dice">2d10 + PRC mod</span> = 6 + 1 = 7 vs TN 12 to handle the bank situation — a failure. The teller is polite but unhelpful. James gains +2 SP/week from culture shock. He now has 14/25 SP (RES 11, no mod).</p>
   <p><strong>Language study:</strong> James commits to 45 minutes of Japanese study daily. At the end of Month 3, he rolls <span class="dice">2d10 + INT mod</span> = 11 + 2 = 13 vs TN 10 — success! He's accumulating hours toward Conversational level. By Month 8, he reaches B1 and can hold basic conversations with Japanese colleagues.</p>
+
+  <!-- PHASE 3 Scene: James Ramen Discovery -->
+  <div class="section-illustration">
+    <img src="img/gm_james_ramen_discovery.png" alt="James sitting contentedly at a small Tokyo ramen counter with a bowl of ramen, more relaxed, a Japanese language notebook on the counter" loading="lazy">
+  </div>
+
   <p><strong>Months 6–12 (Adjustment):</strong> James finds his rhythm. He discovers a local ramen shop he loves. He makes a Japanese friend through a language exchange. His social penalty drops to −1. SP stabilizes around 8/25.</p>
   <p><strong>Year 2 (Mastery):</strong> James now feels at home. He can navigate Tokyo without a map app. He's gained a Japanese colleague who invites him to their hometown. He gains −1 SP/month from the fulfillment of building a life here. When he returns to the US after 2 years, he experiences 2 weeks of reverse culture shock — his American friends seem loud and direct in a way that now bothers him.</p>
 </div>
@@ -266,17 +458,33 @@
 <h3>Teaching English Abroad (TEFL)</h3>
 <p>The most common pathway for Americans abroad. Low barrier to entry, moderate pay, high cultural immersion:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Region</th><th>Monthly Salary</th><th>Cost of Living</th><th>Savings Potential</th><th>Living Conditions</th></tr></thead>
-<tbody>
-<tr><td>🇰🇷 South Korea</td><td>$1,800–$2,800</td><td>$800–$1,200</td><td>$600–$1,500/month</td><td>Company housing provided</td></tr>
-<tr><td>🇨🇳 China (tier 1)</td><td>$2,000–$4,000</td><td>$1,000–$2,000</td><td>$500–$2,000/month</td><td>Varies widely by school</td></tr>
-<tr><td>🇪🇸 Spain</td><td>$800–$1,500</td><td>$900–$1,500</td><td>$0–$300/month</td><td>Self-arranged housing</td></tr>
-<tr><td>🇺🇦 Ukraine (pre-war)</td><td>$600–$1,200</td><td>$400–$700</td><td>$200–$600/month</td><td>Modest apartments</td></tr>
-<tr><td>🇦🇪 UAE/Gulf</td><td>$3,000–$6,000</td><td>$1,500–$3,000</td><td>$1,000–$3,000/month</td><td>Modern, tax-free</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #9: TEFL by Region → .compare-grid (multi-row) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🇰🇷</span>
+    <h3>South Korea</h3>
+    <p><strong>Salary:</strong> $1,800–$2,800/mo<br><strong>CoL:</strong> $800–$1,200/mo<br><strong>Savings:</strong> $600–$1,500/mo<br><strong>Housing:</strong> Company provided</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🇨🇳</span>
+    <h3>China (Tier 1)</h3>
+    <p><strong>Salary:</strong> $2,000–$4,000/mo<br><strong>CoL:</strong> $1,000–$2,000/mo<br><strong>Savings:</strong> $500–$2,000/mo<br><strong>Housing:</strong> Varies by school</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🇪🇸</span>
+    <h3>Spain</h3>
+    <p><strong>Salary:</strong> $800–$1,500/mo<br><strong>CoL:</strong> $900–$1,500/mo<br><strong>Savings:</strong> $0–$300/mo<br><strong>Housing:</strong> Self-arranged</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🇺🇦</span>
+    <h3>Ukraine (pre-war)</h3>
+    <p><strong>Salary:</strong> $600–$1,200/mo<br><strong>CoL:</strong> $400–$700/mo<br><strong>Savings:</strong> $200–$600/mo<br><strong>Housing:</strong> Modest apartments</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🇦🇪</span>
+    <h3>UAE / Gulf</h3>
+    <p><strong>Salary:</strong> $3,000–$6,000/mo<br><strong>CoL:</strong> $1,500–$3,000/mo<br><strong>Savings:</strong> $1,000–$3,000/mo<br><strong>Housing:</strong> Modern, tax-free</p>
+  </div>
 </div>
 
 <p><strong>TEFL Certification:</strong> Requires a 120-hour course ($200–$600, can be done online in 2–4 weeks). Most countries require a bachelor's degree in any field. Roll <span class="dice">2d10 + INT modifier</span> vs TN 8 to complete the TEFL course — failure means the character struggles with lesson planning and may be evaluated poorly.</p>
@@ -294,18 +502,38 @@
 <h3>International Corporate Transfers</h3>
 <p>When a company relocates an employee, the experience is dramatically different from self-initiated moves:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Package Component</th><th>Typical Value</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>Relocation stipend</td><td>$5,000–$50,000</td><td>Covers movers, travel, temporary housing</td></tr>
-<tr><td>Spouse support</td><td>Varies</td><td>Some companies help find spouse employment</td></tr>
-<tr><td>Cultural training</td><td>$2,000–$10,000</td><td>Pre-departure orientation programs</td></tr>
-<tr><td>Language classes</td><td>$3,000–$15,000/year</td><td>Private tutoring or intensive courses</td></tr>
-<tr><td>Home country housing</td><td>$500–$3,000/month</td><td>Company maintains storage or apartment</td></tr>
-<tr><td>Education allowance</td><td>$10,000–$40,000/year</td><td>If children are involved</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #10: Corporate Transfer Package → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">💰</span>
+    <h3>Relocation Stipend</h3>
+    <p>$5,000–$50,000 · Covers movers, travel, temporary housing</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👫</span>
+    <h3>Spouse Support</h3>
+    <p>Varies · Some companies help find spouse employment</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌍</span>
+    <h3>Cultural Training</h3>
+    <p>$2,000–$10,000 · Pre-departure orientation programs</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🗣️</span>
+    <h3>Language Classes</h3>
+    <p>$3,000–$15,000/year · Private tutoring or intensive courses</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Home Country Housing</h3>
+    <p>$500–$3,000/month · Company maintains storage or apartment</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎓</span>
+    <h3>Education Allowance</h3>
+    <p>$10,000–$40,000/year · If children are involved</p>
+  </div>
 </div>
 
 <p>Corporate transfers reduce moving stress by 50% (minimum +2 SP instead of +5 SP) and skip the first month of the Frustration phase due to structured support.</p>
@@ -329,34 +557,70 @@
 <h3>Ethnic Enclaves</h3>
 <p>Cities worldwide have ethnic neighborhoods — Chinatown, Little Mexico, Koreatown, Little Ethiopia, Little India, and dozens more. Living in these communities has real mechanical effects:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Benefit</th><th>Mechanical Effect</th><th>Condition</th></tr></thead>
-<tbody>
-<tr><td>Cultural familiarity</td><td>−2 SP during adaptation phase</td><td>Character shares ethnicity with enclave</td></tr>
-<tr><td>Support networks</td><td>+1 to social checks within community</td><td>Always</td></tr>
-<tr><td>Ethnic food access</td><td>−1 SP/month (comfort food reduces stress)</td><td>Character can afford it</td></tr>
-<tr><td>Language access</td><td>Language study TN reduced by 2</td><td>Heritage language matches enclave</td></tr>
-<tr><td>Employment connections</td><td>+1 to job search rolls within community businesses</td><td>Always</td></tr>
-<tr><td>Lower rent (sometimes)</td><td>−10% to −20% on housing costs</td><td>Enclave is not gentrified</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #11: Enclave Benefits → .card-grid -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏠</span>
+    <h3>Cultural Familiarity</h3>
+    <p>−2 SP during adaptation phase<br><em>Character shares ethnicity with enclave</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🤝</span>
+    <h3>Support Networks</h3>
+    <p>+1 to social checks within community<br><em>Always active</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🍜</span>
+    <h3>Ethnic Food Access</h3>
+    <p>−1 SP/month (comfort food reduces stress)<br><em>Character can afford it</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🗣️</span>
+    <h3>Language Access</h3>
+    <p>Language study TN reduced by 2<br><em>Heritage language matches enclave</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">💼</span>
+    <h3>Employment Connections</h3>
+    <p>+1 to job search rolls within community businesses<br><em>Always active</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">💲</span>
+    <h3>Lower Rent</h3>
+    <p>−10% to −20% on housing costs<br><em>Enclave is not gentrified</em></p>
+  </div>
 </div>
 
 <h3>Penalties of Enclave Living</h3>
 <p>There are real downsides to concentrated ethnic neighborhoods:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Drawback</th><th>Mechanical Effect</th><th>Condition</th></tr></thead>
-<tbody>
-<tr><td>Ghettoization stigma</td><td>−1 to social checks outside the community</td><td>Always (bias is real)</td></tr>
-<tr><td>Limited economic mobility</td><td>Job opportunities outside enclave are −1 harder to find</td><td>Character lacks broader network</td></tr>
-<tr><td>Overcrowding</td><td>+1 SP/month from living stress</td><td>Enclave has high density</td></tr>
-<tr><td>Environmental hazards</td><td>−1 to VIG checks (pollution, poor infrastructure)</td><td>Enclave is underserved</td></tr>
-<tr><td>Gentrification pressure</td><td>Rent increases of 15–40% over 3 years</td><td>Gentrifying enclave</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #12: Enclave Penalties → .card-grid (paired with benefits as comparison) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🚧</span>
+    <h3>Ghettoization Stigma</h3>
+    <p>−1 to social checks outside the community<br><em>Always (bias is real)</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">📉</span>
+    <h3>Limited Economic Mobility</h3>
+    <p>Job opportunities outside enclave −1 harder to find<br><em>Character lacks broader network</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🏚️</span>
+    <h3>Overcrowding</h3>
+    <p>+1 SP/month from living stress<br><em>Enclave has high density</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">☣️</span>
+    <h3>Environmental Hazards</h3>
+    <p>−1 to VIG checks (pollution, poor infrastructure)<br><em>Enclave is underserved</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">📈</span>
+    <h3>Gentrification Pressure</h3>
+    <p>Rent increases of 15–40% over 3 years<br><em>Gentrifying enclave</em></p>
+  </div>
 </div>
 
 <h3>Bicultural Identity Mechanics</h3>
@@ -372,33 +636,61 @@
 <h3>Cross-Cultural Relationship Challenges</h3>
 <p>Dating across cultures adds layers of complexity beyond standard social dynamics:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Challenge</th><th>Effect</th><th>Mitigation</th></tr></thead>
-<tbody>
-<tr><td>Family approval</td><td>−2 to relationship building if families disapprove</td><td>Gradual introduction, cultural education</td></tr>
-<tr><td>Cultural expectations</td><td>+1 SP/month from navigating conflicting norms</td><td>Open communication, compromise</td></tr>
-<tr><td>Language barriers</td><td>−1 to intimacy checks if below Conversational</td><td>Language study, translation apps</td></tr>
-<tr><td>Distance (long-distance)</td><td>+2 SP/month from separation</td><td>Regular video calls, visits</td></tr>
-<tr><td>Time zone differences</td><td>−1 to social checks (scheduling conflicts)</td><td>Flexibility, overlap hours</td></tr>
-<tr><td>Religious differences</td><td>Variable (GM discretion based on severity)</td><td>Respect, compromise, or conversion</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #13: Cross-Cultural Challenges → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">👨‍👩‍👧</span>
+    <h3>Family Approval</h3>
+    <p><strong>Effect:</strong> −2 to relationship building if families disapprove<br><strong>Mitigation:</strong> Gradual introduction, cultural education</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📏</span>
+    <h3>Cultural Expectations</h3>
+    <p><strong>Effect:</strong> +1 SP/month from navigating conflicting norms<br><strong>Mitigation:</strong> Open communication, compromise</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💬</span>
+    <h3>Language Barriers</h3>
+    <p><strong>Effect:</strong> −1 to intimacy checks if below Conversational<br><strong>Mitigation:</strong> Language study, translation apps</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌐</span>
+    <h3>Distance (Long-Distance)</h3>
+    <p><strong>Effect:</strong> +2 SP/month from separation<br><strong>Mitigation:</strong> Regular video calls, visits</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🕐</span>
+    <h3>Time Zone Differences</h3>
+    <p><strong>Effect:</strong> −1 to social checks (scheduling conflicts)<br><strong>Mitigation:</strong> Flexibility, overlap hours</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⛪</span>
+    <h3>Religious Differences</h3>
+    <p><strong>Effect:</strong> Variable (GM discretion based on severity)<br><strong>Mitigation:</strong> Respect, compromise, or conversion</p>
+  </div>
 </div>
 
 <h3>Marriage Migration</h3>
 <p>When one partner is a foreign national, marriage becomes a legal process:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Visa/Process</th><th>Cost</th><th>Timeline</th><th>Key Requirements</th></tr></thead>
-<tbody>
-<tr><td>K-1 Fiancé(e) Visa (US)</td><td>$1,200–$2,500</td><td>12–18 months</td><td>Must marry within 90 days of entry</td></tr>
-<tr><td>CR-1 Spouse Visa (US)</td><td>$1,200–$2,500</td><td>12–24 months</td><td>Get married first, enter as resident</td></tr>
-<tr><td>Green Card (through marriage)</td><td>$1,760–$2,500</td><td>8–12 months (if already in US)</td><td>Proof of genuine marriage</td></tr>
-<tr><td>Citizenship (naturalization)</td><td>$725–$1,170</td><td>3–5 years after green card</td><td>Residency requirements, civics test</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #14: Marriage Migration → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value" style="color:#27ae60;">K-1</span>
+    <span class="tn-label"><strong>Fiancé(e) Visa (US)</strong> — $1,200–$2,500 · 12–18 months · Must marry within 90 days of entry</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value" style="color:#2ecc71;">CR-1</span>
+    <span class="tn-label"><strong>Spouse Visa (US)</strong> — $1,200–$2,500 · 12–24 months · Get married first, enter as resident</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value" style="color:#f39c12;">GC</span>
+    <span class="tn-label"><strong>Green Card (through marriage)</strong> — $1,760–$2,500 · 8–12 months (if already in US) · Proof of genuine marriage</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value" style="color:#e67e22;">CIT</span>
+    <span class="tn-label"><strong>Citizenship (naturalization)</strong> — $725–$1,170 · 3–5 years after green card · Residency requirements, civics test</span>
+  </div>
 </div>
 
 <div class="callout warning">
@@ -417,40 +709,80 @@
 <h3>Extended Travel</h3>
 <p>Not all travel is tourism. Some characters choose extended travel as a life phase:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Travel Style</th><th>Monthly Cost</th><th>Duration Typical</th><th>SP Effect</th><th>Growth Benefit</th></tr></thead>
-<tbody>
-<tr><td>🎒 Backpacking (SE Asia, Latin America)</td><td>$800–$1,500</td><td>3–12 months</td><td>+3 SP initially, then −1 SP/month</td><td>+2 EXP after 6 months</td></tr>
-<tr><td>🚐 Van Life</td><td>$1,000–$2,500</td><td>6–24 months</td><td>+5 SP initially, variable ongoing</td><td>+1 EXP, +1 RES after 1 year</td></tr>
-<tr><td>🚐 RV Living (US)</td><td>$2,000–$4,000</td><td>6–24 months</td><td>+3 SP initially</td><td>+1 EXP after 6 months</td></tr>
-<tr><td>🌍 Gap Year</td><td>$1,500–$4,000</td><td>12 months</td><td>+4 SP initially, then −1 SP/month</td><td>+2 EXP, +1 RES</td></tr>
-<tr><td>🏛️ Study Abroad</td><td>$2,000–$5,000 (with aid: $500–$2,000)</td><td>1–2 semesters</td><td>+3 SP initially</td><td>+2 EXP, language progress</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #15: Travel Styles → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🎒</span>
+    <h3>Backpacking</h3>
+    <p><strong>Regions:</strong> SE Asia, Latin America<br><strong>Cost:</strong> $800–$1,500/mo<br><strong>Duration:</strong> 3–12 months<br><strong>SP:</strong> +3 initially, then −1 SP/mo<br><strong>Growth:</strong> +2 EXP after 6 months</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚐</span>
+    <h3>Van Life</h3>
+    <p><strong>Cost:</strong> $1,000–$2,500/mo<br><strong>Duration:</strong> 6–24 months<br><strong>SP:</strong> +5 initially, variable ongoing<br><strong>Growth:</strong> +1 EXP, +1 RES after 1 year</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚐</span>
+    <h3>RV Living (US)</h3>
+    <p><strong>Cost:</strong> $2,000–$4,000/mo<br><strong>Duration:</strong> 6–24 months<br><strong>SP:</strong> +3 initially<br><strong>Growth:</strong> +1 EXP after 6 months</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌍</span>
+    <h3>Gap Year</h3>
+    <p><strong>Cost:</strong> $1,500–$4,000/mo<br><strong>Duration:</strong> 12 months<br><strong>SP:</strong> +4 initially, then −1 SP/mo<br><strong>Growth:</strong> +2 EXP, +1 RES</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏛️</span>
+    <h3>Study Abroad</h3>
+    <p><strong>Cost:</strong> $2,000–$5,000/mo (with aid: $500–$2,000)<br><strong>Duration:</strong> 1–2 semesters<br><strong>SP:</strong> +3 initially<br><strong>Growth:</strong> +2 EXP, language progress</p>
+  </div>
 </div>
 
 <h3>Volunteer Travel</h3>
 <p>Structured volunteer programs offer meaningful experiences with built-in support:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Program</th><th>Duration</th><th>Pay/Stipend</th><th>Requirements</th><th>SP Impact</th></tr></thead>
-<tbody>
-<tr><td>🕊️ Peace Corps</td><td>27 months</td><td>$100–$200/month + housing</td><td>Citizen, 18+, clean background</td><td>+5 SP initially, −2 SP/month after</td></tr>
-<tr><td>🇺🇸 AmeriCorps</td><td>10–14 months</td><td>$3,000–$5,000 + education award</td><td>Citizen, 17+</td><td>+3 SP initially, −1 SP/month</td></tr>
-<tr><td>🏥 Doctors Without Borders</td><td>6–12 months</td><td>$0–$2,000/month</td><td>Medical license, experience</td><td>+8 SP initially, variable ongoing</td></tr>
-<tr><td>🌱 Eco-volunteer (WWOOF, Workaway)</td><td>Flexible</td><td>Room + board only</td><td>None</td><td>+2 SP initially, −1 SP/month</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #16: Volunteer Programs → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🕊️</span>
+    <h3>Peace Corps</h3>
+    <p><strong>Duration:</strong> 27 months<br><strong>Pay:</strong> $100–$200/mo + housing<br><strong>Needs:</strong> Citizen, 18+, clean background<br><strong>SP:</strong> +5 initially, −2 SP/mo after</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🇺🇸</span>
+    <h3>AmeriCorps</h3>
+    <p><strong>Duration:</strong> 10–14 months<br><strong>Pay:</strong> $3,000–$5,000 + education award<br><strong>Needs:</strong> Citizen, 17+<br><strong>SP:</strong> +3 initially, −1 SP/mo</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏥</span>
+    <h3>Doctors Without Borders</h3>
+    <p><strong>Duration:</strong> 6–12 months<br><strong>Pay:</strong> $0–$2,000/mo<br><strong>Needs:</strong> Medical license, experience<br><strong>SP:</strong> +8 initially, variable ongoing</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌱</span>
+    <h3>Eco-Volunteer</h3>
+    <p><strong>Duration:</strong> Flexible<br><strong>Pay:</strong> Room + board only<br><strong>Needs:</strong> None<br><strong>SP:</strong> +2 initially, −1 SP/mo</p>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Priya's Gap Year</div>
+
+  <!-- PHASE 3 Scene: Priya Hostel Thailand -->
+  <div class="section-illustration">
+    <img src="img/gm_priya_hostel_thailand.png" alt="Priya in a Thai hostel common area with backpack at her feet and laptop showing a route map, other travelers around her" loading="lazy">
+  </div>
+
   <p>Priya, 22, just graduated college with a degree in environmental science. Instead of taking a job, she decides on a gap year of travel. She has $8,000 saved and a backpack.</p>
   <p><strong>Planning phase (Month 0):</strong> Priya spends 2 weeks planning her route. She rolls <span class="dice">2d10 + INT mod</span> = 9 + 3 = 12 vs TN 10 — success! Her itinerary is well-thought-out, and she books the first month of hostels at a discount. Total planning cost: <strong>$150</strong> in advance bookings.</p>
   <p><strong>Initial stress:</strong> Leaving her life behind hits her. +4 SP for the gap year departure. She also says goodbye to her partner of 3 years, which adds +5 SP. Total: <strong>+9 SP</strong>. Priya's max SP is 20 + RES(14, +2) × 5 = 30. She goes from 5 SP to 14 SP.</p>
   <p><strong>Month 1–3 (Thailand, Vietnam):</strong> Backpacking at $1,000/month. The initial excitement wears off by Week 3, but Priya starts making friends in hostels. Each month, she gains −1 SP from the experience. By Month 3, she's at 11 SP.</p>
+
+  <!-- PHASE 3 Scene: Priya Beach Volunteer -->
+  <div class="section-illustration">
+    <img src="img/gm_priya_beach_volunteer.png" alt="Priya on a South American beach wearing gloves picking up trash with a small volunteer group, knee slightly bandaged" loading="lazy">
+  </div>
+
   <p><strong>Month 4–6 (Peru, Bolivia, Chile):</strong> Crossing the ocean costs $600 for the flight. In South America, she joins a volunteer program cleaning beaches for 3 weeks. This gives her a meaningful experience but is physically demanding — she rolls <span class="dice">2d10 + VIG mod</span> = 5 + 1 = 6 vs TN 8. Failure! She gets a mild knee injury that slows her down for 2 weeks (+2 SP from frustration).</p>
   <p><strong>Month 7–12 (Europe):</strong> Priya stretches her budget. She works as an au pair in France for 3 months (room, board, and €300/month pocket money). This covers her expenses and even adds $600 to her savings. By Month 12, she has <strong>+2 EXP</strong> from the travel experience and <strong>+1 RES</strong> from overcoming challenges. Her SP is down to 7 — she's actually <em>happier</em> than when she left.</p>
   <p><strong>Return home:</strong> Reverse culture shock hits for 2 weeks (+3 SP). But Priya now has stories, confidence, and a clearer sense of what she wants from her career. She gets a job in environmental consulting — her EXP bonus from travel helps her interview.</p>
@@ -458,20 +790,46 @@
 
 <h2>8. 🌊 Climate Migration</h2>
 
+<!-- PHASE 3 Scene: Climate Displacement -->
+<div class="section-illustration">
+  <img src="img/gm_climate_displacement_evacuation.png" alt="A family loading a car with essentials looking back at a house with visible flood damage — the quiet devastation of climate displacement" loading="lazy">
+</div>
+
 <h3>Environmental Displacement</h3>
 <p>Climate change is not a future problem — it's a present one. Characters may be forced to relocate due to environmental factors:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Driver</th><th>Affected Regions</th><th>Timeline</th><th>Severity</th></tr></thead>
-<tbody>
-<tr><td>🌊 Rising sea levels</td><td>Coastal cities, island nations</td><td>2030–2100 (accelerating)</td><td>Slow onset, eventual catastrophe</td></tr>
-<tr><td>🔥 Extreme heat</td><td>Desert regions, urban heat islands</td><td>Already happening</td><td>Seasonal, worsening</td></tr>
-<tr><td>🏜️ Drought</td><td>California, Sahel, Australia</td><td>Already happening</td><td>Multi-year cycles</td></tr>
-<tr><td>🔥 Wildfire</td><td>Western US, Mediterranean, Australia</td><td>Seasonal, increasing</td><td>Sudden displacement</td></tr>
-<tr><td>🌪️ Hurricane/flood</td><td>Caribbean, Gulf Coast, Southeast Asia</td><td>Seasonal, increasing intensity</td><td>Sudden, catastrophic</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #17: Climate Drivers → .card-grid -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🌊</span>
+    <h3>Rising Sea Levels</h3>
+    <p><strong>Regions:</strong> Coastal cities, island nations<br><strong>Timeline:</strong> 2030–2100 (accelerating)<br><strong>Severity:</strong> Slow onset, eventual catastrophe</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔥</span>
+    <h3>Extreme Heat</h3>
+    <p><strong>Regions:</strong> Desert regions, urban heat islands<br><strong>Timeline:</strong> Already happening<br><strong>Severity:</strong> Seasonal, worsening</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🏜️</span>
+    <h3>Drought</h3>
+    <p><strong>Regions:</strong> California, Sahel, Australia<br><strong>Timeline:</strong> Already happening<br><strong>Severity:</strong> Multi-year cycles</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🔥</span>
+    <h3>Wildfire</h3>
+    <p><strong>Regions:</strong> Western US, Mediterranean, Australia<br><strong>Timeline:</strong> Seasonal, increasing<br><strong>Severity:</strong> Sudden displacement</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🌪️</span>
+    <h3>Hurricane / Flood</h3>
+    <p><strong>Regions:</strong> Caribbean, Gulf Coast, SE Asia<br><strong>Timeline:</strong> Seasonal, increasing intensity<br><strong>Severity:</strong> Sudden, catastrophic</p>
+  </div>
+</div>
+
+<!-- PHASE 2 SVG: Climate Severity Scale -->
+<div class="section-illustration">
+  <img src="img/gm_climate_severity_scale.svg" alt="Climate Displacement Severity Scale showing three tiers from Gradual to Catastrophic with SP costs, possession loss percentages, and timelines" loading="lazy">
 </div>
 
 <h3>Environmental Refugees</h3>
@@ -495,6 +853,12 @@
 </div>
 
 <h3>Gentrification Displacement</h3>
+
+<!-- PHASE 3 Scene: Gentrification Displacement -->
+<div class="section-illustration">
+  <img src="img/gm_gentrification_displacement.png" alt="A long-time neighborhood corner store being replaced by a sleek new coffee shop, an older resident looking at a For Rent sign with much higher pricing" loading="lazy">
+</div>
+
 <p>Not all displacement is environmental. Gentrification forces long-term residents out of their neighborhoods through rising costs:</p>
 <ul>
 <li><strong>Rent increases:</strong> 20–50% over 3 years in gentrifying areas</li>
@@ -509,18 +873,43 @@
 <h3>The Digital Nomad Lifestyle</h3>
 <p>Working remotely while traveling the world is the dream for many — but the reality has constraints:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Reality</th><th>Cost Range</th></tr></thead>
-<tbody>
-<tr><td>🏠 Co-living spaces</td><td>Shared housing with workspaces, community events</td><td>$800–$2,500/month</td></tr>
-<tr><td>☕ Coworking memberships</td><td>Dedicated workspace, reliable internet, networking</td><td>$50–$300/month</td></tr>
-<tr><td>✈️ Travel between bases</td><td>Flights every 1–3 months</td><td>$200–$1,500 per trip</td></tr>
-<tr><td>📱 Connectivity (backup)</td><td>Local SIM, portable WiFi, satellite backup</td><td>$30–$100/month</td></tr>
-<tr><td>🏥 Health insurance</td><td>International/travel insurance</td><td>$100–$400/month</td></tr>
-<tr><td>📦 Shipping/belongings</td><td>Forwarding address, storage, shipping</td><td>$50–$200/month</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #18: Digital Nomad Aspects → .supplies-grid (as resource inventory) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Co-living Spaces</h3>
+    <p>Shared housing with workspaces, community events<br><strong>$800–$2,500/month</strong></p>
+  </div>
+  <div class="card">
+    <span class="card-icon">☕</span>
+    <h3>Coworking Memberships</h3>
+    <p>Dedicated workspace, reliable internet, networking<br><strong>$50–$300/month</strong></p>
+  </div>
+  <div class="card">
+    <span class="card-icon">✈️</span>
+    <h3>Travel Between Bases</h3>
+    <p>Flights every 1–3 months<br><strong>$200–$1,500 per trip</strong></p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📱</span>
+    <h3>Connectivity (Backup)</h3>
+    <p>Local SIM, portable WiFi, satellite backup<br><strong>$30–$100/month</strong></p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏥</span>
+    <h3>Health Insurance</h3>
+    <p>International/travel insurance<br><strong>$100–$400/month</strong></p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📦</span>
+    <h3>Shipping / Belongings</h3>
+    <p>Forwarding address, storage, shipping<br><strong>$50–$200/month</strong></p>
+  </div>
+</div>
+
+<!-- PHASE 2 SVG: Digital Nomad Budget -->
+<div class="section-illustration">
+  <img src="img/gm_digital_nomad_budget.svg" alt="Digital Nomad Monthly Budget Breakdown showing expense categories from housing to shipping as a stacked bar chart" loading="lazy">
 </div>
 
 <h3>Co-Living Spaces</h3>
@@ -551,16 +940,28 @@
 <h3>Internet Reliability</h3>
 <p>The most critical survival concern for a remote worker. Without internet, the character cannot work:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Location Type</th><th>Reliability</th><th>Downtime Risk</th><th>Backup Needed?</th></tr></thead>
-<tbody>
-<tr><td>🏙️ Major city (fiber)</td><td>99%+</td><td>1 day/month</td><td>No, but recommended</td></tr>
-<tr><td>🏘️ Smaller city</td><td>95–99%</td><td>2–4 days/month</td><td>Yes (mobile hotspot)</td></tr>
-<tr><td>🏖️ Tourist destination</td><td>85–95%</td><td>5–10 days/month</td><td>Yes (multiple backups)</td></tr>
-<tr><td>🏜️ Rural/remote</td><td>70–85%</td><td>10–20 days/month</td><td>Yes (satellite backup)</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #19: Internet Reliability → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    🏙️ Major City<br>
+    <small>Fiber 99%+</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">1 day downtime/mo<br>No backup needed</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    🏘️ Smaller City<br>
+    <small>95–99%</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">2–4 days downtime/mo<br>Mobile hotspot recommended</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    🏖️ Tourist Dest.<br>
+    <small>85–95%</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">5–10 days downtime/mo<br>Multiple backups needed</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🏜️ Rural / Remote<br>
+    <small>70–85%</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">10–20 days downtime/mo<br>Satellite backup essential</span>
+  </div>
 </div>
 
 <div class="callout rule">
@@ -570,28 +971,66 @@
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Alex the Digital Nomad</div>
+
+  <!-- PHASE 3 Scene: Alex Bali Co-living -->
+  <div class="section-illustration">
+    <img src="img/gm_alex_bali_coliving.png" alt="Alex at a laptop in a modern Bali co-living shared workspace, tropical plants around, other nomads working in the background without interacting" loading="lazy">
+  </div>
+
   <p>Alex, 31, is a software developer who quit their office job to work remotely. They have $15,000 in savings and a laptop.</p>
   <p><strong>Month 1–3 (Bali, Indonesia):</strong> Alex rents a co-living space for $1,200/month. Internet is decent (95% reliability). Alex rolls community building: <span class="dice">2d10 + PRC mod</span> = 8 vs TN 10 — failure. Alex feels lonely the first month (+1 SP). In Month 2, they attend a coworking event and finally connect with a fellow nomad named Luca. By Month 3, Alex has a small circle of 3 nomad friends.</p>
+
+  <!-- PHASE 3 Scene: Alex Internet Crisis -->
+  <div class="section-illustration">
+    <img src="img/gm_alex_internet_crisis.png" alt="Alex frantically trying to connect to a phone hotspot minutes before a client presentation, laptop showing a frozen Zoom screen" loading="lazy">
+  </div>
+
   <p><strong>Month 4 (Internet crisis):</strong> Alex has a major client presentation. The WiFi goes down 20 minutes before. Alex rolls <span class="dice">2d10 + DXT mod</span> = 4 + 1 = 5 vs TN 10 — failure! Alex can't find a backup connection in time. The client is disappointed. Alex loses a $2,000 project. SP goes up by +3. Alex now has 8/25 SP.</p>
   <p><strong>Month 5–8 (Lisbon, Portugal):</strong> Alex moves to Europe. Co-living at €1,400/month. Better internet (99% reliability). Alex applies for a Digital Nomad Visa — rolls <span class="dice">2d10 + PRC mod + EXP(+1)</span> = 11 vs TN 12 — close! The visa is approved with a request for additional documentation, adding 2 weeks but no denial. Alex is now legal.</p>
+
+  <!-- PHASE 3 Scene: Alex Mexico City Burnout -->
+  <div class="section-illustration">
+    <img src="img/gm_alex_mexico_city_burnout.png" alt="Alex in a Mexico City apartment late at night, laptop still open, dark circles under eyes, multiple empty coffee cups, calendar showing many moves" loading="lazy">
+  </div>
+
   <p><strong>Month 9–12 (Mexico City):</strong> Alex moves again. Cheaper cost of living ($1,000/month). Alex has been traveling for a year and has <strong>+1 EXP</strong> from navigating different cultures. However, the constant movement takes a toll — Alex rolls <span class="dice">2d10 + RES mod</span> = 7 + 1 = 8 vs TN 10 to check for burnout. Failure. Alex starts experiencing mild burnout symptoms: difficulty sleeping, irritability. The GM notes this and may escalate if Alex doesn't take a break.</p>
   <p><strong>Year-end assessment:</strong> Alex spent ~$18,000 on living costs and travel. Earned ~$28,000 from freelance work. Net savings: ~$5,000 (down from $15,000). But Alex gained experience, language skills (conversational Spanish), and a global network. Was it worth it? Alex decides to stay nomadic another 6 months before settling down.</p>
 </div>
 
 <h2>📊 Summary: Moving Costs at a Glance</h2>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Move Type</th><th>Min Cost</th><th>Max Cost</th><th>Min SP</th><th>Min Time</th><th>Key Risk</th></tr></thead>
-<tbody>
-<tr><td>🏠 Same-city apartment</td><td>$500</td><td>$3,000</td><td>+5 SP</td><td>1 week</td><td>Bad landlord, hidden fees</td></tr>
-<tr><td>🚚 Cross-country move</td><td>$1,000</td><td>$5,000</td><td>+5 SP</td><td>2–4 weeks</td><td>Lost items, adaptation period</td></tr>
-<tr><td>✈️ Moving abroad (visa)</td><td>$1,500</td><td>$15,000</td><td>+8 SP</td><td>3–12 months</td><td>Visa denial, culture shock</td></tr>
-<tr><td>🛡️ Asylum/refugee</td><td>$0</td><td>$5,000</td><td>+15 SP</td><td>6 months–5 years</td><td>Denial, detention, trauma</td></tr>
-<tr><td>🌊 Climate displacement</td><td>$0</td><td>$20,000+</td><td>+5–15 SP</td><td>Days to years</td><td>Loss of everything</td></tr>
-<tr><td>💻 Digital nomad (1 year)</td><td>$12,000</td><td>$40,000</td><td>+3 SP/month</td><td>12 months</td><td>Burnout, visa issues, isolation</td></tr>
-</tbody>
-</table>
+<!-- PHASE 1 #20: Moving Costs Summary → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Same-City Apartment</h3>
+    <p><strong>Cost:</strong> $500–$3,000<br><strong>SP:</strong> +5 min · <strong>Time:</strong> 1 week<br><strong>Risk:</strong> Bad landlord, hidden fees</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚚</span>
+    <h3>Cross-Country Move</h3>
+    <p><strong>Cost:</strong> $1,000–$5,000<br><strong>SP:</strong> +5 min · <strong>Time:</strong> 2–4 weeks<br><strong>Risk:</strong> Lost items, adaptation period</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">✈️</span>
+    <h3>Moving Abroad (Visa)</h3>
+    <p><strong>Cost:</strong> $1,500–$15,000<br><strong>SP:</strong> +8 min · <strong>Time:</strong> 3–12 months<br><strong>Risk:</strong> Visa denial, culture shock</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🛡️</span>
+    <h3>Asylum / Refugee</h3>
+    <p><strong>Cost:</strong> $0–$5,000<br><strong>SP:</strong> +15 min · <strong>Time:</strong> 6mo–5yr<br><strong>Risk:</strong> Denial, detention, trauma</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🌊</span>
+    <h3>Climate Displacement</h3>
+    <p><strong>Cost:</strong> $0–$20,000+<br><strong>SP:</strong> +5–15 · <strong>Time:</strong> Days to years<br><strong>Risk:</strong> Loss of everything</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💻</span>
+    <h3>Digital Nomad (1 Year)</h3>
+    <p><strong>Cost:</strong> $12,000–$40,000<br><strong>SP:</strong> +3/mo · <strong>Time:</strong> 12 months<br><strong>Risk:</strong> Burnout, visa issues, isolation</p>
+  </div>
 </div>
 
 <div class="callout tip">

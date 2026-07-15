@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 370" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .subtitle { font-size: 11px; fill: #5d6d7e; text-anchor: middle; }
+    .level { font-size: 12px; font-weight: 700; }
+    .hours { font-size: 10px; fill: #2c3e50; }
+    .time { font-size: 9px; fill: #5d6d7e; }
+    .ability { font-size: 9px; fill: #2c3e50; }
+    .step-bg { rx: 6; ry: 6; }
+  </style>
+
+  <!-- Title -->
+  <text x="350" y="24" class="title">Language Learning Progression</text>
+  <text x="350" y="40" class="subtitle">Cumulative hours to each proficiency level · Roll 2d10+INT vs TN 10 monthly for progress</text>
+
+  <!-- Level 1: Beginner A1 -->
+  <rect x="40" y="56" width="620" height="48" class="step-bg" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="60" y="74" class="level" fill="#27ae60">🌱 Beginner (A1)</text>
+  <text x="60" y="92" class="hours">60–100 cumulative hours</text>
+  <text x="260" y="74" class="time">⏱️ 30min/day → 2–3 months</text>
+  <text x="260" y="92" class="time">⏱️ 1hr/day → 1–2 months</text>
+  <text x="460" y="83" class="ability">✅ Order food · Ask directions · Basic greetings</text>
+
+  <!-- Arrow between levels -->
+  <text x="350" y="116" text-anchor="middle" fill="#27ae60" font-size="14">▼</text>
+
+  <!-- Level 2: Elementary A2 -->
+  <rect x="40" y="120" width="620" height="48" class="step-bg" fill="#d4efdf" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="60" y="138" class="level" fill="#2ecc71">🌿 Elementary (A2)</text>
+  <text x="60" y="156" class="hours">150–200 cumulative hours</text>
+  <text x="260" y="138" class="time">⏱️ 30min/day → 5–6 months</text>
+  <text x="260" y="156" class="time">⏱️ 1hr/day → 3–4 months</text>
+  <text x="460" y="149" class="ability">✅ Simple transactions · Understand slow speech</text>
+
+  <text x="350" y="180" text-anchor="middle" fill="#2ecc71" font-size="14">▼</text>
+
+  <!-- Level 3: Conversational B1 -->
+  <rect x="40" y="184" width="620" height="48" class="step-bg" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="60" y="202" class="level" fill="#f39c12">🌳 Conversational (B1)</text>
+  <text x="60" y="220" class="hours">350–400 cumulative hours</text>
+  <text x="260" y="202" class="time">⏱️ 45min/day → 10–12 months</text>
+  <text x="260" y="220" class="time">⏱️ 1hr/day → 6–8 months</text>
+  <text x="460" y="213" class="ability">✅ Hold conversations · Work in limited settings</text>
+  <text x="460" y="225" class="ability" fill="#27ae60" font-weight="600">⭐ Reduces visa interview TN by 2</text>
+
+  <text x="350" y="240" text-anchor="middle" fill="#f39c12" font-size="14">▼</text>
+
+  <!-- Level 4: Fluent B2 -->
+  <rect x="40" y="244" width="620" height="48" class="step-bg" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="60" y="262" class="level" fill="#e67e22">🏔️ Fluent (B2)</text>
+  <text x="60" y="280" class="hours">600–750 cumulative hours</text>
+  <text x="260" y="262" class="time">⏱️ 1hr/day → 2+ years</text>
+  <text x="260" y="280" class="time">⏱️ Immersion → 12–18 months</text>
+  <text x="460" y="273" class="ability">✅ Work in the language · Understand media</text>
+
+  <text x="350" y="300" text-anchor="middle" fill="#e67e22" font-size="14">▼</text>
+
+  <!-- Level 5: Near-Native C1 -->
+  <rect x="40" y="304" width="620" height="48" class="step-bg" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="60" y="322" class="level" fill="#e74c3c">🏛️ Near-Native (C1)</text>
+  <text x="60" y="340" class="hours">1,000+ cumulative hours</text>
+  <text x="260" y="322" class="time">⏱️ Immersion + 1.5+ years</text>
+  <text x="260" y="340" class="time">⏱️ Very difficult after age 18</text>
+  <text x="460" y="333" class="ability">✅ Professional communication · Full nuance</text>
+
+</svg>

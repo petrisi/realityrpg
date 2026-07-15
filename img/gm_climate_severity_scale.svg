@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .subtitle { font-size: 11px; fill: #5d6d7e; text-anchor: middle; }
+    .tier-title { font-size: 13px; font-weight: 700; }
+    .tier-detail { font-size: 10px; }
+    .tier-sub { font-size: 9px; fill: #fff; font-weight: 400; }
+  </style>
+
+  <!-- Title -->
+  <text x="300" y="24" class="title">Climate Displacement Severity Scale</text>
+  <text x="300" y="40" class="subtitle">GM determines timeline and severity based on environmental event type</text>
+
+  <!-- GRADE 1: Gradual -->
+  <rect x="40" y="56" width="520" height="90" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="2"/>
+  <text x="60" y="80" class="tier-title" fill="#2980b9">🟡 GRADUAL — Months of Warning</text>
+  <text x="60" y="98" class="tier-detail">🌊 Rising sea levels · 🏜️ Slow drought · 📈 Gentrification</text>
+  <line x1="60" y1="104" x2="540" y2="104" stroke="#2980b9" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="80" y="122" class="tier-detail">😰 <strong>Stress:</strong> +5 SP</text>
+  <text x="80" y="138" class="tier-detail">📦 <strong>Possessions:</strong> Can sell, reduce financial loss by half</text>
+  <text x="280" y="122" class="tier-detail">⏱️ <strong>Timeline:</strong> 1–6 months to find new home</text>
+  <text x="280" y="138" class="tier-detail">👥 <strong>Social:</strong> Normal adaptation period (−5 for 1 month)</text>
+
+  <!-- GRADE 2: Sudden -->
+  <rect x="40" y="156" width="520" height="90" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="60" y="180" class="tier-title" fill="#e67e22">🟠 SUDDEN — Days of Warning</text>
+  <text x="60" y="198" class="tier-detail">🔥 Wildfire evacuation · 🌪️ Hurricane · ⚡ Flash flood</text>
+  <line x1="60" y1="204" x2="540" y2="204" stroke="#e67e22" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="80" y="222" class="tier-detail">😰 <strong>Stress:</strong> +10 SP</text>
+  <text x="80" y="238" class="tier-detail">📦 <strong>Possessions:</strong> Lose 30–60%, take only essentials</text>
+  <text x="280" y="222" class="tier-detail">⏱️ <strong>Timeline:</strong> Must relocate within weeks</text>
+  <text x="280" y="238" class="tier-detail">👥 <strong>Social:</strong> −5 for 2 months (forced move penalty)</text>
+
+  <!-- GRADE 3: Catastrophic -->
+  <rect x="40" y="256" width="520" height="90" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="60" y="280" class="tier-title" fill="#e74c3c">🔴 CATASTROPHIC — No Warning</text>
+  <text x="60" y="298" class="tier-detail">💥 Tsunami · 🌋 Volcanic eruption · ☢️ Nuclear event</text>
+  <line x1="60" y1="304" x2="540" y2="304" stroke="#e74c3c" stroke-width="0.5" stroke-dasharray="3,3"/>
+
+  <text x="80" y="322" class="tier-detail">😰 <strong>Stress:</strong> +15 SP</text>
+  <text x="80" y="338" class="tier-detail">📦 <strong>Possessions:</strong> May lose everything</text>
+  <text x="280" y="322" class="tier-detail">⚠️ <strong>Survival:</strong> VIG check TN 12 to survive the event</text>
+  <text x="280" y="338" class="tier-detail">👥 <strong>Social:</strong> −5 for 2 months + potential trauma</text>
+
+</svg>

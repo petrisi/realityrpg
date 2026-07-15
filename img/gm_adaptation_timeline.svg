@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .subtitle { font-size: 11px; fill: #5d6d7e; text-anchor: middle; }
+    .phase-label { font-size: 11px; font-weight: 700; text-anchor: middle; }
+    .detail { font-size: 9px; fill: #fff; text-anchor: middle; font-weight: 400; }
+    .milestone { font-size: 9px; fill: #2c3e50; font-weight: 600; }
+    .axis { font-size: 9px; fill: #7f8c8d; }
+    .sp-note { font-size: 8.5px; fill: #fff; text-anchor: middle; font-weight: 400; }
+  </style>
+
+  <!-- Title -->
+  <text x="400" y="22" class="title">The Full Expat Journey — 24 Month Timeline</text>
+  <text x="400" y="38" class="subtitle">Four adaptation phases with SP effects, language milestones, and key events</text>
+
+  <!-- Phase 1: Honeymoon (Weeks 1-4) -->
+  <rect x="30" y="52" width="170" height="130" rx="8" fill="#1abc9c"/>
+  <text x="115" y="72" class="phase-label" fill="#fff">🎉 Honeymoon</text>
+  <text x="115" y="86" class="detail">Weeks 1–4</text>
+  <text x="115" y="102" class="sp-note">−1 SP/week</text>
+  <text x="115" y="114" class="sp-note">+2 social checks</text>
+  <line x1="45" y1="122" x2="185" y2="122" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+  <text x="115" y="136" class="detail">Everything is exciting</text>
+  <text x="115" y="148" class="detail">Everyone seems friendly</text>
+  <text x="115" y="160" class="detail">Novelty energizes</text>
+  <text x="115" y="172" class="detail">Make first expat friends</text>
+
+  <!-- Phase 2: Frustration (Months 2-6) -->
+  <rect x="210" y="52" width="170" height="130" rx="8" fill="#e74c3c"/>
+  <text x="295" y="72" class="phase-label" fill="#fff">😤 Frustration</text>
+  <text x="295" y="86" class="detail">Months 2–6</text>
+  <text x="295" y="102" class="sp-note">+2 SP/week</text>
+  <text x="295" y="114" class="sp-note">−3 social checks</text>
+  <line x1="225" y1="122" x2="365" y2="122" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+  <text x="295" y="136" class="detail">Culture shock hits</text>
+  <text x="295" y="148" class="detail">Daily life is harder</text>
+  <text x="295" y="160" class="detail">Miss home badly</text>
+  <text x="295" y="172" class="detail">Bureaucracy frustration</text>
+
+  <!-- Phase 3: Adjustment (Months 6-18) -->
+  <rect x="390" y="52" width="170" height="130" rx="8" fill="#f39c12"/>
+  <text x="475" y="72" class="phase-label" fill="#fff">⚖️ Adjustment</text>
+  <text x="475" y="86" class="detail">Months 6–18</text>
+  <text x="475" y="102" class="sp-note">0 SP/week</text>
+  <text x="475" y="114" class="sp-note">−1 social checks</text>
+  <line x1="405" y1="122" x2="545" y2="122" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+  <text x="475" y="136" class="detail">Routines form</text>
+  <text x="475" y="148" class="detail">Find favorite places</text>
+  <text x="475" y="160" class="detail">Local friends appear</text>
+  <text x="475" y="172" class="detail">Small wins accumulate</text>
+
+  <!-- Phase 4: Mastery (Year 2+) -->
+  <rect x="570" y="52" width="170" height="130" rx="8" fill="#27ae60"/>
+  <text x="655" y="72" class="phase-label" fill="#fff">🏠 Mastery</text>
+  <text x="655" y="86" class="detail">Year 2+</text>
+  <text x="655" y="102" class="sp-note">−1 SP/month</text>
+  <text x="655" y="114" class="sp-note">0 social checks</text>
+  <line x1="585" y1="122" x2="725" y2="122" stroke="rgba(255,255,255,0.3)" stroke-width="0.5"/>
+  <text x="655" y="136" class="detail">Feels at home</text>
+  <text x="655" y="148" class="detail">May prefer it to home</text>
+  <text x="655" y="160" class="detail">Fulfillment builds</text>
+  <text x="655" y="172" class="detail">Deep local ties</text>
+
+  <!-- Language milestones row -->
+  <text x="400" y="200" class="title" font-size="12">🗣️ Language Progression (at 45 min/day)</text>
+
+  <rect x="30" y="210" width="110" height="30" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="85" y="224" class="milestone" text-anchor="middle">A1 Beginner</text>
+  <text x="85" y="235" class="axis" text-anchor="middle">Month 2–3</text>
+
+  <rect x="150" y="210" width="110" height="30" rx="4" fill="#d4efdf" stroke="#2ecc71" stroke-width="1"/>
+  <text x="205" y="224" class="milestone" text-anchor="middle">A2 Elementary</text>
+  <text x="205" y="235" class="axis" text-anchor="middle">Month 5–6</text>
+
+  <rect x="270" y="210" width="110" height="30" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="325" y="224" class="milestone" text-anchor="middle">B1 Conversational</text>
+  <text x="325" y="235" class="axis" text-anchor="middle">Month 10–12</text>
+
+  <rect x="390" y="210" width="110" height="30" rx="4" fill="#fdebd0" stroke="#e67e22" stroke-width="1"/>
+  <text x="445" y="224" class="milestone" text-anchor="middle">B2 Fluent</text>
+  <text x="445" y="235" class="axis" text-anchor="middle">Year 2+</text>
+
+  <rect x="510" y="210" width="110" height="30" rx="4" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="565" y="224" class="milestone" text-anchor="middle">C1 Near-Native</text>
+  <text x="565" y="235" class="axis" text-anchor="middle">Year 3+</text>
+
+  <rect x="630" y="210" width="140" height="30" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="700" y="224" class="milestone" text-anchor="middle" fill="#2980b9">🎲 Roll 2d10+INT</text>
+  <text x="700" y="235" class="axis" text-anchor="middle">Monthly progress check</text>
+
+  <!-- RES modifier note -->
+  <rect x="30" y="252" width="740" height="30" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="400" y="266" class="milestone" text-anchor="middle" fill="#e67e22">⚡ RES 14+: Skip or halve Frustration phase · RES 8−: Frustration lasts twice as long</text>
+  <text x="400" y="278" class="axis" text-anchor="middle">Phase transitions are based on real time elapsed, not dice rolls</text>
+
+  <!-- Reverse culture shock -->
+  <rect x="30" y="292" width="740" height="36" rx="6" fill="#e8daef" stroke="#8e44ad" stroke-width="1"/>
+  <text x="400" y="308" class="milestone" text-anchor="middle" fill="#8e44ad">🔄 Reverse Culture Shock (returning home after 6+ months abroad)</text>
+  <text x="400" y="322" class="axis" text-anchor="middle">Weeks 1–2: +3 SP, −2 social · Weeks 3–6: +2 SP, −1 social · Month 2+: Normal baseline returns (permanently changed)</text>
+
+</svg>

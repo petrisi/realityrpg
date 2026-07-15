@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .subtitle { font-size: 11px; fill: #5d6d7e; text-anchor: middle; }
+    .label { font-size: 10px; fill: #2c3e50; font-weight: 600; }
+    .value { font-size: 11px; font-weight: 700; }
+    .note { font-size: 9px; fill: #7f8c8d; }
+  </style>
+
+  <!-- Title -->
+  <text x="330" y="24" class="title">Moving Stress: Compounding SP Costs</text>
+  <text x="330" y="40" class="subtitle">Every move inflicts +5 SP minimum. Complications stack additively.</text>
+
+  <!-- Base stress bar -->
+  <text x="60" y="70" class="label">Base Stress</text>
+  <rect x="180" y="58" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="58" width="100" height="24" rx="12" fill="#27ae60"/>
+  <text x="530" y="74" class="value" fill="#27ae60">+5 SP</text>
+
+  <!-- Complication 1 -->
+  <text x="60" y="105" class="label">Moving alone</text>
+  <rect x="180" y="93" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="93" width="120" height="24" rx="12" fill="#2980b9"/>
+  <text x="530" y="109" class="value" fill="#2980b9">+2 SP</text>
+
+  <!-- Complication 2 -->
+  <text x="60" y="140" class="label">Last-minute move</text>
+  <rect x="180" y="128" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="128" width="140" height="24" rx="12" fill="#f39c12"/>
+  <text x="530" y="144" class="value" fill="#f39c12">+3 SP</text>
+
+  <!-- Complication 3 -->
+  <text x="60" y="175" class="label">Roommate conflict</text>
+  <rect x="180" y="163" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="163" width="140" height="24" rx="12" fill="#f39c12"/>
+  <text x="530" y="179" class="value" fill="#f39c12">+3 SP</text>
+
+  <!-- Complication 4 -->
+  <text x="60" y="210" class="label">Lost / damaged items</text>
+  <rect x="180" y="198" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="198" width="120" height="24" rx="12" fill="#2980b9"/>
+  <text x="530" y="214" class="value" fill="#2980b9">+2 SP</text>
+
+  <!-- Complication 5 -->
+  <text x="60" y="245" class="label">Forgot something</text>
+  <rect x="180" y="233" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="233" width="120" height="24" rx="12" fill="#2980b9"/>
+  <text x="530" y="249" class="value" fill="#2980b9">+2 SP</text>
+
+  <!-- Complication 6 -->
+  <text x="60" y="280" class="label">Extreme weather</text>
+  <rect x="180" y="268" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="268" width="120" height="24" rx="12" fill="#2980b9"/>
+  <text x="530" y="284" class="value" fill="#2980b9">+2 SP</text>
+
+  <!-- Complication 7 -->
+  <text x="60" y="315" class="label">Sell / donate possessions</text>
+  <rect x="180" y="303" width="340" height="24" rx="12" fill="#e8e8e8"/>
+  <rect x="180" y="303" width="140" height="24" rx="12" fill="#f39c12"/>
+  <text x="530" y="319" class="value" fill="#f39c12">+3 SP</text>
+
+  <!-- Worst-case total -->
+  <rect x="40" y="340" width="580" height="36" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="330" y="357" class="value" fill="#e74c3c" text-anchor="middle" font-size="13">⚠️ Worst-Case Total: +5 + 2+3+3+2+2+2+3 = +22 SP</text>
+  <text x="330" y="370" class="note" text-anchor="middle">A single bad move can push a character past their SP max, triggering a Stress Event</text>
+
+  <!-- GM note -->
+  <rect x="40" y="384" width="580" height="24" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="330" y="399" class="note" text-anchor="middle" fill="#2980b9">GM tip: Pick 2–3 complications for a normal move. Use 5+ only for catastrophic scenarios.</text>
+
+</svg>

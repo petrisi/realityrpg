@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .subtitle { font-size: 11px; fill: #5d6d7e; text-anchor: middle; }
+    .label { font-size: 10px; fill: #2c3e50; font-weight: 600; }
+    .value { font-size: 10px; font-weight: 700; }
+    .note { font-size: 9px; fill: #7f8c8d; }
+  </style>
+
+  <!-- Title -->
+  <text x="350" y="24" class="title">Digital Nomad Monthly Budget Breakdown</text>
+  <text x="350" y="40" class="subtitle">Where the money goes each month · Ranges shown as min → max</text>
+
+  <!-- Housing (largest expense) -->
+  <text x="60" y="72" class="label">🏠 Co-living / Housing</text>
+  <rect x="230" y="60" width="420" height="28" rx="14" fill="#e8e8e8"/>
+  <rect x="230" y="60" width="168" height="28" rx="14" fill="#e74c3c"/>
+  <text x="240" y="78" class="value" fill="#fff" font-size="9">min: $800</text>
+  <text x="640" y="78" class="value" fill="#e74c3c">$2,500 max</text>
+
+  <!-- Travel between bases -->
+  <text x="60" y="112" class="label">✈️ Travel Between Bases</text>
+  <rect x="230" y="100" width="420" height="28" rx="14" fill="#e8e8e8"/>
+  <rect x="230" y="100" width="126" height="28" rx="14" fill="#e67e22"/>
+  <text x="240" y="118" class="value" fill="#fff" font-size="9">min: $200</text>
+  <text x="640" y="118" class="value" fill="#e67e22">$1,500 max</text>
+
+  <!-- Coworking -->
+  <text x="60" y="152" class="label">☕ Coworking Membership</text>
+  <rect x="230" y="140" width="420" height="28" rx="14" fill="#e8e8e8"/>
+  <rect x="230" y="140" width="42" height="28" rx="14" fill="#f39c12"/>
+  <text x="280" y="158" class="value" fill="#f39c12">$50–$300</text>
+
+  <!-- Health Insurance -->
+  <text x="60" y="192" class="label">🏥 Health Insurance</text>
+  <rect x="230" y="180" width="420" height="28" rx="14" fill="#e8e8e8"/>
+  <rect x="230" y="180" width="56" height="28" rx="14" fill="#2980b9"/>
+  <text x="290" y="198" class="value" fill="#2980b9">$100–$400</text>
+
+  <!-- Connectivity -->
+  <text x="60" y="232" class="label">📱 Connectivity (Backup)</text>
+  <rect x="230" y="220" width="420" height="28" rx="14" fill="#e8e8e8"/>
+  <rect x="230" y="220" width="28" height="28" rx="14" fill="#27ae60"/>
+  <text x="270" y="238" class="value" fill="#27ae60">$30–$100</text>
+
+  <!-- Shipping -->
+  <text x="60" y="272" class="label">📦 Shipping / Belongings</text>
+  <rect x="230" y="260" width="420" height="28" rx="14" fill="#e8e8e8"/>
+  <rect x="230" y="260" width="42" height="28" rx="14" fill="#8e44ad"/>
+  <text x="280" y="278" class="value" fill="#8e44ad">$50–$200</text>
+
+  <!-- TOTALS BOX -->
+  <rect x="40" y="300" width="620" height="50" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="350" y="322" class="label" text-anchor="middle" font-size="12">💰 Monthly Total</text>
+  <text x="200" y="342" class="value" fill="#27ae60" text-anchor="middle">Budget: ~$1,200/mo</text>
+  <text x="350" y="342" class="value" fill="#f39c12" text-anchor="middle">Comfortable: ~$2,500/mo</text>
+  <text x="500" y="342" class="value" fill="#e74c3c" text-anchor="middle">Premium: ~$5,000/mo</text>
+
+  <!-- Annual comparison -->
+  <rect x="40" y="360" width="620" height="48" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="350" y="378" class="label" text-anchor="middle">📊 Annual Reality Check</text>
+  <text x="350" y="394" class="note" text-anchor="middle">At $2,500/mo: $30,000/year · Freelancer earning $3,500/mo nets ~$12,000 after expenses · Tax filing: +$1,000–$5,000/yr</text>
+  <text x="350" y="406" class="note" text-anchor="middle">Alex spent $18,000 in Year 1, earned $28,000 → net savings dropped from $15K to $5K</text>
+
+</svg>

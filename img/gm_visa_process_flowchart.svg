@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    text { font-size: 10px; fill: #2c3e50; }
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .node { font-size: 10px; font-weight: 600; text-anchor: middle; }
+    .node-sub { font-size: 8.5px; fill: #5d6d7e; text-anchor: middle; font-weight: 400; }
+    .arrow { stroke: #7f8c8d; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .arrow-green { stroke: #27ae60; }
+    .arrow-red { stroke: #e74c3c; }
+    .connector-penalty { stroke: #e74c3c; stroke-width: 1.2; fill: none; stroke-dasharray: 5,3; marker-end: url(#arrowhead-red); }
+    .connector-bonus { stroke: #27ae60; stroke-width: 1.2; fill: none; stroke-dasharray: 5,3; marker-end: url(#arrowhead-green); }
+    .box { rx: 6; ry: 6; }
+    .start { fill: #2c3e50; }
+    .start-text { fill: #fff; font-size: 10px; font-weight: 600; text-anchor: middle; }
+    .process { fill: #eaf2f8; stroke: #2980b9; stroke-width: 1.5; }
+    .decision { fill: #fef9e7; stroke: #f39c12; stroke-width: 1.5; }
+    .end-good { fill: #d5f5e3; stroke: #27ae60; stroke-width: 1.5; }
+    .end-bad { fill: #fadbd8; stroke: #e74c3c; stroke-width: 1.5; }
+    .label { font-size: 8.5px; font-weight: 600; }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7f8c8d"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <text x="350" y="24" class="title">Visa Application Process</text>
+
+  <!-- START -->
+  <rect x="250" y="38" width="200" height="30" class="box start"/>
+  <text x="350" y="57" class="start-text">📋 Choose Visa Type</text>
+
+  <line x1="350" y1="68" x2="350" y2="88" class="arrow"/>
+
+  <!-- Gather docs -->
+  <rect x="250" y="88" width="200" height="34" class="box process"/>
+  <text x="350" y="105" class="node">📝 Gather Documentation</text>
+  <text x="350" y="117" class="node-sub">Proof of funds, letters, records</text>
+
+  <line x1="350" y1="122" x2="350" y2="142" class="arrow"/>
+
+  <!-- Pay fee -->
+  <rect x="250" y="142" width="200" height="34" class="box process"/>
+  <text x="350" y="159" class="node">💰 Pay Application Fee</text>
+  <text x="350" y="171" class="node-sub">$0–$2,500 (non-refundable)</text>
+
+  <line x1="350" y1="176" x2="350" y2="196" class="arrow"/>
+
+  <!-- Submit -->
+  <rect x="250" y="196" width="200" height="34" class="box process"/>
+  <text x="350" y="213" class="node">📮 Submit Application</text>
+  <text x="350" y="225" class="node-sub">Online or in-person filing</text>
+
+  <line x1="350" y1="230" x2="350" y2="250" class="arrow"/>
+
+  <!-- Processing wait -->
+  <rect x="250" y="250" width="200" height="34" class="box decision"/>
+  <text x="350" y="267" class="node">⏳ Processing Wait</text>
+  <text x="350" y="279" class="node-sub">1–3 weeks to 24 months</text>
+
+  <!-- During processing side note -->
+  <line x1="450" y1="267" x2="500" y2="267" class="arrow"/>
+  <rect x="500" y="250" width="170" height="34" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="585" y="267" class="node" font-size="9">😰 Processing Anxiety</text>
+  <text x="585" y="279" class="node-sub" font-size="8">+1 SP/week beyond expected</text>
+
+  <!-- Irregularity note — positioned between Processing Wait and Interview -->
+  <rect x="40" y="284" width="80" height="40" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="80" y="301" class="node" font-size="8">⚠️ Irregularities</text>
+  <text x="80" y="311" class="node-sub" font-size="7.5">TN +2 for gaps,</text>
+  <text x="80" y="320" class="node-sub" font-size="7.5">prior denials, etc.</text>
+
+  <!-- Dashed connector: Irregularities → Interview (short, curves up-right) -->
+  <path d="M 120 304 C 180 304, 200 328, 250 328" class="connector-penalty"/>
+
+  <line x1="350" y1="284" x2="350" y2="304" class="arrow"/>
+
+  <!-- Interview -->
+  <rect x="250" y="304" width="200" height="34" class="box decision"/>
+  <text x="350" y="321" class="node">🎤 Visa Interview</text>
+  <text x="350" y="333" class="node-sub">Roll 2d10+PRC+EXP/2 vs TN 12</text>
+
+  <!-- Language bonus note — positioned along bottom of Interview -->
+  <rect x="20" y="340" width="100" height="40" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="70" y="357" class="node" font-size="8" fill="#27ae60">🗣️ Language</text>
+  <text x="70" y="367" class="node-sub" font-size="7.5">Conversational+</text>
+  <text x="70" y="376" class="node-sub" font-size="7.5">in host lang. = TN−2</text>
+
+  <!-- Dashed connector: Language → Interview (short, curves up-right) -->
+  <path d="M 120 360 C 180 360, 200 340, 250 335" class="connector-bonus"/>
+
+  <!-- APPROVED branch -->
+  <line x1="310" y1="338" x2="200" y2="366" class="arrow" style="marker-end:url(#arrowhead-green)"/>
+  <text x="255" y="358" class="label" fill="#27ae60" text-anchor="middle">Approved ✓</text>
+
+  <rect x="140" y="366" width="120" height="30" class="box end-good"/>
+  <text x="200" y="385" class="node">✅ Visa Granted</text>
+
+  <!-- Move forward -->
+  <line x1="200" y1="396" x2="200" y2="416" class="arrow" style="marker-end:url(#arrowhead-green)"/>
+  <rect x="140" y="416" width="120" height="30" class="box end-good"/>
+  <text x="200" y="435" class="node">✈️ Move Forward</text>
+
+  <!-- Expat life begins — taller box to fit 2 lines -->
+  <line x1="200" y1="446" x2="200" y2="466" class="arrow" style="marker-end:url(#arrowhead-green)"/>
+  <rect x="140" y="466" width="120" height="42" class="box end-good"/>
+  <text x="200" y="482" class="node">🌏 Expat Life</text>
+  <text x="200" y="498" class="node-sub">Adaptation curve starts</text>
+
+  <!-- DEFERRED branch -->
+  <line x1="350" y1="338" x2="350" y2="366" class="arrow"/>
+  <text x="360" y="358" class="label" fill="#f39c12" text-anchor="start">Deferred</text>
+
+  <rect x="290" y="366" width="120" height="30" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="350" y="385" class="node">📋 More Evidence</text>
+
+  <line x1="350" y1="396" x2="350" y2="416" class="arrow"/>
+  <rect x="290" y="416" width="120" height="30" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="350" y="435" class="node">⏱️ +1–3 months</text>
+
+  <!-- Loop back arrow -->
+  <path d="M 410 431 C 470 431, 470 338, 410 338" class="arrow" fill="none"/>
+
+  <!-- DENIED branch -->
+  <line x1="390" y1="338" x2="500" y2="366" class="arrow" style="marker-end:url(#arrowhead-red)"/>
+  <text x="445" y="358" class="label" fill="#e74c3c" text-anchor="middle">Denied ✗</text>
+
+  <rect x="440" y="366" width="120" height="30" class="box end-bad"/>
+  <text x="500" y="385" class="node">❌ Visa Denied</text>
+
+  <!-- Denial consequences -->
+  <line x1="500" y1="396" x2="500" y2="416" class="arrow" style="marker-end:url(#arrowhead-red)"/>
+  <rect x="440" y="416" width="120" height="60" class="box end-bad"/>
+  <text x="500" y="433" class="node">💸 Fees lost</text>
+  <text x="500" y="445" class="node">😰 +5–10 SP</text>
+  <text x="500" y="457" class="node">💼 Job offer rescinded</text>
+
+  <!-- Second denial — taller box to fit 2 lines -->
+  <line x1="500" y1="476" x2="500" y2="496" class="arrow" style="marker-end:url(#arrowhead-red)"/>
+  <rect x="440" y="496" width="120" height="42" class="box end-bad"/>
+  <text x="500" y="512" class="node">2nd Fail = 1–3 yr</text>
+  <text x="500" y="528" class="node">reapply ban</text>
+
+</svg>
