@@ -42,16 +42,20 @@
   <!-- Ladder levels: L1 and L2 use merged single-line text to fit narrow bars -->
 
   <!-- Level 1 (bottom) - green #27ae60 -->
-  <!-- FIX: merged "Nothing major | No check needed" into one centered line -->
-  <rect x="200" y="430" width="160" height="28" rx="6" fill="#27ae60" filter="url(#shadow)" opacity="0.92"/>
-  <text x="208" y="448" class="level-num">1</text>
-  <text x="222" y="448" class="level-check-narrow" text-anchor="middle">Nothing major — No check</text>
+  <!-- Widened bar from 160→200px to fit roll+desc+check without overlap -->
+  <rect x="180" y="430" width="200" height="28" rx="6" fill="#27ae60" filter="url(#shadow)" opacity="0.92"/>
+  <text x="188" y="448" class="level-num">1</text>
+  <text x="202" y="442" class="level-roll">Roll 1–30</text>
+  <text x="202" y="453" class="level-desc">Nothing major</text>
+  <text x="372" y="448" class="level-check" text-anchor="end">No check</text>
 
   <!-- Level 2 - light green #52c77a -->
-  <!-- FIX: merged "Minor boundary testing | RES TN 40" into one centered line -->
-  <rect x="185" y="398" width="190" height="28" rx="6" fill="#38b060" filter="url(#shadow)" opacity="0.92"/>
-  <text x="193" y="416" class="level-num">2</text>
-  <text x="215" y="416" class="level-check-narrow" text-anchor="middle">Boundary testing — RES TN 40</text>
+  <!-- Widened bar from 190→230px to fit roll+desc+check without overlap -->
+  <rect x="165" y="398" width="230" height="28" rx="6" fill="#38b060" filter="url(#shadow)" opacity="0.92"/>
+  <text x="173" y="416" class="level-num">2</text>
+  <text x="187" y="410" class="level-roll">Roll 31–45</text>
+  <text x="187" y="421" class="level-desc">Minor boundary testing</text>
+  <text x="388" y="416" class="level-check" text-anchor="end">RES TN 40</text>
 
   <!-- Level 3 - yellow-green #8cc63f -->
   <rect x="170" y="366" width="220" height="28" rx="6" fill="#7ab630" filter="url(#shadow)" opacity="0.92"/>
