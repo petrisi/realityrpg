@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="1200" height="350">
+  <defs>
+    <filter id="shadow" x="-2%" y="-4%" width="104%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fdfaf6"/>
+      <stop offset="100%" stop-color="#f5efe8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="350" rx="12" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="bold" fill="#3e3a34">Pregnancy Journey — 9 Months + Postpartum</text>
+  <line x1="80" y1="50" x2="1120" y2="50" stroke="#d4c5b5" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Segment 1: Trimester 1 (Wk 1–12) — 220px wide -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="62" width="220" height="268" rx="14" fill="#27ae60" fill-opacity="0.12" stroke="#27ae60" stroke-width="2" stroke-opacity="0.45"/>
+  </g>
+  <text x="130" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">🌱</text>
+  <text x="130" y="114" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e8449">Trimester 1</text>
+  <text x="130" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#555">Wk 1–12</text>
+  <line x1="55" y1="144" x2="205" y2="144" stroke="#27ae60" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="130" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">VIG checks at +5 TN</text>
+  <text x="130" y="188" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">−1 to all checks (fatigue)</text>
+  <text x="130" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">+2 SP/day (hormone swings)</text>
+  <text x="130" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">$100–$300/visit</text>
+
+  <!-- Arrow 1→2 -->
+  <g transform="translate(248, 196)">
+    <path d="M0,-6 L10,0 L0,6" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Segment 2: Trimester 2 (Wk 13–26) — 220px wide -->
+  <g filter="url(#shadow)">
+    <rect x="268" y="62" width="220" height="268" rx="14" fill="#2ecc71" fill-opacity="0.12" stroke="#2ecc71" stroke-width="2" stroke-opacity="0.45"/>
+  </g>
+  <text x="378" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">🌿</text>
+  <text x="378" y="114" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#196f3d">Trimester 2</text>
+  <text x="378" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#555">Wk 13–26</text>
+  <line x1="303" y1="144" x2="453" y2="144" stroke="#2ecc71" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="378" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">Energy returns (−1 removed)</text>
+  <text x="378" y="188" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">Weekly VIG TN 30 (back pain)</text>
+  <text x="378" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">+1 SP/day (anxiety builds)</text>
+  <text x="378" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">$1K–$3K baby gear</text>
+
+  <!-- Arrow 2→3 -->
+  <g transform="translate(496, 196)">
+    <path d="M0,-6 L10,0 L0,6" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Segment 3: Trimester 3 (Wk 27–40) — 220px wide -->
+  <g filter="url(#shadow)">
+    <rect x="516" y="62" width="220" height="268" rx="14" fill="#f39c12" fill-opacity="0.12" stroke="#f39c12" stroke-width="2" stroke-opacity="0.45"/>
+  </g>
+  <text x="626" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">🌳</text>
+  <text x="626" y="114" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#d68910">Trimester 3</text>
+  <text x="626" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#555">Wk 27–40</text>
+  <line x1="551" y1="144" x2="701" y2="144" stroke="#f39c12" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="626" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">DXT −1 (mobility)</text>
+  <text x="626" y="188" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">Starts each day Tired</text>
+  <text x="626" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">+3 SP/day (birth anxiety)</text>
+  <text x="626" y="232" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">$150–$500 hospital prep</text>
+
+  <!-- Arrow 3→4 -->
+  <g transform="translate(744, 196)">
+    <path d="M0,-6 L10,0 L0,6" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Segment 4: Birth (1–7+ days) — 140px wide (narrow) -->
+  <g filter="url(#shadow)">
+    <rect x="762" y="62" width="140" height="268" rx="14" fill="#e67e22" fill-opacity="0.12" stroke="#e67e22" stroke-width="2" stroke-opacity="0.45"/>
+  </g>
+  <text x="832" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">👶</text>
+  <text x="832" y="114" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ca6f1e">Birth</text>
+  <text x="832" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#555">1–7+ days</text>
+  <line x1="787" y1="144" x2="897" y2="144" stroke="#e67e22" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="832" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">2d10 roll on 4 tables</text>
+  <text x="832" y="188" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">+2 to +20 SP</text>
+  <text x="832" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">$3K–$50K+</text>
+
+  <!-- Arrow 4→5 -->
+  <g transform="translate(908, 196)">
+    <path d="M0,-6 L10,0 L0,6" fill="none" stroke="#bbb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Segment 5: Postpartum (6wk–1yr) — 268px wide (widest) -->
+  <g filter="url(#shadow)">
+    <rect x="926" y="62" width="268" height="268" rx="14" fill="#8e44ad" fill-opacity="0.12" stroke="#8e44ad" stroke-width="2" stroke-opacity="0.45"/>
+  </g>
+  <text x="1060" y="92" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22">🌙</text>
+  <text x="1060" y="114" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#764492">Postpartum</text>
+  <text x="1060" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#555">6wk–1yr</text>
+  <line x1="956" y1="144" x2="1164" y2="144" stroke="#8e44ad" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="1060" y="166" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">Always starts Tired</text>
+  <text x="1060" y="188" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">+2 SP/week × 3 months</text>
+  <text x="1060" y="210" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">Baby sleeps through night:</text>
+  <text x="1060" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">2d10 TN 50</text>
+  <text x="1060" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#333">$500–$2K/month</text>
+
+</svg>

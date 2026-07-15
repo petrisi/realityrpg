@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 530" width="700" height="530">
+  <defs>
+    <style>
+      text { font-family: system-ui, sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #e8e0d4; }
+      .subtitle { font-size: 12px; fill: #b0a898; }
+      .level-num { font-size: 13px; font-weight: 700; fill: #fff; }
+      .level-desc { font-size: 11.5px; font-weight: 600; fill: #fff; }
+      .level-roll { font-size: 10.5px; fill: rgba(255,255,255,0.85); }
+      .level-check { font-size: 10px; fill: rgba(255,255,255,0.75); }
+      .outcome-label { font-size: 11px; font-weight: 600; }
+      .outcome-text { font-size: 10.5px; }
+      .footer { font-size: 10px; fill: #b0a898; }
+    </style>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="530" rx="12" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#fff" stroke-width="0.5">
+    <line x1="0" y1="100" x2="700" y2="100"/><line x1="0" y1="200" x2="700" y2="200"/>
+    <line x1="0" y1="300" x2="700" y2="300"/><line x1="0" y1="400" x2="700" y2="400"/>
+    <line x1="0" y1="500" x2="700" y2="500"/>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <text x="280" y="38" text-anchor="middle" class="title">Teenage Rebellion — Escalation Ladder</text>
+  <text x="280" y="56" text-anchor="middle" class="subtitle">GM rolls 2d10 each year  |  Parent response check determines outcome</text>
+
+  <!-- Horizontal divider -->
+  <line x1="100" y1="66" x2="460" y2="66" stroke="#3a3a5c" stroke-width="1"/>
+
+  <!-- Ladder levels (unchanged Y positions) -->
+
+  <!-- Level 1 (bottom) - green #27ae60 -->
+  <rect x="200" y="430" width="160" height="28" rx="6" fill="#27ae60" filter="url(#shadow)" opacity="0.92"/>
+  <text x="208" y="448" class="level-num">1</text>
+  <text x="222" y="442" class="level-roll">Roll 1–30</text>
+  <text x="222" y="453" class="level-desc">Nothing major</text>
+  <text x="350" y="448" class="level-check" text-anchor="end">No check needed</text>
+
+  <!-- Level 2 - light green #52c77a -->
+  <rect x="185" y="398" width="190" height="28" rx="6" fill="#38b060" filter="url(#shadow)" opacity="0.92"/>
+  <text x="193" y="416" class="level-num">2</text>
+  <text x="207" y="410" class="level-roll">Roll 31–45</text>
+  <text x="207" y="421" class="level-desc">Minor boundary testing</text>
+  <text x="368" y="416" class="level-check" text-anchor="end">RES TN 40</text>
+
+  <!-- Level 3 - yellow-green #8cc63f -->
+  <rect x="170" y="366" width="220" height="28" rx="6" fill="#7ab630" filter="url(#shadow)" opacity="0.92"/>
+  <text x="178" y="384" class="level-num">3</text>
+  <text x="192" y="378" class="level-roll">Roll 46–55</text>
+  <text x="192" y="389" class="level-desc">Academic decline</text>
+  <text x="383" y="384" class="level-check" text-anchor="end">INT+RES TN 45</text>
+
+  <!-- Level 4 - yellow #d4a017 -->
+  <rect x="155" y="334" width="250" height="28" rx="6" fill="#c49a1a" filter="url(#shadow)" opacity="0.92"/>
+  <text x="163" y="352" class="level-num">4</text>
+  <text x="177" y="346" class="level-roll">Roll 56–65</text>
+  <text x="177" y="357" class="level-desc">Risky behavior</text>
+  <text x="398" y="352" class="level-check" text-anchor="end">RES TN 50</text>
+
+  <!-- Level 5 - orange #e67e22 -->
+  <rect x="140" y="302" width="280" height="28" rx="6" fill="#d4751e" filter="url(#shadow)" opacity="0.92"/>
+  <text x="148" y="320" class="level-num">5</text>
+  <text x="162" y="314" class="level-roll">Roll 66–72</text>
+  <text x="162" y="325" class="level-desc">Serious behavioral issue</text>
+  <text x="413" y="320" class="level-check" text-anchor="end">EXP+RES TN 55</text>
+
+  <!-- Level 6 - red-orange #e74c3c -->
+  <rect x="125" y="270" width="310" height="28" rx="6" fill="#d44330" filter="url(#shadow)" opacity="0.92"/>
+  <text x="133" y="288" class="level-num">6</text>
+  <text x="147" y="282" class="level-roll">Roll 73–80</text>
+  <text x="147" y="293" class="level-desc">Mental health crisis</text>
+  <text x="428" y="288" class="level-check" text-anchor="end">INT TN 50</text>
+
+  <!-- Level 7 - red #c0392b -->
+  <rect x="110" y="238" width="340" height="28" rx="6" fill="#b83228" filter="url(#shadow)" opacity="0.92"/>
+  <text x="118" y="256" class="level-num">7</text>
+  <text x="132" y="250" class="level-roll">Roll 81–88</text>
+  <text x="132" y="261" class="level-desc">Legal trouble</text>
+  <text x="443" y="256" class="level-check" text-anchor="end">EXP TN 60</text>
+
+  <!-- Level 8 - dark red #a02020 -->
+  <rect x="95" y="206" width="370" height="28" rx="6" fill="#9e1e1e" filter="url(#shadow)" opacity="0.92"/>
+  <text x="103" y="224" class="level-num">8</text>
+  <text x="117" y="218" class="level-roll">Roll 89–95</text>
+  <text x="117" y="229" class="level-desc">Teen pregnancy</text>
+  <text x="458" y="224" class="level-check" text-anchor="end">RES TN 60</text>
+
+  <!-- Level 9 - very dark red #7a1515 -->
+  <rect x="80" y="174" width="400" height="28" rx="6" fill="#7a1515" filter="url(#shadow)" opacity="0.92"/>
+  <text x="88" y="192" class="level-num">9</text>
+  <text x="102" y="186" class="level-roll">Roll 96–99</text>
+  <text x="102" y="197" class="level-desc">Substance abuse disorder</text>
+  <text x="473" y="192" class="level-check" text-anchor="end">RES TN 65</text>
+
+  <!-- Level 10 (top) - darkest #3d0c0c -->
+  <rect x="65" y="142" width="430" height="28" rx="6" fill="#3d0c0c" filter="url(#shadow)" opacity="0.95"/>
+  <text x="73" y="160" class="level-num">10</text>
+  <text x="87" y="154" class="level-roll">Roll 100</text>
+  <text x="87" y="165" class="level-desc">Catastrophic event</text>
+  <text x="488" y="160" class="level-check" text-anchor="end">+15 SP</text>
+
+  <!-- Escalation arrow on left side -->
+  <g opacity="0.5" stroke="#b0a898" stroke-width="1.5" fill="none">
+    <path d="M 62 170 L 62 430"/>
+    <polygon points="56,434 62,444 68,434" fill="#b0a898" stroke="none"/>
+  </g>
+  <text x="62" y="300" text-anchor="middle" font-size="9" fill="#b0a898" transform="rotate(-90,62,300)">SEVERITY ↑</text>
+
+  <!-- Outcome indicators on the right side -->
+  <g transform="translate(520, 100)">
+    <rect x="0" y="0" width="165" height="200" rx="8" fill="#1e1e3a" stroke="#3a3a5c" stroke-width="1"/>
+    <text x="82" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#e8e0d4">Outcomes</text>
+    <line x1="20" y1="30" x2="145" y2="30" stroke="#3a3a5c" stroke-width="0.8"/>
+
+    <!-- Success -->
+    <g transform="translate(15, 42)">
+      <circle cx="8" cy="0" r="7" fill="#27ae60" opacity="0.25"/>
+      <text x="8" y="4" text-anchor="middle" font-size="11" fill="#27ae60" font-weight="700">✓</text>
+      <text x="22" y="4" class="outcome-label" fill="#27ae60">Success</text>
+      <text x="22" y="18" class="outcome-text" fill="#a0a898">Handled constructively</text>
+    </g>
+
+    <!-- Partial -->
+    <g transform="translate(15, 80)">
+      <circle cx="8" cy="0" r="7" fill="#d4a017" opacity="0.25"/>
+      <text x="8" y="4" text-anchor="middle" font-size="11" fill="#d4a017" font-weight="700">—</text>
+      <text x="22" y="4" class="outcome-label" fill="#d4a017">Partial</text>
+      <text x="22" y="18" class="outcome-text" fill="#a0a898">Resolved with tension</text>
+    </g>
+
+    <!-- Failure -->
+    <g transform="translate(15, 118)">
+      <circle cx="8" cy="0" r="7" fill="#e74c3c" opacity="0.25"/>
+      <text x="8" y="4" text-anchor="middle" font-size="11" fill="#e74c3c" font-weight="700">✗</text>
+      <text x="22" y="4" class="outcome-label" fill="#e74c3c">Failure</text>
+      <text x="22" y="18" class="outcome-text" fill="#a0a898">Escalates + Strained</text>
+      <text x="22" y="30" class="outcome-text" fill="#a0a898">Relationship trait</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="15" y1="162" x2="150" y2="162" stroke="#3a3a5c" stroke-width="0.5"/>
+
+    <!-- Note -->
+    <text x="82" y="180" text-anchor="middle" font-size="8.5" fill="#808878" font-style="italic">Based on parent</text>
+    <text x="82" y="191" text-anchor="middle" font-size="8.5" fill="#808878" font-style="italic">response check</text>
+  </g>
+
+  <!-- Bottom warning note — shifted down to fill space -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="500" height="30" rx="6" fill="#1e1e3a" stroke="#3a3a5c" stroke-width="0.8"/>
+    <text x="250" y="19" text-anchor="middle" font-size="10.5" fill="#b0a898">
+      ⚠️ Parents who successfully monitor teen mental health gain +1 EXP and −1 to future Rebellion TNs
+    </text>
+  </g>
+
+  <!-- Decorative corner accents — bottom ones adjusted for new height -->
+  <g opacity="0.15" stroke="#e8e0d4" stroke-width="1" fill="none">
+    <path d="M 12,24 L 12,12 L 24,12"/>
+    <path d="M 688,24 L 688,12 L 676,12"/>
+    <path d="M 12,506 L 12,518 L 24,518"/>
+    <path d="M 688,506 L 688,518 L 676,518"/>
+  </g>
+</svg>

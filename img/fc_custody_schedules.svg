@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <defs>
+    <style>
+      text {
+        font-family: system-ui, sans-serif;
+      }
+      .title {
+        font-size: 18px;
+        font-weight: 700;
+        fill: #1a252f;
+      }
+      .subtitle {
+        font-size: 11px;
+        fill: #7f8c8d;
+      }
+      .day-header {
+        font-size: 11px;
+        font-weight: 600;
+        fill: #2c3e50;
+        text-anchor: middle;
+      }
+      .row-label {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #1a252f;
+        dominant-baseline: middle;
+      }
+      .row-sublabel {
+        font-size: 9px;
+        fill: #7f8c8d;
+        dominant-baseline: middle;
+      }
+      .legend-text {
+        font-size: 12px;
+        fill: #2c3e50;
+      }
+      .week-label {
+        font-size: 10px;
+        font-weight: 600;
+        fill: #95a5a6;
+        text-anchor: middle;
+      }
+    </style>
+
+    <!-- Cell styles -->
+    <style>
+      .cell-a { fill: #d6eaf8; stroke: #2980b9; stroke-width: 1.5; }
+      .cell-b { fill: #d5f5e3; stroke: #27ae60; stroke-width: 1.5; }
+      .cell-s { fill: #e8daef; stroke: #8e44ad; stroke-width: 1.5; }
+      .cell-split { stroke: #2980b9; stroke-width: 1.5; }
+      .cell-header { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#fdfefe" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="30" class="title" text-anchor="middle">Co-Parenting Custody Schedules — Weekly View</text>
+  <text x="450" y="48" class="subtitle" text-anchor="middle">Reality RPG • Family Court Decision Tracker</text>
+
+  <!-- Column headers (Mon-Sun) - positioned at x=200 to 840, each cell 60px wide -->
+  <!-- Row 3 has 14 days, so we need a wider header area. Let's use day headers at top and week labels -->
+  <!-- For rows 1,2,4: 7 cells × 60px = 420px, starting at x=200 -->
+  <!-- For row 3: 14 cells × 30px = 420px, starting at x=200 -->
+
+  <!-- Day headers for 7-day rows (rows 1, 2, 4) -->
+  <g transform="translate(200, 60)">
+    <rect x="0"  y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="30" y="14" class="day-header">Mon</text>
+    <rect x="60" y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="90" y="14" class="day-header">Tue</text>
+    <rect x="120" y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="150" y="14" class="day-header">Wed</text>
+    <rect x="180" y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="210" y="14" class="day-header">Thu</text>
+    <rect x="240" y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="270" y="14" class="day-header">Fri</text>
+    <rect x="300" y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="330" y="14" class="day-header">Sat</text>
+    <rect x="360" y="0" width="60" height="20" class="cell-header" rx="3"/>
+    <text x="390" y="14" class="day-header">Sun</text>
+  </g>
+
+  <!-- ============ ROW 1: Sole Custody ============ -->
+  <!-- Label -->
+  <text x="190" y="115" class="row-label" text-anchor="end">Sole Custody</text>
+  <text x="190" y="130" class="row-sublabel" text-anchor="end">EXP TN 60 to win in court | High-conflict</text>
+
+  <!-- Cells: All Parent A, Saturday half green -->
+  <g transform="translate(200, 95)">
+    <!-- Mon - Parent A -->
+    <rect x="0"   y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="30" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Tue - Parent A -->
+    <rect x="60"  y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="90" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Wed - Parent A -->
+    <rect x="120" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="150" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Thu - Parent A -->
+    <rect x="180" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="210" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Fri - Parent A -->
+    <rect x="240" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="270" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Sat - Split (half A, half B visitation) -->
+    <rect x="300" y="0" width="60" height="40" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5" rx="4"/>
+    <line x1="360" y1="0" x2="360" y2="40" stroke="#27ae60" stroke-width="3"/>
+    <rect x="360" y="0" width="0" height="40" fill="#d5f5e3" opacity="0"/>
+    <rect x="330" y="0" width="30" height="40" fill="#d5f5e3" opacity="0.7" rx="0"/>
+    <text x="330" y="23" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <text x="390" y="23" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <!-- Sun - Parent A -->
+    <rect x="360" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="390" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+  </g>
+
+  <!-- ============ ROW 2: Primary + Visitation ============ -->
+  <!-- Label -->
+  <text x="190" y="185" class="row-label" text-anchor="end">Primary + Visitation</text>
+  <text x="190" y="200" class="row-sublabel" text-anchor="end">EXP TN 50 to negotiate | Most common</text>
+
+  <!-- Cells: Mon-Fri Parent A, Sat-Sun Parent B -->
+  <g transform="translate(200, 165)">
+    <!-- Mon - Parent A -->
+    <rect x="0"   y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="30" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Tue - Parent A -->
+    <rect x="60"  y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="90" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Wed - Parent A -->
+    <rect x="120" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="150" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Thu - Parent A -->
+    <rect x="180" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="210" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Fri - Parent A -->
+    <rect x="240" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="270" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Sat - Parent B -->
+    <rect x="300" y="0" width="60" height="40" class="cell-b" rx="4"/>
+    <text x="330" y="23" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="600">B</text>
+    <!-- Sun - Parent B -->
+    <rect x="360" y="0" width="60" height="40" class="cell-b" rx="4"/>
+    <text x="390" y="23" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="600">B</text>
+  </g>
+
+  <!-- ============ ROW 3: Joint Physical (2-2-3) — 14 days ============ -->
+  <!-- Label -->
+  <text x="190" y="270" class="row-label" text-anchor="end">Joint Physical (2-2-3)</text>
+  <text x="190" y="285" class="row-sublabel" text-anchor="end">RES TN 45 both cooperate | Low-conflict</text>
+
+  <!-- Week headers for 14-day view -->
+  <g transform="translate(200, 248)">
+    <text x="75"  y="10" class="week-label">Week 1</text>
+    <text x="315" y="10" class="week-label">Week 2</text>
+    <line x1="140" y1="12" x2="140" y2="16" stroke="#bdc3c7" stroke-width="1"/>
+    <line x1="280" y1="12" x2="280" y2="16" stroke="#bdc3c7" stroke-width="1"/>
+    <line x1="420" y1="12" x2="420" y2="16" stroke="#bdc3c7" stroke-width="1"/>
+  </g>
+
+  <!-- Day mini-headers for 14 days -->
+  <g transform="translate(200, 258)">
+    <text x="15"  y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">M</text>
+    <text x="45"  y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">T</text>
+    <text x="75"  y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">W</text>
+    <text x="105" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">T</text>
+    <text x="135" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">F</text>
+    <text x="165" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">S</text>
+    <text x="195" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">S</text>
+    <text x="225" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">M</text>
+    <text x="255" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">T</text>
+    <text x="285" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">W</text>
+    <text x="315" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">T</text>
+    <text x="345" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">F</text>
+    <text x="375" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">S</text>
+    <text x="405" y="10" font-size="8" fill="#95a5a6" text-anchor="middle" font-weight="600">S</text>
+  </g>
+
+  <!-- Cells: Week 1: Mon-Tue A, Wed-Thu B, Fri-Sun A | Week 2: Mon-Tue B, Wed-Thu A, Fri-Sun B -->
+  <g transform="translate(200, 272)">
+    <!-- Week 1 -->
+    <rect x="0"   y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="15" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <rect x="30"  y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="45" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <rect x="60"  y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="75" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <rect x="90"  y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="105" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <rect x="120" y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="135" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <rect x="150" y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="165" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <rect x="180" y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="195" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <!-- Week 2 -->
+    <rect x="210" y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="225" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <rect x="240" y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="255" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <rect x="270" y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="285" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <rect x="300" y="0" width="30" height="40" class="cell-a" rx="3"/>
+    <text x="315" y="22" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">A</text>
+    <rect x="330" y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="345" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <rect x="360" y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="375" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+    <rect x="390" y="0" width="30" height="40" class="cell-b" rx="3"/>
+    <text x="405" y="22" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">B</text>
+  </g>
+
+  <!-- ============ ROW 4: Shared Legal, Primary Physical ============ -->
+  <!-- Label -->
+  <text x="190" y="375" class="row-label" text-anchor="end">Shared Legal, Primary Physical</text>
+  <text x="190" y="390" class="row-sublabel" text-anchor="end">INT TN 45 navigate legal | Moderate-conflict</text>
+
+  <!-- Cells: Mon-Wed A, Thu B, Fri-Sat A, Sun shared -->
+  <g transform="translate(200, 355)">
+    <!-- Mon - Parent A -->
+    <rect x="0"   y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="30" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Tue - Parent A -->
+    <rect x="60"  y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="90" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Wed - Parent A -->
+    <rect x="120" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="150" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Thu - Parent B -->
+    <rect x="180" y="0" width="60" height="40" class="cell-b" rx="4"/>
+    <text x="210" y="23" text-anchor="middle" font-size="10" fill="#27ae60" font-weight="600">B</text>
+    <!-- Fri - Parent A -->
+    <rect x="240" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="270" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Sat - Parent A -->
+    <rect x="300" y="0" width="60" height="40" class="cell-a" rx="4"/>
+    <text x="330" y="23" text-anchor="middle" font-size="10" fill="#2980b9" font-weight="600">A</text>
+    <!-- Sun - Shared -->
+    <rect x="360" y="0" width="60" height="40" class="cell-s" rx="4"/>
+    <text x="390" y="23" text-anchor="middle" font-size="9" fill="#8e44ad" font-weight="600">A+B</text>
+  </g>
+
+  <!-- ============ LEGEND ============ -->
+  <g transform="translate(200, 440)">
+    <!-- Legend background -->
+    <rect x="0" y="-12" width="500" height="48" fill="#f8f9fa" rx="6" stroke="#ecf0f1" stroke-width="1"/>
+
+    <!-- Parent A -->
+    <rect x="15" y="0" width="18" height="18" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5" rx="3"/>
+    <text x="40" y="14" class="legend-text">Parent A (Mother)</text>
+
+    <!-- Parent B -->
+    <rect x="175" y="0" width="18" height="18" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" rx="3"/>
+    <text x="200" y="14" class="legend-text">Parent B (Father)</text>
+
+    <!-- Shared -->
+    <rect x="340" y="0" width="18" height="18" fill="#e8daef" stroke="#8e44ad" stroke-width="1.5" rx="3"/>
+    <text x="365" y="14" class="legend-text">Shared / Transition</text>
+  </g>
+
+</svg>

@@ -29,8 +29,21 @@
 
 <p>Children in Reality RPG are not side quests. They are <em>campaign-altering events</em>. A player who chooses to parent is choosing to play a harder game — and one that rewards patience, resilience, and love in ways no dungeon crawl ever could.</p>
 
+<!-- FAMILY LIFE ARC TIMELINE -->
+<div class="section-illustration">
+  <img src="img/fc_family_life_arc.svg" alt="The Reality RPG Family Arc — 23 Years of Parenthood: Fertility → Pregnancy → Infant → Toddler → School Age → Teen → College">
+</div>
+
+<!-- PARENTAL STRESS SPIRAL -->
+<div class="section-illustration">
+  <img src="img/fc_parental_stress_spiral.svg" alt="The Parental Stress Compound Effect — flowchart showing how SP compounds from fertility through child crises">
+</div>
+
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 1: INFERTILITY & FERTILITY TREATMENTS -->
+<!-- ============================================================ -->
 <h2>1. Infertility &amp; Fertility Treatments</h2>
 
 <p>Not every couple who wants a child can conceive easily. Roughly 1 in 8 couples in the US experience infertility. In Reality RPG, this is modeled as a <strong>Trying to Conceive</strong> track that can become a source of significant stress.</p>
@@ -38,21 +51,52 @@
 <h3>1a. Trying to Conceive — Monthly Cycle</h3>
 <p>Each month a couple tries, the GM rolls <span class="dice">2d10</span> against a <strong>Fertility Target Number</strong> based on the ages of both partners:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Combined Age<br>(Partner A + Partner B)</th><th>Fertility TN</th><th>Monthly Chance</th></tr></thead>
-<tbody>
-<tr><td>40–49</td><td>25</td><td>~25% per cycle</td></tr>
-<tr><td>50–59</td><td>30</td><td>~20% per cycle</td></tr>
-<tr><td>60–69</td><td>40</td><td>~15% per cycle</td></tr>
-<tr><td>70–79</td><td>55</td><td>~10% per cycle</td></tr>
-<tr><td>80–89</td><td>70</td><td>~7% per cycle</td></tr>
-<tr><td>90+</td><td>85</td><td>~3% per cycle</td></tr>
-</tbody>
-</table>
+<!-- P1-1: Fertility TN → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">25</span>
+    <span class="tn-label">Combined Age 40–49 — ~25% per cycle</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">30</span>
+    <span class="tn-label">Combined Age 50–59 — ~20% per cycle</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">40</span>
+    <span class="tn-label">Combined Age 60–69 — ~15% per cycle</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">55</span>
+    <span class="tn-label">Combined Age 70–79 — ~10% per cycle</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">70</span>
+    <span class="tn-label">Combined Age 80–89 — ~7% per cycle</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">85</span>
+    <span class="tn-label">Combined Age 90+ — ~3% per cycle</span>
+  </div>
 </div>
 
 <p>Roll <span class="dice">2d10</span>. If the result is <strong>≤ TN</strong>, pregnancy occurs that cycle. If the roll fails, the couple learns they are not pregnant — and the pregnant partner gains <strong>+2 SP</strong> from the emotional letdown.</p>
+
+<!-- P1-26: Stress bars for cumulative SP -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔄 6 failed cycles</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill elevated"></div></div>
+  <span>+12 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔄 12 failed cycles</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  <span>+36 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💉 IVF failures</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+  <span>+70 SP</span>
+</div>
 
 <div class="callout rule">
   <div class="callout-title">⚖️ Rule: Cumulative Stress of Trying</div>
@@ -62,37 +106,64 @@
 <h3>1b. Fertility Testing</h3>
 <p>After 6–12 months of unsuccessful trying, a couple may pursue medical evaluation. This triggers its own <span class="dice">2d10</span> checks:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Test</th><th>Cost</th><th>Covered by Insurance?</th><th>What It Reveals</th></tr></thead>
-<tbody>
-<tr><td>Blood hormone panel (FSH, LH, estradiol, AMH)</td><td>$200–$800</td><td>Often partial</td><td>Ovarian reserve, hormone balance</td></tr>
-<tr><td>Ultrasound (pelvic)</td><td>$300–$1,000</td><td>Sometimes</td><td>Uterine structure, PCOS signs, fibroids</td></tr>
-<tr><td>Semen analysis</td><td>$200–$500</td><td>Often yes</td><td>Sperm count, motility, morphology</td></tr>
-<tr><td>Hysterosalpingogram (HSG — tube patency)</td><td>$500–$1,500</td><td>Variable</td><td>Blocked fallopian tubes</td></tr>
-<tr><td>Thyroid panel (TSH, free T4)</td><td>$100–$400</td><td>Usually yes</td><td>Thyroid dysfunction affecting fertility</td></tr>
-</tbody>
-</table>
+<!-- P1-21: Fertility Testing → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🩸</span>
+    <h3>Blood Hormone Panel</h3>
+    <p>FSH, LH, estradiol, AMH<br><strong>$200–$800</strong> · Often partial insurance<br>Reveals: ovarian reserve, hormone balance</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🔬</span>
+    <h3>Pelvic Ultrasound</h3>
+    <p><strong>$300–$1,000</strong> · Sometimes covered<br>Reveals: uterine structure, PCOS signs, fibroids</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🧪</span>
+    <h3>Semen Analysis</h3>
+    <p><strong>$200–$500</strong> · Often covered<br>Reveals: sperm count, motility, morphology</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏥</span>
+    <h3>HSG (Tube Patency)</h3>
+    <p><strong>$500–$1,500</strong> · Variable coverage<br>Reveals: blocked fallopian tubes</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🦋</span>
+    <h3>Thyroid Panel</h3>
+    <p>TSH, free T4 · <strong>$100–$400</strong> · Usually covered<br>Reveals: thyroid dysfunction affecting fertility</p>
+  </div>
 </div>
 
 <p>The testing itself is stressful: the tested character gains <strong>+1 SP per test</strong>. If testing reveals a treatable condition, the GM notes it. If testing reveals an untreatable or unknown cause, the character gains an additional <strong>+3 SP</strong>.</p>
 
 <h3>1c. IVF &amp; Assisted Reproduction</h3>
-<p>In Vitro Fertilization is the most common assisted reproduction method. Each IVF cycle costs <strong>$12,000–$25,000</strong> (often not covered by insurance). The patient undergoes hormone injections for 10–14 days, egg retrieval surgery, and embryo transfer.</p>
+<p>In Vitro Fertilization is the most common assisted reproduction method. Each IVF cycle costs <strong>💰 $12,000–$25,000</strong> (often not covered by insurance). The patient undergoes hormone injections for 10–14 days, egg retrieval surgery, and embryo transfer.</p>
 
 <p>Each cycle requires a <span class="dice">2d10</span> roll against the <strong>IVF Success TN</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Patient Age</th><th>IVF Success TN (per cycle)</th><th>Success Rate</th></tr></thead>
-<tbody>
-<tr><td>Under 35</td><td>35</td><td>~40–45%</td></tr>
-<tr><td>35–37</td><td>45</td><td>~30–35%</td></tr>
-<tr><td>38–40</td><td>55</td><td>~20–25%</td></tr>
-<tr><td>41–42</td><td>70</td><td>~10–15%</td></tr>
-<tr><td>43+</td><td>85</td><td>~3–5%</td></tr>
-</tbody>
-</table>
+<!-- P1-2: IVF Success TN → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">35</span>
+    <span class="tn-label">Under 35 — ~40–45% success</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">45</span>
+    <span class="tn-label">Age 35–37 — ~30–35% success</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">55</span>
+    <span class="tn-label">Age 38–40 — ~20–25% success</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">70</span>
+    <span class="tn-label">Age 41–42 — ~10–15% success</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">85</span>
+    <span class="tn-label">Age 43+ — ~3–5% success</span>
+  </div>
 </div>
 
 <p>Each failed IVF cycle adds <strong>+5 SP</strong> to the patient (and <strong>+2 SP</strong> to the partner). The physical side effects of hormone injections include bloating, mood swings, and injection-site pain — requiring a <strong>VIG check at TN 40</strong> each cycle. Failure means the patient gains <strong>Tired</strong> status for 3–5 days post-retrieval.</p>
@@ -107,7 +178,15 @@
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 2: PREGNANCY -->
+<!-- ============================================================ -->
 <h2>2. Pregnancy — The Three-Trimester System</h2>
+
+<!-- P1-24 replacement: corrected pregnancy timeline SVG -->
+<div class="section-illustration">
+  <img src="img/fc_pregnancy_timeline.svg" alt="Pregnancy Journey timeline: Trimester 1 → Trimester 2 → Trimester 3 → Birth → Postpartum">
+</div>
 
 <p>When a pregnancy roll succeeds, the pregnant character enters a <strong>9-month (36-week)</strong> pregnancy track divided into three trimesters, each with distinct mechanical effects. The pregnant character gains the <strong>Pregnant</strong> status for the duration. The non-pregnant partner gains <strong>Expectant Parent</strong> status.</p>
 
@@ -119,16 +198,12 @@
 <h3>2a. First Trimester (Weeks 1–12)</h3>
 <p>The first trimester is the most physically disruptive. The pregnant character suffers the following effects:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Effect</th><th>Mechanical Impact</th><th>Duration</th></tr></thead>
-<tbody>
-<tr><td>🤢 Morning Sickness</td><td><strong>VIG checks at +5 TN</strong> (e.g., TN 40 becomes TN 45). Nausea can be triggered by food smells, motion, or stress.</td><td>Weeks 6–12 primarily; some feel it throughout</td></tr>
-<tr><td>😴 Fatigue</td><td><strong>−1 to all checks</strong>. Extreme tiredness. The character gains <strong>Tired</strong> status at the start of each day automatically.</td><td>Weeks 4–12</td></tr>
-<tr><td>😤 Emotional Volatility</td><td><strong>+2 SP/day</strong>. Hormone swings cause mood fluctuations. Crying spells, irritability, anxiety.</td><td>Weeks 5–12</td></tr>
-<tr><td>🤕 Body Aches</td><td>Random VIG checks (TN 35) once per week. Failure = mild pain (no mechanical penalty but roleplay encouragement).</td><td>Throughout</td></tr>
-</tbody>
-</table>
+<!-- P1-5 replacement: First trimester effects as .condition-track -->
+<div class="condition-track">
+  <div class="condition-step sick">🤢<br>VIG +5 TN<br>Morning Sickness</div>
+  <div class="condition-step tired">😴<br>−1 All Checks<br>Fatigue</div>
+  <div class="condition-step injured">😤<br>+2 SP/day<br>Emotional Volatility</div>
+  <div class="condition-step critical">🤕<br>VIG TN 35/wk<br>Body Aches</div>
 </div>
 
 <p><strong>Prenatal care:</strong> The first prenatal visit occurs around week 8. Cost: <strong>$100–$300</strong> per visit without insurance. The character must attend regular prenatal appointments — missing one adds +1 SP (worry about the baby's health).</p>
@@ -136,16 +211,11 @@
 <h3>2b. Second Trimester (Weeks 13–26)</h3>
 <p>The "honeymoon" period — energy returns, but the body changes dramatically:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Effect</th><th>Mechanical Impact</th><th>Duration</th></tr></thead>
-<tbody>
-<tr><td>⚡ Energy Returns</td><td>The <strong>−1 to all checks</strong> and automatic <strong>Tired</strong> status are removed. The character feels better.</td><td>Weeks 13–26</td></tr>
-<tr><td>🤰 Physical Discomfort</td><td>Back pain, heartburn, leg cramps. Weekly <strong>VIG check at TN 30</strong>. Failure = mild discomfort (roleplay, no mechanical penalty).</td><td>Weeks 16–26</td></tr>
-<tr><td>👀 Anxiety Builds</td><td><strong>+1 SP/day</strong> starting week 18 as the reality of impending parenthood sinks in.</td><td>Weeks 18–26</td></tr>
-<tr><td>🛒 Baby Registry &amp; Gear</td><td>Cost: <strong>$1,000–$3,000</strong> for crib, car seat, stroller, clothes, diapers, formula backup. An <strong>INT check at TN 40</strong> to research and find good deals reduces costs by 20%.</td><td>Weeks 20–28</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step healthy">⚡<br>VIG Recovers<br>Energy Returns</div>
+  <div class="condition-step tired">🤰<br>VIG TN 30/wk<br>Physical Discomfort</div>
+  <div class="condition-step sick">👀<br>+1 SP/day<br>Anxiety Builds</div>
+  <div class="condition-step injured">🛒<br>$1K–$3K<br>Baby Gear</div>
 </div>
 
 <p><strong>Prenatal appointments</strong> increase to every 4 weeks. Cost: <strong>$100–$300 per visit</strong>. The anatomy scan (week 20) reveals the baby's sex — a major roleplaying moment. Both parents gain <strong>+2 SP</strong> from the emotional intensity of seeing the ultrasound.</p>
@@ -153,78 +223,136 @@
 <h3>2c. Third Trimester (Weeks 27–40)</h3>
 <p>The final stretch brings the most physical challenges:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Effect</th><th>Mechanical Impact</th><th>Duration</th></tr></thead>
-<tbody>
-<tr><td>🐌 Mobility Issues</td><td><strong>DXT −1</strong>. The character is large, slow, and physically limited. Cannot lift heavy objects, difficulty climbing stairs.</td><td>Weeks 32–40</td></tr>
-<tr><td>😴 Sleep Disruption</td><td>The character can no longer sleep on their stomach, needs to urinate frequently, can't find a comfortable position. <strong>Starts each day at Tired</strong> again.</td><td>Weeks 28–40</td></tr>
-<tr><td>😰 Birth Anxiety</td><td><strong>+3 SP/day</strong>. Fear of labor pain, complications, and the responsibility ahead compound daily.</td><td>Weeks 32–40</td></tr>
-<tr><td>🏥 Hospital Prep Costs</td><td>Pack hospital bag, take birth class, tour the hospital. Cost: <strong>$150–$500</strong> for classes + supplies.</td><td>Weeks 32–36</td></tr>
-<tr><td>🤕 Braxton Hicks &amp; False Labor</td><td>Once per week, roll <span class="dice">2d10</span> at TN 25. On a success, the character experiences false labor contractions — a roleplaying event that causes panic (both partners gain +1 SP).</td><td>Weeks 28–40</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step sick">🐌<br>DXT −1<br>Mobility Issues</div>
+  <div class="condition-step tired">😴<br>Starts Tired<br>Sleep Disruption</div>
+  <div class="condition-step injured">😰<br>+3 SP/day<br>Birth Anxiety</div>
+  <div class="condition-step critical">🤕<br>2d10 TN 25/wk<br>False Labor</div>
 </div>
 
 <h3>2d. The Birth Event</h3>
+
+<!-- BIRTH EVENT FLOWCHART SVG -->
+<div class="section-illustration">
+  <img src="img/fc_birth_event_flowchart.svg" alt="The Birth Event GM Flowchart: 4 steps — Hospital Stay → Cost → Pain Management → Complications">
+</div>
+
 <p>When the pregnancy reaches term (week 37–42), the birth event triggers. The GM determines the birth experience through a series of checks:</p>
 
 <p><strong>Step 1: Determine Hospital Stay Duration.</strong> Roll <span class="dice">2d10</span>:</p>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Roll</th><th>Duration</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>1–30</td><td>3 days (vaginal)</td><td>Standard uncomplicated birth</td></tr>
-<tr><td>31–60</td><td>4 days</td><td>Minor complications or C-section recovery</td></tr>
-<tr><td>61–85</td><td>5 days</td><td>Complications requiring extended monitoring</td></tr>
-<tr><td>86–95</td><td>7+ days</td><td>Significant complications for mother and/or baby</td></tr>
-<tr><td>96–100</td><td>ICU transfer</td><td>Critical emergency — see below</td></tr>
-</tbody>
-</table>
+
+<!-- P1-4: Hospital Stay → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">1–30</span>
+    <span class="tn-label">3 days — Standard uncomplicated vaginal birth</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">31–60</span>
+    <span class="tn-label">4 days — Minor complications or C-section recovery</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">61–85</span>
+    <span class="tn-label">5 days — Complications requiring extended monitoring</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">86–95</span>
+    <span class="tn-label">7+ days — Significant complications for mother and/or baby</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">96–100</span>
+    <span class="tn-label">ICU transfer — Critical emergency</span>
+  </div>
 </div>
 
 <p><strong>Step 2: Birth Cost.</strong> The cost of delivery varies dramatically:</p>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Delivery Type</th><th>Cost Range</th><th>Insurance Coverage</th></tr></thead>
-<tbody>
-<tr><td>Vaginal, uncomplicated</td><td>$3,000–$8,000</td><td>Usually covered (deductible applies)</td></tr>
-<tr><td>Vaginal with complications</td><td>$8,000–$15,000</td><td>Usually covered</td></tr>
-<tr><td>Planned C-section</td><td>$10,000–$20,000</td><td>Usually covered</td></tr>
-<tr><td>Emergency C-section</td><td>$15,000–$30,000</td><td>Usually covered</td></tr>
-<tr><td>Uninsured birth</td><td>$10,000–$50,000+</td><td>None — full cost to family</td></tr>
-</tbody>
-</table>
+
+<!-- P1-22: Delivery Costs → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏥</span>
+    <h3>Vaginal, Uncomplicated</h3>
+    <p>💰 <strong>$3,000–$8,000</strong><br>Usually covered (deductible applies)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⚠️</span>
+    <h3>Vaginal w/ Complications</h3>
+    <p>💰 <strong>$8,000–$15,000</strong><br>Usually covered</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🔪</span>
+    <h3>Planned C-Section</h3>
+    <p>💰 <strong>$10,000–$20,000</strong><br>Usually covered</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚨</span>
+    <h3>Emergency C-Section</h3>
+    <p>💰 <strong>$15,000–$30,000</strong><br>Usually covered</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💸</span>
+    <h3>Uninsured Birth</h3>
+    <p>💰 <strong>$10,000–$50,000+</strong><br>None — full cost to family</p>
+  </div>
 </div>
 
 <p><strong>Step 3: Pain Management Choices.</strong> The pregnant character chooses before labor begins:</p>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Choice</th><th>Mechanical Effect</th><th>Roleplay Impact</th></tr></thead>
-<tbody>
-<tr><td>Epidural</td><td>Removes pain roleplay. <strong>VIG check at TN 30</strong> post-birth for recovery from epidural side effects (itching, numbness, difficulty peeing).</td><td>Character doesn't feel labor pain but may feel they "missed" the experience</td></tr>
-<tr><td>Natural birth</td><td>No mechanical penalty, but character gains <strong>+5 SP</strong> from pain and <strong>Tired</strong> for 2 weeks post-birth.</td><td>Intense, transformative experience. Some characters report feeling stronger afterward.</td></tr>
-<tr><td>Nitrous oxide / other</td><td>Reduces SP gain to +3. Moderate pain roleplay. <strong>VIG check at TN 35</strong> post-birth.</td><td>Middle ground — some pain, some relief</td></tr>
-</tbody>
-</table>
+
+<!-- P1-18: Pain Management → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">💉</span>
+    <h3>Epidural</h3>
+    <p>Removes pain roleplay. <strong>VIG TN 30</strong> post-birth for recovery from side effects (itching, numbness, difficulty peeing). Character may feel they "missed" the experience.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌿</span>
+    <h3>Natural Birth</h3>
+    <p>No mechanical penalty, but <strong>+5 SP</strong> from pain and <strong>Tired</strong> for 2 weeks post-birth. Intense, transformative experience. Some report feeling stronger afterward.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💨</span>
+    <h3>Nitrous Oxide / Other</h3>
+    <p>Reduces SP gain to +3. Moderate pain roleplay. <strong>VIG TN 35</strong> post-birth. Middle ground — some pain, some relief.</p>
+  </div>
 </div>
 
 <p><strong>Step 4: Complications Roll.</strong> Roll <span class="dice">2d10</span> on the Birth Complications Table:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Roll</th><th>Complication</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>1–60</td><td>None</td><td>Healthy mother, healthy baby</td></tr>
-<tr><td>61–70</td><td>Perineal tearing</td><td>+3 SP, 2 weeks of significant discomfort (VIG −1)</td></tr>
-<tr><td>71–78</td><td>Postpartum hemorrhage (minor)</td><td>Extended hospital stay (+2 days), +5 SP, blood transfusion possible</td></tr>
-<tr><td>79–85</td><td>Baby needs NICU time</td><td>1–7 days in NICU. +10 SP for parents. Cost: $3,000–$30,000/day</td></tr>
-<tr><td>86–92</td><td>Postpartum depression onset</td><td>Character gains <strong>Depressed</strong> status. See <a href="mental-health.html">Mental Health</a>. Requires treatment.</td></tr>
-<tr><td>93–96</td><td>Preeclampsia</td><td>High blood pressure emergency. Extended hospital stay (+3–5 days). +8 SP. Medical monitoring for 6 weeks postpartum.</td></tr>
-<tr><td>97–99</td><td>Stillbirth or neonatal death</td><td>Catastrophic emotional event. +20 SP for both parents. See <a href="death-grief.html">Death &amp; Grief</a> for mechanical handling.</td></tr>
-<tr><td>100</td><td>Maternal health emergency</td><td>Life-threatening complication. GM determines specifics. +15 SP. Long-term health effects possible.</td></tr>
-</tbody>
-</table>
+<!-- P1-3: Birth Complications → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">1–60</span>
+    <span class="tn-label">✅ None — Healthy mother, healthy baby</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">61–70</span>
+    <span class="tn-label">Perineal tearing — +3 SP, 2 weeks discomfort (VIG −1)</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">71–78</span>
+    <span class="tn-label">Postpartum hemorrhage (minor) — Extended stay +2 days, +5 SP</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">79–85</span>
+    <span class="tn-label">Baby needs NICU — 1–7 days, +10 SP, 💰 $3K–$30K/day</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">86–92</span>
+    <span class="tn-label">Postpartum depression — <strong>Depressed</strong> status. See Mental Health.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">93–96</span>
+    <span class="tn-label">Preeclampsia — Extended stay +3–5 days, +8 SP, 6-wk monitoring</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">97–99</span>
+    <span class="tn-label">Stillbirth or neonatal death — +20 SP. See Death &amp; Grief.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">100</span>
+    <span class="tn-label">Maternal health emergency — Life-threatening, +15 SP</span>
+  </div>
 </div>
 
 <div class="callout example">
@@ -234,23 +362,33 @@
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 3: INFANT CARE -->
+<!-- ============================================================ -->
 <h2>3. Infant Care (0–12 Months)</h2>
+
+<!-- P3-1: Newborn night scene -->
+<div class="section-illustration">
+  <img src="img/fc_newborn_night.png" alt="A Night with a Newborn: Exhausted Sarah feeds crying baby at 3:14 AM while Mark sleeps on the couch">
+</div>
 
 <p>The newborn period is the most mechanically punishing phase of parenthood. The character who is the primary caregiver (or both parents) suffers massive time and energy costs.</p>
 
-<h3>3a. Feeding Schedule</h3>
-<p>Babies eat every <strong>2–3 hours</strong>, around the clock. This means 8–12 feedings per day. Each feeding takes 30–45 minutes (breastfeeding) or 20–30 minutes (bottle, including preparation). There is <strong>no sleep through the night</strong> for the first 3–6 months.</p>
+<!-- Also reuse existing postpartum image -->
+<div class="section-illustration-right">
+  <img src="img/sh_postpartum_morning.png" alt="A father holds a sleeping newborn in a sunlit bedroom">
+  <div class="illust-text">
+    <h3>3a. Feeding Schedule</h3>
+    <p>Babies eat every <strong>2–3 hours</strong>, around the clock. This means 8–12 feedings per day. Each feeding takes 30–45 minutes (breastfeeding) or 20–30 minutes (bottle, including preparation). There is <strong>no sleep through the night</strong> for the first 3–6 months.</p>
+  </div>
+</div>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Age</th><th>Feeding Frequency</th><th>Time per Feeding</th><th>Total Daily Feeding Time</th></tr></thead>
-<tbody>
-<tr><td>0–1 month</td><td>Every 2–3 hours (8–12×/day)</td><td>30–45 min</td><td>4–9 hours</td></tr>
-<tr><td>2–3 months</td><td>Every 3–4 hours (6–8×/day)</td><td>30 min</td><td>3–4 hours</td></tr>
-<tr><td>4–6 months</td><td>Every 4–5 hours (5–6×/day)</td><td>25 min + solids intro</td><td>2–3 hours</td></tr>
-<tr><td>7–12 months</td><td>3 meals + 2 snacks</td><td>15–20 min each</td><td>1–1.5 hours</td></tr>
-</tbody>
-</table>
+<!-- P1-5: Feeding Schedule → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step critical">🍼<br>0–1 mo<br>8–12×/day<br>4–9 hrs total</div>
+  <div class="condition-step injured">🍼<br>2–3 mo<br>6–8×/day<br>3–4 hrs total</div>
+  <div class="condition-step sick">🍎<br>4–6 mo<br>5–6×/day<br>2–3 hrs total</div>
+  <div class="condition-step healthy">🍽️<br>7–12 mo<br>3 meals+2 snacks<br>1–1.5 hrs total</div>
 </div>
 
 <h3>3b. Sleep Deprivation Mechanics</h3>
@@ -259,50 +397,80 @@
 <p>If a caregiver accumulates <strong>10+ SP from sleep deprivation alone</strong>, they must make a <strong>RES check at TN 45</strong>. Failure means the character gains the <strong>Exhausted</strong> status: all checks at +5 TN, and the character cannot perform tasks requiring fine motor skills (DXT checks are impossible) until they get 8+ hours of continuous sleep.</p>
 
 <h3>3c. Developmental Milestones</h3>
-<p>Each month, the GM rolls to see if the baby hits the next developmental milestone. This is mostly roleplay, but missing a milestone triggers a <strong>Pediatrician Concern</strong> event:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Age</th><th>Milestone</th><th>Check (if delayed)</th></tr></thead>
-<tbody>
-<tr><td>1 month</td><td>👀 Tracks objects with eyes, startles at loud sounds</td><td>—</td></tr>
-<tr><td>2 months</td><td>😊 Social smile, coos</td><td>—</td></tr>
-<tr><td>3 months</td><td>🤗 Holds head up, pushes up on arms</td><td>VIG check TN 30 for baby</td></tr>
-<tr><td>4 months</td><td>🔄 Rolls front to back, laughs</td><td>—</td></tr>
-<tr><td>6 months</td><td>🍎 Sits with support, starts solids</td><td>VIG check TN 35 for baby</td></tr>
-<tr><td>9 months</td><td>🧎 Crawls, pulls to stand, babbles</td><td>VIG + INT check TN 40 for baby</td></tr>
-<tr><td>12 months</td><td>🚶 First steps, first words, points</td><td>VIG + INT check TN 45 for baby</td></tr>
-</tbody>
-</table>
+<!-- DEVELOPMENT MATRIX SVG -->
+<div class="section-illustration">
+  <img src="img/fc_development_matrix.svg" alt="Child Development Matrix: Physical, Cognitive, Social, Language milestones from 0–36 months">
 </div>
 
-<p>If a milestone check fails, the pediatrician recommends <strong>early intervention services</strong>. This adds +2 SP (worry) and costs <strong>$0–$500/month</strong> depending on insurance. A second check one month later determines if the delay was temporary or persistent.</p>
+<p>Each month, the GM rolls to see if the baby hits the next developmental milestone. This is mostly roleplay, but missing a milestone triggers a <strong>Pediatrician Concern</strong> event:</p>
+
+<!-- P1-6: Milestones → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step healthy">👀<br>1 mo<br>Tracks objects</div>
+  <div class="condition-step healthy">😊<br>2 mo<br>Social smile</div>
+  <div class="condition-step healthy">💪<br>3 mo<br>Head up</div>
+  <div class="condition-step tired">🔄<br>4 mo<br>Rolls over</div>
+  <div class="condition-step tired">🍎<br>6 mo<br>Sits + solids</div>
+  <div class="condition-step sick">🧎<br>9 mo<br>Crawls</div>
+  <div class="condition-step injured">🚶<br>12 mo<br>First steps</div>
+</div>
+
+<p>If a milestone check fails, the pediatrician recommends <strong>early intervention services</strong>. This adds +2 SP (worry) and costs <strong>💰 $0–$500/month</strong> depending on insurance. A second check one month later determines if the delay was temporary or persistent.</p>
 
 <h3>3d. Diaper Changes</h3>
-<p>A newborn goes through <strong>8–12 diapers per day</strong>. That's 2,920–4,380 diapers in the first year. Cost: <strong>$700–$1,500/year</strong> for disposable diapers, or <strong>$200–$400</strong> initial investment for cloth + ongoing laundry costs.</p>
+<p>A newborn goes through <strong>8–12 diapers per day</strong>. That's 2,920–4,380 diapers in the first year. Cost: <strong>💰 $700–$1,500/year</strong> for disposable diapers, or <strong>💰 $200–$400</strong> initial investment for cloth + ongoing laundry costs.</p>
 
 <h3>3e. Baby Gear Costs</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Item</th><th>Cost Range</th><th>Lifespan</th></tr></thead>
-<tbody>
-<tr><td>Crib</td><td>$200–$800</td><td>3–5 years</td></tr>
-<tr><td>Car seat</td><td>$100–$300</td><td>4–6 years</td></tr>
-<tr><td>Stroller</td><td>$100–$600</td><td>3–4 years</td></tr>
-<tr><td>Diaper bag</td><td>$30–$150</td><td>3–5 years</td></tr>
-<tr><td>Baby monitor</td><td>$50–$300</td><td>3–5 years</td></tr>
-<tr><td>Baby clothes (first year)</td><td>$300–$800</td><td>Outgrown quickly</td></tr>
-<tr><td>High chair</td><td>$50–$300</td><td>3–5 years</td></tr>
-<tr><td>Bouncer / swing</td><td>$40–$150</td><td>6–12 months</td></tr>
-</tbody>
-</table>
+<!-- P1-25: Baby gear with emoji coding -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🛏️</span>
+    <h3>Crib</h3>
+    <p>💰 <strong>$200–$800</strong> · Lifespan: 3–5 years</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚗</span>
+    <h3>Car Seat</h3>
+    <p>💰 <strong>$100–$300</strong> · Lifespan: 4–6 years</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚼</span>
+    <h3>Stroller</h3>
+    <p>💰 <strong>$100–$600</strong> · Lifespan: 3–4 years</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎒</span>
+    <h3>Diaper Bag</h3>
+    <p>💰 <strong>$30–$150</strong> · Lifespan: 3–5 years</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📹</span>
+    <h3>Baby Monitor</h3>
+    <p>💰 <strong>$50–$300</strong> · Lifespan: 3–5 years</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👕</span>
+    <h3>Baby Clothes (1st yr)</h3>
+    <p>💰 <strong>$300–$800</strong> · Outgrown quickly</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🪑</span>
+    <h3>High Chair</h3>
+    <p>💰 <strong>$50–$300</strong> · Lifespan: 3–5 years</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎠</span>
+    <h3>Bouncer / Swing</h3>
+    <p>💰 <strong>$40–$150</strong> · Lifespan: 6–12 months</p>
+  </div>
 </div>
 
-<p><strong>Total first-year gear cost: $1,000–$3,500</strong> (less if buying used).</p>
+<p><strong>💰 Total first-year gear cost: $1,000–$3,500</strong> (less if buying used).</p>
 
 <h3>3f. Pediatrician Visits</h3>
-<p>Newborns see the pediatrician at: 3–5 days, 2 weeks, 1, 2, 4, 6, 9, 12, 15, 18, and 24 months. That's <strong>12+ visits in the first 2 years</strong>. Cost per visit: <strong>$100–$250</strong> without insurance. Vaccines are recommended at each visit — each vaccine adds +1 SP to the parent (worry about side effects, even if unfounded).</p>
+<p>Newborns see the pediatrician at: 3–5 days, 2 weeks, 1, 2, 4, 6, 9, 12, 15, 18, and 24 months. That's <strong>12+ visits in the first 2 years</strong>. Cost per visit: <strong>💰 $100–$250</strong> without insurance. Vaccines are recommended at each visit — each vaccine adds +1 SP to the parent (worry about side effects, even if unfounded).</p>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: A Night with a Newborn</div>
@@ -311,60 +479,92 @@
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 4: TODDLER YEARS -->
+<!-- ============================================================ -->
 <h2>4. Toddler Years (Ages 1–3)</h2>
+
+<!-- P3-2: Toddler tantrum scene -->
+<div class="section-illustration">
+  <img src="img/fc_toddler_tantrum.png" alt="Toddler Tantrum in Grocery Store: A parent tries to stay calm while a toddler melts down in an aisle">
+</div>
 
 <p>The toddler years bring a new set of challenges. The child is mobile, vocal, and increasingly independent — which means the parents' job shifts from <em>keeping the baby alive</em> to <em>keeping the toddler from doing something dangerous</em>.</p>
 
 <h3>4a. Potty Training</h3>
 <p>Between ages 18 months and 3 years, the child must be potty trained. This is a <strong>multi-month process</strong> requiring patience and consistency:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Phase</th><th>Duration</th><th>Parent Check</th><th>Cost</th></tr></thead>
-<tbody>
-<tr><td>Introduction (sitting on potty)</td><td>2–4 weeks</td><td>RES check TN 40 weekly</td><td>$10–$30 for potty seat</td></tr>
-<tr><td>Active training</td><td>1–3 months</td><td>RES check TN 45 daily (yes, daily)</td><td>$30–$80 for training pants</td></tr>
-<tr><td>Maintenance / night training</td><td>3–12 months</td><td>RES check TN 50 monthly</td><td>Ongoing supply cost</td></tr>
-</tbody>
-</table>
+<!-- P1-7: Potty Training → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step healthy">🚽<br>Introduction<br>2–4 weeks<br>RES TN 40/wk<br>💰 $10–$30</div>
+  <div class="condition-step sick">🩱<br>Active Training<br>1–3 months<br>RES TN 45/daily<br>💰 $30–$80</div>
+  <div class="condition-step tired">🌙<br>Night Training<br>3–12 months<br>RES TN 50/mo<br>Ongoing costs</div>
 </div>
 
 <p>Each failed daily RES check adds <strong>+1 SP</strong> to the training parent. Accidents are frequent and frustrating. A child who fails potty training by age 3 may need professional evaluation — <strong>+3 SP</strong> and a visit to a pediatrician or specialist.</p>
 
 <h3>4b. Tantrums</h3>
-<p>Todder tantrums are a daily event. The parent must make a <strong>RES check at TN 40</strong> to handle a tantrum effectively. Failure means the parent either loses their temper (+2 SP, potential trauma to the child) or gives in to unreasonable demands (reinforcing bad behavior, +1 SP from frustration).</p>
+<p>Toddler tantrums are a daily event. The parent must make a <strong>RES check at TN 40</strong> to handle a tantrum effectively. Failure means the parent either loses their temper (+2 SP, potential trauma to the child) or gives in to unreasonable demands (reinforcing bad behavior, +1 SP from frustration).</p>
 
 <p>Tantrum frequency by age:</p>
-<div class="table-wrap">
-<table>
-<thead><tr><th>Age</th><th>Tantrums per Week</th><th>Average Duration</th><th>Parent RES TN</th></tr></thead>
-<tbody>
-<tr><td>1 year</td><td>2–4</td><td>5–10 minutes</td><td>TN 35</td></tr>
-<tr><td>1.5 years</td><td>4–7</td><td>10–20 minutes</td><td>TN 40</td></tr>
-<tr><td>2 years</td><td>5–10</td><td>15–30 minutes</td><td>TN 45</td></tr>
-<tr><td>2.5 years</td><td>4–8</td><td>10–20 minutes</td><td>TN 40</td></tr>
-<tr><td>3 years</td><td>2–5</td><td>5–15 minutes</td><td>TN 35</td></tr>
-</tbody>
-</table>
+
+<!-- P1-8: Tantrum Frequency → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">Age 1</span>
+    <span class="tn-label">2–4/week · 5–10 min · Parent RES TN 35</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">Age 1.5</span>
+    <span class="tn-label">4–7/week · 10–20 min · Parent RES TN 40</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">Age 2</span>
+    <span class="tn-label">5–10/week · 15–30 min · Parent RES TN 45</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">Age 2.5</span>
+    <span class="tn-label">4–8/week · 10–20 min · Parent RES TN 40</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">Age 3</span>
+    <span class="tn-label">2–5/week · 5–15 min · Parent RES TN 35</span>
+  </div>
 </div>
 
 <h3>4c. Daycare &amp; Childcare Costs</h3>
 <p>If both parents work, daycare is essential. The cost is staggering:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Option</th><th>Monthly Cost</th><th>Quality</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>Home daycare</td><td>$600–$1,000</td><td>Variable</td><td>Fewer regulations, smaller ratios</td></tr>
-<tr><td>Daycare center</td><td>$800–$1,500</td><td>Generally good</td><td>More structured, licensed</td></tr>
-<tr><td>Preschool (age 3+)</td><td>$500–$2,000</td><td>Good to excellent</td><td>Educational focus, part-day</td></tr>
-<tr><td>Nanny / in-home care</td><td>$1,500–$3,000</td><td>Excellent</td><td>One-on-one, flexible schedule</td></tr>
-<tr><td>Family member</td><td>$0–$500</td><td>Variable</td><td>Creates family obligation debt</td></tr>
-</tbody>
-</table>
+<!-- P1-14: Daycare Options → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Home Daycare</h3>
+    <p>💰 <strong>$600–$1,000/mo</strong><br>Variable quality · Fewer regulations, smaller ratios</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏫</span>
+    <h3>Daycare Center</h3>
+    <p>💰 <strong>$800–$1,500/mo</strong><br>Generally good · More structured, licensed</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📚</span>
+    <h3>Preschool (Age 3+)</h3>
+    <p>💰 <strong>$500–$2,000/mo</strong><br>Good to excellent · Educational focus, part-day</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👩‍🏫</span>
+    <h3>Nanny / In-Home</h3>
+    <p>💰 <strong>$1,500–$3,000/mo</strong><br>Excellent · One-on-one, flexible schedule</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👵</span>
+    <h3>Family Member</h3>
+    <p>💰 <strong>$0–$500/mo</strong><br>Variable · Creates family obligation debt</p>
+  </div>
 </div>
 
-<p><strong>Annual daycare cost: $9,600–$18,000/year</strong> — often more than a college tuition. An <strong>EXP check at TN 40</strong> to find subsidized or lower-cost options can reduce costs by 20–40%.</p>
+<p><strong>💰 Annual daycare cost: $9,600–$18,000/year</strong> — often more than a college tuition. An <strong>EXP check at TN 40</strong> to find subsidized or lower-cost options can reduce costs by 20–40%.</p>
 
 <h3>4d. Speech &amp; Social Development</h3>
 <p>Between ages 1–3, the child's vocabulary explodes. The GM should track the child's speech development:</p>
@@ -375,7 +575,7 @@
 <tbody>
 <tr><td>12 months</td><td>1–3 words</td><td>Wait and watch</td></tr>
 <tr><td>18 months</td><td>10–50 words</td><td>Speech screening recommended</td></tr>
-<tr><td>2 years</td><td>50–200 words, 2-word phrases</td><td>Speech therapy referral ($100–$250/session)</td></tr>
+<tr><td>2 years</td><td>50–200 words, 2-word phrases</td><td>Speech therapy referral (💰 $100–$250/session)</td></tr>
 <tr><td>3 years</td><td>200–1,000 words, sentences</td><td>Full evaluation needed (+3 SP for parents)</td></tr>
 </tbody>
 </table>
@@ -385,7 +585,15 @@
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 5: SCHOOL AGE -->
+<!-- ============================================================ -->
 <h2>5. School Age (Ages 4–12)</h2>
+
+<!-- P3-3: School morning rush scene -->
+<div class="section-illustration">
+  <img src="img/fc_school_morning_rush.png" alt="School Drop-Off Morning Rush: Chaotic kitchen with lunchboxes, permission slips, shoes inside-out, and a confusing schedule on the whiteboard">
+</div>
 
 <p>The school years bring a structured but demanding new phase. The child is in kindergarten through elementary school, and the parents must navigate the education system, homework, activities, and the social dynamics of childhood.</p>
 
@@ -411,169 +619,304 @@
 <h3>5c. Extracurricular Activities</h3>
 <p>Sports, music, art, scouts — children need enrichment, and it costs money and time:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Activity</th><th>Annual Cost</th><th>Time Commitment</th><th>Parent Check</th></tr></thead>
-<tbody>
-<tr><td>🏈 T-ball / soccer (organized)</td><td>$100–$400</td><td>4–6 hrs/week (Oct–Apr)</td><td>None</td></tr>
-<tr><td>🎹 Piano lessons</td><td>$600–$1,500</td><td>3–5 hrs/week practice + 1 hr lesson</td><td>RES TN 35 (parent enforcing practice)</td></tr>
-<tr><td>🎨 Art class</td><td>$200–$600</td><td>2 hrs/week</td><td>None</td></tr>
-<tr><td>🏊 Swimming lessons</td><td>$200–$500</td><td>2–4 hrs/week (summer)</td><td>None</td></tr>
-<tr><td>⚽ Competitive sports</td><td>$500–$2,000+</td><td>8–15 hrs/week (season)</td><td>EXP TN 40 (logistics management)</td></tr>
-<tr><td>🏕️ Camp (summer)</td><td>$500–$3,000/week</td><td>1–4 weeks</td><td>INT TN 40 (choosing the right camp)</td></tr>
-</tbody>
-</table>
+<!-- P1-15: Extracurriculars → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏈</span>
+    <h3>T-Ball / Soccer</h3>
+    <p>💰 <strong>$100–$400/yr</strong><br>4–6 hrs/week (Oct–Apr) · No parent check</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎹</span>
+    <h3>Piano Lessons</h3>
+    <p>💰 <strong>$600–$1,500/yr</strong><br>3–5 hrs/week + lesson · RES TN 35 (enforcing practice)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎨</span>
+    <h3>Art Class</h3>
+    <p>💰 <strong>$200–$600/yr</strong><br>2 hrs/week · No parent check</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏊</span>
+    <h3>Swimming Lessons</h3>
+    <p>💰 <strong>$200–$500/yr</strong><br>2–4 hrs/week (summer) · No parent check</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⚽</span>
+    <h3>Competitive Sports</h3>
+    <p>💰 <strong>$500–$2,000+/yr</strong><br>8–15 hrs/week (season) · EXP TN 40 (logistics)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏕️</span>
+    <h3>Summer Camp</h3>
+    <p>💰 <strong>$500–$3,000/week</strong><br>1–4 weeks · INT TN 40 (choosing camp)</p>
+  </div>
 </div>
 
-<p>A child with 2–3 activities per year adds <strong>$1,000–$4,000</strong> to the family budget and requires significant parent logistics management.</p>
+<p>A child with 2–3 activities per year adds <strong>💰 $1,000–$4,000</strong> to the family budget and requires significant parent logistics management.</p>
 
 <h3>5d. Childhood Illness &amp; Injury Events</h3>
 <p>School-age children get sick frequently — <strong>6–8 illnesses per year</strong> is normal. The GM rolls <span class="dice">2d10</span> at the start of each school month:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Roll</th><th>Event</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>1–50</td><td>Nothing</td><td>Normal month</td></tr>
-<tr><td>51–65</td><td>Cold / flu</td><td>Child home 2–4 days. Parent may need to miss work (+1 SP, lost wages).</td></tr>
-<tr><td>66–75</td><td>Stomach bug / ear infection</td><td>Child home 3–5 days. Doctor visit ($50–$150). Parent misses work.</td></tr>
-<tr><td>76–85</td><td>Serious illness (pneumonia, strep, etc.)</td><td>Child home 1–2 weeks. ER visit possible ($200–$2,000). +3 SP.</td></tr>
-<tr><td>86–92</td><td>Injury (broken bone, concussion)</td><td>ER visit. 1–4 weeks recovery. Cost: $500–$5,000. +5 SP.</td></tr>
-<tr><td>93–97</td><td>Serious injury requiring surgery</td><td>Major event. Hospital stay. Cost: $5,000–$50,000. +10 SP.</td></tr>
-<tr><td>98–99</td><td>Rare but serious illness (appendicitis, sepsis)</td><td>Critical event. GM determines specifics. +10 SP.</td></tr>
-<tr><td>100</td><td>Life-threatening emergency</td><td>Catastrophic event. See <a href="death-grief.html">Death &amp; Grief</a>.</td></tr>
-</tbody>
-</table>
+<!-- P1-9: Illness Events → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">1–50</span>
+    <span class="tn-label">✅ Nothing — Normal month</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">51–65</span>
+    <span class="tn-label">🤧 Cold / Flu — Child home 2–4 days. Parent misses work (+1 SP)</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">66–75</span>
+    <span class="tn-label">🤢 Stomach Bug / Ear Infection — 3–5 days, doctor visit (💰 $50–$150)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">76–85</span>
+    <span class="tn-label">🏥 Serious Illness — 1–2 weeks, ER possible (💰 $200–$2K), +3 SP</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">86–92</span>
+    <span class="tn-label">🦴 Injury (broken bone, concussion) — 1–4 wks, 💰 $500–$5K, +5 SP</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">93–97</span>
+    <span class="tn-label">🔪 Serious injury requiring surgery — 💰 $5K–$50K, +10 SP</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">98–99</span>
+    <span class="tn-label">🚨 Rare serious illness (appendicitis, sepsis) — +10 SP</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">100</span>
+    <span class="tn-label">💀 Life-threatening emergency — See Death &amp; Grief</span>
+  </div>
 </div>
 
 <h3>5e. Bullying</h3>
 <p>Bullying is a real risk, especially in grades 3–5 and again in middle school. The GM may trigger a bullying event. The child makes a <strong>RES check at TN 45</strong>. Failure means the child is being bullied. The parent must then intervene:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Intervention</th><th>Check</th><th>TN</th><th>Success Effect</th></tr></thead>
-<tbody>
-<tr><td>Talk to the child (emotional support)</td><td>RES</td><td>TN 40</td><td>Child gains resilience, −1 to future bullying TN</td></tr>
-<tr><td>Contact school administration</td><td>EXP</td><td>TN 50</td><td>School takes action; bullying stops or reduces</td></tr>
-<tr><td>Enroll in self-defense/confidence class</td><td>INT (research) + RES (parent enforcing)</td><td>TN 40 each</td><td>Child's future RES checks gain +5 bonus</td></tr>
-<tr><td>Transfer schools</td><td>INT (finding a good school)</td><td>TN 55</td><td>Bullying ends but new adjustment challenges arise</td></tr>
-</tbody>
-</table>
+<!-- P1-19: Bullying Interventions → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">💬</span>
+    <h3>Talk to the Child</h3>
+    <p><strong>RES TN 40</strong><br>Child gains resilience, −1 to future bullying TN</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏫</span>
+    <h3>Contact School</h3>
+    <p><strong>EXP TN 50</strong><br>School takes action; bullying stops or reduces</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🥋</span>
+    <h3>Self-Defense Class</h3>
+    <p><strong>INT + RES TN 40 each</strong><br>Child's future RES checks gain +5 bonus</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🔄</span>
+    <h3>Transfer Schools</h3>
+    <p><strong>INT TN 55</strong><br>Bullying ends but new adjustment challenges arise</p>
+  </div>
 </div>
 
 <p>A bullied child gains <strong>+3 SP per incident</strong>. Persistent bullying (3+ incidents) may cause lasting psychological effects — the child gains a <strong>Trait: Social Anxiety</strong> that imposes a +5 TN on all social checks until addressed through therapy or positive social experiences.</p>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: Noah's School Year</div>
-  <p>Noah (age 7, in 2nd grade) starts the school year. His parents roll for monthly illness events. In September, the roll is 58 — a <strong>cold/flu</strong>. Noah is home for 3 days; his mother, Sarah, misses $400 in wages and gains +1 SP. In November, the roll is 72 — a <strong>stomach bug</strong>. Noah is home 4 days, and Sarah has to take him to the pediatrician ($120 visit). In January, the roll is 88 — a <strong>broken wrist</strong> from a playground fall. ER visit costs $1,800 (insurance covers most). Noah wears a cast for 6 weeks (+5 SP for the family). The school year has already cost the family $2,320 in medical expenses and 10 SP in stress.</p>
+  <p>Noah (age 7, in 2nd grade) starts the school year. His parents roll for monthly illness events. In September, the roll is 58 — a <strong>cold/flu</strong>. Noah is home for 3 days; his mother, Sarah, misses $400 in wages and gains +1 SP. In November, the roll is 72 — a <strong>stomach bug</strong>. Noah is home 4 days, and Sarah has to take him to the pediatrician (💰 $120 visit). In January, the roll is 88 — a <strong>broken wrist</strong> from a playground fall. ER visit costs $1,800 (insurance covers most). Noah wears a cast for 6 weeks (+5 SP for the family). The school year has already cost the family 💰 $2,320 in medical expenses and 10 SP in stress.</p>
 </div>
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 6: TEENAGE YEARS -->
+<!-- ============================================================ -->
 <h2>6. Teenage Years (Ages 13–18)</h2>
+
+<!-- TEEN REBELLION SPIRAL SVG -->
+<div class="section-illustration">
+  <img src="img/fc_teen_rebellion_spiral.svg" alt="Teenage Rebellion Escalation Ladder: 10 levels from Nothing Major to Catastrophic Event">
+</div>
 
 <p>The teenage years are the most emotionally complex phase of parenting. The child is becoming independent, making their own decisions, and testing boundaries. The parent's role shifts from <em>manager</em> to <em>advisor</em> — but the stakes have never been higher.</p>
 
 <h3>6a. Rebellion Mechanics</h3>
 <p>Teenagers push boundaries. Each year, the GM rolls <span class="dice">2d10</span> on the <strong>Rebellion Table</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Roll</th><th>Event</th><th>Parent Response Check</th></tr></thead>
-<tbody>
-<tr><td>1–30</td><td>Nothing major</td><td>—</td></tr>
-<tr><td>31–45</td><td>Minor boundary testing (curfew, screen time, chores)</td><td>RES TN 40 — maintain rules without conflict</td></tr>
-<tr><td>46–55</td><td>Academic decline</td><td>INT + RES TN 45 — motivate without controlling</td></tr>
-<tr><td>56–65</td><td>Risky behavior (experimenting with substances, reckless driving)</td><td>RES TN 50 — intervene without alienating</td></tr>
-<tr><td>66–72</td><td>Serious behavioral issue (skipping school, lying, defiance)</td><td>EXP + RES TN 55 — professional help may be needed</td></tr>
-<tr><td>73–80</td><td>Mental health crisis (depression, anxiety, self-harm)</td><td>INT TN 50 — recognize signs, get help. See <a href="mental-health.html">Mental Health</a>.</td></tr>
-<tr><td>81–88</td><td>Legal trouble (arrest, suspension)</td><td>EXP TN 60 — navigate legal system. See <a href="law-civic.html">Law &amp; Civic</a>.</td></tr>
-<tr><td>89–95</td><td>Pregnancy or causing pregnancy</td><td>RES TN 60 — support without enabling. Major life change.</td></tr>
-<tr><td>96–99</td><td>Substance abuse disorder</td><td>RES TN 65 — intervention, rehab. Cost: $5,000–$50,000.</td></tr>
-<tr><td>100</td><td>Catastrophic event</td><td>GM determines specifics. +15 SP for parents.</td></tr>
-</tbody>
-</table>
+<!-- P1-10: Rebellion Table → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">1–30</span>
+    <span class="tn-label">✅ Nothing major — No check needed</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">31–45</span>
+    <span class="tn-label">Minor boundary testing (curfew, screen time, chores) — RES TN 40</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">46–55</span>
+    <span class="tn-label">Academic decline — INT + RES TN 45</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">56–65</span>
+    <span class="tn-label">Risky behavior (substances, reckless driving) — RES TN 50</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">66–72</span>
+    <span class="tn-label">Serious behavioral issue (skipping, lying, defiance) — EXP + RES TN 55</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">73–80</span>
+    <span class="tn-label">Mental health crisis — INT TN 50. See Mental Health.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">81–88</span>
+    <span class="tn-label">Legal trouble (arrest, suspension) — EXP TN 60. See Law &amp; Civic.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">89–95</span>
+    <span class="tn-label">Pregnancy or causing pregnancy — RES TN 60. Major life change.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">96–99</span>
+    <span class="tn-label">Substance abuse disorder — RES TN 65. 💰 $5K–$50K rehab.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">100</span>
+    <span class="tn-label">💀 Catastrophic event — +15 SP for parents</span>
+  </div>
 </div>
 
 <p>The parent's response check is critical. <strong>Success</strong> means the situation is handled constructively. <strong>Partial success</strong> means it's resolved but with lasting tension. <strong>Failure</strong> means the situation escalates and the parent-child relationship suffers (+5 SP, possible Trait: <em>Strained Relationship</em>).</p>
 
 <h3>6b. College Planning &amp; Costs</h3>
+
+<!-- P3-4: College applications scene -->
+<div class="section-illustration">
+  <img src="img/fc_college_applications.png" alt="Teen at Kitchen Table — College Applications: Brochures, FAFSA forms, tuition calculator showing $30,000/year">
+</div>
+
 <p>Starting around age 15–16, college planning begins. This is a massive financial and emotional undertaking:</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Task</th><th>Cost</th><th>Parent Check</th><th>TN</th></tr></thead>
+<thead><tr><th>Task</th><th>💰 Cost</th><th>Parent Check</th><th>TN</th></tr></thead>
 <tbody>
 <tr><td>SAT/ACT prep courses</td><td>$500–$2,000</td><td>INT (research)</td><td>TN 40</td></tr>
-<tr><td>College application fees</td><td>$25–$80 per school (8–12 schools)</td><td>—</td><td>—</td></tr>
+<tr><td>College application fees</td><td>$25–$80 per school</td><td>—</td><td>—</td></tr>
 <tr><td>College visits (travel)</td><td>$500–$2,000 per trip</td><td>INT (planning)</td><td>TN 45</td></tr>
-<tr><td>Counseling / college prep services</td><td>$2,000–$10,000</td><td>INT (choosing advisor)</td><td>TN 50</td></tr>
-<tr><td>FAFSA / financial aid navigation</td><td>Free (time-intensive)</td><td>INT</td><td>TN 55</td></tr>
+<tr><td>Counseling / prep services</td><td>$2,000–$10,000</td><td>INT (choosing advisor)</td><td>TN 50</td></tr>
+<tr><td>FAFSA / financial aid</td><td>Free (time-intensive)</td><td>INT</td><td>TN 55</td></tr>
 <tr><td>Scholarship applications</td><td>Free (very time-intensive)</td><td>INT + EXP</td><td>TN 50</td></tr>
 </tbody>
 </table>
 </div>
 
-<p><strong>College tuition itself:</strong> $10,000–$40,000/year for public in-state, $30,000–$60,000+/year for private. Over 4 years, that's <strong>$40,000–$240,000+</strong>. Even with financial aid, most families pay <strong>$10,000–$80,000</strong> out of pocket.</p>
+<p><strong>💰 College tuition itself:</strong> $10,000–$40,000/year for public in-state, $30,000–$60,000+/year for private. Over 4 years, that's <strong>💰 $40,000–$240,000+</strong>. Even with financial aid, most families pay <strong>💰 $10,000–$80,000</strong> out of pocket.</p>
 
 <h3>6c. Driving Lessons &amp; Car Insurance</h3>
 <p>Getting a teen driver's license is a rite of passage and a financial event:</p>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Step</th><th>Cost</th><th>Notes</th></tr></thead>
+<thead><tr><th>Step</th><th>💰 Cost</th><th>Notes</th></tr></thead>
 <tbody>
-<tr><td>Driver's ed course</td><td>$150–$600</td><td>Required in most states</td></tr>
-<tr><td>Permit practice hours (50+)</td><td>$0 (parent time)</td><td>Parent must supervise</td></tr>
-<tr><td>Behind-the-wheel lessons</td><td>$50–$100/hour × 6–10 hours</td><td>Professional instructor</td></tr>
-<tr><td>State testing fees</td><td>$50–$100</td><td>Written + road test</td></tr>
-<tr><td>Car purchase (used)</td><td>$3,000–$10,000</td><td>Must be reliable and safe</td></tr>
-<tr><td>Teen driver insurance</td><td>$2,000–$5,000/year</td><td>Often doubles the family's total insurance</td></tr>
+<tr><td>🚗 Driver's ed course</td><td>$150–$600</td><td>Required in most states</td></tr>
+<tr><td>📝 Permit practice hours (50+)</td><td>$0 (parent time)</td><td>Parent must supervise</td></tr>
+<tr><td>👨‍🏫 Behind-the-wheel lessons</td><td>$50–$100/hr × 6–10 hrs</td><td>Professional instructor</td></tr>
+<tr><td>📋 State testing fees</td><td>$50–$100</td><td>Written + road test</td></tr>
+<tr><td>🚙 Car purchase (used)</td><td>$3,000–$10,000</td><td>Must be reliable and safe</td></tr>
+<tr><td>📄 Teen driver insurance</td><td>$2,000–$5,000/year</td><td>Often doubles the family's total insurance</td></tr>
 </tbody>
 </table>
 </div>
 
-<p><strong>Total first-year driving cost: $5,500–$20,000+</strong></p>
+<p><strong>💰 Total first-year driving cost: $5,500–$20,000+</strong></p>
 
 <h3>6d. Mental Health Monitoring</h3>
 <p>Teenage years are the highest-risk period for mental health issues. The GM should roll <span class="dice">2d10</span> at the start of each year:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Roll</th><th>Outcome</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>1–60</td><td>Normal adolescent moodiness</td><td>Roleplay only, no mechanical effect</td></tr>
-<tr><td>61–75</td><td>Anxiety symptoms</td><td>Teen gains +2 SP/day. Parent INT TN 45 to recognize and address.</td></tr>
-<tr><td>76–85</td><td>Depression symptoms</td><td>Teen gains <strong>Depressed</strong> status. Treatment: therapy ($100–$200/session) or medication.</td></tr>
-<tr><td>86–92</td><td>Eating disorder</td><td>Complex treatment needed. Cost: $5,000–$50,000. +8 SP for family.</td></tr>
-<tr><td>93–97</td><td>Self-harm or suicidal ideation</td><td>Crisis event. Immediate intervention required. +10 SP. See <a href="mental-health.html">Mental Health</a>.</td></tr>
-<tr><td>98–100</td><td>Psychiatric emergency</td><td>ER visit, possible hospitalization. +15 SP. Major family impact.</td></tr>
-</tbody>
-</table>
+<!-- P1-11: Teen Mental Health → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">1–60</span>
+    <span class="tn-label">✅ Normal adolescent moodiness — Roleplay only</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">61–75</span>
+    <span class="tn-label">😰 Anxiety symptoms — Teen +2 SP/day. Parent INT TN 45</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">76–85</span>
+    <span class="tn-label">😞 Depression — <strong>Depressed</strong> status. Therapy 💰 $100–$200/session</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">86–92</span>
+    <span class="tn-label">🍽️ Eating disorder — 💰 $5K–$50K treatment, +8 SP</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">93–97</span>
+    <span class="tn-label">🚨 Self-harm / suicidal ideation — Crisis, +10 SP. See Mental Health.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">98–100</span>
+    <span class="tn-label">💀 Psychiatric emergency — ER, hospitalization, +15 SP</span>
+  </div>
 </div>
 
 <p>Parents who successfully monitor and support their teen's mental health gain <strong>+1 EXP</strong> and strengthen the parent-child bond (−1 to future Rebellion Table TNs).</p>
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 7: ADOPTION & FOSTER CARE -->
+<!-- ============================================================ -->
 <h2>7. Adoption &amp; Foster Care</h2>
+
+<!-- ADOPTION FLOWCHART SVG -->
+<div class="section-illustration">
+  <img src="img/fc_adoption_flowchart.svg" alt="Adoption &amp; Foster Care Decision Paths: Biological path → Fertility testing → IVF vs. Adoption path → 5 adoption types">
+</div>
+
+<!-- P3-5: Adoption home study scene -->
+<div class="section-illustration">
+  <img src="img/fc_adoption_home_study.png" alt="Adoption Home Study: A social worker interviews a couple in their living room, baby items subtly visible">
+</div>
 
 <p>Not all families are formed through biological birth. Adoption and foster care are valid, meaningful paths to parenthood in Reality RPG — and they come with their own unique challenges.</p>
 
 <h3>7a. The Adoption Process</h3>
 <p>Adoption is expensive, slow, and emotionally taxing. The timeline and costs vary dramatically by type:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Type</th><th>Cost</th><th>Timeline</th><th>Difficulty</th></tr></thead>
-<tbody>
-<tr><td>Domestic infant adoption</td><td>$20,000–$40,000</td><td>1–3 years</td><td>High — birth mother may change her mind</td></tr>
-<tr><td>International adoption</td><td>$25,000–$50,000</td><td>2–5 years</td><td>Very high — travel, immigration, country-specific requirements</td></tr>
-<tr><td>Foster-to-adopt</td><td>$0–$5,000</td><td>1–3 years (if adoption finalized)</td><td>Medium — child may be reunified with birth family</td></tr>
-<tr><td>Relative adoption</td><td>$1,000–$5,000</td><td>6–18 months</td><td>Medium — family dynamics complicate</td></tr>
-<tr><td>Foster care (non-adoption)</td><td>$0 (state provides stipend: $400–$900/month)</td><td>Ongoing</td><td>Medium — temporary placement, emotional attachment risk</td></tr>
-</tbody>
-</table>
+<!-- P1-16: Adoption Types → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">👶</span>
+    <h3>Domestic Infant</h3>
+    <p>💰 <strong>$20K–$40K</strong> · ⏱️ 1–3 years<br>⚠️ High — birth mother may change her mind</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🌍</span>
+    <h3>International</h3>
+    <p>💰 <strong>$25K–$50K</strong> · ⏱️ 2–5 years<br>⚠️ Very High — travel, immigration, country requirements</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Foster-to-Adopt</h3>
+    <p>💰 <strong>$0–$5K</strong> · ⏱️ 1–3 years<br>⚠️ Medium — child may be reunified with birth family</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">👨‍👩‍👧</span>
+    <h3>Relative Adoption</h3>
+    <p>💰 <strong>$1K–$5K</strong> · ⏱️ 6–18 months<br>⚠️ Medium — family dynamics complicate</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🤝</span>
+    <h3>Foster Care (Non-Adoption)</h3>
+    <p>💰 <strong>Stipend: $400–$900/mo</strong> · ⏱️ Ongoing<br>⚠️ Medium — temporary placement, emotional attachment risk</p>
+  </div>
 </div>
 
 <p><strong>The adoption process requires:</strong></p>
@@ -608,58 +951,90 @@
 <h3>7c. Trauma-Informed Parenting</h3>
 <p>Children who enter adoption or foster care have often experienced trauma. This requires specialized parenting approaches:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Trauma Response</th><th>Behavioral Manifestation</th><th>Parent Check</th><th>TN</th></tr></thead>
-<tbody>
-<tr><td>Hypervigilance</td><td>Child is always "on alert," can't relax, startles easily</td><td>RES (patience and consistency)</td><td>TN 45</td></tr>
-<tr><td>Attachment avoidance</td><td>Child resists affection, pushes adults away</td><td>RES (consistent warmth without pressure)</td><td>TN 50</td></tr>
-<tr><td>Emotional dysregulation</td><td>Extreme mood swings, explosive anger, shutdown</td><td>RES + EXP (de-escalation skills)</td><td>TN 50</td></tr>
-<tr><td>Dissociation</td><td>Child "zones out," seems disconnected from reality</td><td>INT (recognize signs) + RES (gentle grounding)</td><td>TN 55</td></tr>
-<tr><td>Sleep disturbances</td><td>Nightmares, refusal to sleep alone, night terrors</td><td>RES (comfort without enabling dependency)</td><td>TN 40</td></tr>
-</tbody>
-</table>
+<!-- P1-12: Trauma Responses → .tn-ladder -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">TN 45</span>
+    <span class="tn-label">👁️ Hypervigilance — Child always "on alert," can't relax. RES (patience)</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 50</span>
+    <span class="tn-label">🚫 Attachment Avoidance — Child resists affection, pushes adults away. RES (warmth without pressure)</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">TN 50</span>
+    <span class="tn-label">💥 Emotional Dysregulation — Extreme mood swings, explosive anger. RES + EXP (de-escalation)</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">TN 55</span>
+    <span class="tn-label">🌫️ Dissociation — Child "zones out," disconnected from reality. INT + RES (grounding)</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">TN 40</span>
+    <span class="tn-label">🌙 Sleep Disturbances — Nightmares, night terrors. RES (comfort without dependency)</span>
+  </div>
 </div>
 
-<p>Professional therapy for the child is almost always needed: <strong>$100–$200/session</strong>, 1–2× per week for the first year. The parent must also make <strong>RES checks at TN 40 monthly</strong> to maintain their own emotional health while supporting a traumatized child.</p>
+<p>Professional therapy for the child is almost always needed: <strong>💰 $100–$200/session</strong>, 1–2× per week for the first year. The parent must also make <strong>RES checks at TN 40 monthly</strong> to maintain their own emotional health while supporting a traumatized child.</p>
 
 <h3>7d. Attachment Issues</h3>
 <p>Building a parent-child bond takes time with adopted or foster children. The GM tracks <strong>Attachment Level</strong> on a scale of 1–5:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Level</th><th>Name</th><th>Description</th><th>How to Advance</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>Unattached</td><td>Child views parent as a stranger or authority figure. No trust.</td><td>Consistent care over 1–3 months. RES TN 45.</td></tr>
-<tr><td>2</td><td>Cautious</td><td>Child accepts care but doesn't seek comfort. May be polite but distant.</td><td>Play, shared meals, routines. RES TN 40.</td></tr>
-<tr><td>3</td><td>Conditionally attached</td><td>Child shows some affection but withdraws under stress.</td><td>Responding to distress, maintaining boundaries. RES TN 40.</td></tr>
-<tr><td>4</td><td>Securely attaching</td><td>Child seeks comfort, shows affection, trusts parent.</td><td>Continue consistency. Occasional setbacks are normal.</td></tr>
-<tr><td>5</td><td>Secure attachment</td><td>Strong, healthy bond. Child uses parent as a "secure base."</td><td>Maintain. This is the goal.</td></tr>
-</tbody>
-</table>
+<!-- P1-13: Attachment Levels → .condition-track -->
+<div class="condition-track">
+  <div class="condition-step dead">1<br>Unattached<br>No trust</div>
+  <div class="condition-step critical">2<br>Cautious<br>Distant</div>
+  <div class="condition-step injured">3<br>Conditional<br>Withdraws under stress</div>
+  <div class="condition-step sick">4<br>Securely Attaching<br>Seeks comfort</div>
+  <div class="condition-step healthy">5<br>Secure<br>Strong bond ❤️</div>
 </div>
 
 <p>A setback (trauma trigger, inconsistent care, a failed RES check) can drop the attachment level by 1. It takes <strong>twice as long</strong> to rebuild as it did to lose.</p>
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 8: CO-PARENTING AFTER DIVORCE -->
+<!-- ============================================================ -->
 <h2>8. Co-Parenting After Divorce</h2>
+
+<!-- CUSTODY SCHEDULES SVG -->
+<div class="section-illustration">
+  <img src="img/fc_custody_schedules.svg" alt="Co-Parenting Custody Schedules: Weekly calendar grids showing 4 custody arrangements">
+</div>
+
+<!-- P3-6: Holiday exchange scene -->
+<div class="section-illustration">
+  <img src="img/fc_holiday_exchange.png" alt="Co-Parenting Holiday Exchange: Two divorced parents exchange their child at a school gate at dusk, visible tension">
+</div>
 
 <p>When a couple divorces but has children, the parenting doesn't stop — it just gets more complicated. Co-parenting after divorce is one of the most stressful life events in Reality RPG.</p>
 
 <h3>8a. Custody Arrangements</h3>
 <p>The court (or mutual agreement) determines custody:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Arrangement</th><th>Child's Time Split</th><th>Common in</th><th>Parent Check</th></tr></thead>
-<tbody>
-<tr><td>Sole custody</td><td>One parent has primary residence</td><td>High-conflict divorces</td><td>EXP TN 60 to win in court</td></tr>
-<tr><td>Primary + visitation</td><td>2/3 with one parent, 1/3 with the other</td><td>Most common arrangement</td><td>EXP TN 50 to negotiate</td></tr>
-<tr><td>Joint physical custody</td><td>50/50 split (e.g., 2-2-3 schedule)</td><td>Low-conflict, cooperative divorces</td><td>RES TN 45 (both parents must cooperate)</td></tr>
-<tr><td>Shared legal, primary physical</td><td>Both decide major issues; child lives mostly with one</td><td>Moderate-conflict cases</td><td>INT TN 45 to navigate legal system</td></tr>
-</tbody>
-</table>
+<!-- P1-17: Custody Arrangements → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🔒</span>
+    <h3>Sole Custody</h3>
+    <p>One parent has primary residence<br><strong>EXP TN 60</strong> to win in court<br>Common in high-conflict divorces</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📅</span>
+    <h3>Primary + Visitation</h3>
+    <p>2/3 with one parent, 1/3 with other<br><strong>EXP TN 50</strong> to negotiate<br>Most common arrangement</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⚖️</span>
+    <h3>Joint Physical (2-2-3)</h3>
+    <p>50/50 split<br><strong>RES TN 45</strong> (both must cooperate)<br>Low-conflict, cooperative divorces</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Shared Legal, Primary Physical</h3>
+    <p>Both decide major issues; child lives mostly with one<br><strong>INT TN 45</strong> to navigate legal system<br>Moderate-conflict cases</p>
+  </div>
 </div>
 
 <p><strong>Custody battles</strong> are brutal. Each court appearance adds <strong>+3 SP</strong>. A contentious custody battle (3+ court appearances) adds <strong>+2 SP per week</strong> for both parents and the child. The child gains <strong>Trait: Insecure</strong> if the battle lasts longer than 6 months.</p>
@@ -669,7 +1044,7 @@
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Payer's Monthly Income</th><th>1 Child</th><th>2 Children</th><th>3+ Children</th></tr></thead>
+<thead><tr><th>Payer's Monthly 💰 Income</th><th>1 Child</th><th>2 Children</th><th>3+ Children</th></tr></thead>
 <tbody>
 <tr><td>$2,000–$3,000</td><td>$150–$300</td><td>$250–$500</td><td>$350–$700</td></tr>
 <tr><td>$3,000–$5,000</td><td>$300–$500</td><td>$500–$800</td><td>$700–$1,200</td></tr>
@@ -693,7 +1068,7 @@
 <tr><td>Sibling rivalry (half/step-siblings)</td><td>RES (parent mediating)</td><td>TN 45</td><td>Conflict, +2 SP per incident</td></tr>
 <tr><td>Loyalty conflicts</td><td>INT (recognizing the issue)</td><td>TN 50</td><td>Child feels torn between parents, +3 SP</td></tr>
 <tr><td>Different discipline styles</td><td>EXP (family meeting)</td><td>TN 45</td><td>Inconsistent rules confuse the child</td></tr>
-<tr><td>Financial blending</td><td>INT (budgeting)</td><td>TN 55</td><td>Money conflicts between new spouses</td></tr>
+<tr><td>💰 Financial blending</td><td>INT (budgeting)</td><td>TN 55</td><td>Money conflicts between new spouses</td></tr>
 </tbody>
 </table>
 </div>
@@ -708,29 +1083,59 @@
 
 <hr>
 
+<!-- ============================================================ -->
+<!-- SECTION 9: THE FINANCIAL IMPACT -->
+<!-- ============================================================ -->
 <h2>9. The Financial Impact of Children</h2>
 
-<p>Raising a child from birth to age 18 costs, on average, <strong>$233,610</strong> (US Department of Agriculture, 2023) — not including college. In Reality RPG, this is not abstract. It is felt every month in the form of budget constraints, career sacrifices, and financial stress.</p>
+<!-- TOTAL COST CHART SVG -->
+<div class="section-illustration">
+  <img src="img/fc_total_cost_chart.svg" alt="Total Cost of Raising a Child — Birth to Age 22: Stacked bar chart showing $276K–$528K+ across 5 age stages">
+</div>
+
+<!-- P3-7: Family budget scene -->
+<div class="section-illustration">
+  <img src="img/fc_family_budget.png" alt="Family Budget Spreadsheet: Before Baby ($1,000 savings/month) vs After Baby (−$800/month deficit) on a laptop screen">
+</div>
+
+<p>Raising a child from birth to age 18 costs, on average, <strong>💰 $233,610</strong> (US Department of Agriculture, 2023) — not including college. In Reality RPG, this is not abstract. It is felt every month in the form of budget constraints, career sacrifices, and financial stress.</p>
 
 <h3>9a. Total Cost by Age Stage</h3>
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Age Stage</th><th>Duration</th><th>Annual Cost</th><th>Stage Total</th><th>Major Expenses</th></tr></thead>
+<thead><tr><th>Age Stage</th><th>Duration</th><th>💰 Annual Cost</th><th>💰 Stage Total</th><th>Major Expenses</th></tr></thead>
 <tbody>
 <tr><td>🍼 Infant (0–1)</td><td>1 year</td><td>$12,000–$18,000</td><td>$12,000–$18,000</td><td>Daycare, diapers, formula, gear, medical</td></tr>
 <tr><td>🧒 Toddler (1–3)</td><td>3 years</td><td>$14,000–$22,000</td><td>$42,000–$66,000</td><td>Daycare, food, clothes, activities</td></tr>
 <tr><td>👦 School Age (4–12)</td><td>9 years</td><td>$10,000–$16,000</td><td>$90,000–$144,000</td><td>Food, clothes, activities, school supplies, healthcare</td></tr>
 <tr><td>🧑 Teen (13–18)</td><td>6 years</td><td>$12,000–$20,000</td><td>$72,000–$120,000</td><td>Food, car, activities, college prep, healthcare, clothes</td></tr>
 <tr><td>🎓 College (18–22)</td><td>4 years</td><td>$15,000–$45,000</td><td>$60,000–$180,000</td><td>Tuition, room/board, books, fees</td></tr>
-<tr><td><strong>TOTAL</strong></td><td><strong>23 years</strong></td><td><strong>—</strong></td><td><strong>$276,000–$528,000</strong></td><td><strong>All of the above</strong></td></tr>
+<tr><td><strong>TOTAL</strong></td><td><strong>23 years</strong></td><td><strong>—</strong></td><td><strong>💰 $276,000–$528,000</strong></td><td><strong>All of the above</strong></td></tr>
 </tbody>
 </table>
 </div>
 
 <div class="callout warning">
   <div class="callout-title">💰 The Hidden Costs</div>
-  <p>The table above doesn't include: <strong>parental career sacrifices</strong> (one parent reducing hours or leaving the workforce: $500,000–$1,000,000+ in lost lifetime earnings), <strong>opportunity costs</strong> (delayed home purchase, reduced retirement savings), <strong>emotional costs</strong> (SP accumulation, relationship strain, sleep deprivation), or <strong>tax implications</strong> (child tax credit offsets some costs but not all). The <em>true</em> cost of a child over 23 years is closer to <strong>$1,000,000–$2,000,000</strong> when all factors are included.</p>
+  <p>The table above doesn't include: <strong>parental career sacrifices</strong> (one parent reducing hours or leaving the workforce: 💰 $500,000–$1,000,000+ in lost lifetime earnings), <strong>opportunity costs</strong> (delayed home purchase, reduced retirement savings), <strong>emotional costs</strong> (SP accumulation, relationship strain, sleep deprivation), or <strong>tax implications</strong> (child tax credit offsets some costs but not all). The <em>true</em> cost of a child over 23 years is closer to <strong>💰 $1,000,000–$2,000,000</strong> when all factors are included.</p>
+</div>
+
+<!-- P1-27: Stress bars for the budget example -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💚 Before Baby</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stable"></div></div>
+  <span>+$1,000/mo savings</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💛 After 6 mo</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill stressed"></div></div>
+  <span>−$800/mo deficit</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">❤️‍🔥 After 12 mo</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed"></div></div>
+  <span>$4,800 credit card debt</span>
 </div>
 
 <h3>9b. College Savings Plans (529 Plans)</h3>
@@ -740,8 +1145,8 @@
 <table>
 <thead><tr><th>Aspect</th><th>Detail</th></tr></thead>
 <tbody>
-<tr><td>Monthly contribution</td><td>$50–$500/month typical</td></tr>
-<tr><td>Annual limit</td><td>$15,000 per contributor (per child)</td></tr>
+<tr><td>Monthly contribution</td><td>💰 $50–$500/month typical</td></tr>
+<tr><td>Annual limit</td><td>💰 $15,000 per contributor (per child)</td></tr>
 <tr><td>Tax benefit</td><td>Tax-deferred growth; tax-free withdrawals for qualified education expenses</td></tr>
 <tr><td>Parent check to maintain</td><td>RES TN 35 per quarter — staying disciplined about saving when money is tight</td></tr>
 <tr><td>Failure effect</td><td>Parent skips contributions. +1 SP from guilt. College costs increase later.</td></tr>
@@ -749,39 +1154,55 @@
 </table>
 </div>
 
-<p>A family that saves <strong>$200/month</strong> from birth with a 6% average return will have approximately <strong>$74,000</strong> by the time the child turns 18. This covers a significant portion of public college costs but falls short of private college tuition.</p>
+<p>A family that saves <strong>💰 $200/month</strong> from birth with a 6% average return will have approximately <strong>💰 $74,000</strong> by the time the child turns 18. This covers a significant portion of public college costs but falls short of private college tuition.</p>
 
 <h3>9c. Insurance Changes</h3>
 <p>Adding a child to the family changes insurance needs dramatically:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Insurance Type</th><th>Cost Change</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>Health insurance (adding dependent)</td><td>+$200–$600/month</td><td>Pediatrician visits, vaccines, emergencies</td></tr>
-<tr><td>Life insurance (increase coverage)</td><td>+$50–$200/month</td><td>Ensures child is provided for if parent dies. See <a href="death-grief.html">Death &amp; Grief</a>.</td></tr>
-<tr><td>Homeowners / renters insurance</td><td>+$0–$100/month</td><td>Liability coverage increases with children</td></tr>
-<tr><td>Auto insurance (more drivers)</td><td>+$100–$400/month</td><td>Increases significantly when teen gets license</td></tr>
-<tr><td>Disability insurance</td><td>+$50–$150/month</td><td>Critical if one parent is the primary earner</td></tr>
-</tbody>
-</table>
+<!-- P1-20: Insurance Changes → .card-grid -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">🏥</span>
+    <h3>Health (Adding Dependent)</h3>
+    <p>💰 <strong>+$200–$600/mo</strong><br>Pediatrician visits, vaccines, emergencies</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🛡️</span>
+    <h3>Life Insurance (Increase)</h3>
+    <p>💰 <strong>+$50–$200/mo</strong><br>Ensures child provided for if parent dies</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🏠</span>
+    <h3>Homeowners / Renters</h3>
+    <p>💰 <strong>+$0–$100/mo</strong><br>Liability coverage increases with children</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🚗</span>
+    <h3>Auto Insurance</h3>
+    <p>💰 <strong>+$100–$400/mo</strong><br>Increases significantly when teen gets license</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">💪</span>
+    <h3>Disability Insurance</h3>
+    <p>💰 <strong>+$50–$150/mo</strong><br>Critical if one parent is primary earner</p>
+  </div>
 </div>
 
-<p><strong>Total monthly insurance increase: $400–$1,450/month</strong>, or <strong>$4,800–$17,400/year</strong>.</p>
+<p><strong>💰 Total monthly insurance increase: $400–$1,450/month</strong>, or <strong>💰 $4,800–$17,400/year</strong>.</p>
 
 <div class="callout example">
   <div class="callout-title">📝 Example: The Real Budget — A Family of Three</div>
   <p>Mark and Sarah earn a combined $95,000/year. Before Lily was born, their monthly budget looked manageable: $2,800 mortgage, $400 groceries, $300 utilities, $200 insurance, $500 entertainment/dining, with $1,000 left for savings.</p>
   <p>After Lily's birth, the new reality:</p>
   <ul>
-    <li>Sarah reduces to part-time, losing $20,000/year in income</li>
-    <li>Daycare: $1,200/month ($14,400/year)</li>
-    <li>Health insurance increase: $400/month ($4,800/year)</li>
-    <li>Baby supplies, food, clothes: $300/month ($3,600/year)</li>
+    <li>Sarah reduces to part-time, losing 💰 $20,000/year in income</li>
+    <li>Daycare: 💰 $1,200/month ($14,400/year)</li>
+    <li>Health insurance increase: 💰 $400/month ($4,800/year)</li>
+    <li>Baby supplies, food, clothes: 💰 $300/month ($3,600/year)</li>
     <li>Savings drops to $0/month</li>
     <li>Emergency fund: none</li>
   </ul>
-  <p>Their monthly deficit is now <strong>−$800</strong>. They credit-card the gap, accumulating debt. Both parents gain <strong>+3 SP/month</strong> from financial stress. After 6 months, they've accumulated 36 SP from finances alone and are $4,800 in credit card debt. This is not a bad outcome — this is a <em>typical</em> outcome for a middle-class American family with one child.</p>
+  <p>Their monthly deficit is now <strong>−$800</strong>. They credit-card the gap, accumulating debt. Both parents gain <strong>+3 SP/month</strong> from financial stress. After 6 months, they've accumulated 36 SP from finances alone and are 💰 $4,800 in credit card debt. This is not a bad outcome — this is a <em>typical</em> outcome for a middle-class American family with one child.</p>
 </div>
 
 <div class="callout rule">

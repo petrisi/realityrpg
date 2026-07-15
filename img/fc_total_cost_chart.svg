@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550" width="900" height="550">
+  <defs>
+    <filter id="barShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+    <style>
+      text { font-family: system-ui, sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #1a1a2e; }
+      .subtitle { font-size: 13px; fill: #555; }
+      .axis-label { font-size: 12px; fill: #666; }
+      .bar-label { font-size: 13px; font-weight: 600; fill: #1a1a2e; }
+      .legend-text { font-size: 12px; fill: #333; }
+      .grand-total { font-size: 17px; font-weight: 700; fill: #f8f9fa; }
+      .grid-line { stroke: #e0e0e0; stroke-width: 1; }
+      .axis-line { stroke: #999; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="550" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" class="title">Total Cost of Raising a Child — Birth to Age 22</text>
+  <text x="450" y="56" text-anchor="middle" class="subtitle">USDA 2023 data | $276,000–$528,000+ (excluding college savings)</text>
+
+  <!--
+    Chart layout:
+      Chart area: x=70..870 (width 800), y=80..370 (height 290)
+      Y-axis: $0 at y=370, $25K at y=80
+      Scale: 290px / 25000 = 0.0116 px per dollar
+      y = 370 - (value / 25000) * 290
+      
+      5 bars: centers at x=150, 310, 470, 630, 790
+      Bar width: 80, so left edges: 110, 270, 430, 590, 750
+  -->
+
+  <!-- Grid lines (Y-axis) -->
+  <g>
+    <line x1="70" y1="370" x2="870" y2="370" class="grid-line"/>
+    <text x="62" y="374" text-anchor="end" class="axis-label">$0</text>
+    <line x1="70" y1="316" x2="870" y2="316" class="grid-line"/>
+    <text x="62" y="320" text-anchor="end" class="axis-label">$5K</text>
+    <line x1="70" y1="262" x2="870" y2="262" class="grid-line"/>
+    <text x="62" y="266" text-anchor="end" class="axis-label">$10K</text>
+    <line x1="70" y1="208" x2="870" y2="208" class="grid-line"/>
+    <text x="62" y="212" text-anchor="end" class="axis-label">$15K</text>
+    <line x1="70" y1="154" x2="870" y2="154" class="grid-line"/>
+    <text x="62" y="158" text-anchor="end" class="axis-label">$20K</text>
+    <line x1="70" y1="100" x2="870" y2="100" class="grid-line"/>
+    <text x="62" y="104" text-anchor="end" class="axis-label">$25K</text>
+  </g>
+
+  <!-- Axes -->
+  <line x1="70" y1="370" x2="870" y2="370" class="axis-line"/>
+  <line x1="70" y1="80" x2="70" y2="370" class="axis-line"/>
+
+  <!--
+    BAR 1: Infant (0–1) — Total $15,000
+    Stack (bottom to top): Daycare $8K, Medical $2K, Diapers/Formula $2K, Gear/Clothes $2K, Food $1K
+  -->
+  <g filter="url(#barShadow)">
+    <!-- Daycare $8K: bottom=370, top=370-(8000/25000)*290=370-92.8=277.2, h=92.8 -->
+    <rect x="110" y="277.2" width="80" height="92.8" fill="#e74c3c" rx="3"/>
+    <!-- Medical $2K: bottom=277.2, top=277.2-23.2=254, h=23.2 -->
+    <rect x="110" y="254" width="80" height="23.2" fill="#2980b9"/>
+    <!-- Diapers/Formula $2K: bottom=254, top=254-23.2=230.8, h=23.2 -->
+    <rect x="110" y="230.8" width="80" height="23.2" fill="#e67e22"/>
+    <!-- Gear/Clothes $2K: bottom=230.8, top=230.8-23.2=207.6, h=23.2 -->
+    <rect x="110" y="207.6" width="80" height="23.2" fill="#27ae60"/>
+    <!-- Food $1K: bottom=207.6, top=207.6-11.6=196, h=11.6 -->
+    <rect x="110" y="196" width="80" height="11.6" fill="#8e44ad" rx="3"/>
+  </g>
+  <text x="150" y="392" text-anchor="middle" class="bar-label">Infant</text>
+  <text x="150" y="406" text-anchor="middle" class="axis-label">(0–1)</text>
+  <text x="150" y="188" text-anchor="middle" style="font-size:11px; font-weight:600; fill:#333;">$15K</text>
+
+  <!--
+    BAR 2: Toddler (1–3) — Total $18,000
+    Stack: Daycare $12K, Medical $1.5K, Activities $1.5K, Food/Clothes $2K, School Supplies $1K
+  -->
+  <g filter="url(#barShadow)">
+    <!-- Daycare $12K: bottom=370, top=370-139.2=230.8, h=139.2 -->
+    <rect x="270" y="230.8" width="80" height="139.2" fill="#e74c3c" rx="3"/>
+    <!-- Medical $1.5K: bottom=230.8, top=230.8-17.4=213.4, h=17.4 -->
+    <rect x="270" y="213.4" width="80" height="17.4" fill="#2980b9"/>
+    <!-- Activities $1.5K: bottom=213.4, top=213.4-17.4=196, h=17.4 -->
+    <rect x="270" y="196" width="80" height="17.4" fill="#e67e22"/>
+    <!-- Food/Clothes $2K: bottom=196, top=196-23.2=172.8, h=23.2 -->
+    <rect x="270" y="172.8" width="80" height="23.2" fill="#27ae60"/>
+    <!-- School Supplies $1K: bottom=172.8, top=172.8-11.6=161.2, h=11.6 -->
+    <rect x="270" y="161.2" width="80" height="11.6" fill="#8e44ad" rx="3"/>
+  </g>
+  <text x="310" y="392" text-anchor="middle" class="bar-label">Toddler</text>
+  <text x="310" y="406" text-anchor="middle" class="axis-label">(1–3)</text>
+  <text x="310" y="153" text-anchor="middle" style="font-size:11px; font-weight:600; fill:#333;">$18K</text>
+
+  <!--
+    BAR 3: School Age (4–12) — Total $13,000
+    Stack: Activities $3K, Medical $1.5K, Food $4K, Clothes $2K, School $2.5K
+  -->
+  <g filter="url(#barShadow)">
+    <!-- Activities $3K: bottom=370, top=370-34.8=335.2, h=34.8 -->
+    <rect x="430" y="335.2" width="80" height="34.8" fill="#e74c3c" rx="3"/>
+    <!-- Medical $1.5K: bottom=335.2, top=335.2-17.4=317.8, h=17.4 -->
+    <rect x="430" y="317.8" width="80" height="17.4" fill="#2980b9"/>
+    <!-- Food $4K: bottom=317.8, top=317.8-46.4=271.4, h=46.4 -->
+    <rect x="430" y="271.4" width="80" height="46.4" fill="#27ae60"/>
+    <!-- Clothes $2K: bottom=271.4, top=271.4-23.2=248.2, h=23.2 -->
+    <rect x="430" y="248.2" width="80" height="23.2" fill="#e67e22"/>
+    <!-- School $2.5K: bottom=248.2, top=248.2-29=219.2, h=29 -->
+    <rect x="430" y="219.2" width="80" height="29" fill="#8e44ad" rx="3"/>
+  </g>
+  <text x="470" y="392" text-anchor="middle" class="bar-label">School Age</text>
+  <text x="470" y="406" text-anchor="middle" class="axis-label">(4–12)</text>
+  <text x="470" y="211" text-anchor="middle" style="font-size:11px; font-weight:600; fill:#333;">$13K</text>
+
+  <!--
+    BAR 4: Teen (13–18) — Total $16,000
+    Stack: Activities $3K, Car/Insurance $3K, Food $5K, Clothes $2K, College Prep $3K
+  -->
+  <g filter="url(#barShadow)">
+    <!-- Activities $3K: bottom=370, top=370-34.8=335.2, h=34.8 -->
+    <rect x="590" y="335.2" width="80" height="34.8" fill="#e74c3c" rx="3"/>
+    <!-- Car/Insurance $3K: bottom=335.2, top=335.2-34.8=300.4, h=34.8 -->
+    <rect x="590" y="300.4" width="80" height="34.8" fill="#2980b9"/>
+    <!-- Food $5K: bottom=300.4, top=300.4-58=242.4, h=58 -->
+    <rect x="590" y="242.4" width="80" height="58" fill="#27ae60"/>
+    <!-- Clothes $2K: bottom=242.4, top=242.4-23.2=219.2, h=23.2 -->
+    <rect x="590" y="219.2" width="80" height="23.2" fill="#e67e22"/>
+    <!-- College Prep $3K: bottom=219.2, top=219.2-34.8=184.4, h=34.8 -->
+    <rect x="590" y="184.4" width="80" height="34.8" fill="#8e44ad" rx="3"/>
+  </g>
+  <text x="630" y="392" text-anchor="middle" class="bar-label">Teen</text>
+  <text x="630" y="406" text-anchor="middle" class="axis-label">(13–18)</text>
+  <text x="630" y="176" text-anchor="middle" style="font-size:11px; font-weight:600; fill:#333;">$16K</text>
+
+  <!--
+    BAR 5: College (18–22) — Total $30,000
+    Stack: Tuition $20K, Room/Board $7K, Books/Fees $2K, Other $1K
+    The bar exceeds the $25K y-axis. We draw what fits and add an overflow indicator.
+    
+    Tuition $20K: bottom=370, top=370-(20000/25000)*290=370-232=138, h=232
+    Room/Board $7K: bottom=138, top=138-(7000/25000)*290=138-81.2=56.8
+      Visible portion: from 138 to 80 (chart top) = 58px; remaining 23.2px above chart
+    Books/Fees $2K + Other $1K = $3K total = 34.8px — entirely above chart area
+  -->
+  <g filter="url(#barShadow)">
+    <!-- Tuition $20K: fully visible, bottom=370, top=138, h=232 -->
+    <rect x="750" y="138" width="80" height="232" fill="#e74c3c" rx="3"/>
+    <!-- Room/Board $7K: visible portion bottom=138, top=80, h=58 -->
+    <rect x="750" y="80" width="80" height="58" fill="#2980b9"/>
+    <!-- Overflow indicator triangle -->
+    <polygon points="750,80 790,55 830,80" fill="#e74c3c" opacity="0.7"/>
+  </g>
+  <text x="790" y="46" text-anchor="middle" style="font-size:11px; font-weight:700; fill:#c0392b;">$30K</text>
+  <text x="790" y="392" text-anchor="middle" class="bar-label">College</text>
+  <text x="790" y="406" text-anchor="middle" class="axis-label">(18–22)</text>
+
+  <!-- Legend -->
+  <g transform="translate(120, 445)">
+    <!-- Red -->
+    <rect x="0" y="0" width="14" height="14" fill="#e74c3c" rx="2"/>
+    <text x="20" y="12" class="legend-text">Daycare / Education / Activities</text>
+    <!-- Blue -->
+    <rect x="230" y="0" width="14" height="14" fill="#2980b9" rx="2"/>
+    <text x="250" y="12" class="legend-text">Medical / Insurance / Car</text>
+    <!-- Orange -->
+    <rect x="440" y="0" width="14" height="14" fill="#e67e22" rx="2"/>
+    <text x="460" y="12" class="legend-text">Supplies / Gear / Clothes</text>
+    <!-- Green -->
+    <rect x="0" y="20" width="14" height="14" fill="#27ae60" rx="2"/>
+    <text x="20" y="32" class="legend-text">Food</text>
+    <!-- Purple -->
+    <rect x="110" y="20" width="14" height="14" fill="#8e44ad" rx="2"/>
+    <text x="130" y="32" class="legend-text">School / College Prep</text>
+  </g>
+
+  <!-- Grand Total Banner -->
+  <rect x="100" y="500" width="700" height="36" rx="6" fill="#1a1a2e"/>
+  <text x="450" y="523" text-anchor="middle" class="grand-total">Grand Total (23 years): $276,000–$528,000+</text>
+</svg>

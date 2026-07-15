@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" width="800" height="900">
+  <defs>
+    <!-- Arrowhead marker for main flow arrows -->
+    <marker id="arrowMain" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#2c3e50"/>
+    </marker>
+    <!-- Arrowhead marker for feedback loop arrows -->
+    <marker id="arrowLoop" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#c0392b"/>
+    </marker>
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000033"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="900" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="42" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#2c3e50">The Parental Stress Compound Effect</text>
+  <line x1="120" y1="56" x2="680" y2="56" stroke="#e67e22" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ===== NODE 1: Fertility Struggle ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="72" width="450" height="72" rx="14" fill="#f5b7b1" stroke="#c0392b" stroke-width="2"/>
+    <text x="400" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Fertility Struggle</text>
+    <text x="400" y="122" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#7b241c">+2 SP/cycle → +5 SP after 12 months</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <line x1="400" y1="144" x2="400" y2="168" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 2: Pregnancy Anxiety ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="168" width="450" height="72" rx="14" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+    <text x="400" y="196" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Pregnancy Anxiety</text>
+    <text x="400" y="218" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#7e5109">+2 SP/day (T1) → +3 SP/day (T3)</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <line x1="400" y1="240" x2="400" y2="264" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 3: Birth Event ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="264" width="450" height="72" rx="14" fill="#fadbd8" stroke="#c0392b" stroke-width="2"/>
+    <text x="400" y="292" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Birth Event</text>
+    <text x="400" y="314" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#7b241c">+2 to +20 SP depending on complications</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <line x1="400" y1="336" x2="400" y2="360" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 4: Sleep Deprivation ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="360" width="450" height="72" rx="14" fill="#d5d8dc" stroke="#2c3e50" stroke-width="2"/>
+    <text x="400" y="388" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Sleep Deprivation</text>
+    <text x="400" y="410" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#f2f3f4">10+ SP triggers Exhausted status</text>
+  </g>
+
+  <!-- Arrow 4→5 -->
+  <line x1="400" y1="432" x2="400" y2="456" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 5: Financial Stress ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="456" width="450" height="72" rx="14" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+    <text x="400" y="484" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Financial Stress</text>
+    <text x="400" y="506" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#7e5109">+3 SP/month from budget deficit</text>
+  </g>
+
+  <!-- Arrow 5→6 -->
+  <line x1="400" y1="528" x2="400" y2="552" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 6: Relationship Strain ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="552" width="450" height="72" rx="14" fill="#fcf3cf" stroke="#f39c12" stroke-width="2"/>
+    <text x="400" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Relationship Strain</text>
+    <text x="400" y="602" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#7d6608">custody · co-parenting · blended family</text>
+  </g>
+
+  <!-- Arrow 6→7 -->
+  <line x1="400" y1="624" x2="400" y2="648" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 7: Child's Own Crises ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="648" width="450" height="72" rx="14" fill="#fadbd8" stroke="#c0392b" stroke-width="2"/>
+    <text x="400" y="676" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#2c3e50">Child's Own Crises</text>
+    <text x="400" y="698" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#7b241c">illness · bullying · rebellion · mental health</text>
+  </g>
+
+  <!-- Arrow 7→8 -->
+  <line x1="400" y1="720" x2="400" y2="744" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowMain)"/>
+
+  <!-- ===== NODE 8: TOTAL SP Load ===== -->
+  <g filter="url(#shadow)">
+    <rect x="175" y="744" width="450" height="72" rx="14" fill="#e74c3c" stroke="#922b21" stroke-width="2.5"/>
+    <text x="400" y="772" text-anchor="middle" font-family="system-ui, sans-serif" font-size="17" font-weight="800" fill="#ffffff">TOTAL SP Load</text>
+    <text x="400" y="796" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#fadbd8">Can reach 50–100+ SP cumulatively</text>
+  </g>
+
+  <!-- ===== FEEDBACK LOOP 1: Financial Stress → Relationship Strain (curves UP right side) ===== -->
+  <!-- Path goes from right edge of node 5 up to right edge of node 6 (but curves upward) -->
+  <path d="M640,492 C720,492 720,460 720,440 C720,420 700,420 640,420"
+        fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="8,5"
+        marker-end="url(#arrowLoop)"/>
+  <!-- Label for loop 1 -->
+  <text x="745" y="460" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#c0392b" transform="rotate(-90, 745, 460)">spiral ↓</text>
+
+  <!-- ===== FEEDBACK LOOP 2: Child's Own Crises → Sleep Deprivation (curves UP right side) ===== -->
+  <!-- Path goes from right edge of node 7 up to right edge of node 4 -->
+  <path d="M640,672 C730,672 730,480 730,420 C730,380 700,380 640,380"
+        fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="8,5"
+        marker-end="url(#arrowLoop)"/>
+  <!-- Label for loop 2 -->
+  <text x="755" y="540" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#c0392b" transform="rotate(-90, 755, 540)">compounds ↑</text>
+
+</svg>

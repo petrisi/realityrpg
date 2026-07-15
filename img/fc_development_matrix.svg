@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 600" width="1050" height="600">
+  <defs>
+    <style>
+      text { font-family: system-ui, sans-serif; }
+      .title { font-size: 20px; font-weight: 700; fill: #2c3e50; }
+      .axis-label { font-size: 13px; fill: #555; }
+      .domain-label { font-size: 14px; font-weight: 600; }
+      .milestone-label { font-size: 11px; fill: #333; }
+      .note { font-size: 11px; fill: #c0392b; font-style: italic; }
+      .grid-line { stroke: #ccc; stroke-width: 0.5; }
+      .axis-line { stroke: #888; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1050" height="600" fill="#fafbfc" rx="8"/>
+
+  <!-- Title -->
+  <text x="525" y="32" text-anchor="middle" class="title">Child Development Matrix — Ages 0–36 Months</text>
+
+  <!-- Chart area: left=100, top=50, right=1010, bottom=540 -->
+  <!-- Chart width = 910, chart height = 490 -->
+  <!-- Age 0..36 maps to x=100..1010 -->
+  <!-- ageToX = 100 + (age/36)*910 -->
+  <!-- 4 rows of height 122.5 each -->
+
+  <!-- Domain row backgrounds -->
+  <!-- Physical row: y=50..172.5 -->
+  <rect x="100" y="50" width="910" height="122.5" fill="#d5f5e3" rx="4"/>
+  <!-- Cognitive row: y=172.5..295 -->
+  <rect x="100" y="172.5" width="910" height="122.5" fill="#d6eaf8" rx="4"/>
+  <!-- Social row: y=295..417.5 -->
+  <rect x="100" y="295" width="910" height="122.5" fill="#e8daef" rx="4"/>
+  <!-- Language row: y=417.5..540 -->
+  <rect x="100" y="417.5" width="910" height="122.5" fill="#fef9e7" rx="4"/>
+
+  <!-- Vertical grid lines at age markers -->
+  <!-- ageToX = 100 + (age/36)*910 -->
+  <!-- 0mo  x=100 -->
+  <line x1="100" y1="50" x2="100" y2="540" class="grid-line"/>
+  <!-- 3mo  x=175.83 -->
+  <line x1="175.83" y1="50" x2="175.83" y2="540" class="grid-line"/>
+  <!-- 6mo  x=251.67 -->
+  <line x1="251.67" y1="50" x2="251.67" y2="540" class="grid-line"/>
+  <!-- 9mo  x=327.5 -->
+  <line x1="327.5" y1="50" x2="327.5" y2="540" class="grid-line"/>
+  <!-- 12mo x=403.33 -->
+  <line x1="403.33" y1="50" x2="403.33" y2="540" class="grid-line"/>
+  <!-- 18mo x=555 -->
+  <line x1="555" y1="50" x2="555" y2="540" class="grid-line"/>
+  <!-- 24mo x=706.67 -->
+  <line x1="706.67" y1="50" x2="706.67" y2="540" class="grid-line"/>
+  <!-- 30mo x=858.33 -->
+  <line x1="858.33" y1="50" x2="858.33" y2="540" class="grid-line"/>
+  <!-- 36mo x=1010 -->
+  <line x1="1010" y1="50" x2="1010" y2="540" class="grid-line"/>
+
+  <!-- Horizontal grid lines between rows -->
+  <line x1="100" y1="172.5" x2="1010" y2="172.5" class="grid-line"/>
+  <line x1="100" y1="295" x2="1010" y2="295" class="grid-line"/>
+  <line x1="100" y1="417.5" x2="1010" y2="417.5" class="grid-line"/>
+
+  <!-- X-axis labels -->
+  <text x="100" y="558" text-anchor="middle" class="axis-label">0</text>
+  <text x="175.83" y="558" text-anchor="middle" class="axis-label">3</text>
+  <text x="251.67" y="558" text-anchor="middle" class="axis-label">6</text>
+  <text x="327.5" y="558" text-anchor="middle" class="axis-label">9</text>
+  <text x="403.33" y="558" text-anchor="middle" class="axis-label">12</text>
+  <text x="555" y="558" text-anchor="middle" class="axis-label">18</text>
+  <text x="706.67" y="558" text-anchor="middle" class="axis-label">24</text>
+  <text x="858.33" y="558" text-anchor="middle" class="axis-label">30</text>
+  <text x="1010" y="558" text-anchor="middle" class="axis-label">36</text>
+  <text x="555" y="578" text-anchor="middle" class="axis-label" fill="#777" font-size="12">Age (months)</text>
+
+  <!-- Y-axis domain labels -->
+  <text x="90" y="114" text-anchor="end" class="domain-label" fill="#27ae60">Physical 🏃</text>
+  <text x="90" y="236.5" text-anchor="end" class="domain-label" fill="#2980b9">Cognitive 🧠</text>
+  <text x="90" y="359" text-anchor="end" class="domain-label" fill="#8e44ad">Social 👥</text>
+  <text x="90" y="481.5" text-anchor="end" class="domain-label" fill="#f39c12">Language 🗣️</text>
+
+  <!-- ====== PHYSICAL MILESTONES ====== -->
+  <!-- Accent: #27ae60 -->
+
+  <!-- 1mo: Tracks objects 👀 -->
+  <circle cx="125.28" cy="90" r="6" fill="#27ae60"/>
+  <text x="136" y="94" class="milestone-label">1mo: Tracks objects 👀</text>
+
+  <!-- 3mo: Holds head up 💪 -->
+  <circle cx="175.83" cy="118" r="6" fill="#27ae60"/>
+  <text x="186.6" y="122" class="milestone-label">3mo: Holds head up 💪</text>
+
+  <!-- 4mo: Rolls over 🔄 -->
+  <circle cx="201.11" cy="146" r="6" fill="#27ae60"/>
+  <text x="211.9" y="150" class="milestone-label">4mo: Rolls over 🔄</text>
+
+  <!-- 6mo: Sits with support 🍎 -->
+  <circle cx="251.67" cy="90" r="6" fill="#27ae60"/>
+  <text x="262.5" y="94" class="milestone-label">6mo: Sits with support 🍎</text>
+
+  <!-- 9mo: Crawls 🧎 -->
+  <circle cx="327.5" cy="118" r="6" fill="#27ae60"/>
+  <text x="338.3" y="122" class="milestone-label">9mo: Crawls 🧎</text>
+
+  <!-- 12mo: First steps 🚶 -->
+  <circle cx="403.33" cy="146" r="6" fill="#27ae60"/>
+  <text x="414.1" y="150" class="milestone-label">12mo: First steps 🚶</text>
+
+  <!-- 18mo: Runs clumsily -->
+  <circle cx="555" cy="90" r="6" fill="#27ae60"/>
+  <text x="565.8" y="94" class="milestone-label">18mo: Runs clumsily</text>
+
+  <!-- 24mo: Kicks ball, climbs stairs -->
+  <circle cx="706.67" cy="118" r="6" fill="#27ae60"/>
+  <text x="717.5" y="122" class="milestone-label">24mo: Kicks ball, climbs stairs</text>
+
+
+  <!-- ====== COGNITIVE MILESTONES ====== -->
+  <!-- Accent: #2980b9 -->
+
+  <!-- 2mo: Social smile 😊 -->
+  <circle cx="150.56" cy="216" r="6" fill="#2980b9"/>
+  <text x="161.3" y="220" class="milestone-label">2mo: Social smile 😊</text>
+
+  <!-- 4mo: Laughs 😂 -->
+  <circle cx="201.11" cy="244" r="6" fill="#2980b9"/>
+  <text x="211.9" y="248" class="milestone-label">4mo: Laughs 😂</text>
+
+  <!-- 6mo: Object permanence -->
+  <circle cx="251.67" cy="272" r="6" fill="#2980b9"/>
+  <text x="262.5" y="276" class="milestone-label">6mo: Object permanence</text>
+
+  <!-- 9mo: Cause & effect -->
+  <circle cx="327.5" cy="216" r="6" fill="#2980b9"/>
+  <text x="338.3" y="220" class="milestone-label">9mo: Cause &amp; effect</text>
+
+  <!-- 12mo: Points 🤝 -->
+  <circle cx="403.33" cy="244" r="6" fill="#2980b9"/>
+  <text x="414.1" y="248" class="milestone-label">12mo: Points 🤝</text>
+
+  <!-- 18mo: Simple sorting -->
+  <circle cx="555" cy="272" r="6" fill="#2980b9"/>
+  <text x="565.8" y="276" class="milestone-label">18mo: Simple sorting</text>
+
+  <!-- 24mo: 2–3 piece puzzles -->
+  <circle cx="706.67" cy="216" r="6" fill="#2980b9"/>
+  <text x="717.5" y="220" class="milestone-label">24mo: 2–3 piece puzzles</text>
+
+  <!-- 30mo: Pretend play -->
+  <circle cx="858.33" cy="244" r="6" fill="#2980b9"/>
+  <text x="869.1" y="248" class="milestone-label">30mo: Pretend play</text>
+
+
+  <!-- ====== SOCIAL MILESTONES ====== -->
+  <!-- Accent: #8e44ad -->
+
+  <!-- 2mo: Coos 😊 -->
+  <circle cx="150.56" cy="336" r="6" fill="#8e44ad"/>
+  <text x="161.3" y="340" class="milestone-label">2mo: Coos 😊</text>
+
+  <!-- 6mo: Stranger anxiety -->
+  <circle cx="251.67" cy="364" r="6" fill="#8e44ad"/>
+  <text x="262.5" y="368" class="milestone-label">6mo: Stranger anxiety</text>
+
+  <!-- 9mo: Babbles 👶 -->
+  <circle cx="327.5" cy="392" r="6" fill="#8e44ad"/>
+  <text x="338.3" y="396" class="milestone-label">9mo: Babbles 👶</text>
+
+  <!-- 12mo: Parallel play -->
+  <circle cx="403.33" cy="336" r="6" fill="#8e44ad"/>
+  <text x="414.1" y="340" class="milestone-label">12mo: Parallel play</text>
+
+  <!-- 18mo: Imitates adults -->
+  <circle cx="555" cy="364" r="6" fill="#8e44ad"/>
+  <text x="565.8" y="368" class="milestone-label">18mo: Imitates adults</text>
+
+  <!-- 24mo: Shared play, says "mine" -->
+  <circle cx="706.67" cy="392" r="6" fill="#8e44ad"/>
+  <text x="717.5" y="396" class="milestone-label">24mo: Shared play, says "mine"</text>
+
+  <!-- 30mo: Takes turns (learning) -->
+  <circle cx="858.33" cy="336" r="6" fill="#8e44ad"/>
+  <text x="869.1" y="340" class="milestone-label">30mo: Takes turns (learning)</text>
+
+  <!-- 36mo: Cooperative play -->
+  <circle cx="1010" cy="364" r="6" fill="#8e44ad"/>
+  <text x="990" y="368" text-anchor="end" class="milestone-label">36mo: Cooperative play</text>
+
+
+  <!-- ====== LANGUAGE MILESTONES ====== -->
+  <!-- Accent: #f39c12 -->
+
+  <!-- 12mo: First words 🗣️ -->
+  <circle cx="403.33" cy="460" r="6" fill="#f39c12"/>
+  <text x="414.1" y="464" class="milestone-label">12mo: First words 🗣️</text>
+
+  <!-- 15mo: 5–10 words -->
+  <circle cx="493.06" cy="488" r="6" fill="#f39c12"/>
+  <text x="503.8" y="492" class="milestone-label">15mo: 5–10 words</text>
+
+  <!-- 18mo: 10–50 words -->
+  <circle cx="555" cy="516" r="6" fill="#f39c12"/>
+  <text x="565.8" y="520" class="milestone-label">18mo: 10–50 words</text>
+
+  <!-- 24mo: 50–200 words, phrases -->
+  <circle cx="706.67" cy="460" r="6" fill="#f39c12"/>
+  <text x="717.5" y="464" class="milestone-label">24mo: 50–200 words, phrases</text>
+
+  <!-- 30mo: 200+ words, asks "why?" -->
+  <circle cx="858.33" cy="488" r="6" fill="#f39c12"/>
+  <text x="869.1" y="492" class="milestone-label">30mo: 200+ words, asks "why?"</text>
+
+  <!-- 36mo: 200–1000 words, sentences -->
+  <circle cx="1010" cy="516" r="6" fill="#f39c12"/>
+  <text x="990" y="520" text-anchor="end" class="milestone-label">36mo: 200–1000 words, sentences</text>
+
+
+  <!-- Bottom border -->
+  <line x1="100" y1="540" x2="1010" y2="540" class="axis-line"/>
+  <line x1="100" y1="50" x2="100" y2="540" class="axis-line"/>
+
+  <!-- Bottom note -->
+  <text x="555" y="595" text-anchor="middle" class="note">⚠️ Delayed milestone = Pediatrician Concern event. VIG check TN 30–45 for baby.</text>
+</svg>
