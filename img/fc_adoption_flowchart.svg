@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 750" width="900" height="750">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" width="900" height="780">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#2c3e50"/>
@@ -19,7 +19,7 @@
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="750" fill="#f8f9fa" rx="8"/>
+  <rect width="900" height="780" fill="#f8f9fa" rx="8"/>
 
   <!-- Title -->
   <text x="450" y="30" class="title">Adoption &amp; Foster Care — Decision Paths</text>
@@ -53,12 +53,12 @@
   <!-- IVF success NO dashed to Consider adoption -->
   <line x1="300" y1="403" x2="780" y2="403" stroke="#7f8c8d" stroke-width="1.2" stroke-dasharray="6,4" marker-end="url(#arrow-dash)"/>
 
-  <!-- Adoption decision to 5 paths -->
-  <line x1="550" y1="143" x2="420" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="590" y1="143" x2="510" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="650" y1="143" x2="600" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="710" y1="143" x2="690" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <line x1="750" y1="143" x2="780" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Adoption decision to 5 paths (staggered: 3 top row, 2 bottom row) -->
+  <line x1="550" y1="143" x2="410" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="600" y1="143" x2="570" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="650" y1="143" x2="730" y2="178" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="600" y1="143" x2="410" y2="248" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="650" y1="143" x2="570" y2="248" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
 
   <!-- ==================== NODES ==================== -->
 
@@ -103,35 +103,35 @@
   <text x="100" y="471" class="node-text" font-weight="600">Pregnancy path</text>
 
   <!-- Path: Domestic infant -->
-  <rect x="350" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
-  <text x="420" y="195" class="node-text">Domestic infant</text>
-  <text x="420" y="210" class="node-sub">$20K–$40K · 1–3 yrs</text>
-  <text x="420" y="223" class="node-sub" fill="#c0392b">High difficulty</text>
+  <rect x="340" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="410" y="195" class="node-text">Domestic infant</text>
+  <text x="410" y="210" class="node-sub">$20K–$40K · 1–3 yrs</text>
+  <text x="410" y="223" class="node-sub" fill="#c0392b">High difficulty</text>
 
   <!-- Path: International -->
-  <rect x="440" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
-  <text x="510" y="195" class="node-text">International</text>
-  <text x="510" y="210" class="node-sub">$25K–$50K · 2–5 yrs</text>
-  <text x="510" y="223" class="node-sub" fill="#c0392b">Very High difficulty</text>
+  <rect x="500" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="570" y="195" class="node-text">International</text>
+  <text x="570" y="210" class="node-sub">$25K–$50K · 2–5 yrs</text>
+  <text x="570" y="223" class="node-sub" fill="#c0392b">Very High difficulty</text>
 
   <!-- Path: Foster-to-adopt -->
-  <rect x="530" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
-  <text x="600" y="195" class="node-text">Foster-to-adopt</text>
-  <text x="600" y="210" class="node-sub">$0–$5K · 1–3 yrs</text>
-  <text x="600" y="223" class="node-sub" fill="#e67e22">Medium difficulty</text>
+  <rect x="660" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="730" y="195" class="node-text">Foster-to-adopt</text>
+  <text x="730" y="210" class="node-sub">$0–$5K · 1–3 yrs</text>
+  <text x="730" y="223" class="node-sub" fill="#e67e22">Medium difficulty</text>
 
   <!-- Path: Relative adoption -->
-  <rect x="620" y="178" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
-  <text x="690" y="195" class="node-text">Relative adoption</text>
-  <text x="690" y="210" class="node-sub">$1K–$5K · 6–18 mos</text>
-  <text x="690" y="223" class="node-sub" fill="#e67e22">Medium difficulty</text>
+  <rect x="340" y="248" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="410" y="265" class="node-text">Relative adoption</text>
+  <text x="410" y="280" class="node-sub">$1K–$5K · 6–18 mos</text>
+  <text x="410" y="293" class="node-sub" fill="#e67e22">Medium difficulty</text>
 
   <!-- Path: Foster care (non-adoption) -->
-  <rect x="710" y="178" width="150" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
-  <text x="785" y="195" class="node-text">Foster care</text>
-  <text x="785" y="210" class="node-sub">(non-adoption)</text>
-  <text x="785" y="223" class="node-sub">Stipend $400–$900/mo</text>
-  <text x="785" y="236" class="node-sub" fill="#e67e22">Ongoing · Medium</text>
+  <rect x="500" y="248" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+  <text x="570" y="265" class="node-text">Foster care</text>
+  <text x="570" y="280" class="node-sub">(non-adoption)</text>
+  <text x="570" y="293" class="node-sub">Stipend $400–$900/mo</text>
+  <text x="570" y="306" class="node-sub" fill="#e67e22">Ongoing · Medium</text>
 
   <!-- ==================== LABELS ==================== -->
 
@@ -152,27 +152,27 @@
   <text x="790" y="400" class="node-sub" fill="#7f8c8d" text-anchor="start">Consider adoption</text>
 
   <!-- ==================== CALLOUT BOX ==================== -->
-  <rect x="120" y="510" width="660" height="100" rx="12" fill="#fef9e7" stroke="#e67e22" stroke-width="2" stroke-dasharray="8,4"/>
-  <text x="450" y="538" class="callout-title">⚠️ The Waiting Period</text>
-  <line x1="150" y1="546" x2="750" y2="546" stroke="#e67e22" stroke-width="0.8"/>
-  <text x="450" y="566" class="callout-text">+2 SP/month during adoption wait</text>
-  <text x="450" y="586" class="callout-text">After 12 months: +3 SP/month</text>
-  <text x="450" y="606" class="callout-text">Failed adoption: +10 SP + RES TN 60 to continue</text>
+  <rect x="120" y="540" width="660" height="100" rx="12" fill="#fef9e7" stroke="#e67e22" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="450" y="568" class="callout-title">⚠️ The Waiting Period</text>
+  <line x1="150" y1="576" x2="750" y2="576" stroke="#e67e22" stroke-width="0.8"/>
+  <text x="450" y="596" class="callout-text">+2 SP/month during adoption wait</text>
+  <text x="450" y="616" class="callout-text">After 12 months: +3 SP/month</text>
+  <text x="450" y="636" class="callout-text">Failed adoption: +10 SP + RES TN 60 to continue</text>
 
   <!-- ==================== DIFFICULTY LEGEND ==================== -->
-  <rect x="30" y="640" width="840" height="60" rx="8" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
-  <text x="450" y="658" font-family="system-ui, sans-serif" font-size="10px" fill="#7f8c8d" text-anchor="middle" font-weight="600">Difficulty Legend</text>
-  <rect x="180" y="668" width="12" height="12" rx="3" fill="#d6eaf8" stroke="#3498db" stroke-width="1"/>
-  <text x="198" y="679" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Path node</text>
-  <rect x="310" y="668" width="12" height="12" rx="6" fill="#fef9e7" stroke="#f0c14b" stroke-width="1"/>
-  <text x="328" y="679" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Decision node</text>
-  <rect x="440" y="668" width="12" height="12" rx="3" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
-  <text x="458" y="679" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Success outcome</text>
-  <line x1="590" y1="674" x2="620" y2="674" stroke="#2c3e50" stroke-width="1.5"/>
-  <text x="625" y="679" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Main flow</text>
-  <line x1="690" y1="674" x2="720" y2="674" stroke="#7f8c8d" stroke-width="1.2" stroke-dasharray="5,3"/>
-  <text x="725" y="679" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Cross-reference</text>
+  <rect x="30" y="670" width="840" height="60" rx="8" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="450" y="688" font-family="system-ui, sans-serif" font-size="10px" fill="#7f8c8d" text-anchor="middle" font-weight="600">Difficulty Legend</text>
+  <rect x="180" y="698" width="12" height="12" rx="3" fill="#d6eaf8" stroke="#3498db" stroke-width="1"/>
+  <text x="198" y="709" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Path node</text>
+  <rect x="310" y="698" width="12" height="12" rx="6" fill="#fef9e7" stroke="#f0c14b" stroke-width="1"/>
+  <text x="328" y="709" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Decision node</text>
+  <rect x="440" y="698" width="12" height="12" rx="3" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="458" y="709" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Success outcome</text>
+  <line x1="590" y1="704" x2="620" y2="704" stroke="#2c3e50" stroke-width="1.5"/>
+  <text x="625" y="709" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Main flow</text>
+  <line x1="690" y1="704" x2="720" y2="704" stroke="#7f8c8d" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <text x="725" y="709" font-family="system-ui, sans-serif" font-size="9px" fill="#5d6d7e" text-anchor="start">Cross-reference</text>
 
   <!-- Bottom border accent -->
-  <rect x="0" y="738" width="900" height="12" rx="0" fill="#2c3e50" opacity="0.15"/>
+  <rect x="0" y="768" width="900" height="12" rx="0" fill="#2c3e50" opacity="0.15"/>
 </svg>
