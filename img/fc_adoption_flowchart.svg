@@ -127,11 +127,11 @@
   <text x="410" y="293" class="node-sub" fill="#e67e22">Medium difficulty</text>
 
   <!-- Path: Foster care (non-adoption) -->
-  <rect x="500" y="248" width="140" height="53" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
+  <rect x="500" y="248" width="140" height="70" rx="8" fill="#d6eaf8" stroke="#3498db" stroke-width="1.5"/>
   <text x="570" y="265" class="node-text">Foster care</text>
   <text x="570" y="280" class="node-sub">(non-adoption)</text>
-  <text x="570" y="293" class="node-sub">Stipend $400–$900/mo</text>
-  <text x="570" y="306" class="node-sub" fill="#e67e22">Ongoing · Medium</text>
+  <text x="570" y="295" class="node-sub">Stipend $400–$900/mo</text>
+  <text x="570" y="310" class="node-sub" fill="#e67e22">Ongoing · Medium</text>
 
   <!-- ==================== LABELS ==================== -->
 
