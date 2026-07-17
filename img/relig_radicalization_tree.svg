@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 650" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 650" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
   <style>
     text { font-size: 10px; }
     .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
@@ -33,11 +33,11 @@
   </defs>
 
   <!-- Background -->
-  <rect x="0" y="0" width="550" height="650" rx="12" fill="#fafbfc"/>
+  <rect x="0" y="0" width="570" height="650" rx="12" fill="#fafbfc"/>
 
   <!-- Title -->
-  <text x="250" y="26" class="title">Radicalization: The Descent and Escape</text>
-  <text x="250" y="42" class="subtitle">Each stage has a Resilience Check — resist or deepen commitment</text>
+  <text x="285" y="26" class="title">Radicalization: The Descent and Escape</text>
+  <text x="285" y="42" class="subtitle">Each stage has a Resilience Check — resist or deepen commitment</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- STAGE 1: GRIEVANCE -->
@@ -123,53 +123,53 @@
   <!-- ═══════════════════════════════════════════ -->
   <!-- RIGHT PANEL: MODIFIERS -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="390" y="56" width="130" height="140" class="box" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="455" y="76" class="mod-title" fill="#2c3e50" text-anchor="middle">⚙️ Modifiers</text>
+  <rect x="410" y="56" width="130" height="140" class="box" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="475" y="76" class="mod-title" fill="#2c3e50" text-anchor="middle">⚙️ Modifiers</text>
 
-  <line x1="405" y1="82" x2="515" y2="82" stroke="#2980b9" stroke-width="1"/>
+  <line x1="425" y1="82" x2="535" y2="82" stroke="#2980b9" stroke-width="1"/>
 
-  <text x="405" y="98" class="mod-text" fill="#27ae60">✅ Strong secular network:</text>
-  <text x="405" y="110" class="mod-text" fill="#27ae60">   +2 to checks</text>
+  <text x="425" y="98" class="mod-text" fill="#27ae60">✅ Strong secular network:</text>
+  <text x="425" y="110" class="mod-text" fill="#27ae60">   +2 to checks</text>
 
-  <text x="405" y="128" class="mod-text" fill="#e74c3c">⚠️ Isolation / discrimination:</text>
-  <text x="405" y="140" class="mod-text" fill="#e74c3c">   +2 to TN (harder)</text>
+  <text x="425" y="128" class="mod-text" fill="#e74c3c">⚠️ Isolation / discrimination:</text>
+  <text x="425" y="140" class="mod-text" fill="#e74c3c">   +2 to TN (harder)</text>
 
-  <text x="405" y="158" class="mod-text" fill="#e67e22">🔻 Low RES:</text>
-  <text x="405" y="170" class="mod-text" fill="#e67e22">   particularly vulnerable</text>
+  <text x="425" y="158" class="mod-text" fill="#e67e22">🔻 Low RES:</text>
+  <text x="425" y="170" class="mod-text" fill="#e67e22">   particularly vulnerable</text>
 
-  <text x="405" y="188" class="mod-text" fill="#5d6d7e">📈 High EXP:</text>
-  <text x="405" y="200" class="mod-text" fill="#5d6d7e">   bonus to all checks</text>
+  <text x="425" y="188" class="mod-text" fill="#5d6d7e">📈 High EXP:</text>
+  <text x="425" y="200" class="mod-text" fill="#5d6d7e">   bonus to all checks</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- LEFT PANEL: ESCAPE ROUTES SUMMARY -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="390" y="206" width="130" height="110" class="box" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="455" y="226" class="mod-title" fill="#27ae60" text-anchor="middle">🚪 Escape Routes</text>
+  <rect x="410" y="206" width="130" height="110" class="box" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="475" y="226" class="mod-title" fill="#27ae60" text-anchor="middle">🚪 Escape Routes</text>
 
-  <line x1="405" y1="232" x2="515" y2="232" stroke="#27ae60" stroke-width="1"/>
+  <line x1="425" y1="232" x2="535" y2="232" stroke="#27ae60" stroke-width="1"/>
 
-  <text x="405" y="248" class="mod-text" fill="#2c3e50">• Healthy community ties</text>
-  <text x="405" y="262" class="mod-text" fill="#2c3e50">• Secular friendships</text>
-  <text x="405" y="276" class="mod-text" fill="#2c3e50">• Professional obligations</text>
-  <text x="405" y="290" class="mod-text" fill="#2c3e50">• Family intervention</text>
-  <text x="405" y="304" class="mod-text" fill="#2c3e50">• Counseling / therapy</text>
+  <text x="425" y="248" class="mod-text" fill="#2c3e50">• Healthy community ties</text>
+  <text x="425" y="262" class="mod-text" fill="#2c3e50">• Secular friendships</text>
+  <text x="425" y="276" class="mod-text" fill="#2c3e50">• Professional obligations</text>
+  <text x="425" y="290" class="mod-text" fill="#2c3e50">• Family intervention</text>
+  <text x="425" y="304" class="mod-text" fill="#2c3e50">• Counseling / therapy</text>
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- BOTTOM: KEY LEGEND -->
   <!-- ═══════════════════════════════════════════ -->
-  <rect x="390" y="326" width="130" height="110" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
-  <text x="455" y="346" class="mod-title" fill="#2c3e50" text-anchor="middle">📖 Key</text>
+  <rect x="410" y="326" width="130" height="110" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="475" y="346" class="mod-title" fill="#2c3e50" text-anchor="middle">📖 Key</text>
 
-  <line x1="405" y1="352" x2="515" y2="352" stroke="#f39c12" stroke-width="1"/>
+  <line x1="425" y1="352" x2="535" y2="352" stroke="#f39c12" stroke-width="1"/>
 
-  <text x="405" y="368" class="mod-text" fill="#2c3e50">RES = Resilience</text>
-  <text x="405" y="382" class="mod-text" fill="#2c3e50">EXP = Experience</text>
-  <text x="405" y="396" class="mod-text" fill="#2c3e50">TN = Target Number</text>
-  <text x="405" y="410" class="mod-text" fill="#2c3e50">SP = Stress Points</text>
-  <text x="405" y="424" class="mod-text" fill="#2c3e50">INT = Intelligence</text>
+  <text x="425" y="368" class="mod-text" fill="#2c3e50">RES = Resilience</text>
+  <text x="425" y="382" class="mod-text" fill="#2c3e50">EXP = Experience</text>
+  <text x="425" y="396" class="mod-text" fill="#2c3e50">TN = Target Number</text>
+  <text x="425" y="410" class="mod-text" fill="#2c3e50">SP = Stress Points</text>
+  <text x="425" y="424" class="mod-text" fill="#2c3e50">INT = Intelligence</text>
 
   <!-- Bottom note -->
-  <text x="250" y="630" class="subtitle" text-anchor="middle">🎲 Each RES check: roll 2d10 + RES + EXP. Meet TN 14 to resist. Fail → next stage.</text>
-  <text x="250" y="644" class="subtitle" text-anchor="middle">Earlier escape is easier. Each stage deepens commitment and narrows exit options.</text>
+  <text x="285" y="630" class="subtitle" text-anchor="middle">🎲 Each RES check: roll 2d10 + RES + EXP. Meet TN 14 to resist. Fail → next stage.</text>
+  <text x="285" y="644" class="subtitle" text-anchor="middle">Earlier escape is easier. Each stage deepens commitment and narrows exit options.</text>
 
 </svg>
