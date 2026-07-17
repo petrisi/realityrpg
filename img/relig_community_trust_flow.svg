@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 450" width="700" height="450">
+  <defs>
+    <filter id="s1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#c0392b"/>
+    </marker>
+    <linearGradient id="gaugeGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="25%" stop-color="#e67e22"/>
+      <stop offset="50%" stop-color="#f1c40f"/>
+      <stop offset="75%" stop-color="#82c91e"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="450" fill="#fafbfc" rx="12"/>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#2c3e50">Community Trust: Building &amp; Losing</text>
+  <text x="350" y="46" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" fill="#7f8c8d">Trust grows slowly but can be lost quickly</text>
+
+  <!-- Section headers -->
+  <text x="140" y="68" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#27ae60">▶ BUILDING</text>
+  <text x="560" y="68" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#c0392b">◀ LOSING</text>
+
+  <!-- ===================== -->
+  <!-- CENTER GAUGE (Trust 0→10) -->
+  <!-- ===================== -->
+  <g filter="url(#s1)">
+    <!-- Gauge background -->
+    <rect x="310" y="60" width="80" height="340" rx="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+    <!-- Gauge fill gradient -->
+    <rect x="310" y="60" width="80" height="340" rx="10" fill="url(#gaugeGrad)" opacity="0.85"/>
+  </g>
+
+  <!-- Gauge tick marks and labels -->
+  <!-- 0 (bottom) -->
+  <line x1="310" y1="400" x2="298" y2="400" stroke="#7f8c8d" stroke-width="1.5"/>
+  <text x="290" y="403" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#7f8c8d">0</text>
+  <text x="290" y="413" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="8" fill="#95a5a6">Outsider</text>
+
+  <!-- 2 -->
+  <line x1="310" y1="332" x2="298" y2="332" stroke="#7f8c8d" stroke-width="1.5"/>
+  <text x="290" y="335" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#7f8c8d">2</text>
+
+  <!-- 4 -->
+  <line x1="310" y1="264" x2="298" y2="264" stroke="#7f8c8d" stroke-width="1.5"/>
+  <text x="290" y="267" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#7f8c8d">4</text>
+
+  <!-- 6 -->
+  <line x1="310" y1="196" x2="298" y2="196" stroke="#7f8c8d" stroke-width="1.5"/>
+  <text x="290" y="199" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#7f8c8d">6</text>
+
+  <!-- 8 -->
+  <line x1="310" y1="128" x2="298" y2="128" stroke="#7f8c8d" stroke-width="1.5"/>
+  <text x="290" y="131" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#7f8c8d">8</text>
+
+  <!-- 10 (top) -->
+  <line x1="310" y1="60" x2="298" y2="60" stroke="#7f8c8d" stroke-width="1.5"/>
+  <text x="290" y="63" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600" fill="#7f8c8d">10</text>
+  <text x="290" y="52" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="8" fill="#95a5a6">Pillar</text>
+
+  <!-- Gauge center label -->
+  <text x="350" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#fff">Trust</text>
+  <text x="350" y="249" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#fff">Level</text>
+
+  <!-- ===================== -->
+  <!-- LEFT SIDE: BUILDING (green) -->
+  <!-- ===================== -->
+
+  <!-- 1. Attend services → Trust 1-2 -->
+  <rect x="18" y="78" width="145" height="40" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1" filter="url(#s1)"/>
+  <text x="90" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#1a7a42">Attend services</text>
+  <text x="90" y="108" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">(1–3 months)</text>
+  <line x1="163" y1="98" x2="308" y2="370" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- 2. Regular attendance + volunteer → Trust 3-4 -->
+  <rect x="18" y="130" width="145" height="40" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1" filter="url(#s1)"/>
+  <text x="90" y="147" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#1a7a42">Regular attendance</text>
+  <text x="90" y="160" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">+ volunteer (6+ mo)</text>
+  <line x1="163" y1="150" x2="308" y2="302" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- 3. Lead group + tithe → Trust 5-6 -->
+  <rect x="18" y="182" width="145" height="40" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1" filter="url(#s1)"/>
+  <text x="90" y="199" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#1a7a42">Lead group + tithe</text>
+  <text x="90" y="212" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">→ Trust 5–6</text>
+  <line x1="163" y1="202" x2="308" y2="240" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- 4. Hold formal role → Trust 7-8 -->
+  <rect x="18" y="234" width="145" height="40" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1" filter="url(#s1)"/>
+  <text x="90" y="251" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#1a7a42">Hold formal role</text>
+  <text x="90" y="264" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">→ Trust 7–8</text>
+  <line x1="163" y1="254" x2="308" y2="160" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- 5. Decades of service → Trust 9-10 -->
+  <rect x="18" y="286" width="145" height="40" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="1" filter="url(#s1)"/>
+  <text x="90" y="303" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#1a7a42">Decades of service</text>
+  <text x="90" y="316" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#27ae60">→ Trust 9–10</text>
+  <line x1="163" y1="306" x2="308" y2="100" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowGreen)"/>
+
+  <!-- ===================== -->
+  <!-- RIGHT SIDE: LOSING (red) -->
+  <!-- ===================== -->
+
+  <!-- 1. Miss 3+ weeks → −1 Trust -->
+  <rect x="537" y="78" width="145" height="40" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="609" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#922b21">Miss 3+ weeks</text>
+  <text x="609" y="108" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#c0392b">without cause → −1</text>
+  <line x1="537" y1="98" x2="392" y2="370" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- 2. Stop tithing at Devotion 3+ → Community Confrontation -->
+  <rect x="537" y="130" width="145" height="40" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="609" y="147" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#922b21">Stop tithing</text>
+  <text x="609" y="160" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#c0392b">at Devotion 3+</text>
+  <line x1="537" y1="150" x2="392" y2="302" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- 3. Deconversion / leave faith → Trust drops to 0 -->
+  <rect x="537" y="182" width="145" height="40" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="609" y="199" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#922b21">Deconversion</text>
+  <text x="609" y="212" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#c0392b">/ leave faith → 0</text>
+  <line x1="537" y1="202" x2="392" y2="400" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowRed)"/>
+
+  <!-- 4. Abuse reporting failure → −2 Trust -->
+  <rect x="537" y="234" width="145" height="40" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="609" y="251" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#922b21">Abuse reporting</text>
+  <text x="609" y="264" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#c0392b">failure → −2 Trust</text>
+  <line x1="537" y1="254" x2="392" y2="340" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+
+  <!-- 5. Factional conflict → −1 from both sides -->
+  <rect x="537" y="286" width="145" height="40" rx="6" fill="#fdedec" stroke="#c0392b" stroke-width="1" filter="url(#s1)"/>
+  <text x="609" y="303" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#922b21">Factional conflict</text>
+  <text x="609" y="316" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="8" fill="#c0392b">→ −1 from both</text>
+  <line x1="537" y1="306" x2="392" y2="270" stroke="#c0392b" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Bottom note -->
+  <text x="350" y="430" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#7f8c8d">Trust is hard-earned and fragile — protect it carefully.</text>
+</svg>

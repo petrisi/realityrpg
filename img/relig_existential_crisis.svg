@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 400" width="700" height="400">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+    <filter id="shadow-sm" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow-dark" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c0392b"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#27ae60"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="700" height="400" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Existential Crisis: Three Phases</text>
+  <text x="350" y="47" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">Shock → Questioning → Resolution (with possible cycling)</text>
+
+  <!-- ======================== PHASE 1 — SHOCK ======================== -->
+  <g filter="url(#shadow)">
+    <!-- Red zone background -->
+    <rect x="15" y="62" width="200" height="240" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="1.5"/>
+    <!-- Dark red header bar -->
+    <rect x="15" y="62" width="200" height="36" rx="10" fill="#c0392b"/>
+    <rect x="15" y="82" width="200" height="16" fill="#c0392b"/>
+    <!-- Header text -->
+    <text x="115" y="86" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">⚡ PHASE 1 — SHOCK</text>
+    <!-- Content -->
+    <text x="115" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Weeks 1–4</text>
+    <line x1="55" y1="124" x2="175" y2="124" stroke="#e74c3c" stroke-width="0.8" opacity="0.4"/>
+    <text x="115" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Full SP impact applies</text>
+    <text x="115" y="156" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#c0392b" font-weight="600">(+10 to +15 SP)</text>
+    <text x="115" y="176" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">All checks −1</text>
+    <text x="115" y="192" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">−1 VIG mod</text>
+    <text x="115" y="206" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#7f8c8d">(poor sleep / eating)</text>
+  </g>
+
+  <!-- ======================== PHASE 2 — QUESTIONING ======================== -->
+  <g filter="url(#shadow)">
+    <!-- Orange zone background -->
+    <rect x="235" y="62" width="200" height="240" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <!-- Orange header bar -->
+    <rect x="235" y="62" width="200" height="36" rx="10" fill="#e67e22"/>
+    <rect x="235" y="82" width="200" height="16" fill="#e67e22"/>
+    <!-- Header text -->
+    <text x="335" y="86" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">❓ PHASE 2 — QUESTIONING</text>
+    <!-- Content -->
+    <text x="335" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Months 2–6</text>
+    <line x1="275" y1="124" x2="395" y2="124" stroke="#e67e22" stroke-width="0.8" opacity="0.4"/>
+    <text x="335" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Weekly check:</text>
+    <text x="335" y="156" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="600">2d10 + INT + RES vs TN 12</text>
+    <text x="335" y="178" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="600">✓ Success: insight (−2 SP)</text>
+    <text x="335" y="194" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="600">✗ Failure: +1 SP / week</text>
+    <text x="335" y="210" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#7f8c8d">(deepens without resolution)</text>
+  </g>
+
+  <!-- ======================== PHASE 3 — RESOLUTION ======================== -->
+  <g filter="url(#shadow)">
+    <!-- Green zone background -->
+    <rect x="455" y="62" width="200" height="240" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <!-- Green header bar -->
+    <rect x="455" y="62" width="200" height="36" rx="10" fill="#27ae60"/>
+    <rect x="455" y="82" width="200" height="16" fill="#27ae60"/>
+    <!-- Header text -->
+    <text x="555" y="86" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">💡 PHASE 3 — RESOLUTION</text>
+    <!-- Content -->
+    <text x="555" y="116" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Months 6–18</text>
+    <line x1="495" y1="124" x2="615" y2="124" stroke="#27ae60" stroke-width="0.8" opacity="0.4"/>
+    <text x="555" y="142" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Resolution roll:</text>
+    <text x="555" y="156" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50" font-weight="600">2d10 + RES + EXP + skill</text>
+    <text x="555" y="168" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">vs TN 14</text>
+    <text x="555" y="190" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="600">✓ Success: SP −3</text>
+    <text x="555" y="204" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#7f8c8d">(new meaning found)</text>
+    <text x="555" y="224" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e74c3c" font-weight="600">✗ Failure: cycle → Phase 2</text>
+  </g>
+
+  <!-- ======================== ARROWS ======================== -->
+
+  <!-- Phase 1 → Phase 2 (solid dark arrow) -->
+  <line x1="215" y1="182" x2="230" y2="182" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Phase 2 → Phase 3 (solid dark arrow) -->
+  <line x1="435" y1="182" x2="450" y2="182" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow-dark)"/>
+
+  <!-- Phase 3 FAILURE → curves back to Phase 2 (red dashed arc) -->
+  <path d="M 555 302 C 555 332, 335 332, 335 302"
+        fill="none" stroke="#c0392b" stroke-width="2.2" stroke-dasharray="7,4"
+        marker-end="url(#arrow-red)"/>
+  <text x="445" y="327" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#c0392b" font-weight="600">FAILURE</text>
+
+  <!-- Phase 3 SUCCESS → resolves outward (green arrow pointing right) -->
+  <line x1="655" y1="182" x2="688" y2="182" stroke="#27ae60" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="671" y="176" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8" fill="#27ae60" font-weight="600">New meaning</text>
+
+  <!-- ======================== SP LEVEL INDICATORS (bottom) ======================== -->
+  <g filter="url(#shadow-sm)">
+    <!-- Phase 1 — HIGH SP -->
+    <rect x="45" y="310" width="140" height="28" rx="6" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+    <text x="115" y="328" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#c0392b">SP Level: HIGH</text>
+
+    <!-- Phase 2 — MEDIUM SP -->
+    <rect x="265" y="310" width="140" height="28" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+    <text x="335" y="328" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#e67e22">SP Level: MEDIUM</text>
+
+    <!-- Phase 3 — LOW SP -->
+    <rect x="485" y="310" width="140" height="28" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="555" y="328" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" font-weight="700" fill="#27ae60">SP Level: LOW</text>
+  </g>
+
+  <!-- SP trend arrow (left to right showing decrease) -->
+  <line x1="190" y1="324" x2="255" y2="324" stroke="#95a5a6" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <line x1="410" y1="324" x2="475" y2="324" stroke="#95a5a6" stroke-width="1.2" stroke-dasharray="3,2"/>
+
+  <!-- ======================== INFO BOX (right side) ======================== -->
+  <g filter="url(#shadow-sm)">
+    <rect x="470" y="348" width="215" height="42" rx="6" fill="#fff" stroke="#bdc3c7" stroke-width="1"/>
+    <text x="577" y="364" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="700" fill="#2c3e50">Can affect ANYONE:</text>
+    <text x="577" y="380" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#7f8c8d">devout · secular · spiritual · skeptical</text>
+  </g>
+
+</svg>

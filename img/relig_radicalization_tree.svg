@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 650" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    text { font-size: 10px; }
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
+    .subtitle { font-size: 10px; fill: #5d6d7e; text-anchor: middle; font-style: italic; }
+    .stage-name { font-size: 11.5px; font-weight: 700; text-anchor: middle; }
+    .stage-desc { font-size: 9.5px; text-anchor: middle; }
+    .stage-gate { font-size: 9px; text-anchor: middle; }
+    .escape-label { font-size: 8.5px; font-weight: 600; text-anchor: middle; }
+    .mod-title { font-size: 11px; font-weight: 700; }
+    .mod-text { font-size: 9.5px; }
+    .success-label { font-size: 8.5px; font-weight: 700; fill: #27ae60; }
+    .failure-label { font-size: 8.5px; font-weight: 700; fill: #e74c3c; }
+    .arrow { stroke: #7f8c8d; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .arrow-green { stroke: #27ae60; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-green); }
+    .arrow-red { stroke: #e74c3c; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-red); }
+    .box { rx: 6; ry: 6; }
+  </style>
+
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7f8c8d"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="550" height="650" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="250" y="26" class="title">Radicalization: The Descent and Escape</text>
+  <text x="250" y="42" class="subtitle">Each stage has a Resilience Check — resist or deepen commitment</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STAGE 1: GRIEVANCE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="30" y="56" width="340" height="82" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="76" class="stage-name" fill="#2c3e50">1️⃣ Grievance</text>
+  <text x="200" y="92" class="stage-desc" fill="#2c3e50">Personal injustice, discrimination, loss · +3 SP/week</text>
+  <text x="200" y="108" class="stage-gate" fill="#7f8c8d">🎲 2d10 + RES + EXP vs TN 14</text>
+  <text x="350" y="128" class="escape-label" fill="#e67e22">Escape: Easy</text>
+
+  <!-- SUCCESS exit (left) -->
+  <line x1="60" y1="100" x2="10" y2="100" class="arrow-green"/>
+  <text x="35" y="96" class="success-label" text-anchor="middle">SUCCESS: seek</text>
+  <text x="35" y="106" class="success-label" text-anchor="middle">healthy community</text>
+
+  <!-- FAILURE arrow (down) -->
+  <line x1="200" y1="138" x2="200" y2="158" class="arrow-red"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STAGE 2: SEEKING -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="30" y="162" width="340" height="82" class="box" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="182" class="stage-name" fill="#2c3e50">2️⃣ Seeking</text>
+  <text x="200" y="198" class="stage-desc" fill="#2c3e50">Online forums, recruiters, echo chambers · INT vs propaganda +2 TN</text>
+  <text x="200" y="214" class="stage-gate" fill="#7f8c8d">🎲 2d10 + RES + EXP vs TN 14</text>
+  <text x="350" y="234" class="escape-label" fill="#e67e22">Escape: Easy</text>
+
+  <!-- SUCCESS exit (left) -->
+  <line x1="60" y1="206" x2="10" y2="206" class="arrow-green"/>
+  <text x="35" y="202" class="success-label" text-anchor="middle">SUCCESS: walk</text>
+  <text x="35" y="212" class="success-label" text-anchor="middle">away</text>
+
+  <!-- FAILURE arrow (down) -->
+  <line x1="200" y1="244" x2="200" y2="264" class="arrow-red"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STAGE 3: COMMITMENT -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="30" y="268" width="340" height="82" class="box" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="288" class="stage-name" fill="#2c3e50">3️⃣ Commitment</text>
+  <text x="200" y="304" class="stage-desc" fill="#2c3e50">Adopting group worldview, cutting old ties · Old network erodes</text>
+  <text x="200" y="320" class="stage-gate" fill="#7f8c8d">🎲 2d10 + RES + EXP vs TN 14</text>
+  <text x="350" y="340" class="escape-label" fill="#e74c3c">Escape: Medium</text>
+
+  <!-- SUCCESS exit (left) -->
+  <line x1="60" y1="312" x2="10" y2="312" class="arrow-green"/>
+  <text x="35" y="308" class="success-label" text-anchor="middle">SUCCESS: resist</text>
+  <text x="35" y="318" class="success-label" text-anchor="middle">group pull</text>
+
+  <!-- FAILURE arrow (down) -->
+  <line x1="200" y1="350" x2="200" y2="370" class="arrow-red"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STAGE 4: ACTIVATION -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="30" y="374" width="340" height="82" class="box" fill="#e74c3c" stroke="#c0392b" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="394" class="stage-name" fill="#ffffff">4️⃣ Activation</text>
+  <text x="200" y="410" class="stage-desc" fill="#ffffff">Harmful behavior, legal risk · +5 SP/week</text>
+  <text x="200" y="426" class="stage-gate" fill="#fadbd8">🎲 2d10 + RES + EXP vs TN 14</text>
+  <text x="350" y="446" class="escape-label" fill="#ffffff">Escape: Hard</text>
+
+  <!-- SUCCESS exit (left) -->
+  <line x1="60" y1="416" x2="10" y2="416" stroke="#27ae60" stroke-width="1.5" fill="none" marker-end="url(#arrowhead-green)"/>
+  <text x="35" y="412" class="success-label" text-anchor="middle">SUCCESS:</text>
+  <text x="35" y="422" class="success-label" text-anchor="middle">intervention possible</text>
+
+  <!-- FAILURE arrow (down) -->
+  <line x1="200" y1="456" x2="200" y2="476" class="arrow-red"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- STAGE 5: BURNOUT / DEPARTURE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="30" y="480" width="340" height="82" class="box" fill="#8e44ad" stroke="#6c3483" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="200" y="500" class="stage-name" fill="#ffffff">5️⃣ Burnout / Departure</text>
+  <text x="200" y="516" class="stage-desc" fill="#ffffff">Disillusionment, arrest, intervention</text>
+  <text x="200" y="532" class="stage-gate" fill="#d7bde2">See "Leaving Extremist Groups"</text>
+  <text x="350" y="552" class="escape-label" fill="#ffffff">Escape: Very Hard</text>
+
+  <!-- FAILURE arrow (down, dead end) -->
+  <line x1="200" y1="562" x2="200" y2="582" class="arrow-red"/>
+  <text x="200" y="596" class="failure-label" text-anchor="middle">No further stages — exit or consequences</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- RIGHT PANEL: MODIFIERS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="390" y="56" width="130" height="140" class="box" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="455" y="76" class="mod-title" fill="#2c3e50" text-anchor="middle">⚙️ Modifiers</text>
+
+  <line x1="405" y1="82" x2="515" y2="82" stroke="#2980b9" stroke-width="1"/>
+
+  <text x="405" y="98" class="mod-text" fill="#27ae60">✅ Strong secular network:</text>
+  <text x="405" y="110" class="mod-text" fill="#27ae60">   +2 to checks</text>
+
+  <text x="405" y="128" class="mod-text" fill="#e74c3c">⚠️ Isolation / discrimination:</text>
+  <text x="405" y="140" class="mod-text" fill="#e74c3c">   +2 to TN (harder)</text>
+
+  <text x="405" y="158" class="mod-text" fill="#e67e22">🔻 Low RES:</text>
+  <text x="405" y="170" class="mod-text" fill="#e67e22">   particularly vulnerable</text>
+
+  <text x="405" y="188" class="mod-text" fill="#5d6d7e">📈 High EXP:</text>
+  <text x="405" y="200" class="mod-text" fill="#5d6d7e">   bonus to all checks</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEFT PANEL: ESCAPE ROUTES SUMMARY -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="390" y="206" width="130" height="110" class="box" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="455" y="226" class="mod-title" fill="#27ae60" text-anchor="middle">🚪 Escape Routes</text>
+
+  <line x1="405" y1="232" x2="515" y2="232" stroke="#27ae60" stroke-width="1"/>
+
+  <text x="405" y="248" class="mod-text" fill="#2c3e50">• Healthy community ties</text>
+  <text x="405" y="262" class="mod-text" fill="#2c3e50">• Secular friendships</text>
+  <text x="405" y="276" class="mod-text" fill="#2c3e50">• Professional obligations</text>
+  <text x="405" y="290" class="mod-text" fill="#2c3e50">• Family intervention</text>
+  <text x="405" y="304" class="mod-text" fill="#2c3e50">• Counseling / therapy</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BOTTOM: KEY LEGEND -->
+  <!-- ═══════════════════════════════════════════ -->
+  <rect x="390" y="326" width="130" height="110" class="box" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="455" y="346" class="mod-title" fill="#2c3e50" text-anchor="middle">📖 Key</text>
+
+  <line x1="405" y1="352" x2="515" y2="352" stroke="#f39c12" stroke-width="1"/>
+
+  <text x="405" y="368" class="mod-text" fill="#2c3e50">RES = Resilience</text>
+  <text x="405" y="382" class="mod-text" fill="#2c3e50">EXP = Experience</text>
+  <text x="405" y="396" class="mod-text" fill="#2c3e50">TN = Target Number</text>
+  <text x="405" y="410" class="mod-text" fill="#2c3e50">SP = Stress Points</text>
+  <text x="405" y="424" class="mod-text" fill="#2c3e50">INT = Intelligence</text>
+
+  <!-- Bottom note -->
+  <text x="250" y="630" class="subtitle" text-anchor="middle">🎲 Each RES check: roll 2d10 + RES + EXP. Meet TN 14 to resist. Fail → next stage.</text>
+  <text x="250" y="644" class="subtitle" text-anchor="middle">Earlier escape is easier. Each stage deepens commitment and narrows exit options.</text>
+
+</svg>

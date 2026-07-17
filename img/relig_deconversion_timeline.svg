@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="spGradRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="spGradGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#27ae60" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7f8c8d"/>
+      <stop offset="12%" stop-color="#e67e22"/>
+      <stop offset="30%" stop-color="#e74c3c"/>
+      <stop offset="45%" stop-color="#c0392b"/>
+      <stop offset="60%" stop-color="#e74c3c"/>
+      <stop offset="75%" stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="800" height="400" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Deconversion: The 5-Year Arc</text>
+  <text x="400" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#7f8c8d">One of the most stressful life events — 400+ SP accumulated over 3 years</text>
+
+  <!-- ===== STAGE BACKGROUND ZONES ===== -->
+  <!-- Chart area: x=90..770, y=70..280 -->
+  <!-- Stage 1: Doubt (M1-6) — no color (neutral) -->
+  <rect x="90" y="70" width="60" height="210" fill="transparent"/>
+
+  <!-- Stage 2: Crisis (M6-18) — light red -->
+  <rect x="150" y="70" width="180" height="210" fill="#f8d7da" rx="0"/>
+
+  <!-- Stage 3: Departure (M18-24) — dark red -->
+  <rect x="330" y="70" width="120" height="210" fill="#f5c2c7" rx="0"/>
+
+  <!-- Stage 4: Grief (M24-36) — orange -->
+  <rect x="450" y="70" width="180" height="210" fill="#fff3cd" rx="0"/>
+
+  <!-- Stage 5: Reconstruction (M36-60) — light green -->
+  <rect x="630" y="70" width="140" height="210" fill="#d4edda" rx="0"/>
+
+  <!-- Stage zone divider lines -->
+  <line x1="150" y1="70" x2="150" y2="280" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="330" y1="70" x2="330" y2="280" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="450" y1="70" x2="450" y2="280" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="630" y1="70" x2="630" y2="280" stroke="#ccc" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- ===== Y AXIS (SP) ===== -->
+  <!-- SP scale: 0 at y=280, 30 at y=70. Each SP = 7px. Chart height = 210px -->
+  <!-- Grid lines -->
+  <line x1="90" y1="280" x2="770" y2="280" stroke="#ccc" stroke-width="1.5"/>
+  <line x1="90" y1="248.7" x2="770" y2="248.7" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="3"/>
+  <line x1="90" y1="217.3" x2="770" y2="217.3" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="3"/>
+  <line x1="90" y1="186" x2="770" y2="186" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="3"/>
+  <line x1="90" y1="154.7" x2="770" y2="154.7" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="3"/>
+  <line x1="90" y1="123.3" x2="770" y2="123.3" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="3"/>
+  <line x1="90" y1="92" x2="770" y2="92" stroke="#e8e8e8" stroke-width="0.7" stroke-dasharray="3"/>
+
+  <!-- Y-axis labels -->
+  <text x="82" y="283" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">0</text>
+  <text x="82" y="251.7" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">5</text>
+  <text x="82" y="220.3" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">10</text>
+  <text x="82" y="189" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">15</text>
+  <text x="82" y="157.7" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">20</text>
+  <text x="82" y="126.3" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">25</text>
+  <text x="82" y="95" text-anchor="end" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">30</text>
+
+  <!-- Y-axis title -->
+  <text x="28" y="175" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d" transform="rotate(-90,28,175)">Stress Points (SP)</text>
+
+  <!-- ===== SP CURVE ===== -->
+  <!--
+    Mapping: month m → x = 90 + (m/60)*680
+             SP s → y = 280 - (s/30)*210
+    Key points:
+      M1  SP=0   → (90, 280)
+      M6  SP=48  → (150, 280-(48/30)*210) = (150, 280-336) = (150, -56) → capped to ~70
+      M12 SP=150 → (230, 280-(150/30)*210) = (230, 280-1050) → capped
+      M18 SP=260 → (330, capped top)
+      M24 SP=270 → (450, capped top)
+      M36 SP=200 → (630, capped)
+      M60 SP=8   → (770, 280-(8/30)*210) = (770, 280-56) = (770, 224)
+    Since SP values exceed 30 on the axis, we need to handle capping.
+    Actually the axis goes 0-30 but the SP values go much higher (up to 270).
+    Let me reinterpret: the Y-axis represents "SP per week" not cumulative SP.
+    SP/week values: 0→2 (doubt), 2→5 (crisis), 5→8 (peak departure), 5→7 (grief), 3→1 (reconstruction), 0.5 (integration)
+    So the curve shows weekly SP rate, which fits 0-30 range.
+  -->
+
+  <!-- SP curve — weekly rate (Y-axis 0-30 SP/week) -->
+  <!--
+    Data points (month, SP/week):
+      M1: 0.5     → (90, 276.5)
+      M6: 2       → (150, 266)
+      M9: 4       → (185, 252)
+      M12: 6      → (220, 238)
+      M15: 8      → (255, 224)
+      M18: 10     → (290, 210)   ← "Tells parents" event spike
+      M20: 12     → (320, 196)
+      M24: 10     → (380, 210)
+      M27: 8      → (415, 224)
+      M30: 7      → (450, 231)
+      M33: 6      → (485, 238)
+      M36: 5      → (520, 245)   ← "New social network"
+      M40: 4      → (560, 252)
+      M45: 3      → (605, 259)
+      M50: 2      → (650, 266)
+      M55: 1.5    → (695, 269.5)
+      M60: 1      → (740, 273)
+  -->
+
+  <!-- Filled area under curve (red portion for high stress) -->
+  <path d="M90,280 L90,276.5 L150,266 L185,252 L220,238 L255,224 L290,210 L320,196 L380,210 L415,224 L450,231 L485,238 L520,245 L560,252 L605,259 L650,266 L695,269.5 L740,273 L770,273 L770,280 Z"
+        fill="url(#spGradRed)" opacity="0.7"/>
+
+  <!-- Main SP curve line with gradient -->
+  <path d="M90,276.5 L150,266 L185,252 L220,238 L255,224 L290,210 L320,196 L380,210 L415,224 L450,231 L485,238 L520,245 L560,252 L605,259 L650,266 L695,269.5 L740,273 L770,273"
+        fill="none" stroke="url(#curveGrad)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Curve dots at key points -->
+  <circle cx="150" cy="266" r="4" fill="#7f8c8d"/>
+  <circle cx="220" cy="238" r="4" fill="#e67e22"/>
+  <circle cx="290" cy="210" r="5" fill="#e74c3c"/>
+  <circle cx="320" cy="196" r="5" fill="#c0392b"/>
+  <circle cx="380" cy="210" r="4" fill="#e74c3c"/>
+  <circle cx="450" cy="231" r="4" fill="#e67e22"/>
+  <circle cx="520" cy="245" r="4" fill="#e67e22"/>
+  <circle cx="605" cy="259" r="4" fill="#27ae60"/>
+  <circle cx="740" cy="273" r="4" fill="#27ae60"/>
+
+  <!-- ===== EVENT ANNOTATIONS ===== -->
+  <!-- "First absence" — Month 6 -->
+  <line x1="150" y1="266" x2="150" y2="58" stroke="#7f8c8d" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="120" y="38" width="60" height="16" rx="3" fill="#fff" stroke="#7f8c8d" stroke-width="1"/>
+  <text x="150" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#2c3e50">First absence</text>
+
+  <!-- "Tells parents" — Month 18 (big spike) -->
+  <line x1="320" y1="196" x2="320" y2="58" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3"/>
+  <rect x="285" y="38" width="70" height="16" rx="3" fill="#fff" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="320" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#c0392b" font-weight="600">Tells parents</text>
+
+  <!-- "Christmas alone" — Month 24 -->
+  <line x1="450" y1="231" x2="450" y2="58" stroke="#e67e22" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="415" y="38" width="70" height="16" rx="3" fill="#fff" stroke="#e67e22" stroke-width="1"/>
+  <text x="450" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#e67e22">Christmas alone</text>
+
+  <!-- "New social network" — Month 36 -->
+  <line x1="520" y1="245" x2="520" y2="58" stroke="#27ae60" stroke-width="1" stroke-dasharray="3"/>
+  <rect x="478" y="38" width="84" height="16" rx="3" fill="#fff" stroke="#27ae60" stroke-width="1"/>
+  <text x="520" y="50" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#27ae60">New social network</text>
+
+  <!-- ===== X AXIS — Month markers ===== -->
+  <text x="90" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M1</text>
+  <text x="150" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M6</text>
+  <text x="220" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M12</text>
+  <text x="290" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M18</text>
+  <text x="380" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M24</text>
+  <text x="450" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M30</text>
+  <text x="520" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M36</text>
+  <text x="605" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M45</text>
+  <text x="695" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M55</text>
+  <text x="770" y="298" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#7f8c8d">M60</text>
+
+  <!-- Year markers -->
+  <line x1="150" y1="282" x2="150" y2="294" stroke="#999" stroke-width="0.5"/>
+  <line x1="380" y1="282" x2="380" y2="294" stroke="#999" stroke-width="0.5"/>
+  <line x1="610" y1="282" x2="610" y2="294" stroke="#999" stroke-width="0.5"/>
+  <line x1="770" y1="282" x2="770" y2="294" stroke="#999" stroke-width="0.5"/>
+  <text x="150" y="310" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#999">Y1</text>
+  <text x="380" y="310" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#999">Y2</text>
+  <text x="610" y="310" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#999">Y3</text>
+  <text x="770" y="310" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#999">Y5</text>
+
+  <!-- ===== STAGE LABELS (below chart) ===== -->
+  <!-- Stage 1: Doubt -->
+  <rect x="95" y="322" width="50" height="22" rx="4" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="0.5"/>
+  <text x="120" y="337" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600" fill="#5d6d7e">Doubt</text>
+
+  <!-- Stage 2: Crisis -->
+  <rect x="155" y="322" width="170" height="22" rx="4" fill="#fdecea" stroke="#e74c3c" stroke-width="0.5" opacity="0.8"/>
+  <text x="240" y="337" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600" fill="#c0392b">Crisis (+5 SP/wk)</text>
+
+  <!-- Stage 3: Departure -->
+  <rect x="335" y="322" width="110" height="22" rx="4" fill="#f5c2c7" stroke="#c0392b" stroke-width="0.5" opacity="0.8"/>
+  <text x="390" y="337" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600" fill="#922b21">Departure</text>
+
+  <!-- Stage 4: Grief -->
+  <rect x="455" y="322" width="170" height="22" rx="4" fill="#fff3cd" stroke="#f39c12" stroke-width="0.5" opacity="0.8"/>
+  <text x="540" y="337" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600" fill="#d68910">Grief (+3 SP/wk)</text>
+
+  <!-- Stage 5: Reconstruction -->
+  <rect x="635" y="322" width="130" height="22" rx="4" fill="#d4edda" stroke="#27ae60" stroke-width="0.5" opacity="0.8"/>
+  <text x="700" y="337" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" font-weight="600" fill="#1a7a42">Reconstruction</text>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="90" y="358" width="10" height="10" rx="2" fill="url(#curveGrad)"/>
+  <text x="106" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#2c3e50">SP/week: gray→orange→red→green</text>
+
+  <rect x="310" y="358" width="10" height="10" rx="2" fill="#f8d7da"/>
+  <text x="326" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#2c3e50">Crisis zone</text>
+
+  <rect x="410" y="358" width="10" height="10" rx="2" fill="#f5c2c7"/>
+  <text x="426" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#2c3e50">Departure zone</text>
+
+  <rect x="530" y="358" width="10" height="10" rx="2" fill="#fff3cd"/>
+  <text x="546" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#2c3e50">Grief zone</text>
+
+  <rect x="620" y="358" width="10" height="10" rx="2" fill="#d4edda"/>
+  <text x="636" y="368" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="9" fill="#2c3e50">Recovery zone</text>
+
+  <!-- Peak annotation -->
+  <text x="320" y="188" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="8" fill="#c0392b" font-weight="700">⚠ PEAK STRESS</text>
+</svg>

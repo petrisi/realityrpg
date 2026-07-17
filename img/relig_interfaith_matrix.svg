@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 550 450" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Interfaith Negotiation Outcomes Matrix</title>
+  <desc>2×2 outcome matrix for interfaith negotiation rolls. Both partners roll 2d10 + PRC + Relationship Trust vs TN.</desc>
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/></filter>
+    <filter id="shadow-sm"><feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.10"/></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="550" height="450" fill="#fafbfc" rx="12"/>
+
+  <!-- Title -->
+  <text x="275" y="24" text-anchor="middle" font-size="16" font-weight="700" fill="#2c3e50" filter="url(#shadow)">Interfaith Negotiation Outcomes</text>
+  <text x="275" y="40" text-anchor="middle" font-size="10" fill="#5d6d7e">Both partners roll 2d10 + PRC + Relationship Trust vs TN</text>
+
+  <!-- ===== 2×2 GRID ===== -->
+  <!-- Grid area: x=45..505, y=50..295. Center at 275,172.5 -->
+  <!-- Quadrant size: 230 × 122.5 -->
+
+  <!-- Grid outer border -->
+  <rect x="45" y="50" width="460" height="245" fill="none" stroke="#bdc3c7" stroke-width="1.5" rx="6"/>
+
+  <!-- TOP-LEFT: Both Succeed → COMPROMISE FOUND -->
+  <rect x="45" y="50" width="230" height="122.5" fill="#d5f5e3" rx="4"/>
+  <text x="160" y="78" text-anchor="middle" font-size="22" filter="url(#shadow-sm)">🤝</text>
+  <text x="160" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">COMPROMISE FOUND</text>
+  <text x="160" y="117" text-anchor="middle" font-size="10" font-weight="600" fill="#145a32">Both −2 SP</text>
+  <text x="160" y="133" text-anchor="middle" font-size="9" fill="#1e8449" font-style="italic">Relief, connection, trust grows.</text>
+
+  <!-- TOP-RIGHT: A succeeds, B fails → A'S PREFERENCE WINS -->
+  <rect x="275" y="50" width="230" height="122.5" fill="#fef9e7" rx="4"/>
+  <text x="390" y="78" text-anchor="middle" font-size="22" filter="url(#shadow-sm)">⚖️</text>
+  <text x="390" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#9a7d0a">A'S PREFERENCE WINS</text>
+  <text x="390" y="117" text-anchor="middle" font-size="10" font-weight="600" fill="#7d6608">Partner B takes +3 SP</text>
+  <text x="390" y="133" text-anchor="middle" font-size="9" fill="#9a7d0a" font-style="italic">Feeling dismissed.</text>
+
+  <!-- BOTTOM-LEFT: A fails, B succeeds → B'S PREFERENCE WINS -->
+  <rect x="45" y="172.5" width="230" height="122.5" fill="#fef9e7" rx="4"/>
+  <text x="160" y="200" text-anchor="middle" font-size="22" filter="url(#shadow-sm)">⚖️</text>
+  <text x="160" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#9a7d0a">B'S PREFERENCE WINS</text>
+  <text x="160" y="239" text-anchor="middle" font-size="10" font-weight="600" fill="#7d6608">Partner A takes +3 SP</text>
+  <text x="160" y="255" text-anchor="middle" font-size="9" fill="#9a7d0a" font-style="italic">Feeling dismissed.</text>
+
+  <!-- BOTTOM-RIGHT: Both Fail → NO RESOLUTION -->
+  <rect x="275" y="172.5" width="230" height="122.5" fill="#fadbd8" rx="4"/>
+  <text x="390" y="200" text-anchor="middle" font-size="22" filter="url(#shadow-sm)">💥</text>
+  <text x="390" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#922b21">NO RESOLUTION</text>
+  <text x="390" y="239" text-anchor="middle" font-size="10" font-weight="600" fill="#7b241c">Both +4 SP</text>
+  <text x="390" y="255" text-anchor="middle" font-size="9" fill="#922b21" font-style="italic">Issue remains open;</text>
+  <text x="390" y="268" text-anchor="middle" font-size="9" fill="#922b21" font-style="italic">resurfaces later with increased difficulty.</text>
+
+  <!-- Grid dividing lines -->
+  <line x1="275" y1="50" x2="275" y2="295" stroke="#bdc3c7" stroke-width="1.5"/>
+  <line x1="45" y1="172.5" x2="505" y2="172.5" stroke="#bdc3c7" stroke-width="1.5"/>
+
+  <!-- Center circle: Negotiation Issue -->
+  <circle cx="275" cy="172.5" r="26" fill="#fff" stroke="#bdc3c7" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="275" y="166" text-anchor="middle" font-size="7.5" font-weight="600" fill="#2c3e50">Negotiation</text>
+  <text x="275" y="176" text-anchor="middle" font-size="7.5" font-weight="600" fill="#2c3e50">Issue</text>
+  <text x="275" y="185" text-anchor="middle" font-size="6.5" fill="#7f8c8d" font-style="italic">e.g. "How to</text>
+  <text x="275" y="193" text-anchor="middle" font-size="6.5" fill="#7f8c8d" font-style="italic">raise children?"</text>
+
+  <!-- ===== AXIS LABELS ===== -->
+  <!-- X-axis: Partner A (below grid) -->
+  <text x="160" y="312" text-anchor="middle" font-size="10" font-weight="600" fill="#2c3e50">Partner A: Success</text>
+  <text x="390" y="312" text-anchor="middle" font-size="10" font-weight="600" fill="#2c3e50">Partner A: Fail</text>
+  <text x="275" y="324" text-anchor="middle" font-size="9" fill="#7f8c8d">← Partner A →</text>
+
+  <!-- Y-axis: Partner B (left side) -->
+  <text x="14" y="111" text-anchor="middle" font-size="10" font-weight="600" fill="#2c3e50" transform="rotate(-90,14,111)">Partner B: Success</text>
+  <text x="14" y="234" text-anchor="middle" font-size="10" font-weight="600" fill="#2c3e50" transform="rotate(-90,14,234)">Partner B: Fail</text>
+
+  <!-- ===== BOTTOM SECTION: Reference tables ===== -->
+  <!-- Divider -->
+  <line x1="45" y1="340" x2="505" y2="340" stroke="#d5dbdb" stroke-width="1"/>
+
+  <!-- Relationship Trust Modifier -->
+  <text x="140" y="358" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2c3e50">Relationship Trust Modifier</text>
+
+  <!-- Trust table: 5 rows compact -->
+  <g font-size="9.5" fill="#2c3e50">
+    <rect x="60" y="365" width="160" height="12" rx="3" fill="#ecf0f1" opacity="0.5"/>
+    <text x="68" y="374">Newly dating</text>
+    <text x="215" y="374" text-anchor="end" font-weight="600">0</text>
+
+    <rect x="60" y="379" width="160" height="12" rx="3" fill="#ecf0f1" opacity="0.5"/>
+    <text x="68" y="388">Committed</text>
+    <text x="215" y="388" text-anchor="end" font-weight="600">+1</text>
+
+    <rect x="60" y="393" width="160" height="12" rx="3" fill="#ecf0f1" opacity="0.5"/>
+    <text x="68" y="402">Engaged</text>
+    <text x="215" y="402" text-anchor="end" font-weight="600">+2</text>
+
+    <rect x="60" y="407" width="160" height="12" rx="3" fill="#ecf0f1" opacity="0.5"/>
+    <text x="68" y="416">Married</text>
+    <text x="215" y="416" text-anchor="end" font-weight="600">+3</text>
+
+    <rect x="60" y="421" width="160" height="12" rx="3" fill="#ecf0f1" opacity="0.5"/>
+    <text x="68" y="430">Married 10+ years</text>
+    <text x="215" y="430" text-anchor="end" font-weight="600">+4</text>
+  </g>
+
+  <!-- TN Reference -->
+  <text x="410" y="358" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2c3e50">Target Number (TN)</text>
+
+  <!-- TN table: 3 rows -->
+  <g font-size="9.5" fill="#2c3e50">
+    <rect x="330" y="365" width="160" height="12" rx="3" fill="#d5f5e3" opacity="0.5"/>
+    <text x="338" y="374">Easy issues</text>
+    <text x="485" y="374" text-anchor="end" font-weight="600">TN 8</text>
+
+    <rect x="330" y="379" width="160" height="12" rx="3" fill="#fef9e7" opacity="0.7"/>
+    <text x="338" y="388">Moderate issues</text>
+    <text x="485" y="388" text-anchor="end" font-weight="600">TN 12</text>
+
+    <rect x="330" y="393" width="160" height="12" rx="3" fill="#fadbd8" opacity="0.5"/>
+    <text x="338" y="402">Hard issues</text>
+    <text x="485" y="402" text-anchor="end" font-weight="600">TN 15</text>
+  </g>
+
+</svg>

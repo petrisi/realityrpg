@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 550 550" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="rtshadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.13"/>
+    </filter>
+    <!-- Outer ring arrowhead (red/orange) -->
+    <marker id="rtarr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#c0392b"/>
+    </marker>
+    <!-- Thin success arrowhead -->
+    <marker id="rtarr-s" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#e67e22"/>
+    </marker>
+    <!-- Inner ring arrowhead (green/blue) -->
+    <marker id="rtarr-i" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#27ae60"/>
+    </marker>
+    <linearGradient id="rtCenterGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#2980b9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="550" height="550" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="275" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Religious Trauma: Trigger → Coping → Recovery</text>
+  <text x="275" y="44" text-anchor="middle" font-size="10.5" fill="#7f8c8d">Each trigger encounter is a node in a longer recovery arc</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- OUTER RING — acute encounter cycle              -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- Outer decorative ring -->
+  <circle cx="275" cy="290" r="210" fill="none" stroke="#f5b7b1" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ── Arrow: Trigger → SP Impact (top → right) ── -->
+  <path d="M340,178 Q395,180 410,220" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#rtarr)"/>
+
+  <!-- ── Arrow: SP Impact → Coping Check (right → bottom) ── -->
+  <path d="M395,320 Q395,380 340,400" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#rtarr)"/>
+
+  <!-- ── Branch: SUCCESS path (Coping → left-bottom → Manage → top) ── -->
+  <path d="M210,395 Q160,380 145,340" stroke="#e67e22" stroke-width="2" fill="none" marker-end="url(#rtarr-s)"/>
+  <path d="M145,260 Q155,210 200,178" stroke="#e67e22" stroke-width="2" fill="none" marker-end="url(#rtarr-s)"/>
+
+  <!-- ── Branch: FAILURE path (Coping → left-top → Leave → top) ── -->
+  <path d="M210,285 Q160,270 145,230" stroke="#c0392b" stroke-width="3.5" fill="none" marker-end="url(#rtarr)"/>
+  <path d="M145,190 Q160,165 200,178" stroke="#c0392b" stroke-width="3.5" fill="none" marker-end="url(#rtarr)"/>
+
+  <!-- ── Outer ring nodes ── -->
+
+  <!-- 1. Trigger Encounter (top) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="275" cy="165" r="48" fill="#fdedec" stroke="#c0392b" stroke-width="3"/>
+    <text x="275" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Trigger</text>
+    <text x="275" y="164" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Encounter</text>
+    <text x="275" y="178" text-anchor="middle" font-size="8.5" fill="#7f8c8d">church, hymns, family event</text>
+  </g>
+
+  <!-- 2. SP Impact Applied (right) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="425" cy="275" r="48" fill="#f5e6cc" stroke="#e67e22" stroke-width="3"/>
+    <text x="425" y="258" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">SP Impact</text>
+    <text x="425" y="272" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Applied</text>
+    <text x="425" y="288" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="600">+3 to +10 SP</text>
+    <text x="425" y="300" text-anchor="middle" font-size="8.5" fill="#7f8c8d">immediately</text>
+  </g>
+
+  <!-- 3. Coping Check (bottom) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="275" cy="410" r="48" fill="#fdebd0" stroke="#e67e22" stroke-width="3"/>
+    <text x="275" y="396" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Coping</text>
+    <text x="275" y="410" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">Check</text>
+    <text x="275" y="426" text-anchor="middle" font-size="9" fill="#e67e22" font-weight="600">2d10 + RES + therapy</text>
+    <text x="275" y="438" text-anchor="middle" font-size="9" fill="#e67e22" font-weight="600">vs TN 12</text>
+  </g>
+
+  <!-- 4a. SUCCESS — SP halved / Manage trigger (left-bottom) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="130" cy="330" r="40" fill="#fef9e7" stroke="#f39c12" stroke-width="2.5"/>
+    <text x="130" y="318" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">SP halved</text>
+    <text x="130" y="332" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Manage trigger</text>
+    <text x="130" y="346" text-anchor="middle" font-size="8.5" fill="#7f8c8d">reduced impact</text>
+  </g>
+
+  <!-- 4b. FAILURE — Full SP / May need to leave (left-top) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="130" cy="220" r="40" fill="#fdedec" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="130" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Full SP applies</text>
+    <text x="130" y="222" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">May need to leave</text>
+    <text x="130" y="236" text-anchor="middle" font-size="8.5" fill="#7f8c8d">avoidance behavior</text>
+  </g>
+
+  <!-- Branch labels -->
+  <text x="178" y="340" text-anchor="middle" font-size="9" fill="#27ae60" font-weight="600">✓ SUCCESS</text>
+  <text x="178" y="252" text-anchor="middle" font-size="9" fill="#c0392b" font-weight="600">✗ FAILURE</text>
+
+  <!-- Avoidance behavior label near failure path -->
+  <text x="108" y="200" text-anchor="middle" font-size="8" fill="#c0392b" font-style="italic">Avoidance</text>
+  <text x="108" y="210" text-anchor="middle" font-size="8" fill="#c0392b" font-style="italic">behavior</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- INNER RING — long-term recovery arc             -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <!-- Inner decorative ring -->
+  <circle cx="275" cy="290" r="130" fill="none" stroke="#a9dfbf" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ── Inner arrows (circular flow) ── -->
+
+  <!-- Therapy → Support groups (top → right) -->
+  <path d="M320,210 Q360,215 370,245" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#rtarr-i)"/>
+
+  <!-- Support groups → Journaling (right → bottom) -->
+  <path d="M365,305 Q360,340 325,355" stroke="#27ae60" stroke-width="2" fill="none" marker-end="url(#rtarr-i)"/>
+
+  <!-- Journaling → back to Therapy (bottom → top) -->
+  <path d="M225,355 Q195,340 190,305" stroke="#2980b9" stroke-width="2" fill="none" marker-end="url(#rtarr-i)"/>
+  <path d="M190,245 Q200,215 230,210" stroke="#2980b9" stroke-width="2" fill="none" marker-end="url(#rtarr-i)"/>
+
+  <!-- ── Inner ring nodes ── -->
+
+  <!-- 1. Therapy (top) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="275" cy="195" r="38" fill="#eafaf1" stroke="#27ae60" stroke-width="2.5"/>
+    <text x="275" y="186" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Therapy</text>
+    <text x="275" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">(weekly)</text>
+    <text x="275" y="212" text-anchor="middle" font-size="8.5" fill="#27ae60" font-weight="600">Trauma tag drops</text>
+    <text x="275" y="222" text-anchor="middle" font-size="8.5" fill="#27ae60" font-weight="600">−1 every 6 months</text>
+  </g>
+
+  <!-- 2. Support groups (right) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="390" cy="280" r="38" fill="#eaf2f8" stroke="#2980b9" stroke-width="2.5"/>
+    <text x="390" y="270" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Support</text>
+    <text x="390" y="282" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">groups</text>
+    <text x="390" y="296" text-anchor="middle" font-size="8.5" fill="#2980b9" font-weight="600">Secular Community</text>
+    <text x="390" y="306" text-anchor="middle" font-size="8.5" fill="#2980b9" font-weight="600">Trust builds</text>
+  </g>
+
+  <!-- 3. Journaling / creative work (bottom) -->
+  <g filter="url(#rtshadow)">
+    <circle cx="275" cy="375" r="38" fill="#eafaf1" stroke="#27ae60" stroke-width="2.5"/>
+    <text x="275" y="365" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Journaling /</text>
+    <text x="275" y="377" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">creative work</text>
+    <text x="275" y="391" text-anchor="middle" font-size="8.5" fill="#27ae60" font-weight="600">Self-knowledge</text>
+    <text x="275" y="401" text-anchor="middle" font-size="8.5" fill="#27ae60" font-weight="600">grows</text>
+  </g>
+
+  <!-- Recovery feedback arrow label -->
+  <text x="170" y="290" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="600">tag drops →</text>
+  <text x="170" y="301" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="600">triggers hurt</text>
+  <text x="170" y="312" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="600">less → easier</text>
+  <text x="170" y="323" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="600">coping checks</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- CENTER — recovery message                       -->
+  <!-- ═══════════════════════════════════════════════ -->
+
+  <g filter="url(#rtshadow)">
+    <circle cx="275" cy="290" r="52" fill="url(#rtCenterGrad)" stroke="#1a252f" stroke-width="2"/>
+    <text x="275" y="270" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ecf0f1">Recovery</text>
+    <text x="275" y="284" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ecf0f1">is possible</text>
+    <text x="275" y="298" text-anchor="middle" font-size="10.5" font-weight="700" fill="#ecf0f1">but takes time.</text>
+  </g>
+
+  <!-- Bottom note -->
+  <text x="275" y="520" text-anchor="middle" font-size="9.5" fill="#7f8c8d">Outer ring = acute stress cycle · Inner ring = long-term healing arc</text>
+  <text x="275" y="535" text-anchor="middle" font-size="9.5" fill="#7f8c8d">As recovery progresses, outer ring encounters become less severe</text>
+
+</svg>
