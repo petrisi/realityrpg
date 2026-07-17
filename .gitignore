@@ -11,3 +11,9 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Analysis & validation artifacts
+*_ANALYSIS.md
+*_VALIDATION.md
+*gap-analysis.md
+*Image-Analysis.md
