@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <defs>
+    <style>
+      .title { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 22px; font-weight: 700; fill: #2c3e50; }
+      .subtitle { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 13px; fill: #7f8c8d; }
+      .row-header { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #2c3e50; }
+      .col-header { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #2c3e50; }
+      .cell-text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 9px; fill: #5d6d7e; }
+      .cell-bold { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 9px; font-weight: 700; fill: #2c3e50; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="700" height="500" rx="12" fill="#faf9f6"/>
+
+  <!-- Title -->
+  <text x="350" y="38" text-anchor="middle" class="title">Exercise as Therapy: Interaction Matrix</text>
+  <!-- Subtitle -->
+  <text x="350" y="58" text-anchor="middle" class="subtitle">Which exercises help which mental health conditions</text>
+
+  <!-- ===== GRID LAYOUT ===== -->
+  <!-- Margins: left=140, top=80, right=20, bottom=20 -->
+  <!-- Grid starts at x=140, y=80 -->
+  <!-- 4 columns: 140px each (x: 140, 280, 420, 560) -->
+  <!-- 4 rows: 70px each (y: 80, 150, 220, 290) -->
+  <!-- Row headers at x=10, width=125, y=80/150/220/290, height=70 -->
+  <!-- Col headers at x=140/280/420/560, y=10, width=140, height=65 -->
+
+  <!-- ===== COLUMN HEADERS ===== -->
+  <!-- 🏃 Aerobic -->
+  <rect x="140" y="10" width="140" height="65" rx="8" fill="#d5f5e3"/>
+  <text x="210" y="40" text-anchor="middle" class="col-header">🏃 Aerobic</text>
+  <text x="210" y="58" text-anchor="middle" class="col-header" font-size="10">Running, cycling, swimming</text>
+
+  <!-- 🧘 Mind-Body -->
+  <rect x="280" y="10" width="140" height="65" rx="8" fill="#d6eaf8"/>
+  <text x="350" y="40" text-anchor="middle" class="col-header">🧘 Mind-Body</text>
+  <text x="350" y="58" text-anchor="middle" class="col-header" font-size="10">Yoga, tai chi, meditation</text>
+
+  <!-- ⚡ High-Intensity -->
+  <rect x="420" y="10" width="140" height="65" rx="8" fill="#fdebd0"/>
+  <text x="490" y="40" text-anchor="middle" class="col-header">⚡ High-Intensity</text>
+  <text x="490" y="58" text-anchor="middle" class="col-header" font-size="10">HIIT, sprinting, circuits</text>
+
+  <!-- 👥 Social -->
+  <rect x="560" y="10" width="140" height="65" rx="8" fill="#e8daef"/>
+  <text x="630" y="40" text-anchor="middle" class="col-header">👥 Social</text>
+  <text x="630" y="58" text-anchor="middle" class="col-header" font-size="10">Team sports, group fitness</text>
+
+  <!-- ===== ROW HEADERS ===== -->
+  <!-- 😞 Depression -->
+  <rect x="10" y="80" width="125" height="70" rx="8" fill="#fadbd8"/>
+  <text x="72" y="115" text-anchor="middle" class="row-header">😞</text>
+  <text x="72" y="132" text-anchor="middle" class="row-header">Depression</text>
+
+  <!-- 😰 Anxiety -->
+  <rect x="10" y="150" width="125" height="70" rx="8" fill="#fdebd0"/>
+  <text x="72" y="185" text-anchor="middle" class="row-header">😰</text>
+  <text x="72" y="202" text-anchor="middle" class="row-header">Anxiety</text>
+
+  <!-- 😤 Chronic Stress -->
+  <rect x="10" y="220" width="125" height="70" rx="8" fill="#f9e79f"/>
+  <text x="72" y="255" text-anchor="middle" class="row-header">😤</text>
+  <text x="72" y="272" text-anchor="middle" class="row-header">Chronic Stress</text>
+
+  <!-- 😴 Insomnia -->
+  <rect x="10" y="290" width="125" height="70" rx="8" fill="#d5f5e3"/>
+  <text x="72" y="325" text-anchor="middle" class="row-header">😴</text>
+  <text x="72" y="342" text-anchor="middle" class="row-header">Insomnia</text>
+
+  <!-- ===== ROW 1: Depression ===== -->
+  <!-- Depression × Aerobic: BEST (green) -->
+  <rect x="140" y="80" width="140" height="70" rx="6" fill="#d4efdf"/>
+  <text x="210" y="100" text-anchor="middle" class="cell-bold">−3 SP</text>
+  <text x="210" y="115" text-anchor="middle" class="cell-text">+1 mood checks</text>
+  <text x="210" y="128" text-anchor="middle" class="cell-text">Episode resolution possible</text>
+
+  <!-- Depression × Mind-Body: MODERATE (yellow) -->
+  <rect x="280" y="80" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="350" y="100" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="350" y="115" text-anchor="middle" class="cell-text">Calming but less effective</text>
+
+  <!-- Depression × HIIT: MODERATE (yellow) -->
+  <rect x="420" y="80" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="490" y="100" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="490" y="115" text-anchor="middle" class="cell-text">Risk of overexertion</text>
+
+  <!-- Depression × Social: MODERATE (yellow) -->
+  <rect x="560" y="80" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="630" y="100" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="630" y="115" text-anchor="middle" class="cell-text">Connection helps motivation</text>
+
+  <!-- ===== ROW 2: Anxiety ===== -->
+  <!-- Anxiety × Aerobic: MODERATE (yellow) -->
+  <rect x="140" y="150" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="210" y="170" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="210" y="185" text-anchor="middle" class="cell-text">Good but less targeted</text>
+
+  <!-- Anxiety × Mind-Body: BEST (green) -->
+  <rect x="280" y="150" width="140" height="70" rx="6" fill="#d4efdf"/>
+  <text x="350" y="170" text-anchor="middle" class="cell-bold">−4 SP</text>
+  <text x="350" y="185" text-anchor="middle" class="cell-text">+2 RES next day</text>
+  <text x="350" y="198" text-anchor="middle" class="cell-text">Best match</text>
+
+  <!-- Anxiety × HIIT: AVOID (red) -->
+  <rect x="420" y="150" width="140" height="70" rx="6" fill="#fadbd8"/>
+  <text x="490" y="170" text-anchor="middle" class="cell-bold">−1 SP</text>
+  <text x="490" y="185" text-anchor="middle" class="cell-text">Can trigger panic</text>
+  <text x="490" y="198" text-anchor="middle" class="cell-text" fill="#c0392b" font-weight="700">AVOID</text>
+
+  <!-- Anxiety × Social: MODERATE (yellow) -->
+  <rect x="560" y="150" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="630" y="170" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="630" y="185" text-anchor="middle" class="cell-text">Group energy helps</text>
+
+  <!-- ===== ROW 3: Chronic Stress ===== -->
+  <!-- Stress × Aerobic: MODERATE (yellow) -->
+  <rect x="140" y="220" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="210" y="240" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="210" y="255" text-anchor="middle" class="cell-text">Decent general relief</text>
+
+  <!-- Stress × Mind-Body: BEST (green) -->
+  <rect x="280" y="220" width="140" height="70" rx="6" fill="#d4efdf"/>
+  <text x="350" y="240" text-anchor="middle" class="cell-bold">−3 SP</text>
+  <text x="350" y="255" text-anchor="middle" class="cell-text">Good de-escalation</text>
+
+  <!-- Stress × HIIT: BEST (green) -->
+  <rect x="420" y="220" width="140" height="70" rx="6" fill="#d4efdf"/>
+  <text x="490" y="240" text-anchor="middle" class="cell-bold">−3 SP</text>
+  <text x="490" y="255" text-anchor="middle" class="cell-text">Best stress dump</text>
+
+  <!-- Stress × Social: MODERATE (yellow) -->
+  <rect x="560" y="220" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="630" y="240" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="630" y="255" text-anchor="middle" class="cell-text">Shared venting</text>
+
+  <!-- ===== ROW 4: Insomnia ===== -->
+  <!-- Insomnia × Aerobic: MODERATE (yellow) -->
+  <rect x="140" y="290" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="210" y="310" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="210" y="325" text-anchor="middle" class="cell-text">Morning only, not evening</text>
+
+  <!-- Insomnia × Mind-Body: MODERATE (yellow) -->
+  <rect x="280" y="290" width="140" height="70" rx="6" fill="#fef9e7"/>
+  <text x="350" y="310" text-anchor="middle" class="cell-bold">−2 SP</text>
+  <text x="350" y="325" text-anchor="middle" class="cell-text">Wind-down helps sleep</text>
+
+  <!-- Insomnia × HIIT: AVOID (red) -->
+  <rect x="420" y="290" width="140" height="70" rx="6" fill="#fadbd8"/>
+  <text x="490" y="310" text-anchor="middle" class="cell-bold">−1 SP</text>
+  <text x="490" y="325" text-anchor="middle" class="cell-text">AVOID evening HIIT</text>
+
+  <!-- Insomnia × Social: AVOID (red) -->
+  <rect x="560" y="290" width="140" height="70" rx="6" fill="#fadbd8"/>
+  <text x="630" y="310" text-anchor="middle" class="cell-bold">−1 SP</text>
+  <text x="630" y="325" text-anchor="middle" class="cell-text">Not directly relevant</text>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="140" y="380" width="560" height="55" rx="8" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="155" y="398" class="cell-bold" font-size="10" fill="#2c3e50">Legend:</text>
+
+  <rect x="210" y="390" width="14" height="14" rx="3" fill="#d4efdf"/>
+  <text x="230" y="402" class="cell-text" font-size="10">Best match (highest SP reduction)</text>
+
+  <rect x="400" y="390" width="14" height="14" rx="3" fill="#fef9e7"/>
+  <text x="420" y="402" class="cell-text" font-size="10">Moderate benefit</text>
+
+  <rect x="530" y="390" width="14" height="14" rx="3" fill="#fadbd8"/>
+  <text x="550" y="402" class="cell-text" font-size="10">Avoid / not recommended</text>
+
+  <text x="155" y="425" class="cell-text" font-size="9" fill="#95a5a6">SP = Sanity Points · RES = Resilience · Mood checks = in-game mechanic</text>
+
+  <!-- ===== DECORATIVE BORDER ===== -->
+  <rect x="140" y="80" width="560" height="280" rx="6" fill="none" stroke="#d5dbdb" stroke-width="1"/>
+  <line x1="140" y1="150" x2="700" y2="150" stroke="#d5dbdb" stroke-width="0.5"/>
+  <line x1="140" y1="220" x2="700" y2="220" stroke="#d5dbdb" stroke-width="0.5"/>
+  <line x1="140" y1="290" x2="700" y2="290" stroke="#d5dbdb" stroke-width="0.5"/>
+  <line x1="280" y1="80" x2="280" y2="360" stroke="#d5dbdb" stroke-width="0.5"/>
+  <line x1="420" y1="80" x2="420" y2="360" stroke="#d5dbdb" stroke-width="0.5"/>
+  <line x1="560" y1="80" x2="560" y2="360" stroke="#d5dbdb" stroke-width="0.5"/>
+
+</svg>

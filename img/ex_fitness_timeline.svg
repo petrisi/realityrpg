@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%">
+  <defs>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="#faf9f6" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#2c3e50">Fitness Level Progression Timeline</text>
+
+  <!-- Subtitle -->
+  <text x="450" y="54" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" fill="#5d6d7e">From couch to marathon — the full arc</text>
+
+  <!-- Horizontal connector line -->
+  <line x1="100" y1="90" x2="800" y2="90" stroke="#bdc3c7" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- FL0: Sedentary -->
+  <g>
+    <circle cx="100" cy="90" r="18" fill="#95a5a6" filter="url(#ds)"/>
+    <text x="100" y="95" text-anchor="middle" font-size="16" dominant-baseline="central">😴</text>
+    <text x="100" y="122" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Sedentary</text>
+    <text x="100" y="138" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#5d6d7e">Starting point</text>
+  </g>
+
+  <!-- FL1: Casual -->
+  <g>
+    <circle cx="240" cy="90" r="18" fill="#27ae60" filter="url(#ds)"/>
+    <text x="240" y="95" text-anchor="middle" font-size="16" dominant-baseline="central">🚶</text>
+    <text x="240" y="122" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Casual</text>
+    <text x="240" y="138" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#5d6d7e">2×/wk for 1 month</text>
+  </g>
+
+  <!-- FL2: Active -->
+  <g>
+    <circle cx="380" cy="90" r="18" fill="#1e8449" filter="url(#ds)"/>
+    <text x="380" y="95" text-anchor="middle" font-size="16" dominant-baseline="central">🏃</text>
+    <text x="380" y="122" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Active</text>
+    <text x="380" y="138" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#5d6d7e">4×/wk for 2 months</text>
+  </g>
+
+  <!-- FL3: Fit -->
+  <g>
+    <circle cx="520" cy="90" r="18" fill="#2980b9" filter="url(#ds)"/>
+    <text x="520" y="95" text-anchor="middle" font-size="16" dominant-baseline="central">💪</text>
+    <text x="520" y="122" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Fit</text>
+    <text x="520" y="138" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#5d6d7e">5×/wk + 5K run</text>
+  </g>
+
+  <!-- FL4: Athletic -->
+  <g>
+    <circle cx="660" cy="90" r="18" fill="#2471a3" filter="url(#ds)"/>
+    <text x="660" y="95" text-anchor="middle" font-size="16" dominant-baseline="central">🏅</text>
+    <text x="660" y="122" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Athletic</text>
+    <text x="660" y="138" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#5d6d7e">6×/wk + 10K/half</text>
+  </g>
+
+  <!-- FL5: Elite -->
+  <g>
+    <circle cx="800" cy="90" r="18" fill="#1a5276" filter="url(#ds)"/>
+    <text x="800" y="95" text-anchor="middle" font-size="16" dominant-baseline="central">🏆</text>
+    <text x="800" y="122" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">Elite</text>
+    <text x="800" y="138" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#5d6d7e">6–7×/wk + marathon</text>
+  </g>
+
+  <!-- Time markers axis line -->
+  <line x1="60" y1="170" x2="860" y2="170" stroke="#d5dbdb" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Tick marks and month labels -->
+  <g font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#95a5a6" text-anchor="middle">
+    <line x1="100" y1="167" x2="100" y2="173" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="100" y="190">Month 0</text>
+
+    <line x1="240" y1="167" x2="240" y2="173" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="240" y="190">Month 1</text>
+
+    <line x1="380" y1="167" x2="380" y2="173" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="380" y="190">Month 3</text>
+
+    <line x1="520" y1="167" x2="520" y2="173" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="520" y="190">Month 6</text>
+
+    <line x1="660" y1="167" x2="660" y2="173" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="660" y="190">Month 10</text>
+
+    <line x1="800" y1="167" x2="800" y2="173" stroke="#bdc3c7" stroke-width="1.5"/>
+    <text x="800" y="190">Month 16</text>
+  </g>
+
+  <!-- Arrow heads on axis -->
+  <polygon points="860,170 854,167 854,173" fill="#d5dbdb"/>
+  <polygon points="60,170 66,167 66,173" fill="#d5dbdb"/>
+</svg>

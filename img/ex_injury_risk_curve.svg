@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 440" width="100%" height="100%">
+  <defs>
+    <style>
+      .title{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:22px;font-weight:700;fill:#2c3e50}
+      .subtitle{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:13px;fill:#5d6d7e}
+      .axis-label{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:12px;fill:#5d6d7e}
+      .tick-label{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:11px;fill:#5d6d7e}
+      .legend-text{font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:11px;fill:#2c3e50}
+      .grid-line{stroke:#d5d8dc;stroke-width:0.8;stroke-dasharray:4,4}
+      .curve-green{stroke:#27ae60;stroke-width:2.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .curve-orange{stroke:#f39c12;stroke-width:2.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .curve-red{stroke:#e74c3c;stroke-width:2.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+      .dot{stroke-width:2}
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="700" height="440" fill="#faf9f6" rx="6"/>
+
+  <!-- Title & Subtitle -->
+  <text x="360" y="30" text-anchor="middle" class="title">Injury Risk Curve</text>
+  <text x="360" y="50" text-anchor="middle" class="subtitle">How overtraining level and exercise type interact</text>
+
+  <!-- Grid lines (horizontal, every 10%) -->
+  <line x1="80" y1="340" x2="640" y2="340" class="grid-line"/>
+  <line x1="80" y1="305" x2="640" y2="305" class="grid-line"/>
+  <line x1="80" y1="270" x2="640" y2="270" class="grid-line"/>
+  <line x1="80" y1="235" x2="640" y2="235" class="grid-line"/>
+  <line x1="80" y1="200" x2="640" y2="200" class="grid-line"/>
+  <line x1="80" y1="165" x2="640" y2="165" class="grid-line"/>
+  <line x1="80" y1="130" x2="640" y2="130" class="grid-line"/>
+  <line x1="80" y1="95"  x2="640" y2="95"  class="grid-line"/>
+  <line x1="80" y1="60"  x2="640" y2="60"  class="grid-line"/>
+
+  <!-- Grid lines (vertical, at each overtraining level) -->
+  <line x1="80"  y1="60" x2="80"  y2="340" class="grid-line"/>
+  <line x1="192" y1="60" x2="192" y2="340" class="grid-line"/>
+  <line x1="304" y1="60" x2="304" y2="340" class="grid-line"/>
+  <line x1="416" y1="60" x2="416" y2="340" class="grid-line"/>
+  <line x1="528" y1="60" x2="528" y2="340" class="grid-line"/>
+  <line x1="640" y1="60" x2="640" y2="340" class="grid-line"/>
+
+  <!-- Axes -->
+  <line x1="80" y1="340" x2="640" y2="340" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="80" y1="60"  x2="80"  y2="340" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Y-axis tick labels -->
+  <text x="72" y="344" text-anchor="end" class="tick-label">0%</text>
+  <text x="72" y="309" text-anchor="end" class="tick-label">10%</text>
+  <text x="72" y="274" text-anchor="end" class="tick-label">20%</text>
+  <text x="72" y="239" text-anchor="end" class="tick-label">30%</text>
+  <text x="72" y="204" text-anchor="end" class="tick-label">40%</text>
+  <text x="72" y="169" text-anchor="end" class="tick-label">50%</text>
+  <text x="72" y="134" text-anchor="end" class="tick-label">60%</text>
+  <text x="72" y="99"  text-anchor="end" class="tick-label">70%</text>
+  <text x="72" y="64"  text-anchor="end" class="tick-label">80%</text>
+
+  <!-- X-axis tick labels -->
+  <text x="80"  y="358" text-anchor="middle" class="tick-label">0</text>
+  <text x="192" y="358" text-anchor="middle" class="tick-label">1</text>
+  <text x="304" y="358" text-anchor="middle" class="tick-label">2</text>
+  <text x="416" y="358" text-anchor="middle" class="tick-label">3</text>
+  <text x="528" y="358" text-anchor="middle" class="tick-label">4</text>
+  <text x="640" y="358" text-anchor="middle" class="tick-label">5</text>
+
+  <!-- Axis titles -->
+  <text x="360" y="385" text-anchor="middle" class="axis-label">Overtraining Level</text>
+  <text x="28" y="200" text-anchor="middle" class="axis-label" transform="rotate(-90,28,200)">Injury Probability (%)</text>
+
+  <!-- GREEN curve (Stretching/Yoga): 5,5,6,7,8,10% -->
+  <path class="curve-green" d="M80,325 C124,325 148,325 192,325 C236,325 260,322 304,319 C348,316 372,317 416,315.5 C460,314 484,313 528,312 C572,311 596,308 640,305"/>
+  <circle cx="80"  cy="325" r="4" fill="#27ae60" class="dot" stroke="#faf9f6"/>
+  <circle cx="192" cy="325" r="4" fill="#27ae60" class="dot" stroke="#faf9f6"/>
+  <circle cx="304" cy="319" r="4" fill="#27ae60" class="dot" stroke="#faf9f6"/>
+  <circle cx="416" cy="315.5" r="4" fill="#27ae60" class="dot" stroke="#faf9f6"/>
+  <circle cx="528" cy="312" r="4" fill="#27ae60" class="dot" stroke="#faf9f6"/>
+  <circle cx="640" cy="305" r="4" fill="#27ae60" class="dot" stroke="#faf9f6"/>
+
+  <!-- ORANGE curve (Free Weights/Cardio): 10,15,25,35,45,55% -->
+  <path class="curve-orange" d="M80,305 C124,300 148,288 192,290 C236,292 260,272 304,262.5 C348,253 372,240 416,235 C460,230 484,217 528,207.5 C572,198 596,188 640,177.5"/>
+  <circle cx="80"  cy="305" r="4" fill="#f39c12" class="dot" stroke="#faf9f6"/>
+  <circle cx="192" cy="290" r="4" fill="#f39c12" class="dot" stroke="#faf9f6"/>
+  <circle cx="304" cy="262.5" r="4" fill="#f39c12" class="dot" stroke="#faf9f6"/>
+  <circle cx="416" cy="235" r="4" fill="#f39c12" class="dot" stroke="#faf9f6"/>
+  <circle cx="528" cy="207.5" r="4" fill="#f39c12" class="dot" stroke="#faf9f6"/>
+  <circle cx="640" cy="177.5" r="4" fill="#f39c12" class="dot" stroke="#faf9f6"/>
+
+  <!-- RED curve (HIIT/Climbing): 15,22,35,50,62,75% -->
+  <path class="curve-red" d="M80,290 C124,280 148,274 192,268 C236,262 260,248 304,235 C348,222 372,206 416,192.5 C460,179 484,167 528,157.5 C572,148 596,128 640,117.5"/>
+  <circle cx="80"  cy="290" r="4" fill="#e74c3c" class="dot" stroke="#faf9f6"/>
+  <circle cx="192" cy="268" r="4" fill="#e74c3c" class="dot" stroke="#faf9f6"/>
+  <circle cx="304" cy="235" r="4" fill="#e74c3c" class="dot" stroke="#faf9f6"/>
+  <circle cx="416" cy="192.5" r="4" fill="#e74c3c" class="dot" stroke="#faf9f6"/>
+  <circle cx="528" cy="157.5" r="4" fill="#e74c3c" class="dot" stroke="#faf9f6"/>
+  <circle cx="640" cy="117.5" r="4" fill="#e74c3c" class="dot" stroke="#faf9f6"/>
+
+  <!-- Legend (top-right, x=500..660, y=68..112) -->
+  <rect x="490" y="62" width="175" height="80" rx="6" fill="#fff" stroke="#d5d8dc" stroke-width="1" opacity="0.92"/>
+  <text x="500" y="78" class="legend-text" font-weight="600">Exercise Type</text>
+
+  <line x1="500" y1="92" x2="520" y2="92" stroke="#27ae60" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="510" cy="92" r="3" fill="#27ae60"/>
+  <text x="528" y="96" class="legend-text">Stretching / Yoga</text>
+
+  <line x1="500" y1="108" x2="520" y2="108" stroke="#f39c12" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="510" cy="108" r="3" fill="#f39c12"/>
+  <text x="528" y="112" class="legend-text">Free Weights / Cardio</text>
+
+  <line x1="500" y1="124" x2="520" y2="124" stroke="#e74c3c" stroke-width="2.8" stroke-linecap="round"/>
+  <circle cx="510" cy="124" r="3" fill="#e74c3c"/>
+  <text x="528" y="128" class="legend-text">HIIT / Climbing</text>
+
+</svg>

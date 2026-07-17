@@ -29,6 +29,11 @@
 </div>
 
 <!-- ============================================================ -->
+<!-- P2-1: Exercise Consistency Loop SVG -->
+<div class="section-illustration">
+  <img src="img/ex_consistency_loop.svg" alt="Circular flow diagram showing the exercise habit loop: Workout → Recovery → Adaptation → Motivation → Workout, with a danger branch from Recovery leading to Overtraining Track">
+</div>
+
 <h2>1. 🏆 Why Exercise Matters</h2>
 
 <p>Exercise is one of the most impactful systems in Reality RPG because it touches nearly every aspect of your character's life:</p>
@@ -61,54 +66,38 @@
 
 <p>Every character has a <strong>Fitness Level</strong> from 0 to 5. This is a derived stat that reflects your character's current conditioning. It provides a flat bonus to all exercise checks and grants passive benefits.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Level</th><th>Name</th><th>Bonus to Checks</th><th>Passive Benefits</th><th>Prerequisites</th></tr></thead>
-<tbody>
-<tr>
-<td><strong>0</strong></td>
-<td>😴 Sedentary</td>
-<td><span class="dice">+0</span></td>
-<td>None. Daily SP gain of +1 if desk job (stress from inactivity).</td>
-<td>Default starting point for most adults.</td>
-</tr>
-<tr>
-<td><strong>1</strong></td>
-<td>🚶 Casual</td>
-<td><span class="dice">+1</span></td>
-<td>−1 daily SP from mild activity. Recovers from common colds in 3 days instead of 5.</td>
-<td>Exercise 2× per week for 1 month with successful checks.</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td>🏃 Active</td>
-<td><span class="dice">+2</span></td>
-<td>−2 daily SP from regular activity. −5 to TN on endurance checks (walking up stairs, carrying groceries). Sleep quality improves: +1 to all recovery rolls.</td>
-<td>Exercise 4× per week for 2 months at Fitness Level 1.</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td>💪 Fit</td>
-<td><span class="dice">+3</span></td>
-<td>−3 daily SP from exercise. Can gain +1 permanent VIG per month of consistent training. Immune to common colds with a successful RES check (TN 35). PRC may increase by 1 if body image improves.</td>
-<td>Exercise 5× per week for 3 months at Fitness Level 2. Must complete at least one moderate endurance event (5K run, 1-hour swim, etc.).</td>
-</tr>
-<tr>
-<td><strong>4</strong></td>
-<td>🏅 Athletic</td>
-<td><span class="dice">+4</span></td>
-<td>−4 daily SP. +1 VIG every 6 weeks of consistent training. +1 to TN on physical labor checks. Noticeable physical transformation — PRC +1 if desired. −10 to injury TN (harder to get hurt).</td>
-<td>Exercise 6× per week for 4 months at Fitness Level 3. Complete at least one significant event (10K, half-marathon, competition, etc.).</td>
-</tr>
-<tr>
-<td><strong>5</strong></td>
-<td>🏆 Elite</td>
-<td><span class="dice">+5</span></td>
-<td>−5 daily SP. +1 VIG every 4 weeks. Peak physical condition. PRC +2 if body is a character focus. Can attempt extraordinary physical feats (TN 80+). Inspires others: +2 to EXP checks when demonstrating physical capability.</td>
-<td>Exercise 6–7× per week for 6 months at Fitness Level 4. Complete a major event (marathon, competition win, advanced martial arts belt, etc.). GM approval required.</td>
-</tr>
-</tbody>
-</table>
+<!-- P1-1: Fitness Level System → condition-track (was 6-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#95a5a6;">
+    😴 FL 0<br>
+    <small>Sedentary</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+0 bonus · +1 daily SP (desk job)</span>
+  </div>
+  <div class="condition-step" style="background:#27ae60;">
+    🚶 FL 1<br>
+    <small>Casual</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 bonus · −1 daily SP · colds in 3 days · 2×/wk for 1 mo</span>
+  </div>
+  <div class="condition-step" style="background:#1e8449;">
+    🏃 FL 2<br>
+    <small>Active</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+2 bonus · −2 daily SP · −5 endurance TN · +1 recovery rolls · 4×/wk for 2 mo</span>
+  </div>
+  <div class="condition-step" style="background:#2980b9;">
+    💪 FL 3<br>
+    <small>Fit</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+3 bonus · −3 daily SP · +1 VIG/mo · cold immunity · PRC +1 · 5×/wk for 3 mo + endurance event</span>
+  </div>
+  <div class="condition-step" style="background:#2471a3;">
+    🏅 FL 4<br>
+    <small>Athletic</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+4 bonus · −4 daily SP · +1 VIG/6wk · −10 injury TN · PRC +1 · 6×/wk for 4 mo + major event</span>
+  </div>
+  <div class="condition-step" style="background:#1a5276;">
+    🏆 FL 5<br>
+    <small>Elite</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+5 bonus · −5 daily SP · +1 VIG/4wk · PRC +2 · TN 80+ feats · +2 EXP inspire · 6–7×/wk for 6 mo + major event · GM approval</span>
+  </div>
 </div>
 
 <div class="callout tip">
@@ -116,22 +105,51 @@
   <p>Fitness Levels can <strong>decrease</strong> if a character stops training. After 4 weeks of no exercise, drop one Fitness Level. After 8 weeks, drop another. Injury, illness, or life events (new baby, job loss, etc.) can cause immediate drops. The body remembers, though — regaining a lost level takes half the normal time.</p>
 </div>
 
+<!-- P2-4: Fitness Level Progression Timeline SVG -->
+<div class="section-illustration">
+  <img src="img/ex_fitness_timeline.svg" alt="Horizontal timeline showing fitness progression from FL0 Sedentary at Month 0 through FL5 Elite at Month 16, with cumulative time markers and key milestones at each level">
+</div>
+
 <h3>🔄 The Recovery System</h3>
 <p>Exercise isn't just about the workout — it's about what happens between workouts. Recovery is when the actual gains happen.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Recovery Factor</th><th>Effect</th><th>Mechanical Bonus</th></tr></thead>
-<tbody>
-<tr><td>😴 7–9 hours sleep</td><td>Proper recovery</td><td>Full workout benefits apply. No overtraining progression.</td></tr>
-<tr><td>😴 5–6 hours sleep</td><td>Partial recovery</td><td>Half workout benefits. +1 to overtraining track.</td></tr>
-<tr><td>😴 &lt;5 hours sleep</td><td>Poor recovery</td><td>No workout benefits. +2 to overtraining track. −1 to next day's exercise checks.</td></tr>
-<tr><td>🍽️ Good nutrition (protein, whole foods)</td><td>Fuels growth</td><td>+1 to all exercise checks that day. Faster VIG recovery after workouts.</td></tr>
-<tr><td>🍽️ Poor nutrition (fast food, skipping meals)</td><td>Underfuels</td><td>−1 to exercise checks. +1 to overtraining track after each workout.</td></tr>
-<tr><td>🧘 Rest day (no exercise)</td><td>Muscle repair</td><td>−1 on overtraining track. Required every 3–4 workout days at Fitness Level 3+.</td></tr>
-<tr><td>🧘 No rest days</td><td>Accumulated fatigue</td><td>+2 on overtraining track. Each day without rest after 4 consecutive workout days.</td></tr>
-</tbody>
-</table>
+<!-- P1-3: Recovery System → card-grid (was 8-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">😴</span>
+    <h3>7–9 Hours Sleep</h3>
+    <p><strong>Proper recovery</strong><br>Full workout benefits apply. No overtraining progression.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">😴</span>
+    <h3>5–6 Hours Sleep</h3>
+    <p><strong>Partial recovery</strong><br>Half workout benefits. +1 to overtraining track.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">😴</span>
+    <h3>&lt;5 Hours Sleep</h3>
+    <p><strong>Poor recovery</strong><br>No workout benefits. +2 to overtraining track. −1 to next day's exercise checks.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🍽️</span>
+    <h3>Good Nutrition</h3>
+    <p><strong>Fuels growth</strong><br>+1 to all exercise checks that day. Faster VIG recovery after workouts.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🍽️</span>
+    <h3>Poor Nutrition</h3>
+    <p><strong>Underfuels</strong><br>−1 to exercise checks. +1 to overtraining track after each workout.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🧘</span>
+    <h3>Rest Day</h3>
+    <p><strong>Muscle repair</strong><br>−1 on overtraining track. Required every 3–4 workout days at Fitness Level 3+.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🧘</span>
+    <h3>No Rest Days</h3>
+    <p><strong>Accumulated fatigue</strong><br>+2 on overtraining track. Each day without rest after 4 consecutive workout days.</p>
+  </div>
 </div>
 
 <!-- ============================================================ -->
@@ -139,18 +157,34 @@
 
 <p>The gym is the primary training ground for most characters. It offers equipment variety, climate control, and social structure. A typical gym session costs <strong>45–90 minutes</strong> of game time.</p>
 
+<div class="section-illustration">
+  <img src="img/ex_gym_intimidation.png" alt="Interior of a busy gym during peak hours from the POV of a new member standing near the entrance looking overwhelmed — people lifting heavy weights, cardio row full, HIIT class in background, fluorescent lighting" style="max-width:100%;">
+</div>
+
 <h3>💰 Gym Membership Costs</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Tier</th><th>Cost/Month</th><th>Examples</th><th>What You Get</th><th>Exercise Check Modifier</th></tr></thead>
-<tbody>
-<tr><td>🟢 Budget</td><td>$10–$30</td><td>Planet Fitness, local YMCAs, big-box gyms</td><td>Basic cardio, free weights, some machines. Crowded peak hours.</td><td><span class="dice">+0</span></td></tr>
-<tr><td>🔵 Mid-Range</td><td>$40–$75</td><td>LA Fitness, 24 Hour Fitness, local independents</td><td>Full equipment range, group classes, locker rooms with showers.</td><td><span class="dice">+1</span></td></tr>
-<tr><td>🟡 Premium</td><td>$80–$150</td><td>Equinox, Life Time, boutique studios</td><td>Top equipment, pools, saunas, classes, personal training options, clean facilities.</td><td><span class="dice">+2</span></td></tr>
-<tr><td>🔴 Luxury</td><td>$150–$300+</td><td>SoulCycle, private training clubs, hotel gyms</td><td>Personal trainers included, exclusive classes, spa amenities, networking opportunities.</td><td><span class="dice">+3</span> + EXP bonus for networking</td></tr>
-</tbody>
-</table>
+<!-- P1-4: Gym Membership Costs → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Budget</h3>
+    <p><strong>$10–$30/mo</strong><br>Planet Fitness, YMCAs, big-box gyms<br>Basic cardio, free weights, some machines. Crowded peak hours.<br><span class="dice">+0</span> to exercise checks</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🔵</span>
+    <h3>Mid-Range</h3>
+    <p><strong>$40–$75/mo</strong><br>LA Fitness, 24 Hour Fitness, local independents<br>Full equipment range, group classes, locker rooms with showers.<br><span class="dice">+1</span> to exercise checks</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Premium</h3>
+    <p><strong>$80–$150/mo</strong><br>Equinox, Life Time, boutique studios<br>Top equipment, pools, saunas, classes, PT options, clean facilities.<br><span class="dice">+2</span> to exercise checks</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Luxury</h3>
+    <p><strong>$150–$300+/mo</strong><br>SoulCycle, private clubs, hotel gyms<br>PT included, exclusive classes, spa amenities, networking.<br><span class="dice">+3</span> + EXP bonus for networking</p>
+  </div>
 </div>
 
 <div class="callout tip">
@@ -163,90 +197,191 @@
 <h4>🔩 Free Weights</h4>
 <p>Barbells, dumbbells, kettlebells — the bread and butter of strength training. Free weights recruit stabilizer muscles and build functional strength, but they carry the highest injury risk.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod (if trained)</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">45</span> (light weights, warm-up) → <span class="dice">65</span> (heavy lifting, PR attempts)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>45–60 minutes per session</td></tr>
-<tr><td><strong>Success</strong></td><td>Effective workout. +1–2 VIG recovery. At Fitness Level 3+, progress toward permanent VIG gain. Strong success: feel a "pump" — +1 temporary VIG for the next 24 hours.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Poor form, wasted session, or injury. Muscle strain: −1 VIG for 3 days. Dropped weight: −1 VIG for 1 day + 1 SP from embarrassment.</td></tr>
-<tr><td><strong>Critical Failure</strong></td><td>Dropped weight on foot/body. −2 VIG for 1 week. Possible emergency room visit ($500–$5000). +3 SP from pain and frustration.</td></tr>
-</tbody>
-</table>
+<!-- P1-5a: Free Weights → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG</span> + Athletics mod (if trained)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">45</span> (light weights, warm-up) → <span class="dice">65</span> (heavy lifting, PR attempts)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>45–60 minutes per session</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Effective workout. +1–2 VIG recovery. At FL 3+, progress toward permanent VIG gain. Strong success: "pump" — +1 temp VIG for 24 hours.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Poor form, wasted session, or injury. Muscle strain: −1 VIG for 3 days. Dropped weight: −1 VIG for 1 day + 1 SP from embarrassment.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Critical Failure</h3>
+    <p>Dropped weight on foot/body. −2 VIG for 1 week. Possible ER visit ($500–$5000). +3 SP from pain and frustration.</p>
+  </div>
 </div>
 
 <h4>⚙️ Weight Machines</h4>
 <p>Leg press, chest press, cable machines, lat pulldown — guided resistance that's safer for beginners but less effective for building real-world strength.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod (if trained)</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">35</span> (light) → <span class="dice">50</span> (heavy). 10 points lower than free weights for equivalent effort.</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>30–45 minutes per session</td></tr>
-<tr><td><strong>Success</strong></td><td>Effective workout. +1 VIG recovery. Safer progression for beginners at Fitness Level 0–1.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Minor discomfort. −1 to next exercise check that day only. No lasting injury at TNs below 45.</td></tr>
-<tr><td><strong>Critical Failure</strong></td><td>Machine malfunction or improper use. −1 VIG for 2 days. Rare at mid-range TNs.</td></tr>
-</tbody>
-</table>
+<!-- P1-5b: Weight Machines → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG</span> + Athletics mod (if trained)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">35</span> (light) → <span class="dice">50</span> (heavy). 10 pts lower than free weights for equivalent effort.</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>30–45 minutes per session</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Effective workout. +1 VIG recovery. Safer progression for beginners at FL 0–1.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Minor discomfort. −1 to next exercise check that day only. No lasting injury at TNs below 45.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Critical Failure</h3>
+    <p>Machine malfunction or improper use. −1 VIG for 2 days. Rare at mid-range TNs.</p>
+  </div>
 </div>
 
 <h4>🏃 Cardio Equipment</h4>
 <p>Treadmill, elliptical, stationary bike, rowing machine — the endurance corner of every gym. Cardio reduces SP most effectively.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">40</span> (moderate pace, 20 min) → <span class="dice">55</span> (high intensity, 45+ min)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>20–45 minutes per session</td></tr>
-<tr><td><strong>Success</strong></td><td>Effective cardio session. <strong>−2 SP</strong> (−4 SP on strong success). Improved cardiovascular fitness. At Fitness Level 2+, progress toward endurance milestones.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Joint pain (knees on treadmill, lower back on bike). −1 to all movement checks next day. No SP reduction.</td></tr>
-<tr><td><strong>Critical Failure</strong></td><td>Overexertion. Faint or severe shortness of breath. −2 VIG for 2 days. +2 SP from frustration. Rowing machine: possible lower back strain.</td></tr>
-</tbody>
-</table>
+<!-- P1-5c: Cardio Equipment → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG</span> + Athletics mod</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">40</span> (moderate pace, 20 min) → <span class="dice">55</span> (high intensity, 45+ min)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>20–45 minutes per session</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Effective cardio session. <strong>−2 SP</strong> (−4 SP on strong success). Improved cardiovascular fitness. At FL 2+, progress toward endurance milestones.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Joint pain (knees on treadmill, lower back on bike). −1 to all movement checks next day. No SP reduction.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Critical Failure</h3>
+    <p>Overexertion. Faint or severe shortness of breath. −2 VIG for 2 days. +2 SP from frustration. Rowing machine: possible lower back strain.</p>
+  </div>
 </div>
 
 <h4>⚡ Functional Training</h4>
 <p>Battle ropes, plyometric boxes, TRX suspension trainers, medicine balls — high-intensity, full-body movements that simulate real-world athletic demands.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG + DXT mod</span> (average modifiers) + Athletics mod</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">50</span> (basic circuits) → <span class="dice">65</span> (advanced CrossFit-style WODs)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>30–60 minutes per session</td></tr>
-<tr><td><strong>Success</strong></td><td>Highly effective full-body workout. +2 VIG recovery. <strong>−3 SP</strong>. At Fitness Level 3+, gains count double toward VIG progression.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Poor form under fatigue. Muscle strain: −1 VIG for 3–5 days. +1 on overtraining track regardless.</td></tr>
-<tr><td><strong>Critical Failure</strong></td><td>Serious injury. Plyometric fall: sprained ankle (1–3 weeks). Medicine ball throw gone wrong: wrist strain. −2 VIG, +3 SP, mandatory rest period.</td></tr>
-</tbody>
-</table>
+<!-- P1-5d: Functional Training → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG + DXT mod</span> (average) + Athletics mod</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">50</span> (basic circuits) → <span class="dice">65</span> (advanced CrossFit-style WODs)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>30–60 minutes per session</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Highly effective full-body workout. +2 VIG recovery. <strong>−3 SP</strong>. At FL 3+, gains count double toward VIG progression.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Poor form under fatigue. Muscle strain: −1 VIG for 3–5 days. +1 on overtraining track regardless.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Critical Failure</h3>
+    <p>Serious injury. Plyometric fall: sprained ankle (1–3 weeks). Medicine ball throw gone wrong: wrist strain. −2 VIG, +3 SP, mandatory rest period.</p>
+  </div>
 </div>
 
 <h4>🧘 Stretching &amp; Mobility</h4>
 <p>Foam rolling, yoga mats, resistance bands — the recovery-focused activities. Lower TN but essential for long-term health.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">RES + VIG mod</span> (average) + Athletics mod</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">30</span> (basic stretching) → <span class="dice">40</span> (deep mobility work, advanced yoga)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>15–30 minutes per session</td></tr>
-<tr><td><strong>Success</strong></td><td>Effective recovery. <strong>−2 SP</strong>. −1 on overtraining track. Prevents future injuries: −5 to injury TN on next workout.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Overstretching. Minor stiffness for 1 day. No lasting harm.</td></tr>
-<tr><td><strong>Critical Failure</strong></td><td>Pulled muscle during deep stretch. −1 VIG for 2 days. Rare at these TNs.</td></tr>
-</tbody>
-</table>
+<!-- P1-5e: Stretching → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">RES + VIG mod</span> (average) + Athletics mod</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">30</span> (basic stretching) → <span class="dice">40</span> (deep mobility work, advanced yoga)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>15–30 minutes per session</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Effective recovery. <strong>−2 SP</strong>. −1 on overtraining track. Prevents future injuries: −5 to injury TN on next workout.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Overstretching. Minor stiffness for 1 day. No lasting harm.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Critical Failure</h3>
+    <p>Pulled muscle during deep stretch. −1 VIG for 2 days. Rare at these TNs.</p>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example 1: Marcus's First Gym Session</div>
+  <div class="section-illustration"><img src="img/ex_marcus_first_gym.png" alt="Marcus standing awkwardly in front of the free weights rack at Planet Fitness, phone propped against water bottle with paused workout video, fluorescent gym lighting, mirror wall, other gym-goers in background" style="max-width:100%;"></div>
   <p><strong>Marcus</strong> is a 32-year-old accountant. VIG 6 (+1), RES 8 (+1), Fitness Level 0 (Sedentary). He just joined a Planet Fitness ($15/month) and is attempting a free weights session — his first in years.</p>
   <p><strong>The Check:</strong> Free weights at moderate weight = TN 50. Marcus rolls <span class="dice">2d10</span> + VIG mod (+1) + Fitness bonus (+0) = <span class="dice">2d10</span> + 1.</p>
   <p>He rolls a <strong>34</strong> + 1 = <strong>35</strong> vs TN 50. That's ≤ 50 − 5 = 45, so it's a <strong>Strong Success</strong>! His body remembers old habits. He gets a great pump, +2 VIG recovery, and −2 SP from the endorphin rush. The GM notes his first successful workout toward Fitness Level 1.</p>
@@ -261,18 +396,14 @@
 <h3>🏃 Jogging / Running</h3>
 <p>Free, accessible, and one of the most effective SP-reduction activities. Running progression is the most common training arc in the game.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Distance</th><th>TN</th><th>Time</th><th>SP Reduction</th><th>Fitness Level Required</th></tr></thead>
-<tbody>
-<tr><td>🟢 1 mile jog</td><td><span class="dice">35</span></td><td>15–20 min</td><td>−1 SP</td><td>None</td></tr>
-<tr><td>🟢 2–3 mile jog</td><td><span class="dice">40</span></td><td>25–40 min</td><td>−2 SP</td><td>Level 1+</td></tr>
-<tr><td>🟡 5K (3.1 miles)</td><td><span class="dice">48</span></td><td>25–35 min</td><td>−3 SP</td><td>Level 2+</td></tr>
-<tr><td>🟡 10K (6.2 miles)</td><td><span class="dice">55</span></td><td>50–70 min</td><td>−4 SP</td><td>Level 3+</td></tr>
-<tr><td>🔴 Half Marathon (13.1 mi)</td><td><span class="dice">60</span></td><td>1.5–2.5 hrs</td><td>−5 SP</td><td>Level 4+</td></tr>
-<tr><td>🔴 Marathon (26.2 mi)</td><td><span class="dice">65</span></td><td>3–5 hrs</td><td>−5 SP + event completion bonus</td><td>Level 5</td></tr>
-</tbody>
-</table>
+<!-- P1-16: Running distances → tn-ladder (was 6-row table) -->
+<div class="tn-ladder">
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">TN 35</span><span class="tn-label">🟢 1 mile jog · 15–20 min · −1 SP · No FL required</span></div>
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">TN 40</span><span class="tn-label">🟢 2–3 mile jog · 25–40 min · −2 SP · FL 1+</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">TN 48</span><span class="tn-label">🟡 5K (3.1 mi) · 25–35 min · −3 SP · FL 2+</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">TN 55</span><span class="tn-label">🟡 10K (6.2 mi) · 50–70 min · −4 SP · FL 3+</span></div>
+  <div class="tn-step very-hard"><span class="tn-value" style="color:#e74c3c;">TN 60</span><span class="tn-label">🔴 Half Marathon (13.1 mi) · 1.5–2.5 hrs · −5 SP · FL 4+</span></div>
+  <div class="tn-step near-impossible"><span class="tn-value" style="color:#8e44ad;">TN 65</span><span class="tn-label">🔴 Marathon (26.2 mi) · 3–5 hrs · −5 SP + event bonus · FL 5</span></div>
 </div>
 
 <p><strong>Running Training Plan:</strong> To progress from jogging to marathon, a character must complete each tier for at least 4 weeks before attempting the next. Each tier requires at least 3 successful runs per week.</p>
@@ -281,29 +412,45 @@
 
 <h3>🚴 Cycling</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Type</th><th>TN</th><th>Cost</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Road cycling (10–20 mi)</td><td><span class="dice">40</span></td><td>$200–$2000 for bike + gear</td><td>Leg strength, cardio. −2 SP.</td><td>Flat tire, saddle soreness.</td></tr>
-<tr><td>🟡 Mountain biking</td><td><span class="dice">50</span></td><td>$500–$5000+ for bike + gear</td><td>Full body engagement. −3 SP. Nature bonus.</td><td>Falls: −1 VIG for 2 days. Broken bike: $200–$2000 repair.</td></tr>
-<tr><td>🟡 Indoor spinning</td><td><span class="dice">45</span></td><td>$15–$30/class or gym membership</td><td>High-intensity cardio. −3 SP. Social bonus if group class.</td><td>Overexertion: dizziness, nausea.</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Cycling → card-grid (was 3-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Road Cycling (10–20 mi)</h3>
+    <p><strong>TN 40</strong> · $200–$2000 for bike + gear<br>✅ Leg strength, cardio. −2 SP.<br>❌ Flat tire, saddle soreness.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Mountain Biking</h3>
+    <p><strong>TN 50</strong> · $500–$5000+ for bike + gear<br>✅ Full body engagement. −3 SP. Nature bonus.<br>❌ Falls: −1 VIG for 2 days. Broken bike: $200–$2000 repair.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Indoor Spinning</h3>
+    <p><strong>TN 45</strong> · $15–$30/class or gym membership<br>✅ High-intensity cardio. −3 SP. Social bonus if group class.<br>❌ Overexertion: dizziness, nausea.</p>
+  </div>
 </div>
 
 <h3>🏊 Swimming</h3>
 <p>The ultimate full-body, low-impact workout. Swimming is particularly recommended for characters with joint issues or higher VIG but lower DXT.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Type</th><th>Check</th><th>TN</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Pool laps (30 min)</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">45</span></td><td>Excellent full-body workout. <strong>−3 SP</strong>. Low joint impact. +2 VIG recovery.</td><td>Swimmer's shoulder (−1 to overhead checks for 1 week).</td></tr>
-<tr><td>🟡 Open water</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">55</span></td><td>All pool benefits + nature bonus (extra −1 SP). Adventure factor.</td><td>Cramps: TN 60 VIG check to shake off. Drowning risk: TN 80 to avoid in rough conditions.</td></tr>
-<tr><td>🔴 Competitive laps (1000m+)</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">60</span></td><td>Elite-level endurance. −4 SP. Counts toward Fitness Level advancement.</td><td>Exhaustion. −2 VIG for 2 days.</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Swimming → card-grid (was 3-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Pool Laps (30 min)</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 45</strong><br>✅ Excellent full-body workout. <strong>−3 SP</strong>. Low joint impact. +2 VIG recovery.<br>❌ Swimmer's shoulder (−1 to overhead checks for 1 week).</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Open Water</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 55</strong><br>✅ All pool benefits + nature bonus (extra −1 SP). Adventure factor.<br>❌ Cramps: TN 60 VIG check to shake off. Drowning risk: TN 80 to avoid in rough conditions.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Competitive Laps (1000m+)</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 60</strong><br>✅ Elite-level endurance. −4 SP. Counts toward FL advancement.<br>❌ Exhaustion. −2 VIG for 2 days.</p>
+  </div>
 </div>
 
 <div class="callout warning">
@@ -313,81 +460,145 @@
 
 <h3>🥾 Hiking / Trail Running</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Terrain</th><th>Check</th><th>TN</th><th>Time</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Flat trail, 5 mi</td><td><span class="dice">VIG</span></td><td><span class="dice">35</span></td><td>2–3 hrs</td><td>Nature bonus (−3 SP total). Endurance gains.</td><td>Blisters. −1 to walking checks for 2 days.</td></tr>
-<tr><td>🟡 Mountain trail, elevation gain</td><td><span class="dice">VIG</span></td><td><span class="dice">45</span></td><td>3–5 hrs</td><td>Strong cardio. −4 SP. Nature bonus. Possible wildlife encounter (social/INT check).</td><td>Sprained ankle: −1 VIG for 1 week. Getting lost: INT check TN 40 to find way back.</td></tr>
-<tr><td>🔴 Technical terrain, scrambling</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">55</span></td><td>4–8 hrs</td><td>Full-body workout. −5 SP. Adventure XP. Counts as major event for Fitness Level advancement.</td><td>Fall: −2 VIG for 2 weeks. Equipment damage. Possible rescue scenario.</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Hiking → card-grid (was 3-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Flat Trail, 5 mi</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG</span> · <strong>TN 35</strong> · 2–3 hrs<br>✅ Nature bonus (−3 SP total). Endurance gains.<br>❌ Blisters. −1 to walking checks for 2 days.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Mountain Trail, Elevation Gain</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG</span> · <strong>TN 45</strong> · 3–5 hrs<br>✅ Strong cardio. −4 SP. Nature bonus. Possible wildlife encounter.<br>❌ Sprained ankle: −1 VIG for 1 week. Getting lost: INT check TN 40.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Technical Terrain, Scrambling</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 55</strong> · 4–8 hrs<br>✅ Full-body workout. −5 SP. Adventure XP. Major event for FL advancement.<br>❌ Fall: −2 VIG for 2 weeks. Equipment damage. Possible rescue.</p>
+  </div>
 </div>
 
 <h3>🧗 Rock Climbing / Bouldering</h3>
 <p>The ultimate full-body challenge. Climbing combines physical strength with problem-solving, making it one of the most narratively interesting exercise options.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Type</th><th>Check</th><th>TN</th><th>Cost</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Indoor bouldering</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">50</span></td><td>$15–$25/session</td><td>Full-body strength. Problem-solving bonus (+1 to INT checks that day from mental engagement). −2 SP.</td><td>Fall onto mat: minor bruising. −1 VIG for 1 day.</td></tr>
-<tr><td>🟡 Indoor top-rope climbing</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">55</span></td><td>$20–$30/session</td><td>Endurance climbing. −3 SP. Trust-building with belay partner (+1 EXP with them).</td><td>Uncomfortable fall (harnessed, so safe). −1 VIG for 2 days from jolt.</td></tr>
-<tr><td>🔴 Outdoor climbing</td><td><span class="dice">VIG + DXT mod + RES mod</span></td><td><span class="dice">60–70</span></td><td>$500–$3000+ for gear</td><td>Peak physical + mental challenge. −4 SP. Adventure XP. Major event for Fitness Level 4→5.</td><td>Harnessed fall: −1 VIG for 1 week (adrenaline shock). Unprotected fall: TN 75 VIG check or serious injury.</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Climbing → card-grid (was 3-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Indoor Bouldering</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 50</strong> · $15–$25/session<br>✅ Full-body strength. Problem-solving bonus (+1 INT checks that day). −2 SP.<br>❌ Fall onto mat: minor bruising. −1 VIG for 1 day.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Indoor Top-Rope</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 55</strong> · $20–$30/session<br>✅ Endurance climbing. −3 SP. Trust-building with belay partner (+1 EXP).<br>❌ Uncomfortable fall (harnessed, safe). −1 VIG for 2 days from jolt.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Outdoor Climbing</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod + RES mod</span> · <strong>TN 60–70</strong> · $500–$3000+ for gear<br>✅ Peak physical + mental challenge. −4 SP. Adventure XP. Major event for FL 4→5.<br>❌ Harnessed fall: −1 VIG for 1 week. Unprotected fall: TN 75 VIG check or serious injury.</p>
+  </div>
 </div>
 
 <h3>🛶 Canoeing / Kayaking</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Type</th><th>Check</th><th>TN</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Calm water, lake</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">45</span></td><td>Upper body workout. Nature bonus (−3 SP). Relaxing.</td><td>Minor capsizing risk. Wet and cold: −1 VIG for 1 day.</td></tr>
-<tr><td>🟡 River, Class II rapids</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">50</span></td><td>Intense paddling. −3 SP. Adventure. Social bonus if group.</td><td>Capsize: TN 55 to self-rescue. Equipment damage: $100–$500.</td></tr>
-<tr><td>🔴 Whitewater, Class III+</td><td><span class="dice">VIG + DXT mod + RES mod</span></td><td><span class="dice">55–60</span></td><td>Extreme workout. −4 SP. Major adventure event.</td><td>Capsize in rapids: TN 70 survival check. Hypothermia risk. Equipment loss.</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Canoeing → card-grid (was 3-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Calm Water, Lake</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 45</strong><br>✅ Upper body workout. Nature bonus (−3 SP). Relaxing.<br>❌ Minor capsizing risk. Wet and cold: −1 VIG for 1 day.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>River, Class II Rapids</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 50</strong><br>✅ Intense paddling. −3 SP. Adventure. Social bonus if group.<br>❌ Capsize: TN 55 to self-rescue. Equipment damage: $100–$500.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Whitewater, Class III+</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod + RES mod</span> · <strong>TN 55–60</strong><br>✅ Extreme workout. −4 SP. Major adventure event.<br>❌ Capsize in rapids: TN 70 survival check. Hypothermia risk. Equipment loss.</p>
+  </div>
 </div>
 
 <h3>⚽ Team Sports</h3>
 <p>Soccer, basketball, volleyball, ultimate frisbee — team sports combine physical exercise with social dynamics. Playing with teammates provides <strong>Networking</strong> and <strong>Empathy</strong> bonuses.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG + DXT mod + EXP mod</span> (average all three) + Athletics mod</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">45</span> (casual pickup game) → <span class="dice">60</span> (competitive league)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>1–2 hours per session + travel</td></tr>
-<tr><td><strong>Success</strong></td><td>Great workout. −2 SP. +1 EXP with teammates (bonding). Teamwork skill improves. Social bonus: potential friendships, dating opportunities, professional networking.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Poor performance. Embarrassment: +1 SP. Possible collision: −1 VIG for 2 days. Team friction if repeatedly failing.</td></tr>
-<tr><td><strong>Social Bonus</strong></td><td>Each successful team sport session grants +1 to a <span class="dice">EXP</span> check with any teammate within 24 hours (shared experience bonus).</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Team Sports → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG + DXT mod + EXP mod</span> (average all three) + Athletics mod</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">45</span> (casual pickup game) → <span class="dice">60</span> (competitive league)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>1–2 hours per session + travel</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Great workout. −2 SP. +1 EXP with teammates (bonding). Teamwork skill improves. Social bonus: friendships, dating, networking.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Poor performance. Embarrassment: +1 SP. Possible collision: −1 VIG for 2 days. Team friction if repeatedly failing.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">👥</span>
+    <h3>Social Bonus</h3>
+    <p>Each successful session grants +1 to a <span class="dice">EXP</span> check with any teammate within 24 hours (shared experience bonus).</p>
+  </div>
 </div>
 
 <h3>🥊 Martial Arts</h3>
 <p>Boxing, judo, BJJ, karate, krav maga — martial arts are unique in that they improve <strong>self-defense capability</strong> (mechanical), <strong>discipline</strong> (+RES over time), and build a distinctive skill set.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG + DXT mod + RES mod</span> (average all three) + Combat mod (if trained)</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">50</span> (beginner class) → <span class="dice">70</span> (advanced sparring, belt test)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>60–90 minutes per class</td></tr>
-<tr><td><strong>Cost</strong></td><td>$100–$300/month for regular classes</td></tr>
-<tr><td><strong>Success</strong></td><td>Effective training. −2 SP. Self-defense skill improves. Discipline bonus: +1 to all RES checks that day. At Fitness Level 3+, progress toward permanent +1 RES every 3 months.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Bruises, sprains. −1 VIG for 2–5 days. Ego damage: +1 SP from embarrassment in front of class. Repeated failures may cause character to quit (−1 RES).</td></tr>
-<tr><td><strong>Long-term</strong></td><td>After 6 months of consistent training: +1 to Combat skill level. After 1 year: +1 permanent RES. Belt/rank progression provides narrative milestones and PRC bonuses.</td></tr>
-</tbody>
-</table>
+<!-- P1-outdoor: Martial Arts → card-grid (was 7-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG + DXT mod + RES mod</span> (average all three) + Combat mod (if trained)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">50</span> (beginner class) → <span class="dice">70</span> (advanced sparring, belt test)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time &amp; Cost</h3>
+    <p>60–90 minutes per class<br>$100–$300/month for regular classes</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Effective training. −2 SP. Self-defense improves. Discipline bonus: +1 to all RES checks that day. At FL 3+, +1 RES every 3 months.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Bruises, sprains. −1 VIG for 2–5 days. Ego damage: +1 SP. Repeated failures may cause quitting (−1 RES).</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">📈</span>
+    <h3>Long-term</h3>
+    <p>6 months: +1 Combat skill. 1 year: +1 permanent RES. Belt/rank progression = narrative milestones + PRC bonuses.</p>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example 2: Sarah Takes Up BJJ</div>
+  <div class="section-illustration"><img src="img/ex_sarah_bjj_mat.png" alt="Sarah on a BJJ mat covered in sweat, white gi slightly too big, looking exhausted but exhilarated after her first rolling session, other students and a coach in background" style="max-width:100%;"></div>
   <p><strong>Sarah</strong>, 28, software engineer. VIG 7 (+1), DXT 9 (+1), RES 10 (+2). Fitness Level 1 (Casual). She's been feeling vulnerable walking home at night and decides to try Brazilian Jiu-Jitsu.</p>
   <p><strong>First Class:</strong> TN 50 (beginner class). Average of VIG (+1) + DXT (+1) + RES (+2) = +1 (round down). Fitness bonus +1. Total modifier: <span class="dice">+2</span>.</p>
   <p>She rolls <span class="dice">2d10</span> = <strong>41</strong> + 2 = <strong>43</strong> vs TN 50. <strong>Success!</strong> She survives her first rolling session covered in bruises but feeling empowered. −2 SP from the adrenaline. The GM notes +1 to her self-defense skill.</p>
@@ -402,48 +613,92 @@
 <h3>💪 Calisthenics</h3>
 <p>Pushups, pullups, dips, squats, lunges, muscle-ups — bodyweight training that builds impressive functional strength with zero equipment cost.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Exercise</th><th>Check</th><th>TN</th><th>Time</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Basic pushups/squats</td><td><span class="dice">VIG</span></td><td><span class="dice">35</span></td><td>15–20 min</td><td>Decent workout. +1 VIG recovery. −1 SP.</td><td>Poor form. No benefit, minor wrist soreness.</td></tr>
-<tr><td>🟢 Pullups (requires bar)</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">45</span></td><td>15 min</td><td>Upper body strength. +1 VIG recovery. −2 SP.</td><td>Shoulder strain: −1 to overhead checks for 3 days.</td></tr>
-<tr><td>🟡 Full calisthenics circuit</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">50</span></td><td>30–45 min</td><td>Excellent full-body workout. +2 VIG recovery. −2 SP. Impressive strength gains visible after 2 months.</td><td>Shoulder or lower back strain. −1 VIG for 3 days.</td></tr>
-<tr><td>🔴 Advanced (muscle-ups, handstand pushups)</td><td><span class="dice">VIG + DXT mod</span></td><td><span class="dice">60–65</span></td><td>45–60 min</td><td>Elite-level body control. +3 VIG recovery. −3 SP. Counts as major training event.</td><td>Serious shoulder injury. −2 VIG for 2 weeks. Possible medical visit.</td></tr>
-</tbody>
-</table>
+<!-- P1-home: Calisthenics → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Basic Pushups/Squats</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG</span> · <strong>TN 35</strong> · 15–20 min<br>✅ Decent workout. +1 VIG recovery. −1 SP.<br>❌ Poor form. No benefit, minor wrist soreness.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Pullups (requires bar)</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 45</strong> · 15 min<br>✅ Upper body strength. +1 VIG recovery. −2 SP.<br>❌ Shoulder strain: −1 to overhead checks for 3 days.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Full Calisthenics Circuit</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 50</strong> · 30–45 min<br>✅ Excellent full-body workout. +2 VIG recovery. −2 SP. Strength gains visible after 2 months.<br>❌ Shoulder or lower back strain. −1 VIG for 3 days.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Advanced (muscle-ups, handstand pushups)</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + DXT mod</span> · <strong>TN 60–65</strong> · 45–60 min<br>✅ Elite-level body control. +3 VIG recovery. −3 SP. Counts as major training event.<br>❌ Serious shoulder injury. −2 VIG for 2 weeks. Possible medical visit.</p>
+  </div>
 </div>
 
 <h3>🧘 Yoga / Pilates</h3>
 <p>The most SP-effective exercise in the game. Yoga and Pilates are particularly recommended for characters dealing with mental health challenges, high stress, or chronic pain.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Exercise</th><th>Check</th><th>TN</th><th>Time</th><th>Success</th><th>Failure</th></tr></thead>
-<tbody>
-<tr><td>🟢 Basic yoga flow</td><td><span class="dice">VIG + RES mod</span></td><td><span class="dice">30</span></td><td>20–30 min</td><td>Flexibility + stress relief. <strong>−3 SP</strong>. +1 VIG recovery. Low injury risk.</td><td>Minor muscle stiffness. No lasting harm.</td></tr>
-<tr><td>🟡 Vinyasa / hot yoga</td><td><span class="dice">VIG + RES mod</span></td><td><span class="dice">40</span></td><td>45–60 min</td><td>Intense flexibility + cardio. <strong>−5 SP</strong>. +2 VIG recovery. +1 to RES checks next day (calm focus).</td><td>Overstretching. −1 VIG for 1 day. Dehydration in hot yoga: drink water or −1 VIG for 2 days.</td></tr>
-<tr><td>🟡 Pilates reformer</td><td><span class="dice">VIG + RES mod</span></td><td><span class="dice">45</span></td><td>45–60 min</td><td>Core strength + posture. <strong>−4 SP</strong>. +2 VIG recovery. Improves posture: +1 PRC after 2 months.</td><td>Lower back discomfort. −1 to bending checks for 2 days.</td></tr>
-<tr><td>🔴 Advanced yoga (acrobatics, inversions)</td><td><span class="dice">VIG + RES mod + DXT mod</span></td><td><span class="dice">50</span></td><td>60–90 min</td><td>Peak flexibility + balance. <strong>−5 SP</strong>. +3 VIG recovery. Counts as major training event.</td><td>Fall from inversion. −1 VIG for 5 days. Possible sprain.</td></tr>
-</tbody>
-</table>
+<!-- P1-home: Yoga/Pilates → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Basic Yoga Flow</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + RES mod</span> · <strong>TN 30</strong> · 20–30 min<br>✅ Flexibility + stress relief. <strong>−3 SP</strong>. +1 VIG recovery. Low injury risk.<br>❌ Minor muscle stiffness. No lasting harm.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Vinyasa / Hot Yoga</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + RES mod</span> · <strong>TN 40</strong> · 45–60 min<br>✅ Intense flexibility + cardio. <strong>−5 SP</strong>. +2 VIG recovery. +1 to RES checks next day.<br>❌ Overstretching. −1 VIG for 1 day. Dehydration risk.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Pilates Reformer</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + RES mod</span> · <strong>TN 45</strong> · 45–60 min<br>✅ Core strength + posture. <strong>−4 SP</strong>. +2 VIG recovery. +1 PRC after 2 months.<br>❌ Lower back discomfort. −1 to bending checks for 2 days.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Advanced Yoga (acrobatics, inversions)</h3>
+    <p><strong>Check:</strong> <span class="dice">VIG + RES mod + DXT mod</span> · <strong>TN 50</strong> · 60–90 min<br>✅ Peak flexibility + balance. <strong>−5 SP</strong>. +3 VIG recovery. Counts as major training event.<br>❌ Fall from inversion. −1 VIG for 5 days. Possible sprain.</p>
+  </div>
 </div>
 
 <h3>⚡ HIIT (High-Intensity Interval Training)</h3>
 <p>Maximum results in minimum time. HIIT is brutal, effective, and dangerous if done incorrectly. The ultimate "no excuses" workout — 20 minutes, no equipment needed.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
-<tbody>
-<tr><td><strong>Skill Check</strong></td><td><span class="dice">VIG</span> + Athletics mod</td></tr>
-<tr><td><strong>TN Range</strong></td><td><span class="dice">50</span> (beginner intervals) → <span class="dice">65</span> (Tabata, advanced circuits)</td></tr>
-<tr><td><strong>Time Cost</strong></td><td>20–30 minutes (including warm-up and cool-down)</td></tr>
-<tr><td><strong>Success</strong></td><td>Maximum calorie burn. +2 VIG recovery. <strong>−3 SP</strong>. Cardiovascular gains 2× faster than steady-state cardio. EPOC effect: continued calorie burn for 24 hours post-workout.</td></tr>
-<tr><td><strong>Failure</strong></td><td>Exhaustion. −1 VIG for 2 days. Poor form under fatigue increases injury risk: roll <span class="dice">VIG</span> at TN 40 or suffer muscle strain.</td></tr>
-<tr><td><strong>Critical Failure</strong></td><td>Cardiac stress event. −2 VIG for 1 week. +2 SP. Characters with VIG &lt; 5 have a 1-in-20 chance of a serious cardiac event on critical failure — GM discretion.</td></tr>
-</tbody>
-</table>
+<!-- P1-home: HIIT → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card">
+    <span class="card-icon">📋</span>
+    <h3>Skill Check</h3>
+    <p><span class="dice">VIG</span> + Athletics mod</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">🎯</span>
+    <h3>TN Range</h3>
+    <p><span class="dice">50</span> (beginner intervals) → <span class="dice">65</span> (Tabata, advanced circuits)</p>
+  </div>
+  <div class="card">
+    <span class="card-icon">⏱️</span>
+    <h3>Time Cost</h3>
+    <p>20–30 minutes (including warm-up and cool-down)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Success</h3>
+    <p>Maximum calorie burn. +2 VIG recovery. <strong>−3 SP</strong>. Cardiovascular gains 2× faster. EPOC effect: continued calorie burn for 24 hours.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">❌</span>
+    <h3>Failure</h3>
+    <p>Exhaustion. −1 VIG for 2 days. Poor form under fatigue: roll <span class="dice">VIG</span> at TN 40 or suffer muscle strain.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Critical Failure</h3>
+    <p>Cardiac stress event. −2 VIG for 1 week. +2 SP. VIG &lt; 5: 1-in-20 chance of serious cardiac event — GM discretion.</p>
+  </div>
 </div>
 
 <div class="callout warning">
@@ -454,20 +709,33 @@
 <h3>🏠 Home Gym Setups</h3>
 <p>For characters who want gym-quality results at home, here are the investment tiers:</p>
 
-<div class="table-wrap">
-<table>
-thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>Effective For</th></tr></thead>
-<tbody>
-<tr><td>🟢 Basic</td><td>$100–$300</td><td>Living room corner</td><td>Resistance bands, yoga mat, jump rope, a pair of dumbbells</td><td>Maintenance. Fitness Levels 0–2.</td></tr>
-<tr><td>🟡 Moderate</td><td>$500–$1500</td><td>Spare room / garage</td><td>Adjustable dumbbells, bench, pull-up bar, kettlebells, foam roller</td><td>Solid training. Fitness Levels 1–3.</td></tr>
-<tr><td>🟠 Advanced</td><td>$2000–$4000</td><td>Dedicated room / basement</td><td>Power rack, barbell set, Olympic plates, cable machine, cardio equipment</td><td>Near-gym quality. Fitness Levels 2–4.</td></tr>
-<tr><td>🔴 Full Setup</td><td>$4000–$8000+</td><td>Large room / converted space</td><td>Complete gym: all strength equipment, treadmill, rower, stretching area, sound system</td><td>Professional-level training. Fitness Levels 3–5.</td></tr>
-</tbody>
-</table>
+<!-- P1-9: Home Gym Setups → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🟢</span>
+    <h3>Basic</h3>
+    <p><strong>$100–$300</strong> · Living room corner<br>Resistance bands, yoga mat, jump rope, dumbbells<br>Effective for FL 0–2 maintenance.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🟡</span>
+    <h3>Moderate</h3>
+    <p><strong>$500–$1500</strong> · Spare room / garage<br>Adjustable dumbbells, bench, pull-up bar, kettlebells, foam roller<br>Solid training for FL 1–3.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🟠</span>
+    <h3>Advanced</h3>
+    <p><strong>$2000–$4000</strong> · Dedicated room / basement<br>Power rack, barbell set, Olympic plates, cable machine, cardio equipment<br>Near-gym quality for FL 2–4.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Full Setup</h3>
+    <p><strong>$4000–$8000+</strong> · Large room / converted space<br>Complete gym: all strength equipment, treadmill, rower, stretching area, sound system<br>Professional-level for FL 3–5.</p>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example 3: Priya's Home HIIT Session</div>
+  <div class="section-illustration"><img src="img/ex_priya_hiit_livingroom.png" alt="Priya mid-HIIT workout in her living room, drenched in sweat, laptop showing workout timer, WFH desk setup visible, yoga mat unrolled, throw pillows displaced" style="max-width:100%;"></div>
   <p><strong>Priya</strong>, 35, remote worker. VIG 5 (+1), RES 12 (+2), Fitness Level 2 (Active). She's been working from home for 6 months and her fitness has slipped. She decides to do a HIIT session in her living room — no commute, no gym membership.</p>
   <p><strong>The Check:</strong> HIIT at moderate intensity = TN 55. Priya rolls <span class="dice">2d10</span> + VIG mod (+1) + Fitness bonus (+2) = <span class="dice">2d10</span> + 3.</p>
   <p>She rolls <strong>48</strong> + 3 = <strong>51</strong> vs TN 55. <strong>Success!</strong> A grueling 25-minute session. She's drenched in sweat but feels amazing. +2 VIG recovery, −3 SP. The GM notes this as one of her weekly workouts toward maintaining Fitness Level 2.</p>
@@ -481,20 +749,41 @@ thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>
 
 <h3>🏆 Permanent VIG Gains</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Fitness Level</th><th>Time to +1 VIG</th><th>Requirements</th><th>Additional Effects</th></tr></thead>
-<tbody>
-<tr><td>0–1</td><td>No permanent gains</td><td>Building foundation only. Gains are temporary (recovery-based).</td><td>Focus on reaching Fitness Level 2.</td></tr>
-<tr><td>2</td><td>2 months of consistent training</td><td>4+ workouts/week, proper nutrition, adequate sleep.</td><td>First permanent VIG point. Noticeable physical changes.</td></tr>
-<tr><td>3</td><td>1 month of consistent training</td><td>5+ workouts/week. Must include variety (strength + cardio).</td><td>+1 VIG. PRC may increase by 1 if body image improves. GM narrates physical transformation.</td></tr>
-<tr><td>4</td><td>6 weeks of consistent training</td><td>6+ workouts/week. Periodized training (deload weeks required).</td><td>+1 VIG. Visible athletic physique. PRC +1 if desired.</td></tr>
-<tr><td>5</td><td>4 weeks of consistent training</td><td>Near-daily training. Professional-level dedication.</td><td>+1 VIG. Peak physical condition. PRC +2. Others comment on physique.</td></tr>
-</tbody>
-</table>
+<!-- P1-17: VIG Gains → condition-track (was 5-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#95a5a6;">
+    FL 0–1<br>
+    <small>No Gains</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Foundation only. Temporary recovery-based gains. Focus on reaching FL 2.</span>
+  </div>
+  <div class="condition-step" style="background:#27ae60;">
+    FL 2<br>
+    <small>2 months</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 VIG · 4+ workouts/wk · proper nutrition · First permanent VIG point</span>
+  </div>
+  <div class="condition-step" style="background:#1e8449;">
+    FL 3<br>
+    <small>1 month</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 VIG · 5+ workouts/wk · strength + cardio · PRC may +1 · GM narrates transformation</span>
+  </div>
+  <div class="condition-step" style="background:#2980b9;">
+    FL 4<br>
+    <small>6 weeks</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 VIG · 6+ workouts/wk · periodized training · Visible athletic physique · PRC +1</span>
+  </div>
+  <div class="condition-step" style="background:#1a5276;">
+    FL 5<br>
+    <small>4 weeks</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 VIG · Near-daily training · Peak physical condition · PRC +2 · Others comment on physique</span>
+  </div>
 </div>
 
 <h3>🔄 The Plateau Mechanic</h3>
+
+<div class="section-illustration">
+  <img src="img/ex_plateau_frustration.png" alt="A person sitting on the edge of their bed, head in hands, looking frustrated — workout clothes on the floor, training log showing the same numbers for weeks, packed gym bag untouched — the emotional texture of hitting a fitness plateau" style="max-width:100%;">
+</div>
+
 <p>After a character achieves a permanent attribute gain, the <strong>plateau mechanic</strong> kicks in: all TNs for exercise checks increase by <strong>+5</strong> for the next gain attempt. This represents the body adapting to the stimulus. To break through a plateau, the character must either:</p>
 <ul style="margin-left: 2em; margin-bottom: 1em;">
   <li>🔄 <strong>Change their routine</strong> — new exercises, different intensity, varied schedule (−5 to plateau TN)</li>
@@ -502,6 +791,11 @@ thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>
   <li>😴 <strong>Take a deload week</strong> — one week of light activity only, then resume (−5 to plateau TN, but lose 1 week of progress)</li>
   <li>👨‍🏫 <strong>Hire a personal trainer</strong> — $50–$150/session, provides structured programming (−10 to plateau TN)</li>
 </ul>
+
+<!-- P2-3: Plateau Breakthrough Flowchart SVG -->
+<div class="section-illustration">
+  <img src="img/ex_plateau_flowchart.svg" alt="Decision flowchart for plateau breakthrough: Hit Plateau → Choose Strategy (Change Routine, Improve Nutrition, Deload Week, Hire Trainer) → Attempt Breakthrough Check → Success +1 VIG or Failure stay at plateau">
+</div>
 
 <h3>📝 Training Logs</h3>
 <p>Characters who maintain a training log (app, journal, or spreadsheet) gain a mechanical bonus: <strong>−5 to all exercise TNs</strong> because they can track progressive overload systematically. The GM may require the player to note workouts between sessions.</p>
@@ -526,69 +820,79 @@ thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>
 
 <h3>📊 Overtraining Track</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Level</th><th>Status</th><th>Exercise Penalty</th><th>SP Effect</th><th>Recovery</th></tr></thead>
-<tbody>
-<tr>
-<td><strong>0</strong></td>
-<td>🟢 Fresh</td>
-<td>None</td>
-<td>Normal SP reduction from exercise</td>
-<td>Baseline. Every rest day moves you down 1 level (minimum 0).</td>
-</tr>
-<tr>
-<td><strong>1</strong></td>
-<td>🟡 Sore</td>
-<td>−1 to exercise checks</td>
-<td>SP reduction halved (−1 instead of normal)</td>
-<td>1 rest day + good sleep. Light stretching moves you down.</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td>🟠 Fatigued</td>
-<td>−2 to exercise checks</td>
-<td>No SP reduction from exercise. +1 daily SP from fatigue.</td>
-<td>2 rest days. Nutrition bonus: good diet moves you down 1 level faster.</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td>🔴 Overtrained</td>
-<td>−3 to exercise checks. Cannot attempt TN 55+ activities.</td>
-<td>+2 daily SP. Exercise INCREASES SP instead of reducing it.</td>
-<td>3+ rest days mandatory. Must stop training or risk injury. GM may require a RES check (TN 40) to resist the urge to keep pushing.</td>
-</tr>
-<tr>
-<td><strong>4</strong></td>
-<td>🏥 Injured</td>
-<td>Cannot exercise. −2 VIG for the injury duration.</td>
-<td>+3 daily SP from frustration and pain. Life activities harder.</td>
-<td>Injury-specific recovery time (see table below). No exercise allowed. SP from injury frustration stacks.</td>
-</tr>
-<tr>
-<td><strong>5</strong></td>
-<td>🛏️ Rehab</td>
-<td>Cannot exercise. −3 VIG. All physical checks at −2.</td>
-<td>+5 daily SP. Major life disruption. May miss work/school.</td>
-<td>Extended recovery. Physical therapy: $100–$300/session. Each successful PT session moves down 1 level on the rehab track.</td>
-</tr>
-</tbody>
-</table>
+<!-- P1-2: Overtraining Track → condition-track (was 6-row table) — HIGHEST PRIORITY conversion -->
+<div class="condition-track">
+  <div class="condition-step healthy" style="background:#27ae60;">
+    🟢 Level 0<br>
+    <small>Fresh</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">No penalty · Normal SP reduction · Rest day = baseline</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    🟡 Level 1<br>
+    <small>Sore</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−1 checks · SP reduction halved · 1 rest day + good sleep to recover</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    🟠 Level 2<br>
+    <small>Fatigued</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−2 checks · No SP reduction · +1 daily SP · 2 rest days · Good diet recovers faster</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🔴 Level 3<br>
+    <small>Overtrained</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−3 checks · Cannot attempt TN 55+ · +2 daily SP · Exercise INCREASES SP · 3+ rest days mandatory · RES check TN 40 to resist pushing</span>
+  </div>
+  <div class="condition-step critical" style="background:#c0392b;">
+    🏥 Level 4<br>
+    <small>Injured</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Cannot exercise · −2 VIG · +3 daily SP · Injury-specific recovery time · SP from frustration stacks</span>
+  </div>
+  <div class="condition-step" style="background:#2c3e50;">
+    🛏️ Level 5<br>
+    <small>Rehab</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Cannot exercise · −3 VIG · −2 all physical checks · +5 daily SP · May miss work/school · PT: $100–$300/session</span>
+  </div>
 </div>
 
 <h3>🏥 Common Injuries</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Injury</th><th>Trigger</th><th>Recovery Time</th><th>VIG Penalty</th><th>SP Cost</th><th>Other Effects</th></tr></thead>
-<tbody>
-<tr><td>💪 Muscle Strain</td><td>Failed exercise check (any type)</td><td>3–7 days</td><td>−1</td><td>+1</td><td>Affected body part: −2 to checks using that area.</td></tr>
-<tr><td>🦵 Sprained Ankle</td><td>Failed running/climbing/hiking check</td><td>1–3 weeks</td><td>−2</td><td>+2</td><td>Cannot run, jump, or do lower-body exercise. Crutches possible.</td></tr>
-<tr><td>🦴 Stress Fracture</td><td>Critical failure on running/cardio at Overtrained level 2+</td><td>6–8 weeks</td><td>−3</td><td>+3</td><td>Complete rest. Cannot bear weight on affected limb. Miss work/school possible.</td></tr>
-<tr><td>🤲 Rotator Cuff Tear</td><td>Critical failure on overhead exercise (free weights, climbing, swimming)</td><td>3–6 months</td><td>−3</td><td>+4</td><td>Cannot use arms overhead. Surgery may be required ($5,000–$15,000). Long-term impact on exercise capability.</td></tr>
-<tr><td>🦵 ACL Tear</td><td>Critical failure on high-impact exercise (plyometrics, sports, trail running)</td><td>6–12 months</td><td>−4</td><td>+5</td><td>Surgery required ($15,000–$30,000). Extended rehab. May never fully recover to pre-injury level. Major life event.</td></tr>
-</tbody>
-</table>
+<!-- P1-7: Common Injuries → card-grid (was 5-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">💪</span>
+    <h3>Muscle Strain</h3>
+    <p><strong>Trigger:</strong> Failed exercise check (any type)<br><strong>Recovery:</strong> 3–7 days · <strong>VIG:</strong> −1 · <strong>SP:</strong> +1<br>Affected body part: −2 to checks using that area.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🦵</span>
+    <h3>Sprained Ankle</h3>
+    <p><strong>Trigger:</strong> Failed running/climbing/hiking check<br><strong>Recovery:</strong> 1–3 weeks · <strong>VIG:</strong> −2 · <strong>SP:</strong> +2<br>Cannot run, jump, or do lower-body exercise. Crutches possible.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🦴</span>
+    <h3>Stress Fracture</h3>
+    <p><strong>Trigger:</strong> Critical failure on running/cardio at Overtrained 2+<br><strong>Recovery:</strong> 6–8 weeks · <strong>VIG:</strong> −3 · <strong>SP:</strong> +3<br>Complete rest. Cannot bear weight. Miss work/school possible.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">🤲</span>
+    <h3>Rotator Cuff Tear</h3>
+    <p><strong>Trigger:</strong> Critical failure on overhead exercise<br><strong>Recovery:</strong> 3–6 months · <strong>VIG:</strong> −3 · <strong>SP:</strong> +4<br>Cannot use arms overhead. Surgery: $5,000–$15,000. Long-term impact.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2c3e50;">
+    <span class="card-icon">🦵</span>
+    <h3>ACL Tear</h3>
+    <p><strong>Trigger:</strong> Critical failure on high-impact exercise<br><strong>Recovery:</strong> 6–12 months · <strong>VIG:</strong> −4 · <strong>SP:</strong> +5<br>Surgery: $15,000–$30,000. Extended rehab. May never fully recover. Major life event.</p>
+  </div>
+</div>
+
+<!-- P2-6: Overtraining Cascade SVG -->
+<div class="section-illustration">
+  <img src="img/ex_overtraining_cascade.svg" alt="Vertical cascade showing overtraining progression from Level 0 Fresh through Level 5 Rehab, with escalating penalties at each stage and a recovery path arrow on the left side">
+</div>
+
+<!-- P2-2: Injury Risk Curve SVG -->
+<div class="section-illustration">
+  <img src="img/ex_injury_risk_curve.svg" alt="Line chart showing injury probability vs overtraining level, with three curves: Stretching stays flat low, Free Weights rises moderately, and HIIT/Climbing rises sharply">
 </div>
 
 <div class="callout warning">
@@ -605,6 +909,7 @@ thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>
 
 <div class="callout example">
   <div class="callout-title">📝 Example 4: Marcus Overtrains</div>
+  <div class="section-illustration"><img src="img/ex_marcus_overtraining.png" alt="Marcus at his desk late at night, laptop showing work, phone buzzing with workout tracker notification, dark circles under eyes, energy drink, wall calendar with no rest days circled, conflicted expression" style="max-width:100%;"></div>
   <p><strong>Marcus</strong> (from Example 1) has been training hard for 3 months. He's reached Fitness Level 2 (Active) and is eager to push further. But he's also started a demanding new project at work, cutting his sleep to 5 hours/night and skipping rest days.</p>
   <p><strong>Week 4 of no rest days:</strong> Marcus is at Overtraining Level 2 (Fatigued). He attempts a heavy free weights session (TN 55) despite the −2 penalty. His effective modifier is now +1 (VIG) + 2 (Fitness) − 2 (fatigue) = <span class="dice">+1</span>.</p>
   <p>He rolls <span class="dice">2d10</span> = <strong>58</strong> + 1 = <strong>59</strong> vs TN 55. <strong>Failure.</strong> Not just a bad workout — his body gives out mid-set. He drops a dumbbell on his shin.</p>
@@ -626,33 +931,70 @@ thead><tr><th>Setup</th><th>Cost</th><th>Space Needed</th><th>Equipment</th><th>
   <li>⚠️ <strong>Life interference</strong>: work crises, family obligations, illness can cause missed training weeks (GM discretion or daily-life checks).</li>
 </ul>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Event</th><th>Training Duration</th><th>Weekly TN</th><th>Event Day TN</th><th>Reward on Success</th></tr></thead>
-<tbody>
-<tr><td>🏖️ Beach body for vacation</td><td>8 weeks</td><td><span class="dice">40</span></td><td><span class="dice">35</span> (photo/confidence check)</td><td>PRC +1 (temporary, lasts 1–2 months). Confidence boost: −2 SP for duration of vacation.</td></tr>
-<tr><td>🏃 5K race</td><td>8 weeks</td><td><span class="dice">42</span></td><td><span class="dice">45</span></td><td>−3 SP. Fitness Level advancement progress. Personal achievement.</td></tr>
-<tr><td>🏃 Half Marathon</td><td>12 weeks</td><td><span class="dice">50</span></td><td><span class="dice">55</span></td><td>−5 SP. Major Fitness Level milestone. +1 PRC if character is proud of achievement.</td></tr>
-<tr><td>🏃 Full Marathon</td><td>16 weeks</td><td><span class="dice">55</span></td><td><span class="dice">65</span></td><td>−5 SP. Elite Fitness Level milestone. +2 PRC. Narrative landmark event.</td></tr>
-<tr><td>🥊 Martial arts belt test</td><td>12–24 weeks</td><td><span class="dice">55–65</span></td><td><span class="dice">60–70</span></td><td>+1 Combat skill. +1 RES. Self-confidence: +1 PRC. Respect from training community.</td></tr>
-<tr><td>🏋️ Strength competition</td><td>12 weeks</td><td><span class="dice">55</span></td><td><span class="dice">60</span></td><td>+1 permanent VIG if win. +1 PRC. Community recognition.</td></tr>
-</tbody>
-</table>
+<!-- P1-10: Event Training → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏖️</span>
+    <h3>Beach Body for Vacation</h3>
+    <p><strong>8 weeks</strong> · Weekly TN 40 · Event TN 35<br>✅ PRC +1 (temporary, 1–2 mo). Confidence boost: −2 SP during vacation.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏃</span>
+    <h3>5K Race</h3>
+    <p><strong>8 weeks</strong> · Weekly TN 42 · Event TN 45<br>✅ −3 SP. FL advancement progress. Personal achievement.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🏃</span>
+    <h3>Half Marathon</h3>
+    <p><strong>12 weeks</strong> · Weekly TN 50 · Event TN 55<br>✅ −5 SP. Major FL milestone. +1 PRC if proud of achievement.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🏃</span>
+    <h3>Full Marathon</h3>
+    <p><strong>16 weeks</strong> · Weekly TN 55 · Event TN 65<br>✅ −5 SP. Elite FL milestone. +2 PRC. Narrative landmark event.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🥊</span>
+    <h3>Martial Arts Belt Test</h3>
+    <p><strong>12–24 weeks</strong> · Weekly TN 55–65 · Event TN 60–70<br>✅ +1 Combat skill. +1 RES. Self-confidence: +1 PRC. Respect from community.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🏋️</span>
+    <h3>Strength Competition</h3>
+    <p><strong>12 weeks</strong> · Weekly TN 55 · Event TN 60<br>✅ +1 permanent VIG if win. +1 PRC. Community recognition.</p>
+  </div>
 </div>
 
 <h3>🧠 Exercise as Therapy</h3>
 <p>Exercise has well-documented mental health benefits. In the game, this is a <strong>mechanical interaction with the Mental Health system</strong> (<a href="mental-health.html">see Mental Health page</a>):</p>
 
-<div class="table-wrap">
-<table>
-thead><tr><th>Mental Health Condition</th><th>Recommended Exercise</th><th>SP Reduction</th><th>Additional Benefit</th><th>TN Modifier</th></tr></thead>
-<tbody>
-<tr><td>😞 Mild Depression</td><td>Aerobic exercise (running, swimming, cycling)</td><td><strong>−3 SP</strong> per session (vs normal −2)</td><td>+1 to mood checks. After 4 weeks of consistent exercise: possible episode resolution (RES check TN 35).</td><td>−5 to exercise TN (exercise feels harder when depressed, but the bonus SP reduction compensates)</td></tr>
-<tr><td>😰 Anxiety</td><td>Yoga, swimming, walking in nature</td><td><strong>−4 SP</strong> per session</td><td>+2 to all RES checks next day. After 6 weeks: −10 to future anxiety episode TN.</td><td>−5 to exercise TN (anxiety makes starting harder, but once engaged, benefits are amplified)</td></tr>
-<tr><td>😤 Chronic Stress</td><td>Any regular exercise, especially HIIT or martial arts</td><td><strong>−3 SP</strong> per session</td><td>Reduces baseline stress. After 4 weeks: +1 to all daily life checks (better energy, focus).</td><td>No modifier. Consistency is key.</td></tr>
-<tr><td>😴 Insomnia</td><td>Morning exercise (any type), NOT evening HIIT</td><td><strong>−2 SP</strong> per session</td><td>+2 to sleep quality checks. After 2 weeks: sleeping 7+ hours consistently, which accelerates all recovery.</td><td>−5 to exercise TN (fatigue makes exercise harder)</td></tr>
-</tbody>
-</table>
+<!-- P1-11: Exercise as Therapy → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">😞</span>
+    <h3>Mild Depression</h3>
+    <p><strong>Aerobic:</strong> running, swimming, cycling<br><strong>SP:</strong> <strong>−3/session</strong> (vs normal −2)<br>+1 to mood checks. After 4 wks: possible episode resolution (RES TN 35).<br><em>−5 to exercise TN (harder when depressed, but bonus SP compensates)</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">😰</span>
+    <h3>Anxiety</h3>
+    <p><strong>Recommended:</strong> yoga, swimming, walking in nature<br><strong>SP:</strong> <strong>−4/session</strong><br>+2 to all RES checks next day. After 6 wks: −10 to future anxiety episode TN.<br><em>−5 to exercise TN (harder to start, amplified benefits once engaged)</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">😤</span>
+    <h3>Chronic Stress</h3>
+    <p><strong>Recommended:</strong> any regular exercise, especially HIIT or martial arts<br><strong>SP:</strong> <strong>−3/session</strong><br>Reduces baseline stress. After 4 wks: +1 to all daily life checks (better energy, focus).<br><em>No TN modifier. Consistency is key.</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">😴</span>
+    <h3>Insomnia</h3>
+    <p><strong>Recommended:</strong> morning exercise (any type), NOT evening HIIT<br><strong>SP:</strong> <strong>−2/session</strong><br>+2 to sleep quality checks. After 2 wks: sleeping 7+ hours consistently, accelerating all recovery.<br><em>−5 to exercise TN (fatigue makes exercise harder)</em></p>
+  </div>
+</div>
+
+<!-- P2-5: Exercise Therapy Matrix SVG -->
+<div class="section-illustration">
+  <img src="img/ex_therapy_matrix.svg" alt="4×4 matrix showing exercise type (Aerobic, Mind-Body, High-Intensity, Social) vs mental health condition (Depression, Anxiety, Chronic Stress, Insomnia) with SP reduction values and color-coded best matches and avoid recommendations">
 </div>
 
 <div class="callout rule">
@@ -663,17 +1005,33 @@ thead><tr><th>Mental Health Condition</th><th>Recommended Exercise</th><th>SP Re
 <h3>🚨 Exercise Addiction</h3>
 <p>When exercise becomes compulsive, it shifts from advantage to disadvantage. This is a <strong>character flaw</strong> that provides mechanical costs:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Sign</th><th>Mechanical Effect</th><th>Detection</th></tr></thead>
-<tbody>
-<tr><td>🔴 Exercising while injured</td><td>Cannot rest. Overtraining track advances +2 per workout instead of +1.</td><td>GM observes character refusing to take rest days despite clear fatigue.</td></tr>
-<tr><td>🔴 Skipping social events for gym</td><td>−1 EXP per missed social event. Relationships may suffer.</td><td>Character fails EXP checks to maintain social connections.</td></tr>
-<tr><td>🔴 Working out despite illness</td><td>Recovery from illness takes 2× longer. −1 VIG per sick-day workout.</td><td>Character attempts exercise checks while having a cold/flu.</td></tr>
-<tr><td>🔴 Body dysmorphia</td><td>PRC decreases despite physical improvements. Character never feels "good enough."</td><td>PRC drops by 1 every month of obsessive exercise without mental health check.</td></tr>
-<tr><td>🔴 Spending beyond means on fitness</td><td>Financial strain. −1 to Finance checks. Possible debt.</td><td>Character spending >$300/month on fitness-related expenses.</td></tr>
-</tbody>
-</table>
+<!-- P1-13: Exercise Addiction → card-grid (was 5-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Exercising While Injured</h3>
+    <p><strong>Effect:</strong> Cannot rest. Overtraining advances +2/workout instead of +1.<br><em>Detection: Refusing rest days despite clear fatigue.</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Skip Social Events for Gym</h3>
+    <p><strong>Effect:</strong> −1 EXP per missed social event. Relationships may suffer.<br><em>Detection: Fails EXP checks to maintain social connections.</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Working Out Despite Illness</h3>
+    <p><strong>Effect:</strong> Recovery takes 2× longer. −1 VIG per sick-day workout.<br><em>Detection: Attempts exercise checks while having a cold/flu.</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Body Dysmorphia</h3>
+    <p><strong>Effect:</strong> PRC decreases despite physical improvements. Never feels "good enough."<br><em>Detection: PRC drops 1/month of obsessive exercise without mental health check.</em></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🔴</span>
+    <h3>Spending Beyond Means</h3>
+    <p><strong>Effect:</strong> Financial strain. −1 to Finance checks. Possible debt.<br><em>Detection: Spending >$300/month on fitness-related expenses.</em></p>
+  </div>
 </div>
 
 <div class="callout warning">
@@ -684,20 +1042,33 @@ thead><tr><th>Mental Health Condition</th><th>Recommended Exercise</th><th>SP Re
 <h3>👥 Social Exercise</h3>
 <p>Working out with others — gym buddies, group classes, sports teams — adds a social dimension to the exercise system:</p>
 
-<div class="table-wrap">
-<table>
-thead><tr><th>Social Context</th><th>Bonus</th><th>Cost</th><th>Narrative Effects</th></tr></thead>
-<tbody>
-<tr><td>👫 Gym buddy (1 partner)</td><td><span class="dice">−5</span> to exercise TN (accountability, spotting, motivation)</td><td>Must coordinate schedules. May need to adjust workout to match partner's level.</td><td>+1 EXP with buddy per session. Potential friendship or romance development.</td></tr>
-<tr><td>👥 Group class (yoga, Spin, CrossFit)</td><td><span class="dice">−3</span> to exercise TN (group energy). <span class="dice">−1</span> SP bonus (community feeling).</td><td>$15–$30/class. Fixed schedule.</td><td>Community belonging. +1 EXP with regular class members. Networking opportunities.</td></tr>
-<tr><td>🏟️ Sports team</td><td><span class="dice">−5</span> to exercise TN (team motivation). Social bonus: +2 EXP with teammates.</td><td>League fees: $50–$200/season. Commitment to schedule.</td><td>Strong team bonds. Team wins/losses create shared narrative events. Leadership opportunities for high-PRC characters.</td></tr>
-<tr><td>👨‍🏫 Personal trainer</td><td><span class="dice">−10</span> to exercise TN. <span class="dice">−5</span> to plateau TN. Structured programming.</td><td>$50–$150/session (typically 2–3×/week = $400–$1800/month).</td><td>Trainer becomes a recurring NPC. Can provide advice on non-exercise topics. Professional relationship.</td></tr>
-</tbody>
-</table>
+<!-- P1-12: Social Exercise → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">👫</span>
+    <h3>Gym Buddy (1 partner)</h3>
+    <p><strong>Bonus:</strong> <span class="dice">−5</span> to exercise TN (accountability, spotting)<br><strong>Cost:</strong> Must coordinate schedules; may need to adjust to partner's level<br><strong>Narrative:</strong> +1 EXP with buddy/session. Potential friendship or romance.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">👥</span>
+    <h3>Group Class (yoga, Spin, CrossFit)</h3>
+    <p><strong>Bonus:</strong> <span class="dice">−3</span> to TN (group energy) + <span class="dice">−1</span> SP (community feeling)<br><strong>Cost:</strong> $15–$30/class. Fixed schedule.<br><strong>Narrative:</strong> Community belonging. +1 EXP with regulars. Networking.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🏟️</span>
+    <h3>Sports Team</h3>
+    <p><strong>Bonus:</strong> <span class="dice">−5</span> to TN (team motivation) + 2 EXP with teammates<br><strong>Cost:</strong> $50–$200/season. Commitment to schedule.<br><strong>Narrative:</strong> Strong team bonds. Shared events. Leadership opportunities.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">👨‍🏫</span>
+    <h3>Personal Trainer</h3>
+    <p><strong>Bonus:</strong> <span class="dice">−10</span> to exercise TN + <span class="dice">−5</span> to plateau TN. Structured programming.<br><strong>Cost:</strong> $50–$150/session (2–3×/wk = $400–$1800/mo).<br><strong>Narrative:</strong> Trainer becomes recurring NPC. Can advise on non-exercise topics.</p>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">📝 Example 5: The Running Club</div>
+  <div class="section-illustration"><img src="img/ex_james_running_club.png" alt="Saturday morning running club at a trailhead, James with a group of runners lacing up, casual social vibe, coffee thermos, early morning light, breath visible in cool air" style="max-width:100%;"></div>
   <p><strong>James</strong>, 45, teacher. VIG 8 (+1), EXP 11 (+2), Fitness Level 1 (Casual). He's been lonely since his divorce and joins a local running club on Saturday mornings.</p>
   <p><strong>First Run:</strong> The group does a 3-mile easy run. TN 40. James gets the social bonus: <span class="dice">−5</span> to TN = effective TN 35. He rolls <span class="dice">2d10</span> + VIG (+1) + Fitness (+1) = <span class="dice">2d10</span> + 2.</p>
   <p>He rolls <strong>28</strong> + 2 = <strong>30</strong> vs TN 35. <strong>Strong Success!</strong> The group energy carried him through. He finishes feeling great. −2 SP (exercise) + 1 SP (social connection) = net <strong>−3 SP</strong>.</p>
@@ -707,6 +1078,7 @@ thead><tr><th>Social Context</th><th>Bonus</th><th>Cost</th><th>Narrative Effect
 
 <div class="callout example">
   <div class="callout-title">📝 Example 6: Training for the Marathon</div>
+  <div class="section-illustration"><img src="img/ex_aisha_marathon_finish.png" alt="Aisha crossing a marathon finish line, crying with arms raised, finish banner overhead, family cheering on sidelines, crumpled race bib, relief and pride and exhaustion" style="max-width:100%;"></div>
   <p><strong>Aisha</strong>, 30, grad student. VIG 10 (+2), RES 14 (+2), Fitness Level 3 (Fit). She's signed up for her first marathon in 16 weeks. The GM sets up an event training arc.</p>
   <p><strong>Weekly Training Checks:</strong> Each week, Aisha makes one running check at TN 55 (marathon training TN). She gets a <span class="dice">+3</span> modifier from Fitness Level 3 and <span class="dice">+2</span> from VIG = <span class="dice">+5</span> total.</p>
   <p><em>Weeks 1–8:</em> Aisha succeeds 6 out of 8 weeks. Life interferes twice (a family emergency and finals week). Her cumulative bonus is <span class="dice">+12</span> (6 successes × +2, capped at +10, so <span class="dice">+10</span>).</p>
@@ -720,27 +1092,23 @@ thead><tr><th>Social Context</th><th>Bonus</th><th>Cost</th><th>Narrative Effect
 <h2>9. 📋 Quick Reference: Exercise TN Chart</h2>
 <p>A consolidated reference for all exercise activities and their target numbers:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Activity</th><th>Check</th><th>Easy TN</th><th>Hard TN</th><th>SP Reduction</th><th>Injury Risk</th></tr></thead>
-<tbody>
-<tr><td>🧘 Stretching</td><td><span class="dice">RES+VIG mod</span></td><td>30</td><td>40</td><td>−2</td><td>Very Low</td></tr>
-<tr><td>🧘 Yoga</td><td><span class="dice">VIG+RES mod</span></td><td>30</td><td>50</td><td>−3 to −5</td><td>Low</td></tr>
-<tr><td>⚙️ Weight Machines</td><td><span class="dice">VIG</span></td><td>35</td><td>50</td><td>−1</td><td>Low</td></tr>
-<tr><td>🚶 Walking/Hiking</td><td><span class="dice">VIG</span></td><td>35</td><td>55</td><td>−1 to −3</td><td>Low</td></tr>
-<tr><td>🏋️ Free Weights</td><td><span class="dice">VIG</span></td><td>45</td><td>65</td><td>−1</td><td>High</td></tr>
-<tr><td>🏃 Cardio Equipment</td><td><span class="dice">VIG</span></td><td>40</td><td>55</td><td>−2 to −4</td><td>Medium</td></tr>
-<tr><td>🏃 Running (outdoor)</td><td><span class="dice">VIG</span></td><td>40</td><td>60</td><td>−2 to −5</td><td>Medium</td></tr>
-<tr><td>🚴 Cycling</td><td><span class="dice">VIG</span></td><td>40</td><td>55</td><td>−2 to −3</td><td>Medium</td></tr>
-<tr><td>🏊 Swimming</td><td><span class="dice">VIG+DXT mod</span></td><td>45</td><td>60</td><td>−3 to −5</td><td>Medium (High open water)</td></tr>
-<tr><td>⚡ Functional Training</td><td><span class="dice">VIG+DXT mod</span></td><td>50</td><td>65</td><td>−3</td><td>High</td></tr>
-<tr><td>⚡ HIIT</td><td><span class="dice">VIG</span></td><td>50</td><td>65</td><td>−3</td><td>High</td></tr>
-<tr><td>🧗 Climbing</td><td><span class="dice">VIG+DXT mod</span></td><td>50</td><td>70</td><td>−2 to −4</td><td>Very High (outdoor)</td></tr>
-<tr><td>🥊 Martial Arts</td><td><span class="dice">VIG+DXT mod+RES mod</span></td><td>50</td><td>70</td><td>−2</td><td>High</td></tr>
-<tr><td>⚽ Team Sports</td><td><span class="dice">VIG+DXT mod+EXP mod</span></td><td>45</td><td>60</td><td>−2</td><td>Medium</td></tr>
-<tr><td>🛶 Canoeing/Kayaking</td><td><span class="dice">VIG+DXT mod</span></td><td>45</td><td>55</td><td>−3</td><td>Medium (High whitewater)</td></tr>
-</tbody>
-</table>
+<!-- P1-8: Quick Reference TN Chart → tn-ladder (was 15-row table) — most-used reference -->
+<div class="tn-ladder">
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">30→40</span><span class="tn-label">🧘 <strong>Stretching</strong> · <span class="dice">RES+VIG mod</span> · SP −2 · Risk: Very Low</span></div>
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">30→50</span><span class="tn-label">🧘 <strong>Yoga</strong> · <span class="dice">VIG+RES mod</span> · SP −3 to −5 · Risk: Low</span></div>
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">35→50</span><span class="tn-label">⚙️ <strong>Weight Machines</strong> · <span class="dice">VIG</span> · SP −1 · Risk: Low</span></div>
+  <div class="tn-step easy"><span class="tn-value" style="color:#27ae60;">35→55</span><span class="tn-label">🚶 <strong>Walking/Hiking</strong> · <span class="dice">VIG</span> · SP −1 to −3 · Risk: Low</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">40→55</span><span class="tn-label">🏃 <strong>Cardio Equipment</strong> · <span class="dice">VIG</span> · SP −2 to −4 · Risk: Medium</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">40→60</span><span class="tn-label">🏃 <strong>Running (outdoor)</strong> · <span class="dice">VIG</span> · SP −2 to −5 · Risk: Medium</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">40→55</span><span class="tn-label">🚴 <strong>Cycling</strong> · <span class="dice">VIG</span> · SP −2 to −3 · Risk: Medium</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">45→60</span><span class="tn-label">🏊 <strong>Swimming</strong> · <span class="dice">VIG+DXT mod</span> · SP −3 to −5 · Risk: Medium (High open water)</span></div>
+  <div class="tn-step medium"><span class="tn-value" style="color:#f39c12;">45→55</span><span class="tn-label">🛶 <strong>Canoeing/Kayaking</strong> · <span class="dice">VIG+DXT mod</span> · SP −3 · Risk: Medium (High whitewater)</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">45→65</span><span class="tn-label">🏋️ <strong>Free Weights</strong> · <span class="dice">VIG</span> · SP −1 · Risk: High</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">45→60</span><span class="tn-label">⚽ <strong>Team Sports</strong> · <span class="dice">VIG+DXT+EXP mod</span> · SP −2 · Risk: Medium</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">50→65</span><span class="tn-label">⚡ <strong>Functional Training</strong> · <span class="dice">VIG+DXT mod</span> · SP −3 · Risk: High</span></div>
+  <div class="tn-step hard"><span class="tn-value" style="color:#e67e22;">50→65</span><span class="tn-label">⚡ <strong>HIIT</strong> · <span class="dice">VIG</span> · SP −3 · Risk: High</span></div>
+  <div class="tn-step very-hard"><span class="tn-value" style="color:#e74c3c;">50→70</span><span class="tn-label">🧗 <strong>Climbing</strong> · <span class="dice">VIG+DXT mod</span> · SP −2 to −4 · Risk: Very High (outdoor)</span></div>
+  <div class="tn-step very-hard"><span class="tn-value" style="color:#e74c3c;">50→70</span><span class="tn-label">🥊 <strong>Martial Arts</strong> · <span class="dice">VIG+DXT+RES mod</span> · SP −2 · Risk: High</span></div>
 </div>
 
 <h2>10. 🎮 GM Notes</h2>

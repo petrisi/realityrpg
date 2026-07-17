@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="100%">
+  <defs>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000033"/>
+    </filter>
+
+    <!-- Arrowhead markers -->
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#2980b9"/>
+    </marker>
+    <marker id="arrowTeal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#1abc9c"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#e67e22"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="500" fill="#faf9f6" rx="12"/>
+
+  <!-- Title -->
+  <text x="350" y="42" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="700" fill="#2c3e50">The Exercise Consistency Loop</text>
+
+  <!-- ==================== NODES ==================== -->
+
+  <!-- Node 1: Workout (top) -->
+  <g filter="url(#shadow)">
+    <rect x="275" y="60" width="150" height="60" rx="8" fill="#27ae60"/>
+    <text x="350" y="88" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">🏋️ Workout</text>
+    <text x="350" y="108" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#ffffffcc">Train hard, stay consistent</text>
+  </g>
+
+  <!-- Node 2: Recovery (right) -->
+  <g filter="url(#shadow)">
+    <rect x="510" y="190" width="150" height="72" rx="8" fill="#2980b9"/>
+    <text x="585" y="216" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">😴 Recovery</text>
+    <text x="585" y="236" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#ffffffcc">Sleep + Nutrition + Rest</text>
+  </g>
+
+  <!-- Node 3: Adaptation (bottom-right) -->
+  <g filter="url(#shadow)">
+    <rect x="440" y="340" width="150" height="72" rx="8" fill="#1abc9c"/>
+    <text x="515" y="366" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">📈 Adaptation</text>
+    <text x="515" y="386" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#ffffffcc">VIG gain · SP reduction</text>
+  </g>
+
+  <!-- Node 4: Motivation (bottom-left) -->
+  <g filter="url(#shadow)">
+    <rect x="110" y="340" width="150" height="72" rx="8" fill="#e67e22"/>
+    <text x="185" y="366" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">💪 Motivation</text>
+    <text x="185" y="386" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#ffffffcc">Results fuel drive</text>
+  </g>
+
+  <!-- Danger Branch: Overtraining Track (below center) -->
+  <g filter="url(#shadow)">
+    <rect x="250" y="440" width="200" height="44" rx="8" fill="#e74c3c"/>
+    <text x="350" y="467" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="600" fill="#ffffff">⚠️ Overtraining Track</text>
+  </g>
+
+  <!-- ==================== ARROWS ==================== -->
+
+  <!-- Workout → Recovery (curved right) -->
+  <path d="M 425 90 C 470 100, 510 140, 535 190"
+        fill="none" stroke="#27ae60" stroke-width="2.5"
+        marker-end="url(#arrowGreen)"/>
+
+  <!-- Recovery → Adaptation (curved down) -->
+  <path d="M 550 262 C 535 290, 520 315, 515 340"
+        fill="none" stroke="#2980b9" stroke-width="2.5"
+        marker-end="url(#arrowBlue)"/>
+
+  <!-- Adaptation → Motivation (curved left) -->
+  <path d="M 440 376 C 370 390, 290 390, 260 376"
+        fill="none" stroke="#1abc9c" stroke-width="2.5"
+        marker-end="url(#arrowTeal)"/>
+
+  <!-- Motivation → Workout (curved up, completing loop) -->
+  <path d="M 185 340 C 185 280, 210 200, 275 120"
+        fill="none" stroke="#e67e22" stroke-width="2.5"
+        marker-end="url(#arrowOrange)"/>
+
+  <!-- Danger Branch: Recovery → Overtraining (straight down) -->
+  <path d="M 510 226 C 460 250, 410 300, 400 370"
+        fill="none" stroke="#e74c3c" stroke-width="2.5" stroke-dasharray="6 3"
+        marker-end="url(#arrowRed)"/>
+
+  <!-- Danger branch label -->
+  <text x="460" y="290" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#e74c3c"
+        transform="rotate(-35 460 290)">Skip Recovery?</text>
+
+</svg>
