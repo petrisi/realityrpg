@@ -43,15 +43,22 @@
 <h3>1a. Polyamory Structures</h3>
 <p>Not all polyamory looks the same. The two dominant models each have different mechanical profiles:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Structure</th><th>Description</th><th>Mechanical Profile</th></tr></thead>
-<tbody>
-<tr><td><strong>Hierarchical Polyamory</strong></td><td>A "primary" partner receives priority; secondary (or tertiary) partners are explicitly ranked.</td><td>Easier time management; higher jealousy risk for lower-ranked partners (+2 SP when primary gets new partner)</td></tr>
-<tr><td><strong>Relationship Anarchy</strong></td><td>No hierarchy — every relationship is valued on its own terms. A best friend, a romantic partner, and a casual lover may all be equally "important."</td><td>Harder boundary negotiation (−2 to INT on boundary-setting checks); lower jealousy baseline (−1 SP on jealousy triggers)</td></tr>
-<tr><td><strong>Solo Polyamory</strong></td><td>Choosing not to couple-stan: no shared home, finances, or legal entanglement with any partner.</td><td>Lower financial entanglement; higher housing cost burden; no legal protections for any partner</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🏛️</span>
+    <h3>Hierarchical Polyamory</h3>
+    <p>A "primary" partner receives priority; secondary (or tertiary) partners are explicitly ranked.<br><br><strong>Mechanical:</strong> Easier time management; higher jealousy risk for lower-ranked partners (+2 SP when primary gets new partner)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">🌐</span>
+    <h3>Relationship Anarchy</h3>
+    <p>No hierarchy — every relationship is valued on its own terms. A best friend, a romantic partner, and a casual lover may all be equally "important."<br><br><strong>Mechanical:</strong> Harder boundary negotiation (−2 to INT on boundary-setting checks); lower jealousy baseline (−1 SP on jealousy triggers)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🚶</span>
+    <h3>Solo Polyamory</h3>
+    <p>Choosing not to couple-stan: no shared home, finances, or legal entanglement with any partner.<br><br><strong>Mechanical:</strong> Lower financial entanglement; higher housing cost burden; no legal protections for any partner</p>
+  </div>
 </div>
 
 <div class="callout tip">
@@ -65,29 +72,40 @@
 
 <p>When a character witnesses a partner's joy in another relationship, they may make a <span class="dice">2d10 + RES modifier vs TN 35</span> check. On a success, they gain <strong>compersion</strong>: reduce current SP by <strong>1 point</strong> and gain a <strong>+2 bonus to one INT or RES check within 24 hours</strong> (representing the emotional warmth carrying forward).</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Compersion Level</th><th>TN</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>Barely registered</td><td>50</td><td>No mechanical effect; narrative acknowledgment only</td></tr>
-<tr><td>Genuine warmth</td><td>35</td><td>−1 SP, +2 to one INT or RES check (24h)</td></tr>
-<tr><td>Deep compersion</td><td>20</td><td>−2 SP, +3 to one INT or RES check (24h); partner gains +1 relationship tier toward you</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step near-impossible">
+    <span class="tn-value">TN 50</span>
+    <span class="tn-label"><strong>Barely registered</strong> — No mechanical effect; narrative acknowledgment only</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">TN 35</span>
+    <span class="tn-label"><strong>Genuine warmth</strong> — −1 SP, +2 to one INT or RES check (24h)</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">TN 20</span>
+    <span class="tn-label"><strong>Deep compersion</strong> — −2 SP, +3 to one INT or RES check (24h); partner gains +1 relationship tier toward you</span>
+  </div>
 </div>
 
 <h3>1c. Jealousy Management</h3>
 <p>Jealousy is not a failure of polyamory — it's a <strong>signal</strong>. When a jealousy trigger occurs (partner dates someone new, spends time away, expresses feelings for another), the character must make a <span class="dice">2d10 + RES modifier vs TN 40</span> check.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Outcome</th><th>Roll vs TN 40</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td><strong>Managed</strong></td><td>Result ≥ TN</td><td>No SP gain. Character processes feelings healthily. May gain +1 compersion level next time.</td></tr>
-<tr><td><strong>Strained</strong></td><td>Result within 5 of TN</td><td>+2 SP. Character needs a check-in conversation (costs 2 hours of in-game time).</td></tr>
-<tr><td><strong>Overwhelmed</strong></td><td>Result &lt; TN − 5</td><td>+4 SP. Character may act out (accusations, withdrawal, demand partner stop). Triggers a <strong>Crisis Conversation</strong> event.</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    ✅ Managed<br>
+    <small>Result ≥ TN</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">No SP gain. Processes feelings healthily. May gain +1 compersion next time.</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    ⚠️ Strained<br>
+    <small>Within 5 of TN</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+2 SP. Needs a check-in conversation (2 hours).</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🔥 Overwhelmed<br>
+    <small>Result &lt; TN − 5</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+4 SP. May act out. Triggers a <strong>Crisis Conversation</strong> event.</span>
+  </div>
 </div>
 
 <div class="callout rule">
@@ -98,15 +116,30 @@
 <h3>1d. Time Management</h3>
 <p>Polyamory requires <strong>real time allocation</strong>. Each partner relationship demands a weekly minimum of quality time:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Relationship Tier</th><th>Min Hours/Week</th><th>Scheduling TN</th></tr></thead>
-<tbody>
-<tr><td>Primary Partner</td><td>10 hours</td><td>30 (easier — usually lives together)</td></tr>
-<tr><td>Secondary Partner</td><td>5 hours</td><td>45 (requires active scheduling)</td></tr>
-<tr><td>Casual Partner</td><td>2 hours</td><td>55 (hard to fit in)</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/rs_poly_time_budget.svg" alt="Polyamory weekly time budget showing how relationship hours compete with sleep, work, and self-care across three scenarios" style="max-width:700px;">
+</div>
+
+<div class="stress-bar-row">
+  <span class="stress-bar-label">❤️ Primary Partner</span>
+  <div class="stress-bar-track">
+    <div class="stress-bar-fill" style="background:#27ae60;width:30%;"></div>
+  </div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">10h/wk · TN 30</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💛 Secondary Partner</span>
+  <div class="stress-bar-track">
+    <div class="stress-bar-fill" style="background:#f39c12;width:60%;"></div>
+  </div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">5h/wk · TN 45</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💚 Casual Partner</span>
+  <div class="stress-bar-track">
+    <div class="stress-bar-fill" style="background:#e74c3c;width:90%;"></div>
+  </div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">2h/wk · TN 55</span>
 </div>
 
 <p>Each week, the character makes a <span class="dice">2d10 + EXP modifier vs Scheduling TN</span> for each partner. Failure means that partner receives <strong>less quality time than needed</strong>: +2 SP for the neglected partner, and the relationship tier may <strong>decay by one level</strong> after 3 consecutive failures.</p>
@@ -114,16 +147,27 @@
 <h3>1e. Coming Out as Poly</h3>
 <p>Revealing polyamory to family, friends, or employers carries real social risk. The reaction depends on the audience:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Audience</th><th>Acceptance TN</th><th>Roll</th><th>Failure Effect</th></tr></thead>
-<tbody>
-<tr><td>Close friends (progressive)</td><td>30</td><td><span class="dice">2d10 + PRC mod</span></td><td>+1 SP (surprise, not hostility)</td></tr>
-<tr><td>Extended family</td><td>50</td><td><span class="dice">2d10 + PRC mod + EXP mod</span></td><td>+4 SP; possible estrangement (see Crisis below)</td></tr>
-<tr><td>Workplace</td><td>60</td><td><span class="dice">2d10 + INT mod</span></td><td>+5 SP; potential employment discrimination (see Law &amp; Civic)</td></tr>
-<tr><td>Religious community</td><td>70</td><td><span class="dice">2d10 + PRC mod</span></td><td>+8 SP; possible shunning or excommunication</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">👫</span>
+    <h3>Close Friends (Progressive)</h3>
+    <p><strong>TN 30</strong> — <span class="dice">2d10 + PRC mod</span><br><strong>Failure:</strong> +1 SP (surprise, not hostility)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">👨‍👩‍👧‍👦</span>
+    <h3>Extended Family</h3>
+    <p><strong>TN 50</strong> — <span class="dice">2d10 + PRC mod + EXP mod</span><br><strong>Failure:</strong> +4 SP; possible estrangement (see Crisis below)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🏢</span>
+    <h3>Workplace</h3>
+    <p><strong>TN 60</strong> — <span class="dice">2d10 + INT mod</span><br><strong>Failure:</strong> +5 SP; potential employment discrimination (see Law &amp; Civic)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">⛪</span>
+    <h3>Religious Community</h3>
+    <p><strong>TN 70</strong> — <span class="dice">2d10 + PRC mod</span><br><strong>Failure:</strong> +8 SP; possible shunning or excommunication</p>
+  </div>
 </div>
 
 <h3>1f. Legal Complications</h3>
@@ -141,6 +185,21 @@
   <p>When a crisis hits (illness, death, eviction, custody dispute), a poly character without legal protections must make a <span class="dice">2d10 + INT modifier vs TN 55</span> to navigate the system without catastrophic loss. Failure = <strong>loss of housing, custody, or medical access</strong> for the unprotected partner. This is one of the most emotionally devastating rolls in the game.</p>
 </div>
 
+<div class="char-portrait">
+  <img src="img/char_maya.png" alt="Portrait of Maya">
+  <div class="char-info">
+    <div class="char-name">Maya</div>
+    <div class="char-subtitle">Relationship-Anarchy Triad · Week 7 of Campaign</div>
+    <div class="char-stats">
+      <span class="char-stat">RES +2</span>
+      <span class="char-stat">EXP +1</span>
+      <span class="char-stat">INT +1</span>
+      <span class="char-stat">PRC 0</span>
+      <span class="char-stat">SP: 13/30</span>
+    </div>
+  </div>
+</div>
+
 <div class="callout example">
   <div class="callout-title">🎲 Example 1: Maya's Poly Network</div>
   <p><strong>Maya</strong> (RES +2, EXP +1, INT +1, PRC 0) is in a relationship-anarchy triad with <strong>Jordan</strong> and <strong>Alex</strong>, plus a casual partner <strong>Riley</strong>. It's Week 7 of the campaign.</p>
@@ -151,7 +210,16 @@
     <li>Riley: <span class="dice">2d10 + 1 = 8 + 1 = 9</span> vs TN 55 → <strong>Fail by a lot</strong>. Riley feels deprioritized.</li>
   </ul>
   <p>Maya gains <strong>+3 SP</strong> from the guilt of not meeting anyone's needs. Her SP is now at 8/12 (capacity = 20 + 2×5 = 30; she started at 22 SP and gained 8 more this week). She schedules a <strong>triad check-in</strong> (2 hours) and rolls <span class="dice">2d10 + 2 (RES) = 18 + 2 = 20</span> vs TN 35 to manage the conversation → <strong>Fail</strong>, but within 5. <em>Strained</em> outcome: the conversation is honest but messy. −1 SP from the honesty, but +2 SP from the discomfort. Net: Maya is at 9 SP.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_maya_triad_checkin.png" alt="Maya sitting at a kitchen table with two partners during a triad check-in — earnest but tense, the honest but messy conversation" style="max-width:100%;">
+  </div>
+
   <p>Meanwhile, Alex's new coworker asks them on a date. Maya's <strong>jealousy trigger</strong>: <span class="dice">2d10 + 2 (RES) = 11 + 2 = 13</span> vs TN 40 → <strong>Overwhelmed</strong>. +4 SP. Maya is now at <strong>13 SP</strong> — getting close to dangerous territory. The player narrates Maya having a quiet panic attack in the bathroom at work.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_maya_bathroom_panic.png" alt="Maya alone in a small office bathroom, leaning against the door, hands pressed to her temples — a quiet panic attack at work" style="max-width:100%;">
+  </div>
 </div>
 
 <hr>
@@ -164,17 +232,32 @@
 <h3>2a. Rules &amp; Negotiations Mechanics</h3>
 <p>Every open relationship has a <strong>Rules Framework</strong> — explicit agreements about what is and isn't allowed. The GM and player collaboratively establish these at relationship creation. Common rules:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Rule Type</th><th>Example</th><th>Breach TN</th><th>Breach Effect</th></tr></thead>
-<tbody>
-<tr><td><strong>Emotional boundary</strong></td><td>"No falling in love with others"</td><td>High (TN 60 to breach without guilt)</td><td>+5 SP for the betrayed partner; relationship tier drops 1 level</td></tr>
-<tr><td><strong>Safety rule</strong></td><td>"Condoms always"</td><td>Very high (TN 75)</td><td>+8 SP; possible STI exposure roll; trust permanently damaged (−5 to all future trust TNs)</td></tr>
-<tr><td><strong>Communication rule</strong></td><td>"Tell before, not after"</td><td>Medium (TN 45)</td><td>+3 SP; requires repair conversation (3 hours)</td></tr>
-<tr><td><strong>Practical rule</strong></td><td>"No overnight stays"</td><td>Medium (TN 40)</td><td>+2 SP; minor trust erosion</td></tr>
-<tr><td><strong>Disclosure rule</strong></td><td>"No names, no details"</td><td>Low (TN 30)</td><td>+1 SP; annoyance, not crisis</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💔</span>
+    <h3>Emotional Boundary</h3>
+    <p><em>"No falling in love with others"</em><br><strong>Breach TN:</strong> 60 (High)<br><strong>Effect:</strong> +5 SP for the betrayed partner; relationship tier drops 1 level</p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">🛡️</span>
+    <h3>Safety Rule</h3>
+    <p><em>"Condoms always"</em><br><strong>Breach TN:</strong> 75 (Very High)<br><strong>Effect:</strong> +8 SP; possible STI exposure roll; trust permanently damaged (−5 to all future trust TNs)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">💬</span>
+    <h3>Communication Rule</h3>
+    <p><em>"Tell before, not after"</em><br><strong>Breach TN:</strong> 45 (Medium)<br><strong>Effect:</strong> +3 SP; requires repair conversation (3 hours)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🏠</span>
+    <h3>Practical Rule</h3>
+    <p><em>"No overnight stays"</em><br><strong>Breach TN:</strong> 40 (Medium)<br><strong>Effect:</strong> +2 SP; minor trust erosion</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🤫</span>
+    <h3>Disclosure Rule</h3>
+    <p><em>"No names, no details"</em><br><strong>Breach TN:</strong> 30 (Low)<br><strong>Effect:</strong> +1 SP; annoyance, not crisis</p>
+  </div>
 </div>
 
 <p>When a character is tempted to <strong>breach a rule</strong>, they roll <span class="dice">2d10 + RES modifier vs Breach TN</span>. Success = they hold the line. Failure = they breach, and the effects trigger.</p>
@@ -190,16 +273,27 @@
 <h3>2c. STI Management</h3>
 <p>With multiple sexual partners, STI risk becomes a <strong>real mechanical concern</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Protection Level</th><th>Description</th><th>Monthly STI Risk</th></tr></thead>
-<tbody>
-<tr><td><strong>Full protection</strong></td><td>Condoms/dental dams every time; regular testing (every 3 months)</td><td>~1% per month (background risk)</td></tr>
-<tr><td><strong>Partial protection</strong></td><td>Condoms with new partners only; testing every 6 months</td><td>~5% per month</td></tr>
-<tr><td><strong>Minimal protection</strong></td><td>No barriers; infrequent testing</td><td>~15% per month</td></tr>
-<tr><td><strong>None</strong></td><td>No barriers, no testing</td><td>~30% per month</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    🟢 Full Protection<br>
+    <small>Condoms every time</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Testing every 3 months<br>~1% risk/month</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    🟡 Partial Protection<br>
+    <small>New partners only</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Testing every 6 months<br>~5% risk/month</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    🟠 Minimal Protection<br>
+    <small>No barriers</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Infrequent testing<br>~15% risk/month</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🔴 None<br>
+    <small>No barriers, no testing</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Highest risk<br>~30% risk/month</span>
+  </div>
 </div>
 
 <p>Each month, roll <span class="dice">2d10</span>. If result ≤ Risk % × 2, the character contracts an STI. The GM determines the type (see <em>Sexual Health</em> page). <strong>Regular testing</strong> reduces the TN for partner trust checks by 10 — knowing you're clean is a form of care.</p>
@@ -207,10 +301,19 @@
 <h3>2d. Trust Building</h3>
 <p>Trust in an open relationship is <strong>earned incrementally</strong>. Each time a partner follows through on a rule, trust increases by 1 point (max 20). Trust acts as a <strong>buffer</strong>: each point of trust reduces SP gain from jealousy triggers by 1 (minimum +1 SP).</p>
 
+<div class="section-illustration">
+  <img src="img/rs_trust_erosion_repair.svg" alt="Trust erosion and repair cycle showing how trust builds through compliance, erodes through breaches, and can be partially restored through honest conversation" style="max-width:700px;">
+</div>
+
 <div class="callout example">
   <div class="callout-title">🎲 Example 2: Sam and Lee's Open Relationship</div>
   <p><strong>Sam</strong> (RES +0, INT +2) and <strong>Lee</strong> (RES +1, INT +1) have been together 2 years and negotiate an open relationship. Their rules: (1) condoms always, (2) tell before not after, (3) no overnight stays, (4) no names/no details. Trust level: 14/20.</p>
   <p>Lee goes to a party and meets someone attractive. The temptation to skip the "no overnight" rule: <span class="dice">2d10 + 1 (RES) = 16 + 1 = 17</span> vs TN 40 → <strong>Success</strong>. Lee holds the line, tells Sam about the encounter the next morning. Trust increases to 15/20.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_sam_lee_morning.png" alt="Sam and Lee at a kitchen counter in morning light — Lee nervously explaining an encounter, Sam listening with measured attention" style="max-width:100%;">
+  </div>
+
   <p>Sam feels a jealousy pang. Normal TN would be 40, but with 15 trust points, SP gain is reduced to <strong>+0 SP</strong> (40 − 15 = 25, still positive but the minimum SP gain from any trigger is 0 when trust is high enough). Sam processes the feeling and even rolls compersion: <span class="dice">2d10 + 0 (RES) = 19</span> vs TN 35 → <strong>Fail</strong>. No mechanical compersion, but narratively Sam feels a flicker of warmth.</p>
 </div>
 
@@ -219,9 +322,18 @@
 <!-- ============================================================ -->
 <h2>3. Situationships 🌫️</h2>
 
+<div class="section-illustration">
+  <img src="img/sd_isolation_spiral.svg" alt="The isolation spiral of undefined relationship status — ambiguity feeding loneliness feeding more ambiguity" style="max-width:500px;">
+</div>
+
 <p>A <strong>situationship</strong> is that liminal space between friendship and relationship where <em>nothing is defined</em>. You're doing relationship things — sleeping over, meeting friends, emotional intimacy — but no one has said the words. In Reality RPG, ambiguity is <strong>mechanically toxic</strong>.</p>
 
 <h3>3a. The Ambiguity Tax</h3>
+
+<div class="section-illustration">
+  <img src="img/rs_situationship_ambiguity_gauge.svg" alt="The ambiguity tax gauge showing three diverging SP accumulation curves over 12 weeks of undefined situationship — symmetric, asymmetric, and being strung along" style="max-width:680px;">
+</div>
+
 <p>Every day a situationship remains undefined, the character gains <strong>+1 SP</strong>. This is not negotiable — the human brain is wired to seek clarity, and sustained ambiguity is a form of <strong>cognitive stress</strong>.</p>
 
 <p>Modifiers to the daily SP gain:</p>
@@ -240,16 +352,23 @@
 <li><strong>Response:</strong> The other person responds. The GM rolls <span class="dice">2d10 + NPC's RES modifier vs TN based on their feelings</span>:</li>
 </ol>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>NPC's True Feelings</th><th>TN to Accept Relationship</th><th>Outcome on Failure</th></tr></thead>
-<tbody>
-<tr><td>Also wants relationship</td><td>30</td><td>Nervous but says yes (+2 to both characters' relationship tier)</td></tr>
-<tr><td>Uncertain</td><td>50</td><td>Needs time (3-day cooldown; +2 SP/day during uncertainty)</td></tr>
-<tr><td>Doesn't want relationship</td><td>70</td><td>Rejection. +5 SP; possible friendship downgrade</td></tr>
-<tr><td>Actively avoiding commitment</td><td>80</td><td>Deflection or gaslighting. +8 SP; character gains <strong>"Commitment Fear" stressor</strong> (permanent +1 SP/week until resolved)</td></tr>
-</tbody>
-</table>
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">TN 30</span>
+    <span class="tn-label"><strong>Also wants relationship</strong> — Nervous but says yes (+2 to both characters' relationship tier)</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 50</span>
+    <span class="tn-label"><strong>Uncertain</strong> — Needs time (3-day cooldown; +2 SP/day during uncertainty)</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">TN 70</span>
+    <span class="tn-label"><strong>Doesn't want relationship</strong> — Rejection. +5 SP; possible friendship downgrade</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">TN 80</span>
+    <span class="tn-label"><strong>Actively avoiding commitment</strong> — Deflection or gaslighting. +8 SP; character gains <strong>"Commitment Fear" stressor</strong> (permanent +1 SP/week until resolved)</span>
+  </div>
 </div>
 
 <h3>3c. Ghosting Mechanics</h3>
@@ -271,8 +390,16 @@
   <p><strong>Jordan</strong> (PRC +1, INT +0, RES −1) has been in a situationship with <strong>Casey</strong> for 11 weeks. Jordan thinks they're basically dating. Casey is uncertain. Daily SP gain: +2 SP/day (asymmetric expectations).</p>
   <p>After 11 weeks, Jordan has accumulated <strong>+22 SP</strong> from the situationship alone (plus whatever else life gave them). Jordan's SP capacity is 17.5 → rounded to <strong>17 SP max</strong> (RES −1 → 20 + (−1)×5 = 15... actually let's use RES 8, mod = −1, capacity = 15). Jordan is at <strong>14/15 SP</strong> — one roll away from burnout.</p>
   <p>Jordan decides to DTR. <strong>Initiation:</strong> <span class="dice">2d10 + 1 (PRC) = 12 + 1 = 13</span> vs TN 40 → <strong>Fail</strong>. Jordan brings it up while Casey is stressed about a work deadline. TNs increase by +5.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_jordan_dtr_attempt.png" alt="Jordan on the edge of a couch trying to have a DTR conversation while Casey is stressed at a laptop — bad timing visualized" style="max-width:100%;">
+  </div>
   <p><strong>Expression:</strong> <span class="dice">2d10 + 0 (INT) = 24</span> vs TN 35 → <strong>Fail</strong>. Jordan's words come out messy — "I just feel like we should... I don't know, are we...?"</p>
   <p><strong>Response:</strong> GM rolls for Casey (uncertain feelings, TN 55 due to +5 penalty). <span class="dice">2d10 + 0 (NPC RES) = 19</span> vs TN 55 → <strong>Fail</strong>. Casey needs time. +2 SP/day for 3 days while waiting. Jordan is now at <strong>17/15 SP</strong> — <strong>BURNOUT</strong>. Jordan calls in sick to work for a week and spends it in bed crying.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_jordan_burnout_bed.png" alt="Jordan under blankets in a dim bedroom, phone screen lit with an unanswered text — the physical reality of emotional burnout" style="max-width:100%;">
+  </div>
   <p><em>Three days later:</em> Casey texts: "I think I want to try this. Can we talk?" The DTR arc restarts, but Jordan's Trust Deficit means future TNs are +5 harder.</p>
 </div>
 
@@ -286,15 +413,22 @@
 <h3>4a. Communication Frequency Requirements</h3>
 <p>LDRs require active communication to maintain. Each week, the character must meet a <strong>communication quota</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Distance</th><th>Min Contact/Week</th><th>Communication TN</th><th>Failure Effect</th></tr></thead>
-<tbody>
-<tr><td>Same country, different city (100–500 mi)</td><td>3 calls/texts + 1 video call</td><td>35</td><td>+2 SP; partner feels neglected</td></tr>
-<tr><td>Coast-to-coast / different time zone</td><td>4 calls/texts + 2 video calls</td><td>45</td><td>+3 SP; relationship tier may decay</td></tr>
-<tr><td>International</td><td>5 contacts + 2 video calls</td><td>55</td><td>+4 SP; serious erosion of connection</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏙️</span>
+    <h3>Same Country, Different City</h3>
+    <p><strong>100–500 miles apart</strong><br><strong>Min contact:</strong> 3 calls/texts + 1 video call/week<br><strong>Communication TN:</strong> 35<br><strong>Failure:</strong> +2 SP; partner feels neglected</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🌎</span>
+    <h3>Coast-to-Coast / Different Time Zone</h3>
+    <p><strong>Large time gap</strong><br><strong>Min contact:</strong> 4 calls/texts + 2 video calls/week<br><strong>Communication TN:</strong> 45<br><strong>Failure:</strong> +3 SP; relationship tier may decay</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">✈️</span>
+    <h3>International</h3>
+    <p><strong>Cross-border distance</strong><br><strong>Min contact:</strong> 5 contacts + 2 video calls/week<br><strong>Communication TN:</strong> 55<br><strong>Failure:</strong> +4 SP; serious erosion of connection</p>
+  </div>
 </div>
 
 <p>Roll <span class="dice">2d10 + EXP modifier vs Communication TN</span> each week. Failure means the character was too busy, too tired, or too stressed to maintain contact. <strong>Two consecutive failures</strong> = relationship tier drops by one level.</p>
@@ -311,16 +445,21 @@
 <h3>4c. Visiting Costs</h3>
 <p>Physical visits are essential but expensive. Each visit has <strong>three cost layers</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Cost Type</th><th>Short Distance<br>(same country)</th><th>Long Distance<br>(international)</th></tr></thead>
-<tbody>
-<tr><td><strong>💰 Money</strong></td><td>$200–600 (flights + hotel)</td><td>$800–2,500 (flights + hotel + visa fees)</td></tr>
-<tr><td><strong>⏰ Time</strong></td><td>2–3 days (travel + visit)</td><td>5–7 days (jet lag extends recovery)</td></tr>
-<tr><td><strong>🏢 Work</strong></td><td>1–2 PTO days</td><td>3–5 PTO days; possible job risk if frequent</td></tr>
-<tr><td><strong>😤 SP Cost</strong></td><td>+2 SP from travel stress</td><td>+4 SP (jet lag + expense anxiety + homesickness)</td></tr>
-</tbody>
-</table>
+<div class="compare-grid">
+  <div class="compare-col" style="background:#eafaf1;border-color:#27ae60;">
+    <h4>🏙️ Short Distance (Same Country)</h4>
+    <p><strong>💰 Money:</strong> $200–600 (flights + hotel)</p>
+    <p><strong>⏰ Time:</strong> 2–3 days (travel + visit)</p>
+    <p><strong>🏢 Work:</strong> 1–2 PTO days</p>
+    <p><strong>😤 SP Cost:</strong> +2 SP from travel stress</p>
+  </div>
+  <div class="compare-col" style="background:#fdedec;border-color:#e74c3c;">
+    <h4>✈️ Long Distance (International)</h4>
+    <p><strong>💰 Money:</strong> $800–2,500 (flights + hotel + visa fees)</p>
+    <p><strong>⏰ Time:</strong> 5–7 days (jet lag extends recovery)</p>
+    <p><strong>🏢 Work:</strong> 3–5 PTO days; possible job risk if frequent</p>
+    <p><strong>😤 SP Cost:</strong> +4 SP (jet lag + expense anxiety + homesickness)</p>
+  </div>
 </div>
 
 <h3>4d. Reunion Events</h3>
@@ -334,27 +473,61 @@
 <h3>4e. Breakup Risk</h3>
 <p>LDRs have a <strong>monthly breakup risk</strong> that increases with distance and duration:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Duration Apart</th><th>Same Country Risk</th><th>International Risk</th></tr></thead>
-<tbody>
-<tr><td>0–3 months</td><td>5% per month</td><td>8% per month</td></tr>
-<tr><td>3–6 months</td><td>10% per month</td><td>15% per month</td></tr>
-<tr><td>6–12 months</td><td>15% per month</td><td>25% per month</td></tr>
-<tr><td>12+ months</td><td>20% per month</td><td>35% per month</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/rs_ldr_decay_curve.svg" alt="LDR relationship health decay curves showing how same-country, coast-to-coast, and international relationships decline at different rates over months of separation" style="max-width:700px;">
+</div>
+
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">0–3 mo</span>
+    <span class="tn-label"><strong>Same Country:</strong> 5%/month · <strong>International:</strong> 8%/month</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">3–6 mo</span>
+    <span class="tn-label"><strong>Same Country:</strong> 10%/month · <strong>International:</strong> 15%/month</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">6–12 mo</span>
+    <span class="tn-label"><strong>Same Country:</strong> 15%/month · <strong>International:</strong> 25%/month</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">12+ mo</span>
+    <span class="tn-label"><strong>Same Country:</strong> 20%/month · <strong>International:</strong> 35%/month</span>
+  </div>
 </div>
 
 <p>Each month, roll <span class="dice">2d10</span>. If result ≤ Risk × 2, the GM triggers a <strong>Breakup Crisis</strong>. The character can attempt to <strong>save the relationship</strong> with a <span class="dice">2d10 + RES mod + INT (combined) vs TN 50</span> check. Success = the relationship survives this month. Failure = breakup. +8 SP from the breakup itself.</p>
+
+<div class="char-portrait">
+  <img src="img/char_priya.png" alt="Portrait of Priya">
+  <div class="char-info">
+    <div class="char-name">Priya</div>
+    <div class="char-subtitle">International LDR · 8 Months Apart from Tomás in São Paulo</div>
+    <div class="char-stats">
+      <span class="char-stat">EXP +2</span>
+      <span class="char-stat">RES +1</span>
+      <span class="char-stat">INT +1</span>
+      <span class="char-stat">PRC 0</span>
+      <span class="char-stat">SP: 21/30</span>
+    </div>
+  </div>
+</div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 4: Priya and Tomás — 8 Months Apart</div>
   <p><strong>Priya</strong> (EXP +2, RES +1, INT +1, PRC +0) lives in Seattle. <strong>Tomás</strong> lives in São Paulo. They've been apart for 8 months. International LDR, 6–12 month tier.</p>
   <p><strong>Week 34:</strong> Priya's communication check: <span class="dice">2d10 + 2 (EXP) = 25 + 2 = 27</span> vs TN 55 → <strong>Fail</strong>. She's been swamped with a project at work and barely texted. Tomás feels abandoned. +4 SP for Priya (from guilt) and +3 SP for Tomás (from neglect).</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_priya_video_call_night.png" alt="Priya at her desk at 2am on a video call with Tomás in São Paulo — the call is buffering, she looks exhausted, work emails pinging" style="max-width:100%;">
+  </div>
   <p><strong>Month 8 breakup risk:</strong> <span class="dice">2d10 = 18</span> vs Risk 25 × 2 = 50 → 18 ≤ 50 → <strong>Breakup Crisis triggered!</strong></p>
   <p>Priya attempts to save it: <span class="dice">2d10 + 1 (RES) + 1 (INT) = 21 + 2 = 23</span> vs TN 50 → <strong>Fail</strong>. The accumulated distance, missed calls, and emotional drift are too much. Tomás texts: "I think we need to stop. I'm meeting someone here. It's not fair to either of us."</p>
   <p>Priya gains <strong>+8 SP</strong> from the breakup. Combined with her existing 11 SP, she's at 19/30. She books a flight to see Tomás one last time ($1,400, 5 PTO days, +4 SP from travel) for a <strong>closure visit</strong>. The reunion event roll: <span class="dice">2d10 + 1 (RES) = 8 + 1 = 9</span> vs TN 30 → <strong>Fail</strong>. The closure conversation is painful but honest. +2 SP, but the honesty helps her start processing. Priya enters Month 9 with 21 SP — she needs therapy.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_priya_closure_flight.png" alt="Priya at an airport gate with boarding pass, looking at a photo on her phone — the expensive painful last trip for closure" style="max-width:100%;">
+  </div>
 </div>
 
 <hr>
@@ -367,34 +540,72 @@
 <h3>5a. Group Cohesion Score</h3>
 <p>Every friend group has a <strong>Cohesion Score</strong> from 0–20. This is a group-level stat that affects all members:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Cohesion</th><th>State</th><th>Effect on Members</th></tr></thead>
-<tbody>
-<tr><td>16–20</td><td>🟢 Tight-knit</td><td>−1 SP/week from belonging; +2 to social opportunities</td></tr>
-<tr><td>11–15</td><td>🟡 Stable</td><td>Baseline; no bonus or penalty</td></tr>
-<tr><td>6–10</td><td>🟠 Strained</td><td>+1 SP/week from group tension; social opportunities −1</td></tr>
-<tr><td>1–5</td><td>🔴 Fractured</td><td>+2 SP/week; members may leave; gossip and betrayal risk doubles</td></tr>
-<tr><td>0</td><td>💀 Dissolved</td><td>Group is effectively dead. Each member gains "Loss of Community" stressor (+1 SP/week indefinitely until new community found)</td></tr>
-</tbody>
-</table>
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    🟢 Tight-knit<br>
+    <small>16–20</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−1 SP/week from belonging; +2 social opportunities</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    🟡 Stable<br>
+    <small>11–15</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Baseline; no bonus or penalty</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    🟠 Strained<br>
+    <small>6–10</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 SP/week from tension; social opportunities −1</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🔴 Fractured<br>
+    <small>1–5</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+2 SP/week; members may leave; gossip/betrayal risk doubles</span>
+  </div>
+  <div class="condition-step" style="background:#2c3e50;">
+    💀 Dissolved<br>
+    <small>0</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">"Loss of Community" stressor (+1 SP/week indefinitely)</span>
+  </div>
 </div>
 
 <h3>5b. Friend Drama Events</h3>
 <p>When cohesion drops below 10, drama events become likely. Each month, roll <span class="dice">2d10</span> for each strained group:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>d10</th><th>d10</th><th>Drama Type</th><th>Effect</th></tr></thead>
-<tbody>
-<tr><td>1–2</td><td>—</td><td><strong>Gossip spiral</strong></td><td>Someone spreads a rumor about a member. Affected member: +3 SP. Group cohesion −2.</td></tr>
-<tr><td>3</td><td>—</td><td><strong>Betrayal</strong></td><td>Two members discover a secret the other was keeping. Both: +4 SP. Cohesion −3.</td></tr>
-<tr><td>4</td><td>—</td><td><strong>Falling out</strong></td><td>Two members stop talking. Each chooses a side. Cohesion −4. May split the group.</td></tr>
-<tr><td>5</td><td>—</td><td><strong>The "Third Wheel" problem</strong></td><td>New person joins group activities. Existing members feel displaced. +2 SP for those members. Cohesion −1.</td></tr>
-<tr><td>6–7</td><td>—</td><td><strong>Silent resentment</strong></td><td>Unspoken grievances accumulate. No immediate effect, but cohesion −1 and next drama event is +1 tier worse.</td></tr>
-<tr><td>8–10</td><td>—</td><td><strong>Nothing</strong></td><td>The group survives another month. Cohesion +1 (small healing).</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/sd_gossip_spread.svg" alt="How gossip spreads through a friend group network" style="max-width:500px;">
+</div>
+
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🗣️</span>
+    <h3>Gossip Spiral</h3>
+    <p><strong>d10: 1–2</strong><br>Someone spreads a rumor about a member. Affected: +3 SP. Group cohesion −2.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">🔪</span>
+    <h3>Betrayal</h3>
+    <p><strong>d10: 3</strong><br>Two members discover a secret. Both: +4 SP. Cohesion −3.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💥</span>
+    <h3>Falling Out</h3>
+    <p><strong>d10: 4</strong><br>Two members stop talking. Each chooses a side. Cohesion −4. May split the group.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🛴</span>
+    <h3>"Third Wheel" Problem</h3>
+    <p><strong>d10: 5</strong><br>New person joins. Existing members feel displaced. +2 SP. Cohesion −1.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #95a5a6;">
+    <span class="card-icon">🤐</span>
+    <h3>Silent Resentment</h3>
+    <p><strong>d10: 6–7</strong><br>Unspoken grievances accumulate. Cohesion −1. Next drama event is +1 tier worse.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">✅</span>
+    <h3>Nothing</h3>
+    <p><strong>d10: 8–10</strong><br>The group survives another month. Cohesion +1 (small healing).</p>
+  </div>
 </div>
 
 <h3>5c. Rekindling Old Friendships</h3>
@@ -408,6 +619,10 @@
 
 <h3>5d. Friend-to-Lover Transitions</h3>
 <p>When a friendship becomes romantic, the stakes are <strong>massive</strong> — you risk losing both the romantic AND the platonic relationship:</p>
+
+<div class="section-illustration">
+  <img src="img/sd_relationship_progression.svg" alt="The progression path from friendship to romantic relationship" style="max-width:500px;">
+</div>
 
 <ul>
 <li><strong>Confession:</strong> Roll <span class="dice">2d10 + PRC mod + INT mod vs TN 45</span>. Success = mutual feelings. The friendship transitions to a relationship. The friend group may react: roll <span class="dice">2d10 vs TN 40</span>. Success = friends are happy for you. Failure = friends are uncomfortable; group cohesion −2.</li>
@@ -424,31 +639,61 @@
 <h3>6a. Roommate Agreement Mechanics</h3>
 <p>A <strong>Roommate Agreement</strong> is a living document that covers chore division, guest policy, noise rules, and financial responsibilities. At move-in, each roommate establishes their <strong>Agreement Compliance Score</strong> (0–20). This decays over time as life gets messy.</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Compliance</th><th>State</th><th>Daily SP Effect</th></tr></thead>
-<tbody>
-<tr><td>16–20</td><td>🟢 Harmonious</td><td>No SP gain (roommates are chill)</td></tr>
-<tr><td>11–15</td><td>🟡 Manageable</td><td>+0.5 SP/day (rounded down; effectively +1 every other day)</td></tr>
-<tr><td>6–10</td><td>🟠 Tense</td><td>+1 SP/day</td></tr>
-<tr><td>1–5</td><td>🔴 Hostile</td><td>+2 SP/day; active conflict events possible</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/rs_roommate_compliance_timeline.svg" alt="Roommate compliance decay timeline showing how compliance drops from move-in harmony through conflicts to hostile eviction" style="max-width:740px;">
+</div>
+
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    🟢 Harmonious<br>
+    <small>16–20</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">No SP gain — roommates are chill</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    🟡 Manageable<br>
+    <small>11–15</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+0.5 SP/day (effectively +1 every other day)</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    🟠 Tense<br>
+    <small>6–10</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+1 SP/day</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🔴 Hostile<br>
+    <small>1–5</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">+2 SP/day; active conflict events possible</span>
+  </div>
 </div>
 
 <h3>6b. Common Conflict Sources</h3>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Conflict Type</th><th>Frequency</th><th>Resolution TN</th><th>Resolution Roll</th><th>Failure Effect</th></tr></thead>
-<tbody>
-<tr><td><strong>🧹 Chore division</strong></td><td>Weekly</td><td>35</td><td><span class="dice">2d10 + DXT mod</span></td><td>Compliance −2; +2 SP for the person doing more</td></tr>
-<tr><td><strong>👥 Guest policy</strong></td><td>Monthly</td><td>40</td><td><span class="dice">2d10 + INT mod</span></td><td>Compliance −3; +3 SP for the person whose boundary was crossed</td></tr>
-<tr><td><strong>🔊 Noise complaints</strong></td><td>Weekly</td><td>30</td><td><span class="dice">2d10 + RES mod</span></td><td>Compliance −1; +1 SP for the person affected</td></tr>
-<tr><td><strong>💰 Financial disputes</strong></td><td>Monthly (bill day)</td><td>45</td><td><span class="dice">2d10 + INT mod</span></td><td>Compliance −3; +3 SP; possible non-payment crisis</td></tr>
-<tr><td><strong>🧊 Fridge space wars</strong></td><td>Biweekly</td><td>25</td><td><span class="dice">2d10 + RES mod</span></td><td>Compliance −1; +1 SP (petty but real)</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🧹</span>
+    <h3>Chore Division</h3>
+    <p><strong>Frequency:</strong> Weekly<br><strong>Resolution:</strong> <span class="dice">2d10 + DXT mod vs TN 35</span><br><strong>Failure:</strong> Compliance −2; +2 SP for the person doing more</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">👥</span>
+    <h3>Guest Policy</h3>
+    <p><strong>Frequency:</strong> Monthly<br><strong>Resolution:</strong> <span class="dice">2d10 + INT mod vs TN 40</span><br><strong>Failure:</strong> Compliance −3; +3 SP for the person whose boundary was crossed</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🔊</span>
+    <h3>Noise Complaints</h3>
+    <p><strong>Frequency:</strong> Weekly<br><strong>Resolution:</strong> <span class="dice">2d10 + RES mod vs TN 30</span><br><strong>Failure:</strong> Compliance −1; +1 SP for the person affected</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💰</span>
+    <h3>Financial Disputes</h3>
+    <p><strong>Frequency:</strong> Monthly (bill day)<br><strong>Resolution:</strong> <span class="dice">2d10 + INT mod vs TN 45</span><br><strong>Failure:</strong> Compliance −3; +3 SP; possible non-payment crisis</p>
+  </div>
+  <div class="card" style="border-left:3px solid #95a5a6;">
+    <span class="card-icon">🧊</span>
+    <h3>Fridge Space Wars</h3>
+    <p><strong>Frequency:</strong> Biweekly<br><strong>Resolution:</strong> <span class="dice">2d10 + RES mod vs TN 25</span><br><strong>Failure:</strong> Compliance −1; +1 SP (petty but real)</p>
+  </div>
 </div>
 
 <h3>6c. Eviction of Difficult Roommates</h3>
@@ -480,9 +725,18 @@
     <li><strong>Guests:</strong> Morgan had a 3-day sleepover without asking. <span class="dice">2d10 + 1 (INT) = 22</span> vs TN 40 → <strong>Fail</strong>. Compliance drops to 2. Alex gains +3 SP.</li>
     <li><strong>Noise:</strong> Morgan's partner plays music late. <span class="dice">2d10 + 0 (RES) = 17</span> vs TN 30 → <strong>Fail</strong>. Compliance drops to 1. Alex gains +1 SP.</li>
   </ul>
+
+  <div class="section-illustration">
+    <img src="img/rs_alex_morgan_dishes.png" alt="Alex standing in a kitchen doorway looking at a sink full of dirty dishes while Morgan is on their phone in the background — accumulated frustration" style="max-width:100%;">
+  </div>
+
   <p>Alex is now gaining <strong>+2 SP/day</strong> from hostile living conditions. Combined with work stress (already at 10 SP), Alex is at <strong>12 SP</strong> and climbing fast.</p>
   <p><strong>The confrontation:</strong> Alex tries to negotiate Morgan out. Compliance is 1, so this is a <strong>hostile departure</strong>. <span class="dice">2d10 + 1 (INT) = 26 + 1 = 27</span> vs TN 60 → <strong>Fail</strong>. Morgan refuses to leave. "I have rights too, Alex."</p>
   <p>Alex involves the landlord. The process takes <strong>4 weeks</strong>. During those 4 weeks: +2 SP/day × 28 days = <strong>+56 SP</strong>... but SP caps at max (20 for Alex with RES 10). Alex is at <strong>0 SP</strong> — burnout territory. Alex calls in sick, starts seeing a therapist, and eventually Morgan agrees to leave after the landlord threatens legal action.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_alex_landlord_call.png" alt="Alex on the phone looking exhausted, kitchen table covered in lease documents and sticky notes, calendar with 4 weeks circled — the bureaucratic nightmare of hostile eviction" style="max-width:100%;">
+  </div>
   <p><strong>Aftermath:</strong> Alex spends $200 on a roommate-matching service and finds <strong>Jamie</strong>. Screening: <span class="dice">2d10 + 1 (PRC) = 28 + 1 = 29</span> vs TN 40 → <strong>Fail</strong>, but close. Jamie is <em>okay</em> — compliance starts at 10. Not great, not terrible. Alex learns that "perfect roommate" is a fantasy and adjusts expectations.</p>
 </div>
 
@@ -491,9 +745,16 @@
 <!-- ============================================================ -->
 <h2>7. Elder Care Decisions 👴👵</h2>
 
+<div class="section-illustration">
+  <img src="img/dg_caregiver_burnout.svg" alt="The caregiver burnout cycle showing how elder care drains stress points over time" style="max-width:500px;">
+</div>
+
 <p>When a parent or grandparent needs care, families face one of the most <strong>emotionally and financially devastating</strong> decision trees in adult life. Reality RPG models this as a <strong>multi-stage crisis event</strong> with cascading consequences.</p>
 
 <h3>7a. The Care Assessment</h3>
+<div class="section-illustration">
+  <img src="img/rs_elder_care_decision_tree.svg" alt="Elder care decision tree showing the multi-stage crisis from initial trigger through medical and financial assessment to nursing home vs home care decision and sibling negotiation" style="max-width:700px;">
+</div>
 <p>When an elder needs care, the family must first assess the situation. This is a <strong>family meeting</strong> event:</p>
 
 <ul>
@@ -504,19 +765,29 @@
 <h3>7b. Nursing Home vs Home Care</h3>
 <p>The central debate. Each option has costs:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Factor</th><th>Nursing Home</th><th>Home Care</th></tr></thead>
-<tbody>
-<tr><td><strong>💰 Monthly cost</strong></td><td>$6,000–12,000/month</td><td>$3,000–6,000/month (paid caregiver)</td></tr>
-<tr><td><strong>😤 SP impact on caregiver</strong></td><td>+2 SP for the "guilt of sending them away"</td><td>+4 SP/week from hands-on caregiving burden</td></tr>
-<tr><td><strong>⏰ Time commitment</strong></td><td>2–4 visits/month</td><td>Daily, 4–8 hours/day for the primary caregiver</td></tr>
-<tr><td><strong>📉 Quality of life (parent)</strong></td><td>Roll <span class="dice">2d10 vs TN 40</span> each quarter. Fail = parent is depressed/unhappy</td><td>Roll <span class="dice">2d10 vs TN 30</span>. Home is generally better, but caregiver burnout affects quality</td></tr>
-</tbody>
-</table>
+<div class="compare-grid">
+  <div class="compare-col" style="background:#fdedec;border-color:#e67e22;">
+    <h4>🏥 Nursing Home</h4>
+    <p><strong>💰 Monthly cost:</strong> $6,000–12,000/month</p>
+    <p><strong>😤 SP impact:</strong> +2 SP for the "guilt of sending them away"</p>
+    <p><strong>⏰ Time commitment:</strong> 2–4 visits/month</p>
+    <p><strong>📉 Quality of life:</strong> Roll <span class="dice">2d10 vs TN 40</span> each quarter. Fail = parent is depressed/unhappy</p>
+  </div>
+  <div class="compare-col" style="background:#eaf2f8;border-color:#2980b9;">
+    <h4>🏠 Home Care</h4>
+    <p><strong>💰 Monthly cost:</strong> $3,000–6,000/month (paid caregiver)</p>
+    <p><strong>😤 SP impact:</strong> +4 SP/week from hands-on caregiving burden</p>
+    <p><strong>⏰ Time commitment:</strong> Daily, 4–8 hours/day for the primary caregiver</p>
+    <p><strong>📉 Quality of life:</strong> Roll <span class="dice">2d10 vs TN 30</span>. Home is generally better, but caregiver burnout affects quality</p>
+  </div>
 </div>
 
 <h3>7c. Sibling Rivalry Over Caregiving</h3>
+
+<div class="section-illustration">
+  <img src="img/rs_sibling_care_meeting.png" alt="Three siblings at a dining table after visiting a parent in the hospital — the primary caregiver exhausted, the golden child concerned but disconnected, the absent sibling on a video call" style="max-width:100%;">
+</div>
+
 <p>When multiple siblings are involved, <strong>burden distribution</strong> becomes a source of deep conflict:</p>
 
 <ul>
@@ -546,16 +817,27 @@
 <h3>8a. Social Pressure from Family</h3>
 <p>Each family gathering where the topic comes up is a <strong>pressure event</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Event</th><th>Frequency</th><th>SP Gain</th><th>Defense Roll</th></tr></thead>
-<tbody>
-<tr><td>"When are you having kids?" at holidays</td><td>2–4×/year</td><td>+2 SP per occurrence</td><td><span class="dice">2d10 + RES mod vs TN 35</span> to deflect without conflict</td></tr>
-<tr><td>Parent guilt-tripping ("I wanted grandchildren")</td><td>1–2×/year</td><td>+4 SP</td><td><span class="dice">2d10 + RES mod vs TN 45</span> to hold boundary</td></tr>
-<tr><td>Sibling comparison ("Your sister just had a baby!")</td><td>Monthly during sibling's pregnancy/baby years</td><td>+1 SP</td><td><span class="dice">2d10 + RES mod vs TN 30</span> to not internalize</td></tr>
-<tr><td>Well-meaning friends suggesting "you'll change your mind"</td><td>Quarterly</td><td>+1 SP</td><td><span class="dice">2d10 + RES mod vs TN 25</span> to laugh it off</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🎄</span>
+    <h3>"When are you having kids?"</h3>
+    <p><strong>Frequency:</strong> 2–4×/year (holidays)<br><strong>SP Gain:</strong> +2 per occurrence<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs TN 35</span> to deflect</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">😤</span>
+    <h3>Parent Guilt-Tripping</h3>
+    <p><strong>Frequency:</strong> 1–2×/year<br><strong>SP Gain:</strong> +4<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs TN 45</span> to hold boundary</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">👶</span>
+    <h3>Sibling Comparison</h3>
+    <p><strong>Frequency:</strong> Monthly during sibling's pregnancy/baby years<br><strong>SP Gain:</strong> +1<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs TN 30</span> to not internalize</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">💬</span>
+    <h3>"You'll Change Your Mind"</h3>
+    <p><strong>Frequency:</strong> Quarterly (well-meaning friends)<br><strong>SP Gain:</strong> +1<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs TN 25</span> to laugh it off</p>
+  </div>
 </div>
 
 <p><strong>Defense roll success</strong> = the character handles the pressure gracefully and gains no SP. <strong>Failure</strong> = full SP gain applies. <strong>Critical failure</strong> (roll &lt; 5) = the character has an emotional reaction (crying, anger, shutting down) that makes the situation worse (+2 additional SP from embarrassment).</p>
@@ -563,16 +845,21 @@
 <h3>8b. DINK Lifestyle — Benefits and Drawbacks</h3>
 <p>Dual Income No Kids couples have significant <strong>financial advantages</strong> but face social isolation:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Aspect</th><th>Benefit</th><th>Drawback</th></tr></thead>
-<tbody>
-<tr><td><strong>💰 Finances</strong></td><td>$10,000–20,000/year more disposable income than parents</td><td>No future financial safety net from adult children</td></tr>
-<tr><td><strong>⏰ Time freedom</strong></td><td>Full control of schedule; spontaneous travel possible</td><td>Aging without family support network</td></tr>
-<tr><td><strong>🧠 Mental health</strong></td><td>Lower baseline stress (no child-related SP sources)</td><td>+1 SP/quarter from "am I making the right choice?" doubt</td></tr>
-<tr><td><strong>🏠 Housing</strong></td><td>Can choose smaller, cheaper, or more interesting housing</td><td>No multi-generational home as an asset</td></tr>
-</tbody>
-</table>
+<div class="compare-grid">
+  <div class="compare-col" style="background:#eafaf1;border-color:#27ae60;">
+    <h4>✅ Benefits</h4>
+    <p><strong>💰 Finances:</strong> $10,000–20,000/year more disposable income than parents</p>
+    <p><strong>⏰ Time freedom:</strong> Full control of schedule; spontaneous travel possible</p>
+    <p><strong>🧠 Mental health:</strong> Lower baseline stress (no child-related SP sources)</p>
+    <p><strong>🏠 Housing:</strong> Can choose smaller, cheaper, or more interesting housing</p>
+  </div>
+  <div class="compare-col" style="background:#fdedec;border-color:#e67e22;">
+    <h4>⚠️ Drawbacks</h4>
+    <p><strong>💰 Finances:</strong> No future financial safety net from adult children</p>
+    <p><strong>⏰ Time freedom:</strong> Aging without family support network</p>
+    <p><strong>🧠 Mental health:</strong> +1 SP/quarter from "am I making the right choice?" doubt</p>
+    <p><strong>🏠 Housing:</strong> No multi-generational home as an asset</p>
+  </div>
 </div>
 
 <h3>8c. Building Chosen Family</h3>
@@ -602,15 +889,22 @@
 <h3>9b. Joint vs Separate Finances</h3>
 <p>Couples must choose a <strong>financial structure</strong>:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Structure</th><th>Description</th><th>Mechanical Effect</th></tr></thead>
-<tbody>
-<tr><td><strong>Fully joint</strong></td><td>All income goes into shared accounts. No "my money" vs "your money."</td><td>Simpler budgeting (−5 to monthly finance TN); but if one partner overspends, both suffer. Trust is essential.</td></tr>
-<tr><td><strong>Fully separate</strong></td><td>Each partner manages their own finances. Household expenses split 50/50 or proportionally.</td><td>More autonomy; but higher monthly finance TN (+5) due to coordination overhead. Income disparity creates inequity.</td></tr>
-<tr><td><strong>Hybrid</strong></td><td>Joint account for shared expenses; individual accounts for personal spending.</td><td>Balanced. Base monthly finance TN. Most common in stable marriages.</td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🤝</span>
+    <h3>Fully Joint</h3>
+    <p>All income goes into shared accounts. No "my money" vs "your money."<br><br><strong>Mechanical:</strong> Simpler budgeting (−5 to monthly finance TN); but if one partner overspends, both suffer. Trust is essential.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🔀</span>
+    <h3>Fully Separate</h3>
+    <p>Each partner manages their own finances. Household expenses split 50/50 or proportionally.<br><br><strong>Mechanical:</strong> More autonomy; but higher monthly finance TN (+5) due to coordination overhead. Income disparity creates inequity.</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">⚖️</span>
+    <h3>Hybrid</h3>
+    <p>Joint account for shared expenses; individual accounts for personal spending.<br><br><strong>Mechanical:</strong> Balanced. Base monthly finance TN. Most common in stable marriages.</p>
+  </div>
 </div>
 
 <h3>9c. Marriage Tax Effects</h3>
@@ -634,14 +928,42 @@
 <h3>9e. The Business Side — Annual Marriage Review</h3>
 <p>Just as businesses do annual reviews, healthy marriages benefit from a <strong>Relationship Audit</strong> once per year:</p>
 
-<ol>
-<li><strong>Financial review:</strong> <span class="dice">2d10 + INT mod vs TN 35</span>. Are you on track for shared goals (house, retirement, travel)?</li>
-<li><strong>Emotional check-in:</strong> <span class="dice">2d10 + RES mod vs TN 30</span>. Are both partners feeling valued and heard?</li>
-<li><strong>Intimacy assessment:</strong> <span class="dice">2d10 + PRC mod vs TN 35</span>. Is the physical/emotional intimacy meeting both partners' needs?</li>
-<li><strong>Future alignment:</strong> <span class="dice">2d10 + INT mod vs TN 40</span>. Do you still want the same things (kids, location, lifestyle)?</li>
-</ol>
+<div class="section-illustration">
+  <img src="img/rs_marriage_audit_dashboard.svg" alt="Annual marriage audit dashboard showing four assessment dimensions — financial, emotional, intimacy, and future alignment — with pass/fail status and required conversation hours" style="max-width:680px;">
+</div>
+
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">TN 30</span>
+    <span class="tn-label"><strong>💭 Emotional Check-in</strong> — <span class="dice">2d10 + RES mod</span>. Are both partners feeling valued and heard?</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 35</span>
+    <span class="tn-label"><strong>💰 Financial Review</strong> — <span class="dice">2d10 + INT mod</span>. Are you on track for shared goals (house, retirement, travel)?</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 35</span>
+    <span class="tn-label"><strong>💞 Intimacy Assessment</strong> — <span class="dice">2d10 + PRC mod</span>. Is the physical/emotional intimacy meeting both partners' needs?</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">TN 40</span>
+    <span class="tn-label"><strong>🔮 Future Alignment</strong> — <span class="dice">2d10 + INT mod</span>. Do you still want the same things (kids, location, lifestyle)?</span>
+  </div>
+</div>
 
 <p>Each success = the marriage is healthy in that dimension (−1 SP for both partners from reassurance). Each failure = a <strong>discussion is required</strong> (2–4 hours; +1 SP from the discomfort of honest conversation, but prevents larger crises later).</p>
+
+<div class="char-portrait">
+  <img src="img/char_david.png" alt="Portrait of David">
+  <div class="char-info">
+    <div class="char-name">David &amp; Sarah</div>
+    <div class="char-subtitle">Marriage Audit · Year 7 · Hybrid Finances · Childfree</div>
+    <div class="char-stats">
+      <span class="char-stat">David: INT+2 RES+1 PRC 0</span>
+      <span class="char-stat">Sarah: INT+1 RES+2 PRC+1</span>
+    </div>
+  </div>
+</div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 6: David and Sarah's Marriage Audit, Year 7</div>
@@ -650,6 +972,10 @@
   <p><strong>Emotional check-in:</strong> Sarah rolls <span class="dice">2d10 + 2 = 27 + 2 = 29</span> vs TN 30 → <strong>Bare success</strong>. She feels valued. David rolls <span class="dice">2d10 + 1 = 11 + 1 = 12</span> vs TN 30 → <strong>Fail</strong>. He's been feeling emotionally neglected. This triggers a deeper conversation: David has been working overtime and hasn't been present. +2 SP for David (from confronting his own behavior), +1 SP for Sarah (from hearing David's pain).</p>
   <p><strong>Intimacy:</strong> David rolls <span class="dice">2d10 + 0 = 15</span> vs TN 35 → <strong>Fail</strong>. The physical intimacy has declined. Sarah rolls <span class="dice">2d10 + 1 = 23 + 1 = 24</span> vs TN 35 → <strong>Fail</strong>. Both agree it's been lacking. This isn't a crisis — it's data. They schedule a couples' counseling session (next month, $150/session, 1 hour).</p>
   <p><strong>Future alignment:</strong> Sarah rolls <span class="dice">2d10 + 1 = 28 + 1 = 29</span> vs TN 40 → <strong>Fail</strong>. She's been quietly wondering about adoption. David rolls <span class="dice">2d10 + 2 = 19 + 2 = 21</span> vs TN 40 → <strong>Fail</strong>. He's firmly childfree. This is the biggest finding of the audit. A 4-hour conversation ensues. +3 SP each. But the audit <strong>caught this before it became a crisis</strong> — they can address it now, together, with counseling support.</p>
+
+  <div class="section-illustration">
+    <img src="img/rs_david_sarah_audit.png" alt="David and Sarah on opposite ends of their couch during the marriage audit — Sarah looking vulnerable, David conflicted, the emotional distance mirroring the discovery" style="max-width:100%;">
+  </div>
   <p><em>Net result:</strong> The audit was painful (+7 SP for David, +6 SP for Sarah over the weekend), but it prevented a much larger crisis 2–3 years down the line when the resentment would have been unresolvable.</em></p>
 </div>
 
@@ -666,16 +992,27 @@
 <h3>The "Relationship Stack" Burden</h3>
 <p>Maintaining multiple relationship structures simultaneously creates a <strong>compounding SP burden</strong>. A character who is polyamorous, has a strained roommate, and is managing elder care is juggling three independent SP sources. The GM tracks each source separately:</p>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Number of Active Relationship Stressors</th><th>Weekly SP Multiplier</th><th>Example</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>×1.0 (baseline)</td><td>Just a roommate issue</td></tr>
-<tr><td>2</td><td>×1.5</td><td>Roommate + LDR communication failures</td></tr>
-<tr><td>3</td><td>×2.0</td><td>Roommate + LDR + family elder care disputes</td></tr>
-<tr><td>4+</td><td>×2.5</td><td>Everything at once — this is burnout territory</td></tr>
-</tbody>
-</table>
+<div class="section-illustration">
+  <img src="img/rs_relationship_stack.svg" alt="The relationship stack burden pyramid showing how multiple relationship stressors compound with escalating SP multipliers from x1.0 to x2.5" style="max-width:600px;">
+</div>
+
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">×1.0</span>
+    <span class="tn-label"><strong>1 Stressor</strong> — Baseline. Example: Just a roommate issue</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">×1.5</span>
+    <span class="tn-label"><strong>2 Stressors</strong> — Roommate + LDR communication failures</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">×2.0</span>
+    <span class="tn-label"><strong>3 Stressors</strong> — Roommate + LDR + family elder care disputes</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">×2.5</span>
+    <span class="tn-label"><strong>4+ Stressors</strong> — Everything at once — this is burnout territory</span>
+  </div>
 </div>
 
 <div class="callout rule">
@@ -685,6 +1022,14 @@
 
 <h3>Professional Help</h3>
 <p>Therapy, counseling, and support groups are <strong>mechanical resources</strong> available to any character:</p>
+
+<div class="section-illustration">
+  <img src="img/mh_therapy_ladder.svg" alt="The therapy ladder showing options from crisis intervention to ongoing professional support" style="max-width:500px;">
+</div>
+
+<div class="section-illustration">
+  <img src="img/rs_therapy_session.png" alt="A person in a therapist's office having a breakthrough moment — shoulders dropping, face softening, the SP reduction made visible as human relief" style="max-width:100%;">
+</div>
 
 <ul>
 <li><strong>Individual therapy:</strong> $100–250/session (or $0–50 with sliding scale/insurance). Each session: −2 SP. Requires 1 hour/week.</li>
@@ -731,21 +1076,52 @@
 
 <h2>Quick Reference: Relationship SP Summary 📋</h2>
 
-<div class="table-wrap">
-<table>
-<thead><tr><th>Source</th><th>SP Gain</th><th>Frequency</th><th>Defense Roll</th></tr></thead>
-<tbody>
-<tr><td>Poly jealousy trigger</td><td>+2 to +4 SP</td><td>Event-driven</td><td><span class="dice">2d10 + RES mod vs 40</span></td></tr>
-<tr><td>Open relationship rule breach</td><td>+1 to +8 SP</td><td>Event-driven</td><td><span class="dice">2d10 + RES mod vs rule TN</span></td></tr>
-<tr><td>Situationship ambiguity</td><td>+1 to +3 SP/day</td><td>Daily while undefined</td><td>None — ambiguity taxes automatically</td></tr>
-<tr><td>LDR communication failure</td><td>+2 to +4 SP</td><td>Weekly check</td><td><span class="dice">2d10 + EXP mod vs distance TN</span></td></tr>
-<tr><td>Friend group drama</td><td>+1 to +4 SP</td><td>Monthly (if strained)</td><td><span class="dice">2d10 vs drama table</span></td></tr>
-<tr><td>Roommate conflict</td><td>+1 to +3 SP</td><td>Weekly to monthly</td><td><span class="dice">2d10 + relevant stat vs conflict TN</span></td></tr>
-<tr><td>Elder care family meeting</td><td>+3 SP</td><td>Per meeting</td><td><span class="dice">2d10 + INT mod + RES mod vs 50</span></td></tr>
-<tr><td>Childfree social pressure</td><td>+1 to +4 SP</td><td>Per event</td><td><span class="dice">2d10 + RES mod vs pressure TN</span></td></tr>
-<tr><td>Marriage audit failure</td><td>+1 to +3 SP</td><td>Annual</td><td><span class="dice">2d10 + relevant stat vs audit TN</span></td></tr>
-</tbody>
-</table>
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">💜</span>
+    <h3>Poly Jealousy Trigger</h3>
+    <p><strong>SP:</strong> +2 to +4 · <strong>When:</strong> Event-driven<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs 40</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">🔓</span>
+    <h3>Open Rel Rule Breach</h3>
+    <p><strong>SP:</strong> +1 to +8 · <strong>When:</strong> Event-driven<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs rule TN</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🌫️</span>
+    <h3>Situationship Ambiguity</h3>
+    <p><strong>SP:</strong> +1 to +3/day · <strong>When:</strong> Daily while undefined<br><strong>Defense:</strong> None — ambiguity taxes automatically</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">✈️</span>
+    <h3>LDR Communication Failure</h3>
+    <p><strong>SP:</strong> +2 to +4 · <strong>When:</strong> Weekly check<br><strong>Defense:</strong> <span class="dice">2d10 + EXP mod vs distance TN</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">👥</span>
+    <h3>Friend Group Drama</h3>
+    <p><strong>SP:</strong> +1 to +4 · <strong>When:</strong> Monthly (if strained)<br><strong>Defense:</strong> <span class="dice">2d10 vs drama table</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #95a5a6;">
+    <span class="card-icon">🏠</span>
+    <h3>Roommate Conflict</h3>
+    <p><strong>SP:</strong> +1 to +3 · <strong>When:</strong> Weekly to monthly<br><strong>Defense:</strong> <span class="dice">2d10 + relevant stat vs conflict TN</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">👴</span>
+    <h3>Elder Care Family Meeting</h3>
+    <p><strong>SP:</strong> +3 · <strong>When:</strong> Per meeting<br><strong>Defense:</strong> <span class="dice">2d10 + INT mod + RES mod vs 50</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🌿</span>
+    <h3>Childfree Social Pressure</h3>
+    <p><strong>SP:</strong> +1 to +4 · <strong>When:</strong> Per event<br><strong>Defense:</strong> <span class="dice">2d10 + RES mod vs pressure TN</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #d35400;">
+    <span class="card-icon">💍</span>
+    <h3>Marriage Audit Failure</h3>
+    <p><strong>SP:</strong> +1 to +3 · <strong>When:</strong> Annual<br><strong>Defense:</strong> <span class="dice">2d10 + relevant stat vs audit TN</span></p>
+  </div>
 </div>
 
 </div>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 790 350" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="790" height="350" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="370" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Roommate Compliance Decay Timeline</text>
+  <text x="370" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">From move-in harmony to hostile eviction — how compliance drops month by month</text>
+
+  <!-- Timeline bar -->
+  <line x1="60" y1="100" x2="700" y2="100" stroke="#dcdcdc" stroke-width="3"/>
+
+  <!-- Compliance gauge above timeline -->
+  <rect x="60" y="60" width="640" height="30" rx="4" fill="#e8e8e8"/>
+
+  <!-- Month markers and events -->
+  <!-- Month 0: Move-in, compliance 18/20 (green) -->
+  <circle cx="80" cy="100" r="8" fill="#27ae60" stroke="white" stroke-width="2"/>
+  <text x="80" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#27ae60">18</text>
+  <text x="80" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#2c3e50">Month 0</text>
+  <text x="80" y="132" text-anchor="middle" font-size="8" fill="#7f8c8d">Move-in</text>
+
+  <!-- Month 2: First chore conflict, compliance drops to 14 -->
+  <circle cx="200" cy="100" r="8" fill="#2ecc71" stroke="white" stroke-width="2"/>
+  <text x="200" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#2ecc71">14</text>
+  <text x="200" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#2c3e50">Month 2</text>
+  <text x="200" y="132" text-anchor="middle" font-size="8" fill="#7f8c8d">Manageable</text>
+
+  <!-- Event: Chore conflict -->
+  <rect x="165" y="145" width="70" height="28" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="200" y="158" text-anchor="middle" font-size="8" font-weight="700" fill="#e67e22">🧹 Chores</text>
+  <text x="200" y="169" text-anchor="middle" font-size="7" fill="#2c3e50">−2 compliance</text>
+
+  <!-- Month 4: Guest issue, compliance 10 -->
+  <circle cx="320" cy="100" r="8" fill="#f39c12" stroke="white" stroke-width="2"/>
+  <text x="320" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#f39c12">10</text>
+  <text x="320" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#2c3e50">Month 4</text>
+  <text x="320" y="132" text-anchor="middle" font-size="8" fill="#7f8c8d">Tense</text>
+
+  <!-- Event: Guest policy -->
+  <rect x="285" y="145" width="70" height="28" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="320" y="158" text-anchor="middle" font-size="8" font-weight="700" fill="#e67e22">👥 Guests</text>
+  <text x="320" y="169" text-anchor="middle" font-size="7" fill="#2c3e50">−3 compliance</text>
+
+  <!-- Month 6: Noise + bills, compliance 5 -->
+  <circle cx="440" cy="100" r="8" fill="#e67e22" stroke="white" stroke-width="2"/>
+  <text x="440" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#e67e22">5</text>
+  <text x="440" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#2c3e50">Month 6</text>
+  <text x="440" y="132" text-anchor="middle" font-size="8" fill="#7f8c8d">Hostile</text>
+
+  <!-- Events: Noise + Financial -->
+  <rect x="405" y="145" width="70" height="28" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="440" y="158" text-anchor="middle" font-size="8" font-weight="700" fill="#e74c3c">🔊💰 Noise+Bills</text>
+  <text x="440" y="169" text-anchor="middle" font-size="7" fill="#2c3e50">−5 compliance</text>
+
+  <!-- Month 8: Multiple conflicts, compliance 1 -->
+  <circle cx="560" cy="100" r="8" fill="#e74c3c" stroke="white" stroke-width="2"/>
+  <text x="560" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#e74c3c">1</text>
+  <text x="560" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#2c3e50">Month 8</text>
+  <text x="560" y="132" text-anchor="middle" font-size="8" fill="#e74c3c" font-weight="700">HOSTILE</text>
+
+  <!-- Event: Confrontation fails -->
+  <rect x="525" y="145" width="70" height="28" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+  <text x="560" y="158" text-anchor="middle" font-size="8" font-weight="700" fill="#e74c3c">💥 Confront</text>
+  <text x="560" y="169" text-anchor="middle" font-size="7" fill="#e74c3c">fails · TN 60</text>
+
+  <!-- Eviction process — the long tail -->
+  <circle cx="680" cy="100" r="8" fill="#c0392b" stroke="white" stroke-width="2"/>
+  <text x="680" y="75" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">0</text>
+  <text x="680" y="120" text-anchor="middle" font-size="9" font-weight="700" fill="#2c3e50">Month 12</text>
+  <text x="680" y="132" text-anchor="middle" font-size="8" fill="#7f8c8d">Resolved</text>
+
+  <!-- Eviction event -->
+  <rect x="645" y="145" width="70" height="28" rx="4" fill="#fdedec" stroke="#c0392b" stroke-width="2"/>
+  <text x="680" y="158" text-anchor="middle" font-size="8" font-weight="700" fill="#c0392b">🏚️ Eviction</text>
+  <text x="680" y="169" text-anchor="middle" font-size="7" fill="#c0392b">4 wks · +2 SP/day</text>
+
+  <!-- SP Impact zone -->
+  <rect x="60" y="195" width="640" height="145" rx="8" fill="white" stroke="#dcdcdc" stroke-width="1"/>
+  <text x="380" y="215" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">SP Impact Over Time</text>
+
+  <!-- SP bars per phase -->
+  <!-- Harmonious phase (months 0-2): 0 SP/day -->
+  <rect x="80" y="230" width="100" height="25" rx="3" fill="#d5f5e3"/>
+  <text x="130" y="247" text-anchor="middle" font-size="9" fill="#1a7a42" font-weight="600">0 SP/day</text>
+
+  <!-- Manageable phase (months 2-4): +0.5 SP/day -->
+  <rect x="190" y="230" width="100" height="25" rx="3" fill="#d4efdf"/>
+  <text x="240" y="247" text-anchor="middle" font-size="9" fill="#1a7a42" font-weight="600">+0.5 SP/day</text>
+
+  <!-- Tense phase (months 4-6): +1 SP/day -->
+  <rect x="300" y="230" width="100" height="25" rx="3" fill="#fef9e7"/>
+  <text x="350" y="247" text-anchor="middle" font-size="9" fill="#f39c12" font-weight="600">+1 SP/day</text>
+
+  <!-- Hostile phase (months 6-8): +2 SP/day -->
+  <rect x="410" y="230" width="100" height="25" rx="3" fill="#fdebd0"/>
+  <text x="460" y="247" text-anchor="middle" font-size="9" fill="#e67e22" font-weight="600">+2 SP/day</text>
+
+  <!-- Eviction phase (months 8-12): +2 SP/day for 28 days = 56 SP → capped at max -->
+  <rect x="520" y="230" width="160" height="25" rx="3" fill="#fadbd8"/>
+  <text x="600" y="247" text-anchor="middle" font-size="9" fill="#922b21" font-weight="600">+2 SP/day × 28d = BURNOUT</text>
+
+  <!-- Bottom annotation -->
+  <rect x="80" y="270" width="600" height="55" rx="6" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
+  <text x="380" y="288" text-anchor="middle" font-size="10" fill="#e67e22" font-weight="600">The Lesson: Roommate conflicts are mundane but relentless</text>
+  <text x="380" y="303" text-anchor="middle" font-size="10" fill="#2c3e50">Each conflict is small (+1-3 SP), but the daily baseline keeps climbing.</text>
+  <text x="380" y="318" text-anchor="middle" font-size="10" fill="#2c3e50">By the time compliance hits "Hostile," the character is already in burnout territory.</text>
+
+  <!-- Compliance threshold lines -->
+  <line x1="60" y1="95" x2="700" y2="95" stroke="#27ae60" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+  <text x="705" y="99" font-size="8" fill="#27ae60">16: Harmonious</text>
+
+  <line x1="60" y1="105" x2="700" y2="105" stroke="#f39c12" stroke-width="1" stroke-dasharray="4,4" opacity="0.4"/>
+  <text x="705" y="109" font-size="8" fill="#f39c12">6: Tense threshold</text>
+</svg>

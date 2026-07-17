@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 400" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="400" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">LDR Relationship Health Decay</text>
+  <text x="350" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">Relationship health (0–20) declines over months of separation — distance accelerates the curve</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="65" width="540" height="230" rx="4" fill="white" stroke="#dcdcdc" stroke-width="1"/>
+
+  <!-- Y axis — Health 0-20 -->
+  <g font-size="9" fill="#7f8c8d" text-anchor="end">
+    <text x="75" y="88">20</text>
+    <text x="75" y="123">16</text>
+    <text x="75" y="158">12</text>
+    <text x="75" y="193">8</text>
+    <text x="75" y="228">4</text>
+    <text x="75" y="263">0</text>
+  </g>
+
+  <!-- X axis — Months -->
+  <g font-size="9" fill="#7f8c8d" text-anchor="middle">
+    <text x="110" y="285">M0</text>
+    <text x="190" y="285">M1</text>
+    <text x="270" y="285">M2</text>
+    <text x="350" y="285">M3</text>
+    <text x="430" y="285">M4</text>
+    <text x="510" y="285">M5</text>
+    <text x="590" y="285">M6</text>
+  </g>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="86" x2="620" y2="86" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="80" y1="121" x2="620" y2="121" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="80" y1="156" x2="620" y2="156" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="80" y1="191" x2="620" y2="191" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="80" y1="226" x2="620" y2="226" stroke="#e8e8e8" stroke-width="1"/>
+
+  <!-- Danger zone below 8 -->
+  <rect x="80" y="191" width="540" height="75" fill="#fdedec" opacity="0.3"/>
+  <text x="625" y="210" font-size="8" fill="#e74c3c" font-weight="700">DANGER</text>
+
+  <!-- Curve 1: Same country (slowest decay) — green -->
+  <!-- Start 20, end ~12 at M6 -->
+  <polyline points="110,86 190,95 270,108 350,121 430,134 510,147 590,156"
+    fill="none" stroke="#27ae60" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Curve 2: Coast-to-coast (medium decay) — orange -->
+  <!-- Start 20, end ~7 at M6 -->
+  <polyline points="110,86 190,100 270,118 350,138 430,160 510,180 590,195"
+    fill="none" stroke="#f39c12" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Curve 3: International (fastest decay) — red -->
+  <!-- Start 20, end ~3 at M6 -->
+  <polyline points="110,86 190,108 270,132 350,158 430,185 510,210 590,228"
+    fill="none" stroke="#e74c3c" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Intervention markers — visits/therapy create upticks -->
+  <!-- Visit at M3 on same-country curve -->
+  <circle cx="350" cy="121" r="5" fill="white" stroke="#27ae60" stroke-width="2"/>
+  <text x="350" y="112" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="700">✈️ Visit</text>
+
+  <!-- Visit at M2 on coast-to-coast -->
+  <circle cx="270" cy="118" r="5" fill="white" stroke="#f39c12" stroke-width="2"/>
+  <text x="270" y="109" text-anchor="middle" font-size="8" fill="#f39c12" font-weight="700">✈️ Visit</text>
+
+  <!-- Therapy at M4 on international -->
+  <circle cx="430" cy="185" r="5" fill="white" stroke="#e74c3c" stroke-width="2"/>
+  <text x="430" y="176" text-anchor="middle" font-size="8" fill="#2980b9" font-weight="700">🧠 Therapy</text>
+
+  <!-- Breakup risk annotations -->
+  <rect x="460" y="295" width="200" height="50" rx="6" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
+  <text x="560" y="313" text-anchor="middle" font-size="9" font-weight="700" fill="#e67e22">Monthly Breakup Risk</text>
+  <text x="560" y="328" text-anchor="middle" font-size="9" fill="#2c3e50">Same country: 5→20% · Intl: 8→35%</text>
+  <text x="560" y="340" text-anchor="middle" font-size="9" fill="#2c3e50">Increases with each month apart</text>
+
+  <!-- Legend -->
+  <g transform="translate(100, 310)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#27ae60" stroke-width="3"/>
+    <text x="25" y="4" font-size="9" fill="#2c3e50">Same country</text>
+
+    <line x1="110" y1="0" x2="130" y2="0" stroke="#f39c12" stroke-width="3"/>
+    <text x="135" y="4" font-size="9" fill="#2c3e50">Coast-to-coast</text>
+
+    <line x1="230" y1="0" x2="250" y2="0" stroke="#e74c3c" stroke-width="3"/>
+    <text x="255" y="4" font-size="9" fill="#2c3e50">International</text>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="100" y="355" width="500" height="40" rx="6" fill="#eaf2f8" stroke="#aed6f1" stroke-width="1"/>
+  <text x="350" y="372" text-anchor="middle" font-size="10" fill="#2980b9">Interventions (visits, therapy, successful communication checks) create temporary upticks</text>
+  <text x="350" y="388" text-anchor="middle" font-size="10" fill="#2980b9">but cannot stop the underlying decay curve without a reunion plan.</text>
+</svg>

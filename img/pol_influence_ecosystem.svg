@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 530" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+    <!-- Arrow markers -->
+    <marker id="arrowIn" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2980b9"/>
+    </marker>
+    <marker id="arrowOut" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#e67e22"/>
+    </marker>
+    <marker id="arrowInGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#27ae60"/>
+    </marker>
+    <marker id="arrowOutGreen" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#e67e22"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#f1c40f"/>
+    </marker>
+    <marker id="arrowDark" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
+    </marker>
+    <!-- IP gradient -->
+    <linearGradient id="ipGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3498db"/>
+      <stop offset="100%" stop-color="#2471a3"/>
+    </linearGradient>
+    <!-- MP gradient -->
+    <linearGradient id="mpGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#1e8449"/>
+    </linearGradient>
+    <!-- Gold gradient -->
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f1c40f"/>
+      <stop offset="100%" stop-color="#e67e22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="530" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Political Influence Ecosystem</text>
+  <text x="350" y="44" text-anchor="middle" font-size="10.5" fill="#5d6d7e">Two currencies: Influence Points (individual) and Momentum Points (cause-level)</text>
+
+  <!-- ════════════════════════════════════════════════
+       LEFT SIDE: INFLUENCE POINTS TRACK
+       ════════════════════════════════════════════════ -->
+
+  <!-- IP central reservoir -->
+  <g filter="url(#shadow)">
+    <ellipse cx="200" cy="190" rx="85" ry="55" fill="url(#ipGrad)"/>
+    <text x="200" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Influence</text>
+    <text x="200" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Points</text>
+    <text x="200" y="212" text-anchor="middle" font-size="9" fill="#d6eaf8">Individual currency</text>
+  </g>
+
+  <!-- EARNING sources (left side, arrows pointing IN to reservoir) -->
+  <text x="70" y="115" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">▶ EARNING IP</text>
+
+  <!-- Writing letters -->
+  <text x="75" y="135" text-anchor="end" font-size="9.5" fill="#2c3e50">Writing letters</text>
+  <text x="75" y="148" text-anchor="end" font-size="10" font-weight="700" fill="#2980b9">1 IP</text>
+  <line x1="95" y1="140" x2="115" y2="175" stroke="#2980b9" stroke-width="2" marker-end="url(#arrowIn)"/>
+
+  <!-- Email -->
+  <text x="75" y="175" text-anchor="end" font-size="9.5" fill="#2c3e50">Email campaigns</text>
+  <text x="75" y="188" text-anchor="end" font-size="10" font-weight="700" fill="#2980b9">0.5 IP</text>
+  <line x1="85" y1="182" x2="110" y2="188" stroke="#2980b9" stroke-width="1.5" marker-end="url(#arrowIn)"/>
+
+  <!-- Meetings -->
+  <text x="75" y="220" text-anchor="end" font-size="9.5" fill="#2c3e50">Face meetings</text>
+  <text x="75" y="233" text-anchor="end" font-size="10" font-weight="700" fill="#2980b9">varies</text>
+  <line x1="100" y1="227" x2="115" y2="208" stroke="#2980b9" stroke-width="2.5" marker-end="url(#arrowIn)"/>
+
+  <!-- Organizing -->
+  <text x="75" y="260" text-anchor="end" font-size="9.5" fill="#2c3e50">Organizing events</text>
+  <text x="75" y="273" text-anchor="end" font-size="10" font-weight="700" fill="#2980b9">varies</text>
+  <line x1="95" y1="267" x2="120" y2="228" stroke="#2980b9" stroke-width="2.5" marker-end="url(#arrowIn)"/>
+
+  <!-- SPENDING targets (right side of IP, arrows pointing OUT) -->
+  <text x="340" y="120" text-anchor="middle" font-size="11" font-weight="700" fill="#e67e22">SPENDING ◀</text>
+
+  <!-- Meeting requests -->
+  <text x="355" y="145" text-anchor="middle" font-size="9.5" fill="#2c3e50">Meeting requests</text>
+  <text x="355" y="158" text-anchor="middle" font-size="10" font-weight="700" fill="#e67e22">5+ IP</text>
+  <line x1="290" y1="178" x2="320" y2="148" stroke="#e67e22" stroke-width="2" marker-end="url(#arrowOut)"/>
+
+  <!-- Policy shaping -->
+  <text x="360" y="195" text-anchor="middle" font-size="9.5" fill="#2c3e50">Policy shaping</text>
+  <text x="360" y="208" text-anchor="middle" font-size="10" font-weight="700" fill="#e67e22">10+ IP</text>
+  <line x1="285" y1="195" x2="325" y2="195" stroke="#e67e22" stroke-width="2.5" marker-end="url(#arrowOut)"/>
+
+  <!-- Influence levels (ascending steps beside IP reservoir) -->
+  <text x="200" y="270" text-anchor="middle" font-size="10" font-weight="700" fill="#2980b9">Influence Levels</text>
+
+  <!-- Step 1: Symbolic -->
+  <rect x="115" y="280" width="50" height="20" rx="4" fill="#d6eaf8" stroke="#85c1e9" stroke-width="1"/>
+  <text x="140" y="294" text-anchor="middle" font-size="9" fill="#2980b9">Symbolic</text>
+
+  <!-- Step 2: Contact -->
+  <rect x="170" y="280" width="50" height="20" rx="4" fill="#d4e6f1" stroke="#5dade2" stroke-width="1"/>
+  <text x="195" y="294" text-anchor="middle" font-size="9" fill="#2980b9">Contact</text>
+
+  <!-- Step 3: Relationship -->
+  <rect x="225" y="280" width="60" height="20" rx="4" fill="#aed6f1" stroke="#3498db" stroke-width="1"/>
+  <text x="255" y="294" text-anchor="middle" font-size="9" fill="#2471a3">Relationship</text>
+
+  <!-- Step 4: Access -->
+  <rect x="145" y="305" width="55" height="20" rx="4" fill="#85c1e9" stroke="#2980b9" stroke-width="1"/>
+  <text x="172" y="319" text-anchor="middle" font-size="9" font-weight="600" fill="#1a5276">Access</text>
+
+  <!-- Step 5: Insider -->
+  <rect x="205" y="305" width="55" height="20" rx="4" fill="#5dade2" stroke="#1a5276" stroke-width="1.5"/>
+  <text x="232" y="319" text-anchor="middle" font-size="9" font-weight="700" fill="#1a5276">Insider</text>
+
+  <!-- ════════════════════════════════════════════════
+       RIGHT SIDE: MOMENTUM POINTS TRACK
+       ════════════════════════════════════════════════ -->
+
+  <!-- MP central reservoir -->
+  <g filter="url(#shadow)">
+    <ellipse cx="530" cy="190" rx="85" ry="55" fill="url(#mpGrad)"/>
+    <text x="530" y="180" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Momentum</text>
+    <text x="530" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Points</text>
+    <text x="530" y="212" text-anchor="middle" font-size="9" fill="#d5f5e3">Cause-level currency</text>
+  </g>
+
+  <!-- EARNING sources (right side, arrows pointing IN) -->
+  <text x="640" y="115" text-anchor="middle" font-size="11" font-weight="700" fill="#27ae60">EARNING MP ◀</text>
+
+  <!-- Small protest -->
+  <text x="615" y="135" text-anchor="start" font-size="9.5" fill="#2c3e50">Small protest</text>
+  <text x="615" y="148" text-anchor="start" font-size="10" font-weight="700" fill="#27ae60">1 MP</text>
+  <line x1="605" y1="140" x2="590" y2="175" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowInGreen)"/>
+
+  <!-- Medium protest -->
+  <text x="615" y="175" text-anchor="start" font-size="9.5" fill="#2c3e50">Medium protest</text>
+  <text x="615" y="188" text-anchor="start" font-size="10" font-weight="700" fill="#27ae60">2 MP</text>
+  <line x1="605" y1="182" x2="592" y2="188" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowInGreen)"/>
+
+  <!-- Large protest -->
+  <text x="615" y="220" text-anchor="start" font-size="9.5" fill="#2c3e50">Large protest</text>
+  <text x="615" y="233" text-anchor="start" font-size="10" font-weight="700" fill="#1e8449">3–5 MP</text>
+  <line x1="605" y1="227" x2="588" y2="208" stroke="#27ae60" stroke-width="3" marker-end="url(#arrowInGreen)"/>
+
+  <!-- Riot -->
+  <text x="615" y="260" text-anchor="start" font-size="9.5" fill="#2c3e50">Riot / unrest</text>
+  <text x="615" y="273" text-anchor="start" font-size="9" fill="#c0392b">1 MP (neg. publicity)</text>
+  <line x1="605" y1="267" x2="588" y2="228" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrowInGreen)"/>
+
+  <!-- MP Thresholds -->
+  <text x="530" y="270" text-anchor="middle" font-size="10" font-weight="700" fill="#1e8449">Momentum Thresholds</text>
+
+  <!-- Threshold 1: 10+ MP -->
+  <g filter="url(#shadow)">
+    <rect x="440" y="280" width="180" height="24" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="530" y="297" text-anchor="middle" font-size="10" fill="#1e8449"><tspan font-family="Consolas, monospace" fill="#e67e22">10+ MP</tspan><tspan fill="#1e8449"> → Policy Review</tspan></text>
+  </g>
+
+  <!-- Threshold 2: 20+ MP -->
+  <g filter="url(#shadow)">
+    <rect x="440" y="310" width="180" height="24" rx="6" fill="#abebc6" stroke="#1e8449" stroke-width="1.5"/>
+    <text x="530" y="327" text-anchor="middle" font-size="10" font-weight="600" fill="#1e8449"><tspan font-family="Consolas, monospace" fill="#e67e22">20+ MP</tspan><tspan fill="#1e8449"> → Policy change</tspan></text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       CONVERGENCE (bottom)
+       ════════════════════════════════════════════════ -->
+
+  <!-- Arrows from both currencies down to convergence -->
+  <line x1="200" y1="330" x2="350" y2="390" stroke="#2980b9" stroke-width="2.5" marker-end="url(#arrowDark)"/>
+  <line x1="530" y1="340" x2="350" y2="390" stroke="#27ae60" stroke-width="2.5" marker-end="url(#arrowDark)"/>
+
+  <!-- Convergence zone label -->
+  <text x="350" y="378" text-anchor="middle" font-size="10" font-weight="700" fill="#f1c40f">CONVERGENCE</text>
+
+  <!-- Convergence diamond -->
+  <g filter="url(#shadow)">
+    <polygon points="350,395 420,430 350,465 280,430" fill="url(#goldGrad)" stroke="#d4ac0d" stroke-width="2"/>
+    <text x="350" y="425" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Actual Policy</text>
+    <text x="350" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Change</text>
+  </g>
+
+  <!-- Convergence details -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="475" width="260" height="45" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5"/>
+    <text x="350" y="493" text-anchor="middle" font-size="10" font-weight="600" fill="#7e5109">Both currencies needed for lasting impact</text>
+    <text x="350" y="508" text-anchor="middle" font-size="9" fill="#5d6d7e">IP opens doors · MP creates pressure · Together = change</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="9" fill="#5d6d7e">
+    <rect x="30" y="490" width="8" height="8" rx="2" fill="#2980b9"/>
+    <text x="42" y="498">Influence Points (blue)</text>
+    <rect x="180" y="490" width="8" height="8" rx="2" fill="#27ae60"/>
+    <text x="192" y="498">Momentum Points (green)</text>
+    <rect x="350" y="490" width="8" height="8" rx="2" fill="#f1c40f"/>
+    <text x="362" y="498">Convergence (gold)</text>
+    <rect x="500" y="490" width="8" height="8" rx="2" fill="#e67e22"/>
+    <text x="512" y="498">Spending targets</text>
+  </g>
+
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 850 520" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowD" markerWidth="10" markerHeight="8" refX="5" refY="8" orient="auto">
+      <path d="M0,0 L5,8 L10,0 Z" fill="#2c3e50"/>
+    </marker>
+    <linearGradient id="funnelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2980b9"/>
+      <stop offset="100%" stop-color="#8e44ad"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="520" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="425" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">The Job Hunt Funnel</text>
+  <text x="425" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">Each stage filters out applicants · Ghosting can happen at any point (40% chance)</text>
+
+  <!-- FUNNEL SHAPE: 6 stages narrowing down -->
+  <!-- Stage 1: ATS Screening (widest) -->
+  <g filter="url(#shadow)">
+    <polygon points="100,65 750,65 720,115 130,115" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+    <text x="425" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">🤖 Stage 1: ATS Screening</text>
+    <text x="425" y="105" text-anchor="middle" font-size="10" fill="#5d6d7e">2d10 + INT + keyword bonus vs TN 8 · Instant reject on fail</text>
+  </g>
+
+  <!-- Ghosting branch 1 -->
+  <path d="M750,90 C770,90 780,80 790,80" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <rect x="788" y="62" width="52" height="36" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="814" y="78" text-anchor="middle" font-size="8" fill="#e74c3c" font-weight="700">40%</text>
+  <text x="814" y="90" text-anchor="middle" font-size="7" fill="#e74c3c">ghost</text>
+
+  <!-- Arrow down -->
+  <line x1="425" y1="115" x2="425" y2="135" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowD)"/>
+  <text x="440" y="128" font-size="8" fill="#7f8c8d">pass</text>
+
+  <!-- Stage 2: Human Review -->
+  <g filter="url(#shadow)">
+    <polygon points="130,135 720,135 695,185 155,185" fill="#d4efdf" stroke="#2ecc71" stroke-width="2"/>
+    <text x="425" y="158" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">👤 Stage 2: Human Review</text>
+    <text x="425" y="175" text-anchor="middle" font-size="10" fill="#5d6d7e">2d10 + INT + EXP mod vs TN 10 · +1 SP on fail · 1–2 weeks waiting</text>
+  </g>
+
+  <line x1="425" y1="185" x2="425" y2="205" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowD)"/>
+
+  <!-- Stage 3: Phone Screen -->
+  <g filter="url(#shadow)">
+    <polygon points="155,205 695,205 670,255 180,255" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="425" y="228" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">📞 Stage 3: Phone Screen</text>
+    <text x="425" y="245" text-anchor="middle" font-size="10" fill="#5d6d7e">2d10 + PRC + INT mod vs TN 10 · +2 SP on fail · 2–3 weeks total</text>
+  </g>
+
+  <line x1="425" y1="255" x2="425" y2="275" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowD)"/>
+
+  <!-- Stage 4: Video Interview -->
+  <g filter="url(#shadow)">
+    <polygon points="180,275 670,275 650,325 200,325" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+    <text x="425" y="298" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">🎥 Stage 4: Video Interview</text>
+    <text x="425" y="315" text-anchor="middle" font-size="10" fill="#5d6d7e">2d10 + PRC + EXP mod vs TN 11 · +2 SP on fail · 3–4 weeks total</text>
+  </g>
+
+  <line x1="425" y1="325" x2="425" y2="345" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowD)"/>
+
+  <!-- Stage 5: Case Study / Reference -->
+  <g filter="url(#shadow)">
+    <polygon points="200,345 650,345 630,395 220,395" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+    <text x="425" y="368" text-anchor="middle" font-size="13" font-weight="700" fill="#2c3e50">📋 Stage 5: Case Study / Reference</text>
+    <text x="425" y="385" text-anchor="middle" font-size="10" fill="#5d6d7e">TN 9–12 · +3 SP on fail (sunk time cost) · 4–6 weeks total</text>
+  </g>
+
+  <line x1="425" y1="395" x2="425" y2="415" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowD)"/>
+
+  <!-- Stage 6: Offer (narrowest) -->
+  <g filter="url(#shadow)">
+    <polygon points="220,415 630,415 600,465 250,465" fill="#d5f5e3" stroke="#27ae60" stroke-width="3"/>
+    <text x="425" y="438" text-anchor="middle" font-size="13" font-weight="700" fill="#27ae60">💰 Stage 6: OFFER</text>
+    <text x="425" y="455" text-anchor="middle" font-size="10" fill="#5d6d7e">2d10 + INT + PRC mod vs TN 10 · Salary negotiation · 5–8 weeks total</text>
+  </g>
+
+  <!-- GHOSTING ZONE: right side annotation -->
+  <rect x="68" y="65" width="26" height="400" rx="6" fill="#fdedec" opacity="0.3"/>
+  <text x="81" y="260" text-anchor="middle" font-size="10" fill="#e74c3c" font-weight="700" transform="rotate(-90, 81, 260)">⚠️ GHOSTING ZONE</text>
+  <text x="60" y="260" text-anchor="middle" font-size="8" fill="#e74c3c" transform="rotate(-90, 60, 260)">40% at each stage</text>
+
+  <!-- TIME axis: left side -->
+  <g font-size="9" fill="#7f8c8d">
+    <text x="115" y="88">0</text>
+    <text x="115" y="158">1–2 wks</text>
+    <text x="115" y="228">2–3 wks</text>
+    <text x="115" y="298">3–4 wks</text>
+    <text x="115" y="368">4–6 wks</text>
+    <text x="115" y="448">5–8 wks</text>
+  </g>
+
+  <!-- TN values: right side -->
+  <g font-size="9" font-weight="700">
+    <text x="710" y="88" fill="#27ae60" text-anchor="end">TN 8</text>
+    <text x="685" y="158" fill="#2ecc71" text-anchor="end">TN 10</text>
+    <text x="665" y="228" fill="#f39c12" text-anchor="end">TN 10</text>
+    <text x="645" y="298" fill="#e67e22" text-anchor="end">TN 11</text>
+    <text x="625" y="368" fill="#e74c3c" text-anchor="end">TN 9–12</text>
+    <text x="595" y="441" fill="#27ae60" text-anchor="end">TN 10</text>
+  </g>
+
+  <!-- Hopeless Applicant debuff note -->
+  <rect x="180" y="485" width="490" height="28" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="425" y="502" text-anchor="middle" font-size="10" fill="#2c3e50">⚠️ Ghosted 3+ times → "Hopeless Applicant" debuff: −1 to all future job hunt checks until positive response</text>
+</svg>

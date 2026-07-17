@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380">
+  <rect width="820" height="380" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="410" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#2c3e50">📊 Campaign Difficulty Matrix</text>
+
+  <!-- Subtitle -->
+  <text x="410" y="46" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#5d6d7e">TN difficulty across all four campaigns — green = easy, red = near impossible</text>
+
+  <!-- Column headers (y=65, x = 140 + colIndex*56 + 26) -->
+  <g font-family="system-ui,sans-serif" font-size="9" fill="#5d6d7e" text-anchor="middle">
+    <text x="166" y="65">S1</text>
+    <text x="222" y="65">S2</text>
+    <text x="278" y="65">S3</text>
+    <text x="334" y="65">S4</text>
+    <text x="390" y="65">S5</text>
+    <text x="446" y="65">S6</text>
+    <text x="502" y="65">S7</text>
+    <text x="558" y="65">S8</text>
+    <text x="614" y="65">S9</text>
+    <text x="670" y="65">S10</text>
+    <text x="726" y="65">S11</text>
+    <text x="782" y="65">S12</text>
+  </g>
+
+  <!-- Row labels (x=15, y = rowY + 21) -->
+  <g font-family="system-ui,sans-serif" font-size="10" fill="#2c3e50" text-anchor="end">
+    <text x="15" y="106">First Year</text>
+    <text x="15" y="152">Midlife Reset</text>
+    <text x="15" y="198">Immigrant Dream</text>
+    <text x="15" y="244">The Activist</text>
+  </g>
+
+  <!-- Separator line -->
+  <line x1="0" y1="74" x2="820" y2="74" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- ===== ROW 1: First Year (y=85) ===== -->
+  <g font-family="system-ui,sans-serif" font-size="8" fill="#2c3e50" text-anchor="middle">
+    <!-- S1 TN=13 orange -->
+    <rect x="140" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="166" y="106">13</text>
+    <!-- S2 TN=13 orange -->
+    <rect x="196" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="222" y="106">13</text>
+    <!-- S3 TN=11 yellow -->
+    <rect x="252" y="85" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="278" y="106">11</text>
+    <!-- S4 TN=14 orange -->
+    <rect x="308" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="334" y="106">14</text>
+    <!-- S5 TN=40 purple -->
+    <rect x="364" y="85" width="52" height="32" rx="4" fill="#e8daef"/>
+    <text x="390" y="106">40</text>
+    <!-- S6 TN=13 orange -->
+    <rect x="420" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="446" y="106">13</text>
+    <!-- S7 TN=14 orange -->
+    <rect x="476" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="502" y="106">14</text>
+    <!-- S8 TN=14 orange -->
+    <rect x="532" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="558" y="106">14</text>
+    <!-- S9 TN=14 orange -->
+    <rect x="588" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="614" y="106">14</text>
+    <!-- S10 TN=13 orange -->
+    <rect x="644" y="85" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="670" y="106">13</text>
+    <!-- S11 TN=11 yellow -->
+    <rect x="700" y="85" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="726" y="106">11</text>
+    <!-- S12 TN=15 red -->
+    <rect x="756" y="85" width="52" height="32" rx="4" fill="#fadbd8"/>
+    <text x="782" y="106">15</text>
+  </g>
+
+  <!-- ===== ROW 2: Midlife Reset (y=131) ===== -->
+  <g font-family="system-ui,sans-serif" font-size="8" fill="#2c3e50" text-anchor="middle">
+    <!-- S1 TN=15 red -->
+    <rect x="140" y="131" width="52" height="32" rx="4" fill="#fadbd8"/>
+    <text x="166" y="152">15</text>
+    <!-- S2 TN=13 orange -->
+    <rect x="196" y="131" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="222" y="152">13</text>
+    <!-- S3 TN=13 orange -->
+    <rect x="252" y="131" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="278" y="152">13</text>
+    <!-- S4 TN=13 orange -->
+    <rect x="308" y="131" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="334" y="152">13</text>
+    <!-- S5 TN=14 orange -->
+    <rect x="364" y="131" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="390" y="152">14</text>
+    <!-- S6 TN=11 yellow -->
+    <rect x="420" y="131" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="446" y="152">11</text>
+    <!-- S7 TN=14 orange -->
+    <rect x="476" y="131" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="502" y="152">14</text>
+    <!-- S8 TN=12 yellow -->
+    <rect x="532" y="131" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="558" y="152">12</text>
+    <!-- S9 TN=11 yellow -->
+    <rect x="588" y="131" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="614" y="152">11</text>
+    <!-- S10 TN=12 yellow -->
+    <rect x="644" y="131" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="670" y="152">12</text>
+    <!-- S11 empty -->
+    <rect x="700" y="131" width="52" height="32" rx="4" fill="#f7f7f7"/>
+    <text x="726" y="152">—</text>
+    <!-- S12 empty -->
+    <rect x="756" y="131" width="52" height="32" rx="4" fill="#f7f7f7"/>
+    <text x="782" y="152">—</text>
+  </g>
+
+  <!-- ===== ROW 3: Immigrant Dream (y=177) ===== -->
+  <g font-family="system-ui,sans-serif" font-size="8" fill="#2c3e50" text-anchor="middle">
+    <!-- S1 TN=14 orange -->
+    <rect x="140" y="177" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="166" y="198">14</text>
+    <!-- S2 TN=13 orange -->
+    <rect x="196" y="177" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="222" y="198">13</text>
+    <!-- S3 TN=13 orange -->
+    <rect x="252" y="177" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="278" y="198">13</text>
+    <!-- S4 TN=13 orange -->
+    <rect x="308" y="177" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="334" y="198">13</text>
+    <!-- S5 TN=13 orange -->
+    <rect x="364" y="177" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="390" y="198">13</text>
+    <!-- S6 TN=14 orange -->
+    <rect x="420" y="177" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="446" y="198">14</text>
+    <!-- S7 TN=11 yellow -->
+    <rect x="476" y="177" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="502" y="198">11</text>
+    <!-- S8 TN=10 green -->
+    <rect x="532" y="177" width="52" height="32" rx="4" fill="#d5f5e3"/>
+    <text x="558" y="198">10</text>
+    <!-- S9 TN=15 red -->
+    <rect x="588" y="177" width="52" height="32" rx="4" fill="#fadbd8"/>
+    <text x="614" y="198">15</text>
+    <!-- S10 TN=12 yellow -->
+    <rect x="644" y="177" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="670" y="198">12</text>
+    <!-- S11 TN=12 yellow -->
+    <rect x="700" y="177" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="726" y="198">12</text>
+    <!-- S12 TN=12 yellow -->
+    <rect x="756" y="177" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="782" y="198">12</text>
+  </g>
+
+  <!-- ===== ROW 4: The Activist (y=223) ===== -->
+  <g font-family="system-ui,sans-serif" font-size="8" fill="#2c3e50" text-anchor="middle">
+    <!-- S1 TN=13 orange -->
+    <rect x="140" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="166" y="244">13</text>
+    <!-- S2 TN=13 orange -->
+    <rect x="196" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="222" y="244">13</text>
+    <!-- S3 TN=13 orange -->
+    <rect x="252" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="278" y="244">13</text>
+    <!-- S4 TN=14 orange -->
+    <rect x="308" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="334" y="244">14</text>
+    <!-- S5 TN=14 orange -->
+    <rect x="364" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="390" y="244">14</text>
+    <!-- S6 TN=15 red -->
+    <rect x="420" y="223" width="52" height="32" rx="4" fill="#fadbd8"/>
+    <text x="446" y="244">15</text>
+    <!-- S7 TN=12 yellow -->
+    <rect x="476" y="223" width="52" height="32" rx="4" fill="#fef9e7"/>
+    <text x="502" y="244">12</text>
+    <!-- S8 TN=14 orange -->
+    <rect x="532" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="558" y="244">14</text>
+    <!-- S9 TN=15 red -->
+    <rect x="588" y="223" width="52" height="32" rx="4" fill="#fadbd8"/>
+    <text x="614" y="244">15</text>
+    <!-- S10 TN=13 orange -->
+    <rect x="644" y="223" width="52" height="32" rx="4" fill="#fdebd0"/>
+    <text x="670" y="244">13</text>
+    <!-- S11 empty -->
+    <rect x="700" y="223" width="52" height="32" rx="4" fill="#f7f7f7"/>
+    <text x="726" y="244">—</text>
+    <!-- S12 empty -->
+    <rect x="756" y="223" width="52" height="32" rx="4" fill="#f7f7f7"/>
+    <text x="782" y="244">—</text>
+  </g>
+
+  <!-- ===== LEGEND (y=280) ===== -->
+  <text x="15" y="286" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#2c3e50">Legend:</text>
+
+  <!-- Green: TN 9-10 -->
+  <rect x="80" y="276" width="16" height="16" rx="3" fill="#d5f5e3"/>
+  <text x="102" y="289" font-family="system-ui,sans-serif" font-size="9" fill="#2c3e50">TN 9-10 (Easy)</text>
+
+  <!-- Yellow: TN 11-12 -->
+  <rect x="200" y="276" width="16" height="16" rx="3" fill="#fef9e7"/>
+  <text x="222" y="289" font-family="system-ui,sans-serif" font-size="9" fill="#2c3e50">TN 11-12 (Moderate)</text>
+
+  <!-- Orange: TN 13-14 -->
+  <rect x="340" y="276" width="16" height="16" rx="3" fill="#fdebd0"/>
+  <text x="362" y="289" font-family="system-ui,sans-serif" font-size="9" fill="#2c3e50">TN 13-14 (Hard)</text>
+
+  <!-- Red: TN 15 -->
+  <rect x="450" y="276" width="16" height="16" rx="3" fill="#fadbd8"/>
+  <text x="472" y="289" font-family="system-ui,sans-serif" font-size="9" fill="#2c3e50">TN 15 (Very Hard)</text>
+
+  <!-- Purple: TN 40 -->
+  <rect x="570" y="276" width="16" height="16" rx="3" fill="#e8daef"/>
+  <text x="592" y="289" font-family="system-ui,sans-serif" font-size="9" fill="#2c3e50">TN 40 (Special)</text>
+
+  <!-- Second legend row: empty -->
+  <rect x="700" y="276" width="16" height="16" rx="3" fill="#f7f7f7" stroke="#d0d0d0" stroke-width="1"/>
+  <text x="722" y="289" font-family="system-ui,sans-serif" font-size="9" fill="#2c3e50">N/A</text>
+
+  <!-- Bottom note -->
+  <text x="410" y="315" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#95a5a6">Each cell shows the highest TN (Target Number) encountered in that session. Higher = harder checks.</text>
+  <text x="410" y="332" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#95a5a6">Camps 2 &amp; 4 conclude at Session 10; Camps 1 &amp; 3 run the full 12 sessions.</text>
+
+</svg>

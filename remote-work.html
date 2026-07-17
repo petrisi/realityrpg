@@ -49,18 +49,33 @@
 <h3>Home Office Setup</h3>
 <p>Before a character can work from home effectively, they need equipment. Setup costs vary based on the quality of the workspace and the demands of the job.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Setup Tier</th><th>Cost Range</th><th>Includes</th><th>Work Bonus</th><th>Comfort</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🪑 Kitchen Table</td><td>$0–$100</td><td>Existing laptop, chair, natural light</td><td>−2 to all work checks</td><td>High distraction</td></tr>
-    <tr><td>📦 Basic Setup</td><td>$500–$1,000</td><td>Standing desk, ergonomic chair, dual monitor</td><td>None</td><td>Acceptable</td></tr>
-    <tr><td>🖥️ Professional</td><td>$1,000–$2,000</td><td>Dedicated office, noise-cancelling headset, ring light, quality webcam</td><td>+1 to video call checks</td><td>Good</td></tr>
-    <tr><td>🏢 Executive</td><td>$2,000–$3,000+</td><td>Soundproofed room, professional lighting, multiple monitors, backup internet, ergonomic everything</td><td>+2 to all work checks</td><td>Excellent</td></tr>
-  </tbody>
-</table>
+<!-- P1: Home Office Setup → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🪑</span>
+    <h3>Kitchen Table</h3>
+    <p><strong>Cost:</strong> $0–$100<br><strong>Includes:</strong> Existing laptop, chair, natural light<br><strong>Work Bonus:</strong> −2 to all work checks<br><strong>Comfort:</strong> High distraction</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">📦</span>
+    <h3>Basic Setup</h3>
+    <p><strong>Cost:</strong> $500–$1,000<br><strong>Includes:</strong> Standing desk, ergonomic chair, dual monitor<br><strong>Work Bonus:</strong> None<br><strong>Comfort:</strong> Acceptable</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🖥️</span>
+    <h3>Professional</h3>
+    <p><strong>Cost:</strong> $1,000–$2,000<br><strong>Includes:</strong> Dedicated office, noise-cancelling headset, ring light, quality webcam<br><strong>Work Bonus:</strong> +1 to video call checks<br><strong>Comfort:</strong> Good</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏢</span>
+    <h3>Executive</h3>
+    <p><strong>Cost:</strong> $2,000–$3,000+<br><strong>Includes:</strong> Soundproofed room, professional lighting, multiple monitors, backup internet, ergonomic everything<br><strong>Work Bonus:</strong> +2 to all work checks<br><strong>Comfort:</strong> Excellent</p>
+  </div>
+</div>
+
+<!-- P3: Kitchen Table / couch work illustration (existing asset) -->
+<div class="section-illustration">
+  <img src="img/we_remote_work_couch.png" alt="A person working from a couch at home — illustrating the Kitchen Table tier of home office setup">
 </div>
 
 <div class="callout tip">
@@ -71,40 +86,62 @@
 <h3>Daily Remote Work Mechanics</h3>
 <p>Every remote workday, the player rolls for potential distractions and stress accumulators:</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Event</th><th>Check</th><th>Effect</th><th>Frequency</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>📹 Video call fatigue</td><td>None (automatic)</td><td>+1 SP per video call over 30 minutes</td><td>Per call</td></tr>
-    <tr><td>👶 Kid/pet distraction</td><td><span class="dice">2d10 + RES mod vs TN 10</span></td><td>Fail: lose 30 min productivity, +2 SP</td><td>Roll once/day if applicable</td></tr>
-    <tr><td>🧹 Chore temptation</td><td><span class="dice">2d10 + PRC mod vs TN 9</span></td><td>Fail: "just one load of laundry" → 1 hour lost</td><td>Roll once/day</td></tr>
-    <tr><td>📱 Social media drift</td><td><span class="dice">2d10 + RES mod vs TN 11</span></td><td>Fail: 45 min lost to scrolling, +1 SP</td><td>Roll twice/day</td></tr>
-    <tr><td>🍕 Poor nutrition</td><td><span class="dice">2d10 + INT mod vs TN 8</span></td><td>Fail: eat poorly, −1 VIG until next meal</td><td>Roll once/day</td></tr>
-    <tr><td>💻 Tech issues</td><td>GM discretion</td><td>Wi-Fi drops, camera fails, audio glitches; +2 SP if during important meeting</td><td>Roll d6: on 1, tech issue occurs</td></tr>
-  </tbody>
-</table>
+<!-- P1: Daily Remote Work Events → stress-bar-rows (was 6-row table) -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📹 Video call fatigue</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:30%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+1 SP/call &gt;30min</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">👶 Kid/pet distraction</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP; 2d10+RES vs TN 10</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🧹 Chore temptation</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#82e0aa;width:35%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">1 hr lost; 2d10+PRC vs TN 9</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📱 Social media drift</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+1 SP; 2d10+RES vs TN 11</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🍕 Poor nutrition</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:65%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−1 VIG; 2d10+INT vs TN 8</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💻 Tech issues</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:80%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP; roll d6: on 1, issue</span>
 </div>
 
 <h3>Productivity Tracking & Manager Checks</h3>
 <p>Remote workers are often subject to productivity monitoring. Managers may request status updates, track time logs, or use monitoring software.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Manager Check Type</th><th>Player Check</th><th>TN</th><th>Pass</th><th>Fail</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>📊 Weekly status update</td><td><span class="dice">2d10 + EXP mod</span></td><td>9</td><td>Manager satisfied</td><td>+1 SP, micro-management increases</td></tr>
-    <tr><td>⏰ Time log audit</td><td><span class="dice">2d10 + PRC mod</span></td><td>10</td><td>Logs look legitimate</td><td>Questioning, −1 to next check</td></tr>
-    <tr><td>📈 Performance review</td><td><span class="dice">2d10 + EXP mod + INT mod</span></td><td>11</td><td>Good rating</td><td>PIP (Performance Improvement Plan) risk</td></tr>
-    <tr><td>👁️ Monitoring software flag</td><td><span class="dice">2d10 + DXT mod</span></td><td>10</td><td>Activity looks normal</td><td>Warning email, +2 SP</td></tr>
-  </tbody>
-</table>
+<!-- P1: Manager Checks → tn-ladder (was 4-row table) -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">TN 9</span>
+    <span class="tn-label"><strong>📊 Weekly status update</strong> — <span class="dice">2d10 + EXP mod</span>. Pass: Manager satisfied. Fail: +1 SP, micro-management increases.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 10</span>
+    <span class="tn-label"><strong>⏰ Time log audit</strong> — <span class="dice">2d10 + PRC mod</span>. Pass: Logs look legitimate. Fail: Questioning, −1 to next check.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">TN 10</span>
+    <span class="tn-label"><strong>👁️ Monitoring software flag</strong> — <span class="dice">2d10 + DXT mod</span>. Pass: Activity looks normal. Fail: Warning email, +2 SP.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">TN 11</span>
+    <span class="tn-label"><strong>📈 Performance review</strong> — <span class="dice">2d10 + EXP mod + INT mod</span>. Pass: Good rating. Fail: PIP (Performance Improvement Plan) risk.</span>
+  </div>
 </div>
 
-<h3>Blurring Boundaries & "Always On" Culture</h3>
+<h3>Blurring Boundaries &amp; "Always On" Culture</h3>
 <p>Remote work erases the physical separation between work and home. Without deliberate boundaries, work creeps into personal time.</p>
 
 <div class="callout warning">
@@ -112,31 +149,80 @@
   <p>Each week of remote work without deliberate boundary-setting, the character gains <strong>+1 cumulative SP</strong> that does not resolve during normal rest. Characters must make a <span class="dice">2d10 + RES mod vs TN 10</span> check each Sunday evening to "clock off" mentally. Failure means they check email or worry about work during personal time, adding +2 SP.</p>
 </div>
 
+<!-- P3: Boundary erosion evening scene -->
+<div class="section-illustration">
+  <img src="img/rw_boundary_erosion_evening.png" alt="A person on their couch at 9 PM trying to watch TV with family but eyes keep drifting to work email notifications on their phone — physical presence but mental absence">
+</div>
+
+<!-- P2: Boundary erosion timeline SVG -->
+<div class="section-illustration">
+  <img src="img/rw_boundary_erosion_timeline.svg" alt="Timeline chart showing two curves of cumulative stress over weeks of remote work — one with boundary-setting (flat) and one without (rising past max SP)">
+</div>
+
 <h3>Proximity Bias — The Invisible Ceiling</h3>
 <p>Research consistently shows that remote workers are promoted <strong>less frequently</strong> than in-office workers. Managers unconsciously favor people they see face-to-face.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Factor</th><th>Remote Penalty</th><th>Mitigation</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>📈 Promotion consideration</td><td>−2 to promotion checks</td><td>+1 if character volunteers for in-office days</td></tr>
-    <tr><td>🎯 Visibility with leadership</td><td>−1 to all networking checks</td><td>+2 if character initiates 1:1 video calls with manager</td></tr>
-    <tr><td>💡 Idea attribution</td><td>−2: ideas more easily stolen</td><td>+1 if character documents ideas in writing</td></tr>
-    <tr><td>🏆 Award recognition</td><td>−1 to being selected</td><td>None — this is systemic</td></tr>
-  </tbody>
-</table>
+<!-- P1: Proximity Bias → compare-grid (was 4-row table) -->
+<div class="compare-grid">
+  <div class="compare-col" style="background:#fdedec;border-color:#e74c3c;">
+    <h4>📉 Remote Penalties</h4>
+    <p><strong>📈 Promotion consideration:</strong> −2 to promotion checks</p>
+    <p><strong>🎯 Visibility with leadership:</strong> −1 to all networking checks</p>
+    <p><strong>💡 Idea attribution:</strong> −2 (ideas more easily stolen)</p>
+    <p><strong>🏆 Award recognition:</strong> −1 to being selected</p>
+  </div>
+  <div class="compare-col" style="background:#eafaf1;border-color:#27ae60;">
+    <h4>📈 Mitigations</h4>
+    <p><strong>📈 Promotion:</strong> +1 if character volunteers for in-office days</p>
+    <p><strong>🎯 Visibility:</strong> +2 if character initiates 1:1 video calls with manager</p>
+    <p><strong>💡 Idea attribution:</strong> +1 if character documents ideas in writing</p>
+    <p><strong>🏆 Award recognition:</strong> None — this is systemic</p>
+  </div>
+</div>
+
+<!-- P3: Proximity bias scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_proximity_bias_meeting.png" alt="Conference room with in-person team laughing while one remote worker joins via video on a wall screen, unable to participate fully">
 </div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 1: Maya's Remote Workday</div>
-  <p><strong>Maya</strong> is a mid-level software developer working remotely. She has a Basic Setup ($750 invested), RES 12 (+1 mod), PRC 10 (+0 mod), and EXP 14 (+2 mod). Her max SP is <span class="dice">20 + (1 × 5) = 25</span>.</p>
+
+<!-- P1: Maya char-portrait -->
+<div class="char-portrait">
+  <img src="img/char_maya.png" alt="Portrait of Maya">
+  <div class="char-info">
+    <div class="char-name">Maya</div>
+    <div class="char-subtitle">Mid-level software developer · Remote</div>
+    <div class="char-stats">
+      <span class="char-stat">RES 12 (+1)</span>
+      <span class="char-stat">PRC 10 (+0)</span>
+      <span class="char-stat">EXP 14 (+2)</span>
+      <span class="char-stat">SP: 25 max</span>
+    </div>
+  </div>
+</div>
+
+<!-- P3: Maya's home office scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_maya_home_office.png" alt="Maya at her basic home office setup — standing desk, dual monitors, code on one screen, video call on the other, laundry basket visible in the corner">
+</div>
+
   <p><strong>Morning:</strong> Maya has a stand-up meeting (30 min video call) → <strong>+1 SP</strong>. She rolls for chore temptation: <span class="dice">2d10 + 0 vs TN 9</span>. She rolls 7+6=13 → <strong>success</strong>, resists the laundry.</p>
   <p><strong>Midday:</strong> A 1-hour video design review → <strong>+2 SP</strong> (two 30-min blocks). Social media drift check: <span class="dice">2d10 + 1 vs TN 11</span>. She rolls 3+4=7+1=8 → <strong>failure</strong> → loses 45 minutes scrolling Reddit, <strong>+1 SP</strong>.</p>
   <p><strong>Afternoon:</strong> Her manager sends an unexpected audit request. <span class="dice">2d10 + 2 vs TN 10</span>. She rolls 5+8=13+2=15 → <strong>success</strong>, looks productive. Another video call (45 min) → <strong>+2 SP</strong>.</p>
   <p><strong>Evening boundary check:</strong> <span class="dice">2d10 + 1 vs TN 10</span>. She rolls 9+2=11+1=12 → <strong>success</strong>. She closes her laptop and watches a movie.</p>
   <p><strong>Total SP gained today: 6 SP</strong>. If she started at 12/25, she's now at 18/25 — getting close to dangerous territory. The GM may start applying stress effects if she crosses 25.</p>
+</div>
+
+<!-- P3: Video call disaster scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_video_call_disaster.png" alt="Split-screen view of a video call gone wrong — frozen face, kid walking in, pet on keyboard, exhausted person staring at screen">
+</div>
+
+<!-- P2: Daily SP tracker SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_daily_sp_tracker.svg" alt="SP budget diagram showing a daily SP pool with incoming stress from video calls, distractions, and tech issues, and outgoing recovery from rest">
 </div>
 
 <!-- ============================================================
@@ -148,18 +234,34 @@
 <p>Hybrid work splits a character's week between in-office and remote days. This creates unique challenges: commuting on some days, being present for office politics on others, and trying to coordinate schedules when half the team is always remote.</p>
 
 <h3>Hybrid Schedule Types</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Schedule</th><th>Office Days</th><th>Commuting Cost/Week</th><th>SP Impact</th><th>Social Bonus</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>2-3 Split</td><td>2 days in-office</td><td>Moderate</td><td>+1 SP on office days (commute)</td><td>+1 to networking checks on office days</td></tr>
-    <tr><td>3-2 Split</td><td>3 days in-office</td><td>High</td><td>+1 SP on office days; +1 cumulative weekly</td><td>+2 to networking checks on office days</td></tr>
-    <tr><td>Anchor Day</td><td>1 mandatory team day</td><td>Low</td><td>+1 SP on anchor day only</td><td>+1 to networking on anchor day; −1 other days</td></tr>
-    <tr><td>Flex Hybrid</td><td>Self-chosen</td><td>Variable</td><td>+1 SP per office day; −1 SP per remote day</td><td>±0 depending on choice</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Hybrid Schedule Types → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">📅</span>
+    <h3>2-3 Split</h3>
+    <p><strong>Office:</strong> 2 days in-office<br><strong>Commute Cost:</strong> Moderate<br><strong>SP Impact:</strong> +1 SP on office days<br><strong>Social:</strong> +1 to networking on office days</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">📅</span>
+    <h3>3-2 Split</h3>
+    <p><strong>Office:</strong> 3 days in-office<br><strong>Commute Cost:</strong> High<br><strong>SP Impact:</strong> +1 SP on office days; +1 cumulative weekly<br><strong>Social:</strong> +2 to networking on office days</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">📅</span>
+    <h3>Anchor Day</h3>
+    <p><strong>Office:</strong> 1 mandatory team day<br><strong>Commute Cost:</strong> Low<br><strong>SP Impact:</strong> +1 SP on anchor day only<br><strong>Social:</strong> +1 on anchor day; −1 other days</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">📅</span>
+    <h3>Flex Hybrid</h3>
+    <p><strong>Office:</strong> Self-chosen<br><strong>Commute Cost:</strong> Variable<br><strong>SP Impact:</strong> +1 SP per office day; −1 SP per remote day<br><strong>Social:</strong> ±0 depending on choice</p>
+  </div>
+</div>
+
+<!-- P2: Hybrid weekly split SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_hybrid_weekly_split.svg" alt="Weekly calendar grid showing 4 hybrid schedule types with office days and remote days color-coded, SP impact badges per day">
 </div>
 
 <h3>Hybrid-Specific Challenges</h3>
@@ -170,24 +272,56 @@
   <p>When a hybrid worker is remote, they are <strong>less visible than full-remote workers</strong> (who are expected to be remote) and <strong>less present than full-office workers</strong> (who are always there). Each week the character spends more remote days than office days, they gain a cumulative <strong>−1 to all promotion and visibility checks</strong> (stacks to a maximum of −3).</p>
 </div>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Hybrid Challenge</th><th>Check</th><th>Effect</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🚗 Commute on office days</td><td><span class="dice">2d10 + VIG mod vs TN 8</span></td><td>Fail: commute exhaustion, +2 SP, −1 to first work check that day</td></tr>
-    <tr><td>📅 Scheduling conflict</td><td>GM triggers</td><td>Meeting scheduled for a remote day; awkward video participation, +1 SP</td></tr>
-    <tr><td>👥 Missing informal info</td><td><span class="dice">2d10 + INT mod vs TN 10</span></td><td>Fail: missed important hallway conversation, −1 to next work check</td></tr>
-    <tr><td>🧠 Context switching</td><td><span class="dice">2d10 + RES mod vs TN 9</span></td><td>Fail: switching between office/remote modes costs focus, +1 SP</td></tr>
-    <tr><td>🏠 WFH setup degradation</td><td>Monthly check</td><td>Home office gets messier over time; fail = −1 to all work checks until cleaned</td></tr>
-  </tbody>
-</table>
+<!-- P1: Hybrid Challenges → stress-bar-rows (was 5-row table) -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🚗 Commute exhaustion</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:65%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP; 2d10+VIG vs TN 8</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📅 Scheduling conflict</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+1 SP; GM triggers</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">👥 Missing informal info</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−1 to next check; 2d10+INT vs TN 10</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🧠 Context switching</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#82e0aa;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+1 SP; 2d10+RES vs TN 9</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🏠 WFH setup degradation</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:80%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−1 to all checks; monthly check</span>
 </div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 2: James's Hybrid Woe</div>
-  <p><strong>James</strong> works a 3-2 hybrid schedule at a marketing firm. He lives 45 minutes from the office. RES 11 (+0 mod), VIG 13 (+1 mod), INT 14 (+2 mod). Max SP: <span class="dice">20 + (0 × 5) = 20</span>.</p>
+
+<!-- P1: James char-portrait -->
+<div class="char-portrait">
+  <img src="img/char_james.png" alt="Portrait of James">
+  <div class="char-info">
+    <div class="char-name">James</div>
+    <div class="char-subtitle">Marketing firm · 3-2 hybrid schedule</div>
+    <div class="char-stats">
+      <span class="char-stat">RES 11 (+0)</span>
+      <span class="char-stat">VIG 13 (+1)</span>
+      <span class="char-stat">INT 14 (+2)</span>
+      <span class="char-stat">SP: 20 max</span>
+    </div>
+  </div>
+</div>
+
+<!-- P3: James commute scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_james_hybrid_commute.png" alt="James on a packed train during rush hour commute, looking exhausted, phone showing a meeting reminder">
+</div>
+
   <p><strong>Monday (office day):</strong> Commute check: <span class="dice">2d10 + 1 vs TN 8</span>. Rolls 4+3=7+1=8 → <strong>ties</strong> — partial success, arrives but stressed. <strong>+2 SP</strong> from commute. In the office, he overhears a key project change → <strong>gains advantage</strong> on next related check.</p>
   <p><strong>Tuesday (office day):</strong> Commute check: <span class="dice">2d10 + 1 vs TN 8</span>. Rolls 2+5=7+1=8 → <strong>ties again</strong>. <strong>+2 SP</strong>. Context switching check (switching from yesterday's WFH prep): <span class="dice">2d10 + 0 vs TN 9</span>. Rolls 6+7=13 → <strong>success</strong>.</p>
   <p><strong>Wednesday (WFH):</strong> No commute SP. But scheduling conflict: a critical meeting was set for Wednesday and James is remote. He joins via video while everyone else is in a conference room. <strong>+1 SP</strong> from awkwardness. Social media drift: <span class="dice">2d10 + 0 vs TN 11</span>. Rolls 1+3=4 → <strong>critical failure</strong> — loses 2 hours instead of 45 minutes, <strong>+2 SP</strong>.</p>
@@ -204,20 +338,39 @@
 <p>The gig economy includes rideshare (Uber/Lyft), food delivery (DoorDash/Grubhub), grocery delivery (Instacart), task-based work (TaskRabbit), and freelance marketplaces (Fiverr/Upwork). These jobs offer flexibility but come with significant risks: no benefits, income volatility, and platform control.</p>
 
 <h3>Gig Work Setup Costs</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Gig Type</th><th>Startup Cost</th><th>Ongoing Cost/Week</th><th>Vehicle Required?</th><th>Background Check?</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🚗 Rideshare (Uber/Lyft)</td><td>$0 (app is free)</td><td>$30–$80 (gas, wear)</td><td>Yes (4-door, &lt;15 yrs old)</td><td>Yes</td></tr>
-    <tr><td>🍔 Food Delivery (DoorDash)</td><td>$0–$50 (insulation bag)</td><td>$20–$60 (gas)</td><td>Yes (car, bike, or scooter)</td><td>Yes</td></tr>
-    <tr><td>🛒 Grocery Delivery (Instacart)</td><td>$0</td><td>$20–$50 (gas, parking)</td><td>Yes</td><td>Yes</td></tr>
-    <tr><td>📦 Package Delivery (Amazon Flex)</td><td>$0</td><td>$15–$40 (gas)</td><td>Yes (SUV or van preferred)</td><td>Yes</td></tr>
-    <tr><td>🛠️ Task-Based (TaskRabbit)</td><td>$0–$200 (tools)</td><td>$0–$20</td><td>No</td><td>Yes</td></tr>
-    <tr><td>💻 Online Freelance (Fiverr)</td><td>$0–$100</td><td>$0</td><td>No</td><td>No</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Gig Work Setup → card-grid (was 6-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🚗</span>
+    <h3>Rideshare (Uber/Lyft)</h3>
+    <p><strong>Startup:</strong> $0 (app is free)<br><strong>Weekly:</strong> $30–$80 (gas, wear)<br><strong>Vehicle:</strong> Yes (4-door, &lt;15 yrs old)<br><strong>Background check:</strong> Yes</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🍔</span>
+    <h3>Food Delivery (DoorDash)</h3>
+    <p><strong>Startup:</strong> $0–$50 (insulation bag)<br><strong>Weekly:</strong> $20–$60 (gas)<br><strong>Vehicle:</strong> Yes (car, bike, or scooter)<br><strong>Background check:</strong> Yes</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🛒</span>
+    <h3>Grocery Delivery (Instacart)</h3>
+    <p><strong>Startup:</strong> $0<br><strong>Weekly:</strong> $20–$50 (gas, parking)<br><strong>Vehicle:</strong> Yes<br><strong>Background check:</strong> Yes</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">📦</span>
+    <h3>Package Delivery (Amazon Flex)</h3>
+    <p><strong>Startup:</strong> $0<br><strong>Weekly:</strong> $15–$40 (gas)<br><strong>Vehicle:</strong> Yes (SUV or van preferred)<br><strong>Background check:</strong> Yes</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🛠️</span>
+    <h3>Task-Based (TaskRabbit)</h3>
+    <p><strong>Startup:</strong> $0–$200 (tools)<br><strong>Weekly:</strong> $0–$20<br><strong>Vehicle:</strong> No<br><strong>Background check:</strong> Yes</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">💻</span>
+    <h3>Online Freelance (Fiverr)</h3>
+    <p><strong>Startup:</strong> $0–$100<br><strong>Weekly:</strong> $0<br><strong>Vehicle:</strong> No<br><strong>Background check:</strong> No</p>
+  </div>
 </div>
 
 <h3>Daily Earnings Mechanic</h3>
@@ -236,40 +389,80 @@
   </ul>
 </div>
 
+<!-- P2: Gig earnings matrix SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_gig_earnings_matrix.svg" alt="Risk vs reward matrix showing each gig type plotted by earnings potential and stress level, with stacking apps shifting toward higher stress">
+</div>
+
 <h3>Earnings Modifiers</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Condition</th><th>Modifier</th><th>Notes</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🌧️ Bad weather</td><td>+2 to earnings roll; +2 SP</td><td>Surge pricing but dangerous driving</td></tr>
-    <tr><td>🎉 Friday/Saturday night</td><td>+2 to earnings roll; +1 SP</td><td>High demand, tips up</td></tr>
-    <tr><td>🏥 Sick but driving</td><td>+1 to earnings roll; +4 SP</td><td>You feel awful but need the money</td></tr>
-    <tr><td>🔋 Phone battery dying</td><td>−2 to earnings roll</td><td>Missed orders, navigation issues</td></tr>
-    <tr><td>🚧 Traffic / road construction</td><td>−1 to earnings roll; +1 SP</td><td>Longer trips, fewer orders completed</td></tr>
-    <tr><td>💰 Surge zone</td><td>+3 to earnings roll</td><td>High-demand area; position yourself there</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Earnings Modifiers → stress-bar-rows (was 6-row table) -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🌧️ Bad weather</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#2980b9;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 earnings; +2 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🎉 Friday/Saturday night</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#82e0aa;width:40%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 earnings; +1 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🏥 Sick but driving</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:90%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+1 earnings; +4 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🔋 Phone battery dying</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:65%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−2 earnings</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🚧 Traffic / construction</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:50%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−1 earnings; +1 SP</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">💰 Surge zone</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#27ae60;width:30%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+3 earnings; no SP cost</span>
 </div>
 
 <h3>Platform Rating System</h3>
 <p>Every gig platform tracks your rating. A low rating means fewer offers, lower pay, and potential deactivation.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Rating</th><th>Offers Per Hour</th><th>Earnings Mod</th><th>SP Mod</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>⭐⭐⭐⭐⭐ 4.9+</td><td>High</td><td>+2</td><td>−1 (confidence boost)</td></tr>
-    <tr><td>⭐⭐⭐⭐ 4.7–4.8</td><td>Normal</td><td>+1</td><td>None</td></tr>
-    <tr><td>⭐⭐⭐⭐ 4.5–4.6</td><td>Normal</td><td>None</td><td>None</td></tr>
-    <tr><td>⭐⭐⭐ 4.3–4.4</td><td>Reduced</td><td>−1</td><td>+1 per shift (anxiety)</td></tr>
-    <tr><td>⭐⭐⭐ 4.0–4.2</td><td>Low</td><td>−2</td><td>+2 per shift</td></tr>
-    <tr><td>⭐⭐ Below 4.0</td><td>Very Low</td><td>−3</td><td>+3 per shift; deactivation imminent</td></tr>
-  </tbody>
-</table>
+<!-- P1: Platform Rating → condition-track (was 6-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    ⭐⭐⭐⭐⭐<br>
+    <small>4.9+</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">High offers · +2 earnings · −1 SP</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    ⭐⭐⭐⭐<br>
+    <small>4.7–4.8</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Normal offers · +1 earnings</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    ⭐⭐⭐⭐<br>
+    <small>4.5–4.6</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Normal offers · No mod</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    ⭐⭐⭐<br>
+    <small>4.3–4.4</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Reduced offers · −1 earnings · +1 SP/shift</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    ⭐⭐⭐<br>
+    <small>4.0–4.2</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Low offers · −2 earnings · +2 SP/shift</span>
+  </div>
+  <div class="condition-step" style="background:#c0392b;">
+    ⭐⭐<br>
+    <small>&lt;4.0</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Very Low offers · −3 earnings · +3 SP · Deactivation imminent</span>
+  </div>
 </div>
 
 <h3>Multiple Gig Stacking</h3>
@@ -283,24 +476,59 @@
 <h3>No Benefits — The Hidden Cost</h3>
 <p>Gig workers receive <strong>zero benefits</strong>: no health insurance, no paid time off, no retirement matching, no unemployment protection. The GM should track these costs:</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Missing Benefit</th><th>Monthly Cost to Replace</th><th>Notes</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🏥 Health Insurance</td><td>$200–$500/month (ACA marketplace)</td><td>Higher deductible = more risk</td></tr>
-    <tr><td>🏖️ PTO</td><td>0 (unpaid time = lost income)</td><td>Sick? You don't get paid</td></tr>
-    <tr><td>🏦 Retirement (401k match)</td><td>$0–$300/month equivalent</td><td>Must self-fund IRA</td></tr>
-    <tr><td>📋 Workers' Comp</td><td>$0 (you're "independent")</td><td>Injury = total loss</td></tr>
-    <tr><td>🚗 Vehicle maintenance fund</td><td>$100–$200/month</td><td>Breakdown = no income</td></tr>
-  </tbody>
-</table>
+<!-- P1: Missing Benefits → card-grid (was 5-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">🏥</span>
+    <h3>Health Insurance</h3>
+    <p><strong>Cost to replace:</strong> $200–$500/month<br><strong>Notes:</strong> ACA marketplace; higher deductible = more risk</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🏖️</span>
+    <h3>PTO</h3>
+    <p><strong>Cost to replace:</strong> 0 (unpaid time = lost income)<br><strong>Notes:</strong> Sick? You don't get paid</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🏦</span>
+    <h3>Retirement (401k match)</h3>
+    <p><strong>Cost to replace:</strong> $0–$300/month equivalent<br><strong>Notes:</strong> Must self-fund IRA</p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">📋</span>
+    <h3>Workers' Comp</h3>
+    <p><strong>Cost to replace:</strong> $0 (you're "independent")<br><strong>Notes:</strong> Injury = total loss</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🚗</span>
+    <h3>Vehicle Maintenance Fund</h3>
+    <p><strong>Cost to replace:</strong> $100–$200/month<br><strong>Notes:</strong> Breakdown = no income</p>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 3: Carlos's Gig Shift</div>
-  <p><strong>Carlos</strong> drives DoorDash and Uber simultaneously on Saturday night. He has INT 11 (+0), EXP 13 (+1 mod for driving), RES 10 (+0). His DoorDash rating is 4.6 (+1 bonus). Base hourly equivalent: $18/hr.</p>
+
+<!-- P1: Carlos char-portrait -->
+<div class="char-portrait">
+  <img src="img/char_carlos.png" alt="Portrait of Carlos">
+  <div class="char-info">
+    <div class="char-name">Carlos</div>
+    <div class="char-subtitle">DoorDash &amp; Uber driver · Stacking 2 apps</div>
+    <div class="char-stats">
+      <span class="char-stat">INT 11 (+0)</span>
+      <span class="char-stat">EXP 13 (+1)</span>
+      <span class="char-stat">RES 10 (+0)</span>
+      <span class="char-stat">Rating: 4.6</span>
+      <span class="char-stat">SP: 20 max</span>
+    </div>
+  </div>
+</div>
+
+<!-- P3: Carlos night delivery scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_carlos_night_delivery.png" alt="Carlos in his car at night, rain on windshield, two gig apps on dashboard phone, thermal bag on passenger seat, tired but focused">
+</div>
+
   <p><strong>Conditions:</strong> Saturday night (+2), stacking 2 apps (+1 earnings, +2 SP, −1 to safety), rain started (+2 earnings, +2 SP). Net earnings modifier: +5. Net SP: +4 for the shift before the roll.</p>
   <p><strong>Earnings roll:</strong> <span class="dice">2d10 + 0 + 1 + 5 = 2d10 + 6 vs TN 10</span>. Carlos rolls 7+4=11+6=17 → <strong>17: Great shift!</strong> 1.5× base rate. For an 8-hour shift: <span class="dice">$18 × 8 × 1.5 = $216</span> gross.</p>
   <p><strong>But:</strong> Gas cost $35. Vehicle wear (tracked monthly): ~$12. Net: <strong>$169</strong>. He takes <strong>+4 SP</strong> from stacking and weather. His car needs a new transmission in 3 months ($2,400) and he has no savings.</p>
@@ -319,18 +547,28 @@
 <h3>Time Budget Impact</h3>
 <p>A standard workday leaves roughly 4 hours of free time (after work, commute, meals, and sleep). A second job reduces this dramatically.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Jobs</th><th>Work Hours/Day</th><th>Free Time/Day</th><th>Sleep/Day</th><th>Daily SP Gain</th><th>Burnout Risk</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1 job (standard)</td><td>8 hrs</td><td>4 hrs</td><td>7–8 hrs</td><td>2–3 SP</td><td>Low</td></tr>
-    <tr><td>2 jobs (day + evening)</td><td>12–14 hrs</td><td>1.5 hrs</td><td>5–6 hrs</td><td>5–7 SP</td><td>Moderate</td></tr>
-    <tr><td>2 jobs (day + night shift)</td><td>14–16 hrs</td><td>0.5–1 hr</td><td>4–5 hrs</td><td>7–9 SP</td><td>High</td></tr>
-    <tr><td>3 jobs</td><td>16–18 hrs</td><td>0 hrs</td><td>3–4 hrs</td><td>9–12 SP</td><td>Extreme</td></tr>
-  </tbody>
-</table>
+<!-- P1: Time Budget → condition-track (was 4-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    1 Job<br>
+    <small>Standard</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">8 hrs work · 4 hrs free · 7–8 hrs sleep · 2–3 SP/day · Low burnout</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    2 Jobs<br>
+    <small>Day + Evening</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">12–14 hrs work · 1.5 hrs free · 5–6 hrs sleep · 5–7 SP/day · Moderate burnout</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    2 Jobs<br>
+    <small>Day + Night</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">14–16 hrs work · 0.5–1 hr free · 4–5 hrs sleep · 7–9 SP/day · High burnout</span>
+  </div>
+  <div class="condition-step" style="background:#c0392b;">
+    3 Jobs<br>
+    <small>Extreme</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">16–18 hrs work · 0 hrs free · 3–4 hrs sleep · 9–12 SP/day · Extreme burnout</span>
+  </div>
 </div>
 
 <h3>Multiple Job Mechanics</h3>
@@ -347,23 +585,54 @@
 </div>
 
 <h3>Sleep Deprivation Effects</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Days at Reduced Sleep</th><th>Cumulative Effect</th><th>Check Penalty</th><th>SP Effect</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1–3</td><td>Yawning, irritability</td><td>None</td><td>+1 SP/day</td></tr>
-    <tr><td>4–7</td><td>Microsleeps, memory lapses</td><td>−1 to INT-based checks</td><td>+2 SP/day</td></tr>
-    <tr><td>8–14</td><td>Paranoia, emotional instability</td><td>−2 to all checks</td><td>+3 SP/day; RES halved</td></tr>
-    <tr><td>15+</td><td>Physical/mental collapse risk</td><td>−3 to all checks</td><td>+4 SP/day; automatic stress events</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Sleep Deprivation → condition-track (was 4-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#2ecc71;">
+    1–3 Days<br>
+    <small>Yawning</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Irritability · No penalty · +1 SP/day</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    4–7 Days<br>
+    <small>Microsleeps</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Memory lapses · −1 INT checks · +2 SP/day</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    8–14 Days<br>
+    <small>Paranoia</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Emotional instability · −2 all checks · +3 SP/day · RES halved</span>
+  </div>
+  <div class="condition-step" style="background:#c0392b;">
+    15+ Days<br>
+    <small>Collapse</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Physical/mental collapse risk · −3 all checks · +4 SP/day · Auto stress events</span>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 4: Priya's Double Life</div>
-  <p><strong>Priya</strong> works as a dental hygienist (day, 7am–3pm) and a server at a restaurant (evening, 5pm–11pm). She does this to pay off $45,000 in student loans and save for a down payment. VIG 14 (+2 mod), RES 11 (+0 mod), EXP 15 (+3 mod). Max SP: <span class="dice">20 + (0 × 5) = 20</span>.</p>
+
+<!-- P1: Priya char-portrait -->
+<div class="char-portrait">
+  <img src="img/char_priya.png" alt="Portrait of Priya">
+  <div class="char-info">
+    <div class="char-name">Priya</div>
+    <div class="char-subtitle">Dental hygienist (day) &amp; server (evening) · $45K student loans</div>
+    <div class="char-stats">
+      <span class="char-stat">VIG 14 (+2)</span>
+      <span class="char-stat">RES 11 (+0)</span>
+      <span class="char-stat">EXP 15 (+3)</span>
+      <span class="char-stat">SP: 20 max</span>
+    </div>
+  </div>
+</div>
+
+<!-- P3: Priya between shifts scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_priya_double_shift.png" alt="Priya in a dimly lit kitchen at 4:30 PM between her day and evening shifts, still in dental uniform, eating a quick sandwich, student loan dates circled on wall calendar">
+</div>
+
   <p><strong>Daily routine:</strong> She gets 5.5 hours of sleep. She has 1.5 hours of free time (usually spent eating or doing taxes).</p>
   <p><strong>Day job check (dental hygiene):</strong> A difficult patient appointment. <span class="dice">2d10 + 3 (EXP) − 1 (2 jobs) vs TN 10</span>. Rolls 6+5=11+2=13 → <strong>success</strong>. <strong>+2 SP</strong> from the day shift.</p>
   <p><strong>Evening job check (serving):</strong> Rush hour, 4 tables at once. <span class="dice">2d10 + 3 (EXP) − 1 (2 jobs) vs TN 11</span>. Rolls 2+7=9+2=11 → <strong>ties</strong> — partial success. She drops a tray, apologizes profusely. <strong>+3 SP</strong> from evening shift (more stressful than day job).</p>
@@ -380,19 +649,33 @@
 <h3>Finding Clients</h3>
 <p>Freelancers must constantly find work. There is no employer handing them projects — they must hunt, pitch, and negotiate.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Client-Finding Method</th><th>Check</th><th>TN</th><th>Success</th><th>Time Required</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🤝 Networking (referrals)</td><td><span class="dice">2d10 + PRC mod + EXP mod</span></td><td>9</td><td>1–2 leads per month</td><td>2–4 hrs/week</td></tr>
-    <tr><td>💻 Online platforms (Upwork, etc.)</td><td><span class="dice">2d10 + INT mod + PRC mod</span></td><td>10</td><td>1–3 bids accepted/month</td><td>3–5 hrs/week</td></tr>
-    <tr><td>📧 Cold outreach</td><td><span class="dice">2d10 + PRC mod + INT mod</span></td><td>12</td><td>0.5–1 lead per 10 contacts</td><td>4–6 hrs/week</td></tr>
-    <tr><td>🌐 Social media presence</td><td><span class="dice">2d10 + PRC mod + DXT mod</span></td><td>11</td><td>Passive leads; builds over time</td><td>1–2 hrs/day</td></tr>
-    <tr><td>📋 Industry conferences</td><td><span class="dice">2d10 + PRC mod</span></td><td>10</td><td>2–5 leads per event</td><td>Cost: $200–$1,000/event</td></tr>
-  </tbody>
-</table>
+<!-- P1: Client-Finding Methods → card-grid (was 5-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🤝</span>
+    <h3>Networking (referrals)</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC + EXP</span> vs TN 9<br><strong>Success:</strong> 1–2 leads/month<br><strong>Time:</strong> 2–4 hrs/week</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">💻</span>
+    <h3>Online platforms (Upwork)</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + INT + PRC</span> vs TN 10<br><strong>Success:</strong> 1–3 bids accepted/month<br><strong>Time:</strong> 3–5 hrs/week</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">📧</span>
+    <h3>Cold outreach</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC + INT</span> vs TN 12<br><strong>Success:</strong> 0.5–1 lead per 10 contacts<br><strong>Time:</strong> 4–6 hrs/week</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🌐</span>
+    <h3>Social media presence</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC + DXT</span> vs TN 11<br><strong>Success:</strong> Passive leads; builds over time<br><strong>Time:</strong> 1–2 hrs/day</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">📋</span>
+    <h3>Industry conferences</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC</span> vs TN 10<br><strong>Success:</strong> 2–5 leads/event<br><strong>Cost:</strong> $200–$1,000/event</p>
+  </div>
 </div>
 
 <h3>Bidding and Winning Projects</h3>
@@ -406,35 +689,61 @@
 <h3>Scope Creep</h3>
 <p>Every freelance project carries the risk of scope creep — the client asking for "just one more thing" repeatedly.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Scope Creep Level</th><th>Trigger</th><th>Check to Push Back</th><th>Cost if Unchecked</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Minor</td><td>Client asks 1 extra deliverable</td><td><span class="dice">2d10 + PRC mod vs TN 8</span></td><td>+3 hours of unpaid work; +1 SP</td></tr>
-    <tr><td>Moderate</td><td>Client redefines project scope</td><td><span class="dice">2d10 + PRC mod vs TN 10</span></td><td>+1 day of unpaid work; +2 SP</td></tr>
-    <tr><td>Major</td><td>Client wants entirely new features</td><td><span class="dice">2d10 + PRC mod + INT mod vs TN 12</span></td><td>+3–5 days unpaid; +3 SP; risk of losing client</td></tr>
-    <tr><td>Catastrophic</td><td>Client refuses to pay for "revisions"</td><td><span class="dice">2d10 + PRC mod + EXP mod vs TN 14</span></td><td>Project becomes net loss; +4 SP; potential legal issue</td></tr>
-  </tbody>
-</table>
+<!-- P1: Scope Creep → tn-ladder (was 4-row table) -->
+<div class="tn-ladder">
+  <div class="tn-step easy">
+    <span class="tn-value">TN 8</span>
+    <span class="tn-label"><strong>Minor</strong> — Client asks 1 extra deliverable. <span class="dice">2d10 + PRC mod</span>. Cost if unchecked: +3 hrs unpaid; +1 SP.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 10</span>
+    <span class="tn-label"><strong>Moderate</strong> — Client redefines project scope. <span class="dice">2d10 + PRC mod</span>. Cost: +1 day unpaid; +2 SP.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">TN 12</span>
+    <span class="tn-label"><strong>Major</strong> — Client wants entirely new features. <span class="dice">2d10 + PRC + INT mod</span>. Cost: +3–5 days unpaid; +3 SP; risk losing client.</span>
+  </div>
+  <div class="tn-step near-impossible">
+    <span class="tn-value">TN 14</span>
+    <span class="tn-label"><strong>Catastrophic</strong> — Client refuses to pay for "revisions". <span class="dice">2d10 + PRC + EXP mod</span>. Cost: Project becomes net loss; +4 SP; potential legal issue.</span>
+  </div>
+</div>
+
+<!-- P3: Freelancer scope creep scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_freelancer_scope_creep.png" alt="Alex the freelance designer staring at an email asking for 'just one more revision plus social media graphics and a video intro' at 9 PM, sticky note reads DON'T WORK FOR FREE">
 </div>
 
 <h3>Taxes as a Freelancer</h3>
 <p>Freelancers pay <strong>self-employment tax</strong> (15.3%) plus income tax, and must make <strong>quarterly estimated payments</strong>. Missing a payment triggers penalties.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Tax Obligation</th><th>Rate</th><th>Due</th><th>Penalty for Missing</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Self-employment tax</td><td>15.3% of net earnings</td><td>Quarterly (Apr 15, Jun 15, Sep 15, Jan 15)</td><td>+0.5% per month late</td></tr>
-    <tr><td>Federal income tax</td><td>10–37% (progressive)</td><td>Quarterly estimated; annual return</td><td>Underpayment penalty</td></tr>
-    <tr><td>State income tax</td><td>Varies by state (0–13.3%)</td><td>Quarterly/annual</td><td>State-specific penalties</td></tr>
-    <tr><td>Accounting/bookkeeping</td><td>$500–$3,000/year</td><td>Ongoing</td><td>Messy records = audit risk</td></tr>
-  </tbody>
-</table>
+<!-- P1: Taxes → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #e74c3c;">
+    <span class="card-icon">📊</span>
+    <h3>Self-Employment Tax</h3>
+    <p><strong>Rate:</strong> 15.3% of net earnings<br><strong>Due:</strong> Quarterly (Apr 15, Jun 15, Sep 15, Jan 15)<br><strong>Penalty:</strong> +0.5% per month late</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🏛️</span>
+    <h3>Federal Income Tax</h3>
+    <p><strong>Rate:</strong> 10–37% (progressive)<br><strong>Due:</strong> Quarterly estimated; annual return<br><strong>Penalty:</strong> Underpayment penalty</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🗺️</span>
+    <h3>State Income Tax</h3>
+    <p><strong>Rate:</strong> Varies by state (0–13.3%)<br><strong>Due:</strong> Quarterly/annual<br><strong>Penalty:</strong> State-specific penalties</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">📒</span>
+    <h3>Accounting / Bookkeeping</h3>
+    <p><strong>Cost:</strong> $500–$3,000/year<br><strong>Due:</strong> Ongoing<br><strong>Penalty:</strong> Messy records = audit risk</p>
+  </div>
+</div>
+
+<!-- P2: Freelancer financial tracker SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_freelancer_financial_tracker.svg" alt="Dashboard showing 3 gauges: Bank Balance, Tax Set-Aside (target 25% of gross), and Accounts Receivable, with a red financial stress threshold line">
 </div>
 
 <div class="callout tip">
@@ -444,7 +753,22 @@
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 5: Alex's Freelance Quarter</div>
-  <p><strong>Alex</strong> is a freelance graphic designer. PRC 14 (+2 mod), INT 13 (+1 mod), EXP 12 (+1 mod), RES 11 (+0 mod). Max SP: <span class="dice">20 + 0 = 20</span>.</p>
+
+<!-- P1: Alex char-portrait (using gm_alex image as section-illustration since no char_alex.png) -->
+<div class="char-portrait">
+  <img src="img/gm_alex_bali_coliving.png" alt="Alex — freelance graphic designer">
+  <div class="char-info">
+    <div class="char-name">Alex</div>
+    <div class="char-subtitle">Freelance graphic designer</div>
+    <div class="char-stats">
+      <span class="char-stat">PRC 14 (+2)</span>
+      <span class="char-stat">INT 13 (+1)</span>
+      <span class="char-stat">EXP 12 (+1)</span>
+      <span class="char-stat">SP: 20 max</span>
+    </div>
+  </div>
+</div>
+
   <p><strong>Month 1 — Finding clients:</strong> Alex uses networking. <span class="dice">2d10 + 2 + 1 vs TN 9</span>. Rolls 5+8=13+3=16 → <strong>strong success</strong>. Gets 2 leads: a branding project for a startup ($3,000) and a website redesign for a small business ($2,500).</p>
   <p><strong>Bidding:</strong> <span class="dice">2d10 + 1 + 1 vs TN 10</span>. Rolls 4+7=11+2=13 → <strong>wins both projects</strong>. Total contract value: $5,500.</p>
   <p><strong>Month 2 — Scope creep hits:</strong> The startup client asks for "just one more logo variation, and maybe a social media kit?" This is moderate scope creep. Alex tries to push back: <span class="dice">2d10 + 2 vs TN 10</span>. Rolls 2+3=5+2=7 → <strong>failure</strong>. Alex can't say no (needs the money). Adds 1 day of unpaid work, <strong>+2 SP</strong>.</p>
@@ -461,6 +785,11 @@
 <h3>The Application Funnel</h3>
 <p>Modern job hunting is a gauntlet of automated filters, networking requirements, and multi-stage interviews. Each stage has its own check and failure modes.</p>
 
+<!-- P2: Job hunt funnel SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_job_hunt_funnel.svg" alt="Funnel diagram showing 6 stages of job application from ATS screening to offer, with narrowing width at each stage and ghosting branches showing 40% ghosting probability">
+</div>
+
 <div class="callout rule">
   <div class="callout-title">📐 The Job Hunt Pipeline</div>
   <p>Each application passes through these stages. The character must succeed at each stage to reach the next:</p>
@@ -475,21 +804,37 @@
 </div>
 
 <h3>Stage-by-Stage Checks</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Stage</th><th>Check</th><th>TN</th><th>Fail Effect</th><th>Time Lost</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🤖 ATS Screening</td><td><span class="dice">2d10 + INT mod + keyword optimization bonus</span></td><td>8</td><td>Auto-rejected; application wasted</td><td>0 (instant)</td></tr>
-    <tr><td>👤 Human Review</td><td><span class="dice">2d10 + INT mod + EXP mod</span></td><td>10</td><td>Rejected; +1 SP from disappointment</td><td>1–2 weeks waiting</td></tr>
-    <tr><td>📞 Phone Screen</td><td><span class="dice">2d10 + PRC mod + INT mod</span></td><td>10</td><td>Rejected; +2 SP</td><td>2–3 weeks total</td></tr>
-    <tr><td>🎥 Video Interview</td><td><span class="dice">2d10 + PRC mod + EXP mod</span></td><td>11</td><td>Rejected; +2 SP</td><td>3–4 weeks total</td></tr>
-    <tr><td>📋 Case Study / Take-Home</td><td><span class="dice">2d10 + INT mod + EXP mod + DXT mod</span></td><td>12</td><td>Rejected; +3 SP (sunk time cost)</td><td>4–6 weeks total</td></tr>
-    <tr><td>🤝 Reference Check</td><td><span class="dice">2d10 + PRC mod</span></td><td>9</td><td>Offer rescinded; +3 SP</td><td>5–6 weeks total</td></tr>
-    <tr><td>💰 Offer Negotiation</td><td><span class="dice">2d10 + INT mod + PRC mod</span></td><td>10</td><td>Lowball offer or rescinded</td><td>5–8 weeks total</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Stage-by-Stage → tn-ladder (was 8-row table) -->
+<div class="tn-ladder">
+  <div class="tn-step trivial">
+    <span class="tn-value">TN 8</span>
+    <span class="tn-label"><strong>🤖 ATS Screening</strong> — <span class="dice">2d10 + INT + keyword bonus</span>. Fail: Auto-rejected; application wasted. Time lost: 0 (instant).</span>
+  </div>
+  <div class="tn-step easy">
+    <span class="tn-value">TN 9</span>
+    <span class="tn-label"><strong>🤝 Reference Check</strong> — <span class="dice">2d10 + PRC mod</span>. Fail: Offer rescinded; +3 SP. Time lost: 5–6 weeks.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 10</span>
+    <span class="tn-label"><strong>👤 Human Review</strong> — <span class="dice">2d10 + INT + EXP mod</span>. Fail: Rejected; +1 SP. Time lost: 1–2 weeks.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 10</span>
+    <span class="tn-label"><strong>📞 Phone Screen</strong> — <span class="dice">2d10 + PRC + INT mod</span>. Fail: Rejected; +2 SP. Time lost: 2–3 weeks.</span>
+  </div>
+  <div class="tn-step medium">
+    <span class="tn-value">TN 10</span>
+    <span class="tn-label"><strong>💰 Offer Negotiation</strong> — <span class="dice">2d10 + INT + PRC mod</span>. Fail: Lowball offer or rescinded. Time lost: 5–8 weeks.</span>
+  </div>
+  <div class="tn-step hard">
+    <span class="tn-value">TN 11</span>
+    <span class="tn-label"><strong>🎥 Video Interview</strong> — <span class="dice">2d10 + PRC + EXP mod</span>. Fail: Rejected; +2 SP. Time lost: 3–4 weeks.</span>
+  </div>
+  <div class="tn-step very-hard">
+    <span class="tn-value">TN 12</span>
+    <span class="tn-label"><strong>📋 Case Study / Take-Home</strong> — <span class="dice">2d10 + INT + EXP + DXT mod</span>. Fail: Rejected; +3 SP (sunk time cost). Time lost: 4–6 weeks.</span>
+  </div>
 </div>
 
 <h3>Ghosting</h3>
@@ -500,20 +845,40 @@
   <p>After each stage, roll a d20. On a <strong>1–8 (40%)</strong>, the employer ghosts entirely. The character invests time and emotional energy with no closure. Ghosting always adds <strong>+2 SP</strong> regardless of stage. Characters who experience ghosting 3+ times in a job hunt gain the <strong>"Hopeless Applicant"</strong> debuff: −1 to all future job hunt checks until they receive one positive response (even a rejection email).</p>
 </div>
 
+<!-- P3: Job hunt ghosting scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_job_hunt_ghosting.png" alt="A person at their laptop staring at a job portal showing 4 applications stuck at 'Under Review' for weeks, tally pad showing 47 applications sent vs 3 responses">
+</div>
+
 <h3>LinkedIn and Networking Bonuses</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Networking Advantage</th><th>Bonus</th><th>Requirements</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>👥 Employee referral</td><td>+3 to all stages</td><td>Character knows someone at the company</td></tr>
-    <tr><td>💼 Active LinkedIn profile</td><td>+1 to Human Review</td><td>Profile is updated and professional</td></tr>
-    <tr><td>🎓 Relevant certification</td><td>+2 to ATS Screening</td><td>Certification matches job keywords</td></tr>
-    <tr><td>📝 Tailored resume</td><td>+2 to ATS Screening and Human Review</td><td>Requires 2–3 hours of work per application</td></tr>
-    <tr><td>🏆 Portfolio/GitHub/samples</td><td>+2 to Interview stages</td><td>Pre-existing work samples</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Networking Bonuses → card-grid (was 5-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">👥</span>
+    <h3>Employee Referral</h3>
+    <p><strong>Bonus:</strong> +3 to all stages<br><strong>Requires:</strong> Character knows someone at the company</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">💼</span>
+    <h3>Active LinkedIn Profile</h3>
+    <p><strong>Bonus:</strong> +1 to Human Review<br><strong>Requires:</strong> Profile updated and professional</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">🎓</span>
+    <h3>Relevant Certification</h3>
+    <p><strong>Bonus:</strong> +2 to ATS Screening<br><strong>Requires:</strong> Certification matches job keywords</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">📝</span>
+    <h3>Tailored Resume</h3>
+    <p><strong>Bonus:</strong> +2 to ATS &amp; Human Review<br><strong>Requires:</strong> 2–3 hours of work per application</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">🏆</span>
+    <h3>Portfolio / GitHub / Samples</h3>
+    <p><strong>Bonus:</strong> +2 to Interview stages<br><strong>Requires:</strong> Pre-existing work samples</p>
+  </div>
 </div>
 
 <!-- ============================================================
@@ -524,36 +889,76 @@
 <h3>Pivoting Industries</h3>
 <p>Changing careers is one of the most stressful life events. It involves retraining, potential pay cuts, age discrimination, and identity crisis.</p>
 
+<!-- P2: Career change pathway SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_career_change_pathway.svg" alt="Decision tree for career changes showing retraining path selection, age penalty modifier, transferable skills, pay gap period, and burnout risk zone">
+</div>
+
 <h3>Age-Based Career Change Difficulty</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Character Age</th><th>Penalty to New Job Checks</th><th>Retraining Time</th><th>Age Discrimination Risk</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>20s</td><td>None</td><td>Standard</td><td>None</td></tr>
-    <tr><td>30s</td><td>−1 to interview checks</td><td>Standard</td><td>Low (10%)</td></tr>
-    <tr><td>40s</td><td>−2 to interview checks</td><td>1.5× time</td><td>Moderate (25%)</td></tr>
-    <tr><td>50s</td><td>−3 to interview checks</td><td>2× time</td><td>High (45%)</td></tr>
-    <tr><td>60+</td><td>−4 to interview checks</td><td>2× time</td><td>Very High (60%)</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Age-Based Difficulty → condition-track (was 5-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    20s<br>
+    <small>No Penalty</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Standard retraining · No age discrimination</span>
+  </div>
+  <div class="condition-step" style="background:#2ecc71;">
+    30s<br>
+    <small>Low Risk</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−1 interview · Standard time · 10% discrimination</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    40s<br>
+    <small>Moderate</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−2 interview · 1.5× time · 25% discrimination</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    50s<br>
+    <small>High Risk</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−3 interview · 2× time · 45% discrimination</span>
+  </div>
+  <div class="condition-step" style="background:#c0392b;">
+    60+<br>
+    <small>Very High</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">−4 interview · 2× time · 60% discrimination</span>
+  </div>
 </div>
 
 <h3>Retraining Options</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Path</th><th>Cost</th><th>Time</th><th>Success Check</th><th>Outcome</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🎓 Community College</td><td>$2,000–$8,000</td><td>6 months–2 years</td><td><span class="dice">2d10 + INT mod vs TN 10</span></td><td>Associate degree or certificate</td></tr>
-    <tr><td>💻 Coding Bootcamp</td><td>$5,000–$20,000</td><td>3–6 months</td><td><span class="dice">2d10 + INT mod vs TN 11</span></td><td>Entry-level tech job (no guarantee)</td></tr>
-    <tr><td>📜 Professional Certification</td><td>$500–$5,000</td><td>1–6 months</td><td><span class="dice">2d10 + INT mod + EXP mod vs TN 10</span></td><td>Industry credential</td></tr>
-    <tr><td>📚 Self-Study (online courses)</td><td>$0–$500</td><td>6–18 months</td><td><span class="dice">2d10 + INT mod + PRC mod vs TN 12</span></td><td>Knowledge gained; no credential</td></tr>
-    <tr><td>🏫 Graduate Degree</td><td>$20,000–$80,000+</td><td>1–4 years</td><td><span class="dice">2d10 + INT mod vs TN 9</span></td><td>Advanced degree; high opportunity cost</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Retraining Options → card-grid (was 5-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🎓</span>
+    <h3>Community College</h3>
+    <p><strong>Cost:</strong> $2,000–$8,000<br><strong>Time:</strong> 6 months–2 years<br><strong>Check:</strong> <span class="dice">2d10 + INT vs TN 10</span><br><strong>Outcome:</strong> Associate degree or certificate</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">💻</span>
+    <h3>Coding Bootcamp</h3>
+    <p><strong>Cost:</strong> $5,000–$20,000<br><strong>Time:</strong> 3–6 months<br><strong>Check:</strong> <span class="dice">2d10 + INT vs TN 11</span><br><strong>Outcome:</strong> Entry-level tech job (no guarantee)</p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">📜</span>
+    <h3>Professional Certification</h3>
+    <p><strong>Cost:</strong> $500–$5,000<br><strong>Time:</strong> 1–6 months<br><strong>Check:</strong> <span class="dice">2d10 + INT + EXP vs TN 10</span><br><strong>Outcome:</strong> Industry credential</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">📚</span>
+    <h3>Self-Study (online)</h3>
+    <p><strong>Cost:</strong> $0–$500<br><strong>Time:</strong> 6–18 months<br><strong>Check:</strong> <span class="dice">2d10 + INT + PRC vs TN 12</span><br><strong>Outcome:</strong> Knowledge gained; no credential</p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">🏫</span>
+    <h3>Graduate Degree</h3>
+    <p><strong>Cost:</strong> $20,000–$80,000+<br><strong>Time:</strong> 1–4 years<br><strong>Check:</strong> <span class="dice">2d10 + INT vs TN 9</span><br><strong>Outcome:</strong> Advanced degree; high opportunity cost</p>
+  </div>
+</div>
+
+<!-- P3: Midlife career change scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_career_change_midlife.png" alt="A person in their 50s sitting in a coding bootcamp surrounded by younger students, overwhelmed, phone showing mortgage payment notification">
 </div>
 
 <h3>Transferable Skills</h3>
@@ -591,35 +996,67 @@
 <h3>Office Gossip Mechanic</h3>
 <p>Gossip is information — sometimes useful, sometimes dangerous. Characters can choose to participate in or avoid office gossip.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Gossip Action</th><th>Check</th><th>TN</th><th>Success</th><th>Failure</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>👂 Hear useful gossip</td><td><span class="dice">2d10 + PRC mod</span></td><td>9</td><td>Learn about upcoming changes, layoffs, promotions</td><td>Hear rumors that are wrong; may act on false info</td></tr>
-    <tr><td>🗣️ Share gossip strategically</td><td><span class="dice">2d10 + PRC mod + INT mod</span></td><td>11</td><td>Build alliance with a colleague; +1 to future social checks with them</td><td>Gossip reaches wrong person; −2 to all checks with that person</td></tr>
-    <tr><td>🤐 Avoid gossip entirely</td><td><span class="dice">2d10 + RES mod</span></td><td>10</td><td>Stay out of drama; no social bonuses but no penalties</td><td>Accidentally participate; caught in the middle</td></tr>
-    <tr><td>🛡️ Defend yourself from gossip</td><td><span class="dice">2d10 + PRC mod + EXP mod</span></td><td>12</td><td>Reputation intact</td><td>Reputation damaged; −1 to all workplace checks for 1 month</td></tr>
-  </tbody>
-</table>
+<!-- P1: Office Gossip → card-grid (was 4-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">👂</span>
+    <h3>Hear Useful Gossip</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC mod</span> vs TN 9<br><strong>Success:</strong> Learn about upcoming changes, layoffs, promotions<br><strong>Failure:</strong> Hear wrong rumors; may act on false info</p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🗣️</span>
+    <h3>Share Gossip Strategically</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC + INT mod</span> vs TN 11<br><strong>Success:</strong> Build alliance; +1 to social checks with them<br><strong>Failure:</strong> Reaches wrong person; −2 to all checks with them</p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🤐</span>
+    <h3>Avoid Gossip Entirely</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + RES mod</span> vs TN 10<br><strong>Success:</strong> Stay out of drama; no bonuses but no penalties<br><strong>Failure:</strong> Accidentally participate; caught in the middle</p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">🛡️</span>
+    <h3>Defend from Gossip</h3>
+    <p><strong>Check:</strong> <span class="dice">2d10 + PRC + EXP mod</span> vs TN 12<br><strong>Success:</strong> Reputation intact<br><strong>Failure:</strong> Reputation damaged; −1 to all workplace checks for 1 month</p>
+  </div>
+</div>
+
+<!-- P3: Office gossip scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_office_gossip_triangle.png" alt="Office breakroom scene — two colleagues whispering by coffee machines, glancing toward a third person walking past in the hallway, whiteboard shows 'Q3 layoffs?'">
 </div>
 
 <h3>Workplace Politics Situations</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Situation</th><th>Check</th><th>TN</th><th>Consequence of Failure</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🏆 Credit stealing (someone takes credit for your work)</td><td><span class="dice">2d10 + PRC mod + INT mod</span></td><td>11</td><td>Credit lost; −2 to next promotion check; +2 SP</td></tr>
-    <tr><td>😏 Passive-aggressive coworker</td><td><span class="dice">2d10 + RES mod + INT mod</span></td><td>10</td><td>Emotional manipulation succeeds; +3 SP</td></tr>
-    <tr><td>🎯 Favoritism (boss plays favorites)</td><td><span class="dice">2d10 + PRC mod</span></td><td>12</td><td>Targeted unfairly; −1 to all workplace checks for 1 month</td></tr>
-    <tr><td>📢 Public embarrassment in meeting</td><td><span class="dice">2d10 + RES mod + PRC mod</span></td><td>10</td><td>Humiliated; +3 SP; −1 to social checks for 1 week</td></tr>
-    <tr><td>📋 HR complaint</td><td><span class="dice">2d10 + INT mod + PRC mod</span></td><td>13</td><td>HR sides against you (70% of the time); retaliation risk; +4 SP</td></tr>
-    <tr><td>🧊 Navigating toxic culture</td><td><span class="dice">2d10 + RES mod</span></td><td>11</td><td>+2 SP/day in toxic environment (vs normal +1)</td></tr>
-  </tbody>
-</table>
+
+<!-- P1: Workplace Politics → stress-bar-rows (was 6-row table) -->
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🏆 Credit stealing</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:65%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−2 promo; +2 SP; TN 11</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">😏 Passive-aggressive coworker</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:85%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+3 SP; TN 10</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🎯 Favoritism</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#f39c12;width:55%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">−1 all checks 1 mo; TN 12</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📢 Public embarrassment</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e74c3c;width:85%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+3 SP; −1 social 1 wk; TN 10</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">📋 HR complaint</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#c0392b;width:100%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+4 SP; retaliation risk; TN 13</span>
+</div>
+<div class="stress-bar-row">
+  <span class="stress-bar-label">🧊 Toxic culture</span>
+  <div class="stress-bar-track"><div class="stress-bar-fill" style="background:#e67e22;width:70%;"></div></div>
+  <span style="font-size:0.82rem;color:var(--color-text-light);white-space:nowrap;">+2 SP/day; TN 11</span>
 </div>
 
 <div class="callout warning">
@@ -635,76 +1072,97 @@
 <h3>The Burnout Track</h3>
 <p>Burnout is the central risk of all work-related gameplay. It progresses through 5 levels, each with escalating mechanical and narrative consequences. Characters enter burnout when their SP exceeds their maximum and they cannot recover sufficiently.</p>
 
+<!-- P2: Burnout flowchart SVG placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_burnout_flowchart.svg" alt="Flowchart showing burnout entry from exceeding max SP, progression through 5 levels, recovery paths, and the recovery trap feedback loop">
+</div>
+
 <div class="callout rule">
   <div class="callout-title">📐 Burnout Entry</div>
   <p>A character enters <strong>Burnout Level 1</strong> when they exceed their maximum SP (<span class="dice">20 + RES mod × 5</span>) and fail a <span class="dice">2d10 + RES mod vs TN 10</span> recovery check at the end of a rest period. Each subsequent failure to recover advances the burnout level by 1.</p>
 </div>
 
 <h3>The 5 Levels of Burnout</h3>
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Level</th><th>Name</th><th>Signs</th><th>Mechanical Effects</th><th>Recovery Time</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>😤 Overworked</td>
-      <td>Irritability, working longer hours, can't switch off</td>
-      <td>−1 to all checks; +2 SP/day automatically</td>
-      <td>1–2 weeks of proper rest</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>😰 Cynical & Detached</td>
-      <td>Disengagement, sarcasm, "why bother" attitude</td>
-      <td>−2 to INT and PRC checks; +3 SP/day; social interactions suffer</td>
-      <td>2–4 weeks of rest + social support</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>😞 Exhausted & Ineffective</td>
-      <td>Mistakes increase, can't concentrate, physical symptoms (headaches, stomach issues)</td>
-      <td>−3 to all checks; VIG-based checks at −2; +4 SP/day; must make daily VIG check vs TN 10 or get sick</td>
-      <td>1–2 months of reduced workload</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>🤒 Physically Ill</td>
-      <td>Chronic fatigue, insomnia, weakened immune system, anxiety/panic attacks</td>
-      <td>−4 to all checks; cannot work more than 4 hrs/day; +5 SP/day; weekly VIG check vs TN 12 or hospital visit</td>
-      <td>2–6 months; may need professional help</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>💔 Complete Breakdown</td>
-      <td>Total collapse — can't work, can't function, possible hospitalization</td>
-      <td>Character is <strong>incapacitated</strong>. Cannot take actions beyond basic self-care. SP is locked at maximum. Recovery requires weeks to months of dedicated rest, therapy, possibly medication.</td>
-      <td>3–12 months; possible permanent attribute reduction</td>
-    </tr>
-  </tbody>
-</table>
+
+<!-- P1: Burnout Levels → condition-track (was 5-row table) — HIGHEST PRIORITY conversion -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#f39c12;">
+    😤 Level 1<br>
+    <small>Overworked</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Irritability · −1 all checks · +2 SP/day · 1–2 wks rest</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    😰 Level 2<br>
+    <small>Cynical</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Disengagement · −2 INT/PRC · +3 SP/day · 2–4 wks rest + social support</span>
+  </div>
+  <div class="condition-step" style="background:#d35400;">
+    😞 Level 3<br>
+    <small>Exhausted</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Mistakes increase · −3 all checks · VIG at −2 · +4 SP/day · daily VIG check · 1–2 mo reduced workload</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    🤒 Level 4<br>
+    <small>Physically Ill</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Chronic fatigue · −4 all checks · max 4 hrs/day · +5 SP/day · weekly VIG check · 2–6 mo recovery</span>
+  </div>
+  <div class="condition-step" style="background:#c0392b;">
+    💔 Level 5<br>
+    <small>Breakdown</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Total collapse · Incapacitated · SP locked at max · 3–12 mo recovery · possible permanent attribute reduction</span>
+  </div>
+</div>
+
+<!-- P3: David burnout scene placeholder -->
+<div class="section-illustration">
+  <img src="img/rw_burnout_breakdown.png" alt="David at his desk at 2 AM, still working, empty energy drink cans, takeout containers, phone showing wife's text 'Are you okay?', hands shaking, monitor glow in dark room">
 </div>
 
 <h3>Recovery Mechanics</h3>
 <p>Recovery is not automatic. Characters must actively take steps to heal, each with its own cost and time investment.</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Recovery Action</th><th>Effect</th><th>Cost</th><th>Time</th><th>Check Required</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🏖️ Vacation (paid)</td><td>Reduce burnout level by 1</td><td>Uses PTO; $500–$3,000 for trip</td><td>1–2 weeks</td><td><span class="dice">2d10 + RES mod vs TN 10</span> to actually disconnect</td></tr>
-    <tr><td>🏖️ Vacation (unpaid)</td><td>Reduce burnout level by 1</td><td>Lose 1–2 weeks of income</td><td>1–2 weeks</td><td>Same as above; +2 SP from financial stress</td></tr>
-    <tr><td>🧘 Therapy/counseling</td><td>Reduce burnout level by 1 per month</td><td>$50–$200/session; insurance may cover</td><td>1 session/week minimum</td><td><span class="dice">2d10 + RES mod vs TN 9</span> per session</td></tr>
-    <tr><td>💊 Medication</td><td>Reduces daily SP gain by 1 per level</td><td>$0–$500/month (insurance-dependent)</td><td>Ongoing</td><td><span class="dice">2d10 + VIG mod vs TN 10</span> to avoid side effects</td></tr>
-    <tr><td>🏋️ Exercise routine</td><td>Reduce burnout level by 1 per month</td><td>$0–$50/month (gym)</td><td>4–5 hrs/week</td><td><span class="dice">2d10 + VIG mod vs TN 10</span> to maintain consistency</td></tr>
-    <tr><td>👥 Social support</td><td>Reduces daily SP gain by 1</td><td>Free (but requires time)</td><td>2–3 hrs/week</td><td><span class="dice">2d10 + PRC mod vs TN 8</span> to reach out</td></tr>
-    <tr><td>🏥 Hospitalization</td><td>Forces recovery to Level 2</td><td>$5,000–$50,000+ (insurance-dependent)</td><td>3–14 days</td><td>Automatic at Level 5 if GM determines breakdown is severe</td></tr>
-    <tr><td>📵 Digital detox</td><td>Reduces daily SP gain by 2 for duration</td><td>Free; requires willpower</td><td>1–7 days</td><td><span class="dice">2d10 + RES mod vs TN 11</span> per day to resist checking</td></tr>
-  </tbody>
-</table>
+<!-- P1: Recovery Options → card-grid (was 8-row table) -->
+<div class="card-grid">
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏖️</span>
+    <h3>Vacation (Paid)</h3>
+    <p><strong>Effect:</strong> Reduce burnout level by 1<br><strong>Cost:</strong> Uses PTO; $500–$3,000<br><strong>Time:</strong> 1–2 weeks<br><strong>Check:</strong> <span class="dice">2d10 + RES vs TN 10</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #e67e22;">
+    <span class="card-icon">🏖️</span>
+    <h3>Vacation (Unpaid)</h3>
+    <p><strong>Effect:</strong> Reduce burnout level by 1<br><strong>Cost:</strong> Lose 1–2 weeks income; +2 SP<br><strong>Time:</strong> 1–2 weeks<br><strong>Check:</strong> Same as paid; +2 SP from financial stress</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">🧘</span>
+    <h3>Therapy / Counseling</h3>
+    <p><strong>Effect:</strong> Reduce burnout level by 1/month<br><strong>Cost:</strong> $50–$200/session<br><strong>Time:</strong> 1 session/week<br><strong>Check:</strong> <span class="dice">2d10 + RES vs TN 9</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #f39c12;">
+    <span class="card-icon">💊</span>
+    <h3>Medication</h3>
+    <p><strong>Effect:</strong> Reduces daily SP gain by 1/level<br><strong>Cost:</strong> $0–$500/month<br><strong>Time:</strong> Ongoing<br><strong>Check:</strong> <span class="dice">2d10 + VIG vs TN 10</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #27ae60;">
+    <span class="card-icon">🏋️</span>
+    <h3>Exercise Routine</h3>
+    <p><strong>Effect:</strong> Reduce burnout level by 1/month<br><strong>Cost:</strong> $0–$50/month<br><strong>Time:</strong> 4–5 hrs/week<br><strong>Check:</strong> <span class="dice">2d10 + VIG vs TN 10</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #8e44ad;">
+    <span class="card-icon">👥</span>
+    <h3>Social Support</h3>
+    <p><strong>Effect:</strong> Reduces daily SP gain by 1<br><strong>Cost:</strong> Free (requires time)<br><strong>Time:</strong> 2–3 hrs/week<br><strong>Check:</strong> <span class="dice">2d10 + PRC vs TN 8</span></p>
+  </div>
+  <div class="card" style="border-left:3px solid #c0392b;">
+    <span class="card-icon">🏥</span>
+    <h3>Hospitalization</h3>
+    <p><strong>Effect:</strong> Forces recovery to Level 2<br><strong>Cost:</strong> $5,000–$50,000+<br><strong>Time:</strong> 3–14 days<br><strong>Check:</strong> Automatic at Level 5 if severe</p>
+  </div>
+  <div class="card" style="border-left:3px solid #2980b9;">
+    <span class="card-icon">📵</span>
+    <h3>Digital Detox</h3>
+    <p><strong>Effect:</strong> Reduces daily SP gain by 2<br><strong>Cost:</strong> Free; requires willpower<br><strong>Time:</strong> 1–7 days<br><strong>Check:</strong> <span class="dice">2d10 + RES vs TN 11</span>/day</p>
+  </div>
 </div>
 
 <h3>The Cost of Recovery</h3>
@@ -719,28 +1177,57 @@
 <h3>Permanent Damage</h3>
 <p>At Level 5 (Complete Breakdown), there is a risk of permanent attribute reduction. After recovery, the GM rolls a d100:</p>
 
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>d100 Roll</th><th>Result</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1–30</td><td>Fully recovered — no lasting damage</td></tr>
-    <tr><td>31–60</td><td>RES permanently reduced by 1 point (lower stress capacity going forward)</td></tr>
-    <tr><td>61–80</td><td>RES permanently reduced by 2 points; VIG reduced by 1 point</td></tr>
-    <tr><td>81–95</td><td>Multiple attributes reduced by 1 each; character gains a lasting mental health condition</td></tr>
-    <tr><td>96–100</td><td>Catastrophic — character may need to leave their career entirely; possible disability claim</td></tr>
-  </tbody>
-</table>
+<!-- P1: Permanent Damage → condition-track (was 5-row table) -->
+<div class="condition-track">
+  <div class="condition-step" style="background:#27ae60;">
+    1–30<br>
+    <small>Fully Recovered</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">No lasting damage</span>
+  </div>
+  <div class="condition-step" style="background:#f39c12;">
+    31–60<br>
+    <small>RES −1</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Lower stress capacity going forward</span>
+  </div>
+  <div class="condition-step" style="background:#e67e22;">
+    61–80<br>
+    <small>RES −2, VIG −1</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Significant lasting impact</span>
+  </div>
+  <div class="condition-step" style="background:#e74c3c;">
+    81–95<br>
+    <small>Multi-attr −1</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">Lasting mental health condition</span>
+  </div>
+  <div class="condition-step" style="background:#2c3e50;">
+    96–100<br>
+    <small>Catastrophic</small><br>
+    <span style="font-size:0.78rem;font-weight:400;">May need to leave career entirely; possible disability claim</span>
+  </div>
 </div>
 
 <div class="callout example">
   <div class="callout-title">🎲 Example 6: David's Burnout Arc (Bonus Example)</div>
-  <p><strong>David</strong>, 38, is a project manager at a tech company. RES 13 (+2 mod), VIG 11 (+0 mod), EXP 15 (+3 mod). Max SP: <span class="dice">20 + (2 × 5) = 30</span>. He has been pushing through overtime for 4 months to meet a product launch.</p>
+
+<!-- P1: David char-portrait -->
+<div class="char-portrait">
+  <img src="img/char_david.png" alt="Portrait of David">
+  <div class="char-info">
+    <div class="char-name">David</div>
+    <div class="char-subtitle">Project manager, tech company · 38 years old</div>
+    <div class="char-stats">
+      <span class="char-stat">RES 13 (+2)</span>
+      <span class="char-stat">VIG 11 (+0)</span>
+      <span class="char-stat">EXP 15 (+3)</span>
+      <span class="char-stat">SP: 30 max</span>
+    </div>
+  </div>
+</div>
+
   <p><strong>Month 4, Week 3:</strong> David is at 31/30 SP. He tries to recover on a weekend but checks work email at 2 AM. <span class="dice">2d10 + 2 vs TN 10</span> recovery check. Rolls 1+4=5+2=7 → <strong>failure</strong>. Enters <strong>Burnout Level 1: Overworked</strong>.</p>
   <p><strong>Level 1 effects:</strong> −1 to all checks, +2 SP/day. His performance at work drops. A key presentation goes wrong (<span class="dice">2d10 + 3 − 1 vs TN 11</span> = rolls 3+6=9 → <strong>failure</strong>). His boss expresses "concern."</p>
-  <p><strong>Week 5:</strong> Still can't disconnect. Another failed recovery check → <strong>Burnout Level 2: Cynical & Detached</strong>. He starts making snarky comments in Slack. His team notices. −2 to INT and PRC checks now. His wife says he's "not himself."</p>
-  <p><strong>Week 7:</strong> Gets the flu (VIG check failed: <span class="dice">2d10 + 0 vs TN 10</span> = rolls 2+5=7). Misses 3 days of work. Returns to find his projects have fallen behind. <strong>Burnout Level 3: Exhausted & Ineffective</strong>. He can barely focus on email.</p>
+  <p><strong>Week 5:</strong> Still can't disconnect. Another failed recovery check → <strong>Burnout Level 2: Cynical &amp; Detached</strong>. He starts making snarky comments in Slack. His team notices. −2 to INT and PRC checks now. His wife says he's "not himself."</p>
+  <p><strong>Week 7:</strong> Gets the flu (VIG check failed: <span class="dice">2d10 + 0 vs TN 10</span> = rolls 2+5=7). Misses 3 days of work. Returns to find his projects have fallen behind. <strong>Burnout Level 3: Exhausted &amp; Ineffective</strong>. He can barely focus on email.</p>
   <p><strong>Intervention:</strong> His wife stages an intervention. David takes 2 weeks of unpaid PTO. Therapy starts. The recovery check: <span class="dice">2d10 + 2 vs TN 10</span> for vacation disconnect. Rolls 8+7=15+2=17 → <strong>strong success</strong>. Drops back to <strong>Level 2</strong>.</p>
   <p><strong>Recovery:</strong> 3 months of therapy ($150/session, insurance covers 80%) + exercise routine + digital detox on weekends. Each month: <span class="dice">2d10 + 2 vs TN 9</span>. Month 1: success → Level 1. Month 2: success → recovered. Total cost: $1,800 out-of-pocket for therapy, 2 weeks lost wages (~$4,000), 3 months of lifestyle changes.</p>
   <p><strong>Lesson:</strong> David learned to set boundaries. The GM grants him a permanent +1 to boundary-setting checks going forward — but he'll never forget how close he came to the edge.</p>

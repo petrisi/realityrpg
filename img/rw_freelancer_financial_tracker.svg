@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 720 310" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="310" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="360" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Freelancer Financial Dashboard</text>
+  <text x="360" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">Track 3 numbers: Bank Balance · Tax Set-Aside · Accounts Receivable</text>
+
+  <!-- GAUGE 1: Bank Balance -->
+  <g transform="translate(40, 65)" filter="url(#shadow)">
+    <rect width="210" height="160" rx="10" fill="white" stroke="#dcdcdc" stroke-width="1"/>
+    <!-- Gauge header -->
+    <rect width="210" height="32" rx="10 10 0 0" fill="#27ae60"/>
+    <text x="105" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="white">🏦 Bank Balance</text>
+    <!-- Value -->
+    <text x="105" y="60" text-anchor="middle" font-size="24" font-weight="700" fill="#27ae60">$4,200</text>
+    <text x="105" y="78" text-anchor="middle" font-size="10" fill="#7f8c8d">Current balance</text>
+    <!-- Danger zone line -->
+    <line x1="20" y1="100" x2="190" y2="100" stroke="#e74c3c" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="195" y="104" font-size="8" fill="#e74c3c" font-weight="700">DANGER</text>
+    <!-- Threshold label -->
+    <text x="105" y="120" text-anchor="middle" font-size="9" fill="#e74c3c">⚠️ Below 2 months expenses</text>
+    <text x="105" y="133" text-anchor="middle" font-size="9" fill="#e74c3c">= Financial stress mode</text>
+    <text x="105" y="148" text-anchor="middle" font-size="9" fill="#7f8c8d">Threshold: ~$3,000</text>
+  </g>
+
+  <!-- GAUGE 2: Tax Set-Aside -->
+  <g transform="translate(260, 65)" filter="url(#shadow)">
+    <rect width="210" height="160" rx="10" fill="white" stroke="#dcdcdc" stroke-width="1"/>
+    <!-- Gauge header -->
+    <rect width="210" height="32" rx="10 10 0 0" fill="#f39c12"/>
+    <text x="105" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="white">📊 Tax Set-Aside</text>
+    <!-- Value -->
+    <text x="105" y="60" text-anchor="middle" font-size="24" font-weight="700" fill="#f39c12">$1,375</text>
+    <text x="105" y="78" text-anchor="middle" font-size="10" fill="#7f8c8d">25% of $5,500 gross</text>
+    <!-- Progress bar -->
+    <rect x="20" y="90" width="170" height="16" rx="8" fill="#e8e8e8"/>
+    <rect x="20" y="90" width="136" height="16" rx="8" fill="#f39c12"/>
+    <text x="105" y="102" text-anchor="middle" font-size="8" font-weight="700" fill="white">80% funded</text>
+    <!-- Target -->
+    <text x="105" y="125" text-anchor="middle" font-size="9" fill="#2c3e50">Target: 25% of gross income</text>
+    <text x="105" y="138" text-anchor="middle" font-size="9" fill="#7f8c8d">Self-emp: 15.3% + Federal + State</text>
+    <text x="105" y="151" text-anchor="middle" font-size="9" fill="#27ae60">✓ On track</text>
+  </g>
+
+  <!-- GAUGE 3: Accounts Receivable -->
+  <g transform="translate(480, 65)" filter="url(#shadow)">
+    <rect width="210" height="160" rx="10" fill="white" stroke="#dcdcdc" stroke-width="1"/>
+    <!-- Gauge header -->
+    <rect width="210" height="32" rx="10 10 0 0" fill="#2980b9"/>
+    <text x="105" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="white">💳 Accounts Receivable</text>
+    <!-- Value -->
+    <text x="105" y="60" text-anchor="middle" font-size="24" font-weight="700" fill="#2980b9">$3,000</text>
+    <text x="105" y="78" text-anchor="middle" font-size="10" fill="#7f8c8d">Owed but not yet paid</text>
+    <!-- Breakdown -->
+    <rect x="20" y="90" width="170" height="20" rx="4" fill="#d5f5e3"/>
+    <text x="30" y="104" font-size="9" fill="#27ae60">✓ Small biz: $2,500 (paid)</text>
+    <rect x="20" y="112" width="170" height="20" rx="4" fill="#fef9e7"/>
+    <text x="30" y="126" font-size="9" fill="#f39c12">⏳ Startup: $3,000 (3 wks late)</text>
+    <!-- Warning -->
+    <text x="105" y="148" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">⚠️ &gt;2 weeks overdue → chase!</text>
+  </g>
+
+  <!-- QUARTERLY TAX DEADLINE CYCLE -->
+  <g transform="translate(40, 245)" filter="url(#shadow)">
+    <rect width="650" height="50" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="325" y="20" text-anchor="middle" font-size="11" font-weight="700" fill="#f39c12">📅 Quarterly Estimated Tax Deadlines</text>
+    <g font-size="10" fill="#2c3e50" text-anchor="middle">
+      <text x="100" y="40">Apr 15</text>
+      <text x="230" y="40">Jun 15</text>
+      <text x="360" y="40">Sep 15</text>
+      <text x="490" y="40">Jan 15</text>
+      <text x="600" y="40" fill="#e74c3c" font-weight="600">+0.5%/mo late</text>
+    </g>
+    <!-- Arrow between deadlines -->
+    <line x1="125" y1="38" x2="205" y2="38" stroke="#f39c12" stroke-width="1"/>
+    <line x1="255" y1="38" x2="345" y2="38" stroke="#f39c12" stroke-width="1"/>
+    <line x1="385" y1="38" x2="475" y2="38" stroke="#f39c12" stroke-width="1"/>
+  </g>
+</svg>

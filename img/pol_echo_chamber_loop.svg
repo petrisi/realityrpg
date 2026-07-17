@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 520 490" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+    <!-- Loop arrowhead (red) -->
+    <marker id="loopArrow" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#c0392b"/>
+    </marker>
+    <!-- Escape arrowhead (green) -->
+    <marker id="escapeArrow" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#27ae60"/>
+    </marker>
+    <!-- Shield arrowhead (blue) -->
+    <marker id="shieldArrow" markerWidth="9" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#2980b9"/>
+    </marker>
+    <!-- Danger gradient -->
+    <linearGradient id="dangerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="100%" stop-color="#c0392b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="520" height="490" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="260" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Echo Chamber &amp; Doomscrolling Feedback Loop</text>
+  <text x="260" y="44" text-anchor="middle" font-size="10.5" fill="#5d6d7e">Algorithmic influence creates a self-reinforcing cycle of political stress</text>
+
+  <!-- ════════════════════════════════════════════════
+       DECORATIVE LOOP RING
+       ════════════════════════════════════════════════ -->
+  <circle cx="260" cy="260" r="140" fill="none" stroke="#f5b7b1" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ════════════════════════════════════════════════
+       LOOP NODES — 6 nodes in a circle
+       ════════════════════════════════════════════════ -->
+
+  <!-- Node 1: Echo Chamber Reinforcement (top) -->
+  <g filter="url(#shadow)">
+    <circle cx="260" cy="120" r="55" fill="#fdedec" stroke="#e74c3c" stroke-width="2.5"/>
+    <text x="260" y="105" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Echo Chamber</text>
+    <text x="260" y="117" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Reinforcement</text>
+    <text x="260" y="132" text-anchor="middle" font-size="8.5" fill="#5d6d7e">Algorithm pushes extreme</text>
+    <text x="260" y="142" text-anchor="middle" font-size="8.5" fill="#5d6d7e">content on you</text>
+    <text x="260" y="154" text-anchor="middle" font-size="8" font-weight="600" fill="#c0392b"><tspan font-family="Consolas, monospace" fill="#e67e22">1d10/mo</tspan><tspan fill="#c0392b"> on 6-10: shift</tspan></text>
+    <text x="260" y="163" text-anchor="middle" font-size="8" font-weight="600" fill="#c0392b"><tspan fill="#c0392b">more extreme</tspan></text>
+  </g>
+
+  <!-- Node 2: Outrage Engagement (upper-right) -->
+  <g filter="url(#shadow)">
+    <circle cx="380" cy="195" r="50" fill="#fdebd0" stroke="#e67e22" stroke-width="2.5"/>
+    <text x="380" y="180" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Outrage</text>
+    <text x="380" y="192" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Engagement</text>
+    <text x="380" y="207" text-anchor="middle" font-size="8.5" fill="#5d6d7e">Algorithm prioritizes</text>
+    <text x="380" y="217" text-anchor="middle" font-size="8.5" fill="#5d6d7e">emotional content</text>
+    <text x="380" y="230" text-anchor="middle" font-size="9" font-weight="600" fill="#e67e22"><tspan font-family="Consolas, monospace" fill="#e67e22">+0.5 SP/wk</tspan></text>
+  </g>
+
+  <!-- Node 3: Doomscrolling Session (lower-right) -->
+  <g filter="url(#shadow)">
+    <circle cx="395" cy="320" r="50" fill="#fadbd8" stroke="#e74c3c" stroke-width="2.5"/>
+    <text x="395" y="305" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Doomscrolling</text>
+    <text x="395" y="317" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Session</text>
+    <text x="395" y="332" text-anchor="middle" font-size="8.5" fill="#5d6d7e">2+ hours consuming</text>
+    <text x="395" y="342" text-anchor="middle" font-size="8.5" fill="#5d6d7e">negative news</text>
+    <text x="395" y="355" text-anchor="middle" font-size="9" font-weight="600" fill="#e74c3c"><tspan font-family="Consolas, monospace" fill="#e67e22">+2 SP/session</tspan></text>
+  </g>
+
+  <!-- Node 4: News Anxiety (bottom) -->
+  <g filter="url(#shadow)">
+    <circle cx="260" cy="395" r="50" fill="#f5b7b1" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="260" y="381" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">News Anxiety</text>
+    <text x="260" y="394" text-anchor="middle" font-size="8.5" fill="#5d6d7e">3+ sessions/week</text>
+    <text x="260" y="405" text-anchor="middle" font-size="8.5" fill="#5d6d7e">develops persistent</text>
+    <text x="260" y="416" text-anchor="middle" font-size="8.5" fill="#5d6d7e">condition</text>
+    <text x="260" y="428" text-anchor="middle" font-size="9" font-weight="600" fill="#c0392b"><tspan font-family="Consolas, monospace" fill="#e67e22">+1 SP/day</tspan></text>
+  </g>
+
+  <!-- Node 5: Cannot Stop (lower-left) -->
+  <g filter="url(#shadow)">
+    <circle cx="135" cy="320" r="50" fill="#fadbd8" stroke="#e74c3c" stroke-width="2.5"/>
+    <text x="135" y="305" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Cannot Stop</text>
+    <text x="135" y="318" text-anchor="middle" font-size="8" font-weight="600" fill="#e67e22"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+RES</tspan><tspan fill="#e67e22"> vs TN 12</tspan></text>
+    <text x="135" y="330" text-anchor="middle" font-size="8.5" fill="#5d6d7e">failure → another</text>
+    <text x="135" y="340" text-anchor="middle" font-size="8.5" fill="#5d6d7e">hour of scrolling</text>
+    <text x="135" y="353" text-anchor="middle" font-size="9" font-weight="600" fill="#e74c3c"><tspan font-family="Consolas, monospace" fill="#e67e22">+2 SP more</tspan></text>
+  </g>
+
+  <!-- Node 6: Harder to Break (upper-left) -->
+  <g filter="url(#shadow)">
+    <circle cx="120" cy="195" r="50" fill="#fdebd0" stroke="#e67e22" stroke-width="2.5"/>
+    <text x="120" y="180" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Harder to</text>
+    <text x="120" y="192" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Break Free</text>
+    <text x="120" y="207" text-anchor="middle" font-size="8.5" fill="#5d6d7e">Anxiety makes media</text>
+    <text x="120" y="217" text-anchor="middle" font-size="8.5" fill="#5d6d7e">detox harder</text>
+    <text x="120" y="230" text-anchor="middle" font-size="9" font-weight="600" fill="#e67e22"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+RES</tspan><tspan fill="#e67e22"> vs TN 14</tspan></text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       LOOP ARROWS (connecting nodes clockwise)
+       ════════════════════════════════════════════════ -->
+
+  <!-- Node 1 → Node 2 (top → upper-right) -->
+  <path d="M305,130 Q340,145 358,175" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#loopArrow)"/>
+
+  <!-- Node 2 → Node 3 (upper-right → lower-right) -->
+  <path d="M390,248 Q395,275 395,298" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#loopArrow)"/>
+
+  <!-- Node 3 → Node 4 (lower-right → bottom) -->
+  <path d="M355,355 Q310,380 290,385" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#loopArrow)"/>
+
+  <!-- Node 4 → Node 5 (bottom → lower-left) -->
+  <path d="M218,385 Q180,370 155,348" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#loopArrow)"/>
+
+  <!-- Node 5 → Node 6 (lower-left → upper-left) -->
+  <path d="M128,270 Q120,245 120,225" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#loopArrow)"/>
+
+  <!-- Node 6 → Node 1 (upper-left → top) -->
+  <path d="M155,155 Q200,130 235,125" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#loopArrow)"/>
+
+  <!-- ════════════════════════════════════════════════
+       ESCAPE HATCH — Media Detox (green, pointing OUT)
+       ════════════════════════════════════════════════ -->
+
+  <!-- Escape arrow from bottom node outward -->
+  <path d="M260,345 Q260,260 260,183" stroke="#27ae60" stroke-width="2.5" fill="none" marker-end="url(#escapeArrow)" stroke-dasharray="6,3"/>
+
+  <!-- Escape label -->
+  <g filter="url(#shadow)">
+    <rect x="195" y="178" width="130" height="38" rx="6" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="260" y="193" text-anchor="middle" font-size="10" font-weight="700" fill="#1e8449">🛡️ Media Detox</text>
+    <text x="260" y="207" text-anchor="middle" font-size="8.5" fill="#27ae60">3+ days no news → −2 SP</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       SHIELD — Media Literate trait (blue, blocking
+       ════════════════════════════════════════════════ -->
+
+  <!-- Shield icon positioned to block Node 1 -->
+  <g filter="url(#shadow)">
+    <!-- Shield shape -->
+    <path d="M60,80 L90,68 L120,80 L120,110 Q120,135 90,148 Q60,135 60,110 Z" fill="#2980b9" stroke="#1a5276" stroke-width="2"/>
+    <text x="90" y="100" text-anchor="middle" font-size="14" fill="#fff">🛡️</text>
+    <text x="90" y="115" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">Media</text>
+    <text x="90" y="125" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">Literate</text>
+  </g>
+
+  <!-- Blocking line from shield to Node 1 -->
+  <line x1="120" y1="105" x2="205" y2="118" stroke="#2980b9" stroke-width="2" marker-end="url(#shieldArrow)"/>
+  <text x="162" y="105" text-anchor="middle" font-size="8" font-weight="600" fill="#2980b9">Blocks</text>
+  <text x="162" y="115" text-anchor="middle" font-size="8" font-weight="600" fill="#2980b9">entirely</text>
+
+  <!-- ════════════════════════════════════════════════
+       CENTER — spiral/danger indicator
+       ════════════════════════════════════════════════ -->
+
+  <g filter="url(#shadow)">
+    <circle cx="260" cy="260" r="35" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+    <text x="260" y="250" text-anchor="middle" font-size="18">🔄</text>
+    <text x="260" y="270" text-anchor="middle" font-size="8" font-weight="700" fill="#c0392b">FEEDBACK</text>
+    <text x="260" y="280" text-anchor="middle" font-size="8" font-weight="700" fill="#c0392b">LOOP</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       BOTTOM NOTE
+       ════════════════════════════════════════════════ -->
+
+  <rect x="20" y="445" width="480" height="35" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1" filter="url(#shadow)"/>
+  <text x="260" y="460" text-anchor="middle" font-size="9.5" font-weight="600" fill="#c0392b">⚠️ Without intervention, this loop accelerates — SP accumulates faster each cycle</text>
+  <text x="260" y="473" text-anchor="middle" font-size="9" fill="#5d6d7e">Media Literate trait blocks echo chamber reinforcement entirely · Detox clears News Anxiety</text>
+
+</svg>

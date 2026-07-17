@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 140" width="960" height="140">
+  <!-- Background -->
+  <rect x="1" y="1" width="958" height="138" rx="8" fill="#ffffff" stroke="#d5dbdb" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="480" y="24" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#2c3e50">🎓 Campaign 1: The First Year — 12-Session Arc</text>
+
+  <!-- Connecting lines (stress-colored) drawn before nodes so nodes sit on top -->
+  <line x1="60"  y1="65" x2="130" y2="65" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="130" y1="65" x2="200" y2="65" stroke="#e67e22" stroke-width="3" stroke-linecap="round"/>
+  <line x1="200" y1="65" x2="270" y2="65" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <line x1="270" y1="65" x2="340" y2="65" stroke="#82e0aa" stroke-width="3" stroke-linecap="round"/>
+  <line x1="340" y1="65" x2="410" y2="65" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <line x1="410" y1="65" x2="480" y2="65" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="480" y1="65" x2="550" y2="65" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="550" y1="65" x2="620" y2="65" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <line x1="620" y1="65" x2="690" y2="65" stroke="#e67e22" stroke-width="3" stroke-linecap="round"/>
+  <line x1="690" y1="65" x2="760" y2="65" stroke="#27ae60" stroke-width="3" stroke-linecap="round"/>
+  <line x1="760" y1="65" x2="830" y2="65" stroke="#2980b9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="830" y1="65" x2="900" y2="65" stroke="#2980b9" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Emoji icons above each node (y=48) -->
+  <text x="60"  y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🏠</text>
+  <text x="130" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">💼</text>
+  <text x="200" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🤝</text>
+  <text x="270" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">💕</text>
+  <text x="340" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">💰</text>
+  <text x="410" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🏠</text>
+  <text x="480" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🏥</text>
+  <text x="550" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">👨‍👩‍👦</text>
+  <text x="620" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🚀</text>
+  <text x="690" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">💸</text>
+  <text x="760" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🌱</text>
+  <text x="830" y="48" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14">🎯</text>
+
+  <!-- Node circles (r=12, center y=65) -->
+  <circle cx="60"  cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="130" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="200" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="270" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="340" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="410" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="480" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="550" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="620" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="690" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="760" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+  <circle cx="830" cy="65" r="12" fill="#f8f9fa" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- Session numbers inside nodes -->
+  <text x="60"  y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">1</text>
+  <text x="130" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">2</text>
+  <text x="200" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">3</text>
+  <text x="270" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">4</text>
+  <text x="340" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">5</text>
+  <text x="410" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">6</text>
+  <text x="480" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">7</text>
+  <text x="550" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">8</text>
+  <text x="620" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">9</text>
+  <text x="690" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">10</text>
+  <text x="760" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">11</text>
+  <text x="830" y="70" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#2c3e50">12</text>
+
+  <!-- Labels below each node (y=96) -->
+  <text x="60"  y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S1: Apt</text>
+  <text x="130" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S2: Job</text>
+  <text x="200" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S3: Friends</text>
+  <text x="270" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S4: Love</text>
+  <text x="340" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S5: Budget</text>
+  <text x="410" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S6: Homesick</text>
+  <text x="480" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S7: Health</text>
+  <text x="550" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S8: Family</text>
+  <text x="620" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S9: Career</text>
+  <text x="690" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S10: Emerg.</text>
+  <text x="760" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S11: Growth</text>
+  <text x="830" y="96" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">S12: Decision</text>
+
+  <!-- Stress legend at bottom right -->
+  <rect x="730" y="108" width="210" height="24" rx="4" fill="#f8f9fa" stroke="#e5e7e9" stroke-width="1"/>
+  <circle cx="745" cy="120" r="4" fill="#e74c3c"/><text x="754" y="123" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5d6d7e">High</text>
+  <circle cx="792" cy="120" r="4" fill="#e67e22"/><text x="801" y="123" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5d6d7e">Med-High</text>
+  <circle cx="858" cy="120" r="4" fill="#f39c12"/><text x="867" y="123" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5d6d7e">Med</text>
+  <circle cx="900" cy="120" r="4" fill="#27ae60"/><text x="909" y="123" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#5d6d7e">Low</text>
+</svg>

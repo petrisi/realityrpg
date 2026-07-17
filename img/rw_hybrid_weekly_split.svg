@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 800 280" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="280" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="400" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Hybrid Weekly Schedule Comparison</text>
+  <text x="400" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">Office days (blue) vs Remote days (green) · SP impact per day shown as badges</text>
+
+  <!-- SCHEDULE 1: 2-3 Split -->
+  <text x="55" y="72" font-size="12" font-weight="700" fill="#2c3e50">2-3 Split</text>
+  <g transform="translate(140, 58)">
+    <!-- Mon: Office -->
+    <rect width="55" height="32" rx="4" fill="#d4efdf" stroke="#2980b9" stroke-width="2"/>
+    <text x="27" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#2980b9">Mon</text>
+    <text x="27" y="28" text-anchor="middle" font-size="7" fill="#2980b9">Office</text>
+    <!-- Tue: Office -->
+    <rect x="60" width="55" height="32" rx="4" fill="#d4efdf" stroke="#2980b9" stroke-width="2"/>
+    <text x="87" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#2980b9">Tue</text>
+    <text x="87" y="28" text-anchor="middle" font-size="7" fill="#2980b9">Office</text>
+    <!-- Wed: Remote -->
+    <rect x="120" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="147" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Wed</text>
+    <text x="147" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <!-- Thu: Remote -->
+    <rect x="180" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="207" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Thu</text>
+    <text x="207" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <!-- Fri: Remote -->
+    <rect x="240" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="267" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Fri</text>
+    <text x="267" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <!-- Sat/Sun: Off -->
+    <rect x="300" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="327" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sat</text>
+    <rect x="360" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="387" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sun</text>
+  </g>
+  <!-- SP summary — shifted right from 530 to 570 (Sun ends at 555, now 15px gap) -->
+  <rect x="570" y="58" width="100" height="32" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="620" y="72" text-anchor="middle" font-size="8" font-weight="700" fill="#f39c12">+2 SP/week</text>
+  <text x="620" y="84" text-anchor="middle" font-size="7" fill="#7f8c8d">Moderate cost</text>
+
+  <!-- SCHEDULE 2: 3-2 Split -->
+  <text x="55" y="122" font-size="12" font-weight="700" fill="#2c3e50">3-2 Split</text>
+  <g transform="translate(140, 108)">
+    <rect width="55" height="32" rx="4" fill="#d4efdf" stroke="#2980b9" stroke-width="2"/>
+    <text x="27" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#2980b9">Mon</text>
+    <text x="27" y="28" text-anchor="middle" font-size="7" fill="#2980b9">Office</text>
+    <rect x="60" width="55" height="32" rx="4" fill="#d4efdf" stroke="#2980b9" stroke-width="2"/>
+    <text x="87" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#2980b9">Tue</text>
+    <text x="87" y="28" text-anchor="middle" font-size="7" fill="#2980b9">Office</text>
+    <rect x="120" width="55" height="32" rx="4" fill="#d4efdf" stroke="#2980b9" stroke-width="2"/>
+    <text x="147" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#2980b9">Wed</text>
+    <text x="147" y="28" text-anchor="middle" font-size="7" fill="#2980b9">Office</text>
+    <rect x="180" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="207" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Thu</text>
+    <text x="207" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <rect x="240" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="267" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Fri</text>
+    <text x="267" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <rect x="300" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="327" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sat</text>
+    <rect x="360" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="387" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sun</text>
+  </g>
+  <rect x="570" y="108" width="100" height="32" rx="6" fill="#fdebd0" stroke="#e67e22" stroke-width="1"/>
+  <text x="620" y="122" text-anchor="middle" font-size="8" font-weight="700" fill="#e67e22">+4 SP/week</text>
+  <text x="620" y="134" text-anchor="middle" font-size="7" fill="#7f8c8d">High cost</text>
+
+  <!-- SCHEDULE 3: Anchor Day -->
+  <text x="55" y="172" font-size="12" font-weight="700" fill="#2c3e50">Anchor Day</text>
+  <g transform="translate(140, 158)">
+    <rect width="55" height="32" rx="4" fill="#d4efdf" stroke="#2980b9" stroke-width="2"/>
+    <text x="27" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#2980b9">Mon</text>
+    <text x="27" y="28" text-anchor="middle" font-size="7" fill="#2980b9">Anchor</text>
+    <rect x="60" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="87" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Tue</text>
+    <text x="87" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <rect x="120" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="147" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Wed</text>
+    <text x="147" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <rect x="180" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="207" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Thu</text>
+    <text x="207" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <rect x="240" width="55" height="32" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="267" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">Fri</text>
+    <text x="267" y="28" text-anchor="middle" font-size="7" fill="#27ae60">Remote</text>
+    <rect x="300" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="327" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sat</text>
+    <rect x="360" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="387" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sun</text>
+  </g>
+  <rect x="570" y="158" width="100" height="32" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="620" y="172" text-anchor="middle" font-size="8" font-weight="700" fill="#27ae60">+1 SP/week</text>
+  <text x="620" y="184" text-anchor="middle" font-size="7" fill="#7f8c8d">Low cost</text>
+
+  <!-- SCHEDULE 4: Flex Hybrid -->
+  <text x="55" y="222" font-size="12" font-weight="700" fill="#2c3e50">Flex Hybrid</text>
+  <g transform="translate(140, 208)">
+    <rect width="55" height="32" rx="4" fill="#d4efdf" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="27" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#8e44ad">Mon</text>
+    <text x="27" y="28" text-anchor="middle" font-size="7" fill="#8e44ad">?</text>
+    <rect x="60" width="55" height="32" rx="4" fill="#d4efdf" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="87" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#8e44ad">Tue</text>
+    <text x="87" y="28" text-anchor="middle" font-size="7" fill="#8e44ad">?</text>
+    <rect x="120" width="55" height="32" rx="4" fill="#d4efdf" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="147" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#8e44ad">Wed</text>
+    <text x="147" y="28" text-anchor="middle" font-size="7" fill="#8e44ad">?</text>
+    <rect x="180" width="55" height="32" rx="4" fill="#d4efdf" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="207" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#8e44ad">Thu</text>
+    <text x="207" y="28" text-anchor="middle" font-size="7" fill="#8e44ad">?</text>
+    <rect x="240" width="55" height="32" rx="4" fill="#d4efdf" stroke="#8e44ad" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="267" y="16" text-anchor="middle" font-size="8" font-weight="700" fill="#8e44ad">Fri</text>
+    <text x="267" y="28" text-anchor="middle" font-size="7" fill="#8e44ad">?</text>
+    <rect x="300" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="327" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sat</text>
+    <rect x="360" width="55" height="32" rx="4" fill="#f0f0f0"/>
+    <text x="387" y="22" text-anchor="middle" font-size="8" fill="#7f8c8d">Sun</text>
+  </g>
+  <rect x="570" y="208" width="100" height="32" rx="6" fill="#e8daef" stroke="#8e44ad" stroke-width="1"/>
+  <text x="620" y="222" text-anchor="middle" font-size="8" font-weight="700" fill="#8e44ad">Variable</text>
+  <text x="620" y="234" text-anchor="middle" font-size="7" fill="#7f8c8d">Self-chosen</text>
+
+  <!-- PHANTOM EMPLOYEE EFFECT — widened to match new viewBox -->
+  <rect x="120" y="250" width="650" height="22" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="445" y="265" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">⚠️ Phantom Employee Effect: More remote days than office days → cumulative −1 to promotion checks (max −3)</text>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 650 520" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <title>Coalition Building Decision Tree</title>
+  <desc>Decision tree for choosing coalition partners with 4 partner types, bonus thresholds, and fracture warning</desc>
+  <defs>
+    <filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#27ae60"/>
+    </marker>
+    <marker id="arrow-yellow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#f39c12"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#e67e22"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#c0392b"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="650" height="520" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="325" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Coalition Building Decision Tree</text>
+  <text x="325" y="43" text-anchor="middle" font-size="10.5" fill="#5d6d7e">Each partner type has different difficulty — but stronger coalitions grant bigger bonuses</text>
+
+  <!-- ════════════════════════════════════════
+       ROOT NODE: Identify Potential Partners
+       ════════════════════════════════════════ -->
+  <g filter="url(#shadow)">
+    <rect x="215" y="55" width="220" height="40" rx="10" fill="#2c3e50"/>
+    <text x="325" y="81" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Identify Potential Partners</text>
+  </g>
+
+  <!-- Branch arrows from root down to 4 partner types -->
+  <line x1="235" y1="95" x2="120" y2="140" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="285" y1="95" x2="265" y2="140" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="365" y1="95" x2="385" y2="140" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="415" y1="95" x2="530" y2="140" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- ════════════════════════════════════════
+       4 PARTNER TYPE BOXES
+       ════════════════════════════════════════ -->
+
+  <!-- 1: Natural Allies (green) -->
+  <g filter="url(#shadow)">
+    <rect x="15" y="140" width="150" height="80" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="90" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#1e8449">🤝 Natural Allies</text>
+    <text x="90" y="180" text-anchor="middle" font-size="9.5" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">TN 12</tspan></text>
+    <text x="90" y="195" text-anchor="middle" font-size="9" fill="#5d6d7e">Same ideological family</text>
+    <text x="90" y="209" text-anchor="middle" font-size="9" fill="#5d6d7e">Easy to recruit</text>
+  </g>
+
+  <!-- 2: Uneasy Allies (yellow) -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="140" width="150" height="80" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="260" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#7e5109">🤝 Uneasy Allies</text>
+    <text x="260" y="180" text-anchor="middle" font-size="9.5" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">TN 14</tspan></text>
+    <text x="260" y="195" text-anchor="middle" font-size="9" fill="#5d6d7e">Different priorities</text>
+    <text x="260" y="209" text-anchor="middle" font-size="9" fill="#5d6d7e">Shared goals</text>
+  </g>
+
+  <!-- 3: Unlikely Allies (orange) -->
+  <g filter="url(#shadow)">
+    <rect x="355" y="140" width="150" height="80" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+    <text x="430" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#a04000">⚠️ Unlikely Allies</text>
+    <text x="430" y="180" text-anchor="middle" font-size="9.5" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">TN 16</tspan></text>
+    <text x="430" y="195" text-anchor="middle" font-size="9" fill="#5d6d7e">Different ideologies</text>
+    <text x="430" y="209" text-anchor="middle" font-size="9" fill="#5d6d7e">Forced coalition</text>
+  </g>
+
+  <!-- 4: Adversaries → Partners (red) -->
+  <g filter="url(#shadow)">
+    <rect x="525" y="140" width="120" height="80" rx="8" fill="#fdedec" stroke="#c0392b" stroke-width="2"/>
+    <text x="585" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#922b21">⚡ Adversaries</text>
+    <text x="585" y="176" text-anchor="middle" font-size="9" font-weight="600" fill="#922b21">→ Partners</text>
+    <text x="585" y="194" text-anchor="middle" font-size="9.5" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">TN 18</tspan></text>
+    <text x="585" y="209" text-anchor="middle" font-size="9" fill="#5d6d7e">Double SP on success</text>
+  </g>
+
+  <!-- ════════════════════════════════════════
+       CONVERGENCE: arrows from all 4 types downward
+       ════════════════════════════════════════ -->
+  <line x1="90" y1="220" x2="90" y2="260" stroke="#27ae60" stroke-width="1.5"/>
+  <line x1="90" y1="260" x2="325" y2="260" stroke="#27ae60" stroke-width="1.5"/>
+  <line x1="260" y1="220" x2="260" y2="260" stroke="#f39c12" stroke-width="1.5"/>
+  <line x1="430" y1="220" x2="430" y2="260" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="430" y1="260" x2="325" y2="260" stroke="#e67e22" stroke-width="1.5"/>
+  <line x1="585" y1="220" x2="585" y2="260" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="585" y1="260" x2="325" y2="260" stroke="#c0392b" stroke-width="1.5"/>
+
+  <!-- Convergence arrow head -->
+  <line x1="325" y1="260" x2="325" y2="275" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Coalition Bonus Threshold label -->
+  <text x="325" y="295" text-anchor="middle" font-size="11" font-weight="700" fill="#2c3e50">Coalition Bonus Threshold</text>
+
+  <!-- Arrow down to bonus boxes -->
+  <line x1="325" y1="300" x2="325" y2="318" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Split to bonus boxes -->
+  <line x1="325" y1="318" x2="190" y2="318" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="190" y1="318" x2="190" y2="338" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="325" y1="318" x2="460" y2="318" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="460" y1="318" x2="460" y2="338" stroke="#2c3e50" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ════════════════════════════════════════
+       BONUS BOXES
+       ════════════════════════════════════════ -->
+
+  <!-- 3+ partners bonus -->
+  <g filter="url(#shadow)">
+    <rect x="65" y="338" width="250" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="190" y="358" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">3+ partners</text>
+    <text x="190" y="376" text-anchor="middle" font-size="10" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">+1</tspan><tspan fill="#5d6d7e"> to all organizing checks</tspan></text>
+  </g>
+
+  <!-- 5+ partners bonus -->
+  <g filter="url(#shadow)">
+    <rect x="335" y="338" width="250" height="52" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="460" y="358" text-anchor="middle" font-size="12" font-weight="700" fill="#2c3e50">5+ partners</text>
+    <text x="460" y="376" text-anchor="middle" font-size="10" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">+2</tspan><tspan fill="#5d6d7e"> to all organizing checks</tspan></text>
+  </g>
+
+  <!-- ════════════════════════════════════════
+       BOTTOM: Warning Callout
+       ════════════════════════════════════════ -->
+  <g filter="url(#shadow)">
+    <rect x="25" y="410" width="600" height="55" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="325" y="432" text-anchor="middle" font-size="11" font-weight="700" fill="#7e5109">⚠️ Coalition Fracture Risk</text>
+    <text x="325" y="449" text-anchor="middle" font-size="10" fill="#5d6d7e">Coalition fractures: <tspan font-family="Consolas, monospace" fill="#e67e22">2d10+PRC vs TN 14</tspan><tspan fill="#5d6d7e"> to repair</tspan></text>
+    <text x="325" y="461" text-anchor="middle" font-size="9" fill="#5d6d7e">Fail = lost partner · −1 Campaign Point · may need to recruit replacement</text>
+  </g>
+</svg>

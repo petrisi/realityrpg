@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 900 420" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowR" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrowD" markerWidth="10" markerHeight="8" refX="5" refY="8" orient="auto">
+      <path d="M0,0 L5,8 L10,0 Z" fill="#e74c3c"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="420" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="450" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Career Change Decision Pathway</text>
+  <text x="450" y="44" text-anchor="middle" font-size="11" fill="#7f8c8d">From deciding to pivot to landing the new role — with risk zones at each step</text>
+
+  <!-- STEP 1: Starting Point -->
+  <g transform="translate(30, 65)" filter="url(#shadow)">
+    <rect width="130" height="60" rx="8" fill="#2980b9"/>
+    <text x="65" y="24" text-anchor="middle" font-size="11" font-weight="700" fill="white">🔄 Decide to Pivot</text>
+    <text x="65" y="40" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.85)">Current career → new field</text>
+    <text x="65" y="54" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.85)">Assess transferable skills</text>
+  </g>
+
+  <line x1="160" y1="95" x2="215" y2="95" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowR)"/>
+
+  <!-- STEP 2: Choose Retraining Path (5 options branch) -->
+  <g transform="translate(215, 55)" filter="url(#shadow)">
+    <rect width="140" height="80" rx="8" fill="#2c3e50"/>
+    <text x="70" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="white">📚 Choose Path</text>
+    <text x="70" y="38" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">Community College</text>
+    <text x="70" y="50" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">Coding Bootcamp</text>
+    <text x="70" y="62" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">Certification</text>
+    <text x="70" y="74" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">Self-Study / Grad Degree</text>
+  </g>
+
+  <line x1="355" y1="95" x2="410" y2="95" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowR)"/>
+
+  <!-- STEP 3: Age Penalty Modifier -->
+  <g transform="translate(410, 55)" filter="url(#shadow)">
+    <rect width="130" height="80" rx="8" fill="#e67e22"/>
+    <text x="65" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="white">⚠️ Age Penalty</text>
+    <text x="65" y="38" text-anchor="middle" font-size="8" fill="white">20s: None</text>
+    <text x="65" y="50" text-anchor="middle" font-size="8" fill="white">30s: −1 checks</text>
+    <text x="65" y="62" text-anchor="middle" font-size="8" fill="white">40s: −2 · 50s: −3</text>
+    <text x="65" y="74" text-anchor="middle" font-size="8" fill="#e74c3c" font-weight="700">60+: −4 · 60% discrim</text>
+  </g>
+
+  <line x1="540" y1="95" x2="595" y2="95" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowR)"/>
+
+  <!-- STEP 4: Retraining Check -->
+  <g transform="translate(595, 65)" filter="url(#shadow)">
+    <rect width="120" height="60" rx="8" fill="#f39c12"/>
+    <text x="60" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="white">🎲 Retraining</text>
+    <text x="60" y="38" text-anchor="middle" font-size="9" fill="white">Check</text>
+    <text x="60" y="52" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">2d10 + INT mod vs TN</text>
+  </g>
+
+  <!-- Branch: PASS -->
+  <line x1="715" y1="85" x2="770" y2="85" stroke="#27ae60" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="742" y="78" text-anchor="middle" font-size="8" fill="#27ae60" font-weight="700">PASS</text>
+
+  <!-- Branch: FAIL -->
+  <line x1="715" y1="115" x2="770" y2="115" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="742" y="108" text-anchor="middle" font-size="8" fill="#e74c3c" font-weight="700">FAIL</text>
+
+  <!-- PASS → New career (but pay gap) -->
+  <g transform="translate(770, 65)" filter="url(#shadow)">
+    <rect width="100" height="40" rx="8" fill="#27ae60"/>
+    <text x="50" y="20" text-anchor="middle" font-size="10" font-weight="700" fill="white">✅ Credentialed</text>
+    <text x="50" y="34" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">Ready for new field</text>
+  </g>
+
+  <!-- FAIL → Try again -->
+  <g transform="translate(770, 100)" filter="url(#shadow)">
+    <rect width="100" height="30" rx="8" fill="#e74c3c"/>
+    <text x="50" y="14" text-anchor="middle" font-size="9" font-weight="700" fill="white">❌ Retry</text>
+    <text x="50" y="26" text-anchor="middle" font-size="8" fill="rgba(255,255,255,0.85)">More study needed</text>
+  </g>
+
+  <!-- PAY GAP DANGER ZONE (below main flow) -->
+  <g transform="translate(215, 165)" filter="url(#shadow)">
+    <rect width="655" height="80" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="2" stroke-dasharray="8,4"/>
+    <text x="327" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#e74c3c">⚠️ PAY GAP DANGER ZONE ⚠️</text>
+    <text x="327" y="40" text-anchor="middle" font-size="10" fill="#2c3e50">New job pays less → financial stress → +2 SP/month in deficit</text>
+    <text x="327" y="55" text-anchor="middle" font-size="10" fill="#2c3e50">Need 3 months emergency savings to survive · Without savings → take side job → less retraining time → burnout risk</text>
+    <text x="327" y="72" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">This is where most career changes fail — not from lack of skill, but from running out of money</text>
+  </g>
+
+  <!-- TRANSFERABLE SKILLS BOX (left side) -->
+  <g transform="translate(30, 165)" filter="url(#shadow)">
+    <rect width="170" height="130" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+    <text x="85" y="20" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">💡 Transferable Skills</text>
+    <text x="15" y="40" font-size="9" fill="#2c3e50">📋 Project Mgmt → +2 EXP</text>
+    <text x="15" y="56" font-size="9" fill="#2c3e50">🗣️ Customer Svc → +1 PRC</text>
+    <text x="15" y="72" font-size="9" fill="#2c3e50">📖 Teaching → +2 INT</text>
+    <text x="15" y="88" font-size="9" fill="#2c3e50">💰 Sales → +1 PRC</text>
+    <text x="15" y="104" font-size="9" fill="#2c3e50">🏥 Healthcare → +1 VIG,+1 RES</text>
+    <text x="15" y="120" font-size="9" fill="#2c3e50">🎖️ Military → +2 PRC, +1 RES</text>
+  </g>
+
+  <!-- BURNOUT RISK (bottom right) -->
+  <g transform="translate(530, 265)" filter="url(#shadow)">
+    <rect width="240" height="60" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5"/>
+    <text x="120" y="20" text-anchor="middle" font-size="11" font-weight="700" fill="#e67e22">🔥 Burnout Risk Path</text>
+    <text x="120" y="38" text-anchor="middle" font-size="9" fill="#2c3e50">Pay gap → side job → less sleep</text>
+    <text x="120" y="50" text-anchor="middle" font-size="9" fill="#e74c3c" font-weight="600">→ 2-job penalties → burnout cascade</text>
+  </g>
+
+  <!-- Arrow from pay gap to burnout -->
+  <line x1="540" y1="245" x2="540" y2="263" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowD)"/>
+
+  <!-- Direction note -->
+  <text x="450" y="405" text-anchor="middle" font-size="10" fill="#7f8c8d" font-style="italic">Flow: Left → Right = progression · Down = risk zones · Each step has its own check and time cost</text>
+</svg>

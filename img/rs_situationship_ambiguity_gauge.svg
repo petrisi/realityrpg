@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 680 420" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="420" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">The Ambiguity Tax</text>
+  <text x="340" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">Daily SP accumulation in undefined situationships — three severity tracks diverge over time</text>
+
+  <!-- Chart area -->
+  <rect x="90" y="65" width="520" height="240" rx="4" fill="white" stroke="#dcdcdc" stroke-width="1"/>
+
+  <!-- Y axis — SP level (inverted: 0 at bottom, max at top) -->
+  <g font-size="9" fill="#7f8c8d" text-anchor="end">
+    <text x="85" y="88">Max SP</text>
+    <text x="85" y="128">75%</text>
+    <text x="85" y="168">50%</text>
+    <text x="85" y="208">25%</text>
+    <text x="85" y="248">0</text>
+  </g>
+
+  <!-- X axis — weeks -->
+  <g font-size="9" fill="#7f8c8d" text-anchor="middle">
+    <text x="120" y="320">Wk 0</text>
+    <text x="200" y="320">Wk 2</text>
+    <text x="280" y="320">Wk 4</text>
+    <text x="360" y="320">Wk 6</text>
+    <text x="440" y="320">Wk 8</text>
+    <text x="520" y="320">Wk 10</text>
+    <text x="590" y="320">Wk 12</text>
+  </g>
+
+  <!-- Grid lines -->
+  <line x1="90" y1="86" x2="610" y2="86" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="90" y1="126" x2="610" y2="126" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="90" y1="166" x2="610" y2="166" stroke="#e8e8e8" stroke-width="1"/>
+  <line x1="90" y1="206" x2="610" y2="206" stroke="#e8e8e8" stroke-width="1"/>
+
+  <!-- BURNOUT DANGER ZONE -->
+  <rect x="90" y="78" width="520" height="24" rx="0" fill="#fdedec" opacity="0.5"/>
+  <text x="615" y="93" font-size="8" fill="#e74c3c" font-weight="700">BURNOUT</text>
+
+  <!-- TRACK 1: Symmetric awareness (+1 SP/day = 7 SP/week) — green, slowest rise -->
+  <!-- Week 0=248, Week 12 at +84 SP → capped at max (86) -->
+  <!-- 7 SP/week × 12 weeks = 84 → 248 - (84/30*160) = 248 - 448 = negative, so cap at ~86 -->
+  <!-- Let's do: 7 SP/wk, starting at 248, each week drops ~11.4px -->
+  <polyline points="120,248 200,237 280,225 360,214 440,203 520,191 590,180"
+    fill="none" stroke="#27ae60" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="120" cy="248" r="4" fill="#27ae60"/>
+
+  <!-- TRACK 2: Asymmetric expectations (+2 SP/day = 14 SP/week) — orange, medium rise -->
+  <!-- 14 SP/wk → each week drops ~22.9px. Week 6 hits ~86 (burnout) -->
+  <polyline points="120,248 200,225 280,203 360,180 440,158 520,135 590,113"
+    fill="none" stroke="#f39c12" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="120" cy="248" r="4" fill="#f39c12"/>
+
+  <!-- TRACK 3: Being strung along (+3 SP/day = 21 SP/week) — red, fastest rise -->
+  <!-- 21 SP/wk → each week drops ~34.3px. Week 4 hits ~86 (burnout) -->
+  <polyline points="120,248 200,214 280,180 360,146 440,113 520,90 590,86"
+    fill="none" stroke="#e74c3c" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="120" cy="248" r="4" fill="#e74c3c"/>
+
+  <!-- Burnout hit markers -->
+  <circle cx="360" cy="146" r="7" fill="#e74c3c" stroke="white" stroke-width="2"/>
+  <rect x="370" y="128" width="80" height="22" rx="4" fill="#fdedec" stroke="#e74c3c" stroke-width="1"/>
+  <text x="410" y="142" text-anchor="middle" font-size="8" font-weight="700" fill="#e74c3c">⚠ Hit burnout</text>
+
+  <circle cx="280" cy="180" r="7" fill="#f39c12" stroke="white" stroke-width="2"/>
+  <rect x="290" y="162" width="70" height="22" rx="4" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="325" y="176" text-anchor="middle" font-size="8" font-weight="700" fill="#f39c12">⚠ Near burnout</text>
+
+  <!-- DTR intervention point -->
+  <line x1="360" y1="78" x2="360" y2="300" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <rect x="310" y="58" width="100" height="22" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="360" y="73" text-anchor="middle" font-size="9" font-weight="700" fill="#2980b9">📞 DTR Conversation</text>
+
+  <!-- Legend -->
+  <g transform="translate(120, 345)">
+    <line x1="0" y1="0" x2="25" y2="0" stroke="#27ae60" stroke-width="3"/>
+    <text x="30" y="4" font-size="9" fill="#2c3e50">Symmetric (+1 SP/day)</text>
+
+    <line x1="170" y1="0" x2="195" y2="0" stroke="#f39c12" stroke-width="3"/>
+    <text x="200" y="4" font-size="9" fill="#2c3e50">Asymmetric (+2 SP/day)</text>
+
+    <line x1="340" y1="0" x2="365" y2="0" stroke="#e74c3c" stroke-width="3"/>
+    <text x="370" y="4" font-size="9" fill="#2c3e50">Strung along (+3 SP/day)</text>
+  </g>
+
+  <!-- Bottom note -->
+  <rect x="140" y="370" width="400" height="40" rx="6" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
+  <text x="340" y="387" text-anchor="middle" font-size="10" fill="#e67e22">After 30 days of being strung along → Trauma Marker gained</text>
+  <text x="340" y="402" text-anchor="middle" font-size="10" fill="#e67e22">Ghosting risk increases after 6+ weeks without DTR</text>
+</svg>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 500" width="620" height="500">
+  <defs>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+
+    <!-- Arrowhead marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5d6d7e"/>
+    </marker>
+
+    <!-- Dashed arrowhead marker (same shape for loop-back) -->
+    <marker id="arrowhead-dash" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5d6d7e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="500" fill="#ffffff" rx="4"/>
+
+  <!-- Title -->
+  <text x="310" y="28" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#2c3e50">⚖️ SP Economy — Core Campaign Loop</text>
+
+  <!-- Subtitle -->
+  <text x="310" y="46" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5d6d7e">How Stress Points flow through a campaign session</text>
+
+  <!-- ===== NODE 1: Event Happens ===== -->
+  <rect x="260" y="65" width="100" height="32" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="85" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">Event Happens</text>
+
+  <!-- Arrow: Node 1 → Node 2 -->
+  <line x1="310" y1="97" x2="310" y2="120" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== NODE 2: Roll 2d10 + mod vs TN ===== -->
+  <rect x="240" y="120" width="140" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="142" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">Roll 2d10 + mod vs TN</text>
+
+  <!-- Arrow: Node 2 → Diamond 1 (Fail?) -->
+  <line x1="310" y1="156" x2="310" y2="170" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== DIAMOND 1: Fail? ===== -->
+  <!-- Diamond centered at (310, 195), size 80×50 → points: top(310,170), right(350,195), bottom(310,220), left(270,195) -->
+  <polygon points="310,170 350,195 310,220 270,195" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Fail?</text>
+
+  <!-- Yes branch: Diamond 1 → +SP Gained (right) -->
+  <line x1="350" y1="195" x2="420" y2="196" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="385" y="191" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">Yes</text>
+
+  <!-- ===== NODE: +SP Gained ===== -->
+  <rect x="420" y="180" width="100" height="32" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="470" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">+SP Gained</text>
+
+  <!-- No branch: Diamond 1 → No SP Change (down) -->
+  <line x1="310" y1="220" x2="310" y2="270" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="318" y="248" text-anchor="start" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">No</text>
+
+  <!-- ===== NODE: No SP Change ===== -->
+  <rect x="260" y="270" width="100" height="32" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">No SP Change</text>
+
+  <!-- Arrow: +SP Gained node merges down → Diamond 2 -->
+  <line x1="470" y1="212" x2="470" y2="300" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Horizontal connector: +SP Gained right side to Diamond 2 right side -->
+  <line x1="470" y1="300" x2="350" y2="300" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow: No SP Change → Diamond 2 -->
+  <line x1="310" y1="302" x2="310" y2="275" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== DIAMOND 2: SP ≥ Max? ===== -->
+  <!-- Diamond centered at (310, 300), size 80×50 → points: top(310,275), right(350,300), bottom(310,325), left(270,300) -->
+  <polygon points="310,275 350,300 310,325 270,300" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="305" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#2c3e50">SP ≥ Max?</text>
+
+  <!-- Yes branch: Diamond 2 → Stress Event! (right) -->
+  <line x1="350" y1="300" x2="420" y2="313" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="385" y="296" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">Yes</text>
+
+  <!-- ===== NODE: Stress Event! ===== -->
+  <rect x="420" y="295" width="110" height="36" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="475" y="312" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">Stress Event!</text>
+  <text x="475" y="325" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">See Mental Health</text>
+
+  <!-- No branch: Diamond 2 → Continue Session (down) -->
+  <line x1="310" y1="325" x2="310" y2="385" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="318" y="360" text-anchor="start" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">No</text>
+
+  <!-- ===== NODE: Continue Session ===== -->
+  <rect x="260" y="385" width="100" height="32" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">Continue Session</text>
+
+  <!-- Arrow: Stress Event! merges down to bottom node -->
+  <line x1="475" y1="331" x2="475" y2="448" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="475" y1="448" x2="310" y2="448" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow: Continue Session → Bottom node -->
+  <line x1="310" y1="417" x2="310" y2="430" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ===== BOTTOM NODE: Downtime ===== -->
+  <rect x="240" y="430" width="140" height="36" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="310" y="448" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#2c3e50">Downtime: −1 SP/wk</text>
+  <text x="310" y="460" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e">Genuine Rest: −3 SP/wk</text>
+
+  <!-- ===== LOOP-BACK ARROW (left side, dashed) ===== -->
+  <!-- From bottom node left edge → up along left side → to top node left edge -->
+  <path d="M 240 448 L 190 448 L 190 81 L 260 81"
+        fill="none"
+        stroke="#5d6d7e"
+        stroke-width="2"
+        stroke-dasharray="6,4"
+        marker-end="url(#arrowhead-dash)"/>
+  <text x="190" y="270" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5d6d7e" transform="rotate(-90, 190, 270)">Next Campaign</text>
+</svg>

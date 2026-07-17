@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 700 620" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="620" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="350" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Elder Care Decision Tree</text>
+  <text x="350" y="46" text-anchor="middle" font-size="11" fill="#7f8c8d">Multi-stage crisis event with cascading consequences</text>
+
+  <!-- STAGE 1: Crisis Trigger -->
+  <rect x="230" y="65" width="240" height="50" rx="10" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="350" y="88" text-anchor="middle" font-size="12" font-weight="700" fill="#e74c3c">🚨 Parent Needs Care</text>
+  <text x="350" y="105" text-anchor="middle" font-size="10" fill="#2c3e50">Fall, diagnosis, or sudden decline</text>
+
+  <!-- Arrow down -->
+  <line x1="350" y1="115" x2="350" y2="140" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- STAGE 2: Family Meeting -->
+  <rect x="210" y="140" width="280" height="55" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+  <text x="350" y="163" text-anchor="middle" font-size="12" font-weight="700" fill="#e67e22">👨‍👩‍👧 Family Meeting</text>
+  <text x="350" y="178" text-anchor="middle" font-size="10" fill="#2c3e50">Two assessments required:</text>
+
+  <!-- Split: Medical and Financial -->
+  <line x1="280" y1="195" x2="180" y2="230" stroke="#2980b9" stroke-width="2"/>
+  <line x1="420" y1="195" x2="520" y2="230" stroke="#2980b9" stroke-width="2"/>
+
+  <!-- Medical Assessment -->
+  <rect x="80" y="230" width="200" height="55" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="2"/>
+  <text x="180" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">🏥 Medical Assessment</text>
+  <text x="180" y="266" text-anchor="middle" font-size="10" fill="#2c3e50"><span class="dice">2d10 + INT vs TN 40</span></text>
+  <text x="180" y="279" text-anchor="middle" font-size="9" fill="#7f8c8d">Fail = poor planning</text>
+
+  <!-- Financial Assessment -->
+  <rect x="420" y="230" width="200" height="55" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="2"/>
+  <text x="520" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">💰 Financial Assessment</text>
+  <text x="520" y="266" text-anchor="middle" font-size="10" fill="#2c3e50"><span class="dice">2d10 + INT vs TN 45</span></text>
+  <text x="520" y="279" text-anchor="middle" font-size="9" fill="#7f8c8d">Fail = hidden debts</text>
+
+  <!-- Arrows converge to decision -->
+  <line x1="180" y1="285" x2="350" y2="320" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="520" y1="285" x2="350" y2="320" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- STAGE 3: Central Decision -->
+  <rect x="210" y="320" width="280" height="50" rx="10" fill="#e8daef" stroke="#8e44ad" stroke-width="2"/>
+  <text x="350" y="343" text-anchor="middle" font-size="12" font-weight="700" fill="#8e44ad">⚖️ Nursing Home or Home Care?</text>
+  <text x="350" y="358" text-anchor="middle" font-size="10" fill="#2c3e50">The central debate</text>
+
+  <!-- Split: Nursing Home (left) vs Home Care (right) -->
+  <line x1="280" y1="370" x2="170" y2="410" stroke="#e67e22" stroke-width="2"/>
+  <line x1="420" y1="370" x2="530" y2="410" stroke="#2980b9" stroke-width="2"/>
+
+  <!-- Nursing Home path -->
+  <rect x="60" y="410" width="220" height="75" rx="8" fill="#fdedec" stroke="#e67e22" stroke-width="1.5"/>
+  <text x="170" y="430" text-anchor="middle" font-size="11" font-weight="700" fill="#e67e22">🏥 Nursing Home</text>
+  <text x="170" y="447" text-anchor="middle" font-size="9" fill="#2c3e50">$6K–12K/month · 2–4 visits/mo</text>
+  <text x="170" y="462" text-anchor="middle" font-size="9" fill="#2c3e50">+2 SP "guilt of sending away"</text>
+  <text x="170" y="477" text-anchor="middle" font-size="9" fill="#7f8c8d">QoL check: 2d10 vs TN 40/quarter</text>
+
+  <!-- Home Care path -->
+  <rect x="420" y="410" width="220" height="75" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="530" y="430" text-anchor="middle" font-size="11" font-weight="700" fill="#2980b9">🏠 Home Care</text>
+  <text x="530" y="447" text-anchor="middle" font-size="9" fill="#2c3e50">$3K–6K/month · 4–8 hrs/day</text>
+  <text x="530" y="462" text-anchor="middle" font-size="9" fill="#2c3e50">+4 SP/week caregiver burden</text>
+  <text x="530" y="477" text-anchor="middle" font-size="9" fill="#7f8c8d">QoL check: 2d10 vs TN 30</text>
+
+  <!-- Both paths converge to sibling dynamics -->
+  <line x1="170" y1="485" x2="350" y2="510" stroke="#2c3e50" stroke-width="1.5"/>
+  <line x1="530" y1="485" x2="350" y2="510" stroke="#2c3e50" stroke-width="1.5"/>
+
+  <!-- STAGE 4: Sibling Negotiation -->
+  <rect x="210" y="510" width="280" height="55" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+  <text x="350" y="533" text-anchor="middle" font-size="11" font-weight="700" fill="#e67e22">👫 Sibling Burden Negotiation</text>
+  <text x="350" y="548" text-anchor="middle" font-size="10" fill="#2c3e50"><span class="dice">2d10 + INT + RES vs TN 50</span></text>
+  <text x="350" y="560" text-anchor="middle" font-size="9" fill="#e74c3c">Fail = arguments · +3 SP each</text>
+
+  <!-- Resolution / Guilt -->
+  <line x1="350" y1="565" x2="350" y2="585" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="250" y="585" width="200" height="28" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="350" y="603" text-anchor="middle" font-size="10" fill="#e74c3c" font-weight="600">Permanent guilt stressor until resolved</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 140" width="860" height="140">
+  <!-- White background -->
+  <rect x="0" y="0" width="860" height="140" fill="#ffffff" rx="6"/>
+
+  <!-- Title -->
+  <text x="430" y="20" font-size="14" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="600">✊ Campaign 4: The Activist — 10-Session Arc</text>
+
+  <!-- Connecting lines (stroke-width 3) -->
+  <!-- S1→S2: awareness #f39c12 -->
+  <line x1="60" y1="55" x2="137" y2="55" stroke="#f39c12" stroke-width="3"/>
+  <!-- S2→S3: research #f39c12 -->
+  <line x1="137" y1="55" x2="214" y2="55" stroke="#f39c12" stroke-width="3"/>
+  <!-- S3→S4: coalition building #e67e22 -->
+  <line x1="214" y1="55" x2="291" y2="55" stroke="#e67e22" stroke-width="3"/>
+  <!-- S4→S5: first action → backlash #e74c3c -->
+  <line x1="291" y1="55" x2="368" y2="55" stroke="#e74c3c" stroke-width="3"/>
+  <!-- S5→S6: backlash → setback #e74c3c -->
+  <line x1="368" y1="55" x2="445" y2="55" stroke="#e74c3c" stroke-width="3"/>
+  <!-- S6→S7: regrouping #82e0aa -->
+  <line x1="445" y1="55" x2="522" y2="55" stroke="#82e0aa" stroke-width="3"/>
+  <!-- S7→S8: escalation #e67e22 -->
+  <line x1="522" y1="55" x2="599" y2="55" stroke="#e67e22" stroke-width="3"/>
+  <!-- S8→S9: confrontation peak #e74c3c -->
+  <line x1="599" y1="55" x2="676" y2="55" stroke="#e74c3c" stroke-width="3"/>
+  <!-- S9→S10: resolution #2980b9 -->
+  <line x1="676" y1="55" x2="800" y2="55" stroke="#2980b9" stroke-width="3"/>
+
+  <!-- Node circles (r=12, white fill, matching stroke) -->
+  <circle cx="60" cy="55" r="12" fill="#ffffff" stroke="#f39c12" stroke-width="2"/>
+  <circle cx="137" cy="55" r="12" fill="#ffffff" stroke="#f39c12" stroke-width="2"/>
+  <circle cx="214" cy="55" r="12" fill="#ffffff" stroke="#e67e22" stroke-width="2"/>
+  <circle cx="291" cy="55" r="12" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <circle cx="368" cy="55" r="12" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <circle cx="445" cy="55" r="12" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <circle cx="522" cy="55" r="12" fill="#ffffff" stroke="#82e0aa" stroke-width="2"/>
+  <circle cx="599" cy="55" r="12" fill="#ffffff" stroke="#e67e22" stroke-width="2"/>
+  <circle cx="676" cy="55" r="12" fill="#ffffff" stroke="#e74c3c" stroke-width="2"/>
+  <circle cx="800" cy="55" r="12" fill="#ffffff" stroke="#2980b9" stroke-width="2"/>
+
+  <!-- Session numbers inside circles -->
+  <text x="60" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">1</text>
+  <text x="137" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">2</text>
+  <text x="214" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">3</text>
+  <text x="291" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">4</text>
+  <text x="368" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">5</text>
+  <text x="445" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">6</text>
+  <text x="522" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">7</text>
+  <text x="599" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">8</text>
+  <text x="676" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">9</text>
+  <text x="800" y="59" font-size="10" fill="#2c3e50" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700">10</text>
+
+  <!-- Emoji labels above circles (font-size 14) -->
+  <text x="60" y="38" font-size="14" text-anchor="middle">👁️</text>
+  <text x="137" y="38" font-size="14" text-anchor="middle">📚</text>
+  <text x="214" y="38" font-size="14" text-anchor="middle">🤝</text>
+  <text x="291" y="38" font-size="14" text-anchor="middle">📢</text>
+  <text x="368" y="38" font-size="14" text-anchor="middle">⚡</text>
+  <text x="445" y="38" font-size="14" text-anchor="middle">📉</text>
+  <text x="522" y="38" font-size="14" text-anchor="middle">🔄</text>
+  <text x="599" y="38" font-size="14" text-anchor="middle">🔥</text>
+  <text x="676" y="38" font-size="14" text-anchor="middle">💥</text>
+  <text x="800" y="38" font-size="14" text-anchor="middle">🏁</text>
+
+  <!-- Warning triangles for S5 and S6 -->
+  <text x="368" y="30" font-size="12" text-anchor="middle">⚠️</text>
+  <text x="445" y="30" font-size="12" text-anchor="middle">⚠️</text>
+
+  <!-- Session labels below circles (font-size 9, fill #5d6d7e) -->
+  <text x="60" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S1: Aware</text>
+  <text x="137" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S2: Research</text>
+  <text x="214" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S3: Coalition</text>
+  <text x="291" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S4: Action</text>
+  <text x="368" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S5: Backlash</text>
+  <text x="445" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S6: Setback</text>
+  <text x="522" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S7: Regroup</text>
+  <text x="599" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S8: Escalate</text>
+  <text x="676" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S9: Confront</text>
+  <text x="800" y="82" font-size="9" fill="#5d6d7e" text-anchor="middle" font-family="system-ui, sans-serif">S10: Resolve</text>
+</svg>

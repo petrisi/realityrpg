@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="10" y="10" width="500" height="500" rx="10" fill="#fff" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="260" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#2c3e50">🌍 Campaign 3 — NPC Relationship Web</text>
+
+  <!-- Decorative ring -->
+  <circle cx="260" cy="260" r="170" fill="none" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Connection lines (dashed) -->
+  <line x1="260" y1="225" x2="260" y2="80" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="285" y1="240" x2="380" y2="150" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="295" y1="260" x2="420" y2="260" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="285" y1="280" x2="380" y2="390" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="260" y1="295" x2="260" y2="410" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="235" y1="280" x2="100" y2="390" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="225" y1="260" x2="120" y2="260" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="235" y1="240" x2="100" y2="150" stroke="#aaa" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- Relationship labels -->
+  <text x="275" y="160" font-size="8" fill="#5d6d7e">Landlady</text>
+  <text x="345" y="200" font-size="8" fill="#5d6d7e">School</text>
+  <text x="365" y="250" font-size="8" fill="#5d6d7e">Mentor</text>
+  <text x="345" y="335" font-size="8" fill="#5d6d7e">Legal</text>
+  <text x="275" y="360" font-size="8" fill="#5d6d7e">Employer</text>
+  <text x="155" y="335" font-size="8" fill="#5d6d7e">Health</text>
+  <text x="160" y="250" font-size="8" fill="#5d6d7e">Old Country</text>
+  <text x="160" y="200" font-size="8" fill="#5d6d7e">Integration</text>
+
+  <!-- Center node -->
+  <circle cx="260" cy="260" r="35" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="260" y="265" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">Family</text>
+
+  <!-- NPC 1: Ms. Gutierrez (top) -->
+  <rect x="220" y="80" width="80" height="40" rx="6" fill="#fff" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260" y="99" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Ms.</text>
+  <text x="260" y="112" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Gutierrez</text>
+
+  <!-- NPC 2: Mr. Henderson (top-right) -->
+  <rect x="380" y="130" width="80" height="40" rx="6" fill="#fff" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="420" y="149" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Mr.</text>
+  <text x="420" y="162" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Henderson</text>
+
+  <!-- NPC 3: Aisha (right) -->
+  <rect x="420" y="240" width="80" height="40" rx="6" fill="#fff" stroke="#16a085" stroke-width="2" filter="url(#shadow)"/>
+  <text x="460" y="259" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Aisha</text>
+  <text x="460" y="272" text-anchor="middle" font-size="8" fill="#5d6d7e">Community</text>
+
+  <!-- NPC 4: Agent Morales (bottom-right) -->
+  <rect x="380" y="370" width="80" height="40" rx="6" fill="#fff" stroke="#e74c3c" stroke-width="2" filter="url(#shadow)"/>
+  <text x="420" y="389" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Agent</text>
+  <text x="420" y="402" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Morales</text>
+
+  <!-- NPC 5: Kevin (bottom) -->
+  <rect x="220" y="410" width="80" height="40" rx="6" fill="#fff" stroke="#95a5a6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260" y="429" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Kevin</text>
+  <text x="260" y="442" text-anchor="middle" font-size="8" fill="#5d6d7e">Employer</text>
+
+  <!-- NPC 6: Dr. Lee (bottom-left) -->
+  <rect x="60" y="370" width="80" height="40" rx="6" fill="#fff" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="100" y="389" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Dr.</text>
+  <text x="100" y="402" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Lee</text>
+
+  <!-- NPC 7: Uncle Raj (left) -->
+  <rect x="40" y="240" width="80" height="40" rx="6" fill="#fff" stroke="#e67e22" stroke-width="2" filter="url(#shadow)"/>
+  <text x="80" y="259" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Uncle</text>
+  <text x="80" y="272" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Raj</text>
+
+  <!-- NPC 8: Coach Diaz (top-left) -->
+  <rect x="60" y="130" width="80" height="40" rx="6" fill="#fff" stroke="#f39c12" stroke-width="2" filter="url(#shadow)"/>
+  <text x="100" y="149" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Coach</text>
+  <text x="100" y="162" text-anchor="middle" font-size="10" font-weight="700" fill="#2c3e50">Diaz</text>
+</svg>

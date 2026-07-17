@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1050 460" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#27ae60"/>
+    </marker>
+    <marker id="arrow-amber" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#e67e22"/>
+    </marker>
+    <marker id="arrow-gold" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#f1c40f"/>
+    </marker>
+    <linearGradient id="timelineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#27ae60"/>
+      <stop offset="25%" stop-color="#2ecc71"/>
+      <stop offset="50%" stop-color="#f39c12"/>
+      <stop offset="75%" stop-color="#e67e22"/>
+      <stop offset="100%" stop-color="#f1c40f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1050" height="460" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="525" y="28" text-anchor="middle" font-size="19" font-weight="700" fill="#2c3e50">Systemic Change Arc — Timeline</text>
+  <text x="525" y="46" text-anchor="middle" font-size="11" fill="#5d6d7e">Multi-session storylines spanning months to years with concrete milestones</text>
+
+  <!-- ════════════════════════════════════════════════
+       PHASE LABELS (above timeline)
+       ════════════════════════════════════════════════ -->
+
+  <!-- Phase 1: Problem ID -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="58" width="170" height="62" rx="8" fill="#eafaf1" stroke="#27ae60" stroke-width="1.5"/>
+    <text x="115" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#1e8449">🌱 Phase 1: Problem ID</text>
+    <text x="115" y="93" text-anchor="middle" font-size="9.5" fill="#5d6d7e">Duration: 1–2 months</text>
+    <text x="115" y="107" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+INT</tspan><tspan fill="#5d6d7e"> research · Clear problem</tspan></text>
+    <text x="115" y="118" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan fill="#5d6d7e">statement</tspan></text>
+  </g>
+
+  <!-- Phase 2: Coalition -->
+  <g filter="url(#shadow)">
+    <rect x="220" y="58" width="170" height="62" rx="8" fill="#eafaf1" stroke="#2ecc71" stroke-width="1.5"/>
+    <text x="305" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#1e8449">🤝 Phase 2: Coalition</text>
+    <text x="305" y="93" text-anchor="middle" font-size="9.5" fill="#5d6d7e">Duration: 2–4 months</text>
+    <text x="305" y="107" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+PRC+EXP</tspan><tspan fill="#5d6d7e"> recruit</tspan></text>
+    <text x="305" y="118" text-anchor="middle" font-size="9" fill="#5d6d7e">3+ partners</text>
+  </g>
+
+  <!-- Phase 3: Public Campaign -->
+  <g filter="url(#shadow)">
+    <rect x="410" y="58" width="170" height="62" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5"/>
+    <text x="495" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#7e5109">📢 Phase 3: Campaign</text>
+    <text x="495" y="93" text-anchor="middle" font-size="9.5" fill="#5d6d7e">Duration: 3–6 months</text>
+    <text x="495" y="107" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+PRC</tspan><tspan fill="#5d6d7e"> visibility</tspan></text>
+    <text x="495" y="118" text-anchor="middle" font-size="9" fill="#5d6d7e">Media coverage</text>
+  </g>
+
+  <!-- Phase 4: Resistance -->
+  <g filter="url(#shadow)">
+    <rect x="600" y="58" width="170" height="62" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5"/>
+    <text x="685" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#a04000">⚔️ Phase 4: Resistance</text>
+    <text x="685" y="93" text-anchor="middle" font-size="9.5" fill="#5d6d7e">Duration: 1–3 months</text>
+    <text x="685" y="107" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+RES</tspan><tspan fill="#5d6d7e"> weather · </tspan></text>
+    <text x="685" y="118" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+INT</tspan><tspan fill="#5d6d7e"> adapt · Setbacks hit here</tspan></text>
+  </g>
+
+  <!-- Phase 5: Resolution -->
+  <g filter="url(#shadow)">
+    <rect x="790" y="58" width="170" height="62" rx="8" fill="#fef9e7" stroke="#f1c40f" stroke-width="1.5"/>
+    <text x="875" y="77" text-anchor="middle" font-size="11" font-weight="700" fill="#7d6608">🏆 Phase 5: Resolution</text>
+    <text x="875" y="93" text-anchor="middle" font-size="9.5" fill="#5d6d7e">Duration: 1–6 months</text>
+    <text x="875" y="107" text-anchor="middle" font-size="9" fill="#5d6d7e"><tspan font-family="Consolas, monospace" fill="#e67e22">2d10+PRC+EXP+INT</tspan></text>
+    <text x="875" y="118" text-anchor="middle" font-size="9" fill="#5d6d7e">Final push · Policy change</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       TIMELINE LINE
+       ════════════════════════════════════════════════ -->
+
+  <!-- Main horizontal timeline line -->
+  <line x1="115" y1="145" x2="875" y2="145" stroke="url(#timelineGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Phase markers (circles on the line) -->
+  <circle cx="115" cy="145" r="10" fill="#27ae60" stroke="#fff" stroke-width="2"/>
+  <text x="115" y="149" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">1</text>
+
+  <circle cx="305" cy="145" r="10" fill="#2ecc71" stroke="#fff" stroke-width="2"/>
+  <text x="305" y="149" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">2</text>
+
+  <circle cx="495" cy="145" r="10" fill="#f39c12" stroke="#fff" stroke-width="2"/>
+  <text x="495" y="149" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">3</text>
+
+  <circle cx="685" cy="145" r="10" fill="#e67e22" stroke="#fff" stroke-width="2"/>
+  <text x="685" y="149" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">4</text>
+
+  <circle cx="875" cy="145" r="10" fill="#f1c40f" stroke="#fff" stroke-width="2"/>
+  <text x="875" y="149" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">5</text>
+
+  <!-- Connecting arrows between phases -->
+  <line x1="127" y1="145" x2="290" y2="145" stroke="#27ae60" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+  <line x1="317" y1="145" x2="480" y2="145" stroke="#2ecc71" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-green)"/>
+  <line x1="507" y1="145" x2="670" y2="145" stroke="#f39c12" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-amber)"/>
+  <line x1="697" y1="145" x2="860" y2="145" stroke="#e67e22" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-amber)"/>
+
+  <!-- ════════════════════════════════════════════════
+       SETBACK ZONES (below timeline)
+       ════════════════════════════════════════════════ -->
+
+  <!-- Setback zone background (drawn FIRST so labels appear on top) -->
+  <rect x="30" y="160" width="990" height="42" rx="6" fill="#fdedec" opacity="0.5" stroke="#e74c3c" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Setback connector lines (dashed, from timeline down to setback zone) -->
+  <line x1="115" y1="158" x2="115" y2="168" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="305" y1="158" x2="305" y2="168" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="495" y1="158" x2="495" y2="168" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="685" y1="158" x2="685" y2="168" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="875" y1="158" x2="875" y2="168" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Setback zone labels (drawn AFTER background) -->
+  <text x="115" y="175" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">⚠️ Internal</text>
+  <text x="115" y="187" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Conflict</text>
+
+  <text x="305" y="175" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">⚠️ Opposition</text>
+  <text x="305" y="187" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Pushback</text>
+
+  <text x="495" y="175" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">⚠️ Burnout</text>
+  <text x="495" y="187" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Risk</text>
+
+  <text x="685" y="175" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">⚠️ Political</text>
+  <text x="685" y="187" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Shift</text>
+
+  <text x="875" y="175" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">⚠️ Media</text>
+  <text x="875" y="187" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Miscoverage</text>
+
+  <!-- ════════════════════════════════════════════════
+       DETAILED SETBACK BOXES
+       ════════════════════════════════════════════════ -->
+
+  <g filter="url(#shadow)">
+    <rect x="15" y="215" width="195" height="55" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.2"/>
+    <text x="112" y="232" text-anchor="middle" font-size="10" font-weight="600" fill="#c0392b">⚠️ Internal Conflict</text>
+    <text x="112" y="246" text-anchor="middle" font-size="9" fill="#5d6d7e">Coalition disagreements · Trust</text>
+    <text x="112" y="258" text-anchor="middle" font-size="9" fill="#5d6d7e">issues surface early</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="220" y="215" width="195" height="55" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.2"/>
+    <text x="317" y="232" text-anchor="middle" font-size="10" font-weight="600" fill="#c0392b">⚠️ Opposition Pushback</text>
+    <text x="317" y="246" text-anchor="middle" font-size="9" fill="#5d6d7e">Establishment fights back · Legal</text>
+    <text x="317" y="258" text-anchor="middle" font-size="9" fill="#5d6d7e">challenges · smear campaigns</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="425" y="215" width="195" height="55" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.2"/>
+    <text x="522" y="232" text-anchor="middle" font-size="10" font-weight="600" fill="#c0392b">⚠️ Burnout Risk</text>
+    <text x="522" y="246" text-anchor="middle" font-size="9" fill="#5d6d7e">Volunteers exhausted · SP</text>
+    <text x="522" y="258" text-anchor="middle" font-size="9" fill="#5d6d7e">accumulation · Morale drops</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="630" y="215" width="195" height="55" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.2"/>
+    <text x="727" y="232" text-anchor="middle" font-size="10" font-weight="600" fill="#c0392b">⚠️ Political Shift</text>
+    <text x="727" y="246" text-anchor="middle" font-size="9" fill="#5d6d7e">Elections change priorities ·</text>
+    <text x="727" y="258" text-anchor="middle" font-size="9" fill="#5d6d7e">New administration opposes</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="835" y="215" width="195" height="55" rx="8" fill="#fdedec" stroke="#e74c3c" stroke-width="1.2"/>
+    <text x="932" y="232" text-anchor="middle" font-size="10" font-weight="600" fill="#c0392b">⚠️ Media Miscoverage</text>
+    <text x="932" y="246" text-anchor="middle" font-size="9" fill="#5d6d7e">Narrative hijacked · Public</text>
+    <text x="932" y="258" text-anchor="middle" font-size="9" fill="#5d6d7e">support erodes rapidly</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       OUTCOME BRANCHES (below setbacks)
+       ════════════════════════════════════════════════ -->
+
+  <!-- Outcome section header -->
+  <text x="115" y="295" font-size="13" font-weight="700" fill="#2c3e50">Outcome Branches</text>
+
+  <!-- Arrow from Phase 5 to outcomes -->
+  <line x1="875" y1="158" x2="875" y2="310" stroke="#f1c40f" stroke-width="2" marker-end="url(#arrow-gold)"/>
+  <line x1="875" y1="310" x2="525" y2="310" stroke="#f1c40f" stroke-width="2" marker-end="url(#arrow-gold)"/>
+
+  <!-- Success branch -->
+  <g filter="url(#shadow)">
+    <rect x="20" y="305" width="210" height="70" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+    <text x="125" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#1e8449">✓ Success</text>
+    <text x="125" y="343" text-anchor="middle" font-size="10" fill="#5d6d7e">Policy change enacted</text>
+    <text x="125" y="357" text-anchor="middle" font-size="9" fill="#5d6d7e">Campaign Points earned</text>
+    <text x="125" y="369" text-anchor="middle" font-size="9" fill="#5d6d7e">Reputation boost · +1 EXP</text>
+  </g>
+
+  <!-- Partial success branch -->
+  <g filter="url(#shadow)">
+    <rect x="240" y="305" width="210" height="70" rx="10" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="345" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#7e5109">◐ Partial</text>
+    <text x="345" y="343" text-anchor="middle" font-size="10" fill="#5d6d7e">Compromise reached</text>
+    <text x="345" y="357" text-anchor="middle" font-size="9" fill="#5d6d7e">Half measures · Some CPs</text>
+    <text x="345" y="369" text-anchor="middle" font-size="9" fill="#5d6d7e">Momentum preserved</text>
+  </g>
+
+  <!-- Failure branch -->
+  <g filter="url(#shadow)">
+    <rect x="460" y="305" width="210" height="70" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+    <text x="565" y="327" text-anchor="middle" font-size="12" font-weight="700" fill="#a04000">✗ Failure</text>
+    <text x="565" y="343" text-anchor="middle" font-size="10" fill="#5d6d7e">No immediate change</text>
+    <text x="565" y="357" text-anchor="middle" font-size="9" fill="#5d6d7e">But: Infrastructure built for</text>
+    <text x="565" y="369" text-anchor="middle" font-size="9" fill="#5d6d7e">next attempt · Lessons learned</text>
+  </g>
+
+  <!-- ════════════════════════════════════════════════
+       BOTTOM NOTE
+       ════════════════════════════════════════════════ -->
+
+  <rect x="20" y="395" width="1010" height="48" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="1" filter="url(#shadow)"/>
+  <text x="525" y="414" text-anchor="middle" font-size="10" font-weight="600" fill="#7e5109">📋 GM Note: Each phase can span multiple sessions. Setbacks are inserted at narrative turning points.</text>
+  <text x="525" y="430" text-anchor="middle" font-size="9" fill="#5d6d7e">A full arc typically takes 6–18 months in-game time · Track Campaign Points (CPs) earned along the way</text>
+
+</svg>

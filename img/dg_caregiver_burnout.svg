@@ -58,16 +58,16 @@
 
   <!-- RESPIRE CARE BRANCH — from the side -->
   <line x1="200" y1="295" x2="100" y2="350" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5"/>
-  <rect x="10" y="350" width="180" height="70" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
-  <text x="100" y="373" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#27ae60">✅ Respite Care</text>
-  <text x="100" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Hire help 1–2 days/week</text>
-  <text x="100" y="406" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="600">$25–$30/hr · −2 SP/day</text>
+  <rect x="20" y="350" width="180" height="70" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+  <text x="110" y="373" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="700" fill="#27ae60">✅ Respite Care</text>
+  <text x="110" y="390" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#2c3e50">Hire help 1–2 days/week</text>
+  <text x="110" y="406" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="600">$25–$30/hr · −2 SP/day</text>
 
   <!-- Arrow from respite care to "prevents burnout" -->
-  <text x="100" y="435" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="700">Prevents burnout</text>
-  <path d="M100,445 C100,470 300,480 400,455" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5" fill="none"/>
+  <text x="110" y="435" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#27ae60" font-weight="700">Prevents burnout</text>
+  <path d="M110,445 C110,470 300,480 400,455" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="5" fill="none"/>
 
   <!-- Bottom annotation -->
-  <rect x="100" y="498" width="500" height="20" rx="4" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
-  <text x="350" y="512" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e67e22">Dementia caregiving: +3 SP/day instead of +2 · TN increases by 5 per stage</text>
+  <rect x="100" y="488" width="500" height="20" rx="4" fill="#fef9e7" stroke="#f9e79f" stroke-width="1"/>
+  <text x="350" y="502" text-anchor="middle" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="10" fill="#e67e22">Dementia caregiving: +3 SP/day instead of +2 · TN increases by 5 per stage</text>
 </svg>

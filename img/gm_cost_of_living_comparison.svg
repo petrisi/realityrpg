@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 380" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
   <style>
     .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; }
     .subtitle { font-size: 11px; fill: #5d6d7e; text-anchor: middle; }
@@ -10,17 +10,17 @@
   </style>
 
   <!-- Title -->
-  <text x="350" y="24" class="title">Monthly Cost of Living by City Tier</text>
-  <text x="350" y="40" class="subtitle">Average monthly expenses (housing + food + transport + utilities)</text>
+  <text x="380" y="24" class="title">Monthly Cost of Living by City Tier</text>
+  <text x="380" y="40" class="subtitle">Average monthly expenses (housing + food + transport + utilities)</text>
 
   <!-- Y axis -->
   <line x1="120" y1="55" x2="120" y2="340" stroke="#dcdcdc" stroke-width="1"/>
   <!-- Grid lines -->
-  <line x1="120" y1="80" x2="660" y2="80" stroke="#f0f0f0" stroke-width="0.5"/>
-  <line x1="120" y1="130" x2="660" y2="130" stroke="#f0f0f0" stroke-width="0.5"/>
-  <line x1="120" y1="180" x2="660" y2="180" stroke="#f0f0f0" stroke-width="0.5"/>
-  <line x1="120" y1="230" x2="660" y2="230" stroke="#f0f0f0" stroke-width="0.5"/>
-  <line x1="120" y1="280" x2="660" y2="280" stroke="#f0f0f0" stroke-width="0.5"/>
+  <line x1="120" y1="80" x2="720" y2="80" stroke="#f0f0f0" stroke-width="0.5"/>
+  <line x1="120" y1="130" x2="720" y2="130" stroke="#f0f0f0" stroke-width="0.5"/>
+  <line x1="120" y1="180" x2="720" y2="180" stroke="#f0f0f0" stroke-width="0.5"/>
+  <line x1="120" y1="230" x2="720" y2="230" stroke="#f0f0f0" stroke-width="0.5"/>
+  <line x1="120" y1="280" x2="720" y2="280" stroke="#f0f0f0" stroke-width="0.5"/>
 
   <!-- Y axis labels -->
   <text x="112" y="83" class="axis-label" text-anchor="end">$6,000</text>
@@ -35,7 +35,7 @@
   <text x="210" y="65" class="tier-label">Tier 1 🏙️</text>
   <!-- Rent bar: ~3000 of 6000 = 50% of 285px = 142px -->
   <rect x="140" y="85" width="142" height="30" rx="3" fill="#e74c3c"/>
-  <text x="285" y="104" class="bar-value" fill="#e74c3c">$3,000</text>
+  <text x="211" y="104" class="bar-value" fill="#ffffff">$3,000</text>
   <!-- Food: ~800 = 13.3% = 38px -->
   <rect x="140" y="120" width="38" height="30" rx="3" fill="#f39c12"/>
   <text x="182" y="139" class="bar-value" fill="#f39c12">$800</text>
@@ -50,55 +50,55 @@
   <text x="292" y="150" class="bar-value" fill="#e74c3c" font-size="9">~$6,000</text>
 
   <!-- TIER 2: Austin, Denver — $2,000–$4,000 (avg ~3,000) -->
-  <text x="340" y="65" class="tier-label">Tier 2 🌆</text>
+  <text x="355" y="65" class="tier-label">Tier 2 🌆</text>
   <!-- Rent: ~1500 of 3000 = 50% of 142px = 71px -->
-  <rect x="300" y="85" width="71" height="30" rx="3" fill="#e67e22"/>
-  <text x="375" y="104" class="bar-value" fill="#e67e22">$1,500</text>
+  <rect x="315" y="85" width="71" height="30" rx="3" fill="#e67e22"/>
+  <text x="350" y="104" class="bar-value" fill="#ffffff">$1,500</text>
   <!-- Food: ~600 = 20% = 28px -->
-  <rect x="300" y="120" width="28" height="30" rx="3" fill="#f39c12"/>
-  <text x="332" y="139" class="bar-value" fill="#f39c12">$600</text>
+  <rect x="315" y="120" width="28" height="30" rx="3" fill="#f39c12"/>
+  <text x="347" y="139" class="bar-value" fill="#f39c12">$600</text>
   <!-- Transport: ~300 = 10% = 14px -->
-  <rect x="300" y="155" width="14" height="30" rx="3" fill="#2980b9"/>
-  <text x="318" y="174" class="bar-value" fill="#2980b9">$300</text>
+  <rect x="315" y="155" width="14" height="30" rx="3" fill="#2980b9"/>
+  <text x="333" y="174" class="bar-value" fill="#2980b9">$300</text>
   <!-- Utilities: ~250 = 8% = 11px -->
-  <rect x="300" y="190" width="11" height="30" rx="3" fill="#27ae60"/>
-  <text x="315" y="209" class="bar-value" fill="#27ae60">$250</text>
-  <line x1="375" y1="85" x2="375" y2="210" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="381" y="150" class="bar-value" fill="#e67e22" font-size="9">~$3,000</text>
+  <rect x="315" y="190" width="11" height="30" rx="3" fill="#27ae60"/>
+  <text x="330" y="209" class="bar-value" fill="#27ae60">$250</text>
+  <line x1="390" y1="85" x2="390" y2="210" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="396" y="150" class="bar-value" fill="#e67e22" font-size="9">~$3,000</text>
 
   <!-- TIER 3: Midwest, rural — $800–$2,000 (avg ~1,400) -->
-  <text x="470" y="65" class="tier-label">Tier 3 🏘️</text>
+  <text x="485" y="65" class="tier-label">Tier 3 🏘️</text>
   <!-- Rent: ~700 of 1400 = 50% of 65px = 33px -->
-  <rect x="460" y="85" width="33" height="30" rx="3" fill="#f39c12"/>
-  <text x="497" y="104" class="bar-value" fill="#f39c12">$700</text>
+  <rect x="475" y="85" width="33" height="30" rx="3" fill="#f39c12"/>
+  <text x="522" y="104" class="bar-value" fill="#f39c12">$700</text>
   <!-- Food: ~400 = 28.6% = 18px -->
-  <rect x="460" y="120" width="18" height="30" rx="3" fill="#f39c12"/>
-  <text x="482" y="139" class="bar-value" fill="#f39c12">$400</text>
+  <rect x="475" y="120" width="18" height="30" rx="3" fill="#f39c12"/>
+  <text x="497" y="139" class="bar-value" fill="#f39c12">$400</text>
   <!-- Transport: ~200 = 14% = 9px -->
-  <rect x="460" y="155" width="9" height="30" rx="3" fill="#2980b9"/>
-  <text x="473" y="174" class="bar-value" fill="#2980b9">$200</text>
+  <rect x="475" y="155" width="9" height="30" rx="3" fill="#2980b9"/>
+  <text x="488" y="174" class="bar-value" fill="#2980b9">$200</text>
   <!-- Utilities: ~200 = 14% = 9px -->
-  <rect x="460" y="190" width="9" height="30" rx="3" fill="#27ae60"/>
-  <text x="473" y="209" class="bar-value" fill="#27ae60">$200</text>
-  <line x1="497" y1="85" x2="497" y2="210" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="503" y="150" class="bar-value" fill="#f39c12" font-size="9">~$1,500</text>
+  <rect x="475" y="190" width="9" height="30" rx="3" fill="#27ae60"/>
+  <text x="488" y="209" class="bar-value" fill="#27ae60">$200</text>
+  <line x1="512" y1="85" x2="512" y2="210" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="518" y="150" class="bar-value" fill="#f39c12" font-size="9">~$1,500</text>
 
   <!-- TIER 4: Small town — $500–$1,200 (avg ~800) -->
-  <text x="600" y="65" class="tier-label">Tier 4 🏡</text>
+  <text x="615" y="65" class="tier-label">Tier 4 🏡</text>
   <!-- Rent: ~400 of 800 = 50% of 39px = 19px -->
-  <rect x="620" y="85" width="19" height="30" rx="3" fill="#27ae60"/>
-  <text x="643" y="104" class="bar-value" fill="#27ae60">$400</text>
+  <rect x="635" y="85" width="19" height="30" rx="3" fill="#27ae60"/>
+  <text x="668" y="104" class="bar-value" fill="#27ae60">$400</text>
   <!-- Food: ~250 = 31% = 12px -->
-  <rect x="620" y="120" width="12" height="30" rx="3" fill="#f39c12"/>
-  <text x="636" y="139" class="bar-value" fill="#f39c12">$250</text>
+  <rect x="635" y="120" width="12" height="30" rx="3" fill="#f39c12"/>
+  <text x="651" y="139" class="bar-value" fill="#f39c12">$250</text>
   <!-- Transport: ~100 = 12.5% = 6px -->
-  <rect x="620" y="155" width="6" height="30" rx="3" fill="#2980b9"/>
-  <text x="630" y="174" class="bar-value" fill="#2980b9">$100</text>
+  <rect x="635" y="155" width="6" height="30" rx="3" fill="#2980b9"/>
+  <text x="645" y="174" class="bar-value" fill="#2980b9">$100</text>
   <!-- Utilities: ~150 = 18.8% = 9px -->
-  <rect x="620" y="190" width="9" height="30" rx="3" fill="#27ae60"/>
-  <text x="633" y="209" class="bar-value" fill="#27ae60">$150</text>
-  <line x1="643" y1="85" x2="643" y2="210" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="649" y="150" class="bar-value" fill="#27ae60" font-size="9">~$900</text>
+  <rect x="635" y="190" width="9" height="30" rx="3" fill="#27ae60"/>
+  <text x="648" y="209" class="bar-value" fill="#27ae60">$150</text>
+  <line x1="658" y1="85" x2="658" y2="210" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="664" y="150" class="bar-value" fill="#27ae60" font-size="9">~$900</text>
 
   <!-- Legend -->
   <rect x="140" y="240" width="12" height="12" rx="2" fill="#e74c3c"/>
@@ -111,13 +111,13 @@
   <text x="356" y="250" class="legend">Utilities</text>
 
   <!-- Key insight -->
-  <rect x="140" y="265" width="520" height="40" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
-  <text x="400" y="283" class="bar-label" text-anchor="middle">💡 Tier 1 costs 6–7× more than Tier 4 — geography is the biggest budget variable</text>
-  <text x="400" y="298" class="legend" text-anchor="middle">A character earning $3,000/mo can live comfortably in Tier 4 but will struggle in Tier 1</text>
+  <rect x="140" y="265" width="590" height="40" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="435" y="283" class="bar-label" text-anchor="middle">💡 Tier 1 costs 6–7× more than Tier 4 — geography is the biggest budget variable</text>
+  <text x="435" y="298" class="legend" text-anchor="middle">A character earning $3,000/mo can live comfortably in Tier 4 but will struggle in Tier 1</text>
 
   <!-- Move-in cost comparison -->
-  <rect x="140" y="318" width="520" height="35" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
-  <text x="400" y="336" class="bar-label" text-anchor="middle">📦 First Month + Deposit: Tier 1 = $4,000–$8,000+ · Tier 4 = $500–$1,200</text>
-  <text x="400" y="348" class="legend" text-anchor="middle">Moving to a Tier 1 city requires 4–8× more upfront cash than a Tier 4 town</text>
+  <rect x="140" y="318" width="590" height="35" rx="6" fill="#eaf2f8" stroke="#2980b9" stroke-width="1"/>
+  <text x="435" y="336" class="bar-label" text-anchor="middle">📦 First Month + Deposit: Tier 1 = $4,000–$8,000+ · Tier 4 = $500–$1,200</text>
+  <text x="435" y="348" class="legend" text-anchor="middle">Moving to a Tier 1 city requires 4–8× more upfront cash than a Tier 4 town</text>
 
 </svg>

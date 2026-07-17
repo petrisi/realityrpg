@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 140" width="860" height="140">
+  <style>
+    .title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; fill: #2c3e50; font-weight: 600; }
+    .label { font-family: system-ui, -apple-system, sans-serif; font-size: 9px; fill: #5d6d7e; }
+    .emoji { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 14px; }
+    .node-text { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #fff; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+  </style>
+
+  <!-- Title -->
+  <text class="title" x="430" y="18" text-anchor="middle">🔄 Campaign 2: Midlife Reset — 10-Session Arc</text>
+
+  <!-- Connecting lines (stress-colored arcs) -->
+  <!-- S1→S2: massive -->
+  <line x1="60" y1="60" x2="137" y2="60" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <!-- S2→S3: high -->
+  <line x1="137" y1="60" x2="214" y2="60" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+  <!-- S3→S4: medium-high -->
+  <line x1="214" y1="60" x2="291" y2="60" stroke="#e67e22" stroke-width="3" stroke-linecap="round"/>
+  <!-- S4→S5: medium -->
+  <line x1="291" y1="60" x2="368" y2="60" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <!-- S5→S6: recovery -->
+  <line x1="368" y1="60" x2="445" y2="60" stroke="#82e0aa" stroke-width="3" stroke-linecap="round"/>
+  <!-- S6→S7: medium -->
+  <line x1="445" y1="60" x2="522" y2="60" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+  <!-- S7→S8: recovery -->
+  <line x1="522" y1="60" x2="599" y2="60" stroke="#27ae60" stroke-width="3" stroke-linecap="round"/>
+  <!-- S8→S9: stability -->
+  <line x1="599" y1="60" x2="676" y2="60" stroke="#27ae60" stroke-width="3" stroke-linecap="round"/>
+  <!-- S9→S10: resolution -->
+  <line x1="676" y1="60" x2="753" y2="60" stroke="#2980b9" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Emojis above nodes (y=40) -->
+  <text class="emoji" x="60" y="40" text-anchor="middle">💔</text>
+  <text class="emoji" x="137" y="40" text-anchor="middle">📋</text>
+  <text class="emoji" x="214" y="40" text-anchor="middle">🔍</text>
+  <text class="emoji" x="291" y="40" text-anchor="middle">🏥</text>
+  <text class="emoji" x="368" y="40" text-anchor="middle">👧</text>
+  <text class="emoji" x="445" y="40" text-anchor="middle">🌅</text>
+  <text class="emoji" x="522" y="40" text-anchor="middle">💕</text>
+  <text class="emoji" x="599" y="40" text-anchor="middle">💰</text>
+  <text class="emoji" x="676" y="40" text-anchor="middle">🏠</text>
+  <text class="emoji" x="753" y="40" text-anchor="middle">🌅</text>
+
+  <!-- Node circles -->
+  <!-- S1: larger (r=16), red outline for TN 15 opening -->
+  <circle cx="60" cy="60" r="16" fill="#c0392b" stroke="#e74c3c" stroke-width="2.5"/>
+  <text class="node-text" x="60" y="60">1</text>
+
+  <!-- S2-S10: r=12 -->
+  <circle cx="137" cy="60" r="12" fill="#c0392b"/>
+  <text class="node-text" x="137" y="60">2</text>
+
+  <circle cx="214" cy="60" r="12" fill="#c0392b"/>
+  <text class="node-text" x="214" y="60">3</text>
+
+  <circle cx="291" cy="60" r="12" fill="#d35400"/>
+  <text class="node-text" x="291" y="60">4</text>
+
+  <circle cx="368" cy="60" r="12" fill="#e67e22"/>
+  <text class="node-text" x="368" y="60">5</text>
+
+  <circle cx="445" cy="60" r="12" fill="#27ae60"/>
+  <text class="node-text" x="445" y="60">6</text>
+
+  <circle cx="522" cy="60" r="12" fill="#e67e22"/>
+  <text class="node-text" x="522" y="60">7</text>
+
+  <circle cx="599" cy="60" r="12" fill="#27ae60"/>
+  <text class="node-text" x="599" y="60">8</text>
+
+  <circle cx="676" cy="60" r="12" fill="#27ae60"/>
+  <text class="node-text" x="676" y="60">9</text>
+
+  <circle cx="753" cy="60" r="12" fill="#2980b9"/>
+  <text class="node-text" x="753" y="60">10</text>
+
+  <!-- Labels below nodes (y=88) -->
+  <text class="label" x="60" y="88" text-anchor="middle">S1: Triple</text>
+  <text class="label" x="137" y="88" text-anchor="middle">S2: Divorce</text>
+  <text class="label" x="214" y="88" text-anchor="middle">S3: Jobless</text>
+  <text class="label" x="291" y="88" text-anchor="middle">S4: Health</text>
+  <text class="label" x="368" y="88" text-anchor="middle">S5: Maya</text>
+  <text class="label" x="445" y="88" text-anchor="middle">S6: Purpose</text>
+  <text class="label" x="522" y="88" text-anchor="middle">S7: Romance</text>
+  <text class="label" x="599" y="88" text-anchor="middle">S8: Recovery</text>
+  <text class="label" x="676" y="88" text-anchor="middle">S9: New Normal</text>
+  <text class="label" x="753" y="88" text-anchor="middle">S10: Resolution</text>
+
+  <!-- Legend at bottom -->
+  <rect x="20" y="100" width="10" height="10" rx="2" fill="#e74c3c"/>
+  <text class="label" x="34" y="109">Crisis</text>
+  <rect x="80" y="100" width="10" height="10" rx="2" fill="#e67e22"/>
+  <text class="label" x="94" y="109">Pressure</text>
+  <rect x="155" y="100" width="10" height="10" rx="2" fill="#f39c12"/>
+  <text class="label" x="169" y="109">Transition</text>
+  <rect x="240" y="100" width="10" height="10" rx="2" fill="#82e0aa"/>
+  <text class="label" x="254" y="109">Recovery</text>
+  <rect x="320" y="100" width="10" height="10" rx="2" fill="#27ae60"/>
+  <text class="label" x="334" y="109">Stability</text>
+  <rect x="400" y="100" width="10" height="10" rx="2" fill="#2980b9"/>
+  <text class="label" x="414" y="109">Resolution</text>
+</svg>
