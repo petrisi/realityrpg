@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 260" width="820" height="260">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .subtitle { font-size: 10px; fill: #5d6d7e; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .sess-label { font-size: 10px; font-weight: 700; fill: #2c3e50; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .growth { font-size: 9px; fill: #1e8449; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .climate { font-size: 9px; fill: #2980b9; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .month { font-size: 9px; fill: #5d6d7e; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .axis { font-size: 9px; fill: #5d6d7e; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="820" height="260" fill="#ffffff" rx="6"/>
+
+  <!-- Title -->
+  <text x="410" y="22" class="title">📅 Campaign Timeline — 12 Sessions</text>
+  <text x="410" y="38" class="subtitle">Growth checks, climate shifts, and seasonal events across a full campaign (~6–12 months)</text>
+
+  <!-- ===== MAIN TIMELINE LINE ===== -->
+  <line x1="60" y1="70" x2="760" y2="70" stroke="#d5d8dc" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 12 session markers (spaced every 60px from x=60 to x=760) -->
+  <!-- Session positions: 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720 -->
+  <!-- Actually let me recalc: 700px span / 11 intervals = 63.6px each. Let me use 60px spacing: 60,120,180,240,300,360,420,480,540,600,660,720 -->
+
+  <!-- Session dots -->
+  <circle cx="60" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="120" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="180" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="240" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="300" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="360" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="420" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="480" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="540" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="600" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="660" cy="70" r="5" fill="#2c3e50"/>
+  <circle cx="720" cy="70" r="5" fill="#2c3e50"/>
+
+  <!-- Session numbers -->
+  <text x="60" y="58" class="sess-label">S1</text>
+  <text x="120" y="58" class="sess-label">S2</text>
+  <text x="180" y="58" class="sess-label">S3</text>
+  <text x="240" y="58" class="sess-label">S4</text>
+  <text x="300" y="58" class="sess-label">S5</text>
+  <text x="360" y="58" class="sess-label">S6</text>
+  <text x="420" y="58" class="sess-label">S7</text>
+  <text x="480" y="58" class="sess-label">S8</text>
+  <text x="540" y="58" class="sess-label">S9</text>
+  <text x="600" y="58" class="sess-label">S10</text>
+  <text x="660" y="58" class="sess-label">S11</text>
+  <text x="720" y="58" class="sess-label">S12</text>
+
+  <!-- ===== GROWTH CHECKS at S3, S6, S9, S12 ===== -->
+  <!-- Growth markers — green diamonds below the line -->
+  <rect x="168" y="82" width="24" height="22" rx="4" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="180" y="97" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">🌱</text>
+  <text x="180" y="118" class="growth">Growth</text>
+
+  <rect x="348" y="82" width="24" height="22" rx="4" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="360" y="97" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">🌱</text>
+  <text x="360" y="118" class="growth">Growth</text>
+
+  <rect x="528" y="82" width="24" height="22" rx="4" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="540" y="97" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">🌱</text>
+  <text x="540" y="118" class="growth">Growth</text>
+
+  <rect x="60" y="82" width="24" height="22" rx="4" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="720" y="97" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">🌱</text>
+  <rect x="708" y="82" width="24" height="22" rx="4" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="720" y="97" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">🌱</text>
+  <text x="720" y="118" class="growth">Growth</text>
+
+  <!-- ===== CLIMATE SHIFTS at S3, S6, S9, S12 ===== -->
+  <rect x="168" y="126" width="24" height="22" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="180" y="141" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">📊</text>
+  <text x="180" y="162" class="climate">Q1 Shift</text>
+
+  <rect x="348" y="126" width="24" height="22" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="360" y="141" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">📊</text>
+  <text x="360" y="162" class="climate">Q2 Shift</text>
+
+  <rect x="528" y="126" width="24" height="22" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="540" y="141" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">📊</text>
+  <text x="540" y="162" class="climate">Q3 Shift</text>
+
+  <rect x="708" y="126" width="24" height="22" rx="4" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="720" y="141" text-anchor="middle" font-size="10" font-family="system-ui,-apple-system,sans-serif">📊</text>
+  <text x="720" y="162" class="climate">Q4 Shift</text>
+
+  <!-- ===== SEASONAL TRACK ===== -->
+  <line x1="60" y1="185" x2="760" y2="185" stroke="#d5d8dc" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="410" y="180" class="axis">Seasonal Events (monthly)</text>
+
+  <!-- Month markers -->
+  <text x="60" y="205" class="month">Jan</text>
+  <text x="120" y="205" class="month">Feb</text>
+  <text x="180" y="205" class="month">Mar</text>
+  <text x="240" y="205" class="month">Apr</text>
+  <text x="300" y="205" class="month">May</text>
+  <text x="360" y="205" class="month">Jun</text>
+  <text x="420" y="205" class="month">Jul</text>
+  <text x="480" y="205" class="month">Aug</text>
+  <text x="540" y="205" class="month">Sep</text>
+  <text x="600" y="205" class="month">Oct</text>
+  <text x="660" y="205" class="month">Nov</text>
+  <text x="720" y="205" class="month">Dec</text>
+
+  <!-- Season bands -->
+  <rect x="55" y="214" width="190" height="28" rx="4" fill="#eaf2f8" opacity="0.5"/>
+  <text x="150" y="233" text-anchor="middle" font-size="10" fill="#2980b9" font-family="system-ui,-apple-system,sans-serif" font-weight="600">❄️ Winter</text>
+
+  <rect x="245" y="214" width="190" height="28" rx="4" fill="#d4efdf" opacity="0.5"/>
+  <text x="340" y="233" text-anchor="middle" font-size="10" fill="#1e8449" font-family="system-ui,-apple-system,sans-serif" font-weight="600">🌸 Spring</text>
+
+  <rect x="435" y="214" width="190" height="28" rx="4" fill="#fdebd0" opacity="0.5"/>
+  <text x="530" y="233" text-anchor="middle" font-size="10" fill="#e67e22" font-family="system-ui,-apple-system,sans-serif" font-weight="600">☀️ Summer</text>
+
+  <rect x="625" y="214" width="190" height="28" rx="4" fill="#fadbd8" opacity="0.5"/>
+  <text x="720" y="233" text-anchor="middle" font-size="10" fill="#922b21" font-family="system-ui,-apple-system,sans-serif" font-weight="600">🍂 Fall</text>
+</svg>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520">
+  <style>
+    .title { font-size: 15px; font-weight: 700; fill: #2c3e50; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .subtitle { font-size: 10px; fill: #5d6d7e; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .axis-label { font-size: 11px; font-weight: 700; fill: #2c3e50; text-anchor: middle; font-family: system-ui,-apple-system,sans-serif; }
+    .crisis-label { font-size: 9px; font-family: system-ui,-apple-system,sans-serif; }
+  </style>
+
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="520" fill="#ffffff" rx="6"/>
+
+  <!-- Title -->
+  <text x="320" y="24" class="title">💥 Crisis Severity Matrix</text>
+  <text x="320" y="40" class="subtitle">34 crises plotted by scope and intensity — find your threat level before rolling</text>
+
+  <!-- ===== MATRIX AREA ===== -->
+  <!-- Quadrants: x from 100 to 580, y from 60 to 420 -->
+
+  <!-- Grid background -->
+  <rect x="100" y="60" width="480" height="360" fill="#fafafa" rx="4"/>
+
+  <!-- Vertical divider (scope midpoint) -->
+  <line x1="340" y1="60" x2="340" y2="420" stroke="#d5d8dc" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Horizontal divider (intensity midpoint) -->
+  <line x1="100" y1="240" x2="580" y2="240" stroke="#d5d8dc" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- ===== AXIS LABELS ===== -->
+  <!-- X-axis: Scope -->
+  <text x="130" y="448" class="axis-label">Personal</text>
+  <text x="340" y="448" class="axis-label">← Scope →</text>
+  <text x="550" y="448" class="axis-label">Systemic</text>
+
+  <!-- Y-axis: Intensity -->
+  <text x="55" y="75" class="axis-label" transform="rotate(-90,55,180)">← Intensity →</text>
+  <text x="60" y="415" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">Inconvenience</text>
+  <text x="60" y="240" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">Disruption</text>
+  <text x="60" y="70" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">Existential</text>
+
+  <!-- ===== QUADRANT LABELS ===== -->
+  <text x="220" y="85" text-anchor="middle" font-size="10" font-weight="700" fill="#e74c3c" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">EXISTENTIAL</text>
+  <text x="220" y="98" text-anchor="middle" font-size="11" fill="#e74c3c" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">Personal</text>
+
+  <text x="460" y="85" text-anchor="middle" font-size="10" font-weight="700" fill="#e74c3c" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">EXISTENTIAL</text>
+  <text x="460" y="98" text-anchor="middle" font-size="11" fill="#e74c3c" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">Systemic</text>
+
+  <text x="220" y="265" text-anchor="middle" font-size="10" font-weight="700" fill="#f39c12" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">DISRUPTION</text>
+  <text x="220" y="278" text-anchor="middle" font-size="11" fill="#f39c12" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">Personal</text>
+
+  <text x="460" y="265" text-anchor="middle" font-size="10" font-weight="700" fill="#f39c12" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">DISRUPTION</text>
+  <text x="460" y="278" text-anchor="middle" font-size="11" fill="#f39c12" font-family="system-ui,-apple-system,sans-serif" opacity="0.4">Systemic</text>
+
+  <!-- ===== PLOT POINTS ===== -->
+  <!-- Color: green=#27ae60 (+2), yellow=#f39c12 (+3), orange=#e67e22 (+4), red=#e74c3c (+5-6) -->
+
+  <!-- TOP-LEFT: Existential Personal -->
+  <circle cx="180" cy="100" r="6" fill="#e74c3c"/><text x="180" y="116" text-anchor="middle" class="crisis-label" fill="#922b21">Death of loved one</text>
+  <circle cx="260" cy="110" r="6" fill="#e74c3c"/><text x="260" y="126" text-anchor="middle" class="crisis-label" fill="#922b21">Mental health crisis</text>
+  <circle cx="200" cy="140" r="6" fill="#e74c3c"/><text x="200" y="156" text-anchor="middle" class="crisis-label" fill="#922b21">Homelessness</text>
+  <circle cx="280" cy="130" r="6" fill="#e74c3c"/><text x="280" y="146" text-anchor="middle" class="crisis-label" fill="#922b21">Worst-case scenario</text>
+
+  <!-- TOP-RIGHT: Existential Systemic -->
+  <circle cx="420" cy="100" r="6" fill="#e74c3c"/><text x="420" y="116" text-anchor="middle" class="crisis-label" fill="#922b21">Natural disaster</text>
+  <circle cx="500" cy="110" r="6" fill="#e74c3c"/><text x="500" y="126" text-anchor="middle" class="crisis-label" fill="#922b21">Pandemic outbreak</text>
+  <circle cx="460" cy="140" r="6" fill="#e74c3c"/><text x="460" y="156" text-anchor="middle" class="crisis-label" fill="#922b21">Compound crisis</text>
+  <circle cx="520" cy="130" r="6" fill="#e74c3c"/><text x="520" y="146" text-anchor="middle" class="crisis-label" fill="#922b21">Community collapse</text>
+
+  <!-- MID-LEFT: Disruption Personal -->
+  <circle cx="170" cy="200" r="6" fill="#e67e22"/><text x="170" y="216" text-anchor="middle" class="crisis-label" fill="#922b21">Medical emergency</text>
+  <circle cx="230" cy="190" r="6" fill="#e67e22"/><text x="230" y="206" text-anchor="middle" class="crisis-label" fill="#922b21">Fire / home disaster</text>
+  <circle cx="190" cy="230" r="6" fill="#e67e22"/><text x="190" y="246" text-anchor="middle" class="crisis-label" fill="#922b21">Relationship rupture</text>
+  <circle cx="250" cy="220" r="6" fill="#e67e22"/><text x="250" y="236" text-anchor="middle" class="crisis-label" fill="#922b21">Serious car accident</text>
+  <circle cx="170" cy="260" r="6" fill="#e67e22"/><text x="170" y="276" text-anchor="middle" class="crisis-label" fill="#922b21">Betrayal by trusted</text>
+  <circle cx="230" cy="280" r="6" fill="#e67e22"/><text x="230" y="296" text-anchor="middle" class="crisis-label" fill="#922b21">Parent needs care</text>
+
+  <!-- MID-RIGHT: Disruption Systemic -->
+  <circle cx="400" cy="200" r="6" fill="#e67e22"/><text x="400" y="216" text-anchor="middle" class="crisis-label" fill="#922b21">Financial collapse</text>
+  <circle cx="460" cy="190" r="6" fill="#e67e22"/><text x="460" y="206" text-anchor="middle" class="crisis-label" fill="#922b21">Eviction / housing loss</text>
+  <circle cx="500" cy="220" r="6" fill="#e67e22"/><text x="500" y="236" text-anchor="middle" class="crisis-label" fill="#922b21">Immigration crisis</text>
+  <circle cx="440" cy="250" r="6" fill="#e67e22"/><text x="440" y="266" text-anchor="middle" class="crisis-label" fill="#922b21">Insurance denied</text>
+  <circle cx="480" cy="270" r="6" fill="#e67e22"/><text x="480" y="286" text-anchor="middle" class="crisis-label" fill="#922b21">Workplace harassment</text>
+  <circle cx="420" cy="290" r="6" fill="#e67e22"/><text x="420" y="306" text-anchor="middle" class="crisis-label" fill="#922b21">Neighborhood changes</text>
+
+  <!-- BOTTOM-LEFT: Inconvenience Personal -->
+  <circle cx="180" cy="330" r="5" fill="#27ae60"/><text x="180" y="346" text-anchor="middle" class="crisis-label" fill="#1e8449">Identity theft</text>
+  <circle cx="240" cy="320" r="5" fill="#27ae60"/><text x="240" y="336" text-anchor="middle" class="crisis-label" fill="#1e8449">Unexpected pregnancy</text>
+  <circle cx="200" cy="360" r="5" fill="#27ae60"/><text x="200" y="376" text-anchor="middle" class="crisis-label" fill="#1e8449">Family moves in</text>
+  <circle cx="260" cy="350" r="5" fill="#27ae60"/><text x="260" y="366" text-anchor="middle" class="crisis-label" fill="#1e8449">Public embarrassment</text>
+  <circle cx="170" cy="390" r="5" fill="#27ae60"/><text x="170" y="406" text-anchor="middle" class="crisis-label" fill="#1e8449">Education disruption</text>
+  <circle cx="230" cy="380" r="5" fill="#27ae60"/><text x="230" y="396" text-anchor="middle" class="crisis-label" fill="#1e8449">Public speaking</text>
+
+  <!-- BOTTOM-RIGHT: Inconvenience Systemic -->
+  <circle cx="420" cy="330" r="5" fill="#27ae60"/><text x="420" y="346" text-anchor="middle" class="crisis-label" fill="#1e8449">Job loss</text>
+  <circle cx="480" cy="320" r="5" fill="#27ae60"/><text x="480" y="336" text-anchor="middle" class="crisis-label" fill="#1e8449">Legal trouble</text>
+  <circle cx="440" cy="360" r="5" fill="#27ae60"/><text x="440" y="376" text-anchor="middle" class="crisis-label" fill="#1e8449">Chronic diagnosis</text>
+  <circle cx="500" cy="350" r="5" fill="#27ae60"/><text x="500" y="366" text-anchor="middle" class="crisis-label" fill="#1e8449">Scam / fraud</text>
+  <circle cx="460" cy="390" r="5" fill="#27ae60"/><text x="460" y="406" text-anchor="middle" class="crisis-label" fill="#1e8449">Property damage</text>
+  <circle cx="520" cy="380" r="5" fill="#27ae60"/><text x="520" y="396" text-anchor="middle" class="crisis-label" fill="#1e8449">Genetic discovery</text>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="100" y="460" width="480" height="40" rx="6" fill="#f8f8f8" stroke="#d5d8dc" stroke-width="1"/>
+  <circle cx="130" cy="480" r="5" fill="#27ae60"/>
+  <text x="142" y="484" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">+2 SP (Minor)</text>
+
+  <circle cx="230" cy="480" r="5" fill="#f39c12"/>
+  <text x="242" y="484" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">+3 SP (Moderate)</text>
+
+  <circle cx="340" cy="480" r="5" fill="#e67e22"/>
+  <text x="352" y="484" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">+4 SP (Severe)</text>
+
+  <circle cx="440" cy="480" r="5" fill="#e74c3c"/>
+  <text x="452" y="484" font-size="11" fill="#5d6d7e" font-family="system-ui,-apple-system,sans-serif">+5–6 SP (Existential)</text>
+</svg>

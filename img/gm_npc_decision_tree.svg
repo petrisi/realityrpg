@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" width="600" height="480">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 3, 0 6" fill="#5d6d7e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="480" fill="#ffffff" rx="6"/>
+
+  <!-- Title -->
+  <text x="300" y="24" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#2c3e50">👤 NPC Creation Process</text>
+  <text x="300" y="40" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">Roll d100 on each table, then combine into a composite character</text>
+
+  <!-- ===== ROOT NODE ===== -->
+  <rect x="220" y="55" width="160" height="36" rx="10" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="300" y="78" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#fff">Create NPC</text>
+
+  <!-- Arrow down to branching -->
+  <line x1="300" y1="91" x2="300" y2="110" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ===== SIX ROLL NODES (horizontal row) ===== -->
+  <!-- Spacing: 6 nodes across 540px = 90px each, centered at 30, 120, 210, 300, 390, 480... let me recalc -->
+  <!-- Node centers at x: 50, 130, 210, 290, 370, 450. Width 64 each, gap 6px -->
+
+  <!-- Node 1: Name -->
+  <rect x="18" y="110" width="64" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="50" y="127" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2c3e50">📝 Name</text>
+  <text x="50" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d100</text>
+
+  <!-- Node 2: Age -->
+  <rect x="88" y="110" width="64" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="127" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2c3e50">🎂 Age</text>
+  <text x="120" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d100</text>
+
+  <!-- Node 3: Occupation -->
+  <rect x="158" y="110" width="64" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="190" y="127" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2c3e50">💼 Job</text>
+  <text x="190" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d100</text>
+
+  <!-- Node 4: Personality -->
+  <rect x="228" y="110" width="64" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="260" y="127" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2c3e50">🎭 Trait</text>
+  <text x="260" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d100</text>
+
+  <!-- Node 5: Relationship -->
+  <rect x="298" y="110" width="64" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="330" y="127" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2c3e50">🤝 Relate</text>
+  <text x="330" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d100</text>
+
+  <!-- Node 6: Secret -->
+  <rect x="368" y="110" width="64" height="36" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="400" y="127" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#2c3e50">🔒 Secret</text>
+  <text x="400" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d100</text>
+
+  <!-- Connecting lines from root to each node -->
+  <line x1="300" y1="91" x2="50" y2="108" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="300" y1="91" x2="120" y2="108" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="300" y1="91" x2="190" y2="108" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="300" y1="91" x2="260" y2="108" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="300" y1="91" x2="330" y2="108" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="300" y1="91" x2="400" y2="108" stroke="#5d6d7e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- ===== CONVERGENCE ARROW ===== -->
+  <line x1="300" y1="146" x2="300" y2="170" stroke="#5d6d7e" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="310" y="162" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">combine →</text>
+
+  <!-- ===== COMPOSITE NPC RESULT ===== -->
+  <rect x="140" y="170" width="320" height="44" rx="10" fill="#d4efdf" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="300" y="190" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1e8449">✅ Composite NPC Profile</text>
+  <text x="300" y="206" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#1e8449">All 6 rolls combined into one character</text>
+
+  <!-- ===== EXAMPLE 1 ===== -->
+  <rect x="30" y="230" width="260" height="110" rx="8" fill="#fdf2e9" stroke="#e67e22" stroke-width="1" filter="url(#shadow)"/>
+  <text x="160" y="250" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#e67e22">Example A — Roll Results</text>
+  <text x="45" y="270" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">📝 Roll 12 → David Park</text>
+  <text x="45" y="284" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🎂 Roll 38 → Age 42 (Midlife)</text>
+  <text x="45" y="298" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">💼 Roll 05 → Healthcare worker</text>
+  <text x="45" y="312" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🎭 Roll 08 → Warm / Controlling</text>
+  <text x="45" y="326" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🤝 Roll 04 → Close family member</text>
+  <text x="45" y="340" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🔒 Roll 28 → Regrets life decision</text>
+
+  <!-- ===== EXAMPLE 2 ===== -->
+  <rect x="310" y="230" width="260" height="110" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1" filter="url(#shadow)"/>
+  <text x="440" y="250" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#2980b9">Example B — Roll Results</text>
+  <text x="325" y="270" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">📝 Roll 72 → Lena Kowalski</text>
+  <text x="325" y="284" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🎂 Roll 10 → Age 24 (Early adult)</text>
+  <text x="325" y="298" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">💼 Roll 64 → Artist / musician</text>
+  <text x="325" y="312" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🎭 Roll 75 → Creative / Disorganized</text>
+  <text x="325" y="326" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🤝 Roll 73 → Unexpected ally</text>
+  <text x="325" y="340" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🔒 Roll 38 → Secretly writing novel</text>
+
+  <!-- ===== NARRATIVE RESULT ===== -->
+  <rect x="30" y="360" width="540" height="55" rx="8" fill="#f0f0f0" stroke="#d5d8dc" stroke-width="1" filter="url(#shadow)"/>
+  <text x="300" y="380" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#2c3e50">What This Gives You</text>
+  <text x="300" y="396" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">A fully formed NPC with a name, age, job, personality, relationship to the PC,</text>
+  <text x="300" y="408" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">and a hidden secret that can be revealed as the story unfolds.</text>
+
+  <!-- ===== TIP ===== -->
+  <rect x="30" y="430" width="540" height="30" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="300" y="449" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#7d6608" font-weight="600">💡 Tip: Roll Personality before Relationship — the NPC's traits shape how they relate to the PC.</text>
+</svg>

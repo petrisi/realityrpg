@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 380" width="620" height="380">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5d6d7e"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="380" fill="#ffffff" rx="6"/>
+
+  <!-- Title -->
+  <text x="310" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#2c3e50">📊 Economic Climate State Machine</text>
+  <text x="310" y="42" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">Roll d6 each quarter (every 3 sessions). Shift one step if result differs by 2+ from current state.</text>
+
+  <!-- ===== THREE STATE BOXES ===== -->
+
+  <!-- State 1: BAD -->
+  <rect x="30" y="65" width="160" height="120" rx="10" fill="#e74c3c" filter="url(#shadow)"/>
+  <text x="110" y="92" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22">🔴</text>
+  <text x="110" y="112" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fff">BAD</text>
+  <text x="110" y="130" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.9">Rising costs, layoffs,</text>
+  <text x="110" y="142" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.9">scarcity, tension</text>
+  <text x="110" y="162" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.8">+1 TN on checks</text>
+  <text x="110" y="174" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.8">+1 SP per indicator</text>
+
+  <!-- State 2: STABLE -->
+  <rect x="230" y="65" width="160" height="120" rx="10" fill="#f39c12" filter="url(#shadow)"/>
+  <text x="310" y="92" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22">🟡</text>
+  <text x="310" y="112" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fff">STABLE</text>
+  <text x="310" y="130" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.9">Normal market,</text>
+  <text x="310" y="142" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.9">manageable friction</text>
+  <text x="310" y="162" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.8">No TN modifier</text>
+  <text x="310" y="174" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.8">Baseline conditions</text>
+
+  <!-- State 3: GOOD -->
+  <rect x="430" y="65" width="160" height="120" rx="10" fill="#27ae60" filter="url(#shadow)"/>
+  <text x="510" y="92" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="22">🟢</text>
+  <text x="510" y="112" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#fff">GOOD</text>
+  <text x="510" y="130" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.9">Job boom, lower costs,</text>
+  <text x="510" y="142" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.9">strong community</text>
+  <text x="510" y="162" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.8">−1 TN on checks</text>
+  <text x="510" y="174" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#fff" opacity="0.8">−1 SP per indicator</text>
+
+  <!-- ===== TRANSITION ARROWS ===== -->
+
+  <!-- BAD → STABLE (right arrow) -->
+  <line x1="190" y1="115" x2="225" y2="115" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="208" y="108" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 5–6</text>
+
+  <!-- STABLE → GOOD (right arrow) -->
+  <line x1="390" y1="115" x2="425" y2="115" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="408" y="108" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 5–6</text>
+
+  <!-- STABLE → BAD (left arrow) -->
+  <line x1="235" y1="155" x2="190" y2="155" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="213" y="150" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 1–2</text>
+
+  <!-- GOOD → STABLE (left arrow) -->
+  <line x1="435" y1="155" x2="390" y2="155" stroke="#5d6d7e" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="413" y="150" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 1–2</text>
+
+  <!-- Hold arrows (self-loops) -->
+  <text x="110" y="58" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 3–4 = hold</text>
+  <text x="310" y="58" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 3–4 = hold</text>
+  <text x="510" y="58" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">d6: 3–4 = hold</text>
+
+  <!-- ===== SPECIAL CONDITIONS ===== -->
+
+  <!-- Macro Crisis box -->
+  <rect x="30" y="210" width="270" height="70" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="165" y="232" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#922b21">⚠️ Macro Crisis Trigger</text>
+  <text x="165" y="250" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#922b21">All 4 indicators 🔴 for 2</text>
+  <text x="165" y="264" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#922b21">consecutive quarters</text>
+
+  <!-- Golden Period box -->
+  <rect x="320" y="210" width="270" height="70" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="455" y="232" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#1e8449">🌟 Golden Period Trigger</text>
+  <text x="455" y="250" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#1e8449">All 4 indicators 🟢 at once</text>
+  <text x="455" y="264" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#1e8449">Bonus SP recovery for all PCs</text>
+
+  <!-- ===== FOUR INDICATORS ===== -->
+  <rect x="30" y="300" width="560" height="55" rx="8" fill="#f8f8f8" stroke="#d5d8dc" stroke-width="1"/>
+  <text x="310" y="318" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#2c3e50">4 Indicators Tracked Independently</text>
+  <text x="110" y="340" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🏠 Housing</text>
+  <text x="230" y="340" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">💼 Jobs</text>
+  <text x="350" y="340" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🏥 Healthcare</text>
+  <text x="490" y="340" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#5d6d7e">🌍 Social</text>
+</svg>

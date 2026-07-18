@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620" width="500" height="620">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000030"/>
+    </filter>
+    <linearGradient id="gaugeGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="30%" stop-color="#e67e22"/>
+      <stop offset="55%" stop-color="#f39c12"/>
+      <stop offset="75%" stop-color="#82e0aa"/>
+      <stop offset="100%" stop-color="#27ae60"/>
+    </linearGradient>
+    <linearGradient id="gaugeBg" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f5b7b1"/>
+      <stop offset="30%" stop-color="#f5cba7"/>
+      <stop offset="55%" stop-color="#f9e79f"/>
+      <stop offset="75%" stop-color="#d5f5e3"/>
+      <stop offset="100%" stop-color="#a9dfbf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="620" fill="#ffffff" rx="6"/>
+
+  <!-- Title -->
+  <text x="250" y="32" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="17" font-weight="700" fill="#2c3e50">💚 Stress Point Gauge</text>
+  <text x="250" y="50" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#5d6d7e">Max SP = 20 + (RES modifier × 5)</text>
+
+  <!-- ===== GAUGE BAR ===== -->
+  <!-- Outer frame -->
+  <rect x="80" y="72" width="340" height="380" rx="12" fill="#f8f8f8" stroke="#d5d8dc" stroke-width="2"/>
+
+  <!-- Gauge fill (green at top = low stress, red at bottom = high stress) -->
+  <!-- Each zone is 76px tall (380/5) -->
+  <!-- Zone 5 (top): 0-25% At Peace — green -->
+  <rect x="80" y="72" width="340" height="76" rx="12" fill="#27ae60" opacity="0.85"/>
+  <rect x="80" y="102" width="340" height="46" fill="#27ae60" opacity="0.85"/>
+  <!-- Zone 4: 25-50% Comfortable — light green -->
+  <rect x="80" y="148" width="340" height="76" fill="#82e0aa" opacity="0.75"/>
+  <!-- Zone 3: 50-75% Stressed — yellow -->
+  <rect x="80" y="224" width="340" height="76" fill="#f9e79f" opacity="0.75"/>
+  <!-- Zone 2: 75-90% Overwhelmed — orange -->
+  <rect x="80" y="300" width="340" height="76" fill="#f5b7b1" opacity="0.75"/>
+  <!-- Zone 1 (bottom): 90-100%+ Breakdown — red -->
+  <rect x="80" y="376" width="340" height="76" rx="0" fill="#e74c3c" opacity="0.85"/>
+  <rect x="80" y="406" width="340" height="46" rx="0 0 12 12" fill="#e74c3c" opacity="0.85"/>
+
+  <!-- Zone labels (right side) -->
+  <text x="435" y="112" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#1e8449" font-weight="600">At Peace</text>
+  <text x="435" y="198" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#1e8449" font-weight="600">Comfortable</text>
+  <text x="435" y="274" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#7d6608" font-weight="600">Stressed</text>
+  <text x="435" y="350" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#922b21" font-weight="600">Overwhelmed</text>
+  <text x="435" y="426" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#fff" font-weight="700">⚠ BREAKDOWN</text>
+
+  <!-- Percentage markers (left side) -->
+  <text x="72" y="112" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#5d6d7e">0%</text>
+  <text x="72" y="174" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#5d6d7e">25%</text>
+  <text x="72" y="250" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#5d6d7e">50%</text>
+  <text x="72" y="326" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#5d6d7e">75%</text>
+  <text x="72" y="426" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#5d6d7e">100%</text>
+
+  <!-- Divider lines between zones -->
+  <line x1="80" y1="148" x2="420" y2="148" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="80" y1="224" x2="420" y2="224" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="80" y1="300" x2="420" y2="300" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="80" y1="376" x2="420" y2="376" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Needle pointer at ~60% (stressed zone) -->
+  <polygon points="250,252 240,268 260,268" fill="#2c3e50" filter="url(#shadow)"/>
+  <text x="250" y="290" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#2c3e50" font-weight="600">Example: 12/20 SP</text>
+
+  <!-- ===== FORMULA BOX ===== -->
+  <rect x="60" y="470" width="380" height="56" rx="8" fill="#eaf2f8" stroke="#2980b9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="250" y="490" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="700" fill="#2c3e50">Max SP Formula</text>
+  <text x="250" y="510" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#2980b9">Max SP = 20 + (RES modifier × 5)</text>
+
+  <!-- ===== EXAMPLES ROW ===== -->
+  <rect x="40" y="540" width="170" height="62" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1" filter="url(#shadow)"/>
+  <text x="125" y="558" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#922b21" font-weight="700">RES 8 (mod −2)</text>
+  <text x="125" y="574" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#922b21">Max SP = 10</text>
+  <text x="125" y="588" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#922b21">Fragile — breaks fast</text>
+
+  <rect x="220" y="540" width="170" height="62" rx="6" fill="#d4efdf" stroke="#27ae60" stroke-width="1" filter="url(#shadow)"/>
+  <text x="305" y="558" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#1e8449" font-weight="700">RES 12 (mod +2)</text>
+  <text x="305" y="574" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#1e8449">Max SP = 30</text>
+  <text x="305" y="588" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#1e8449">Resilient — absorbs more</text>
+</svg>
