@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 500 600" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <title>Self-Defense Encounter Resolution Flowchart</title>
+  <desc>5-step flowchart showing the structured resolution process from awareness to weapon use, with success/failure branching</desc>
+  <defs>
+    <filter id="ws" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="ah" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <rect width="500" height="600" rx="12" fill="#fafbfc"/>
+  <text x="250" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Encounter Resolution</text>
+  <text x="250" y="44" text-anchor="middle" font-size="10" fill="#5d6d7e">5 structured steps — violence is the LAST option</text>
+
+  <!-- Step 1: Awareness -->
+  <g filter="url(#ws)">
+    <rect x="120" y="60" width="260" height="60" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="2"/>
+    <text x="250" y="82" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">1️⃣ AWARENESS</text>
+    <text x="250" y="98" text-anchor="middle" font-size="10" fill="#2c3e50">EXP + Empathy check (TN 40)</text>
+    <text x="250" y="110" text-anchor="middle" font-size="9" fill="#5d6d7e">Success = notice threat early, +1 round</text>
+  </g>
+
+  <line x1="250" y1="120" x2="250" y2="140" stroke="#2c3e50" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Step 2: De-escalation -->
+  <g filter="url(#ws)">
+    <rect x="100" y="140" width="300" height="60" rx="8" fill="#d4efdf" stroke="#27ae60" stroke-width="2"/>
+    <text x="250" y="162" text-anchor="middle" font-size="13" font-weight="700" fill="#1e8449">2️⃣ DE-ESCALATION</text>
+    <text x="250" y="178" text-anchor="middle" font-size="10" fill="#2c3e50">Communication check (TN 45–65)</text>
+    <text x="250" y="190" text-anchor="middle" font-size="9" fill="#5d6d7e">Success = threat defused · SCENE ENDS</text>
+  </g>
+
+  <!-- Success exit (left) -->
+  <line x1="100" y1="170" x2="60" y2="170" stroke="#27ae60" stroke-width="2"/>
+  <text x="40" y="174" text-anchor="end" font-size="9" font-weight="700" fill="#27ae60">✅ SCENE</text>
+  <text x="40" y="186" text-anchor="end" font-size="9" font-weight="700" fill="#27ae60">ENDS</text>
+
+  <line x1="250" y1="200" x2="250" y2="220" stroke="#e67e22" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Step 3: Flight -->
+  <g filter="url(#ws)">
+    <rect x="100" y="220" width="300" height="60" rx="8" fill="#fef9e7" stroke="#f39c12" stroke-width="2"/>
+    <text x="250" y="242" text-anchor="middle" font-size="13" font-weight="700" fill="#d68910">3️⃣ FLIGHT</text>
+    <text x="250" y="258" text-anchor="middle" font-size="10" fill="#2c3e50">Athletics check (TN 40)</text>
+    <text x="250" y="270" text-anchor="middle" font-size="9" fill="#5d6d7e">Success = escape · SCENE ENDS</text>
+  </g>
+
+  <!-- Success exit (left) -->
+  <line x1="100" y1="250" x2="60" y2="250" stroke="#27ae60" stroke-width="2"/>
+  <text x="40" y="254" text-anchor="end" font-size="9" font-weight="700" fill="#27ae60">✅ SCENE</text>
+  <text x="40" y="266" text-anchor="end" font-size="9" font-weight="700" fill="#27ae60">ENDS</text>
+
+  <line x1="250" y1="280" x2="250" y2="300" stroke="#e74c3c" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Step 4: Physical Confrontation -->
+  <g filter="url(#ws)">
+    <rect x="100" y="300" width="300" height="60" rx="8" fill="#fdebd0" stroke="#e67e22" stroke-width="2"/>
+    <text x="250" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#d35400">4️⃣ PHYSICAL CONFRONTATION</text>
+    <text x="250" y="338" text-anchor="middle" font-size="10" fill="#2c3e50">Combat resolution (DXT vs TN 35–60)</text>
+    <text x="250" y="350" text-anchor="middle" font-size="9" fill="#5d6d7e">Health Track advancement for both parties</text>
+  </g>
+
+  <line x1="250" y1="360" x2="250" y2="380" stroke="#c0392b" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- Step 5: Weapon Use -->
+  <g filter="url(#ws)">
+    <rect x="100" y="380" width="300" height="60" rx="8" fill="#fadbd8" stroke="#e74c3c" stroke-width="2.5"/>
+    <text x="250" y="402" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">5️⃣ WEAPON USE</text>
+    <text x="250" y="418" text-anchor="middle" font-size="10" fill="#2c3e50">Weapon-specific checks · LAST RESORT</text>
+    <text x="250" y="430" text-anchor="middle" font-size="9" fill="#5d6d7e">Maximum consequences for everyone</text>
+  </g>
+
+  <!-- "This is where you want to win" annotation -->
+  <g filter="url(#ws)">
+    <rect x="130" y="460" width="240" height="36" rx="6" fill="#fdf2e9" stroke="#e67e22" stroke-width="1.5"/>
+    <text x="250" y="478" text-anchor="middle" font-size="10" font-weight="700" fill="#d35400">⚡ THIS IS WHERE YOU WANT TO WIN</text>
+    <text x="250" y="490" text-anchor="middle" font-size="9" fill="#d35400">Resolve at steps 1–3 if possible</text>
+  </g>
+
+  <!-- SP cost annotation -->
+  <g filter="url(#ws)">
+    <rect x="130" y="510" width="240" height="36" rx="6" fill="#e8daef" stroke="#8e44ad" stroke-width="1.5"/>
+    <text x="250" y="528" text-anchor="middle" font-size="10" fill="#6c3483">Every violent encounter: both parties gain SP</text>
+    <text x="250" y="540" text-anchor="middle" font-size="9" fill="#6c3483">+5–8 (attack) → +10 (shooting) → +15 (killing)</text>
+  </g>
+</svg>

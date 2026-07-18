@@ -45,32 +45,26 @@
   <h3>⚖️ The Violence Consequence System</h3>
   <p><strong>Every act of violence has three layers of consequences:</strong></p>
 
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Layer</th>
-        <th>Effect</th>
-        <th>Mechanics</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🩸 <strong>Physical</strong></td>
-        <td>Injury, disability, death</td>
-        <td>Health Condition Track advancement; permanent injury roll for severe wounds</td>
-      </tr>
-      <tr>
-        <td>🧠 <strong>Psychological</strong></td>
-        <td>Trauma, PTSD, guilt, stress accumulation</td>
-        <td>SP gain (see below); RES checks to process; trauma conditions</td>
-      </tr>
-      <tr>
-        <td>⚖️ <strong>Legal</strong></td>
-        <td>Arrest, charges, civil liability, license revocation</td>
-        <td>GM applies jurisdiction-specific law table; possible campaign-defining consequences</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🩸</div>
+      <h4>Physical</h4>
+      <p>Injury, disability, death</p>
+      <p><em>Health Condition Track advancement; permanent injury roll for severe wounds</em></p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <h4>Psychological</h4>
+      <p>Trauma, PTSD, guilt, stress accumulation</p>
+      <p><em>SP gain (see below); RES checks to process; trauma conditions</em></p>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚖️</div>
+      <h4>Legal</h4>
+      <p>Arrest, charges, civil liability, license revocation</p>
+      <p><em>GM applies jurisdiction-specific law table; possible campaign-defining consequences</em></p>
+    </div>
+  </div>
 
   <h3>🗣️ De-escalation as the Default</h3>
   <p>In Reality RPG, <strong>de-escalation is the first and best option</strong>. Before any violence, a character should attempt to talk their way out of danger:</p>
@@ -84,81 +78,24 @@
   <h3>🪜 The Use-of-Force Ladder</h3>
   <p>Real-world law enforcement and self-defense doctrine follows a graduated response. Characters who escalate beyond what the situation warrants face legal consequences. <strong>Note:</strong> the exact thresholds for "proportional force" vary significantly by country — the ladder below is a general guide; the GM should adjust based on the campaign setting's jurisdiction.</p>
 
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Level</th>
-        <th>Action</th>
-        <th>When Justified</th>
-        <th>Legal Risk</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>🗣️ <strong>Verbal Warning</strong></td>
-        <td>Always</td>
-        <td>None</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>✋ <strong>Physical Restraint</strong></td>
-        <td>Against active physical threat</td>
-        <td>Low (if proportional)</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>🏏 <strong>Impact Weapon</strong></td>
-        <td>Against armed or multiple attackers</td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>🔪 <strong>Blade</strong></td>
-        <td>Against lethal threat; last resort</td>
-        <td>High</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>🔫 <strong>Firearm</strong></td>
-        <td>Imminent threat of death or great bodily harm</td>
-        <td>Very High</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="section-illustration">
+    <img src="img/wp_use_of_force_continuum.svg" alt="Use-of-Force Continuum diagram showing 5 levels from verbal warning to firearm" style="max-width:580px;width:100%;margin:0 auto;display:block;">
+  </div>
 
   <div class="callout tip">
     <strong>💡 GM Note:</strong> If a character uses force at a level disproportionate to the threat, the GM should apply legal consequences <em>immediately</em> — even if the character "wins" the physical encounter. A good lawyer costs money; a bad outcome costs freedom.
   </div>
 
   <h3>💀 Lethality Ratings</h3>
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Rating</th>
-        <th>Health Track Advance</th>
-        <th>Examples</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🟢 <strong>Non-lethal</strong></td>
-        <td>1 step (Minor → Hurt → Disabled)</td>
-        <td>Fists, pepper spray, tasers, personal alarms</td>
-      </tr>
-      <tr>
-        <td>🟡 <strong>Potentially lethal</strong></td>
-        <td>1–2 steps depending on target</td>
-        <td>Baseball bat, knife, pipe, improvised weapons</td>
-      </tr>
-      <tr>
-        <td>🔴 <strong>Lethal</strong></td>
-        <td>2 steps; can kill directly</td>
-        <td>Firearms, shotguns, rifles, large blades</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="condition-track">
+    <div class="condition-step healthy">🟢 Non-lethal<br><span style="font-weight:400;font-size:0.75rem">1 step advance<br>Fists, pepper spray, tasers</span></div>
+    <div class="condition-step sick">🟡 Potentially lethal<br><span style="font-weight:400;font-size:0.75rem">1–2 steps<br>Baseball bat, knife, pipe</span></div>
+    <div class="condition-step critical">🔴 Lethal<br><span style="font-weight:400;font-size:0.75rem">2 steps; can kill directly<br>Firearms, shotguns, rifles</span></div>
+  </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_marcus_bar_aftermath.png" alt="Marcus sitting alone at a bar counter after a fight, police taking notes in background, hands shaking over a half-finished drink" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example — The Use-of-Force Ladder in Action:</strong><br>
     <em>Marcus (EXP +2, RES +1) is confronted by a drunk man shoving him at a bar. Marcus attempts de-escalation: he rolls <span class="dice">2d10</span> + EXP = 7 + 6 + 2 = <strong>15</strong> vs. TN 50. Failure. The man swings. Marcus steps back (flight), but the man follows. Marcus grabs a bottle (impact weapon, Level 3) — this is justified because the attacker is actively fighting. He strikes once, dropping the man. <strong>Aftermath:</strong> Marcus gains +5 SP from the violence. The bar calls police. Marcus gives a statement. Because he used proportional force against an active attacker, no charges are filed — but he still has to spend an evening at the station.</em>
@@ -175,121 +112,61 @@
 
   <h3>🔫 Handguns</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Weapon</th>
-        <th>Damage</th>
-        <th>TN (10m)</th>
-        <th>Effective Range</th>
-        <th>Cost</th>
-        <th>Ammo</th>
-        <th>Conceal</th>
-        <th>Reload</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🔫 .22 LR Pistol</td>
-        <td>1 step</td>
-        <td>45</td>
-        <td>25m</td>
-        <td>$300–600</td>
-        <td>$0.25/rnd</td>
-        <td>Easy</td>
-        <td>2s (10 rds)</td>
-      </tr>
-      <tr>
-        <td>🔫 9mm Semi-Auto</td>
-        <td>1–2 steps</td>
-        <td>40</td>
-        <td>50m</td>
-        <td>$400–800</td>
-        <td>$0.30/rnd</td>
-        <td>Moderate</td>
-        <td>2s (15 rds)</td>
-      </tr>
-      <tr>
-        <td>🔫 .45 ACP</td>
-        <td>2 steps</td>
-        <td>42</td>
-        <td>40m</td>
-        <td>$500–900</td>
-        <td>$0.50/rnd</td>
-        <td>Hard</td>
-        <td>3s (7 rds)</td>
-      </tr>
-      <tr>
-        <td>🔫 Revolver (.38)</td>
-        <td>1 step</td>
-        <td>40</td>
-        <td>30m</td>
-        <td>$300–500</td>
-        <td>$0.40/rnd</td>
-        <td>Moderate</td>
-        <td>5s (6 rds)</td>
-      </tr>
-      <tr>
-        <td>🔫 Revolver (.357)</td>
-        <td>2 steps</td>
-        <td>40</td>
-        <td>40m</td>
-        <td>$400–700</td>
-        <td>$1.00/rnd</td>
-        <td>Moderate</td>
-        <td>5s (6 rds)</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🔫 .22 LR Pistol</h4>
+      <p><strong>Damage:</strong> 1 step · <strong>TN:</strong> 45 · <strong>Range:</strong> 25m</p>
+      <p><strong>Cost:</strong> $300–600 · <strong>Ammo:</strong> $0.25/rnd</p>
+      <p><strong>Conceal:</strong> Easy · <strong>Reload:</strong> 2s (10 rds)</p>
+    </div>
+    <div class="card">
+      <h4>🔫 9mm Semi-Auto</h4>
+      <p><strong>Damage:</strong> 1–2 steps · <strong>TN:</strong> 40 · <strong>Range:</strong> 50m</p>
+      <p><strong>Cost:</strong> $400–800 · <strong>Ammo:</strong> $0.30/rnd</p>
+      <p><strong>Conceal:</strong> Moderate · <strong>Reload:</strong> 2s (15 rds)</p>
+    </div>
+    <div class="card">
+      <h4>🔫 .45 ACP</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN:</strong> 42 · <strong>Range:</strong> 40m</p>
+      <p><strong>Cost:</strong> $500–900 · <strong>Ammo:</strong> $0.50/rnd</p>
+      <p><strong>Conceal:</strong> Hard · <strong>Reload:</strong> 3s (7 rds)</p>
+    </div>
+    <div class="card">
+      <h4>🔫 Revolver (.38)</h4>
+      <p><strong>Damage:</strong> 1 step · <strong>TN:</strong> 40 · <strong>Range:</strong> 30m</p>
+      <p><strong>Cost:</strong> $300–500 · <strong>Ammo:</strong> $0.40/rnd</p>
+      <p><strong>Conceal:</strong> Moderate · <strong>Reload:</strong> 5s (6 rds)</p>
+    </div>
+    <div class="card">
+      <h4>🔫 Revolver (.357)</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN:</strong> 40 · <strong>Range:</strong> 40m</p>
+      <p><strong>Cost:</strong> $400–700 · <strong>Ammo:</strong> $1.00/rnd</p>
+      <p><strong>Conceal:</strong> Moderate · <strong>Reload:</strong> 5s (6 rds)</p>
+    </div>
+  </div>
 
   <h3>🎯 Long Guns</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr>
-        <th>Weapon</th>
-        <th>Damage</th>
-        <th>TN</th>
-        <th>Effective Range</th>
-        <th>Cost</th>
-        <th>Ammo</th>
-        <th>Conceal</th>
-        <th>Reload</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>💥 Pump-Action Shotgun</td>
-        <td>2 steps (1 step at &gt;20m)</td>
-        <td>35 (5m) / 55 (20m)</td>
-        <td>40m</td>
-        <td>$300–600</td>
-        <td>$1.50–3/rnd</td>
-        <td>Impossible</td>
-        <td>4s (5 rds)</td>
-      </tr>
-      <tr>
-        <td>💥 AR-15 / Semi-Auto Rifle</td>
-        <td>2 steps</td>
-        <td>35 (25m) / 50 (75m)</td>
-        <td>300m</td>
-        <td>$700–1500</td>
-        <td>$0.40/rnd</td>
-        <td>Impossible</td>
-        <td>3s (30 rds)</td>
-      </tr>
-      <tr>
-        <td>🎯 Bolt-Action Rifle</td>
-        <td>2 steps</td>
-        <td>30 (50m)</td>
-        <td>600m+</td>
-        <td>$500–2000+</td>
-        <td>$1–5/rnd</td>
-        <td>Impossible</td>
-        <td>5s (5 rds)</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>💥 Pump-Action Shotgun</h4>
+      <p><strong>Damage:</strong> 2 steps (1 at &gt;20m) · <strong>TN:</strong> 35/55 · <strong>Range:</strong> 40m</p>
+      <p><strong>Cost:</strong> $300–600 · <strong>Ammo:</strong> $1.50–3/rnd</p>
+      <p><strong>Conceal:</strong> Impossible · <strong>Reload:</strong> 4s (5 rds)</p>
+    </div>
+    <div class="card">
+      <h4>💥 AR-15 / Semi-Auto Rifle</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN:</strong> 35/50 · <strong>Range:</strong> 300m</p>
+      <p><strong>Cost:</strong> $700–1500 · <strong>Ammo:</strong> $0.40/rnd</p>
+      <p><strong>Conceal:</strong> Impossible · <strong>Reload:</strong> 3s (30 rds)</p>
+    </div>
+    <div class="card">
+      <h4>🎯 Bolt-Action Rifle</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN:</strong> 30 · <strong>Range:</strong> 600m+</p>
+      <p><strong>Cost:</strong> $500–2000+ · <strong>Ammo:</strong> $1–5/rnd</p>
+      <p><strong>Conceal:</strong> Impossible · <strong>Reload:</strong> 5s (5 rds)</p>
+    </div>
+  </div>
 
   <h3>⚙️ Firearm Mechanics</h3>
 
@@ -298,16 +175,26 @@
   </div>
 
   <h4>🔄 Firing Modes</h4>
-  <table class="data-table">
-    <thead>
-      <tr><th>Mode</th><th>TN Modifier</th><th>Ammo Use</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>🎯 Single Shot</td><td>None</td><td>1 round</td><td>Most accurate; default mode</td></tr>
-      <tr><td>💥 Burst (3-round)</td><td>+5 to TN</td><td>3 rounds</td><td>Double damage if hit; wasteful</td></tr>
-      <tr><td>🌊 Full Auto</td><td>+10 to TN</td><td>5–10 rounds</td><td>Triple damage if hit; very inaccurate; wastes ammo</td></tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🎯 Single Shot</h4>
+      <p><strong>TN Modifier:</strong> None</p>
+      <p><strong>Ammo:</strong> 1 round</p>
+      <p>Most accurate; default mode</p>
+    </div>
+    <div class="card">
+      <h4>💥 Burst (3-round)</h4>
+      <p><strong>TN Modifier:</strong> +5 to TN</p>
+      <p><strong>Ammo:</strong> 3 rounds</p>
+      <p>Double damage if hit; wasteful</p>
+    </div>
+    <div class="card">
+      <h4>🌊 Full Auto</h4>
+      <p><strong>TN Modifier:</strong> +10 to TN</p>
+      <p><strong>Ammo:</strong> 5–10 rounds</p>
+      <p>Triple damage if hit; very inaccurate; wastes ammo</p>
+    </div>
+  </div>
 
   <h4>⚠️ Jamming</h4>
   <p>Each time a firearm is fired, roll <span class="dice">1d20</span>. On a <strong>1</strong>, the weapon jams. Clearing a jam requires a full action (one round). Novice shooters have a higher jam rate: roll <span class="dice">1d20</span> and jam on 1–2.</p>
@@ -319,6 +206,9 @@
   <p>Targets behind substantial cover (concrete, brick, thick tree trunk) gain <strong>+10 to the attacker's TN</strong>. Light cover (car doors, thin walls) grants <strong>+5</strong>. Concealment (hiding behind foliage, smoke) gives <strong>+5 to the defender's dodge roll</strong>.</p>
 
   <h4>💥 Missed Shots &amp; Collateral Damage</h4>
+  <div class="section-illustration">
+    <img src="img/wp_firearm_collateral_risk.svg" alt="Room diagram showing bullet trajectories and collateral damage risk" style="max-width:520px;width:100%;margin:0 auto;display:block;">
+  </div>
   <p>When a shooter misses, the bullet doesn't vanish. The GM rolls <span class="dice">1d6</span> to determine where it goes:</p>
   <ul>
     <li><strong>1–2:</strong> Bullet strikes a bystander or innocent object — roll for collateral damage</li>
@@ -332,17 +222,36 @@
 
   <h3>📜 Legal Framework — United States</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Jurisdiction Type</th><th>Ownership</th><th>Concealed Carry</th><th>Open Carry</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>🟢 Permissive State</td><td>Open purchase</td><td>Constitutional carry (no permit) or easy permit</td><td>Legal</td><td>Texas, Florida, most Southern/Western states</td></tr>
-      <tr><td>🟡 Moderate State</td><td>Background check required</td><td>Permit required (training + application)</td><td>Permit required</td><td>Illinois, Ohio, etc.</td></tr>
-      <tr><td>🔴 Restrictive State</td><td>Waiting period, assault weapon bans</td><td>Permit required; "may issue" discretion</td><td>Restricted or banned</td><td>California, New York, Massachusetts</td></tr>
-      <tr><td>🔴 DC / Major Cities</td><td>Extreme restrictions; handgun bans</td><td>Effectively prohibited</td><td>Prohibited</td><td>Washington DC, Chicago (functionally)</td></tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card" style="border-left:4px solid #27ae60">
+      <h4>🟢 Permissive State</h4>
+      <p><strong>Ownership:</strong> Open purchase</p>
+      <p><strong>Concealed Carry:</strong> Constitutional carry (no permit) or easy permit</p>
+      <p><strong>Open Carry:</strong> Legal</p>
+      <p><em>Texas, Florida, most Southern/Western states</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #f39c12">
+      <h4>🟡 Moderate State</h4>
+      <p><strong>Ownership:</strong> Background check required</p>
+      <p><strong>Concealed Carry:</strong> Permit required (training + application)</p>
+      <p><strong>Open Carry:</strong> Permit required</p>
+      <p><em>Illinois, Ohio, etc.</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #e74c3c">
+      <h4>🔴 Restrictive State</h4>
+      <p><strong>Ownership:</strong> Waiting period, assault weapon bans</p>
+      <p><strong>Concealed Carry:</strong> Permit required; "may issue" discretion</p>
+      <p><strong>Open Carry:</strong> Restricted or banned</p>
+      <p><em>California, New York, Massachusetts</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #2c3e50">
+      <h4>🔴 DC / Major Cities</h4>
+      <p><strong>Ownership:</strong> Extreme restrictions; handgun bans</p>
+      <p><strong>Concealed Carry:</strong> Effectively prohibited</p>
+      <p><strong>Open Carry:</strong> Prohibited</p>
+      <p><em>Washington DC, Chicago (functionally)</em></p>
+    </div>
+  </div>
 
   <div class="callout rule">
     <strong>📏 Federal Restrictions (US):</strong> The following people <strong>cannot legally own firearms</strong>: convicted felons, domestic violence misdemeanants, unlawful drug users, unlawful immigrants, those dishonorably discharged from the military, and those adjudicated mentally incompetent. Violation = <strong>up to 10 years in federal prison</strong>.
@@ -350,20 +259,61 @@
 
   <h3>📜 Legal Framework — International</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Jurisdiction Type</th><th>Ownership</th><th>Concealed Carry</th><th>Open Carry</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>🇬🇧 <strong>UK</strong></td><td>Strict licensing; genuine reason required (sporting, collection, occupational)</td><td>Almost never permitted; self-defense not accepted as a valid reason</td><td>Effectively banned</td><td>Firearms Act 1968 / 1997; post-Dunblane reforms; home inspection required; 1–2 year wait for certificates</td></tr>
-      <tr><td>🇩🇪🇫🇷 <strong>EU (Germany, France)</strong></td><td>Licensing with training; Germany allows self-defense justification</td><td>Germany: possible with demonstrated need; France: limited</td><td>Restricted to specific contexts (hunting, sport transport)</td><td>EU Firearms Passport allows travel between member states; self-defense carry is rare and heavily scrutinized everywhere</td></tr>
-      <tr><td>🇯🇵 <strong>Japan</strong></td><td>Extremely strict; handguns almost never approved for civilians</td><td>Not permitted</td><td>Not permitted</td><td>4-step licensing process; mandatory training + psych eval; self-defense not a valid reason; civilian ownership rate ~0.3%</td></tr>
-      <tr><td>🇦🇺 <strong>Australia</strong></td><td>Post-Port Arthur reforms; strict registration; RIF (Relevant Interest Factor) required</td><td>Not permitted; firearms must be stored at home/range</td><td>Only during authorized use (hunting, sport)</td><td>National Firearms Act 1996; all firearms must be registered; G-category (handguns) nearly impossible for civilians</td></tr>
-      <tr><td>🇷🇺 <strong>Russia</strong></td><td>Licensing required; training, medical/psychiatric clearance, background check, safe storage proof</td><td>Possible with license; separate permit for carry</td><td>Restricted to licensed transport</td><td>Political considerations may affect approval; long wait times; renewal every 5 years</td></tr>
-      <tr><td>🇧🇷🇲🇽 <strong>Brazil / Latin America</strong></td><td>Varies widely: Brazil has strict licensing (2012 statute); Mexico has state-licensed arms shops (DEA)</td><td>Brazil: possible with license; Mexico: restricted</td><td>Brazil: restricted; Mexico: limited</td><td>Some countries (Argentina, Uruguay) are more liberal; others (Chile) are strict; street gun violence is a major issue regardless of law</td></tr>
-      <tr><td>🇮🇳 <strong>India</strong></td><td>Restricted but not prohibited; arms license required; waiting period</td><td>Possible with license; separate authorization</td><td>Restricted to licensed transport</td><td>Arms Act 1959; significant bureaucracy; political connections often needed for approval</td></tr>
-    </tbody>
-  </table>
+  <div class="section-illustration">
+    <img src="img/wp_international_comparison.svg" alt="Radar chart comparing firearm law strictness across 7 countries" style="max-width:600px;width:100%;margin:0 auto;display:block;">
+  </div>
+
+  <div class="card-grid">
+    <div class="card" style="border-left:4px solid #2980b9">
+      <h4>🇬🇧 UK</h4>
+      <p><strong>Ownership:</strong> Strict licensing; genuine reason required (sporting, collection, occupational)</p>
+      <p><strong>Concealed Carry:</strong> Almost never permitted; self-defense not accepted</p>
+      <p><strong>Open Carry:</strong> Effectively banned</p>
+      <p><em>Firearms Act 1968/1997; home inspection; 1–2 year wait</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #2980b9">
+      <h4>🇩🇪🇫🇷 EU (Germany, France)</h4>
+      <p><strong>Ownership:</strong> Licensing with training; Germany allows self-defense justification</p>
+      <p><strong>Concealed Carry:</strong> Germany: possible with demonstrated need; France: limited</p>
+      <p><strong>Open Carry:</strong> Restricted to specific contexts (hunting, sport transport)</p>
+      <p><em>EU Firearms Passport for travel between member states</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #c0392b">
+      <h4>🇯🇵 Japan</h4>
+      <p><strong>Ownership:</strong> Extremely strict; handguns almost never approved</p>
+      <p><strong>Concealed Carry:</strong> Not permitted</p>
+      <p><strong>Open Carry:</strong> Not permitted</p>
+      <p><em>4-step licensing; mandatory training + psych eval; ownership rate ~0.3%</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #c0392b">
+      <h4>🇦🇺 Australia</h4>
+      <p><strong>Ownership:</strong> Post-Port Arthur reforms; strict registration; RIF required</p>
+      <p><strong>Concealed Carry:</strong> Not permitted; must be stored at home/range</p>
+      <p><strong>Open Carry:</strong> Only during authorized use (hunting, sport)</p>
+      <p><em>National Firearms Act 1996; handguns nearly impossible for civilians</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #d35400">
+      <h4>🇷🇺 Russia</h4>
+      <p><strong>Ownership:</strong> Licensing; training, medical/psychiatric clearance, background check</p>
+      <p><strong>Concealed Carry:</strong> Possible with license; separate permit for carry</p>
+      <p><strong>Open Carry:</strong> Restricted to licensed transport</p>
+      <p><em>Political considerations may affect approval; renewal every 5 years</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #d35400">
+      <h4>🇧🇷🇲🇽 Brazil / Latin America</h4>
+      <p><strong>Ownership:</strong> Varies widely; Brazil has strict licensing; Mexico has DEA shops</p>
+      <p><strong>Concealed Carry:</strong> Brazil: possible with license; Mexico: restricted</p>
+      <p><strong>Open Carry:</strong> Varies by country</p>
+      <p><em>Street gun violence is a major issue regardless of law</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #8e44ad">
+      <h4>🇮🇳 India</h4>
+      <p><strong>Ownership:</strong> Restricted but not prohibited; arms license required</p>
+      <p><strong>Concealed Carry:</strong> Possible with license; separate authorization</p>
+      <p><strong>Open Carry:</strong> Restricted to licensed transport</p>
+      <p><em>Arms Act 1959; significant bureaucracy; political connections often needed</em></p>
+    </div>
+  </div>
 
   <div class="callout rule">
     <strong>🌍 International Restrictions:</strong> Most countries restrict firearm ownership for convicted criminals, those with mental health court orders, undocumented immigrants, and in some cases political dissidents. In countries with strict laws (Japan, UK, Australia), <strong>ANY unauthorized possession carries severe penalties (5–15 years in prison)</strong>. In countries with liberal laws (many US states, parts of Latin America), restrictions are narrower — but the consequences of misuse are still severe.
@@ -423,28 +373,44 @@
 
   <h3>🎓 Firearm Training</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Level</th><th>TN Modifier</th><th>Fumble Risk</th><th>Training Required</th><th>Cost</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>🔰 Novice</td><td>+5 (worse)</td><td>Roll ≤ 3 = fumble</td><td>0 hours</td><td>Free (no training)</td></tr>
-      <tr><td>📘 Competent</td><td>None</td><td>Roll ≤ 1 = fumble</td><td>10 hours range time</td><td>$100–200</td></tr>
-      <tr><td>📗 Proficient</td><td>−5</td><td>None</td><td>30 hours range time</td><td>$300–500</td></tr>
-      <tr><td>📙 Expert</td><td>−10</td><td>None</td><td>60 hours range time + instructor course</td><td>$600–1000</td></tr>
-      <tr><td>📕 Master</td><td>−15</td><td>None</td><td>100+ hours + competition or professional experience</td><td>$1000+</td></tr>
-    </tbody>
-  </table>
+  <div class="tn-ladder">
+    <div class="tn-step near-impossible">
+      <span class="tn-value">🔰</span>
+      <span class="tn-label"><strong>Novice</strong> — TN +5 (worse) · Fumble ≤3 · 0 hrs · Free</span>
+    </div>
+    <div class="tn-step very-hard">
+      <span class="tn-value">📘</span>
+      <span class="tn-label"><strong>Competent</strong> — TN none · Fumble ≤1 · 10 hrs · $100–200</span>
+    </div>
+    <div class="tn-step hard">
+      <span class="tn-value">📗</span>
+      <span class="tn-label"><strong>Proficient</strong> − TN −5 · No fumble · 30 hrs · $300–500</span>
+    </div>
+    <div class="tn-step medium">
+      <span class="tn-value">📙</span>
+      <span class="tn-label"><strong>Expert</strong> — TN −10 · No fumble · 60 hrs + instructor · $600–1000</span>
+    </div>
+    <div class="tn-step trivial">
+      <span class="tn-value">📕</span>
+      <span class="tn-label"><strong>Master</strong> — TN −15 · No fumble · 100+ hrs · $1000+</span>
+    </div>
+  </div>
 
   <div class="callout tip">
     <strong>💡 Skill Decay:</strong> Firearm skills degrade without practice. Lose <strong>1 proficiency level per year</strong> without shooting. A character who trained 5 years ago and never touched a gun since drops from Expert to Novice.
   </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_sarah_permit_office.png" alt="Sarah at a government desk filling out concealed carry permit paperwork, bureaucratic atmosphere" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example 2 — Range Training (US):</strong><br>
     <em>Sarah wants to get a concealed carry permit. She enrolls in a 6-hour safety course ($75). She rolls <span class="dice">2d10</span> + INT (INT +1) = 11 + 10 + 1 = <strong>22</strong> vs. TN 40. She passes the course. She then spends 15 hours at the range over 3 months, spending ~$150 on range fees and ~$60 on ammo. She reaches Competent proficiency. When she applies for her permit, she rolls <span class="dice">2d10</span> + INT = 14 + 10 + 1 = <strong>25</strong> vs. TN 50 — she passes the background check with no issues. After 6 weeks, she receives her permit.</em>
   </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_james_hallway_night.png" alt="James sitting on his couch in the dark after a home intrusion, phone to ear calling 911, shocked expression" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example 3 — Defensive Firearm Use (US):</strong><br>
     <em>James (DXT +2, Competent with 9mm) is at home when someone breaks a window and enters. He grabs his 9mm from the safe. The intruder is 8 meters away, poorly lit hallway. TN = 45 (distance penalty + darkness). James rolls <span class="dice">2d10</span> + DXT + Competent = 8 + 12 + 10 = <strong>30</strong> vs. TN 45. Miss! He rolls <span class="dice">1d20</span> for jamming — rolls a 14, no jam. He rolls <span class="dice">1d6</span> for the missed shot — rolls a 1, the bullet hits a wall near the intruder, startling them. The intruder flees. <strong>Aftermath:</strong> James calls 911. Police arrive, investigate. James gains +10 SP from the encounter. He must file a report. His hand shakes for the rest of the day (−5 to all checks for 1 hour — adrenaline dump).</em>
@@ -465,30 +431,55 @@
 
   <h3>🗡️ Knives</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Weapon</th><th>Damage</th><th>TN (Melee)</th><th>Cost</th><th>Conceal</th><th>Legality</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>🔪 Folding Pocket Knife</td><td>1 step</td><td>45</td><td>$10–50</td><td>Easy</td><td>Legal in most places; blade length limits vary (UK: 3" max in public without good reason)</td></tr>
-      <tr><td>🔪 Fixed Blade Knife</td><td>1–2 steps</td><td>42</td><td>$20–200</td><td>Moderate</td><td>Blade length laws vary (US: often 3–4" max concealed; UK: any blade carried in public without good reason is a crime)</td></tr>
-      <tr><td>🔪 Combat / Tactical Knife</td><td>2 steps</td><td>40</td><td>$50–300</td><td>Hard</td><td>Legal to own in most places; restricted for carry; some designs (butterfly/balisong) banned in many jurisdictions</td></tr>
-      <tr><td>🔪 Switchblade / Auto Knife</td><td>2 steps</td><td>40</td><td>$30–150</td><td>Easy</td><td>Illegal in many US states (CA, NY, IL); banned in UK, Australia, New Zealand; legal in most of continental EU</td></tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🔪 Folding Pocket Knife</h4>
+      <p><strong>Damage:</strong> 1 step · <strong>TN:</strong> 45 · <strong>Cost:</strong> $10–50</p>
+      <p><strong>Conceal:</strong> Easy</p>
+      <p><em>Legal in most places; blade length limits vary</em></p>
+    </div>
+    <div class="card">
+      <h4>🔪 Fixed Blade Knife</h4>
+      <p><strong>Damage:</strong> 1–2 steps · <strong>TN:</strong> 42 · <strong>Cost:</strong> $20–200</p>
+      <p><strong>Conceal:</strong> Moderate</p>
+      <p><em>Blade length laws vary; UK: any blade in public without good reason is a crime</em></p>
+    </div>
+    <div class="card">
+      <h4>🔪 Combat / Tactical Knife</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN:</strong> 40 · <strong>Cost:</strong> $50–300</p>
+      <p><strong>Conceal:</strong> Hard</p>
+      <p><em>Legal to own; restricted for carry; some designs banned</em></p>
+    </div>
+    <div class="card">
+      <h4>🔪 Switchblade / Auto Knife</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN:</strong> 40 · <strong>Cost:</strong> $30–150</p>
+      <p><strong>Conceal:</strong> Easy</p>
+      <p><em>Illegal in many US states; banned in UK, Australia, NZ</em></p>
+    </div>
+  </div>
 
   <h3>🪓 Axes &amp; Machetes</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Weapon</th><th>Damage</th><th>TN (Melee)</th><th>TN (Thrown 10m)</th><th>Cost</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>🪓 Hatchet</td><td>2 steps</td><td>45</td><td>60</td><td>$20–60</td><td>Versatile; can be thrown; legal to own in most places but carrying in public may raise suspicion</td></tr>
-      <tr><td>🗡️ Machete</td><td>1–2 steps</td><td>42</td><td>—</td><td>$15–40</td><td>Intimidation value; brush clearing; legal in most places but may be classified as an offensive weapon in urban contexts</td></tr>
-      <tr><td>🪓 Tomahawk / Throwing Axe</td><td>2 steps</td><td>50</td><td>55 (10m) / 65 (20m)</td><td>$30–100</td><td>Specialized throwing weapon; legal to own; carrying in public is impractical and suspicious</td></tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🪓 Hatchet</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN Melee:</strong> 45 · <strong>TN Thrown:</strong> 60</p>
+      <p><strong>Cost:</strong> $20–60</p>
+      <p><em>Versatile; can be thrown; legal to own in most places</em></p>
+    </div>
+    <div class="card">
+      <h4>🗡️ Machete</h4>
+      <p><strong>Damage:</strong> 1–2 steps · <strong>TN Melee:</strong> 42</p>
+      <p><strong>Cost:</strong> $15–40</p>
+      <p><em>Intimidation value; may be classified as offensive weapon in urban contexts</em></p>
+    </div>
+    <div class="card">
+      <h4>🪓 Tomahawk / Throwing Axe</h4>
+      <p><strong>Damage:</strong> 2 steps · <strong>TN Melee:</strong> 50 · <strong>TN Thrown:</strong> 55/65</p>
+      <p><strong>Cost:</strong> $30–100</p>
+      <p><em>Specialized throwing weapon; carrying in public is impractical</em></p>
+    </div>
+  </div>
 
   <div class="callout tip">
     <strong>🌍 International Note — Blades:</strong> While most countries allow owning knives, <strong>carrying knives in public</strong> is heavily regulated. In the UK, carrying <em>any</em> blade in public without "good reason" is a criminal offense under the Blades Act (up to 4 years in prison). In Japan, carrying a knife without a legitimate purpose can result in arrest. In Germany, carrying knives longer than 12cm in public requires a legitimate reason. In many countries, merely being found with a blade during a police stop can escalate the encounter significantly.
@@ -509,6 +500,9 @@
   <h4>🔧 Blade Durability</h4>
   <p>Knives can dull (−5 to damage after 3+ strikes against hard surfaces). Axes can chip or break on impact — roll <span class="dice">1d20</span> after each strike against bone or metal; on a 1–2, the blade chips (−5 to TN for subsequent attacks).</p>
 
+  <div class="section-illustration">
+    <img src="img/wp_david_alleymed.png" alt="David sitting on a curb under a streetlight, clutching his bleeding arm after a knife mugging, friend calling for help" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example 4 — Knife Encounter:</strong><br>
     <em>David (DXT +1, Novice with blades) is mugged at night. The attacker pulls a knife. David grabs a broken bottle from the ground (improvised blade, TN 48). The attacker lunges — David must defend. He rolls <span class="dice">2d10</span> + DXT to dodge = 9 + 11 + 1 = <strong>20</strong> vs. TN 45. He fails — the attacker cuts his arm. David advances to "Hurt" on the Health Track. David retaliates with the bottle, rolling <span class="dice">2d10</span> + DXT = 6 + 11 + 1 = <strong>18</strong> vs. TN 48. Another miss. The attacker grabs David. David's friend arrives, shouting — the attacker drops the knife and runs. David has a deep laceration requiring 4–6 stitches. He gains +8 SP. The adrenaline dump gives him −5 to all checks for the next hour — he can barely drive home.</em>
@@ -525,16 +519,23 @@
 
   <h3>🏏 Clubs &amp; Bats</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Weapon</th><th>Damage</th><th>TN (Melee)</th><th>Cost</th><th>Legality</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>⚾ Baseball Bat</td><td>1–2 steps</td><td>45</td><td>$15–40</td><td>Legal to own; carrying in public may be suspicious</td><td>Intimidating; swing and a miss = committed</td></tr>
-      <tr><td>🔧 Pipe / Crowbar</td><td>1–2 steps</td><td>48</td><td>Free (improvised)</td><td>Legal to own; carrying in public raises suspicion</td><td>Heavy; awkward; can break</td></tr>
-      <tr><td>🔦 Tactical Flashlight</td><td>1 step</td><td>45</td><td>$30–80</td><td>Legal everywhere</td><td>Dual purpose; strobe mode blinds (TN 35 to resist)</td></tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>⚾ Baseball Bat</h4>
+      <p><strong>Damage:</strong> 1–2 steps · <strong>TN:</strong> 45 · <strong>Cost:</strong> $15–40</p>
+      <p><em>Intimidating; swing and a miss = committed</em></p>
+    </div>
+    <div class="card">
+      <h4>🔧 Pipe / Crowbar</h4>
+      <p><strong>Damage:</strong> 1–2 steps · <strong>TN:</strong> 48 · <strong>Cost:</strong> Free (improvised)</p>
+      <p><em>Heavy; awkward; can break</em></p>
+    </div>
+    <div class="card">
+      <h4>🔦 Tactical Flashlight</h4>
+      <p><strong>Damage:</strong> 1 step · <strong>TN:</strong> 45 · <strong>Cost:</strong> $30–80</p>
+      <p><em>Dual purpose; strobe mode blinds (TN 35 to resist)</em></p>
+    </div>
+  </div>
 
   <h3>🤜 Brass Knuckles</h3>
   <p>Brass knuckles are illegal in most US states and many countries. TN 42 melee, higher damage than bare fists (advances Health Track by 1–2 steps depending on strike location). Cost $10–30.</p>
@@ -555,6 +556,9 @@
   <h4>💔 Broken Weapons</h4>
   <p>Improvised weapons can break on impact. After striking with an improvised weapon (pipe, bottle, rock), roll <span class="dice">1d20</span>. On a <strong>1–3</strong>, the weapon shatters or breaks, leaving the attacker unarmed.</p>
 
+  <div class="section-illustration">
+    <img src="img/wp_tom_hospital_concussion.png" alt="Tom waking up in a hospital bed with IV and bandaged nose after being knocked out, police officer filling paperwork" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example 5 — Impact Weapon Self-Defense:</strong><br>
     <em>Tom (DXT +0, Novice) is walking home and two men approach him aggressively, blocking his path. He tries to de-escalate: <span class="dice">2d10</span> + EXP = 13 + 8 + 0 = <strong>21</strong> vs. TN 55. Failure — the men don't back down. He tries to run: <span class="dice">2d10</span> + VIG (Athletics) = 8 + 9 + 0 = <strong>17</strong> vs. TN 40. Failure — they grab his jacket. One pulls a knife. Now Tom is justified in using force. He grabs a heavy rock from the ground (improvised impact weapon, TN 48). He swings at the knife-wielder's arm. <span class="dice">2d10</span> + DXT = 7 + 10 + 0 = <strong>17</strong> vs. TN 48. Miss! He rolls <span class="dice">1d20</span> for breakage — rolls an 8, the rock holds. The second attacker punches Tom in the face. Tom fails his VIG check (TN 60) and falls unconscious. <strong>Aftermath:</strong> Tom wakes up in a hospital with a concussion and a broken nose. The attackers stole his wallet and phone. He gains +12 SP. The concussion gives him −10 to all checks for 24 hours. He files a police report but has no idea what the attackers look like beyond "two men."</em>
@@ -569,37 +573,26 @@
 
   <p>Non-lethal defensive tools are the most socially and legally acceptable form of self-defense. They are designed to create distance and time to escape, not to "win a fight." <strong>Legality varies enormously by country</strong> — what's legal in the US may be banned outright elsewhere.</p>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Device</th><th>TN to Hit</th><th>Effect</th><th>Duration</th><th>Cost</th><th>Legality</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🧴 Pepper Spray / OC Spray</td>
-        <td>45 (3m) / 60 (6m)</td>
-        <td>VIG check TN 50 or disabled</td>
-        <td>1–3 minutes</td>
-        <td>$10–25</td>
-        <td>Legal in US (with state restrictions), UK (legal for personal defense), many EU countries; <strong>banned</strong> in Canada, Australia, New Zealand, Singapore</td>
-      </tr>
-      <tr>
-        <td>⚡ Taser / Stun Gun</td>
-        <td>40 (5m)</td>
-        <td>Electric shock incapacitates</td>
-        <td>15 seconds (one use)</td>
-        <td>$150–400; reload $15–20</td>
-        <td>Legal in US (with state bans: CA, MA, HI, NJ, etc.), Germany (restricted); <strong>banned</strong> in UK, Canada, Australia, New Zealand, most of Asia</td>
-      </tr>
-      <tr>
-        <td>🚨 Personal Alarm</td>
-        <td>No TN needed</td>
-        <td>Loud noise (130 dB); draws attention</td>
-        <td>Until turned off or battery dies</td>
-        <td>$5–15</td>
-        <td>Legal everywhere</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🧴 Pepper Spray / OC Spray</h4>
+      <p><strong>TN:</strong> 45 (3m) / 60 (6m) · <strong>Cost:</strong> $10–25</p>
+      <p><strong>Effect:</strong> VIG check TN 50 or disabled · <strong>Duration:</strong> 1–3 min</p>
+      <p><em>Legal in US, UK, many EU; banned in Canada, Australia, NZ, Singapore</em></p>
+    </div>
+    <div class="card">
+      <h4>⚡ Taser / Stun Gun</h4>
+      <p><strong>TN:</strong> 40 (5m) · <strong>Cost:</strong> $150–400; reload $15–20</p>
+      <p><strong>Effect:</strong> Electric shock incapacitates · <strong>Duration:</strong> 15 sec (one use)</p>
+      <p><em>Legal in US (state bans), Germany (restricted); banned in UK, Canada, Australia, NZ, Asia</em></p>
+    </div>
+    <div class="card">
+      <h4>🚨 Personal Alarm</h4>
+      <p><strong>TN:</strong> None needed · <strong>Cost:</strong> $5–15</p>
+      <p><strong>Effect:</strong> Loud noise (130 dB); draws attention · <strong>Duration:</strong> Until turned off</p>
+      <p><em>Legal everywhere</em></p>
+    </div>
+  </div>
 
   <div class="callout tip">
     <strong>💡 Best Practice:</strong> The purpose of pepper spray and tasers is <em>not to fight</em> — it's to create a window to <strong>run away</strong>. After deploying a defensive device, the character should attempt flight (Athletics check, TN 40) rather than continuing the confrontation.
@@ -609,6 +602,9 @@
     <strong>🌍 GM Note — Regional Legality:</strong> Before allowing a character to carry pepper spray or a taser, check the campaign setting's laws. In the UK, pepper spray is legal — but tasers are not. In Germany, pepper spray is legal but tasers require a weapons license. In Australia, even pepper spray is illegal in most states. A character who brings a banned device across an international border risks serious criminal charges.
   </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_lisa_pepper_spray_wind.png" alt="Lisa in a parking lot at night, rubbing her eyes after pepper spray backfired in the wind" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example 6 — Pepper Spray Defense:</strong><br>
     <em>Lisa (DXT +1) is walking to her car at night when a man approaches her aggressively, asking for money and getting closer. She tries to de-escalate (<span class="dice">2d10</span> + EXP = 10 + 9 + 1 = <strong>20</strong> vs. TN 50 — failure). She pulls out her pepper spray and sprays him at 3 meters. <span class="dice">2d10</span> + DXT = 6 + 11 + 1 = <strong>18</strong> vs. TN 45. Miss — the wind blows it back partially. She gets some in her own eyes (−5 to checks for 2 minutes). She tries again at 2 meters: <span class="dice">2d10</span> + DXT = 9 + 10 + 1 = <strong>20</strong> vs. TN 40. Hit! The man must make a VIG check TN 50 — he rolls <span class="dice">2d10</span> + VIG = 12 + 8 = <strong>20</strong>. Failure — he's blinded and writhing. Lisa runs to her car and locks the doors. She calls 911. The man recovers after about 2 minutes but has given up. Lisa gains +5 SP. No legal consequences because pepper spray is legal and proportionate.</em>
@@ -625,43 +621,32 @@
 
   <h3>📋 Encounter Resolution Steps</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Step</th><th>Action</th><th>Mechanic</th><th>Outcome</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1️⃣</td>
-        <td><strong>Awareness</strong></td>
-        <td>EXP + Empathy check (TN 40)</td>
-        <td>Success = notice threat early, gain 1 extra round to act</td>
-      </tr>
-      <tr>
-        <td>2️⃣</td>
-        <td><strong>De-escalation</strong></td>
-        <td>Communication check (TN 45–65)</td>
-        <td>Success = threat defused; Failure = escalation</td>
-      </tr>
-      <tr>
-        <td>3️⃣</td>
-        <td><strong>Flight</strong></td>
-        <td>Athletics check (TN 40)</td>
-        <td>Success = escape; Failure = pursued or cornered</td>
-      </tr>
-      <tr>
-        <td>4️⃣</td>
-        <td><strong>Physical Confrontation</strong></td>
-        <td>Combat resolution (see below)</td>
-        <td>Health Track advancement for both parties</td>
-      </tr>
-      <tr>
-        <td>5️⃣</td>
-        <td><strong>Weapon Use</strong></td>
-        <td>Weapon-specific checks</td>
-        <td>Last resort; maximum consequences</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="section-illustration">
+    <img src="img/wp_encounter_resolution_flowchart.svg" alt="5-step encounter resolution flowchart from awareness to weapon use" style="max-width:500px;width:100%;margin:0 auto;display:block;">
+  </div>
+
+  <div class="tn-ladder">
+    <div class="tn-step trivial">
+      <span class="tn-value">1️⃣</span>
+      <span class="tn-label"><strong>Awareness</strong> — EXP + Empathy check (TN 40) · Success = notice threat early, gain 1 extra round</span>
+    </div>
+    <div class="tn-step easy">
+      <span class="tn-value">2️⃣</span>
+      <span class="tn-label"><strong>De-escalation</strong> — Communication check (TN 45–65) · Success = threat defused</span>
+    </div>
+    <div class="tn-step medium">
+      <span class="tn-value">3️⃣</span>
+      <span class="tn-label"><strong>Flight</strong> — Athletics check (TN 40) · Success = escape; Failure = pursued or cornered</span>
+    </div>
+    <div class="tn-step hard">
+      <span class="tn-value">4️⃣</span>
+      <span class="tn-label"><strong>Physical Confrontation</strong> — Combat resolution · Health Track advancement for both parties</span>
+    </div>
+    <div class="tn-step very-hard">
+      <span class="tn-value">5️⃣</span>
+      <span class="tn-label"><strong>Weapon Use</strong> — Weapon-specific checks · Last resort; maximum consequences</span>
+    </div>
+  </div>
 
   <h3>⚔️ Combat Resolution</h3>
 
@@ -678,38 +663,42 @@
 
   <h3>⚖️ Legal Aftermath of Self-Defense</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Circumstance</th><th>Legal Outcome</th><th>SP Gain</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>✅ Proportional force against active threat</td>
-        <td>Justified — no charges (usually)</td>
-        <td>+5–8 SP</td>
-      </tr>
-      <tr>
-        <td>⚠️ Proportional force but questionable timing</td>
-        <td>Investigation; possible charges; lawyer needed ($2000–10000+)</td>
-        <td>+8–12 SP</td>
-      </tr>
-      <tr>
-        <td>❌ Excessive force (attacker already down)</td>
-        <td>Criminal charges likely; 2–15 years depending on outcome</td>
-        <td>+10–15 SP</td>
-      </tr>
-      <tr>
-        <td>❌ Force against non-threatening person</td>
-        <td>Assault charges; potential civil suit; prison time</td>
-        <td>+12–20 SP</td>
-      </tr>
-      <tr>
-        <td>💀 Killing in self-defense (justified)</td>
-        <td>Mandatory investigation; possible charges even if justified</td>
-        <td>+15 SP minimum; RES check TN 60 or gain trauma</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="section-illustration">
+    <img src="img/wp_risk_assessment_matrix.svg" alt="Risk Assessment Matrix showing threat vs response proportionality" style="max-width:620px;width:100%;margin:0 auto;display:block;">
+  </div>
+
+  <div class="card-grid">
+    <div class="card" style="border-left:4px solid #27ae60">
+      <h4>✅ Proportional Force</h4>
+      <p>Against active threat</p>
+      <p><strong>Outcome:</strong> Justified — no charges (usually)</p>
+      <p><strong>SP Gain:</strong> +5–8 SP</p>
+    </div>
+    <div class="card" style="border-left:4px solid #f39c12">
+      <h4>⚠️ Questionable Timing</h4>
+      <p>Proportional force but questionable timing</p>
+      <p><strong>Outcome:</strong> Investigation; possible charges; lawyer needed ($2000–10000+)</p>
+      <p><strong>SP Gain:</strong> +8–12 SP</p>
+    </div>
+    <div class="card" style="border-left:4px solid #e74c3c">
+      <h4>❌ Excessive Force</h4>
+      <p>Attacker already down</p>
+      <p><strong>Outcome:</strong> Criminal charges likely; 2–15 years depending on outcome</p>
+      <p><strong>SP Gain:</strong> +10–15 SP</p>
+    </div>
+    <div class="card" style="border-left:4px solid #922b21">
+      <h4>❌ Unjustified Force</h4>
+      <p>Against non-threatening person</p>
+      <p><strong>Outcome:</strong> Assault charges; potential civil suit; prison time</p>
+      <p><strong>SP Gain:</strong> +12–20 SP</p>
+    </div>
+    <div class="card" style="border-left:4px solid #2c3e50">
+      <h4>💀 Killing (Justified)</h4>
+      <p>Killing in self-defense</p>
+      <p><strong>Outcome:</strong> Mandatory investigation; possible charges even if justified</p>
+      <p><strong>SP Gain:</strong> +15 SP minimum; RES check TN 60 or gain trauma</p>
+    </div>
+  </div>
 
   <div class="callout rule">
     <strong>📏 Stand Your Ground vs. Duty to Retreat:</strong> In "Stand Your Ground" states (US), a character has no legal duty to retreat before using force. In "Duty to Retreat" jurisdictions — <strong>most countries outside the US</strong>, including the UK, EU, Japan, and Australia — the character <em>must attempt to flee or call authorities</em> before using deadly force, or they face criminal charges regardless of the outcome. The GM should determine the jurisdiction's law before the scene.
@@ -722,43 +711,40 @@
 
   <h3>🧠 Psychological Impact</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Event</th><th>SP Gain</th><th>Additional Effect</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Being threatened (verbal)</td>
-        <td>+2–3 SP</td>
-        <td>None</td>
-      </tr>
-      <tr>
-        <td>Being physically attacked</td>
-        <td>+5–8 SP</td>
-        <td>−5 to checks for 1 hour (adrenaline dump)</td>
-      </tr>
-      <tr>
-        <td>Striking someone</td>
-        <td>+3–5 SP</td>
-        <td>−5 to checks for 1 hour (adrenaline dump)</td>
-      </tr>
-      <tr>
-        <td>Shooting someone (non-lethal)</td>
-        <td>+10 SP minimum</td>
-        <td>PTSD trigger possible; RES check TN 55</td>
-      </tr>
-      <tr>
-        <td>Killing someone (any means)</td>
-        <td>+15 SP</td>
-        <td>Mandatory RES check TN 60 or gain Trauma condition</td>
-      </tr>
-      <tr>
-        <td>Witnessing someone else killed</td>
-        <td>+10–15 SP</td>
-        <td>RES check TN 50 or gain Trauma condition</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="section-illustration">
+    <img src="img/wp_sp_trauma_accumulation.svg" alt="Stress Point Accumulation chart showing SP buildup from violence" style="max-width:500px;width:100%;margin:0 auto;display:block;">
+  </div>
+
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">🗣️ Threatened (verbal)</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stable" style="width:15%"></div></div>
+    <span style="font-size:0.8rem;color:#5d6d7e;min-width:60px">+2–3 SP</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">👊 Physically attacked</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated" style="width:35%"></div></div>
+    <span style="font-size:0.8rem;color:#5d6d7e;min-width:60px">+5–8 SP</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">👊 Striking someone</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill elevated" style="width:25%"></div></div>
+    <span style="font-size:0.8rem;color:#5d6d7e;min-width:60px">+3–5 SP</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">🔫 Shooting (non-lethal)</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill stressed" style="width:60%"></div></div>
+    <span style="font-size:0.8rem;color:#5d6d7e;min-width:60px">+10 SP</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">💀 Killing someone</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill episode" style="width:90%"></div></div>
+    <span style="font-size:0.8rem;color:#5d6d7e;min-width:60px">+15 SP</span>
+  </div>
+  <div class="stress-bar-row">
+    <span class="stress-bar-label">👁️ Witnessing death</span>
+    <div class="stress-bar-track"><div class="stress-bar-fill overwhelmed" style="width:75%"></div></div>
+    <span style="font-size:0.8rem;color:#5d6d7e;min-width:60px">+10–15 SP</span>
+  </div>
 
   <div class="callout warning">
     <strong>⚠️ The Adrenaline Dump:</strong> After any violent encounter, characters experience an adrenaline crash. For <strong>1 hour after the encounter ends</strong>, they suffer <strong>−5 to all skill checks</strong>. They may experience shaking hands, nausea, confusion, emotional volatility, and difficulty concentrating. This is <em>real</em> — even professional soldiers experience this.
@@ -788,49 +774,38 @@
 
   <h3>⚖️ Criminal Charges Table — United States</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Charge</th><th>Severity</th><th>Prison Sentence</th><th>Additional Consequences</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🔫 Unlawful Firearm Possession (felon)</td>
-        <td>Felony</td>
-        <td>1–10 years</td>
-        <td>Permanent loss of gun rights; federal record</td>
-      </tr>
-      <tr>
-        <td>💰 Armed Robbery</td>
-        <td>Felony</td>
-        <td>10–20+ years</td>
-        <td>Fine up to $25,000; victim restitution</td>
-      </tr>
-      <tr>
-        <td>👊 Assault with Deadly Weapon</td>
-        <td>Felony</td>
-        <td>2–10 years</td>
-        <td>Restraining orders; civil liability</td>
-      </tr>
-      <tr>
-        <td>💀 Manslaughter</td>
-        <td>Felony</td>
-        <td>5–15 years</td>
-        <td>Permanent criminal record; loss of employment</td>
-      </tr>
-      <tr>
-        <td>💀 Murder (2nd Degree)</td>
-        <td>Felony</td>
-        <td>15–25 years</td>
-        <td>Loss of all civil rights; parole possible</td>
-      </tr>
-      <tr>
-        <td>💀 Murder (1st Degree)</td>
-        <td>Felony</td>
-        <td>20 years to life / death penalty</td>
-        <td>Loss of all civil rights; no parole possible in some states</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card" style="border-left:4px solid #e67e22">
+      <h4>🔫 Unlawful Firearm Possession</h4>
+      <p><strong>Severity:</strong> Felony · <strong>Sentence:</strong> 1–10 years</p>
+      <p>Permanent loss of gun rights; federal record</p>
+    </div>
+    <div class="card" style="border-left:4px solid #e74c3c">
+      <h4>💰 Armed Robbery</h4>
+      <p><strong>Severity:</strong> Felony · <strong>Sentence:</strong> 10–20+ years</p>
+      <p>Fine up to $25,000; victim restitution</p>
+    </div>
+    <div class="card" style="border-left:4px solid #e74c3c">
+      <h4>👊 Assault with Deadly Weapon</h4>
+      <p><strong>Severity:</strong> Felony · <strong>Sentence:</strong> 2–10 years</p>
+      <p>Restraining orders; civil liability</p>
+    </div>
+    <div class="card" style="border-left:4px solid #922b21">
+      <h4>💀 Manslaughter</h4>
+      <p><strong>Severity:</strong> Felony · <strong>Sentence:</strong> 5–15 years</p>
+      <p>Permanent criminal record; loss of employment</p>
+    </div>
+    <div class="card" style="border-left:4px solid #2c3e50">
+      <h4>💀 Murder (2nd Degree)</h4>
+      <p><strong>Severity:</strong> Felony · <strong>Sentence:</strong> 15–25 years</p>
+      <p>Loss of all civil rights; parole possible</p>
+    </div>
+    <div class="card" style="border-left:4px solid #1a1a2e">
+      <h4>💀 Murder (1st Degree)</h4>
+      <p><strong>Severity:</strong> Felony · <strong>Sentence:</strong> 20 years to life / death penalty</p>
+      <p>Loss of all civil rights; no parole possible in some states</p>
+    </div>
+  </div>
 
   <h3>⚖️ Criminal Charges — International Equivalents</h3>
 
@@ -845,51 +820,47 @@
     The severity of penalties for equivalent crimes is generally similar across developed nations, though sentencing philosophies differ significantly.
   </div>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Country / Region</th><th>Equivalent Charge</th><th>Typical Penalty</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🇬🇧 <strong>UK</strong></td>
-        <td>Possession of an offensive weapon (Blades Act 1984)</td>
-        <td>Up to 4 years</td>
-        <td>Carrying <em>any</em> blade in public without good reason is a crime; "good reason" is narrowly defined</td>
-      </tr>
-      <tr>
-        <td>🇬🇧 <strong>UK</strong></td>
-        <td>Grievous Bodily Harm (GBH) — s.20 / s.18 OAPA 1861</td>
-        <td>s.20: up to 5 years; s.18: up to life</td>
-        <td>s.18 requires intent to cause GBH; s.20 requires only reckless infliction</td>
-      </tr>
-      <tr>
-        <td>🇬🇧 <strong>UK</strong></td>
-        <td>Murder</td>
-        <td>Mandatory life sentence</td>
-        <td>No death penalty since 1965; minimum tariff set by judge (often 15–30 years before parole eligibility)</td>
-      </tr>
-      <tr>
-        <td>🇩🇪🇫🇷 <strong>EU</strong></td>
-        <td>Varies by country</td>
-        <td>Generally similar severity to US</td>
-        <td>Germany: max 15 years for most crimes (no life without parole); France: life sentences exist but are rare; rehabilitation focus is stronger than in the US</td>
-      </tr>
-      <tr>
-        <td>🇯🇵 <strong>Japan</strong></td>
-        <td>Weapon-related crimes</td>
-        <td>Extremely harsh penalties</td>
-        <td>Japan has a near-100% conviction rate; weapon crimes carry severe sentences; murder can result in death penalty or life imprisonment</td>
-      </tr>
-      <tr>
-        <td>🇦🇺 <strong>Australia</strong></td>
-        <td>Armed robbery / unlawful possession</td>
-        <td>5–25 years depending on state and circumstances</td>
-        <td>Post-Port Arthur reforms mean unauthorized firearm possession alone carries 5–10 years</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card" style="border-left:4px solid #2980b9">
+      <h4>🇬🇧 UK — Offensive Weapon</h4>
+      <p><strong>Charge:</strong> Possession of offensive weapon (Blades Act 1984)</p>
+      <p><strong>Penalty:</strong> Up to 4 years</p>
+      <p><em>Carrying any blade in public without good reason is a crime</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #2980b9">
+      <h4>🇬🇧 UK — GBH</h4>
+      <p><strong>Charge:</strong> Grievous Bodily Harm (s.20 / s.18 OAPA 1861)</p>
+      <p><strong>Penalty:</strong> s.20: up to 5 yrs; s.18: up to life</p>
+      <p><em>s.18 requires intent; s.20 requires only reckless infliction</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #2c3e50">
+      <h4>🇬🇧 UK — Murder</h4>
+      <p><strong>Penalty:</strong> Mandatory life sentence</p>
+      <p><em>No death penalty since 1965; minimum tariff 15–30 years</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #2980b9">
+      <h4>🇩🇪🇫🇷 EU</h4>
+      <p><strong>Charge:</strong> Varies by country · <strong>Penalty:</strong> Similar severity to US</p>
+      <p><em>Germany: max 15 yrs (no life without parole); rehabilitation focus stronger</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #922b21">
+      <h4>🇯🇵 Japan</h4>
+      <p><strong>Charge:</strong> Weapon-related crimes · <strong>Penalty:</strong> Extremely harsh</p>
+      <p><em>Near-100% conviction rate; murder can result in death penalty</em></p>
+    </div>
+    <div class="card" style="border-left:4px solid #d35400">
+      <h4>🇦🇺 Australia</h4>
+      <p><strong>Charge:</strong> Armed robbery / unlawful possession</p>
+      <p><strong>Penalty:</strong> 5–25 years depending on state</p>
+      <p><em>Unauthorized firearm possession alone: 5–10 years</em></p>
+    </div>
+  </div>
 
   <h3>🚔 Police Encounters</h3>
+
+  <div class="section-illustration">
+    <img src="img/wp_legal_decision_tree.svg" alt="Self-defense legal decision tree flowchart showing consequences after using force" style="max-width:700px;width:100%;margin:0 auto;display:block;">
+  </div>
 
   <div class="callout rule">
     <strong>📏 Stopped While Armed:</strong> If a character is stopped by police while carrying a weapon (especially concealed), the encounter escalates immediately. The officer may draw their weapon. Both parties must make a <strong>RES check (TN 50)</strong>. Failure by the citizen = they move suddenly, causing the officer to fire. Failure by the officer = they misjudge the situation, causing unnecessary escalation.
@@ -897,6 +868,9 @@
 
   <p>The <strong>"split-second decision problem"</strong> is a real phenomenon: police officers have approximately 1.5 seconds to decide whether a reaching motion is for a wallet or a weapon. In Reality RPG, this is modeled by requiring <strong>immediate RES checks</strong> when a weapon is visible during a police stop.</p>
 
+  <div class="section-illustration">
+    <img src="img/wp_carlos_traffic_stop.png" alt="Carlos pulled over at night, hands on steering wheel, police flashlight beam through window, tense atmosphere" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>📖 Example 7 — Police Encounter:</strong><br>
     <em>Carlos (RES +1) is pulled over for a broken taillight. He has a legally concealed 9mm in his trunk. He tells the officer he has a firearm. The officer asks him to step out of the car. Carlos reaches into his pocket for his wallet. The officer's heart rate spikes — he draws his weapon. Carlos must make a RES check TN 50: <span class="dice">2d10</span> + RES = 11 + 10 + 5 = <strong>26</strong> vs. TN 50. Failure — Carlos freezes for a half-second, which looks suspicious. The officer yells "Hands! Now!" Carlos slowly raises his hands. The situation de-escalates after 30 tense seconds. Carlos gains +3 SP from the encounter. He receives a $150 ticket for the taillight. His heart rate won't come down for an hour.</em>
@@ -913,95 +887,67 @@
 
   <h3>🛤️ Training Paths</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Training Type</th><th>Focus</th><th>Time per Level</th><th>Cost per Level</th><th>Attributes Used</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🎯 Shooting Range</td>
-        <td>Firearms</td>
-        <td>20–40 hours</td>
-        <td>$200–500</td>
-        <td>DXT, PRC</td>
-      </tr>
-      <tr>
-        <td>🥊 Martial Arts (Krav Maga, BJJ, Boxing)</td>
-        <td>Unarmed combat</td>
-        <td>40–80 hours</td>
-        <td>$300–800</td>
-        <td>DXT, VIG</td>
-      </tr>
-      <tr>
-        <td>🔪 Knife Defense Class</td>
-        <td>Blade defense (not offense)</td>
-        <td>10–20 hours</td>
-        <td>$100–300</td>
-        <td>DXT, PRC</td>
-      </tr>
-      <tr>
-        <td>🛡️ Self-Defense Seminar</td>
-        <td>Situational awareness, de-escalation</td>
-        <td>4–8 hours</td>
-        <td>$50–150</td>
-        <td>EXP, RES</td>
-      </tr>
-      <tr>
-        <td>🎖️ Military / Police Training</td>
-        <td>Comprehensive; all weapon types</td>
-        <td>100+ hours</td>
-        <td>Fully funded (career path)</td>
-        <td>All attributes</td>
-      </tr>
-      <tr>
-        <td>🏆 Competitive Shooting</td>
-        <td>Speed + accuracy</td>
-        <td>40–60 hours per level</td>
-        <td>$500–2000</td>
-        <td>DXT, PRC, RES</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="section-illustration">
+    <img src="img/wp_training_progression.svg" alt="Training progression chart showing hours invested vs proficiency with skill decay" style="max-width:560px;width:100%;margin:0 auto;display:block;">
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h4>🎯 Shooting Range</h4>
+      <p><strong>Focus:</strong> Firearms · <strong>Time:</strong> 20–40 hrs/level</p>
+      <p><strong>Cost:</strong> $200–500 · <strong>Attributes:</strong> DXT, PRC</p>
+    </div>
+    <div class="card">
+      <h4>🥊 Martial Arts</h4>
+      <p><strong>Focus:</strong> Unarmed combat (Krav Maga, BJJ, Boxing)</p>
+      <p><strong>Time:</strong> 40–80 hrs/level · <strong>Cost:</strong> $300–800 · <strong>Attributes:</strong> DXT, VIG</p>
+    </div>
+    <div class="card">
+      <h4>🔪 Knife Defense Class</h4>
+      <p><strong>Focus:</strong> Blade defense (not offense)</p>
+      <p><strong>Time:</strong> 10–20 hrs · <strong>Cost:</strong> $100–300 · <strong>Attributes:</strong> DXT, PRC</p>
+    </div>
+    <div class="card">
+      <h4>🛡️ Self-Defense Seminar</h4>
+      <p><strong>Focus:</strong> Situational awareness, de-escalation</p>
+      <p><strong>Time:</strong> 4–8 hrs · <strong>Cost:</strong> $50–150 · <strong>Attributes:</strong> EXP, RES</p>
+    </div>
+    <div class="card">
+      <h4>🎖️ Military / Police Training</h4>
+      <p><strong>Focus:</strong> Comprehensive; all weapon types</p>
+      <p><strong>Time:</strong> 100+ hrs · <strong>Cost:</strong> Fully funded · <strong>Attributes:</strong> All</p>
+    </div>
+    <div class="card">
+      <h4>🏆 Competitive Shooting</h4>
+      <p><strong>Focus:</strong> Speed + accuracy</p>
+      <p><strong>Time:</strong> 40–60 hrs/level · <strong>Cost:</strong> $500–2000 · <strong>Attributes:</strong> DXT, PRC, RES</p>
+    </div>
+  </div>
 
   <h3>📊 Proficiency System</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Level</th><th>TN Modifier</th><th>Fumble Risk</th><th>Special Abilities</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🔰 <strong>Novice</strong></td>
-        <td>+5 (worse)</td>
-        <td>Roll ≤ 3 on <span class="dice">2d10</span> = fumble (hurt self)</td>
-        <td>None</td>
-      </tr>
-      <tr>
-        <td>📘 <strong>Competent</strong></td>
-        <td>None</td>
-        <td>Roll ≤ 1 = fumble</td>
-        <td>Standard use</td>
-      </tr>
-      <tr>
-        <td>📗 <strong>Proficient</strong></td>
-        <td>−5</td>
-        <td>None</td>
-        <td>Can shoot in moderate stress</td>
-      </tr>
-      <tr>
-        <td>📙 <strong>Expert</strong></td>
-        <td>−10</td>
-        <td>None</td>
-        <td>Can shoot moving targets; advanced maneuvers</td>
-      </tr>
-      <tr>
-        <td>📕 <strong>Master</strong></td>
-        <td>−15</td>
-        <td>None</td>
-        <td>Can train others; shoot under extreme conditions</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="tn-ladder">
+    <div class="tn-step near-impossible">
+      <span class="tn-value">🔰</span>
+      <span class="tn-label"><strong>Novice</strong> — TN +5 (worse) · Fumble ≤3 (hurt self) · No special abilities</span>
+    </div>
+    <div class="tn-step very-hard">
+      <span class="tn-value">📘</span>
+      <span class="tn-label"><strong>Competent</strong> — TN none · Fumble ≤1 · Standard use</span>
+    </div>
+    <div class="tn-step hard">
+      <span class="tn-value">📗</span>
+      <span class="tn-label"><strong>Proficient</strong> — TN −5 · No fumble · Can shoot in moderate stress</span>
+    </div>
+    <div class="tn-step medium">
+      <span class="tn-value">📙</span>
+      <span class="tn-label"><strong>Expert</strong> — TN −10 · No fumble · Can shoot moving targets; advanced maneuvers</span>
+    </div>
+    <div class="tn-step trivial">
+      <span class="tn-value">📕</span>
+      <span class="tn-label"><strong>Master</strong> — TN −15 · No fumble · Can train others; shoot under extreme conditions</span>
+    </div>
+  </div>
 
   <div class="callout rule">
     <strong>📏 Fumble Table:</strong> When a fumble occurs, roll <span class="dice">1d6</span>:
@@ -1030,58 +976,44 @@
 
   <h3>🔐 Secure Storage</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Storage Type</th><th>Cost</th><th>Security Level</th><th>Access Speed</th><th>Notes</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🔒 Gun Safe (small)</td>
-        <td>$100–250</td>
-        <td>Good</td>
-        <td>5–10 seconds (combination)</td>
-        <td>1–2 guns; bolts to floor/wall</td>
-      </tr>
-      <tr>
-        <td>🔒 Gun Safe (large)</td>
-        <td>$250–500+</td>
-        <td>Excellent</td>
-        <td>10–20 seconds</td>
-        <td>5+ guns; biometric option ($50–100 extra)</td>
-      </tr>
-      <tr>
-        <td>⚡ Quick-Access Safe</td>
-        <td>$150–400</td>
-        <td>Good</td>
-        <td>2–3 seconds (biometric)</td>
-        <td>Home defense; 1 gun; child-resistant with delay</td>
-      </tr>
-      <tr>
-        <td>🔑 Trigger Lock / Cable Lock</td>
-        <td>$5–15</td>
-        <td>Basic</td>
-        <td>5–10 seconds</td>
-        <td>Required in some states; minimal security</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="card-grid">
+    <div class="card">
+      <h4>🔒 Gun Safe (small)</h4>
+      <p><strong>Cost:</strong> $100–250 · <strong>Security:</strong> Good</p>
+      <p><strong>Access:</strong> 5–10 sec (combination)</p>
+      <p>1–2 guns; bolts to floor/wall</p>
+    </div>
+    <div class="card">
+      <h4>🔒 Gun Safe (large)</h4>
+      <p><strong>Cost:</strong> $250–500+ · <strong>Security:</strong> Excellent</p>
+      <p><strong>Access:</strong> 10–20 sec</p>
+      <p>5+ guns; biometric option ($50–100 extra)</p>
+    </div>
+    <div class="card">
+      <h4>⚡ Quick-Access Safe</h4>
+      <p><strong>Cost:</strong> $150–400 · <strong>Security:</strong> Good</p>
+      <p><strong>Access:</strong> 2–3 sec (biometric)</p>
+      <p>Home defense; 1 gun; child-resistant with delay</p>
+    </div>
+    <div class="card">
+      <h4>🔑 Trigger Lock / Cable Lock</h4>
+      <p><strong>Cost:</strong> $5–15 · <strong>Security:</strong> Basic</p>
+      <p><strong>Access:</strong> 5–10 sec</p>
+      <p>Required in some states; minimal security</p>
+    </div>
+  </div>
 
   <h3>💰 Ongoing Costs</h3>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Expense</th><th>Cost</th><th>Frequency</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Ammo (100 rounds 9mm)</td><td>$30</td><td>As needed</td></tr>
-      <tr><td>Ammo (50 rounds .357)</td><td>$50</td><td>As needed</td></tr>
-      <tr><td>Range session (2 hours)</td><td>$20–50</td><td>Monthly for practice</td></tr>
-      <tr><td>Concealed carry insurance</td><td>$200–500/year</td><td>Annual</td></tr>
-      <tr><td>Permit renewal</td><td>$50–150</td><td>Every 2–5 years</td></tr>
-      <tr><td>Homeowner's insurance premium increase</td><td>$50–200/year</td><td>Annual (some insurers)</td></tr>
-      <tr><td>Maintenance (cleaning kit, lubricant)</td><td>$15–30</td><td>Every 500 rounds or 6 months</td></tr>
-    </tbody>
-  </table>
+  <div class="supplies-grid">
+    <div class="supply-item">🎯 <strong>Ammo (100 rds 9mm)</strong><br><span class="supply-cost">$30</span><br><em>As needed</em></div>
+    <div class="supply-item">🎯 <strong>Ammo (50 rds .357)</strong><br><span class="supply-cost">$50</span><br><em>As needed</em></div>
+    <div class="supply-item">🏃 <strong>Range session (2 hrs)</strong><br><span class="supply-cost">$20–50</span><br><em>Monthly for practice</em></div>
+    <div class="supply-item">🛡️ <strong>CCW Insurance</strong><br><span class="supply-cost">$200–500/yr</span><br><em>Annual</em></div>
+    <div class="supply-item">📋 <strong>Permit Renewal</strong><br><span class="supply-cost">$50–150</span><br><em>Every 2–5 years</em></div>
+    <div class="supply-item">🏠 <strong>Insurance Increase</strong><br><span class="supply-cost">$50–200/yr</span><br><em>Annual (some insurers)</em></div>
+    <div class="supply-item">🔧 <strong>Maintenance Kit</strong><br><span class="supply-cost">$15–30</span><br><em>Every 500 rds / 6 months</em></div>
+  </div>
 
   <h3>✈️ Travel with Firearms — United States</h3>
 
@@ -1175,16 +1107,25 @@
     <em>James has a legally-owned 9mm in a quick-access safe by his bedroom. Someone breaks a window and enters his home at night. He grabs his firearm. The intruder is 8 meters away in a poorly lit hallway. TN = 45. James rolls <span class="dice">2d10</span> + DXT + Competent = 8 + 12 + 10 = <strong>30</strong> vs. TN 45. Miss! No jam. The bullet hits a wall, startling the intruder, who flees. James calls 911. Police investigate. James gains +10 SP. His hand shakes for the rest of the day (−5 to all checks for 1 hour).</em>
   </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_emma_london_pepper_spray.png" alt="Emma sitting on a bench outside a South London corner shop after a confrontation, wrapped in a blanket with tea, police taking notes" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>🇬🇧 Scenario C — Emma (UK — London): Street Confrontation</strong><br>
     <em>Emma (EXP +2, no weapons — she doesn't own any) is walking home through a park in South London when a man approaches her with a knife, demanding her phone. She has no firearm, no taser (illegal in the UK), but she carries pepper spray (legal for personal defense in the UK). She attempts de-escalation: <span class="dice">2d10</span> + EXP = 12 + 8 + 2 = <strong>22</strong> vs. TN 55 — failure. She tries to run: <span class="dice">2d10</span> + VIG = 15 + 10 + 0 = <strong>25</strong> vs. TN 40 — failure, he blocks her path. She sprays him with pepper spray at 3 meters: <span class="dice">2d10</span> + DXT = 16 + 10 + 0 = <strong>26</strong> vs. TN 45 — miss (wind). She tries again at 2 meters: <span class="dice">2d10</span> + DXT = 18 + 10 + 0 = <strong>28</strong> vs. TN 40 — hit! He fails his VIG check and collapses. Emma runs to a nearby shop and calls 999. Police arrive within 5 minutes. <strong>Aftermath:</strong> The man is arrested for robbery. Emma is questioned briefly. Because pepper spray is legal and she used it proportionally, no legal issues. She gains +8 SP. The shop owner offers her tea and helps her call her family.</em>
   </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_hiroshi_convenience_store.png" alt="Interior of a Japanese convenience store at night, police arrived, robber surrendered, Hiroshi standing calmly behind a shelf" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>🇯🇵 Scenario D — Hiroshi (Japan — Tokyo): Convenience Store Robbery</strong><br>
     <em>Hiroshi is at a convenience store in Shinjuku when a man enters with a knife and demands money from the cashier. Hiroshi has no weapons — he doesn't own any (gun ownership rate is 0.3% and he's not the 0.3%). He can't de-escalate (<span class="dice">2d10</span> + EXP = 10 + 7 + 0 = <strong>17</strong> vs. TN 55 — failure). He tries to create distance by moving behind a shelf. The robber points the knife at him. Hiroshi speaks calmly in Japanese: "Please don't hurt anyone. The police will be here soon." (de-escalation attempt 2: <span class="dice">2d10</span> + EXP = 19 + 7 + 0 = <strong>26</strong> vs. TN 60 — failure, but the robber hesitates). The cashier has already pressed the silent alarm. Police arrive within 3 minutes. The robber drops the knife and surrenders. <strong>Aftermath:</strong> Hiroshi is shaken but unharmed. He gains +6 SP from the terror of the encounter. The police ask for a statement. The robber is charged with robbery and possession of a bladed weapon. No one is physically hurt — but the psychological impact lingers.</em>
   </div>
 
+  <div class="section-illustration">
+    <img src="img/wp_klaus_german_breakin.png" alt="Klaus standing in his hallway with flashlight and phone to ear calling 110, broken glass on kitchen floor, intruder has fled" style="max-width:400px;width:100%;border-radius:var(--radius);box-shadow:var(--shadow-sm);float:right;margin:0 0 1em 1.5em;">
+  </div>
   <div class="callout example">
     <strong>🇩🇪 Scenario E — Klaus (Germany — Berlin): Home Break-In</strong><br>
     <em>Klaus legally owns a 9mm pistol registered for sport shooting at a local club. He has a <em>Waffenschein</em> (firearm ID) but NOT a carry permit — he can only transport the gun to/from the range. Tonight, he hears glass breaking downstairs. His firearm is in the safe in the other room. He grabs a heavy flashlight (legal, always accessible) and calls 110 (German emergency number). He tells the dispatcher there's a break-in in progress. Police estimate 8-minute response time. The intruder is in the kitchen. Klaus moves to the hallway with the flashlight. He shouts "Police are on the way!" — the intruder panics and tries to flee through a window. <strong>Aftermath:</strong> Police arrive and find the intruder (a local teenager breaking in for cash). Klaus is commended for calling the police rather than escalating. He gains +4 SP from the stress. His firearm remained locked in the safe — this is the correct and legal choice.</em>
@@ -1203,49 +1144,14 @@
 
   <p>Weapons damage advances characters along the Health Condition Track. Each step represents worsening physical condition:</p>
 
-  <table class="data-table">
-    <thead>
-      <tr><th>Step</th><th>Condition</th><th>Description</th><th>Penalty</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>0</td>
-        <td>✅ <strong>Fine</strong></td>
-        <td>No injuries</td>
-        <td>None</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>💢 <strong>Minor</strong></td>
-        <td>Scratches, bruises, minor cuts</td>
-        <td>−5 to DXT checks</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>🤕 <strong>Hurt</strong></td>
-        <td>Deep cuts, broken nose, sprains</td>
-        <td>−10 to DXT checks; −5 to all checks</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>🏥 <strong>Wounded</strong></td>
-        <td>Broken bones, serious lacerations, internal bleeding</td>
-        <td>−15 to all checks; requires medical attention</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>🚑 <strong>Critical</strong></td>
-        <td>Life-threatening injuries; organ damage; severe blood loss</td>
-        <td>Cannot act; VIG check TN 65 per hour or die</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>💀 <strong>Dead</strong></td>
-        <td>Deceased</td>
-        <td>Game over. See Death &amp; Grief chapter.</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="condition-track">
+    <div class="condition-step healthy">✅ Fine<br><span style="font-weight:400;font-size:0.75rem">No injuries</span></div>
+    <div class="condition-step tired">💢 Minor<br><span style="font-weight:400;font-size:0.75rem">Scratches, bruises<br>−5 DXT</span></div>
+    <div class="condition-step sick">🤕 Hurt<br><span style="font-weight:400;font-size:0.75rem">Deep cuts, broken nose<br>−10 DXT; −5 all</span></div>
+    <div class="condition-step injured">🏥 Wounded<br><span style="font-weight:400;font-size:0.75rem">Broken bones, internal bleeding<br>−15 all; needs medical</span></div>
+    <div class="condition-step critical">🚑 Critical<br><span style="font-weight:400;font-size:0.75rem">Life-threatening; organ damage<br>VIG TN65/hr or die</span></div>
+    <div class="condition-step dead">💀 Dead<br><span style="font-weight:400;font-size:0.75rem">Deceased</span></div>
+  </div>
 
   <div class="callout rule">
     <strong>📏 Recovery:</strong> Minor injuries heal in 1–3 days (−1 step). Hurt injuries require first aid and heal in 3–7 days. Wounded injuries require hospital care and heal in 1–4 weeks. Critical injuries require surgery and heal in 1–6 months. Characters at Wounded or worse may suffer <strong>permanent injuries</strong> (roll <span class="dice">1d20</span>; on 1–5, lose 1 point from a physical attribute permanently).

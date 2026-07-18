@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 620 520" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <title>Risk Assessment Matrix — Threat vs Response</title>
+  <desc>4x4 matrix mapping threat level (x-axis) against response level (y-axis), showing proportional zone (green), excessive force zone (red), and under-responding zone (yellow)</desc>
+  <defs>
+    <filter id="ws" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="520" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="310" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Risk Assessment Matrix</text>
+  <text x="310" y="44" text-anchor="middle" font-size="10" fill="#5d6d7e">Match your response to the threat level — diagonal = proportional</text>
+
+  <!-- Chart area: x=130..570, y=60..430 -->
+  <!-- 4x4 grid, each cell 110x92px -->
+
+  <!-- X-axis labels (Threat Level) -->
+  <g font-size="10" font-weight="600" fill="#2c3e50" text-anchor="middle">
+    <text x="185" y="450">None</text>
+    <text x="295" y="450">Verbal</text>
+    <text x="405" y="450">Physical</text>
+    <text x="515" y="450">Lethal</text>
+  </g>
+  <text x="350" y="470" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50">Threat Level →</text>
+
+  <!-- Y-axis labels (Response Level) -->
+  <g font-size="10" font-weight="600" fill="#2c3e50" text-anchor="end">
+    <text x="120" y="106">Lethal</text>
+    <text x="120" y="200">Non-Lethal</text>
+    <text x="120" y="294">De-escalate</text>
+    <text x="120" y="388">None</text>
+  </g>
+  <text x="35" y="245" text-anchor="middle" font-size="11" font-weight="600" fill="#2c3e50" transform="rotate(-90,35,245)">Response →</text>
+
+  <!-- Grid cells -->
+  <!-- Row 1 (Lethal response): y=60..152 -->
+  <!-- Col 1: Lethal vs None = EXCESSIVE -->
+  <rect x="130" y="60" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="185" y="95" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">EXCESSIVE</text>
+  <text x="185" y="110" text-anchor="middle" font-size="8" fill="#922b21">Assault charge</text>
+  <text x="185" y="122" text-anchor="middle" font-size="8" fill="#922b21">+12–20 SP</text>
+
+  <!-- Col 2: Lethal vs Verbal = EXCESSIVE -->
+  <rect x="240" y="60" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="295" y="95" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">EXCESSIVE</text>
+  <text x="295" y="110" text-anchor="middle" font-size="8" fill="#922b21">Excessive force</text>
+  <text x="295" y="122" text-anchor="middle" font-size="8" fill="#922b21">+10–15 SP</text>
+
+  <!-- Col 3: Lethal vs Physical = EXCESSIVE -->
+  <rect x="350" y="60" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="405" y="95" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">EXCESSIVE</text>
+  <text x="405" y="110" text-anchor="middle" font-size="8" fill="#922b21">Questionable</text>
+  <text x="405" y="122" text-anchor="middle" font-size="8" fill="#922b21">+8–12 SP</text>
+
+  <!-- Col 4: Lethal vs Lethal = PROPORTIONAL -->
+  <rect x="460" y="60" width="110" height="92" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#ws)"/>
+  <text x="515" y="95" text-anchor="middle" font-size="9" font-weight="700" fill="#1e8449">PROPORTIONAL</text>
+  <text x="515" y="110" text-anchor="middle" font-size="8" fill="#1e8449">Justified</text>
+  <text x="515" y="122" text-anchor="middle" font-size="8" fill="#1e8449">+5–8 SP</text>
+
+  <!-- Row 2 (Non-Lethal response): y=154..246 -->
+  <!-- Col 1: Non-Lethal vs None = EXCESSIVE -->
+  <rect x="130" y="154" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="185" y="189" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">EXCESSIVE</text>
+  <text x="185" y="204" text-anchor="middle" font-size="8" fill="#922b21">Assault charge</text>
+  <text x="185" y="216" text-anchor="middle" font-size="8" fill="#922b21">+12–20 SP</text>
+
+  <!-- Col 2: Non-Lethal vs Verbal = EXCESSIVE -->
+  <rect x="240" y="154" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="295" y="189" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">EXCESSIVE</text>
+  <text x="295" y="204" text-anchor="middle" font-size="8" fill="#922b21">Overreaction</text>
+  <text x="295" y="216" text-anchor="middle" font-size="8" fill="#922b21">+8–12 SP</text>
+
+  <!-- Col 3: Non-Lethal vs Physical = PROPORTIONAL -->
+  <rect x="350" y="154" width="110" height="92" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#ws)"/>
+  <text x="405" y="189" text-anchor="middle" font-size="9" font-weight="700" fill="#1e8449">PROPORTIONAL</text>
+  <text x="405" y="204" text-anchor="middle" font-size="8" fill="#1e8449">Justified</text>
+  <text x="405" y="216" text-anchor="middle" font-size="8" fill="#1e8449">+5–8 SP</text>
+
+  <!-- Col 4: Non-Lethal vs Lethal = UNDER -->
+  <rect x="460" y="154" width="110" height="92" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="515" y="189" text-anchor="middle" font-size="9" font-weight="700" fill="#d68910">UNDER</text>
+  <text x="515" y="204" text-anchor="middle" font-size="8" fill="#d68910">Inadequate</text>
+  <text x="515" y="216" text-anchor="middle" font-size="8" fill="#d68910">Risk injury</text>
+
+  <!-- Row 3 (De-escalate response): y=248..340 -->
+  <rect x="130" y="248" width="110" height="92" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="185" y="283" text-anchor="middle" font-size="9" font-weight="700" fill="#d68910">OK</text>
+  <text x="185" y="298" text-anchor="middle" font-size="8" fill="#d68910">Best option</text>
+  <text x="185" y="310" text-anchor="middle" font-size="8" fill="#d68910">+0 SP</text>
+
+  <rect x="240" y="248" width="110" height="92" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#ws)"/>
+  <text x="295" y="283" text-anchor="middle" font-size="9" font-weight="700" fill="#1e8449">PROPORTIONAL</text>
+  <text x="295" y="298" text-anchor="middle" font-size="8" fill="#1e8449">Best option</text>
+  <text x="295" y="310" text-anchor="middle" font-size="8" fill="#1e8449">+0 SP</text>
+
+  <rect x="350" y="248" width="110" height="92" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="405" y="283" text-anchor="middle" font-size="9" font-weight="700" fill="#d68910">UNDER</text>
+  <text x="405" y="298" text-anchor="middle" font-size="8" fill="#d68910">Try flight first</text>
+  <text x="405" y="310" text-anchor="middle" font-size="8" fill="#d68910">+2–3 SP</text>
+
+  <rect x="460" y="248" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="515" y="283" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">UNDER</text>
+  <text x="515" y="298" text-anchor="middle" font-size="8" fill="#922b21">Inadequate</text>
+  <text x="515" y="310" text-anchor="middle" font-size="8" fill="#922b21">Risk death</text>
+
+  <!-- Row 4 (None response): y=342..434 -->
+  <rect x="130" y="342" width="110" height="92" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" filter="url(#ws)"/>
+  <text x="185" y="377" text-anchor="middle" font-size="9" font-weight="700" fill="#1e8449">PROPORTIONAL</text>
+  <text x="185" y="392" text-anchor="middle" font-size="8" fill="#1e8449">No threat</text>
+  <text x="185" y="404" text-anchor="middle" font-size="8" fill="#1e8449">+0 SP</text>
+
+  <rect x="240" y="342" width="110" height="92" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="295" y="377" text-anchor="middle" font-size="9" font-weight="700" fill="#d68910">UNDER</text>
+  <text x="295" y="392" text-anchor="middle" font-size="8" fill="#d68910">Should respond</text>
+  <text x="295" y="404" text-anchor="middle" font-size="8" fill="#d68910">+2–3 SP</text>
+
+  <rect x="350" y="342" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="405" y="377" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">UNDER</text>
+  <text x="405" y="392" text-anchor="middle" font-size="8" fill="#922b21">Inadequate</text>
+  <text x="405" y="404" text-anchor="middle" font-size="8" fill="#922b21">Risk injury</text>
+
+  <rect x="460" y="342" width="110" height="92" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5" filter="url(#ws)"/>
+  <text x="515" y="377" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">UNDER</text>
+  <text x="515" y="392" text-anchor="middle" font-size="8" fill="#922b21">Inadequate</text>
+  <text x="515" y="404" text-anchor="middle" font-size="8" fill="#922b21">Risk death</text>
+
+  <!-- Diagonal proportionality line -->
+  <line x1="155" y1="420" x2="555" y2="75" stroke="#2c3e50" stroke-width="2" stroke-dasharray="8,5" opacity="0.4"/>
+
+  <!-- Legend -->
+  <rect x="130" y="488" width="10" height="10" rx="2" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+  <text x="145" y="497" font-size="9" fill="#2c3e50">Proportional (safe)</text>
+  <rect x="270" y="488" width="10" height="10" rx="2" fill="#fadbd8" stroke="#e74c3c" stroke-width="1"/>
+  <text x="285" y="497" font-size="9" fill="#2c3e50">Excessive (dangerous)</text>
+  <rect x="430" y="488" width="10" height="10" rx="2" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+  <text x="445" y="497" font-size="9" fill="#2c3e50">Under-responding (risky)</text>
+</svg>

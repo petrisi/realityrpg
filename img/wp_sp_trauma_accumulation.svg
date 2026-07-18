@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 500 480" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <title>Stress Point Accumulation from Violence</title>
+  <desc>Vertical stress budget chart showing how SP accumulates during a violent encounter, with trauma threshold at 20+ SP</desc>
+  <defs>
+    <filter id="ws" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="480" rx="12" fill="#fafbfc"/>
+  <text x="250" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Stress Point Accumulation</text>
+  <text x="250" y="44" text-anchor="middle" font-size="10" fill="#5d6d7e">A single encounter can push you from fine to trauma</text>
+
+  <!-- SP scale bar: y=60..400, total height=340 -->
+  <!-- Background track -->
+  <rect x="200" y="60" width="100" height="340" rx="8" fill="#e8e8e8"/>
+
+  <!-- SP zones -->
+  <rect x="200" y="60" width="100" height="136" rx="8" fill="#d5f5e3" opacity="0.6"/>
+  <rect x="200" y="196" width="100" height="102" rx="0" fill="#fef9e7" opacity="0.6"/>
+  <rect x="200" y="298" width="100" height="72" rx="0" fill="#fdebd0" opacity="0.6"/>
+  <rect x="200" y="370" width="100" height="30" rx="0" fill="#fadbd8" opacity="0.6"/>
+
+  <!-- SP markers -->
+  <g font-size="10" font-weight="600">
+    <text x="310" y="72" fill="#2c3e50">SP 0</text>
+    <text x="310" y="140" fill="#2c3e50">SP 10</text>
+    <text x="310" y="208" fill="#2c3e50">SP 15</text>
+    <text x="310" y="310" fill="#2c3e50">SP 20</text>
+    <text x="310" y="390" fill="#2c3e50">SP 30+</text>
+  </g>
+
+  <!-- Zone labels (left) -->
+  <g font-size="10" text-anchor="end">
+    <text x="190" y="128" fill="#1e8449" font-weight="600">Stable</text>
+    <text x="190" y="246" fill="#d68910" font-weight="600">Elevated</text>
+    <text x="190" y="334" fill="#d35400" font-weight="600">Stressed</text>
+    <text x="190" y="384" fill="#c0392b" font-weight="600">Crisis</text>
+  </g>
+
+  <!-- Event blocks showing SP accumulation -->
+  <!-- Event 1: Being threatened -->
+  <g filter="url(#ws)">
+    <rect x="30" y="70" width="160" height="30" rx="6" fill="#d5f5e3" stroke="#27ae60" stroke-width="1"/>
+    <text x="45" y="84" font-size="9" font-weight="600" fill="#2c3e50">🗣️ Threatened (verbal)</text>
+    <text x="45" y="95" font-size="8" fill="#5d6d7e">+2–3 SP</text>
+  </g>
+
+  <!-- Event 2: Physically attacked -->
+  <g filter="url(#ws)">
+    <rect x="30" y="120" width="160" height="30" rx="6" fill="#d4efdf" stroke="#2ecc71" stroke-width="1"/>
+    <text x="45" y="134" font-size="9" font-weight="600" fill="#2c3e50">👊 Physically attacked</text>
+    <text x="45" y="145" font-size="8" fill="#5d6d7e">+5–8 SP · adrenaline dump</text>
+  </g>
+
+  <!-- Event 3: Striking someone -->
+  <g filter="url(#ws)">
+    <rect x="30" y="170" width="160" height="30" rx="6" fill="#fef9e7" stroke="#f39c12" stroke-width="1"/>
+    <text x="45" y="184" font-size="9" font-weight="600" fill="#2c3e50">👊 Striking someone</text>
+    <text x="45" y="195" font-size="8" fill="#5d6d7e">+3–5 SP · adrenaline dump</text>
+  </g>
+
+  <!-- Event 4: Shooting someone -->
+  <g filter="url(#ws)">
+    <rect x="30" y="220" width="160" height="30" rx="6" fill="#fdebd0" stroke="#e67e22" stroke-width="1.5"/>
+    <text x="45" y="234" font-size="9" font-weight="600" fill="#2c3e50">🔫 Shooting (non-lethal)</text>
+    <text x="45" y="245" font-size="8" fill="#5d6d7e">+10 SP · RES check TN 55</text>
+  </g>
+
+  <!-- Event 5: Killing someone -->
+  <g filter="url(#ws)">
+    <rect x="30" y="270" width="160" height="30" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+    <text x="45" y="284" font-size="9" font-weight="600" fill="#2c3e50">💀 Killing someone</text>
+    <text x="45" y="295" font-size="8" fill="#922b21">+15 SP · RES check TN 60</text>
+  </g>
+
+  <!-- Event 6: Witnessing death -->
+  <g filter="url(#ws)">
+    <rect x="30" y="320" width="160" height="30" rx="6" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+    <text x="45" y="334" font-size="9" font-weight="600" fill="#2c3e50">👁️ Witnessing death</text>
+    <text x="45" y="345" font-size="8" fill="#922b21">+10–15 SP · RES check TN 50</text>
+  </g>
+
+  <!-- TRAUMA LINE -->
+  <line x1="20" y1="370" x2="480" y2="370" stroke="#e74c3c" stroke-width="2" stroke-dasharray="8,4"/>
+  <rect x="340" y="356" width="130" height="28" rx="4" fill="#fadbd8" stroke="#e74c3c" stroke-width="2"/>
+  <text x="405" y="370" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">⚠ TRAUMA LINE</text>
+
+  <!-- Example encounter box -->
+  <g filter="url(#ws)">
+    <rect x="30" y="410" width="440" height="56" rx="8" fill="#fdf2e9" stroke="#e67e22" stroke-width="1.5"/>
+    <text x="250" y="428" text-anchor="middle" font-size="10" font-weight="700" fill="#d35400">Example: Full encounter = threatened(+3) + attacked(+7) + struck back(+4) + shooting(+10) = 24 SP</text>
+    <text x="250" y="444" text-anchor="middle" font-size="9" fill="#d35400">That exceeds the trauma line. RES check TN 60 or gain Trauma condition.</text>
+    <text x="250" y="458" text-anchor="middle" font-size="9" fill="#d35400">Plus adrenaline dump: −5 to all checks for 1 hour after.</text>
+  </g>
+</svg>

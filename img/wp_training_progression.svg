@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 560 440" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <title>Training Investment vs Proficiency with Skill Decay</title>
+  <desc>Progression chart showing hours invested vs proficiency level, with skill decay arrow and muscle memory shortcut</desc>
+  <defs>
+    <filter id="ws" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+    <marker id="ah" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#2c3e50"/>
+    </marker>
+  </defs>
+
+  <rect width="560" height="440" rx="12" fill="#fafbfc"/>
+  <text x="280" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Training Progression &amp; Skill Decay</text>
+  <text x="280" y="44" text-anchor="middle" font-size="10" fill="#5d6d7e">Invest time and money — but lose it all without practice</text>
+
+  <!-- Chart area: x=100..480, y=60..340 -->
+  <!-- Grid lines -->
+  <g stroke="#e8e8e8" stroke-width="1">
+    <line x1="100" y1="60" x2="480" y2="60"/>
+    <line x1="100" y1="124" x2="480" y2="124"/>
+    <line x1="100" y1="188" x2="480" y2="188"/>
+    <line x1="100" y1="252" x2="480" y2="252"/>
+    <line x1="100" y1="316" x2="480" y2="316"/>
+  </g>
+
+  <!-- Y-axis labels (Proficiency) -->
+  <g font-size="10" font-weight="600" fill="#2c3e50" text-anchor="end">
+    <text x="90" y="64">📕 Master</text>
+    <text x="90" y="128">📙 Expert</text>
+    <text x="90" y="192">📗 Proficient</text>
+    <text x="90" y="256">📘 Competent</text>
+    <text x="90" y="320">🔰 Novice</text>
+  </g>
+
+  <!-- Y-axis title -->
+  <text x="25" y="188" text-anchor="middle" font-size="10" font-weight="600" fill="#2c3e50" transform="rotate(-90,25,188)">Proficiency</text>
+
+  <!-- X-axis labels (Hours) -->
+  <g font-size="10" fill="#5d6d7e" text-anchor="middle">
+    <text x="100" y="365">0 hrs</text>
+    <text x="176" y="365">10</text>
+    <text x="252" y="365">30</text>
+    <text x="328" y="365">60</text>
+    <text x="404" y="365">100+</text>
+    <text x="290" y="385" font-weight="600">Hours Invested →</text>
+  </g>
+
+  <!-- Cost labels under x-axis -->
+  <g font-size="8" fill="#7f8c8d" text-anchor="middle">
+    <text x="100" y="398">Free</text>
+    <text x="176" y="398">$100–200</text>
+    <text x="252" y="398">$300–500</text>
+    <text x="328" y="398">$600–1000</text>
+    <text x="404" y="398">$1000+</text>
+  </g>
+
+  <!-- Progression line -->
+  <polyline points="100,316 176,252 252,188 328,124 404,60" fill="none" stroke="#2980b9" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Data points -->
+  <circle cx="100" cy="316" r="8" fill="#9b59b6" filter="url(#ws)"/>
+  <circle cx="176" cy="252" r="8" fill="#3498db" filter="url(#ws)"/>
+  <circle cx="252" cy="188" r="8" fill="#2ecc71" filter="url(#ws)"/>
+  <circle cx="328" cy="124" r="8" fill="#f39c12" filter="url(#ws)"/>
+  <circle cx="404" cy="60" r="8" fill="#e74c3c" filter="url(#ws)"/>
+
+  <!-- SKILL DECAY arrow (big red arrow going down-right) -->
+  <path d="M404,60 Q460,140 460,316" fill="none" stroke="#e74c3c" stroke-width="3" stroke-dasharray="8,4" marker-end="url(#ah)"/>
+  <rect x="475" y="140" width="75" height="30" rx="4" fill="#fadbd8" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="512" y="155" text-anchor="middle" font-size="9" font-weight="700" fill="#c0392b">SKILL DECAY</text>
+  <text x="512" y="167" text-anchor="middle" font-size="7" fill="#922b21">1 level/year</text>
+
+  <!-- Muscle memory shortcut (dashed green arrow going back up from Novice) -->
+  <path d="M130,316 Q130,220 252,188" fill="none" stroke="#27ae60" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <rect x="130" y="250" width="90" height="26" rx="4" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.5"/>
+  <text x="175" y="263" text-anchor="middle" font-size="8" font-weight="700" fill="#1e8449">MUSCLE MEMORY</text>
+  <text x="175" y="273" text-anchor="middle" font-size="7" fill="#1e8449">Half normal time</text>
+
+  <!-- Warning box -->
+  <g filter="url(#ws)">
+    <rect x="100" y="412" width="360" height="20" rx="4" fill="#fdf2e9"/>
+    <text x="280" y="426" text-anchor="middle" font-size="9" fill="#d35400">⚠ A character who trained 5 years ago and never touched a gun drops from Expert → Novice</text>
+  </g>
+</svg>

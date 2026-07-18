@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 580 420" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <title>Use of Force Continuum</title>
+  <desc>Vertical ladder showing 5 levels of force escalation from verbal warning to firearm, with legal risk increasing at each level</desc>
+  <defs>
+    <filter id="ws" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="g0" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d5f5e3"/><stop offset="100%" stop-color="#a9dfbf"/></linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d4efdf"/><stop offset="100%" stop-color="#abebc6"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fef9e7"/><stop offset="100%" stop-color="#fdebd0"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fdebd0"/><stop offset="100%" stop-color="#f5b7b1"/></linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#fadbd8"/><stop offset="100%" stop-color="#e74c3c"/></linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="580" height="420" rx="12" fill="#fafbfc"/>
+
+  <!-- Title -->
+  <text x="290" y="28" text-anchor="middle" font-size="18" font-weight="700" fill="#2c3e50">Use-of-Force Continuum</text>
+  <text x="290" y="46" text-anchor="middle" font-size="10" fill="#5d6d7e">Force must be proportional to threat — escalating beyond what the situation warrants carries legal consequences</text>
+
+  <!-- Level 5: Firearm (top - most dangerous) -->
+  <g filter="url(#ws)">
+    <rect x="60" y="60" width="460" height="52" rx="8" fill="url(#g4)" stroke="#c0392b" stroke-width="2"/>
+    <text x="85" y="80" font-size="14" font-weight="700" fill="#c0392b">LEVEL 5</text>
+    <text x="85" y="98" font-size="12" font-weight="600" fill="#2c3e50">🔫 Firearm</text>
+    <text x="240" y="80" font-size="10" fill="#5d6d7e">Imminent threat of death</text>
+    <text x="240" y="94" font-size="10" fill="#5d6d7e">or great bodily harm</text>
+    <text x="490" y="90" text-anchor="end" font-size="11" font-weight="700" fill="#c0392b">⚠ VERY HIGH</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M290,112 L290,128" stroke="#e74c3c" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Level 4: Blade -->
+  <g filter="url(#ws)">
+    <rect x="60" y="132" width="460" height="52" rx="8" fill="url(#g3)" stroke="#e67e22" stroke-width="2"/>
+    <text x="85" y="152" font-size="14" font-weight="700" fill="#d35400">LEVEL 4</text>
+    <text x="85" y="170" font-size="12" font-weight="600" fill="#2c3e50">🔪 Blade</text>
+    <text x="240" y="152" font-size="10" fill="#5d6d7e">Against lethal threat;</text>
+    <text x="240" y="166" font-size="10" fill="#5d6d7e">last resort</text>
+    <text x="490" y="162" text-anchor="end" font-size="11" font-weight="700" fill="#d35400">⚠ HIGH</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M290,184 L290,200" stroke="#e67e22" stroke-width="2"/>
+
+  <!-- Level 3: Impact Weapon -->
+  <g filter="url(#ws)">
+    <rect x="60" y="204" width="460" height="52" rx="8" fill="url(#g2)" stroke="#f39c12" stroke-width="2"/>
+    <text x="85" y="224" font-size="14" font-weight="700" fill="#d68910">LEVEL 3</text>
+    <text x="85" y="242" font-size="12" font-weight="600" fill="#2c3e50">🏏 Impact Weapon</text>
+    <text x="240" y="224" font-size="10" fill="#5d6d7e">Against armed or multiple</text>
+    <text x="240" y="238" font-size="10" fill="#5d6d7e">attackers</text>
+    <text x="490" y="234" text-anchor="end" font-size="11" font-weight="700" fill="#d68910">⚠ MEDIUM</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M290,256 L290,272" stroke="#f39c12" stroke-width="2"/>
+
+  <!-- Level 2: Physical Restraint -->
+  <g filter="url(#ws)">
+    <rect x="60" y="276" width="460" height="52" rx="8" fill="url(#g1)" stroke="#27ae60" stroke-width="2"/>
+    <text x="85" y="296" font-size="14" font-weight="700" fill="#1e8449">LEVEL 2</text>
+    <text x="85" y="314" font-size="12" font-weight="600" fill="#2c3e50">✋ Physical Restraint</text>
+    <text x="240" y="296" font-size="10" fill="#5d6d7e">Against active physical</text>
+    <text x="240" y="310" font-size="10" fill="#5d6d7e">threat</text>
+    <text x="490" y="306" text-anchor="end" font-size="11" font-weight="700" fill="#1e8449">LOW RISK</text>
+  </g>
+
+  <!-- Arrow down -->
+  <path d="M290,328 L290,344" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- Level 1: Verbal Warning (bottom - least force) -->
+  <g filter="url(#ws)">
+    <rect x="60" y="348" width="460" height="52" rx="8" fill="url(#g0)" stroke="#27ae60" stroke-width="2"/>
+    <text x="85" y="368" font-size="14" font-weight="700" fill="#1e8449">LEVEL 1</text>
+    <text x="85" y="386" font-size="12" font-weight="600" fill="#2c3e50">🗣️ Verbal Warning</text>
+    <text x="240" y="368" font-size="10" fill="#5d6d7e">Always justified —</text>
+    <text x="240" y="382" font-size="10" fill="#5d6d7e">first and best option</text>
+    <text x="490" y="378" text-anchor="end" font-size="11" font-weight="700" fill="#1e8449">NONE</text>
+  </g>
+
+  <!-- Proportionality line annotation -->
+  <line x1="60" y1="260" x2="520" y2="260" stroke="#2c3e50" stroke-width="1" stroke-dasharray="6,4" opacity="0.3"/>
+  <text x="525" y="263" font-size="8" fill="#5d6d7e" font-style="italic">Proportionality</text>
+  <text x="525" y="273" font-size="8" fill="#5d6d7e" font-style="italic">reference line</text>
+
+  <!-- Escalation label -->
+  <text x="30" y="210" text-anchor="middle" font-size="9" font-weight="600" fill="#c0392b" transform="rotate(-90,30,210)">ESCALATION →</text>
+</svg>

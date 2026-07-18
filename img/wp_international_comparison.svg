@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 600 520" style="font-family: Segoe UI, system-ui, sans-serif;">
+  <title>Global Firearm Law Comparison</title>
+  <desc>Radar chart comparing firearm law strictness across 7 countries on 5 axes</desc>
+  <defs>
+    <filter id="ws" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="520" rx="12" fill="#fafbfc"/>
+  <text x="300" y="26" text-anchor="middle" font-size="17" font-weight="700" fill="#2c3e50">Global Firearm Law Comparison</text>
+  <text x="300" y="44" text-anchor="middle" font-size="10" fill="#5d6d7e">How radically different the legal landscape is across countries</text>
+
+  <!-- Radar chart center: 300, 250. Radius: 160 -->
+  <!-- 5 axes: Ownership Ease, Carry Rights, Training Required, Wait Time, Penalty Severity -->
+  <!-- Angles: 0°=top, 72°, 144°, 216°, 288° -->
+
+  <!-- Grid circles -->
+  <circle cx="300" cy="250" r="40" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+  <circle cx="300" cy="250" r="80" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+  <circle cx="300" cy="250" r="120" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+  <circle cx="300" cy="250" r="160" fill="none" stroke="#dcdcdc" stroke-width="1"/>
+
+  <!-- Scale labels -->
+  <text x="305" y="210" font-size="8" fill="#95a5a6">1</text>
+  <text x="305" y="170" font-size="8" fill="#95a5a6">2</text>
+  <text x="305" y="130" font-size="8" fill="#95a5a6">3</text>
+  <text x="305" y="90" font-size="8" fill="#95a5a6">4</text>
+
+  <!-- Axis lines -->
+  <line x1="300" y1="250" x2="300" y2="90" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="300" y1="250" x2="453" y2="193" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="300" y1="250" x2="380" y2="378" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="300" y1="250" x2="220" y2="378" stroke="#bdc3c7" stroke-width="1"/>
+  <line x1="300" y1="250" x2="147" y2="193" stroke="#bdc3c7" stroke-width="1"/>
+
+  <!-- Axis labels -->
+  <text x="300" y="75" text-anchor="middle" font-size="10" font-weight="600" fill="#2c3e50">Ownership</text>
+  <text x="300" y="65" text-anchor="middle" font-size="9" fill="#5d6d7e">Ease (1=easy)</text>
+
+  <text x="470" y="188" text-anchor="start" font-size="10" font-weight="600" fill="#2c3e50">Carry</text>
+  <text x="470" y="200" text-anchor="start" font-size="9" fill="#5d6d7e">Rights (1=none)</text>
+
+  <text x="395" y="398" text-anchor="start" font-size="10" font-weight="600" fill="#2c3e50">Training</text>
+  <text x="395" y="410" text-anchor="start" font-size="9" fill="#5d6d7e">(4=max)</text>
+
+  <text x="205" y="398" text-anchor="end" font-size="10" font-weight="600" fill="#2c3e50">Wait Time</text>
+  <text x="205" y="410" text-anchor="end" font-size="9" fill="#5d6d7e">(4=longest)</text>
+
+  <text x="130" y="188" text-anchor="end" font-size="10" font-weight="600" fill="#2c3e50">Penalty</text>
+  <text x="130" y="200" text-anchor="end" font-size="9" fill="#5d6d7e">Severity (4=max)</text>
+
+  <!-- US data: Own=1, Carry=1, Train=2, Wait=1, Penalty=2 -->
+  <!-- Points: (300,90) (453,193) (356,318) (244,318) (188,193) -->
+  <polygon points="300,90 453,193 356,318 244,318 188,193" fill="#3498db" opacity="0.15" stroke="#3498db" stroke-width="2"/>
+
+  <!-- UK data: Own=4, Carry=4, Train=3, Wait=4, Penalty=4 -->
+  <polygon points="300,90 453,90 416,350 184,350 147,90" fill="#e74c3c" opacity="0.15" stroke="#e74c3c" stroke-width="2"/>
+
+  <!-- Japan data: Own=4, Carry=4, Train=4, Wait=4, Penalty=4 -->
+  <polygon points="300,90 453,90 460,250 140,250 147,90" fill="#9b59b6" opacity="0.15" stroke="#9b59b6" stroke-width="2"/>
+
+  <!-- Germany data: Own=2, Carry=3, Train=3, Wait=2, Penalty=3 -->
+  <polygon points="300,130 413,220 380,330 220,330 187,220" fill="#27ae60" opacity="0.15" stroke="#27ae60" stroke-width="2"/>
+
+  <!-- Legend -->
+  <g filter="url(#ws)">
+    <rect x="100" y="430" width="400" height="75" rx="8" fill="#fff" stroke="#dcdcdc" stroke-width="1"/>
+    <rect x="115" y="445" width="12" height="12" rx="2" fill="#3498db" opacity="0.7"/>
+    <text x="132" y="455" font-size="10" font-weight="600" fill="#2c3e50">USA (liberal)</text>
+
+    <rect x="220" y="445" width="12" height="12" rx="2" fill="#27ae60" opacity="0.7"/>
+    <text x="237" y="455" font-size="10" font-weight="600" fill="#2c3e50">Germany (moderate)</text>
+
+    <rect x="370" y="445" width="12" height="12" rx="2" fill="#e74c3c" opacity="0.7"/>
+    <text x="387" y="455" font-size="10" font-weight="600" fill="#2c3e50">UK (strict)</text>
+
+    <rect x="115" y="465" width="12" height="12" rx="2" fill="#9b59b6" opacity="0.7"/>
+    <text x="132" y="475" font-size="10" font-weight="600" fill="#2c3e50">Japan (strictest)</text>
+
+    <text x="300" y="495" text-anchor="middle" font-size="9" fill="#5d6d7e">Larger area = more restrictive overall</text>
+  </g>
+</svg>
