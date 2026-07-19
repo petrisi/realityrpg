@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheat Sheet — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header injected by nav-loader.js -->
+<div id="slot-header"></div>
+
+<section class="content-section">
+<div class="container">
+
+<h1>📋 Cheat Sheet</h1>
+<p>One-page reference for core mechanics. For full rules, see the linked pages.</p>
+
+<!-- ============================================================
+     §1 CORE RESOLUTION
+     ============================================================ -->
+<h2>§1 Core Resolution</h2>
+
+<div class="card-grid wide">
+<div class="card">
+<h3>Dice Mechanic</h3>
+<p>Roll <span class="dice">d100</span> (percentile): one d10 = tens, one d10 = units. Range <strong>01–100</strong>, uniform distribution.</p>
+<p>Add modifier. Compare to Target Number.</p>
+<p><strong>Lower is better:</strong> roll + modifier ≤ TN = success.</p>
+</div>
+
+<div class="card">
+<h3>TN Scale</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>TN</th><th>Difficulty</th></tr></thead>
+<tbody>
+<tr><td><strong>25</strong></td><td>Trivial</td></tr>
+<tr><td><strong>35</strong></td><td>Easy</td></tr>
+<tr><td><strong>50</strong></td><td>Medium</td></tr>
+<tr><td><strong>65</strong></td><td>Hard</td></tr>
+<tr><td><strong>80</strong></td><td>Very Hard</td></tr>
+<tr><td><strong>90</strong></td><td>Near Impossible</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Result Tier</th><th>Condition</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td><strong>Critical Success</strong></td><td>Raw roll ≤ 05 (before modifiers)</td><td>Extraordinary, almost lucky outcome.</td></tr>
+<tr><td><strong>Strong Success</strong></td><td>Roll + mod ≤ TN − 5</td><td>Action succeeds exceptionally well.</td></tr>
+<tr><td><strong>Success</strong></td><td>Roll + mod ≤ TN</td><td>Action succeeds normally.</td></tr>
+<tr><td><strong>Partial Success</strong></td><td>Roll + mod ≤ TN + 5</td><td>Succeeds but with a cost or complication.</td></tr>
+<tr><td><strong>Failure</strong></td><td>Roll + mod > TN + 5</td><td>Action fails.</td></tr>
+<tr><td><strong>Critical Failure</strong></td><td>Raw roll ≥ 96 (before modifiers)</td><td>Catastrophic, almost unlucky outcome.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout tip">
+  <div class="callout-title">⚠️ Modifier Stacking</div>
+  <p>Multiple circumstance modifiers stack. Total modifier on any single check is capped at <strong>±20</strong>. See <a href="core-mechanics.html">Core Mechanics §7.1</a> for the full modifier table.</p>
+</div>
+
+<!-- ============================================================
+     §2 ATTRIBUTES & MODIFIERS
+     ============================================================ -->
+<h2>§2 Attributes &amp; Modifiers</h2>
+
+<div class="card-grid wide">
+<div class="card">
+<h3>Six Core Attributes</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Abbrev</th><th>Attribute</th><th>Covers</th></tr></thead>
+<tbody>
+<tr><td><strong>VIG</strong></td><td>Vigor</td><td>Physical health, stamina, strength, endurance</td></tr>
+<tr><td><strong>INT</strong></td><td>Intellect</td><td>Cognition, memory, analysis, learning</td></tr>
+<tr><td><strong>EXP</strong></td><td>Expression</td><td>Communication, empathy, creativity, EQ</td></tr>
+<tr><td><strong>DXT</strong></td><td>Dexterity</td><td>Fine motor skills, coordination, precision</td></tr>
+<tr><td><strong>RES</strong></td><td>Resolve</td><td>Willpower, discipline, stress resistance</td></tr>
+<tr><td><strong>PRC</strong></td><td>Presence</td><td>Appearance, charisma, first impressions</td></tr>
+</tbody>
+</table>
+</div>
+<p>Scores range <strong>1–20</strong>.</p>
+</div>
+
+<div class="card">
+<h3>Modifier Formula</h3>
+<p><strong>Mod = floor(attr ÷ 5)</strong></p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Attribute</th><th>Mod</th><th>Attribute</th><th>Mod</th></tr></thead>
+<tbody>
+<tr><td>1–4</td><td>+0</td><td>10–14</td><td>+2</td></tr>
+<tr><td>5–9</td><td>+1</td><td>15–19</td><td>+3</td></tr>
+<tr><td colspan="2"></td><td>20</td><td>+4</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mod-ref-note">Example: VIG 12 → floor(12÷5) = <strong>+2</strong></p>
+</div>
+</div>
+
+<!-- ============================================================
+     §3 HEALTH & STRESS
+     ============================================================ -->
+<h2>§3 Health &amp; Stress</h2>
+
+<div class="card-grid wide">
+<div class="card">
+<h3>Stress Points (SP)</h3>
+<p><strong>Max SP = 20 + (RES mod × 5)</strong></p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>RES Mod</th><th>Max SP</th></tr></thead>
+<tbody>
+<tr><td>+0 (RES 1–4)</td><td>20</td></tr>
+<tr><td>+1 (RES 5–9)</td><td>25</td></tr>
+<tr><td>+2 (RES 10–14)</td><td>30</td></tr>
+<tr><td>+3 (RES 15–19)</td><td>35</td></tr>
+<tr><td>+4 (RES 20)</td><td>40</td></tr>
+</tbody>
+</table>
+</div>
+<p>Start at <strong>0 SP</strong>. When SP reaches Max SP → <strong>Episode</strong>.</p>
+</div>
+
+<div class="card">
+<h3>Stress Levels</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Level</th><th>Effects</th></tr></thead>
+<tbody>
+<tr><td><strong>😌 Stable</strong></td><td>No penalty.</td></tr>
+<tr><td><strong>😐 Elevated</strong></td><td>−2 on RES checks.</td></tr>
+<tr><td><strong>😟 Stressed</strong></td><td>−5 on RES and INT checks. RES check (TN 40) each night for sleep.</td></tr>
+<tr><td><strong>😰 Overwhelmed</strong></td><td>−8 on all checks.</td></tr>
+<tr><td><strong>💥 Episode</strong></td><td>SP = Max SP. Breakdown. +10 TN penalty on all checks. See <a href="mental-health.html">Mental Health</a>.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="card-grid wide">
+<div class="card">
+<h3>Health Condition Track</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>State</th><th>Penalty</th></tr></thead>
+<tbody>
+<tr><td><strong>😊 Healthy</strong></td><td>None</td></tr>
+<tr><td><strong>😐 Tired</strong></td><td>−5 on VIG checks</td></tr>
+<tr><td><strong>😫 Sick/Exhausted</strong></td><td>−10 on all checks</td></tr>
+<tr><td><strong>🤒 Injured/Ill</strong></td><td>−15 on all checks; cannot exert</td></tr>
+<tr><td><strong>🏥 Critical</strong></td><td>Cannot act without help</td></tr>
+<tr><td><strong>💀 Dead</strong></td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+<p>Advance one step at a time (max 2 steps per event, GM discretion). Recovery must proceed step by step — no skipping.</p>
+</div>
+
+<div class="card">
+<h3>Recovery Rates</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Method</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td><strong>🛏️ Sleep</strong></td><td>−1 SP per good night's sleep</td></tr>
+<tr><td><strong>🗣️ Social Support</strong></td><td>−2 SP per meaningful conversation</td></tr>
+<tr><td><strong>🏃 Exercise</strong></td><td>−1 SP per workout (−2 on strong success)</td></tr>
+<tr><td><strong>🛋️ Therapy</strong></td><td>−3 to −5 SP per session</td></tr>
+</tbody>
+</table>
+</div>
+<p>See <a href="core-mechanics.html">Core Mechanics §4</a> for health recovery (Tired → Healthy, etc.).</p>
+</div>
+</div>
+
+<!-- ============================================================
+     §4 QUICK REFERENCE FORMULAS
+     ============================================================ -->
+<h2>§4 Quick Reference Formulas</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Mechanic</th><th>Formula</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Attribute Modifier</td><td><code>floor(attr ÷ 5)</code></td><td>VIG 12 → +2</td></tr>
+<tr><td>Max SP</td><td><code>20 + (RES mod × 5)</code></td><td>RES mod +2 → Max SP 30</td></tr>
+<tr><td>Core Check</td><td><code>d100 + mod vs TN</code></td><td>Roll 01–100, lower is better</td></tr>
+<tr><td>Encumbrance Limit</td><td><code>VIG mod × 10 kg</code></td><td>VIG mod +2 → 20 kg comfortable</td></tr>
+<tr><td>Budget Score</td><td><code>INT mod + EXP mod</code></td><td>0–2 = Tight, 3–4 = Comfortable, 5+ = Well-funded</td></tr>
+<tr><td>Social Capital Bonus</td><td><code>⌊SC ÷ 3⌋</code>, max +5</td><td>SC 9 → +3</td></tr>
+<tr><td>Mood Score</td><td><code>10 − stress_level</code></td><td>stress_level: 0=Stable … 4=Episode</td></tr>
+<tr><td>Critical Success</td><td>Raw roll ≤ 05</td><td>Before modifiers</td></tr>
+<tr><td>Critical Failure</td><td>Raw roll ≥ 96</td><td>Before modifiers</td></tr>
+<tr><td>Episode TN Penalty</td><td>+10 to all checks</td><td>During Episode only</td></tr>
+<tr><td>Episode SP Reset</td><td>50% of Max SP</td><td>After Episode ends</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ============================================================
+     §5 CROSS-REFERENCES
+     ============================================================ -->
+<h2>§5 Detailed Rules</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3><a href="core-mechanics.html">Core Mechanics</a></h3>
+<p>Dice resolution, attributes, skills, health track, stress system, target numbers, circumstance modifiers.</p>
+</div>
+<div class="card">
+<h3><a href="glossary.html">Glossary</a></h3>
+<p>Definitions for every mechanical term. Formulas, sources, and cross-references.</p>
+</div>
+<div class="card">
+<h3><a href="character-sheet.html">Character Sheet</a></h3>
+<p>Printable sheet for tracking attributes, health, stress, inventory, and finances.</p>
+</div>
+<div class="card">
+<h3><a href="mental-health.html">Mental Health</a></h3>
+<p>Conditions, episodes, triggers, therapy levels, and recovery stages.</p>
+</div>
+<div class="card">
+<h3><a href="inventory-economy.html">Inventory &amp; Economy</a></h3>
+<p>Encumbrance, durability, costs, budget tiers, financial checks.</p>
+</div>
+<div class="card">
+<h3><a href="social-dynamics.html">Social Dynamics</a></h3>
+<p>Relationships, social capital, networking, and social checks.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Footer injected by nav-loader.js -->
+<div id="slot-footer"></div>
+
+<!-- nav-loader: fetches header, footer, nav partials -->
+<script src="js/nav-loader.js"></script>
+</body>
+</html>

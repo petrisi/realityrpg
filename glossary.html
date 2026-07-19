@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary — Reality RPG</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header injected by nav-loader.js -->
+<div id="slot-header"></div>
+
+<section class="content-section">
+<div class="container">
+
+<h1>📖 Glossary of Mechanical Terms</h1>
+<p>Definitions for every mechanical term used across the Reality RPG ruleset. Use this page as a quick reference when a term is unclear or you need to verify a formula.</p>
+
+<!-- ============================================================
+     A — Attributes & Modifiers
+     ============================================================ -->
+<h2>A — Attributes &amp; Modifiers</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3>VIG — Vitality</h3>
+<p>The physical health and stamina attribute. Governs HP (Hit Points), resistance to illness and injury, and physical endurance. High VIG means your character can push through exhaustion and recover from physical trauma more easily.</p>
+<p><strong>Where used:</strong> Health Condition Track, exercise checks, physical labor, carrying loads.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a></p>
+</div>
+
+<div class="card">
+<h3>INT — Intelligence</h3>
+<p>The cognitive processing and knowledge attribute. Governs learning, analysis, problem-solving, and academic performance. High INT means your character grasps complex concepts quickly and makes informed decisions.</p>
+<p><strong>Where used:</strong> Academic checks, research, troubleshooting, shopping bargains.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a></p>
+</div>
+
+<div class="card">
+<h3>EXP — Experience</h3>
+<p>The life experience and worldly wisdom attribute. Governs practical judgment, social awareness, financial literacy, and navigating bureaucratic systems. High EXP means your character has learned from past mistakes and can read situations well.</p>
+<p><strong>Where used:</strong> Financial management, career advancement, insurance claims, legal matters.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a></p>
+</div>
+
+<div class="card">
+<h3>DXT — Dexterity</h3>
+<p>The physical coordination and fine motor skill attribute. Governs hand-eye coordination, manual tasks, driving, sports performance, and item maintenance. High DXT means your character is nimble and precise with their hands.</p>
+<p><strong>Where used:</strong> Driving checks, item durability maintenance, sports, cooking, crafts.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a></p>
+</div>
+
+<div class="card">
+<h3>RES — Resilience</h3>
+<p>The mental toughness and emotional stability attribute. Governs Stress Point maximum, resistance to psychological trauma, and recovery from mental health episodes. High RES means your character can withstand more stress before breaking down.</p>
+<p><strong>SP Max formula:</strong> 20 + (RES mod) × 5</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a>, <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>PRC — Perception</h3>
+<p>The awareness and social sensitivity attribute. Governs noticing details, reading body language, sensing danger, and cultural awareness. High PRC means your character picks up on subtle social cues and environmental changes.</p>
+<p><strong>Where used:</strong> Social awareness, threat detection, cultural navigation, safety checks.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a></p>
+</div>
+
+<div class="card">
+<h3>Attribute Modifier</h3>
+<p>The bonus derived from an attribute score, used in all dice rolls. Calculated as:</p>
+<p><strong>Mod = floor(attr ÷ 5)</strong></p>
+<p>Example: VIG 12 → floor(12 ÷ 5) = floor(2.4) = <strong>+2</strong></p>
+<p>Example: RES 7 → floor(7 ÷ 5) = floor(1.4) = <strong>+1</strong></p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics</a></p>
+</div>
+</div>
+
+<!-- ============================================================
+     C — Core Resolution
+     ============================================================ -->
+<h2>C — Core Resolution</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3>2d10 System</h3>
+<p>The core dice resolution mechanic. Roll <strong>two d10s and sum them</strong> (range 2–20, bell curve distribution), add the relevant attribute modifier, and compare to a Target Number (TN).</p>
+<p><strong>Lower rolls are better:</strong> roll + modifier ≤ TN = success.</p>
+<p>The bell curve means moderate results (8–13) are most common. Extreme results (2–4 or 17–20) are rare.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §1</a></p>
+</div>
+
+<div class="card">
+<h3>TN — Target Number</h3>
+<p>The difficulty threshold for a check. Your total roll (2d10 + modifier) must be ≤ TN to succeed. The standard TN scale is:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>TN</th><th>Difficulty</th></tr></thead>
+<tbody>
+<tr><td><strong>25</strong></td><td>Trivial</td></tr>
+<tr><td><strong>35</strong></td><td>Easy</td></tr>
+<tr><td><strong>50</strong></td><td>Medium</td></tr>
+<tr><td><strong>65</strong></td><td>Hard</td></tr>
+<tr><td><strong>80</strong></td><td>Very Hard</td></tr>
+<tr><td><strong>90</strong></td><td>Near Impossible</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §7</a></p>
+</div>
+
+<div class="card">
+<h3>Critical Success</h3>
+<p>When the raw dice roll (before modifiers) is <strong>≤ 5</strong>, the outcome is an extraordinary, almost lucky success. The action succeeds with exceptional benefit beyond normal success.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §1</a></p>
+</div>
+
+<div class="card">
+<h3>Critical Failure</h3>
+<p>When the raw dice roll (before modifiers) is <strong>≥ 96</strong> (on d100 scale) or <strong>≥ 19</strong> (on 2d10 summed scale), the outcome is a catastrophic, almost unlucky failure. The action fails with additional negative consequences.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §1</a></p>
+</div>
+
+<div class="card">
+<h3>Strong Success</h3>
+<p>When roll + modifier ≤ TN − 5. The action succeeds exceptionally well, often granting bonus benefits (extra SP recovery, faster progress, better outcomes).</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §1</a></p>
+</div>
+
+<div class="card">
+<h3>Partial Success</h3>
+<p>When roll + modifier ≤ TN + 5 (but > TN). The action succeeds but with a cost, complication, or reduced benefit.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §1</a></p>
+</div>
+</div>
+
+<!-- ============================================================
+     H — Health & Stress
+     ============================================================ -->
+<h2>H — Health &amp; Stress</h2>
+
+<div class="card-grid wide">
+<div class="card">
+<h3>SP — Stress Points</h3>
+<p>The resource tracking mental and emotional strain. SP accumulates from stressful events and depletes through recovery activities. When SP reaches Max SP, the character enters an <strong>Episode</strong>.</p>
+<p><strong>Max SP formula:</strong> 20 + (RES mod) × 5</p>
+<ul>
+<li>RES mod +0 (RES 1–4): Max SP = 20</li>
+<li>RES mod +1 (RES 5–9): Max SP = 25</li>
+<li>RES mod +2 (RES 10–14): Max SP = 30</li>
+<li>RES mod +3 (RES 15–19): Max SP = 35</li>
+<li>RES mod +4 (RES 20): Max SP = 40</li>
+</ul>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §4</a>, <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>Stress Levels</h3>
+<p>Five tiers of stress intensity, determined by current SP relative to Max SP. Thresholds vary by RES modifier:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Level</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><strong>Stable</strong></td><td>SP at 0. Character is at baseline.</td></tr>
+<tr><td><strong>Elevated</strong></td><td>Low SP. Minor stress, manageable.</td></tr>
+<tr><td><strong>Stressed</strong></td><td>Moderate SP. Noticeable strain on daily life.</td></tr>
+<tr><td><strong>Overwhelmed</strong></td><td>High SP. Functioning is impaired.</td></tr>
+<tr><td><strong>Episode</strong></td><td>SP = Max SP. Full breakdown; character cannot function normally.</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §4</a>, <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>Episode</h3>
+<p>A mental health crisis triggered when SP reaches Max SP. During an Episode, all checks suffer a <strong>+10 TN penalty</strong>. Episodes last 1d4 hours or days depending on severity. After an Episode ends, SP resets to 50% of Max SP.</p>
+<p><strong>Source:</strong> <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>Trigger</h3>
+<p>A specific event or stimulus that causes an immediate SP gain, potentially pushing a character toward or into an Episode. Triggers are personalized based on character backstory, mental health conditions, and past trauma.</p>
+<p><strong>Source:</strong> <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>Health Condition Track</h3>
+<p>The physical health progression system. Six states from best to worst:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>State</th><th>Modifier</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><strong>Healthy</strong></td><td>—</td><td>Full physical capacity.</td></tr>
+<tr><td><strong>Tired</strong></td><td>−5 to physical checks</td><td>Fatigue setting in.</td></tr>
+<tr><td><strong>Sick</strong></td><td>−10 to physical checks</td><td>Illness or minor injury.</td></tr>
+<tr><td><strong>Injured</strong></td><td>−15 to physical checks</td><td>Significant physical trauma.</td></tr>
+<tr><td><strong>Critical</strong></td><td>−20 to all checks</td><td>Life-threatening condition.</td></tr>
+<tr><td><strong>Dead</strong></td><td>—</td><td>Character has died.</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §3</a></p>
+</div>
+</div>
+
+<!-- ============================================================
+     R — Recovery
+     ============================================================ -->
+<h2>R — Recovery</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3>SP Recovery (Rest)</h3>
+<p><strong>−1 SP per night's sleep.</strong> A good night's rest reduces stress by 1 point. This is the baseline recovery rate available to all characters.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §4</a></p>
+</div>
+
+<div class="card">
+<h3>SP Recovery (Social Support)</h3>
+<p><strong>−2 SP per meaningful social interaction.</strong> A genuine conversation with a friend, partner, or support person reduces stress by 2 points.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §4</a></p>
+</div>
+
+<div class="card">
+<h3>SP Recovery (Exercise)</h3>
+<p><strong>−1 SP per workout</strong> (−2 SP on strong success). Physical exercise provides modest stress relief but cannot replace therapy for deep recovery.</p>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §4</a>, <a href="exercise.html">Exercise</a></p>
+</div>
+
+<div class="card">
+<h3>SP Recovery (Therapy)</h3>
+<p><strong>−3 to −5 SP per therapy session.</strong> The most effective SP recovery method. The exact amount depends on therapy type, therapist skill, and character engagement.</p>
+<ul>
+<li>Individual therapy: −3 SP per session (−5 on strong success)</li>
+<li>Group therapy: −2 to −3 SP per session</li>
+<li>Intensive therapy (IBLT, residential): −5 SP per session</li>
+</ul>
+<p><strong>Source:</strong> <a href="core-mechanics.html">Core Mechanics §4</a>, <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>Recovery Stage</h3>
+<p>The phase of mental health recovery a character is in. Stages progress from Acute → Stabilizing → Recovering → Maintained. Each stage has different SP gain/loss modifiers and available treatment options.</p>
+<p><strong>Source:</strong> <a href="mental-health.html">Mental Health</a></p>
+</div>
+
+<div class="card">
+<h3>Therapy Level</h3>
+<p>The intensity tier of mental health treatment. Levels range from self-care (Level 0) through clinical therapy (Level 1–2) to intensive residential programs (Level 3). Higher levels provide greater SP recovery but require more time and resources.</p>
+<p><strong>Source:</strong> <a href="mental-health.html">Mental Health</a></p>
+</div>
+</div>
+
+<!-- ============================================================
+     E — Economy & Inventory
+     ============================================================ -->
+<h2>E — Economy &amp; Inventory</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3>Mood Score</h3>
+<p>A derived stat reflecting current emotional state. Calculated as <strong>10 − current_stress_level</strong> where stress levels are numbered 0 (Stable) through 4 (Episode). At Mood Score ≤ 5, shopping and financial checks suffer a <strong>+5 TN penalty</strong>.</p>
+<p><strong>Source:</strong> <a href="inventory-economy.html">Inventory &amp; Economy</a></p>
+</div>
+
+<div class="card">
+<h3>Budget Score</h3>
+<p>A measure of financial stability. Calculated as <strong>INT mod + EXP mod</strong>. Tiers:</p>
+<ul>
+<li><strong>0–2 (Tight):</strong> +10 TN to all financial checks. Barely making ends meet.</li>
+<li><strong>3–4 (Comfortable):</strong> No modifiers. Managing finances adequately.</li>
+<li><strong>5+ (Well-funded):</strong> −5 TN to financial checks. Financial cushion available.</li>
+</ul>
+<p><strong>Source:</strong> <a href="inventory-economy.html">Inventory &amp; Economy</a></p>
+</div>
+
+<div class="card">
+<h3>Overdraft Risk</h3>
+<p>A mechanical state entered when spending exceeds the character's Budget Score tier. While in Overdraft Risk, the character must roll <strong>2d10 + EXP mod vs TN 50</strong> each week; on failure, gain <strong>2 SP</strong> from financial stress.</p>
+<p><strong>Source:</strong> <a href="inventory-economy.html">Inventory &amp; Economy</a></p>
+</div>
+
+<div class="card">
+<h3>Durability Score</h3>
+<p>Items have a Durability Score representing their condition. Based on cost tier: Cheap = 3, Standard = 5, Premium = 8, Luxury = 10. Items lose Durability through use and damage. When Durability reaches 0, the item is broken or lost. Repair requires <strong>2d10 + DXT mod vs TN 50 + (original − current) × 5</strong>.</p>
+<p><strong>Source:</strong> <a href="inventory-economy.html">Inventory &amp; Economy</a></p>
+</div>
+
+<div class="card">
+<h3>Encumbrance</h3>
+<p>The weight-carrying system. <strong>Comfortable limit = VIG mod × 10 kg.</strong> Exceeding by 1× adds +10 TN to all physical checks. Exceeding by 2× adds +20 TN and forces a <strong>2d10 + VIG mod vs TN 50</strong> check each hour or gain 1 SP.</p>
+<p><strong>Source:</strong> <a href="inventory-economy.html">Inventory &amp; Economy</a></p>
+</div>
+</div>
+
+<!-- ============================================================
+     S — Social
+     ============================================================ -->
+<h2>S — Social</h2>
+
+<div class="card-grid">
+<div class="card">
+<h3>Social Capital</h3>
+<p>A point pool (0–15+) representing the character's social standing and network strength. Levels: Outcast (0–2), Marginalized (3–5), Integrated (6–8), Connected (9–11), Influential (12–14), Legendary (15+).</p>
+<p><strong>Numeric bonus for dice checks:</strong> 1 bonus point per 3 Social Capital points, capped at <strong>+5</strong>. (Outcast = +0, Marginalized = +1, Integrated = +2, Connected = +3, Influential = +4, Legendary = +5)</p>
+<p><strong>Source:</strong> <a href="social-dynamics.html">Social Dynamics</a></p>
+</div>
+</div>
+
+<!-- ============================================================
+     Quick Reference
+     ============================================================ -->
+<h2>Quick Reference: All Core Formulas</h2>
+<div class="callout rule">
+<div class="callout-title">📋 Formulas at a Glance</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Mechanic</th><th>Formula</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Attribute Modifier</td><td>floor(attr ÷ 5)</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>Max SP</td><td>20 + (RES mod) × 5</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>Core Check</td><td>2d10 + mod vs TN (lower wins)</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>Critical Success</td><td>Raw roll ≤ 5</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>Critical Failure</td><td>Raw roll ≥ 96 (d100) / ≥ 19 (2d10)</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>SP Recovery (Sleep)</td><td>−1 SP per night</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>SP Recovery (Social)</td><td>−2 SP per interaction</td><td><a href="core-mechanics.html">Core Mechanics</a></td></tr>
+<tr><td>SP Recovery (Exercise)</td><td>−1 SP per workout (−2 strong)</td><td><a href="exercise.html">Exercise</a></td></tr>
+<tr><td>SP Recovery (Therapy)</td><td>−3 to −5 SP per session</td><td><a href="mental-health.html">Mental Health</a></td></tr>
+<tr><td>Episode Duration</td><td>1d4 hours or days</td><td><a href="mental-health.html">Mental Health</a></td></tr>
+<tr><td>Episode TN Penalty</td><td>+10 to all checks</td><td><a href="mental-health.html">Mental Health</a></td></tr>
+<tr><td>Episode SP Reset</td><td>50% of Max SP</td><td><a href="mental-health.html">Mental Health</a></td></tr>
+<tr><td>Mood Score</td><td>10 − stress_level (0–4)</td><td><a href="inventory-economy.html">Inventory</a></td></tr>
+<tr><td>Budget Score</td><td>INT mod + EXP mod</td><td><a href="inventory-economy.html">Inventory</a></td></tr>
+<tr><td>Social Capital Bonus</td><td>⌊SC ÷ 3⌋, capped +5</td><td><a href="social-dynamics.html">Social</a></td></tr>
+<tr><td>Encumbrance Limit</td><td>VIG mod × 10 kg</td><td><a href="inventory-economy.html">Inventory</a></td></tr>
+<tr><td>Item Durability</td><td>3/5/8/10 by cost tier</td><td><a href="inventory-economy.html">Inventory</a></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Footer injected by nav-loader.js -->
+<div id="slot-footer"></div>
+
+<script src="js/nav-loader.js"></script>
+</body>
+</html>
